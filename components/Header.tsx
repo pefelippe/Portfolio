@@ -23,13 +23,13 @@ export default function Header({}: Props) {
       >
         <SocialIcon
           url="https://github.com/pefelippe"
-          fgColor="#f5f5f5"
+          fgColor="#f9fafb"
           bgColor="transparent"
         />
 
         <SocialIcon
           url="https://www.linkedin.com/in/pedro-felippe"
-          fgColor="#f5f5f5"
+          fgColor="#f9fafb"
           bgColor="transparent"
         />
       </motion.div>
@@ -51,12 +51,12 @@ export default function Header({}: Props) {
         <SocialIcon
           className="cursor-pointer"
           network="email"
-          fgColor="#f5f5f5"
+          fgColor="#f9fafb"
           bgColor="transparent"
         />
 
-        <p className="uppercase hidden md:inline-flex text-sm text-#f5f5f5-400">
-          Entre em contato!
+        <p className="uppercase hidden md:inline-flex text-sm text-[#fff]">
+          Entre em contato
         </p>
       </motion.div>
     </header>

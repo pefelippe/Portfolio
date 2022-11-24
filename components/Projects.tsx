@@ -1,11 +1,9 @@
-import React, { PureComponent } from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
-export default class Projects extends PureComponent<Props> {
-  render() {
-    return (
-      <div>Projects</div>
-    )
-  }
+function Projects({}: Props) {
+  return <div>Projects</div>;
 }
+
+export default Projects;

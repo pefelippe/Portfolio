@@ -4,7 +4,6 @@ import { Typewriter, Cursor } from "react-simple-typewriter";
 
 import { motion } from "framer-motion";
 
-
 import Avatar from "../public/38574428.png";
 type Props = {};
 
@@ -12,30 +11,27 @@ function Hero({}: Props) {
   return (
     <motion.div
       animate={{
-        scale: [0.75, 1],
+        scale: [0.85, 1],
       }}
       transition={{
-        duration: 3,
+        duration: 1.25,
       }}
-      className=" h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden"
+      className=" h-screen flex flex-col space-y-10 items-center justify-center text-center overflow-hidden mx-auto"
     >
       <Image
         src={Avatar}
         alt="pefelippe avatar"
-        className="object-fit relative mx-auto h-48 w-48 border border-[#f9fafb] rounded-full "
+        className="object-fit relative mx-auto h-52 w-52 rounded-full "
       />
 
-      <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-        Software Engineer
+      <h2 className="text-xl uppercase semibold text-gray-500 tracking-[15px]">
+        Web Developer
       </h2>
-      <h1 className="text-4xl lg:text-6xl font-semibold scroll-px-10">
+
+      <h1 className="text-6xl font-scroll-px-10">
         <span className="mr-3">
           <Typewriter
-            words={[
-              "Eu sou o Pedro!",
-              "Web Developer",
-              "Aventureiro em DevOps",
-            ]}
+            words={["Eu sou o Pedro!", "Aventureiro em DevOps"]}
             loop={true}
             delaySpeed={1000}
             typeSpeed={70}
@@ -44,13 +40,6 @@ function Hero({}: Props) {
         </span>
         <Cursor cursorColor="#F7AB0A" />
       </h1>
-
-      <div>
-        <button className="heroBtn">About</button>
-        <button className="heroBtn">Experience</button>
-        <button className="heroBtn">Skills</button>
-        <button className="heroBtn">Projects</button>
-      </div>
     </motion.div>
   );
 }

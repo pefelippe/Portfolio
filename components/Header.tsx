@@ -32,6 +32,13 @@ export default function Header({}: Props) {
           fgColor="#f9fafb"
           bgColor="transparent"
         />
+
+        <SocialIcon
+          url="#"
+          network="email"
+          fgColor="#f9fafb"
+          bgColor="transparent"
+        />
       </motion.div>
 
       <motion.div
@@ -48,16 +55,10 @@ export default function Header({}: Props) {
         transition={{ duration: 1.25 }}
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
-        <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="#f9fafb"
-          bgColor="transparent"
-        />
-
-        <p className="uppercase hidden md:inline-flex text-sm text-[#fff]">
-          Entre em contato
-        </p>
+        <button className="heroBtn">Sobre</button>
+        <button className="heroBtn">Experiência</button>
+        <button className="heroBtn">Habilidades</button>
+        <button className="heroBtn">Projetos</button>
       </motion.div>
     </header>
   );

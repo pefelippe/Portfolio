@@ -4,7 +4,7 @@ type Props = {}
 
 function Experience({}: Props) {
   return (
-    <div>Experience</div>
+    <div className="h-screen">Experience</div>
   )
 }
 

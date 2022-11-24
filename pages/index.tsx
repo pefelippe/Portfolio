@@ -11,7 +11,7 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-[#171717] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-400">
+    <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-400">
       <Head>
         <title>pefelippe.dev</title>
         <meta name="description" content="Pefelippe Portfolio" />
@@ -20,27 +20,24 @@ export default function Home() {
 
       <Header />
 
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
 
-      <main className="flex space-x-4">
-        <section id="about">
-          <About />
-        </section>
-        <section id="experience">
-          <Experience />
-        </section>
-        <section id="skills">
-          <Skills />
-        </section>
-        <section id="projects">
-          <Projects />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
+      <section id="about" className="snap-center">
+        <About />
+      </section>
+
+      <section id="experience" className="snap-center">
+        <Experience />
+      </section>
+
+      <section id="skills" className="snap-center">
+        <Skills />
+      </section>
+      <section id="projects" className="snap-end">
+        <Projects />
+      </section>
     </div>
   );
 }

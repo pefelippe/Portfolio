@@ -11,7 +11,7 @@ function Hero({}: Props) {
   return (
     <motion.div
       animate={{
-        scale: [0.85, 1],
+        scale: [0.80, 1],
       }}
       transition={{
         duration: 1.25,

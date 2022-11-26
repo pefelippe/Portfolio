@@ -11,19 +11,20 @@ function About({}: Props) {
         Sobre
       </h3>
       <div className="flex relative text-left space-x-6 items-center align-items-center">
-        <Image
-          src={Avatar}
-          alt="pefelippe avatar"
-          className="object-fit relative mx-auto h-52 w-52 rounded-full "
-        />
         <div className="text-2xl">
-          Atuo na área de desenvolvimento Web, sendo a minha stack atual React,
-          Node e Typescript. <br />
+          Atuo na área de desenvolvimento Web, sendo a minha stack React, Node e
+          Typescript. <br /> <br />
           Já fui muitas vezes responsável por implementar componentes de
           interface de usuário responsivos e de qualidade, além de efetuar
           manutenções em códigos existentes, bem como testar e desenvolver novas
           funcionalidades.
         </div>
+
+        <Image
+          src={Avatar}
+          alt="pefelippe avatar"
+          className="object-fit relative mx-auto h-52 w-52 rounded-full "
+        />
       </div>
     </div>
   );

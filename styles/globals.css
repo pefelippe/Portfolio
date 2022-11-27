@@ -5,9 +5,10 @@
 @layer components {
   .headerBtn {
     @apply px-6 py-2
-    mx-2
-    border border-[#f8f8f2] rounded-full 
-    uppercase text-sm
+    text-white
+    text-sm
+     border-[#f8f8f2] rounded-full 
+    uppercase 
     tracking-widest transition-all 
     hover:border-gray-300
     hover:text-gray-300;

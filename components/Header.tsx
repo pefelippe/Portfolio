@@ -7,7 +7,7 @@ type Props = {};
 export default function Header({}: Props) {
   return (
     <>
-      <header className="flex sticky top-0 flex-items-start p-5 justify-between max-w-7xl mx-auto z-20 xl:items-center">
+      <header className="bg-[#161618] top-0 sticky flex flex-row-reverse p-5 z-20">
         <motion.div
           initial={{
             y: -100,
@@ -18,39 +18,7 @@ export default function Header({}: Props) {
             opacity: 1,
           }}
           transition={{ duration: 1.25 }}
-          className="flex flex-row items-center"
-        >
-          <SocialIcon
-            url="https://github.com/pefelippe"
-            fgColor="#f9fafb"
-            bgColor="transparent"
-          />
-
-          <SocialIcon
-            url="https://www.linkedin.com/in/pedro-felippe"
-            fgColor="#f9fafb"
-            bgColor="transparent"
-          />
-
-          <SocialIcon
-            url="#"
-            network="email"
-            fgColor="#f9fafb"
-            bgColor="transparent"
-          />
-        </motion.div>
-
-        <motion.div
-          initial={{
-            y: -100,
-            opacity: 0,
-          }}
-          animate={{
-            y: 0,
-            opacity: 1,
-          }}
-          transition={{ duration: 1.25 }}
-          className="flex flex-row items-center text-gray-100 cursor-pointer"
+          className="flex flex-row text-gray-100 cursor-pointer"
         >
           <button className="headerBtn">
             <a href="#hero"> Home </a>

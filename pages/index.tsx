@@ -8,7 +8,7 @@ import Experience from "../components/Experience";
 
 export default function Home() {
   return (
-    <div className="bg-[#121214] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-400 min-h-min scroll-smooth ">
+    <div className="bg-[#121214] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-300 scroll-smooth ">
       <Head>
         <title>pefelippe.dev - 🚧 under construction 🚧 </title>
         <meta name="description" content="Pefelippe Portfolio" />

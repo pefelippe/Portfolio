@@ -11,7 +11,7 @@ function Hero({}: Props) {
   return (
     <motion.div
       animate={{
-        scale: [0.80, 1],
+        scale: [0.8, 1],
       }}
       transition={{
         duration: 1.25,
@@ -24,11 +24,11 @@ function Hero({}: Props) {
         className="object-fit relative mx-auto h-52 w-52 rounded-full "
       />
 
-      <h2 className="text-xl uppercase semibold text-gray-500 tracking-[15px]">
+      <h2 className="text-xl uppercase semibold text-gray-500 tracking-[5px]">
         Web Developer
       </h2>
 
-      <h1 className="text-6xl font-scroll-px-10">
+      <h1 className="text-6xl  max-sm:text-4xl font-scroll-px-10">
         <span className="mr-3">
           <Typewriter
             words={["Eu sou o Pedro!", "Aventureiro em DevOps"]}

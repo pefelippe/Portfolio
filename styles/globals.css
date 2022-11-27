@@ -12,4 +12,11 @@
     hover:border-gray-300
     hover:text-gray-300;
   }
+
+  .component-base {
+    @apply h-screen flex flex-col relative 
+    text-center 
+    max-w-7xl px-10 justify-evenly mx-auto 
+    items-center;
+  }
 }

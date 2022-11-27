@@ -14,7 +14,6 @@ export default function Home() {
       <Head>
         <title>pefelippe.dev</title>
         <meta name="description" content="Pefelippe Portfolio" />
-        <Link href="/dist/output.css" rel="stylesheet" />
       </Head>
 
       {/* <Header />

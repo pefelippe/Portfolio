@@ -20,11 +20,13 @@ function Hero({}: Props) {
         }}
         className="h-screen flex flex-col space-y-10 items-center justify-center text-center overflow-hidden mx-auto  m-32 z-10"
       >
-        <Image
-          src={Avatar}
-          alt="pefelippe avatar"
-          className="object-fit relative mx-auto h-52 w-52 border rounded-full"
-        />
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Image
+            src={Avatar}
+            alt="pefelippe avatar"
+            className="object-fit relative mx-auto h-56 w-56  rounded-full border"
+          />
+        </motion.div>
         <h1 className="text-6xl  max-sm:text-4xl font-scroll-px-10">
           <span className="mr-3">
             <Typewriter
@@ -45,6 +47,7 @@ function Hero({}: Props) {
             url="https://github.com/pefelippe"
             fgColor="#f9fafb"
             bgColor="transparent"
+            className="text-red"
           />
 
           <SocialIcon

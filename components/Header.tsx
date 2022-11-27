@@ -7,19 +7,19 @@ type Props = {};
 export default function Header({}: Props) {
   return (
     <>
-      <header className="bg-[#161618] top-0 sticky flex flex-row-reverse p-5 z-20">
-        <motion.div
-          initial={{
-            y: -100,
-            opacity: 0,
-          }}
-          animate={{
-            y: 0,
-            opacity: 1,
-          }}
-          transition={{ duration: 1.25 }}
-          className="flex flex-row text-gray-100 cursor-pointer"
-        >
+      <motion.header
+        initial={{
+          y: -100,
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+        }}
+        transition={{ duration: 1.25 }}
+        className="bg-[#161618] top-0 sticky flex flex-row-reverse p-5 z-20"
+      >
+        <div className="flex flex-row text-gray-100 cursor-pointer">
           <button className="headerBtn">
             <a href="#hero"> Home </a>
           </button>
@@ -33,8 +33,8 @@ export default function Header({}: Props) {
           <button className="headerBtn">
             <a href="#hero">Projetos</a>
           </button>
-        </motion.div>
-      </header>
+        </div>
+      </motion.header>
     </>
   );
 }

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="bg-[#121214] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-300 scroll-smooth ">
       <Head>
-        <title>pefelippe.dev - 🚧 under construction 🚧 </title>
+        <title>pefelippe.dev </title>
         <meta name="description" content="Pefelippe Portfolio" />
       </Head>
 

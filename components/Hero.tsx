@@ -12,12 +12,15 @@ function Hero({}: Props) {
   return (
     <>
       <motion.div
+        initial={{
+          y: -100,
+          opacity: 0,
+        }}
         animate={{
-          scale: [0.8, 1],
+          y: 0,
+          opacity: 1,
         }}
-        transition={{
-          duration: 1.25,
-        }}
+        transition={{ duration: 1.25 }}
         className="h-screen flex flex-col space-y-10 items-center justify-center text-center overflow-hidden mx-auto  m-32 z-10"
       >
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>

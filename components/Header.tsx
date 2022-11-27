@@ -16,7 +16,7 @@ export default function Header({}: Props) {
           y: 0,
           opacity: 1,
         }}
-        transition={{ duration: 1.25 }}
+        transition={{ duration: 1.75 }}
         className="bg-[#161618] top-0 sticky flex flex-row-reverse p-5 z-20"
       >
         <div className="flex flex-row text-gray-100 cursor-pointer">

@@ -10,14 +10,14 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-[#121214] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-400">
+    <div className="bg-[#121214] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-400 scroll-smooth">
       <Head>
         <title>pefelippe.dev</title>
         <meta name="description" content="Pefelippe Portfolio" />
         <Link href="/dist/output.css" rel="stylesheet" />
       </Head>
 
-      <Header />
+      {/* <Header />
 
       <section id="hero" className="snap-start">
         <Hero />
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
       <section id="projects" className="snap-end">
         <Projects />
-      </section>
+      </section> */}
     </div>
   );
 }

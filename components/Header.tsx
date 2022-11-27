@@ -10,7 +10,7 @@ export default function Header({}: Props) {
       <header className="flex sticky top-0 flex-items-start p-5 justify-between max-w-7xl mx-auto z-20 xl:items-center">
         <motion.div
           initial={{
-            y: -50,
+            y: -100,
             opacity: 0,
           }}
           animate={{

@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Pefelippe Portfolio" />
       </Head>
 
-      {/* <Header />
+      <Header />
 
       <section id="hero" className="snap-start">
         <Hero />
@@ -35,7 +35,7 @@ export default function Home() {
       </section>
       <section id="projects" className="snap-end">
         <Projects />
-      </section> */}
+      </section>
     </div>
   );
 }

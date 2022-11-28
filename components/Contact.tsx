@@ -3,12 +3,12 @@ import React from "react";
 
 type Props = {};
 
-function Skills({}: Props) {
+function Contact({}: Props) {
   return (
     <motion.div className="component-base">
-      <h3 className="component-title">Skills</h3>
+      <h3 className="component-title">Contact</h3>
     </motion.div>
   );
 }
 
-export default Skills;
+export default Contact;

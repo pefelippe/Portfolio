@@ -7,11 +7,11 @@
     @apply px-6 py-2
     text-white
     text-sm
-     border-[#f8f8f2] rounded-full 
+    rounded-full 
     uppercase 
     tracking-widest transition-all 
-    hover:border-gray-300
-    hover:text-gray-300;
+    hover:text-[#f8f8f2]
+    hover:bg-gray-800;
   }
 
   .component-base {
@@ -19,5 +19,9 @@
     text-center 
     max-w-7xl px-10 justify-evenly mx-auto 
     items-center;
+  }
+
+  .component-title {
+    @apply absolute top-24 uppercase tracking-[5px] text-2xl;
   }
 }

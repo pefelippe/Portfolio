@@ -4,14 +4,24 @@
 
 @layer components {
   .headerBtn {
-    @apply px-6 py-2
-    text-white
+    @apply btnEffect
+    px-6 py-4 mx-2
     text-sm
-    rounded-full 
-    uppercase 
+    rounded-lg 
+    uppercase
     tracking-widest transition-all 
-    hover:text-[#f8f8f2]
+    text-[#f8f8f2]
+    
     hover:bg-gray-800;
+  }
+
+  .btnEffect {
+    @apply ease-in-out delay-75 hover:-translate-y-1 hover:scale-110  duration-300;
+  }
+
+  .socialMediaIcon {
+    @apply btnEffect
+     hover:bg-gray-800 rounded-lg cursor-pointer;
   }
 
   .component-base {

@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js.ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["poppins-medium", "sans-serif"],
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",

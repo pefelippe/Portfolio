@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import React from "react";
-import Avatar from "../public/eu.png";
+import { SocialIcon } from "react-social-icons";
+import Avatar from "../public/desenho.png";
 
 type Props = {};
 
@@ -10,9 +11,8 @@ function About({}: Props) {
   return (
     <div
       className="h-screen flex flex-col relative 
-    text-center 
-    max-w-7xl px-10 justify-evenly mx-auto 
-    items-center space-y-5 max-h-fit"
+    text-center max-w-7xl px-10 justify-evenly mx-auto 
+    items-center space-y-5 "
     >
       <motion.div
         initial={{
@@ -21,33 +21,30 @@ function About({}: Props) {
         }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{
-          duration: 1,
+          duration: 1.25,
         }}
+        className="h-screen flex flex-col justify-center mx-auto"
       >
-        <div className="flex justify-evenly space-x-4 items-center max-md:flex-col ">
-          <Image
-            src={Avatar}
-            alt="pefelippe avatar"
-            className="object-fit relative mx-auto h-56 w-56 border rounded-lg"
-          />
+        <h4 className="text-4xl font-semibold">
+          Um <span className="underline decoration-[#F7AB0A]">pouco</span> sobre
+          mim
+        </h4>
+
+        <div className="flex items-center justify-center p-10">
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <Image
+              src={Avatar}
+              alt="pefelippe avatar"
+              className="object-fit relative mx-auto h-60 w-60 border-2 border-gray-900 rounded-lg "
+            />
+          </motion.div>
 
           <div className="space-y-10 px-0 md:px-10">
-            <h4 className="text-4xl  font-semibold">
-              Um{" "}
-              <span className="underline decoration-[#F7AB0A]/50">pouco</span>{" "}
-              sobre mim
-            </h4>
-            <p className="text-lg md:text-md">
-              Atuo na área de desenvolvimento Web, sendo a minha stack
-              principal: React, Node e Typescript. <br />
-              <br />
-              Já fui muitas vezes responsável por implementar componentes de
-              interface de usuário responsivos e de qualidade, além de efetuar
-              manutenções em códigos existentes, bem como testar e desenvolver
-              novas funcionalidades.
-              <br />
-              <br /> Consigo me comunicar bem em inglês (C2), sendo acostumado a
-              participarem reuniões em inglês com membros de vários países.
+            <p className="text-2xl text-left md:text-md">
+              Sou o Pedro Felippe! <br />
+              Sou um Desenvolvedor Web, sendo a principal stack React, Node e
+              Typescript. <br />
+              Consigo me expressar bem em inglês (Nível C2)
             </p>
           </div>
         </div>

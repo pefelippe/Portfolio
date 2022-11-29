@@ -4,7 +4,7 @@ import { Typewriter, Cursor } from "react-simple-typewriter";
 
 import { motion } from "framer-motion";
 
-import Avatar from "../public/38574428.png";
+import Avatar from "../public/desenho.png";
 import { SocialIcon } from "react-social-icons";
 type Props = {};
 
@@ -21,49 +21,24 @@ function Hero({}: Props) {
           opacity: 1,
         }}
         transition={{ duration: 1.25 }}
-        className="h-screen flex flex-col space-y-6 items-center justify-center text-center overflow-hidden mx-auto  m-32 z-10"
+        className="h-screen flex items-center justify-evenly text-center overflow-hidden mx-auto m-32 z-10"
       >
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Image
-            src={Avatar}
-            alt="pefelippe avatar"
-            className="object-fit relative mx-auto h-56 w-56 rounded-full border"
-          />
-        </motion.div>
-        <h1 className="text-6xl  max-sm:text-4xl font-scroll-px-10">
-          <span className="mr-3">
-            <Typewriter
-              words={["Eu sou o Pedro!"]}
-              loop={true}
-              delaySpeed={2000}
-              typeSpeed={75}
-              deleteSpeed={75}
+        <div className="flex flex-col space-y-6">
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <Image
+              src={Avatar}
+              alt="pefelippe avatar"
+              className="object-fit relative mx-auto h-56 w-56 rounded-full border z-0"
             />
-          </span>
-          <Cursor cursorColor="#F7AB0A" />
-        </h1>
-        <h2 className="text-xl uppercase semibold text-gray-500 tracking-[5px] ">
-          Web Developer
-        </h2>
-        <div className="flex flex-row items-center text-gray-100 cursor-pointer">
-          <SocialIcon
-            url="https://github.com/pefelippe"
-            fgColor="#f9fafb"
-            bgColor="transparent"
-          />
+          </motion.div>
 
-          <SocialIcon
-            url="https://www.linkedin.com/in/pedro-felippe"
-            fgColor="#f9fafb"
-            bgColor="transparent"
-          />
-
-          <SocialIcon
-            url="#"
-            network="email"
-            fgColor="#f9fafb"
-            bgColor="transparent"
-          />
+          <h1 className="text-7xl  max-sm:text-4xl font-scroll-px-10">
+            <span className="">Pedro Felippe</span>
+            <Cursor cursorColor="#F7AB0A" />
+          </h1>
+          <h2 className="uppercase font-thin text-gray-400  tracking-[5px]">
+            Web Developer
+          </h2>
         </div>
       </motion.div>
     </>

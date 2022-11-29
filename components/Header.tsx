@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { SocialIcon } from "react-social-icons";
 
 type Props = {};
 
@@ -8,33 +9,56 @@ export default function Header({}: Props) {
     <>
       <motion.header
         initial={{
-          y: -100,
+          y: -50,
           opacity: 0,
         }}
         animate={{
           y: 0,
           opacity: 1,
         }}
-        transition={{ duration: 1.75 }}
-        className="bg-[#161618] top-0 sticky flex flex-row p-4 z-20 content-center justify-around "
+        transition={{ duration: 1 }}
+        className="flex top-0 sticky justify-evenly p-4 mx-auto z-10 bg-[#161618]"
       >
-        <div className="flex items-center justify-center">
-          <button className="text-xl uppercase semibold text-gray-500 tracking-[5px]  ">
-            <a href="#hero">PEFELIPPE.dev</a>
-          </button>
-        </div>
+        <h2 className=" px-6 py-4 text-xl">pefelippe.dev</h2>
+        <nav
+          className="flex cursor-pointer items-center 
+        max-sm:flex max-sm:text-xl max-sm:relative drop-shadow-xl"
+        >
+          <a className="headerBtn" href="#hero">
+            Home
+          </a>
+          <a className="headerBtn" href="#about">
+            Sobre
+          </a>
+          <a className="headerBtn" href="#experience">
+            Experiência
+          </a>
+          <a className="headerBtn" href="#contact">
+            Contato
+          </a>
+        </nav>
 
-        <div className="flex flex-row text-gray-100 cursor-pointer ">
-          <button className="headerBtn">
-            <a href="#about">Sobre</a>
-          </button>
-          <button className="headerBtn">
-            <a href="#experience">Experiência</a>
-          </button>
+        <div>
+          <SocialIcon
+            url="https://github.com/pefelippe"
+            fgColor="#f9fafb"
+            bgColor="transparent"
+            className="socialMediaIcon"
+          />
 
-          <button className="headerBtn">
-            <a href="#skills">Skills</a>
-          </button>
+          <SocialIcon
+            url="https://www.linkedin.com/in/pedro-felippe"
+            fgColor="#f9fafb"
+            bgColor="transparent"
+            className="socialMediaIcon"
+          />
+
+          <SocialIcon
+            url="#"
+            fgColor="#f9fafb"
+            bgColor="transparent"
+            className="hover:bg-gray-800 rounded-lg cursor-pointer "
+          />
         </div>
       </motion.header>
     </>

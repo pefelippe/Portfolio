@@ -7,10 +7,10 @@ import About from "../components/About";
 
 export default function Home() {
   return (
-    <div className="bg-[#121214] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-500 scroll-smooth ">
+    <div className="bg-[#0f0f11] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-500 scroll-smooth ">
       <Head>
-        <title>Pedro Felippe - Web Developer</title>
-        <meta name="description" content="Pefelippe Portfolio" />
+        <title>Pedro Felippe</title>
+        <meta name="description" content=" Portfolio" />
       </Head>
 
       <Header />

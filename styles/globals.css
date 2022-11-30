@@ -4,34 +4,49 @@
 
 @layer components {
   .headerBtn {
-    @apply btnEffect
-    px-6 py-4 mx-2
-    text-sm
+    @apply link-underline link-underline-black 
+    px-4 py-3 mx-6
+    text-base
     rounded-lg 
-    uppercase
-    tracking-widest transition-all 
-    text-[#f8f8f2]
-    
-    hover:bg-gray-800;
-  }
-
-  .btnEffect {
-    @apply ease-in-out delay-75 hover:-translate-y-1 hover:scale-110  duration-300;
+    font-semibold
+    tracking-widest transition-all
+    text-[#a9adc1]
+    hover:text-white;
   }
 
   .socialMediaIcon {
-    @apply btnEffect
-     hover:bg-gray-800 rounded-lg cursor-pointer;
+    @apply hover:bg-gray-800 rounded-lg cursor-pointer;
   }
 
   .component-base {
     @apply h-screen flex flex-col relative 
     text-center 
     max-w-7xl px-10 justify-evenly mx-auto 
-    items-center;
+    items-center
+    overflow-hidden  m-32 z-10;
   }
 
   .component-title {
     @apply absolute top-24 uppercase tracking-[5px] text-2xl;
+  }
+
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 2s ease-in-out;
+  }
+
+  .link-underline-black {
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(#f7ab0a, #f7ab0a);
+  }
+
+  .link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
   }
 }

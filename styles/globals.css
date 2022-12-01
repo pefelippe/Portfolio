@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Cal Sans";
+    src: url("../public/fonts/CalSans-SemiBold.woff2") format("woff2"),
+      url("../public/fonts/CalSans-SemiBold.woff2") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
 @layer components {
   .headerBtn {
     @apply link-underline link-underline-black 

@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import React from "react";
-import { SocialIcon } from "react-social-icons";
-import Avatar from "../public/eu.png";
+
+import Avatar from "../public/assets/eu-2.jpg";
 
 type Props = {};
 
@@ -11,7 +11,7 @@ function About({}: Props) {
   return (
     <div
       className="h-screen flex flex-col relative 
-    text-center max-w-7xl px-10 justify-evenly mx-auto 
+    text-center max-w-7xl px-10 justify-start mx-auto 
     items-center space-y-5 max-md:justify-center"
     >
       <motion.div
@@ -31,13 +31,11 @@ function About({}: Props) {
         </h4>
 
         <div className="flex items-center justify-around p-10 max-md:flex-col max-md:justify-evenly">
-          {/* <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <Image
-              src={Avatar}
-              alt="pefelippe avatar"
-              className="object-fit relative mx-auto h-60 w-60 border-2 border-gray-900 rounded-lg mb-5 "
-            />
-          </motion.div> */}
+          <Image
+            src={Avatar}
+            alt="pefelippe avatar"
+            className="object-fit relative mx-auto h-60 w-60 border-2 border-gray-900 rounded-lg mb-5 "
+          />
 
           <div className="space-y-10 md:px-10">
             <p className="text-xl text-left max-md:text-sm">

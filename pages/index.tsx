@@ -1,27 +1,26 @@
-import Head from "next/head";
+import React from "react";
 
 import Header from "../components/Header";
-
-import Hero from "../components/Hero";
+import Skills from "../components/Skills";
 import About from "../components/About";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
-    <div className="bg-[#0f0f11] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 min-w-500 scroll-smooth ">
-      <Head>
-        <title>Pedro Felippe</title>
-        <meta name="description" content=" Portfolio" />
-      </Head>
-
+    <div className=" text-white snap-y snap-mandatory z-0 min-w-500 scroll-smooth">
       <Header />
 
-      <section id="hero" className="snap-start">
+      <section id="hero" className="snap-start h-screen bg-[#1d1d1d]">
         <Hero />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about" className="snap-center h-screen text-[#000]">
         <About />
       </section>
+
+      {/* <section id="skills" className="snap-center bg-[#1d1d1d] h-screen">
+        <Skills />
+      </section> */}
     </div>
   );
 }

@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/assets/P.png";
+import Logo from "../public/assets/cabeca.png";
+import Links from "../atoms/Links";
 type Props = {};
 
 export default function Header({}: Props) {
@@ -16,30 +17,19 @@ export default function Header({}: Props) {
         y: 0,
         opacity: 1,
       }}
-      transition={{ duration: 1.25 }}
-      className="flex top-0 sticky justify-around p-4  z-30 bg-[#1f1f1ffa] "
+      transition={{ duration: 1.75 }}
+      className="flex fixed justify-around p-4 w-screen z-30 bg-[#1f1f1ffa] "
     >
       <Link href="#hero">
         <Image
           src={Logo}
           alt="pefelippe avatar"
-          className="object-fit relative h-10 w-10 "
+          className="object-fit relative rounded-full h-[60px] w-[60px]"
         />
       </Link>
 
       <nav className="flex justify-evenly items-center max-md:hidden">
-        <Link className="headerBtn" href="#hero">
-          Home
-        </Link>
-        <Link className="headerBtn" href="#about">
-          Sobre
-        </Link>
-        <Link className="headerBtn" href="#skills">
-          Skills
-        </Link>
-        <Link className="headerBtn" href="/contact">
-          Contato
-        </Link>
+        <Links />
       </nav>
     </motion.header>
   );

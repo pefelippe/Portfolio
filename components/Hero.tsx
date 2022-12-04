@@ -10,9 +10,11 @@ export default function Home() {
     <motion.div
       initial={{
         opacity: 0,
+        x: -100,
       }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.25 }}
+      animate={{ x: 0, opacity: 1 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
       className="flex flex-col relative 
       text-center max-w-7xl justify-center mx-auto 
       items-center  space-y-5 h-screen "

@@ -5,7 +5,7 @@ type Props = {};
 
 export default function SocialIcons({}: Props) {
   return (
-    <div className="flex flex-col fixed h-screen justify-center ">
+    <div className="flex ">
       <SocialIcon
         url="https://github.com/pefelippe"
         fgColor="#f9fafb"

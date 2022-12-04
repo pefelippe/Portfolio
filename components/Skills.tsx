@@ -7,7 +7,7 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <div className="component-base ">
-      <h1 className="font-semibold text-5xl mb-28 ">Skills</h1>
+      <h1 className="absolute top-36 font-semibold text-5xl mb-28">Skills</h1>
 
       <motion.div
         initial={{
@@ -18,10 +18,10 @@ function Skills({}: Props) {
         transition={{
           duration: 1.25,
         }}
-        className="flex items-center justify-center gap-12 max-xl:flex-col m-20"
+        className="flex items-center justify-center gap-12 max-xl:flex-col m-20 h-max"
       >
         <div className="overflow-auto">
-          <div className="grid grid-cols-6 gap-5 overflow-auto">
+          <div className="grid grid-cols-4 xl:grid-cols-6 gap-5 overflow-auto">
             <Skill />
             <Skill />
             <Skill />

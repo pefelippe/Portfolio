@@ -28,7 +28,7 @@
   }
 
   .socialMediaIcon {
-    @apply hover:bg-gray-800  cursor-pointer bg-[rgb(36,36,36)];
+    @apply hover:bg-gray-800  cursor-pointer rounded-lg;
   }
 
   .component-base {
@@ -37,7 +37,7 @@
   }
 
   .component-title {
-    @apply absolute top-32 uppercase font-semibold tracking-[10px] text-2xl;
+    @apply font-semibold text-5xl mb-28 text-gray-800;
   }
 
   .link-underline {

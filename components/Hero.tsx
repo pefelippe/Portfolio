@@ -15,7 +15,7 @@ export default function Home() {
       animate={{ x: 0, opacity: 1 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="component-base"
+      className="component-base space-y-4"
     >
       <Image
         src={Avatar}
@@ -24,13 +24,14 @@ export default function Home() {
       />
 
       <div className="flex flex-col items-center space-y-2.5">
-        <h1 className="text-7xl max-md:text-4xl font-scroll-px-10">
+        <h1 className="text-5xl sm:text-7xl font-scroll-px-10">
           <span className="">Pedro Felippe</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
         <h2 className="uppercase font-thin text-gray-400  tracking-[5px]">
           Web Developer
         </h2>
+        <SocialIcons />
       </div>
     </motion.div>
   );

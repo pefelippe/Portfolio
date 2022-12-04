@@ -2,8 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../public/assets/cabeca.png";
+import Logo from "../public/assets/P.png";
 import Links from "../atoms/Links";
+import SocialIcons from "../atoms/SocialIcons";
 type Props = {};
 
 export default function Header({}: Props) {
@@ -24,7 +25,7 @@ export default function Header({}: Props) {
         <Image
           src={Logo}
           alt="pefelippe avatar"
-          className="object-fit relative rounded-full h-[60px] w-[60px]"
+          className="object-fit relative rounded-LG h-[60px] w-[60px]"
         />
       </Link>
 

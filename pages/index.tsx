@@ -1,26 +1,40 @@
 import React from "react";
 
 import Header from "../components/Header";
-import Skills from "../components/Skills";
 import About from "../components/About";
 import Hero from "../components/Hero";
+import Experience from "../components/Experience";
+import Contact from "../components/Contact";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className=" text-white snap-y snap-mandatory z-0 min-w-500 scroll-smooth">
+    <div
+      className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory z-0 
+    overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
+    >
+      <Head>
+        <title>Pedro Felippe - Web Developer</title>
+        <meta name="description" content="Portfolio" />
+      </Head>
+
       <Header />
 
-      <section id="hero" className="snap-start h-screen bg-[#1d1d1d]">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
 
-      <section id="about" className="snap-center h-screen text-[#000]">
+      <section id="about" className="snap-start bg-[#fff] text-[#000] ">
         <About />
       </section>
 
-      {/* <section id="skills" className="snap-center bg-[#1d1d1d] h-screen">
-        <Skills />
-      </section> */}
+      <section id="experience" className="snap-start">
+        <Experience />
+      </section>
+
+      <section id="contact" className="snap-start bg-[#fff] text-[#000] ">
+        <Contact />
+      </section>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import React from "react";
-import Avatar from "../public/38574428.png";
 
 type Props = {};
 
@@ -16,13 +15,7 @@ function ExperienceCard({}: Props) {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1.5 }}
         viewport={{ once: true }}
-      >
-        <Image
-          className="w-32 h-32 rounded-full  items-center object-cover object-center m-auto"
-          alt="ExperienceCard avatar"
-          src={Avatar}
-        />
-      </motion.div>
+      ></motion.div>
       <div className="px-0 md:px-10">
         <h3 className="text-4xl font-light">CEO</h3>
         <p className="font-bold text-2xl mt-1">PLACEHOLDER</p>

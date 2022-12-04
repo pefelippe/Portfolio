@@ -15,16 +15,22 @@ export default function Home() {
       animate={{ x: 0, opacity: 1 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="component-base space-y-4"
+      className="component-base xl:flex-row justify-center xl:justify-around space-y-4"
     >
-      <Image
-        src={Avatar}
-        alt="pefelippe avatar"
-        className="object-fit relative h-72 w-72 rounded-full max-md:h-56 max-md:w-56 "
-      />
-
+      <div>
+        <Image
+          src={Avatar}
+          alt="pefelippe avatar"
+          className="object-fit relative rounded-full 
+          h-[250px] w-[250px]
+          xl:h-[450px] xl:w-[450px] shadow-xl"
+        />
+      </div>
       <div className="flex flex-col items-center space-y-2.5">
-        <h1 className="text-5xl sm:text-7xl font-scroll-px-10">
+        <h2 className="uppercase font-thin text-gray-400  tracking-[5px]">
+          Olá, eu sou o
+        </h2>
+        <h1 className="text-6xl sm:text-8xl ">
           <span className="">Pedro Felippe</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>

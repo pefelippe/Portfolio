@@ -12,11 +12,13 @@ function Experience({}: Props) {
       transition={{ duration: 1.5 }}
       className="component-base"
     >
-      <h1 className="absolute top-36 font-semibold text-5xl mb-28">
+      <h1 className="absolute top-28  font-semibold text-5xl mb-28">
         Experience
       </h1>
 
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
+        <ExperienceCard />
+        <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />

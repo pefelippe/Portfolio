@@ -6,8 +6,8 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="component-base ">
-      <h1 className="absolute top-36 font-semibold text-5xl mb-28">Skills</h1>
+    <div className="component-base">
+      <h1 className="absolute top-28 font-semibold text-5xl mb-28">Skills</h1>
 
       <motion.div
         initial={{

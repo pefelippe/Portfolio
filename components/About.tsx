@@ -16,44 +16,49 @@ function About({}: Props) {
       transition={{ duration: 1.25 }}
       className="component-base"
     >
-      <h3 className="component-title">Sobre</h3>
-      <div className="flex flex-col lg:flex-row ">
+      <h1 className="font-semibold text-5xl mb-28 text-gray-800">Sobre</h1>
+
+      <div className="flex flex-col lg:flex-row h-max x">
         <Image
           src={Avatar}
           alt="pefelippe avatar"
-          className="object-fit h-72 w-72 border border-[#000] rounded-lg mb-10"
+          className="object-fit xl:h-[400px] xl:w-[400px] h-40 w-40
+          shadow-xl rounded-[30px]"
         />
 
-        <div className="px-10 ">
+        <div className="relative ml-20 xl:ml-40 mt-8">
           <p className="text-sm text-left lg:text-2xl">
-            Atuo na área de desenvolvimento Web, sendo a minha stack atual
-            React, Node e Typescript.
+            Web Developer com experiência em implementar componentes de
+            interface de usuário responsivos e de qualidade. <br />
             <br />
+            Minha Stack principal é React, Node, Next e Typescript. <br />
             <br />
-            Já fui muitas vezes responsável por implementar componentes de
-            interface de usuário responsivos e de qualidade, além de efetuar
-            manutenções em códigos existentes, bem como testar e desenvolver
-            novas funcionalidades.
-            <br />
-            <br />
-            Consigo me comunicar bem em inglês (nível C2). Sou acostumado a
+            Consigo me comunicar bem em inglês (nível C2), sendo acostumado a
             participarem reuniões em inglês com membros de vários países.
           </p>
+
+          <button
+            className="absolute bottom-0 text-base bg-gray-800 text-white
+          border rounded-[20px] p-6 font-semibold flex mt-10 hover:bg-gray-700  transition"
+          >
+            Download CV
+            <svg
+              className="w-6 h-6 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+          </button>
         </div>
       </div>
-
-      {/* <div className="overflow-hidden flex">
-        <div className="grid grid-cols-2 xl:grid-cols-10 gap-5 overflow-hidden">
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-          <Skill />
-        </div>
-      </div> */}
     </motion.div>
   );
 }

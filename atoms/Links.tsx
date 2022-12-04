@@ -10,6 +10,9 @@ function Links() {
       <Link className="headerBtn" href="#about">
         Sobre
       </Link>
+      <Link className="headerBtn" href="#skills">
+        Skills
+      </Link>
       <Link className="headerBtn" href="#experience">
         Experiência
       </Link>

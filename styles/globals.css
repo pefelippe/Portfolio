@@ -7,30 +7,33 @@
     font-family: "Cal Sans";
     src: url("../public/fonts/CalSans-SemiBold.woff2") format("woff2"),
       url("../public/fonts/CalSans-SemiBold.woff2") format("woff");
-    font-weight: 600;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
 }
 
 @layer pages {
+  .white-component {
+    @apply bg-[#fff] text-[#000];
+  }
+
   .headerBtn {
     @apply link-underline link-underline-black 
     px-4 py-3 mx-6
-    text-base
-    rounded-lg 
- 
+    text-lg
+    rounded-lg
     tracking-widest transition-all
     hover:text-white;
   }
 
   .socialMediaIcon {
-    @apply hover:bg-gray-800 rounded-lg cursor-pointer;
+    @apply hover:bg-gray-800  cursor-pointer bg-[rgb(36,36,36)];
   }
 
   .component-base {
     @apply h-screen flex relative overflow-hidden flex-col text-left 
-    md:flex-row max-w-7xl justify-center mx-auto items-center;
+    max-w-7xl justify-center mx-auto items-center;
   }
 
   .component-title {

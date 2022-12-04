@@ -15,9 +15,7 @@ export default function Home() {
       animate={{ x: 0, opacity: 1 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col relative 
-      text-center max-w-7xl justify-center mx-auto 
-      items-center  space-y-5 h-screen "
+      className="component-base"
     >
       <Image
         src={Avatar}
@@ -33,7 +31,6 @@ export default function Home() {
         <h2 className="uppercase font-thin text-gray-400  tracking-[5px]">
           Web Developer
         </h2>
-        <SocialIcons />
       </div>
     </motion.div>
   );

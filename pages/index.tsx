@@ -6,6 +6,9 @@ import Hero from "../components/Hero";
 import Experience from "../components/Experience";
 import Contact from "../components/Contact";
 import Head from "next/head";
+import SocialIcons from "../atoms/SocialIcons";
+import Footer from "../components/Footer";
+import Skills from "../components/Skills";
 
 export default function Home() {
   return (
@@ -20,20 +23,30 @@ export default function Home() {
 
       <Header />
 
+      <SocialIcons />
+
       <section id="hero" className="snap-start">
         <Hero />
       </section>
 
-      <section id="about" className="snap-start bg-[#fff] text-[#000] ">
+      <section id="about" className="snap-start white-component">
         <About />
       </section>
 
-      <section id="experience" className="snap-start">
+      <section id="skills" className="snap-start">
+        <Skills />
+      </section>
+
+      <section id="experience" className="snap-start white-component">
         <Experience />
       </section>
 
-      <section id="contact" className="snap-start bg-[#fff] text-[#000] ">
+      <section id="contact" className="snap-start">
         <Contact />
+      </section>
+
+      <section id="contact" className="snap-start white-component">
+        <Footer />
       </section>
     </div>
   );

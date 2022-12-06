@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -26,11 +27,11 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about" className="snap-start white-component">
+      <section id="about" className="snap-center white-component">
         <About />
       </section>
 
-      <section id="experience" className="snap-start ">
+      <section id="experience" className="snap-center">
         <Experience />
       </section>
 
@@ -38,11 +39,15 @@ export default function Home() {
         <Skills />
       </section>
 
-      <section id="contact" className="snap-start">
+      <section id="projects" className="snap-start">
+        <Projects />
+      </section>
+
+      <section id="contact" className="snap-start white-component">
         <Contact />
       </section>
 
-      <section id="footer" className="snap-start white-component">
+      <section id="footer" className="snap-start">
         <Footer />
       </section>
     </div>

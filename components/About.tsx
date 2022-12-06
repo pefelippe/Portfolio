@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import React from "react";
-import SocialIcons from "../atoms/SocialIcons";
+import SocialIcons from "./atoms/SocialIcons";
 
 import Avatar from "../public/assets/eu-2.jpg";
 

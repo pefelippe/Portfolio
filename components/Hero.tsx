@@ -3,18 +3,14 @@ import React from "react";
 import { Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import Avatar from "../public/assets/desenho.png";
-import SocialIcons from "../atoms/SocialIcons";
+import SocialIcons from "./atoms/SocialIcons";
 
 export default function Home() {
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-        x: -100,
-      }}
-      animate={{ x: 0, opacity: 1 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.25 }}
       className="component-base flex-col justify-center space-y-4"
     >
       <Image

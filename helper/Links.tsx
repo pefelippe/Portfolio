@@ -1,13 +1,13 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
+
 import React from "react";
 
 function Links() {
   return (
     <>
-      <Link className="headerBtn" href="#hero">
+      {/* <Link className="headerBtn" href="#hero">
         Home
-      </Link>
+      </Link> */}
       <Link className="headerBtn" href="#about">
         Sobre
       </Link>
@@ -16,6 +16,9 @@ function Links() {
       </Link>
       <Link className="headerBtn" href="#skills">
         Habilidades
+      </Link>
+      <Link className="headerBtn" href="#projects">
+        Projetos
       </Link>
       <Link className="headerBtn" href="#contact">
         Contato

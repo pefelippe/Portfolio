@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div
       className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory z-0 
-    overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
+    overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scroll-smooth"
     >
       <Head>
         <title>Pedro Felippe - Web Developer</title>
@@ -30,12 +30,12 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="skills" className="snap-start">
-        <Skills />
+      <section id="experience" className="snap-start ">
+        <Experience />
       </section>
 
-      <section id="experience" className="snap-start white-component">
-        <Experience />
+      <section id="skills" className="snap-start white-component">
+        <Skills />
       </section>
 
       <section id="contact" className="snap-start">

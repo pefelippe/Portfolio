@@ -7,7 +7,9 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <div className="component-base">
-      <h1 className="absolute top-28 font-semibold text-5xl mb-28">Skills</h1>
+      <h1 className="absolute top-32 uppercase tracking-[20px] text-gray-500 text-2xl">
+        Habilidades
+      </h1>
 
       <motion.div
         initial={{
@@ -21,12 +23,8 @@ function Skills({}: Props) {
         className="flex items-center justify-center gap-12 max-xl:flex-col m-20 h-max"
       >
         <div className="overflow-auto">
-          <div className="grid grid-cols-4 xl:grid-cols-6 gap-5 overflow-auto">
-            <Skill />
-            <Skill />
-            <Skill />
-            <Skill />
-            <Skill />
+          <div className="grid grid-cols-2 gap-5 overflow-auto">
+            <h3>Front-End</h3>
             <Skill />
             <Skill />
             <Skill />

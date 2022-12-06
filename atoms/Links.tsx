@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 function Links() {
@@ -10,11 +11,11 @@ function Links() {
       <Link className="headerBtn" href="#about">
         Sobre
       </Link>
-      <Link className="headerBtn" href="#skills">
-        Skills
-      </Link>
       <Link className="headerBtn" href="#experience">
         Experiência
+      </Link>
+      <Link className="headerBtn" href="#skills">
+        Habilidades
       </Link>
       <Link className="headerBtn" href="#contact">
         Contato

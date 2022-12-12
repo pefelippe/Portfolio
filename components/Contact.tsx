@@ -1,19 +1,26 @@
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
-type Props = {};
+import MessageForm from "./atoms/MessageForm";
 
-function Contact({}: Props) {
+type IProps = {};
+
+function Contact({}: IProps) {
   return (
-    <div className="component-base">
-      <h3 className="absolute top-32 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <div className="component-base xl:flex-row xl:justify-around m-5 xl:mx-auto">
+      <h3 className="absolute top-32 uppercase tracking-[20px] text-gray-300 text-2xl ">
         Contato
       </h3>
-      <div className="text-4xl font-semibold text-center">
-        <h4>I have got just what you need.</h4>
-        <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
+
+      <div className="space-y-5">
+        <span className="text-3xl font-semibold decoration-[#F7AB0A]/50 underline">
+          Envie uma Mensagem!
+        </span>
+        <p className="text-xl">Pronto para começar uma parceria?</p>
       </div>
 
-      <div></div>
+      <MessageForm name={""} email={""} subject={""} message={""} />
     </div>
   );
 }

@@ -13,7 +13,7 @@ function Experience({}: Props) {
       className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row
       max-w-full justify-evenly rounded-lg px-10 xl:px-32 mx-auto items-center"
     >
-      <h1 className="absolute top-32 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h1 className="absolute top-32 uppercase tracking-[20px] text-gray-300 text-2xl">
         Experiência
       </h1>
 

@@ -1,8 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import React from "react";
 
-import Links from "../helper/Links";
+import Links from "./Links";
+import SocialIcons from "./SocialIcons";
 
 type Props = {};
 
@@ -14,7 +15,7 @@ export default function Header({}: Props) {
       }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.25 }}
-      className="flex fixed justify-around p-2 w-screen z-30 bg-[#1f1f1ffa] "
+      className="flex fixed justify-around p-2 w-screen z-40 snap-center text-white bg-[rgb(22,22,22)]"
     >
       <Link href="#hero" className="flex justify-evenly items-center">
         <span className="headerBtn text-lg">Pedro Felippe</span>

@@ -3,25 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-  @font-face {
-    font-family: "Cal Sans";
-    src: url("../public/fonts/CalSans-SemiBold.woff2") format("woff2"),
-      url("../public/fonts/CalSans-SemiBold.woff2") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
 }
 
 @layer components {
   .heroBtn {
-    @apply p-4  text-lg w-[150px]
+    @apply px-4 py-3 mx-2 text-base
+    rounded-lg 
     transition duration-300
    bg-[rgb(26,26,26)]
    hover:bg-gray-900
     text-white
-    border rounded-[30px]
+    
     flex items-center justify-center;
+  }
+
+  .contactInput {
+    @apply outline-none bg-gray-500/10 rounded-sm px-6 py-4 border-[#242424]
+    text-gray-300 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40;
   }
 }
 

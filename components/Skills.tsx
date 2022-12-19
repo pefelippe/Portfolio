@@ -22,7 +22,7 @@ function Skills({}: Props) {
         Habilidades
       </h3>
       <div className="overflow-auto">
-        <div className="grid grid-cols-4 gap-5 overflow-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-6 gap-5 ">
           <Skill />
           <Skill />
           <Skill />

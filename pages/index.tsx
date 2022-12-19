@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
         <About />
       </section>
 
+      <section id="skills" className="snap-center">
+        <Skills />
+      </section>
       <section id="experience" className="snap-center">
         <Experience />
       </section>

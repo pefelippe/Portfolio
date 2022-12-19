@@ -28,12 +28,22 @@
     @apply bg-[#fff] text-[#000];
   }
 
+  .logoBtn {
+    @apply font-semibold
+    py-5
+    text-xl
+
+    transition-all
+    hover:text-white;
+  }
+
   .headerBtn {
     @apply link-underline link-underline-black 
-    px-4 py-3 mx-2
-    text-base
-    rounded-lg
-    tracking-widest transition-all
+    font-semibold
+    py-5 mx-14
+    text-xl
+
+    transition-all
     hover:text-white;
   }
 

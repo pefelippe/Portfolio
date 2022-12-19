@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-
-import Links from "./Links";
-import SocialIcons from "./SocialIcons";
+import { FaFileDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 type Props = {};
 
@@ -15,14 +13,30 @@ export default function Header({}: Props) {
       }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.25 }}
-      className="flex fixed justify-around p-2 w-screen z-40 snap-center text-white bg-[rgb(22,22,22)]"
+      className=" fixed p-2 w-screen z-40 snap-center text-white bg-[#141414]"
     >
-      <Link href="#hero" className="flex justify-evenly items-center">
-        <span className="logoBtn text-lg">Pedro Felippe</span>
-      </Link>
+      <nav className="flex justify-around">
+        <Link href="#hero" className="flex items-center">
+          <span className="logoBtn text-xl">pedrofelippe_</span>
+        </Link>
 
-      <nav className="flex justify-evenly items-center max-[673px]:hidden">
-        <Links />
+        <div className="flex items-center max-[673px]:hidden">
+          <Link className="headerBtn" href="#about">
+            sobre
+          </Link>
+          <Link className="headerBtn" href="#about">
+            skills
+          </Link>
+          <Link className="headerBtn" href="#experience">
+            experiência
+          </Link>
+          <Link className="headerBtn" href="#projects">
+            projetos
+          </Link>
+          <Link className="headerBtn" href="#contact">
+            contato
+          </Link>
+        </div>
       </nav>
     </motion.header>
   );

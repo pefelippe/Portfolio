@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import ExperienceCard from "./atoms/ExperienceCard";
+import ExperienceCard from "../components/ExperienceCard";
 
 type Props = {};
 

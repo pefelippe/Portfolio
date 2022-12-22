@@ -1,11 +1,11 @@
 import React from "react";
 
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Experience from "../components/Experience";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
+import About from "../src/content/About";
+import Contact from "../src/content/Contact";
+import Experience from "../src/content/Experience";
+import Hero from "../src/content/Hero";
+import Projects from "../src/content/Projects";
+import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
@@ -14,20 +14,21 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about" className="snap-center ">
         <About />
       </section>
 
-      <section id="skills" className="snap-center">
+      <section id="skills" className="snap-center ">
         <Skills />
       </section>
-      <section id="experience" className="snap-center">
+
+      <section id="experience" className="snap-center ">
         <Experience />
       </section>
 
-      <section id="projects" className="snap-center">
+      {/* <section id="projects" className="snap-center white-component">
         <Projects />
-      </section>
+      </section> */}
 
       <section id="contact" className="snap-center ">
         <Contact />

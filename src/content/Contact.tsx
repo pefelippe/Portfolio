@@ -1,14 +1,12 @@
-import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
-import MessageForm from "./atoms/MessageForm";
+import MessageForm from "../components/MessageForm";
 
 type IProps = {};
 
 function Contact({}: IProps) {
   return (
-    <div className="component-base xl:flex-row xl:justify-around m-5 xl:mx-auto">
+    <div className="component-base xl:flex-row xl:justify-around m-5 xl:mx-auto space-y-10">
       <h3 className="absolute top-32 uppercase tracking-[20px] text-gray-300 text-2xl ">
         Contato
       </h3>

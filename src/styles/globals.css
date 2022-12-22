@@ -6,20 +6,9 @@
 }
 
 @layer components {
-  .heroBtn {
-    @apply px-4 py-3 mx-2 text-base
-    rounded-lg 
-    transition duration-300
-   bg-[rgb(26,26,26)]
-   hover:bg-gray-900
-    text-white
-    
-    flex items-center justify-center;
-  }
-
   .contactInput {
     @apply outline-none bg-gray-500/10 rounded-sm px-6 py-4 border-[#242424]
-    text-gray-300 placeholder-gray-500 transition-all focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40;
+    text-[#fff] placeholder-gray-500 transition-all focus:placeholder-[#F7AB0A]/40 focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40;
   }
 }
 
@@ -30,19 +19,21 @@
 
   .logoBtn {
     @apply font-semibold
-    py-5
+   
     text-xl
-
+    customUnderline
     transition-all
     hover:text-white;
   }
 
+  .customUnderline {
+    @apply link-underline link-underline-black transition-all  py-2;
+  }
   .headerBtn {
-    @apply link-underline link-underline-black 
-    font-semibold
-    py-5 mx-14
-    text-xl
-
+    @apply font-semibold
+    mx-10
+    text-base
+    customUnderline
     transition-all
     hover:text-white;
   }

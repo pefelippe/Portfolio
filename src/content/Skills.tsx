@@ -1,5 +1,5 @@
 import React from "react";
-import Skill from "./atoms/Skill";
+import Skill from "../components/Skill";
 import { motion } from "framer-motion";
 
 type Props = {};

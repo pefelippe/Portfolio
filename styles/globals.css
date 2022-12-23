@@ -19,11 +19,8 @@
 
   .logoBtn {
     @apply font-semibold
-   
-    text-xl
-    customUnderline
-    transition-all
-    hover:text-white;
+    text-[#111]
+    text-2xl;
   }
 
   .customUnderline {
@@ -31,11 +28,13 @@
   }
   .headerBtn {
     @apply font-semibold
+    text-[#111]
     mx-10
-    text-base
+    text-xl
+    hover:text-[#F7AB0A]
     customUnderline
-    transition-all
-    hover:text-white;
+    max-md:hidden
+    transition-all;
   }
 
   .socialMediaIcon {

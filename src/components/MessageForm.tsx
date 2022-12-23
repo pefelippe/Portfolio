@@ -19,7 +19,7 @@ export default function MessageForm({}: Inputs) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col space-y-5 w-fit "
+      className="flex flex-col space-y-5 w-fit"
     >
       <div className="flex space-x-2">
         <input

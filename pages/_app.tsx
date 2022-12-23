@@ -8,8 +8,9 @@ import Header from "../src/components/Header";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className="bg-[#1c1c1c] text-white h-screen snap-y snap-mandatory z-0 
-    overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scroll-smooth "
+      className=" bg-[#202020] text-[#FFFFFFDE] h-screen snap-y snap-mandatory z-0 
+    overflow-x-hidden overflow-y-scroll 
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scroll-smooth  "
     >
       <Header />
       <Head>
@@ -17,7 +18,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Portfolio" />
       </Head>
       <Component {...pageProps} />
-
       <Footer />
     </div>
   );

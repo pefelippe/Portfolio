@@ -12,10 +12,12 @@ function Contact({}: IProps) {
       </h3>
 
       <div className="space-y-5">
-        <span className="text-3xl font-semibold decoration-[#F7AB0A]/50 underline">
+        <span className="text-3xl text-[#fff] font-semibold decoration-[#F7AB0A]/50 underline">
           Envie uma Mensagem!
         </span>
-        <p className="text-xl">Pronto para começar uma parceria?</p>
+        <p className="text-xl text-[#EBEBEB99]">
+          Pronto para começar uma parceria?
+        </p>
       </div>
 
       <MessageForm name={""} email={""} subject={""} message={""} />

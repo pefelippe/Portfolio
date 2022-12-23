@@ -26,7 +26,7 @@ export default function Home() {
         <Experience />
       </section>
 
-      {/* <section id="projects" className="snap-center white-component">
+      {/* <section id="projects" className="snap-center">
         <Projects />
       </section> */}
 

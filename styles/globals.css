@@ -8,7 +8,7 @@
 @layer components {
   .contactInput {
     @apply outline-none bg-gray-500/10 rounded-sm px-6 py-4 border-[#242424]
-    text-[#fff] placeholder-gray-500 transition-all focus:placeholder-[#F7AB0A]/40 focus:border-[#F7AB0A]/40 focus:text-[#F7AB0A]/40;
+    text-[#fff] placeholder-gray-500 transition-all;
   }
 }
 
@@ -19,17 +19,20 @@
 
   .logoBtn {
     @apply font-semibold
-    text-[#111]
-    text-2xl;
+    text-2xl
+    p-3
+    rounded-lg
+    transition-all
+    ease-in;
   }
 
   .customUnderline {
     @apply link-underline link-underline-black transition-all  py-2;
   }
   .headerBtn {
-    @apply font-semibold
+    @apply font-medium
     text-[#111]
-    mx-10
+    mx-10 py-4
     text-xl
     hover:text-[#F7AB0A]
     customUnderline

@@ -19,7 +19,7 @@ export default function MessageForm({}: Inputs) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col space-y-5 w-fit"
+      className="flex flex-col space-y-5 w-fit "
     >
       <div className="flex space-x-2">
         <input
@@ -29,12 +29,18 @@ export default function MessageForm({}: Inputs) {
           type="text"
         />
         <input
-          {...register("email")}
-          placeholder="Email"
+          {...register("name")}
+          placeholder="Sobrenome"
           className="contactInput"
-          type="email"
+          type="text"
         />
       </div>
+      <input
+        {...register("email")}
+        placeholder="Email"
+        className="contactInput"
+        type="email"
+      />
       <input
         {...register("subject")}
         placeholder="Assunto"

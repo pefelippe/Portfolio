@@ -45,8 +45,8 @@
   }
 
   .component-base {
-    @apply h-screen flex relative overflow-hidden flex-col text-left 
-    max-w-7xl justify-center mx-auto items-center;
+    @apply flex relative overflow-hidden flex-col text-left 
+    justify-center mx-auto items-center;
   }
 
   .component-title {

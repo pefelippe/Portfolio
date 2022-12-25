@@ -10,14 +10,13 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen flex relative overflow-hidden flex-col text-left md:flex-row
-      max-w-full justify-evenly rounded-lg px-10 xl:px-32 mx-auto items-center"
+      className="h-fit flex justify-center items-center flex-col relative overflow-hidden  text-left 
+      max-w-full rounded-lg px-10 xl:px-40 mx-auto py-20 "
     >
-      <h1 className="absolute top-32 uppercase tracking-[20px] text-gray-300 text-2xl">
-        Experiência
-      </h1>
-
-      <div className="w-full flex space-x-8 overflow-x-scroll p-8 snap-x snap-mandatory text-white mt-40 ">
+      <h4 className="text-4xl font-semibold">
+        E qual minha experiência profissional?
+      </h4>
+      <div className="w-full flex space-x-8 overflow-x-scroll p-8 snap-x snap-mandatory text-white">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />

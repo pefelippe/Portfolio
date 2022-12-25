@@ -7,15 +7,11 @@ type Props = {};
 function About({}: Props) {
   return (
     <div
-      className="flex flex-col relative h-screen 
-      justify-center mx-auto items-center text-center 
-      xl:text-left  "
+      className="flex flex-col relative h-max
+       mx-auto items-center text-center bg-[#fff]  text-[#000] justify-around 
+      xl:text-left "
     >
-      <h3 className="relative uppercase tracking-[20px] text-gray-300 text-2xl">
-        Sobre
-      </h3>
-
-      <div className="flex flex-col xl:flex-row justify-center items-center space-y-5 mx-10 xl:space-x-20 max-xl:max-w-xl xl:max-w-7xl ">
+      <div className="flex flex-col xl:flex-row justify-center items-center space-y-5 mx-10 xl:space-x-20 max-xl:max-w-xl xl:max-w-7xl py-10">
         <motion.img
           initial={{ y: -150, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}

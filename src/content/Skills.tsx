@@ -16,12 +16,10 @@ function Skills({}: Props) {
       transition={{
         duration: 1.25,
       }}
-      className=" h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10
-      min-h-screen justify-center xl:space-y-0 mx-auto items-center"
+      className="h-max flex relative flex-col text-center md:text-left xl:flex-row xl:px-10
+     justify-around max-w-full xl:space-y-0 mx-auto items-center py-20 "
     >
-      <h3 className="absolute top-28 xl:top-36 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Habilidades
-      </h3>
+      <h4 className="text-4xl font-semibold">Quais as minhas skills?</h4>
       <div className="overflow-auto">
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-5 ">
           <Skill />

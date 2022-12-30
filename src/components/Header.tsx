@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
 type Props = {};
 
 export default function Header({}: Props) {
@@ -9,42 +10,30 @@ export default function Header({}: Props) {
     <motion.header
       initial={{
         opacity: 0,
+        x: -50,
       }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.25 }}
-      className="absolute top-0  p-5 w-screen z-40 snap-center justify-start 
-       text-[#fff]  "
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.75 }}
+      className="absolute top-0  p-5 w-screen z-40 snap-center justify-start bg-[#121212] bg-opacity-80 text-[#FFFFFFDE]"
     >
       <nav className="mx-auto flex items-center justify-between max-w-7xl ">
-        <Link href="#hero">
-          <span className="logoBtn text-2 xl flex hover:text-[#F7AB0A]">
-            <p className="animate-pulse">_</p>pedrofelippe
-          </span>
-        </Link>
-
         <div>
-          <Link className="headerBtn hover:text-[#F7AB0A]" href="#about">
-            Quem sou eu
-          </Link>
-          <Link className="headerBtn hover:text-[#F7AB0A]" href="#skills">
-            Skills
-          </Link>
-          <Link className="headerBtn hover:text-[#F7AB0A]" href="#experience">
-            Experiência
-          </Link>
-          <Link className="headerBtn hover:text-[#F7AB0A]" href="#contact">
-            Contato
+          <Link href="#hero">
+            <span className="logoBtn flex hover:text-[#a7a7a7] ">
+              <p className="animate-pulse">_</p>pedrofelippe
+            </span>
           </Link>
         </div>
+
         <nav className="flex justify-center items-center gap-10 ">
           <a href="#" className="">
-            <FaGithub className="h-6 w-6  hover:text-[#F7AB0A]" />
+            <FaGithub className="socialMediaIcon" />
           </a>
           <a href="#" className="">
-            <FaLinkedinIn className="h-6 w-6  hover:text-[#F7AB0A]" />
+            <FaLinkedinIn className="socialMediaIcon" />
           </a>
           <a href="#" className="">
-            <FaInstagram className="h-6 w-6  hover:text-[#F7AB0A]" />
+            <FaInstagram className="socialMediaIcon" />
           </a>
         </nav>
       </nav>

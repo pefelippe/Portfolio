@@ -41,7 +41,7 @@
   }
 
   .socialMediaIcon {
-    @apply hover:bg-gray-800  cursor-pointer rounded-lg;
+    @apply h-6 w-6 text-[#fff] hover:text-[#a7a7a7] transition-all ease-out;
   }
 
   .component-base {

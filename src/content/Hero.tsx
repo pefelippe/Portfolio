@@ -1,30 +1,33 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 
-import Header from "../components/Header";
+import ImageAvatar from "../../public/assets/avatar-pdr.png";
 
 export default function Hero() {
   return (
-    <>
-      <div className="component-base h-[75vh] flex-row  items-center text-center min-h-full">
-        <Header />
-        <motion.div
-          initial={{ opacity: 0, y: 150 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.5 }}
-          className="flex space-y-4 justify-center sm:justify-start max-w-7xl "
-        >
-          <div className=" space-y-6 text-center gap-10 px-40 ">
-            <h1 className=" text-5xl font-bold md:text-8xl">Pedro Felippe</h1>
+    <div className="snap-start component-base min-h-fit h-fit text-center justify-center align-center max-w-7xl space-y-4 py-28">
+      <Image
+        alt="avatar-pefelippe"
+        src={ImageAvatar}
+        height={300}
+        width={300}
+        className="rounded-full border-8 border-[#202020] opacity-90 hover:opacity-100 transition-all"
+      />
+      <motion.div
+        initial={{ opacity: 0, y: 150 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className="relative flex flex-col place-content-center space-y-4 "
+      >
+        <h1 className="text-6xl lg:text-7xl">Pedro Felippe</h1>
 
-            <p className="text-3xl tracking-[5px]">Web Developer</p>
+        <p className="text-2xl lg:text-3xl tracking-[5px]">Web Developer</p>
 
-            <button className="font-medium text-xl p-5 rounded-md bg-[#F7AB0A] hover:bg-[#F7AB0A]/90 ">
-              <a href="#about">Quem sou eu?</a>
-            </button>
-          </div>
-        </motion.div>
-      </div>
-    </>
+        <button className="font-bold mx-auto w-[200px] text-lg p-5 rounded-md text-[#fff] bg-[#ff4c60]/80 hover:bg-[#ff4c60] hover: transition-all ">
+          <a href="#about">¿quem sou eu?</a>
+        </button>
+      </motion.div>
+    </div>
   );
 }

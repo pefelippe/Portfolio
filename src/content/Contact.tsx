@@ -7,25 +7,12 @@ type IProps = {};
 
 function Contact({}: IProps) {
   return (
-    <div className="component-base h-fit xl:flex-row xl:justify-evenly xl:mx-auto space-y-10 py-32 m-5 ">
-      <div className="space-y-5  justify-center ">
-        <span className="text-3xl text-[#fff] font-semibold decoration-[#F7AB0A]/50 underline">
-          Envie uma Mensagem!
-        </span>
-        <p className="text-xl text-[#EBEBEB99]">
+    <div className="component-base xl:flex-row h-fit max-w-7xl xl:justify-between xl:mx-auto py-32 mx-5 space-y-5 ">
+      <div className="space-y-5  justify-center text-center">
+        <span className="text-3xl  font-semibold ">
           Pronto para começar uma parceria?
-        </p>
-        <nav className="flex justify-center  items-center gap-10 ">
-          <a href="#" className="">
-            <FaGithub className="h-6 w-6  hover:text-[#F7AB0A]" />
-          </a>
-          <a href="#" className="">
-            <FaLinkedinIn className="h-6 w-6  hover:text-[#F7AB0A]" />
-          </a>
-          <a href="#" className="">
-            <FaInstagram className="h-6 w-6  hover:text-[#F7AB0A]" />
-          </a>
-        </nav>
+        </span>
+        <p className="text-xl ">Envie uma Mensagem!</p>
       </div>
 
       <MessageForm name={""} email={""} subject={""} message={""} />

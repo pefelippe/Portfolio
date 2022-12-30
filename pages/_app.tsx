@@ -8,7 +8,7 @@ import Header from "../src/components/Header";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className=" bg-[#121212] text-[#FFFFFFDE] h-screen snap-y snap-mandatory z-0 
+      className=" h-screen snap-y snap-mandatory z-0 
     overflow-x-hidden overflow-y-scroll 
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scroll-smooth  "
     >
@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Pedro Felippe | Web Developer</title>
         <meta name="description" content="Portfolio" />
       </Head>
-
+      <Header />
       <Component {...pageProps} />
       <Footer />
     </div>

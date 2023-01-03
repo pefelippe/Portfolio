@@ -24,6 +24,7 @@
     @apply font-semibold
     text-2xl
     p-3
+    flex hover:text-[#a7a7a7]
     rounded-lg
     transition-all
     ease-in;
@@ -44,7 +45,7 @@
   }
 
   .socialMediaIcon {
-    @apply h-5 w-5  text-[#fff] hover:text-[#424242];
+    @apply h-6 w-6 text-[#fff];
   }
 
   .component-base {

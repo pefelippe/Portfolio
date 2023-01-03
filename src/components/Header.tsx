@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+
 import Links from "./Links";
 import SocialIcons from "./SocialIcons";
 
@@ -20,15 +21,13 @@ export default function Header({}: Props) {
       <nav className="mx-auto flex items-center justify-between max-w-7xl ">
         <div>
           <Link href="#hero">
-            <span className="logoBtn flex hover:text-[#a7a7a7] ">
+            <span className="logoBtn">
               <p className="animate-pulse">_</p>pedrofelippe
             </span>
           </Link>
         </div>
 
         <Links />
-
-        <SocialIcons />
       </nav>
     </motion.header>
   );

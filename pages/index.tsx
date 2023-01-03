@@ -14,11 +14,11 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about">
+      <section id="about" className="">
         <About />
       </section>
 
-      <section id="skills" className=" ">
+      <section id="skills" className="">
         <Skills />
       </section>
 

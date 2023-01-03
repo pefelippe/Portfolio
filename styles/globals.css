@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  ::selection {
+    background: #f7ab0a;
+  }
 }
 
 @layer components {
   .contactInput {
-    @apply outline-none bg-gray-500/10 rounded-sm px-6 py-4 border-[#242424]
+    @apply outline-none bg-gray-500/10 rounded-sm px-8 py-4 border-[#242424] w-[500px]  max-w-full
     text-[#fff] placeholder-gray-500 transition-all;
   }
 }
@@ -32,7 +35,7 @@
   .headerBtn {
     @apply font-medium
     text-[#111]
-    mx-10 py-4
+     py-4
     text-xl
     hover:text-[#F7AB0A]
     customUnderline
@@ -41,7 +44,7 @@
   }
 
   .socialMediaIcon {
-    @apply h-6 w-6 text-[#fff] hover:text-[#a7a7a7] transition-all ease-out;
+    @apply h-5 w-5  text-[#fff]  transition-all;
   }
 
   .component-base {

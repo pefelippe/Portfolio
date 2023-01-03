@@ -11,10 +11,10 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-fit flex items-center flex-col relative overflow-hidden max-w-7xl rounded-lg  py-10 "
+      className="h-fit flex items-center flex-col relative overflow-hidden  rounded-lg  py-10  lg:mx-20 mx-5"
     >
-      <h4 className="text-4xl font-semibold">Experiência</h4>
-      <div className="w-full flex space-x-8 overflow-x-scroll snap-x snap-mandatory text-white pt-5 ">
+      <h4 className="text-4xl font-semibold">E qual minha Experiência?</h4>
+      <div className="w-full flex space-x-8 overflow-x-scroll snap-x snap-mandatory text-white pt-5 max-w-7xl">
         <ExperienceCard />
         <ExperienceCard />
         <ExperienceCard />

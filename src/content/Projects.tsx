@@ -7,8 +7,8 @@ function Projects({}: Props) {
   const projects = [1, 2, 3];
 
   return (
-    <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0">
-      <h3 className="absolute top-28 xl:top-36 uppercase tracking-[20px] text-gray-300 text-2xl scrollbar-hide">
+    <div className="relative flex overflow-hidden flex-col text-left md:flex-row  max-w-7xl justify-evenly mx-auto items-center z-0">
+      <h3 className="absolute top-28 xl:top-36 uppercase tracking-[20px] text-gray-300 text-2xl ">
         Projetos
       </h3>
 

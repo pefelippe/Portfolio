@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import Links from "./Links";
+import SocialIcons from "./SocialIcons";
 
 type Props = {};
 
@@ -10,11 +11,11 @@ export default function Header({}: Props) {
     <motion.header
       initial={{
         opacity: 0,
-        x: -50,
+        y: -50,
       }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.75 }}
-      className="absolute top-0  p-5 w-screen z-40 snap-center justify-start bg-[#121212] bg-opacity-80 text-[#FFFFFFDE]"
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+      className="absolute top-0 p-5 w-screen z-40 snap-center justify-start bg-[#121212]  text-[#FFFFFFDE]"
     >
       <nav className="mx-auto flex items-center justify-between max-w-7xl ">
         <div>
@@ -25,17 +26,9 @@ export default function Header({}: Props) {
           </Link>
         </div>
 
-        <nav className="flex justify-center items-center gap-10 ">
-          <a href="#" className="">
-            <FaGithub className="socialMediaIcon" />
-          </a>
-          <a href="#" className="">
-            <FaLinkedinIn className="socialMediaIcon" />
-          </a>
-          <a href="#" className="">
-            <FaInstagram className="socialMediaIcon" />
-          </a>
-        </nav>
+        <Links />
+
+        <SocialIcons />
       </nav>
     </motion.header>
   );

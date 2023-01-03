@@ -44,7 +44,7 @@
   }
 
   .socialMediaIcon {
-    @apply h-5 w-5  text-[#fff]  transition-all;
+    @apply h-5 w-5  text-[#fff] hover:text-[#424242];
   }
 
   .component-base {

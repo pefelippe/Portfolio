@@ -19,7 +19,7 @@ function Footer({}: Props) {
 
           <Links />
         </nav>
-        <div className="flex  justify-between  snap-center py-8">
+        <div className="flex  justify-between items-center snap-center py-8">
           <span className="flex text-sm xl:text-base">
             Copyright © 2022 Pedro Felippe.
           </span>

@@ -15,7 +15,7 @@ export default function Header({}: Props) {
       }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="absolute top-0 p-5 w-screen z-40 snap-center justify-start bg-[#121212]  text-[#FFFFFFDE]"
+      className="absolute top-0 p-3 w-screen z-40 snap-center justify-start bg-[#121212]  text-[#FFFFFFDE]"
     >
       <nav className="mx-auto flex items-center justify-between max-w-7xl ">
         <div>

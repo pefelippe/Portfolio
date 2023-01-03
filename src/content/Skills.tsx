@@ -7,7 +7,7 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="h-max flex relative flex-col py-10 md:text-left items-center overflow-hidden bg-[#131313] text-[#FFFFFFDE] max-w-7xl mx-auto rounded-lg">
+    <div className="h-max flex relative flex-col py-10 md:text-left items-center overflow-hidden max-w-7xl mx-auto rounded-lg">
       <h4 className="text-4xl font-semibold mx-5">
         E quais as minhas{" "}
         <span className="underline decoration-[#F7AB0A]/50 ">skills</span>?

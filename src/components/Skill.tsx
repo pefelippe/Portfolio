@@ -10,7 +10,7 @@ function Skill({ directionLeft }: Image) {
     <div className="group relative flex cursor-pointer">
       <motion.img
         src="https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-vector-picture-icon-png-image_695350.jpg"
-        className="rounded-full border border-gray-500 object-cover w-24 h-24 xl:w-32 xl:h-32 filter group-hover:grayscale"
+        className="rounded-full border border-gray-500 object-cover w-24 h-24 xl:w-28 xl:h-28 filter group-hover:grayscale"
       />
     </div>
   );

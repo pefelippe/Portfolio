@@ -1,13 +1,25 @@
+import Link from "next/link";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
 type Props = {};
 
 function Footer({}: Props) {
+  const year = new Date().getFullYear();
   return (
-    <footer className="bg-[#080808] text-[#FFFFFFDE] px-10">
-      <div className="max-w-7xl mx-auto  divide-y-4 ">
-        <div className="flex  justify-center items-center snap-center py-8">
+    <footer className="bg-[#151515] text-[#FFFFFFDE] px-8 py-4">
+      <div className="max-w-7xl mx-auto ">
+        <div className="flex justify-between py-4">
           <span className="flex text-sm xl:text-base">
-            Copyright © 2022 Pedro Felippe.
+            Copyright © {year} Pedro Felippe.
           </span>
+          <nav className="flex justify-center items-center gap-5 ">
+            <a href="#">
+              <FaGithub className="socialMediaIcon" />
+            </a>
+            <a href="#">
+              <FaLinkedinIn className="socialMediaIcon" />
+            </a>
+          </nav>
         </div>
       </div>
     </footer>

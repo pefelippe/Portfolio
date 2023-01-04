@@ -7,23 +7,27 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="h-max flex relative flex-col py-10 md:text-left items-center overflow-hidden max-w-7xl mx-auto rounded-lg">
-      <h4 className="text-4xl font-semibold mx-5">
-        E quais as minhas{" "}
-        <span className="underline decoration-[#F7AB0A]/50 ">skills</span>?
-      </h4>
-
+    <div className="h-max flex relative flex-col pb-10 md:text-left items-center overflow-hidden max-w-full mx-auto rounded-lg">
       <motion.div
         initial={{
           opacity: 0,
+          x: -200,
         }}
-        whileInView={{ opacity: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{
           duration: 1.25,
         }}
         className="overflow-hidden text-[#FFFFFFDE] p-5 rounded-xl   "
       >
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-5 ">
+        <div className="grid grid-cols-2 sm:grid-cols-10 gap-10 ">
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
           <Skill />
           <Skill />
           <Skill />

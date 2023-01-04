@@ -9,7 +9,7 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
       <section id="hero" className="bg-[#121212] text-[#FFFFFFDE]">
         <Hero />
       </section>
@@ -22,7 +22,7 @@ export default function Home() {
         <Skills />
       </section>
 
-      <section id="experience">
+      <section id="experience" className="bg-[#121212]">
         <Experience />
       </section>
 
@@ -30,9 +30,9 @@ export default function Home() {
         <Projects />
       </section> */}
 
-      <section id="contact" className=" bg-[#121212] text-[#FFFFFFDE]">
+      <section id="contact" className="">
         <Contact />
       </section>
-    </>
+    </div>
   );
 }

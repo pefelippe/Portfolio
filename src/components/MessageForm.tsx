@@ -44,7 +44,7 @@ export default function MessageForm({}: Inputs) {
         placeholder="Mensagem"
         className="contactInput"
       />
-      <button className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg hover:bg-[#F7AB0A]/90 text-[#1c1c1c] ">
+      <button className="bg-[#F7AB0A] rounded-lg py-5 px-10 hover:underline  text-black font-bold text-xl hover:bg-[#F7AB0A]/90 text-[#1c1c1c] transition-all">
         Enviar Mensagem
       </button>
     </form>

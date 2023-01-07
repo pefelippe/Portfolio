@@ -18,10 +18,6 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="skills" className="">
-        <Skills />
-      </section>
-
       <section id="experience" className="bg-[#121212]">
         <Experience />
       </section>

@@ -1,16 +1,21 @@
+import { motion } from "framer-motion";
 import React from "react";
+
+import Skill from "../components/Skill";
 
 type Props = {};
 
 function About({}: Props) {
   return (
     <div
-      className="flex flex-col  lg:flex-row  justify-center items-center text-center  py-20 mx-auto
+      className="flex flex-col  lg:flex-row  justify-between items-center text-left  py-20 max-lg-px-5 mx-5 xl:mx-auto
        max-w-7xl  "
     >
-      <div className="flex flex-col space-y-4 justify-center  max-w-2xl  ">
+      <div className="flex flex-col space-y-8 justify-center  max-w-2xl">
         <h4 className="text-4xl font-semibold ">
-          <span className="underline bg-[#F7AB0A] ">Quem sou eu</span>
+          <span className="underline bg-[#000] text-[#fff] p-2 ">
+            Quem sou eu
+          </span>
         </h4>
 
         <p className="text-base md:text-xl">
@@ -25,13 +30,32 @@ function About({}: Props) {
           <br />
         </p>
       </div>
-      {/* <Image
-        alt="avatar-pefelippe"
-        src={ImageAvatar}
-        height={350}
-        width={350}
-        className="rounded-lg h-[250px] w-[250px] lg:h-[350px] lg:w-[350px]"
-      /> */}
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: 200,
+        }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="overflow-hidden text-[#FFFFFFDE] p-5 rounded-xl   "
+      >
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-5 ">
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+        </div>
+      </motion.div>
     </div>
   );
 }

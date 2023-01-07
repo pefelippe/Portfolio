@@ -1,9 +1,23 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+
 import ImageAvatar from "../../public/assets/avatar-pdr.png";
+import AnimatedText from "../components/AnimatedText";
 
 export default function Hero() {
+  const heroText = [
+    { type: "heading1", text: "Olá, me chamo" },
+    {
+      type: "heading2",
+      text: "Pedro Felippe",
+    },
+    {
+      type: "heading3",
+      text: "Sou um Web Developer.",
+    },
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -21,6 +35,7 @@ export default function Hero() {
       <div className="relative flex flex-col  space-y-8">
         <div className="space-y-4">
           <h2 className="text-3xl lg:text-4xl">Olá, me chamo</h2>
+
           <h1 className="text-6xl lg:text-8xl font-semibold">Pedro Felippe</h1>
           <p className="text-4xl lg:text-6xl ">Sou um Web Developer.</p>
         </div>

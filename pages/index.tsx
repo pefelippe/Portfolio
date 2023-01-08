@@ -18,7 +18,7 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="experience" className="bg-[#121212]">
+      <section id="experience" className="bg-[#f8f8f8]">
         <Experience />
       </section>
 

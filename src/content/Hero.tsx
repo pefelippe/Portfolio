@@ -41,14 +41,14 @@ export default function Hero() {
         </div>
 
         <div className="flex gap-4">
-          <button className=" w-fit p-4 px-8  bg-[#5865f2] hover:bg-[#5865f2]/70 transition-all rounded-lg font-semibold text-xl mx-auto md:mx-0">
+          <button className=" w-fit p-4 px-8  bg-[#5865f2] hover:bg-[#5865f2]/70 transition-all rounded-xl font-semibold text-xl mx-auto md:mx-0">
             <a href="#about">Quem sou eu?</a>
           </button>
 
           <button
             className=" w-fit p-4 px-4 border-2
             hover:border-[#5865f2]/70 hover:text-[#5865f2]/70 transition-all 
-            rounded-lg font-semibold text-xl mx-auto md:mx-0"
+            rounded-xl font-semibold text-xl mx-auto md:mx-0"
           >
             <a href="#about">Entre em contato</a>
           </button>

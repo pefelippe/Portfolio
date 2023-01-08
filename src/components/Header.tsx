@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 type Props = {};
 
@@ -22,15 +21,6 @@ export default function Header({}: Props) {
             <p className="animate-pulse">_</p>pedrofelippe
           </span>
         </Link>
-
-        <nav className="flex justify-center items-center gap-5 ">
-          <a href="#">
-            <FaGithub className="socialMediaIcon" />
-          </a>
-          <a href="#">
-            <FaLinkedinIn className="socialMediaIcon" />
-          </a>
-        </nav>
       </motion.nav>
     </header>
   );

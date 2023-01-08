@@ -10,7 +10,7 @@
 
 @layer components {
   .contactInput {
-    @apply outline-none bg-gray-500/10 rounded-sm px-8 py-4 border-[#242424] w-[500px]  max-w-full
+    @apply outline-none bg-gray-500/10 rounded-sm px-8 py-4 border-[#242424] w-auto  max-w-full
     text-[#fff] placeholder-gray-500 transition-all;
   }
 }
@@ -45,7 +45,7 @@
   }
 
   .socialMediaIcon {
-    @apply h-6 w-6 text-[#fff] hover:text-[#a7a7a7];
+    @apply h-6 w-6 text-[#000];
   }
 
   .component-base {

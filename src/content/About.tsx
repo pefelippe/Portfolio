@@ -27,7 +27,7 @@ function About({}: Props) {
           participarem reuniões em inglês com membros de vários países.
           <br />
         </p>
-        <nav className="flex justify-start items-center gap-5 max-lg:justify-center ">
+        <nav className="flex justify-start items-start  gap-5  pb-10">
           <a
             href="https://github.com/pefelippe"
             className="border-2 border-[#fff] hover:border-[#222] p-2 rounded-xl transition-all"
@@ -58,9 +58,12 @@ function About({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="overflow-hidden text-[#FFFFFFDE] p-5 rounded-xl   "
+        className="flex flex-col overflow-hidden text-[#FFFFFFDE] p-5 rounded-xl space-y-8  justify-center "
       >
-        <div className="grid grid-cols-6  xl:grid-cols-4 gap-5 max-lg:pt-5">
+        <h4 className="text-4xl font-semibold mx-auto">
+          <span className="underline bg-[#000] text-[#fff] p-2 ">Skills</span>
+        </h4>
+        <div className="grid grid-cols-4 md:grid-cols-6  xl:grid-cols-4 gap-5 max-lg:pt-5">
           <Skill />
           <Skill />
           <Skill />

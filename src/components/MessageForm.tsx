@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { SubmitHandler } from "react-hook-form/dist/types";
@@ -44,9 +45,16 @@ export default function MessageForm({}: Inputs) {
         placeholder="Mensagem"
         className="contactInput h-40"
       />
-      <button className="bg-[#F7AB0A] w-auto rounded-lg py-5 px-10 hover:underline  text-black font-bold text-xl hover:bg-[#F7AB0A]/90 text-[#1c1c1c] transition-all">
+      <motion.button
+        whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.1 },
+        }}
+        whileTap={{ scale: 0.9 }}
+        className="bg-[#F7AB0A] w-fit mx-auto rounded-lg py-5 px-10 hover:underline  text-black font-bold text-xl hover:bg-[#F7AB0A]/90 text-[#1c1c1c] transition-all"
+      >
         Enviar Mensagem
-      </button>
+      </motion.button>
     </form>
   );
 }

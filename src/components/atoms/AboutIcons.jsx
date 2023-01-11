@@ -4,26 +4,26 @@ import AnimatedBtn from "../motion/AnimatedBtn";
 
 function AboutIcons() {
   return (
-    <nav className="flex justify-center lg:justify-start items-start gap-5 pt-6">
+    <nav className="flex justify-center lg:justify-start items-start gap-10 ">
       <AnimatedBtn
         href="https://github.com/pefelippe"
-        className=" border-2 border-[#222]   rounded-full transition-all flex gap-2  justify-center items-center p-3 font-semibold"
+        className="flex justify-center items-center"
       >
-        <FaGithub className=" socialMediaIcon  hover:border-[#fff] text-[#fff] " />{" "}
+        <FaGithub className=" socialMediaIcon  text-[#fff] hover:text-[#5865f2]" />{" "}
       </AnimatedBtn>
 
       <AnimatedBtn
         href="https://www.linkedin.com/in/pedro-felippe/"
-        className="border-2 border-[#222]  hover:border-[#fff]  rounded-full transition-all flex gap-2  justify-center items-center p-3 font-semibold"
+        className="flex justify-center items-center"
       >
-        <FaLinkedinIn className="socialMediaIcon text-[#fff] " />
+        <FaLinkedinIn className="socialMediaIcon text-[#fff] hover:text-[#5865f2]" />
       </AnimatedBtn>
 
       <AnimatedBtn
         href="https://drive.google.com/file/d/1myzekVeAuc6z-zFfHRZ9Sy-mKLkQ1oLK/view?usp=sharing"
-        className=" border-2 border-[#222]  hover:border-[#fff]  rounded-full transition-all flex gap-2  justify-center items-center p-3 font-semibold"
+        className="flex justify-center items-center"
       >
-        <FaFileDownload className="socialMediaIcon text-[#fff] " />
+        <FaFileDownload className="socialMediaIcon text-[#fff] hover:text-[#5865f2]" />
       </AnimatedBtn>
     </nav>
   );

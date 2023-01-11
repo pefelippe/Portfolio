@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import AboutIcons from "./atoms/AboutIcons";
 import AnimatedBtn from "./motion/AnimatedBtn";
 
 type Props = {};
@@ -22,6 +23,7 @@ export default function Header({}: Props) {
             pedrofelippe<p className="animate-pulse">_</p>
           </span>
         </Link>
+        <AboutIcons />
       </motion.nav>
     </header>
   );

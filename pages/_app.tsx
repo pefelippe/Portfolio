@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scroll-smooth "
     >
       <Head>
-        <title>Pedro Felippe | Web Developer</title>
+        <title>Pedro Felippe</title>
         <meta name="description" content="Portfolio" />
       </Head>
       <Header />

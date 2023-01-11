@@ -45,7 +45,13 @@
   }
 
   .socialMediaIcon {
-    @apply h-6 w-6 text-[#000];
+    @apply h-6 w-6 text-[#fff];
+  }
+
+  .heroBtn {
+    @apply w-fit p-4 px-4 border-2
+    hover:border-[#5865f2]/70 hover:text-[#5865f2]/70 transition-all hover:underline
+    rounded-xl font-semibold text-xl mx-auto md:mx-0;
   }
 
   .component-base {

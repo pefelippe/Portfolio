@@ -10,7 +10,7 @@ import Skills from "../src/content/Skills";
 export default function Home() {
   return (
     <div className="">
-      <section id="hero" className="bg-[#121212] text-[#FFFFFFDE]">
+      <section id="hero" className="bg-[#121212] text-[#fff]">
         <Hero />
       </section>
 
@@ -18,13 +18,13 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="experience" className="bg-[#f8f8f8]">
+      {/* <section id="skills" className="">
+        <Skills />
+      </section> */}
+
+      <section id="experience" className="bg-[#141414] text-[#FFFFFFDE]">
         <Experience />
       </section>
-
-      {/* <section id="experience" className="snap-center ">
-        <Projects />
-      </section> */}
 
       <section id="contact" className="">
         <Contact />

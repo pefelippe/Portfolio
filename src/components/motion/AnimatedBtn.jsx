@@ -3,16 +3,17 @@ import React from "react";
 
 function AnimatedBtn(props) {
   return (
-    <motion.button
+    <motion.a
       whileHover={{
         scale: 1.1,
         transition: { duration: 0.1 },
       }}
       href={props.href}
+      target="_blank"
       className={props.className}
     >
       {props.children}
-    </motion.button>
+    </motion.a>
   );
 }
 

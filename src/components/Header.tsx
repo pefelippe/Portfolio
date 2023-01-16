@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import AboutIcons from "./atoms/AboutIcons";
-import AnimatedBtn from "./motion/AnimatedBtn";
 
 type Props = {};
 
@@ -19,11 +17,21 @@ export default function Header({}: Props) {
         className="mx-auto flex items-center justify-between max-w-7xl  "
       >
         <Link href="/">
-          <span className="logoBtn">
-            pedrofelippe<p className="animate-pulse">_</p>
-          </span>
+          <motion.img
+            alt="avatar-pefelippe"
+            src="assets/cabeca.png"
+            initial={{
+              x: 0,
+            }}
+            whileHover={{
+              scale: 1.1,
+            }}
+            transition={{
+              ease: "easeInOut",
+            }}
+            className=" rounded-xl h-[50px] w-[50px] scale-75"
+          />
         </Link>
-        <AboutIcons />
       </motion.nav>
     </header>
   );

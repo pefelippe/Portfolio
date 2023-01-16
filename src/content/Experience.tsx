@@ -11,9 +11,9 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-fit  flex items-center flex-col relative overflow-hidden  justify-evenly rounded-lg  lg:mx-20 px-8  pt-10 pb-20"
+      className="h-max  flex items-center flex-col relative overflow-hidden  justify-center rounded-lg  lg:mx-20 px-8 "
     >
-      <h4 className="text-4xl font-semibold ">
+      <h4 className="mt-2 w-full text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl">
         <span className="">Experiência Profissional</span>
       </h4>
 

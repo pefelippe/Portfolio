@@ -51,7 +51,7 @@ export default function MessageForm({}: Inputs) {
           transition: { duration: 0.1 },
         }}
         whileTap={{ scale: 0.9 }}
-        className="bg-[#F7AB0A]/70 w-fit mx-auto rounded-lg py-5 px-10 hover:underline  text-black font-bold text-xl hover:bg-[#F7AB0A]/90 text-[#1c1c1c] transition-all"
+        className="bg-[#F7AB0A]/70 w-[8/10] mx-auto rounded-lg py-5 px-10 hover:underline  text-black font-bold text-xl hover:bg-[#F7AB0A]/90 text-[#1c1c1c] transition-all"
       >
         Enviar Mensagem
       </motion.button>

@@ -19,7 +19,7 @@ function ExperienceCard({
 }: IExperienceCard) {
   return (
     <article
-      className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0  max-w-7xl w-[400px] max-sm:w-full 
+      className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0  max-w-7xl w-[400px] max-lg:w-full 
       snap-center bg-[#292929] p-10 hover:opacity-70 opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden text-center"
     >
       <motion.img

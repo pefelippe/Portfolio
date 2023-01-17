@@ -4,6 +4,9 @@ import React from "react";
 type Props = {};
 
 function ExperienceCard({}: Props) {
+
+  const jobs = []
+
   return (
     <article
       className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0  max-w-7xl  w-[420px] 

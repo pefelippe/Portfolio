@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Hero() {
   return (

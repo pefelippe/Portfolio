@@ -1,18 +1,23 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-function AnimatedBtn(props) {
+interface iBtnProps {
+  href: string;
+  children: JSX.Element;
+}
+
+function AnimatedBtn({ href, children }: iBtnProps) {
   return (
     <motion.a
       whileHover={{
         scale: 1.1,
         transition: { duration: 0.1 },
       }}
-      href={props.href}
+      href={href}
       target="_blank"
-      className={props.className}
+      className="w-fit rounded-xl p-4  bg-[#5865f2] text-lg font-semibold"
     >
-      {props.children}
+      {children}
     </motion.a>
   );
 }

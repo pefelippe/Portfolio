@@ -1,16 +1,26 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-type Props = {};
+type IExperienceCard = {
+  title: string;
+  company: string;
+  dateInit?: string;
+  dateEnd?: string;
+  imgUrl: string;
+  sumarryPoints?: Array<String>;
+};
 
-function ExperienceCard({}: Props) {
-
-  const jobs = []
-
+function ExperienceCard({
+  title,
+  company,
+  imgUrl,
+  dateInit,
+  dateEnd,
+}: IExperienceCard) {
   return (
     <article
-      className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0  max-w-7xl  w-[420px] 
-      snap-center bg-[#292929] p-10 hover:opacity-95 opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden"
+      className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0  max-w-7xl w-[400px] max-sm:w-full 
+      snap-center bg-[#292929] p-10 hover:opacity-70 opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden text-center"
     >
       <motion.img
         initial={{
@@ -21,23 +31,22 @@ function ExperienceCard({}: Props) {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
         className="w-32 h-32 rounded-full  object-cover object-center"
-        src="https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg"
+        src={imgUrl}
         alt="card image"
       />
 
-      <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">Front-End Dev</h4>
-        <p className="font-bold text-2xl mt-1">Instituto Atlântico</p>
-        <div className="flex space-x-2 my-2"></div>
-        <p className="uppercase py-5 text-gray-300">
-          Started Work... Endend:...
+      <div className="space-y-2">
+        <h4 className="text-3xl font-bold ">{title}</h4>
+        <p className=" text-xl ">{company}</p>
+        <p className="uppercase  text-gray-300">
+          {dateInit} - {dateEnd}
         </p>
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        {/* <ul className=" text-left list-disc space-y-2 ml-5 text-lg pt-5">
           <li>Summary points</li>
           <li>Summary points</li>
           <li>Summary points</li>
           <li>Summary points</li>
-        </ul>
+        </ul> */}
       </div>
     </article>
   );

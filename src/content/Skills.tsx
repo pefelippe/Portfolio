@@ -1,6 +1,19 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { SiAmazonaws, SiCss3, SiDocker, SiGit, SiHtml5, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiAmazonaws,
+  SiCss3,
+  SiDocker,
+  SiGit,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 import SkillBox from "../components/SkillBox";
 
@@ -8,13 +21,13 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="xl:hmax flex relative flex-col md:text-left max-xl:w7xl  mx-auto ">
-      <motion.div className="flex flex-col  items-center  overfloxl:whidden  space-y-8  xl:wfull">
-        <h4 className="mt-2 xl:wfull text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl ">
+    <div className=" flex relative flex-col md:text-left max-w-7xl  mx-auto max-sm:px-8">
+      <motion.div className="flex flex-col  items-center  overflow:hidden  space-y-8 w-full">
+        <h4 className="mt-2 xl:w-full text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl ">
           Minhas Skills
         </h4>
 
-        <div className="grid grid-cols-3 md:grid-cols-6  gap-8 p-4 xl:wfull">
+        <div className="grid grid-cols-3 md:grid-cols-6  gap-8 w-full ">
           <SkillBox title="Html">
             <SiHtml5 className=" socialMediaIcon xl:h-20 xl:w-20 text-[#fff]" />
           </SkillBox>

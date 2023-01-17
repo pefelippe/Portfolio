@@ -6,6 +6,45 @@ import ExperienceCard from "../components/ExperienceCard";
 type Props = {};
 
 function Experience({}: Props) {
+  const experiences = [
+    {
+      id: 1,
+      title: "Web Developer",
+      imgUrl:
+        "https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg",
+      company: "Instituto Atlântico",
+      dateInit: "nov de 2021",
+      dateEnd: "hoje",
+    },
+    {
+      id: 2,
+      title: "Trainee em P&D",
+      imgUrl:
+        "https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg",
+      company: "Instituto Atlântico",
+      dateInit: "set de 2021",
+      dateEnd: "nov de 2021",
+    },
+    {
+      id: 3,
+      title: "Estágio em P&D",
+      imgUrl:
+        "https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg",
+      company: "Instituto Atlântico",
+      dateInit: "dez de 2020",
+      dateEnd: "ago de 2021",
+    },
+    {
+      id: 4,
+      title: "Bolsista em Q&A",
+      imgUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFc44nXB_jY6t3Y5z-3XKEw4iU-0-xbuzqeP6Xr9bTvD02aCy4LbAPeMvopOVFFZ2NJik&usqp=CAU",
+      company: "GREAT",
+      dateInit: "jun de 2020",
+      dateEnd: "ago de 2021",
+    },
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,11 +56,19 @@ function Experience({}: Props) {
         <span className="">Experiência Profissional</span>
       </h4>
 
-      <div className="w-full max-w-7xl flex space-x-4 overflow-x-scroll snap-x snap-mandatory text-white pt-10 ">
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+      <div className="w-full max-w-7xl flex space-x-10 overflow-x-scroll snap-x snap-mandatory text-white pt-10 pb-5">
+        {experiences.map((experience) => {
+          return (
+            <ExperienceCard
+              key={experience.id}
+              title={experience.title}
+              company={experience.company}
+              imgUrl={experience.imgUrl}
+              dateInit={experience.dateInit}
+              dateEnd={experience.dateEnd}
+            />
+          );
+        })}
       </div>
     </motion.div>
   );

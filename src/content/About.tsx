@@ -9,7 +9,7 @@ type Props = {};
 function About({}: Props) {
   return (
     <div
-      className="h-max flex flex-col  xl:flex-row   justify-center xl:justify-between  
+      className="h-max flex flex-col  xl:flex-row   justify-center xl:justify-start xl:space-x-20  
       max-lg-px-5 mx-5 xl:mx-auto items-center max-w-7xl  max-xl:space-y-6 "
     >
       <motion.div
@@ -32,7 +32,7 @@ function About({}: Props) {
           }}
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
-          className="rounded-xl h-[250px] w-[250px] xl:h-[350px] xl:w-[350px] shadow-2xl  "
+          className="rounded-xl h-[250px] w-[250px] xl:h-[350px] xl:w-[350px]  "
         />
       </motion.div>
 
@@ -64,6 +64,7 @@ function About({}: Props) {
           >
             Instituto Atlântico
           </a>
+          text-text-
           <br />
           <br />
           Consigo me comunicar bem em inglês (nível C2), sendo acostumado a
@@ -72,15 +73,15 @@ function About({}: Props) {
         </p>
 
         <div className="flex gap-6">
-          <AnimatedBtn href="https://drive.google.com/file/d/1myzekVeAuc6z-zFfHRZ9Sy-mKLkQ1oLK/view?usp=sharing">
-            <FaGithub className="socialMediaIcon h-8 w-8" />
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <FaGithub className="socialMediaIcon h-7 w-7" />
           </AnimatedBtn>
-          <AnimatedBtn href="https://drive.google.com/file/d/1myzekVeAuc6z-zFfHRZ9Sy-mKLkQ1oLK/view?usp=sharing">
-            <FaLinkedinIn className="socialMediaIcon h-8 w-8" />
+          <AnimatedBtn href="https://www.linkedin.com/in/pedro-felippe/">
+            <FaLinkedinIn className="socialMediaIcon h-7 w-7" />
           </AnimatedBtn>
 
           <AnimatedBtn href="https://drive.google.com/file/d/1myzekVeAuc6z-zFfHRZ9Sy-mKLkQ1oLK/view?usp=sharing">
-            <FaFileDownload className="socialMediaIcon h-8 w-8" />
+            <FaFileDownload className="socialMediaIcon h-7 w-7" />
           </AnimatedBtn>
         </div>
       </motion.div>

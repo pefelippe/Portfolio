@@ -13,14 +13,14 @@ function Header({}: Props) {
         className="w-fit rounded-xl text-lg font-semibold"
         href="https://github.com/pefelippe"
       >
-        <FaGithub className="socialMediaIcon h-8 w-8 xl:h-10 xl:w-10 hover:text-[#5865f2] " />
+        <FaGithub className="socialMediaIcon h-7 w-7 xl:h-10 xl:w-10 hover:text-[#5865f2] " />
       </AnimatedBtn>
 
       <AnimatedBtn
         className="w-fit rounded-xl  text-lg font-semibold"
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
-        <FaLinkedinIn className="socialMediaIcon h-8 w-8 xl:h-10 xl:w-10 hover:text-[#5865f2] " />
+        <FaLinkedinIn className="socialMediaIcon h-7 w-7 xl:h-10 xl:w-10 hover:text-[#5865f2] " />
       </AnimatedBtn>
     </header>
   );

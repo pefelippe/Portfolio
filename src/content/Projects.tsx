@@ -8,25 +8,25 @@ function Projects({}: Props) {
   const projects = [1, 2, 3];
 
   return (
-    <div className="relative flex flex-col  max-w-7xl justify-evenly mx-auto items-center z-0 space-y-10 max-xl:px-8">
+    <div className="relative flex flex-col  max-w-7xl justify-evenly mx-auto items-center z-0 space-y-10 max-xl:px-8 ">
       <h3 className="mt-2 w-full  text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl underline decoration-[#5865f2]">
         Projetos
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-hide">
-        {projects.map((proj, i) => {
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-hide ">
+        {projects.map((proj) => {
           return (
             <div
               key={proj}
               className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center scrollbar-hide"
             >
               <Image
-                width="400"
+                width="600"
                 height="600"
                 src="/assets/banner.png"
                 alt="img"
               />
 
-              <p className="text-lg text-center md:text-left ">
+              <p className="text-lg text-center md:text-left max-w-4xl">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industrys standard dummy text
                 ever since the 1500s, when an unknown printer took a galley of

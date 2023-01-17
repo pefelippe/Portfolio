@@ -10,7 +10,7 @@ function About({}: Props) {
   return (
     <div
       className="h-max flex flex-col  xl:flex-row   justify-center xl:justify-start xl:space-x-20  
-      max-lg-px-5 mx-5 xl:mx-auto items-center max-w-7xl  max-xl:space-y-6 "
+      max-lg-px-5 mx-5 xl:mx-auto items-center max-w-7xl  max-xl:space-y-6 px-5"
     >
       <motion.div
         initial={{
@@ -32,7 +32,7 @@ function About({}: Props) {
           }}
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
-          className="rounded-xl h-[250px] w-[250px] xl:h-[350px] xl:w-[350px]  "
+          className="rounded-full h-[250px] w-[250px] xl:h-[400px] xl:w-[400px]  "
         />
       </motion.div>
 
@@ -45,13 +45,13 @@ function About({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-col justify-center max-xl:items-center  max-w-3xl space-y-4"
+        className="flex flex-col justify-center max-xl:items-center  max-w-3xl xl:space-y-4"
       >
-        <h4 className="mt-2 w-full max-xl:text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl">
+        <h4 className="mt-2 w-full  max-lg:text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl">
           Então, quem sou eu?
         </h4>
 
-        <p className="text-base md:text-xl max-lg:p-[20px] max-xl:text-center">
+        <p className="text-base md:text-xl max-lg:p-[20px] max-lg:text-center">
           Sou um Web Developer com experiência em implementar componentes de
           interface de usuário responsivos e de qualidade. <br />
           <br />
@@ -70,8 +70,7 @@ function About({}: Props) {
           participarem reuniões em inglês com membros de vários países.
           <br />
         </p>
-
-        <div className="flex gap-6">
+        <div className="flex  gap-6">
           <AnimatedBtn href="https://github.com/pefelippe">
             <FaGithub className="socialMediaIcon h-7 w-7" />
           </AnimatedBtn>

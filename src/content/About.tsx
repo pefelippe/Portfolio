@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { FaFileDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import AnimatedBtn from "./../components/motion/AnimatedBtn";
 
@@ -9,13 +9,52 @@ type Props = {};
 function About({}: Props) {
   return (
     <div
-      className="h-max flex flex-col  xl:flex-row   justify-center xl:justify-start xl:space-x-20  
-      max-lg-px-5 mx-5 xl:mx-auto items-center max-w-7xl  max-xl:space-y-6 px-5"
+      className="h-max flex flex-col  xl:flex-row justify-center xl:justify-between  
+      max-xl:px-5 xl:mx-auto items-center max-w-7xl  "
     >
       <motion.div
         initial={{
           opacity: 0,
-          x: -200,
+          x: 100,
+        }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="flex flex-col justify-center max-xl:items-center xl:h-[300px] space-y-4"
+      >
+        <h4 className="mt-2 w-full  max-lg:text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl underline decoration-[#5865f2]">
+          Então, quem sou eu?
+        </h4>
+
+        <span className="text-base md:text-xl  max-lg:text-center max-w-3xl space-y-4">
+          <p>
+            Sou um Web Developer com experiência em implementar componentes de
+            interface de usuário responsivos e de qualidade.{" "}
+          </p>
+          <p>
+            {" "}
+            Sou Web Developer no{" "}
+            <a
+              href="https://www.atlantico.com.br/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold  text-[#5865f2]"
+            >
+              Instituto Atlântico
+            </a>
+          </p>
+          <p>
+            Consigo me comunicar bem em inglês (nível C2), sendo acostumado a
+            participarem reuniões em inglês com membros de vários países.
+          </p>
+        </span>
+      </motion.div>
+
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: -100,
         }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{
@@ -32,56 +71,8 @@ function About({}: Props) {
           }}
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
-          className="rounded-full h-[250px] w-[250px] xl:h-[400px] xl:w-[400px]  "
+          className="rounded-xl h-[250px] w-[250px] md:h-[300px] md:w-[300px] xl:h-[300px] xl:w-[300px] max-xl:hidden "
         />
-      </motion.div>
-
-      <motion.div
-        initial={{
-          opacity: 0,
-          x: 200,
-        }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{
-          duration: 1.5,
-        }}
-        className="flex flex-col justify-center max-xl:items-center  max-w-3xl xl:space-y-4"
-      >
-        <h4 className="mt-2 w-full  max-lg:text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl">
-          Então, quem sou eu?
-        </h4>
-
-        <p className="text-base md:text-xl max-lg:p-[20px] max-lg:text-center">
-          Sou um Web Developer com experiência em implementar componentes de
-          interface de usuário responsivos e de qualidade. <br />
-          <br />
-          Atualmente como Web Developer no{" "}
-          <a
-            href="https://www.atlantico.com.br/"
-            target="_blank"
-            rel="noreferrer"
-            className="font-semibold underline text-[#5865f2]"
-          >
-            Instituto Atlântico
-          </a>
-          <br />
-          <br />
-          Consigo me comunicar bem em inglês (nível C2), sendo acostumado a
-          participarem reuniões em inglês com membros de vários países.
-          <br />
-        </p>
-        <div className="flex  gap-6">
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <FaGithub className="socialMediaIcon h-7 w-7" />
-          </AnimatedBtn>
-          <AnimatedBtn href="https://www.linkedin.com/in/pedro-felippe/">
-            <FaLinkedinIn className="socialMediaIcon h-7 w-7" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://drive.google.com/file/d/1myzekVeAuc6z-zFfHRZ9Sy-mKLkQ1oLK/view?usp=sharing">
-            <FaFileDownload className="socialMediaIcon h-7 w-7" />
-          </AnimatedBtn>
-        </div>
       </motion.div>
     </div>
   );

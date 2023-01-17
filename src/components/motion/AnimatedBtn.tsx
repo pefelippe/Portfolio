@@ -4,9 +4,10 @@ import React from "react";
 interface iBtnProps {
   href: string;
   children: JSX.Element;
+  className: string;
 }
 
-function AnimatedBtn({ href, children }: iBtnProps) {
+function AnimatedBtn({ href, children, className }: iBtnProps) {
   return (
     <motion.a
       whileHover={{
@@ -15,7 +16,7 @@ function AnimatedBtn({ href, children }: iBtnProps) {
       }}
       href={href}
       target="_blank"
-      className="w-fit rounded-xl p-4  bg-[#5865f2] text-lg font-semibold"
+      className={className}
     >
       {children}
     </motion.a>

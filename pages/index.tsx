@@ -1,14 +1,18 @@
 import React from "react";
 
 import Footer from "../src/components/Footer";
+import Header from "../src/components/Header";
 import About from "../src/content/About";
 import Experience from "../src/content/Experience";
 import Hero from "../src/content/Hero";
+import Projects from "../src/content/Projects";
 import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="text-[#fff]   bg-[#191919] space-y-10 md:space-y-28">
+    <>
+      <div className="text-[#fff]   bg-[#191919] space-y-16">
+        <Header />
         <section id="hero" className="">
           <Hero />
         </section>
@@ -24,9 +28,13 @@ export default function Home() {
         <section id="experience" className="">
           <Experience />
         </section>
-        
+
+        <section id="experience" className="">
+          <Projects />
+        </section>
+
         <Footer />
-   
-    </div>
+      </div>
+    </>
   );
 }

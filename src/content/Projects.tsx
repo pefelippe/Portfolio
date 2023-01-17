@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
@@ -7,33 +8,25 @@ function Projects({}: Props) {
   const projects = [1, 2, 3];
 
   return (
-    <div className="relative flex overflow-hidden flex-col text-left md:flex-row  max-w-7xl justify-evenly mx-auto items-center z-0">
-      <h3 className="absolute top-28 xl:top-36 uppercase tracking-[20px] text-gray-300 text-2xl ">
+    <div className="relative flex flex-col  max-w-7xl justify-evenly mx-auto items-center z-0 space-y-10 max-xl:px-8">
+      <h3 className="mt-2 w-full  text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl underline decoration-[#5865f2]">
         Projetos
       </h3>
-
-      {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-hide">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-hide">
         {projects.map((proj, i) => {
           return (
             <div
               key={proj}
-              className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen scrollbar-hide"
+              className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center scrollbar-hide"
             >
-              <motion.img
-                initial={{
-                  y: -300,
-                  opacity: 0,
-                }}
-                transition={{ duration: 1.2 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                src="https://ps.w.org/easy-under-construction/assets/banner-772x250.png?rev=2417171"
+              <Image
+                width="400"
+                height="600"
+                src="/assets/banner.png"
                 alt="img"
               />
-              <div>
-                <h4>Case Study {i + 1} - Under Contruction</h4>
-              </div>
-              <p className="text-lg text-center md:text-left">
+
+              <p className="text-lg text-center md:text-left ">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industrys standard dummy text
                 ever since the 1500s, when an unknown printer took a galley of
@@ -48,12 +41,7 @@ function Projects({}: Props) {
             </div>
           );
         })}
-      </div> */}
-
-      <div
-        className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px]
-      -skew-y-12"
-      />
+      </div>
     </div>
   );
 }

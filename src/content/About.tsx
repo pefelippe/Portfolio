@@ -51,7 +51,7 @@ function About({}: Props) {
           Então, quem sou eu?
         </h4>
 
-        <p className="text-base md:text-xl max-lg:p-[20px] max-lg:text-center">
+        <p className="text-base md:text-xl max-lg:p-[20px] max-xl:text-center">
           Sou um Web Developer com experiência em implementar componentes de
           interface de usuário responsivos e de qualidade. <br />
           <br />
@@ -73,14 +73,14 @@ function About({}: Props) {
 
         <div className="flex gap-6">
           <AnimatedBtn href="https://drive.google.com/file/d/1myzekVeAuc6z-zFfHRZ9Sy-mKLkQ1oLK/view?usp=sharing">
-            <FaGithub className="socialMediaIcon" />
+            <FaGithub className="socialMediaIcon h-8 w-8" />
           </AnimatedBtn>
           <AnimatedBtn href="https://drive.google.com/file/d/1myzekVeAuc6z-zFfHRZ9Sy-mKLkQ1oLK/view?usp=sharing">
-            <FaLinkedinIn className="socialMediaIcon" />
+            <FaLinkedinIn className="socialMediaIcon h-8 w-8" />
           </AnimatedBtn>
 
           <AnimatedBtn href="https://drive.google.com/file/d/1myzekVeAuc6z-zFfHRZ9Sy-mKLkQ1oLK/view?usp=sharing">
-            <FaFileDownload className="socialMediaIcon" />
+            <FaFileDownload className="socialMediaIcon h-8 w-8" />
           </AnimatedBtn>
         </div>
       </motion.div>

@@ -64,7 +64,6 @@ function About({}: Props) {
           >
             Instituto Atlântico
           </a>
-          text-text-
           <br />
           <br />
           Consigo me comunicar bem em inglês (nível C2), sendo acostumado a

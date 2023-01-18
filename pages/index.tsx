@@ -11,12 +11,11 @@ import Skills from "../src/content/Skills";
 export default function Home() {
   return (
     <>
-      <div className="text-[#fff]   bg-[#191919] space-y-16">
+      <div className="text-[#fff]   bg-[#191919] bg-[url('/assets/endless-constellation.svg')] space-y-20">
         <Header />
         <section id="hero" className="">
           <Hero />
         </section>
-
         <section id="about" className="">
           <About />
         </section>
@@ -28,12 +27,11 @@ export default function Home() {
         <section id="experience" className="">
           <Experience />
         </section>
-
-        <section id="experience" className="">
-          <Projects />
-        </section>
-
         <Footer />
+
+        {/* <section id="experience" className="">
+          <Projects />
+        </section> */}
       </div>
     </>
   );

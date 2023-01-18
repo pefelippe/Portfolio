@@ -10,7 +10,7 @@ const SkillBox = ({ title, children }: ISkillBox) => {
   return (
     <motion.a
       whileHover={{
-        scale: 1.1,
+        scale: 1.3,
         transition: { duration: 0.1 },
       }}
       className="flex flex-col justify-center items-center text-center cursor-pointer

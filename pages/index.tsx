@@ -14,7 +14,7 @@ export default function Home() {
       <div className="text-[#fff]   bg-[#191919] bg-[url('/assets/endless-constellation.svg')] ">
         {/* /* background by SVGBackgrounds.com */}
 
-        <div className="space-y-20">
+        <div className="space-y-12">
           <section id="hero" className="pt-40">
             <Hero />
           </section>

@@ -28,7 +28,7 @@ function Skills({}: Props) {
         transition={{ duration: 1.5 }}
         className="flex flex-col  items-center  overflow:hidden "
       >
-        <div className="grid grid-cols-3 md:grid-cols-12 gap-4 w-7xl">
+        <div className="grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-4 w-7xl">
           <SkillBox title="Html">
             <SiHtml5 className=" socialMediaIcon lg:h-20 lg:w-20  hover:text-[#5865f2]" />
           </SkillBox>

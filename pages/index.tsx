@@ -11,28 +11,24 @@ import Skills from "../src/content/Skills";
 export default function Home() {
   return (
     <>
-      <div className="text-[#fff]   bg-[#191919] bg-[url('/assets/endless-constellation.svg')] space-y-20">
+      <div className="text-[#fff]   bg-[#191919] bg-[url('/assets/endless-constellation.svg')] ">
         {/* /* background by SVGBackgrounds.com */}
-        <Header />
-        <section id="hero" className="">
-          <Hero />
-        </section>
-        <section id="about" className="">
-          <About />
-        </section>
 
-        <section id="skills" className="">
-          <Skills />
-        </section>
+        <div className="space-y-10">
+          <section id="hero" className="pt-40">
+            <Hero />
+          </section>
 
-        <section id="experience" className="">
-          <Experience />
-        </section>
-        <Footer />
+          <section id="skills" className="">
+            <Skills />
+          </section>
 
-        {/* <section id="experience" className="">
-          <Projects />
-        </section> */}
+          <section id="experience" className="">
+            <Experience />
+          </section>
+
+          <Footer />
+        </div>
       </div>
     </>
   );

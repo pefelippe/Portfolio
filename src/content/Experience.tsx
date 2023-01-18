@@ -74,11 +74,7 @@ function Experience({}: Props) {
       transition={{ duration: 1.5 }}
       className="h-max  flex items-center flex-col relative overflow-hidden  justify-center rounded-lg px-8 "
     >
-      <h4 className=" w-full text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl underline decoration-[#5865f2]">
-        <span className="">Experiência</span>
-      </h4>
-
-      <div className="w-full max-w-7xl flex space-x-10 overflow-x-scroll snap-x snap-mandatory text-white pt-10 pb-5">
+      <div className="w-full max-w-7xl flex space-x-10 overflow-x-scroll snap-x snap-mandatory text-white  pb-5">
         {experiences.map((experience) => {
           return (
             <ExperienceCard

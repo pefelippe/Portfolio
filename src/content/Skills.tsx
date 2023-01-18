@@ -21,18 +21,14 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="h-screenflex relative flex-col md:text-left max-w-7xl  mx-auto max-xl:px-8">
+    <div className="flex relative flex-col md:text-left max-w-7xl  mx-auto max-xl:px-8">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col  items-center  overflow:hidden  space-y-8 w-full"
+        className="flex flex-col  items-center  overflow:hidden "
       >
-        <h4 className="xl:w-full text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl underline decoration-[#5865f2] ">
-          Minhas Skills
-        </h4>
-
-        <div className="grid grid-cols-4 md:grid-cols-6 lg:gap-12 ">
+        <div className="grid grid-cols-4 md:grid-cols-12 gap-4 w-7xl">
           <SkillBox title="Html">
             <SiHtml5 className=" socialMediaIcon lg:h-20 lg:w-20  hover:text-[#5865f2]" />
           </SkillBox>

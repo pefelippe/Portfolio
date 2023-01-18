@@ -15,6 +15,11 @@ function Experience({}: Props) {
       company: "Instituto Atlântico",
       dateInit: "nov de 2021",
       dateEnd: "hoje",
+      sumarryPoints: [
+        "Traduzir designs em componentes de interface de usuário responsivos e de qualidade",
+        "Criação de testes, manutenções em códigos e desenvolver novas funcionalidades",
+        "Reuniões em inglês com membros internacionais",
+      ],
     },
     {
       id: 2,
@@ -24,6 +29,12 @@ function Experience({}: Props) {
       company: "Instituto Atlântico",
       dateInit: "set de 2021",
       dateEnd: "nov de 2021",
+      sumarryPoints: [
+        "Buscar e estudar novas tecnologias",
+        "Criar provas de Conceito (PoCs)",
+        "Participar na criação de Disclosures",
+        "Reuniões em inglês com membros internacionais",
+      ],
     },
     {
       id: 3,
@@ -33,6 +44,12 @@ function Experience({}: Props) {
       company: "Instituto Atlântico",
       dateInit: "dez de 2020",
       dateEnd: "ago de 2021",
+      sumarryPoints: [
+        "Buscar e estudar novas tecnologias",
+        "Criar provas de Conceito (PoCs)",
+        "Participar na criação de Disclosures",
+        "Reuniões em inglês com membros internacionais",
+      ],
     },
     {
       id: 4,
@@ -42,6 +59,11 @@ function Experience({}: Props) {
       company: "GREAT",
       dateInit: "jun de 2020",
       dateEnd: "ago de 2021",
+      sumarryPoints: [
+        "Testar produtos utilizando testes funcionais e de integração",
+        "Modelagem de casos de uso, automação de testes",
+        "Criação de scripts automatizados",
+      ],
     },
   ];
 
@@ -66,6 +88,7 @@ function Experience({}: Props) {
               imgUrl={experience.imgUrl}
               dateInit={experience.dateInit}
               dateEnd={experience.dateEnd}
+              sumarryPoints={experience.sumarryPoints}
             />
           );
         })}

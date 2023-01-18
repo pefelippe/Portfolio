@@ -16,6 +16,7 @@ function ExperienceCard({
   imgUrl,
   dateInit,
   dateEnd,
+  sumarryPoints,
 }: IExperienceCard) {
   return (
     <article
@@ -41,12 +42,11 @@ function ExperienceCard({
         <p className="uppercase  text-gray-300">
           {dateInit} - {dateEnd}
         </p>
-        {/* <ul className=" text-left list-disc space-y-2 ml-5 text-lg pt-5">
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-        </ul> */}
+        <ul className=" text-left list-disc space-y-2 ml-5 text-lg pt-5">
+          {sumarryPoints?.map((point, i) => {
+            return <li key={i}>{point}</li>;
+          })}
+        </ul>
       </div>
     </article>
   );

@@ -32,7 +32,7 @@ function Skills({}: Props) {
           Minhas Skills
         </h4>
 
-        <div className="grid grid-cols-4 md:grid-cols-6  gap-8 w-xl ">
+        <div className="grid grid-cols-4 md:grid-cols-6 lg:gap-12 ">
           <SkillBox title="Html">
             <SiHtml5 className=" socialMediaIcon lg:h-20 lg:w-20  hover:text-[#5865f2]" />
           </SkillBox>

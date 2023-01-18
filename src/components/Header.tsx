@@ -8,19 +8,19 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className="  flex w-full justify-end gap-6 p-4 px-5">
+    <header className=" mx-auto flex max-w-7xl justify-end gap-6 py-4 ">
       <AnimatedBtn
         className="w-fit rounded-xl text-lg font-semibold"
         href="https://github.com/pefelippe"
       >
-        <FaGithub className=" h-7 w-7  hover:text-[#5865f2] " />
+        <FaGithub className="h-8 w-8   hover:text-[#5865f2] " />
       </AnimatedBtn>
 
       <AnimatedBtn
         className="w-fit rounded-xl  text-lg font-semibold"
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
-        <FaLinkedinIn className=" h-7 w-7  hover:text-[#5865f2] " />
+        <FaLinkedinIn className="h-8 w-8  hover:text-[#5865f2] " />
       </AnimatedBtn>
     </header>
   );

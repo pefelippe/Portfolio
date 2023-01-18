@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
+import AnimatedBtn from "./../components/motion/AnimatedBtn";
 
 type Props = {};
 

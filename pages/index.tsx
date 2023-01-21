@@ -1,8 +1,7 @@
 import React from "react";
-import Experience from "../src/content/experience";
 
+import Experience from "../src/content/Experience";
 import Hero from "../src/content/Hero";
-
 import Skills from "../src/content/Skills";
 
 export default function Home() {

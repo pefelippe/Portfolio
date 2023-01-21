@@ -7,7 +7,7 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="min-h-[80vh] relative flex flex-col mx-auto justify-center items-centeralign-center space-y-20 pt-20">
+    <div className="min-h-[80vh] relative flex flex-col mx-auto justify-center items-centeralign-center space-y-10 lg:space-y-20 pt-20 pb-20">
       <Hero />
       <Skills />
       <Experience />

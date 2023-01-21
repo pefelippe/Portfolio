@@ -1,28 +1,22 @@
+import Link from "next/link";
 import React from "react";
-
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-
-import AnimatedBtn from "./../components/motion/AnimatedBtn";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 function Header({}: Props) {
   return (
-    <header className=" mx-auto flex max-w-7xl justify-end gap-6 py-4 ">
-      <AnimatedBtn
-        className="w-fit rounded-xl text-lg font-semibold"
-        href="https://github.com/pefelippe"
-      >
-        <FaGithub className="h-8 w-8   hover:text-[#5865f2] " />
-      </AnimatedBtn>
-
-      <AnimatedBtn
-        className="w-fit rounded-xl  text-lg font-semibold"
-        href="https://www.linkedin.com/in/pedro-felippe/"
-      >
-        <FaLinkedinIn className="h-8 w-8  hover:text-[#5865f2] " />
-      </AnimatedBtn>
-    </header>
+    <motion.header
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+      className="flex py-5  max-w-7xl mx-auto  text-lg justify-end max-sm:justify-center max-lg:px-5"
+    >
+      <div className="flex gap-8">
+        <Link href="/">Home</Link>
+        <Link href="/projects">Projetos</Link>
+      </div>
+    </motion.header>
   );
 }
 

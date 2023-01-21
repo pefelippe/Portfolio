@@ -28,42 +28,42 @@ function Skills({}: Props) {
         transition={{ duration: 1.5 }}
         className="flex flex-col  items-center  overflow:hidden "
       >
-        <div className="grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-4 w-7xl">
+        <div className="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-12 gap-4 w-7xl">
           <SkillBox title="Html">
-            <SiHtml5 className=" socialMediaIcon lg:h-20 lg:w-20  hover:text-[#5865f2]" />
+            <SiHtml5 className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="Css">
-            <SiCss3 className=" socialMediaIcon lg:h-20 lg:w-20  " />
+            <SiCss3 className=" socialMediaIcon lg:h-16 lg:w-16 " />
           </SkillBox>
           <SkillBox title="Javascript">
-            <SiJavascript className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiJavascript className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="React">
-            <SiReact className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiReact className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="Next.js">
-            <SiNextdotjs className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiNextdotjs className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="Tailwind">
-            <SiTailwindcss className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiTailwindcss className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="Docker">
-            <SiDocker className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiDocker className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="Node">
-            <SiNodedotjs className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiNodedotjs className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="Typescript">
-            <SiTypescript className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiTypescript className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="AWS">
-            <SiAmazonaws className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiAmazonaws className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="MongoDB">
-            <SiMongodb className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiMongodb className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
           <SkillBox title="Git">
-            <SiGit className=" socialMediaIcon lg:h-20 lg:w-20 hover:text-[#5865f2]" />
+            <SiGit className=" socialMediaIcon lg:h-16 lg:w-16 hover:text-[#5865f2]" />
           </SkillBox>
         </div>
       </motion.div>

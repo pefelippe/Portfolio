@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 interface iBtnProps {
-  href: string;
+  href?: string;
   children: JSX.Element;
   className: string;
 }

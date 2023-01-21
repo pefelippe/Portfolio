@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
-{
-}
+
 export default function Hero() {
   return (
     <motion.div
-      className="  flex flex-col mx-auto items-center justify-center 
-     text-center   space-y-8   w-full"
+      className="relative  flex flex-col mx-auto items-center justify-center 
+     text-center space-y-8  w-full"
     >
       <motion.div
         initial={{ opacity: 0 }}

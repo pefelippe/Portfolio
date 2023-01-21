@@ -8,7 +8,12 @@ function Projects({}: Props) {
   const projects = [1, 2, 3];
 
   return (
-    <div className="relative flex flex-col  max-w-7xl justify-evenly mx-auto items-center z-0 space-y-10 max-xl:px-8 ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="relative flex flex-col p-36  max-w-7xl justify-evenly mx-auto items-center z-0 space-y-10 max-xl:px-8 "
+    >
       <h3 className="mt-2 w-full  text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl underline decoration-[#5865f2]">
         Projetos
       </h3>
@@ -42,7 +47,7 @@ function Projects({}: Props) {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -6,13 +6,9 @@ import AnimatedBtn from "./../components/motion/AnimatedBtn";
 type Props = {};
 
 function Footer({}: Props) {
-  const year = new Date().getFullYear();
   return (
-    <footer className=" py-4  max-w-7xl mx-auto max-lg:px-5">
+    <footer className="absolute bottom-0  left-0 px-4   max-lg:px-5">
       <div className="flex justify-between py-4">
-        <span className="flex text-sm xl:text-base">
-          Copyright © {year} Pedro Felippe.
-        </span>
         <div className="flex gap-8">
           <AnimatedBtn
             className="w-fit rounded-xl text-lg font-semibold"

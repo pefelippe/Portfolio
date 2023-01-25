@@ -20,7 +20,7 @@ function ExperienceCard({
 }: IExperienceCard) {
   return (
     <article
-      className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0  max-w-7xl w-[400px] max-lg:w-full 
+      className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0  w-full
       snap-center bg-[#292929] p-10 hover:bg-[#141414] cursor-pointer transition-opacity duration-200 overflow-hidden text-center"
     >
       <motion.img
@@ -42,11 +42,11 @@ function ExperienceCard({
         <p className="uppercase  text-gray-300">
           {dateInit} - {dateEnd}
         </p>
-        <ul className=" text-left list-disc space-y-2 ml-5 text-lg pt-5">
+        {/* <ul className=" text-left list-disc space-y-2 ml-5 text-lg pt-5">
           {sumarryPoints?.map((point, i) => {
             return <li key={i}>{point}</li>;
           })}
-        </ul>
+        </ul> */}
       </div>
     </article>
   );

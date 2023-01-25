@@ -1,15 +1,17 @@
 import React from "react";
-
 import Experience from "../src/content/Experience";
+
 import Hero from "../src/content/Hero";
 import Skills from "../src/content/Skills";
+import About from "./../src/content/About";
 
 export default function Home() {
   return (
-    <div className="min-h-[80vh] relative flex flex-col mx-auto justify-center items-centeralign-center space-y-10 lg:space-y-20 pt-20 pb-20">
+    <div className="relative flex flex-col mx-auto justify-center items-center align-center space-y-12 md:space-y-28 pt-20 pb-40 ">
       <Hero />
       <Skills />
-      <Experience />
+      <About />
+      {/* <Experience /> */}
     </div>
   );
 }

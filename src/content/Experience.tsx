@@ -72,9 +72,9 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-max  flex items-center flex-col relative overflow-hidden  justify-center rounded-lg px-8 "
+      className="h-max flex items-center flex-col relative overflow-hidden  justify-center rounded-lg px-8 "
     >
-      <div className="w-full max-w-7xl flex space-x-10 overflow-x-scroll snap-x snap-mandatory text-white  pb-5">
+      <div className=" mx-auto max-w-3xl flex overflow-x-scroll snap-x snap-mandatory text-white  scrollbar-hide pb-5">
         {experiences.map((experience) => {
           return (
             <ExperienceCard
@@ -88,6 +88,29 @@ function Experience({}: Props) {
             />
           );
         })}
+        <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+          <button
+            type="button"
+            className="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            className="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            className="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
       </div>
     </motion.div>
   );

@@ -5,7 +5,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="flex w-fit max-w-7xl flex-col  items-center justify-center mx-auto max-lg:space-y-8 xl:space-x-12 xl:flex-row  ">
+    <div className="flex w-fit max-w-7xl flex-col  items-center justify-center mx-auto max-xl:space-y-8 xl:space-x-12 xl:flex-row  ">
       <motion.img
         whileHover={{
           scale: 1.05,
@@ -16,7 +16,7 @@ function About({}: Props) {
         }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="rounded-full h-[250px] w-[250px]   border-8"
+        className="rounded-full md:h-[250px] md:w-[250px] h-[200px] w-[200px] border-8"
       />
 
       <motion.div
@@ -35,11 +35,10 @@ function About({}: Props) {
         </h4>
 
         <p className="text-base md:text-xl max-lg:p-[20px] max-lg:text-center pt-5">
-          Consigo me comunicar bem em inglês (nível C2), sendo acostumado a
-          participarem reuniões em inglês com membros de vários países.
+          Me chamo Pedro Felippe, sou um Web Developer
           <br />
           <br />
-          Atuo como Web Developer no{" "}
+          Atualmente, trabalho como Web Developer no{" "}
           <a
             href="https://www.atlantico.com.br/"
             className="font-semibold underline text-[#5865f2]"
@@ -47,6 +46,10 @@ function About({}: Props) {
             Instituto Atlântico
           </a>
           .
+          <br />
+          <br />
+          Tenho um bom nível de inglês (nível C2), consigo me comunicar bem em
+          reuniões internacionais.
         </p>
       </motion.div>
     </div>

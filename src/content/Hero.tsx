@@ -11,7 +11,6 @@ export default function Hero() {
       className="relative  flex flex-col mx-auto 
      text-center  w-full  max-w-7xl justify-center items-center space-y-10"
     >
-      
       <div
         className="space-y-6 text-center text-4xl font-bold tracking-tight text-white sm:text-6xl 
          text-[4rem] sm:text-[5rem] xl:text-[6rem]  2xl:text-[6.5rem] "
@@ -34,6 +33,9 @@ export default function Hero() {
           />
         </p>
       </div>
+      {/* <button className="bg-[#5865f2] px-8 py-4 rounded-lg text-[1.5rem] ">
+        Quem sou eu
+      </button> */}
     </motion.div>
   );
 }

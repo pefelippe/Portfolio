@@ -7,7 +7,7 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <footer className="absolute bottom-0  left-0 px-4   max-lg:px-5">
+    <footer className="absolute bottom-0  right-0 px-10   max-lg:px-5">
       <div className="flex justify-between py-4">
         <div className="flex gap-8">
           <AnimatedBtn

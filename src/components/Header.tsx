@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import React from "react";
-import { FaFileAlt, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useRouter } from "next/router";
+import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import AnimatedBtn from "./motion/AnimatedBtn";
 
@@ -16,9 +16,9 @@ function Header({}: Props) {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.75 }}
-      className=" flex justify-between z-40  max-w-7xl mx-auto p-5 "
+      className=" flex justify-between z-40  max-w-7xl mx-auto py-5 px-8"
     >
-      <div className="flex text-lg  font-extralight items-center gap-8 ">
+      <div className="flex text-lg  font-semibold items-center gap-8 max-md:gap-4 ">
         <Link
           className={
             router.pathname === "/"
@@ -29,6 +29,18 @@ function Header({}: Props) {
         >
           Home
         </Link>
+
+        {/* <Link
+          className={
+            router.pathname === "/sobre"
+              ? "text-[#fff] hover:text-[#5865f2]"
+              : "text-gray-300 hover:text-[#5865f2] "
+          }
+          href="/sobre"
+        >
+          Sobre
+        </Link> */}
+
         <Link
           className={
             router.pathname === "/posts"
@@ -40,26 +52,26 @@ function Header({}: Props) {
           Posts
         </Link>
       </div>
-      <div className="flex gap-8">
+      <div className="flex max-md:gap-4 gap-8 justify-center items-center">
         <AnimatedBtn
-          className="w-fit rounded-xl  text-lg font-semibold"
-          href="https://read.cv/felippe_fernandes"
-        >
-          <FaFileAlt className=" h-7 w-7  hover:text-[#5865f2] " />
-        </AnimatedBtn>
-        <AnimatedBtn
-          className="w-fit rounded-xl text-lg font-semibold"
+          className="w-fittext-lg font-semibold"
           href="https://github.com/pefelippe"
         >
-          <FaGithub className=" h-7 w-7  hover:text-[#5865f2] " />
+          <FaGithub className=" h-6 w-6 hover:text-[#5865f2] " />
         </AnimatedBtn>
 
         <AnimatedBtn
-          className="w-fit rounded-xl  text-lg font-semibold"
+          className="w-fit  text-lg font-semibold"
           href="https://www.linkedin.com/in/pedro-felippe/"
         >
-          <FaLinkedinIn className=" h-7 w-7  hover:text-[#5865f2] " />
+          <FaLinkedinIn className=" h-6 w-6 hover:text-[#5865f2] " />
         </AnimatedBtn>
+
+        {/* <AnimatedBtn className="" href="https://read.cv/felippe_fernandes">
+          <button className="w-[130px] flex items-center justify-center rounded-xl  text-lg font-semibold  px-6 py-3  bg-[#5865f2]">
+            <p>Contato</p>
+          </button>
+        </AnimatedBtn> */}
       </div>
     </motion.header>
   );

@@ -4,7 +4,7 @@ import React from "react";
 interface iBtnProps {
   href?: string;
   children: JSX.Element;
-  className: string;
+  className?: string;
 }
 
 function AnimatedBtn({ href, children, className }: iBtnProps) {

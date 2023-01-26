@@ -51,20 +51,20 @@ function Experience({}: Props) {
         "Reuniões em inglês com membros internacionais",
       ],
     },
-    {
-      id: 4,
-      title: "Bolsista em Q&A",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFc44nXB_jY6t3Y5z-3XKEw4iU-0-xbuzqeP6Xr9bTvD02aCy4LbAPeMvopOVFFZ2NJik&usqp=CAU",
-      company: "GREAT",
-      dateInit: "jun de 2020",
-      dateEnd: "ago de 2021",
-      sumarryPoints: [
-        "Testar produtos utilizando testes funcionais e de integração",
-        "Modelagem de casos de uso, automação de testes",
-        "Criação de scripts automatizados",
-      ],
-    },
+    // {
+    //   id: 4,
+    //   title: "Bolsista em Q&A",
+    //   imgUrl:
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFc44nXB_jY6t3Y5z-3XKEw4iU-0-xbuzqeP6Xr9bTvD02aCy4LbAPeMvopOVFFZ2NJik&usqp=CAU",
+    //   company: "GREAT",
+    //   dateInit: "jun de 2020",
+    //   dateEnd: "ago de 2021",
+    //   sumarryPoints: [
+    //     "Testar produtos utilizando testes funcionais e de integração",
+    //     "Modelagem de casos de uso, automação de testes",
+    //     "Criação de scripts automatizados",
+    //   ],
+    // },
   ];
 
   return (
@@ -72,9 +72,12 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-max flex items-center flex-col relative overflow-hidden  justify-center rounded-lg px-8 "
+      className="flex flex-col relative  space-y-8 px-32 "
     >
-      <div className=" mx-auto max-w-3xl flex overflow-x-scroll snap-x snap-mandatory text-white  scrollbar-hide pb-5">
+      <h3 className=" text-center text-3xl font-bold tracking-tight  md:text-4xl ">
+        Experiências Recentes
+      </h3>
+      <div className=" mx-auto w-full flex overflow-x-scroll  text-white  gap-8 pb-8 xl:scrollbar-hide">
         {experiences.map((experience) => {
           return (
             <ExperienceCard
@@ -88,29 +91,6 @@ function Experience({}: Props) {
             />
           );
         })}
-        <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"
-          ></button>
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"
-          ></button>
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full"
-            aria-current="false"
-            aria-label="Slide 3"
-            data-carousel-slide-to="2"
-          ></button>
-        </div>
       </div>
     </motion.div>
   );

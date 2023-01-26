@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { FaFileAlt } from "react-icons/fa";
+
+import AnimatedBtn from "../components/motion/AnimatedBtn";
 
 export default function Hero() {
   return (
@@ -23,7 +26,11 @@ export default function Hero() {
 
         <p className="text-[1.5rem] sm:text-[2rem] text-center text-[#a3a3a3]">
           <Typewriter
-            words={["ViciadoEmCafé.tsx", "Tailwind <3"]}
+            words={[
+              "ViciadoEmCafé.tsx",
+              "Tailwind <3",
+              "i write coffe code and drink javascript",
+            ]}
             loop={0}
             cursor
             cursorStyle="_"
@@ -32,10 +39,19 @@ export default function Hero() {
             delaySpeed={2000}
           />
         </p>
+        {/* <div className="w-full flex justify-center gap-8">
+          <AnimatedBtn className="" href="https://read.cv/felippe_fernandes">
+            <button className="w-[150px] flex  justify-center items-center rounded-xl  text-lg font-semibold px-4 py-3 mt-4 border-2">
+              <p>Sobre Mim</p>
+            </button>
+          </AnimatedBtn>
+          <AnimatedBtn className="" href="https://read.cv/felippe_fernandes">
+            <button className=" flex items-center space-x-2 rounded-xl  text-lg font-semibold px-4 py-3 mt-4 border-2">
+              <FaFileAlt className=" h-6 w-6 " /> <p>Currículo</p>
+            </button>
+          </AnimatedBtn>
+        </div> */}
       </div>
-      {/* <button className="bg-[#5865f2] px-8 py-4 rounded-lg text-[1.5rem] ">
-        Quem sou eu
-      </button> */}
     </motion.div>
   );
 }

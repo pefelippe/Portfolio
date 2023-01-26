@@ -21,18 +21,18 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="max-w-7xl flex flex-row relative md:text-left space-around px-8">
+    <div className=" flex flex-row relative px-8">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex xl:flex-row  items-center flex-col xl:space-x-12 max-xl:space-y-8"
+        className="flex xl:flex-row  items-center flex-col max-xl:space-y-8"
       >
         <motion.div
           initial={{ x: -200 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1.75 }}
-          className="grid grid-cols-3 md:grid-cols-6   md:gap-12 "
+          className="grid grid-cols-3 md:grid-cols-6    "
         >
           <SkillBox title="Html">
             <SiHtml5 className=" socialMediaIcon  hover:text-[#5865f2]" />
@@ -58,7 +58,7 @@ function Skills({}: Props) {
           initial={{ x: 200 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1.75 }}
-          className="grid grid-cols-3 md:grid-cols-6 gap-4 md:gap-12"
+          className="grid grid-cols-3 md:grid-cols-6"
         >
           <SkillBox title="Docker">
             <SiDocker className=" socialMediaIcon  hover:text-[#5865f2]" />

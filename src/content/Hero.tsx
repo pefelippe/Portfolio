@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
 import { FaFileAlt } from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
 
 import AnimatedBtn from "../components/motion/AnimatedBtn";
 
@@ -39,18 +39,6 @@ export default function Hero() {
             delaySpeed={2000}
           />
         </p>
-        {/* <div className="w-full flex justify-center gap-8">
-          <AnimatedBtn className="" href="https://read.cv/felippe_fernandes">
-            <button className="w-[150px] flex  justify-center items-center rounded-xl  text-lg font-semibold px-4 py-3 mt-4 border-2">
-              <p>Sobre Mim</p>
-            </button>
-          </AnimatedBtn>
-          <AnimatedBtn className="" href="https://read.cv/felippe_fernandes">
-            <button className=" flex items-center space-x-2 rounded-xl  text-lg font-semibold px-4 py-3 mt-4 border-2">
-              <FaFileAlt className=" h-6 w-6 " /> <p>Currículo</p>
-            </button>
-          </AnimatedBtn>
-        </div> */}
       </div>
     </motion.div>
   );

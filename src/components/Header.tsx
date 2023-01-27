@@ -30,7 +30,7 @@ function Header({}: Props) {
           Home
         </Link>
 
-        <Link
+        {/* <Link
           className={
             router.pathname === "/about"
               ? "text-[#fff] hover:text-[#5865f2]"
@@ -39,7 +39,7 @@ function Header({}: Props) {
           href="/about"
         >
           Sobre
-        </Link>
+        </Link> */}
 
         <Link
           className={

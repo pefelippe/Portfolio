@@ -5,7 +5,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="flex flex-col justify-center items-center space-y-4">
+    <div className="flex flex-col justify-center items-center ">
       <h4 className="mx-auto text-center w-full text-3xl font-bold tracking-tight md:text-4xl max-lg:pb-5 ">
         <span className=" bg-[#000] text-[#fff]">Quem sou eu</span>
       </h4>
@@ -17,7 +17,7 @@ function About({}: Props) {
             transition: { duration: 0.1 },
           }}
           transition={{
-            duration: 0.5,
+            duration: 1.75,
           }}
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
@@ -29,9 +29,9 @@ function About({}: Props) {
             opacity: 0,
             y: 150,
           }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{
-            duration: 1.5,
+            duration: 1.75,
           }}
           className="flex flex-col max-xl:items-center justify-center max-w-xl px-8"
         >

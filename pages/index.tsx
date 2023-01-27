@@ -1,10 +1,10 @@
 import React from "react";
 
+import About from "../src/content/AboutMe";
 import Experience from "../src/content/Experience";
 import Hero from "../src/content/Hero";
 import Projects from "../src/content/Projects";
 import Skills from "../src/content/Skills";
-import About from "./../src/content/About";
 
 export default function Home() {
   return (

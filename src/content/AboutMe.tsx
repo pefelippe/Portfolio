@@ -5,8 +5,12 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="flex flex-col ">
-      <div className="flex  max-lg:flex-col xl:gap-12  items-center justify-center mx-auto lg:space-x-8 space-y-4 ">
+    <div className="flex flex-col justify-center items-center space-y-4">
+      <h4 className="mx-auto text-center w-full text-3xl font-bold tracking-tight md:text-4xl max-lg:pb-5 ">
+        <span className=" bg-[#000] text-[#fff]">Quem sou eu</span>
+      </h4>
+
+      <div className="flex max-lg:flex-col gap-4 xl:gap-12 items-center ">
         <motion.img
           whileHover={{
             scale: 1.05,
@@ -17,7 +21,7 @@ function About({}: Props) {
           }}
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
-          className="rounded-full md:h-[250px] md:w-[250px] h-[200px] w-[200px] border-8 "
+          className="rounded-full h-[200px] w-[200px]"
         />
 
         <motion.div
@@ -29,12 +33,9 @@ function About({}: Props) {
           transition={{
             duration: 1.5,
           }}
-          className="flex  flex-col max-xl:items-center justify-center  max-w-xl space-y-4 max-xl:text-center px-8"
+          className="flex flex-col max-xl:items-center justify-center max-w-xl px-8"
         >
-          <h4 className=" w-full text-3xl font-bold tracking-tight md:text-4xl ">
-            <span className=" bg-[#000] text-[#fff]">Quem sou eu</span>
-          </h4>
-          <span className="text-base md:text-xl   space-y-4 text-[#e4e4e4]">
+          <span className="text-base md:text-xl max-lg:text-center space-y-4 text-[#e4e4e4]">
             <p>
               Me chamo Pedro Felippe, sou Desenvolvedor Web e possuo cerca de 3
               anos de experiência no mercado.

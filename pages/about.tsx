@@ -10,7 +10,7 @@ function About({}: Props) {
   return (
     <div className="relative mx-auto  justify-center items-center h-fit pt-20 space-y-16 pb-40">
       <AboutMe />
-      <Skills />
+      {/* <Skills /> */}
       <Experience />
     </div>
   );

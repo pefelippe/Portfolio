@@ -9,7 +9,6 @@ type Props = {};
 function Curriculum({}: Props) {
   const projects = [1, 2, 3];
   {
-    
   }
   return (
     <>
@@ -17,10 +16,10 @@ function Curriculum({}: Props) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="relative flex flex-col p-36  max-w-7xl justify-evenly mx-auto items-center z-0 space-y-10 max-xl:px-8 "
+        className="relative flex flex-col p-36  max-w-7xl justify-evenly mx-auto items-center z-0 space-y-10 px-10"
       >
         <h3 className="mt-2 w-full  text-center text-3xl font-bold tracking-tight  md:text-5xl lg:text-5xl underline decoration-[#5865f2]">
-          Projetos
+          Meus Projetos
         </h3>
         <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-hide ">
           {projects.map((proj) => {

@@ -7,8 +7,8 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <footer className="absolute bottom-0  right-0 px-10   max-lg:px-5">
-      <div className="flex justify-between py-4">
+    <footer className="px-10  flex justify-center py-8 ">
+
         <div className="flex gap-8">
           <AnimatedBtn
             className="w-fit rounded-xl text-lg font-semibold"
@@ -23,7 +23,7 @@ function Footer({}: Props) {
           >
             <FaLinkedinIn className=" h-7 w-7  hover:text-[#5865f2] " />
           </AnimatedBtn>
-        </div>
+        
       </div>
     </footer>
   );

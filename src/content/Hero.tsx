@@ -1,16 +1,13 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { FaFileAlt } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
-
-import AnimatedBtn from "../components/motion/AnimatedBtn";
+import AnimatedBtn from "./../components/motion/AnimatedBtn";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Hero() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
       className="relative  flex flex-col mx-auto 
      text-center  w-full  max-w-7xl justify-center items-center space-y-10"
     >
@@ -18,13 +15,30 @@ export default function Hero() {
         className="space-y-6 text-center text-4xl font-bold tracking-tight text-white sm:text-6xl 
          text-[4rem] sm:text-[5rem] xl:text-[6rem]  2xl:text-[6.5rem] "
       >
-        <h1 className="w-full text-[#5865f2]">Pedro Felippe</h1>
+        <motion.h1
+          initial={{ y: 25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="w-full text-[#5865f2]"
+        >
+          Pedro Felippe
+        </motion.h1>
 
-        <p className="text-[3rem] sm:text-[4rem] xl:text-[5rem]">
+        <motion.p
+          initial={{ y: 25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2, delay: 0.5 }}
+          className="text-[3rem] sm:text-[4rem] xl:text-[5rem]"
+        >
           Web Developer{" "}
-        </p>
+        </motion.p>
 
-        <p className="text-[1.5rem] sm:text-[2rem] text-center text-[#a3a3a3]">
+        <motion.p
+          initial={{ y: 25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2, delay: 1 }}
+          className="text-[1.5rem] sm:text-[2rem] text-center text-[#a3a3a3]"
+        >
           <Typewriter
             words={[
               "ViciadoEmCafé.tsx",
@@ -38,7 +52,7 @@ export default function Hero() {
             deleteSpeed={75}
             delaySpeed={2000}
           />
-        </p>
+        </motion.p>
       </div>
     </motion.div>
   );

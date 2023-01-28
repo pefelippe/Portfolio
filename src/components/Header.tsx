@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaFilePdf, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 import AnimatedBtn from "./motion/AnimatedBtn";
 
@@ -52,14 +52,7 @@ function Header({}: Props) {
           Posts
         </Link>
       </div>
-      <div className="flex  gap-8 justify-center items-center">
-        {/* <AnimatedBtn
-          className="w-fit  text-lg font-semibold"
-          href="https://resume.io/r/m2cn8pnqu"
-        >
-          <FaFilePdf className="h-6 w-6 text-[#fff] hover:text-[#5865f2]" />
-        </AnimatedBtn> */}
-
+      {/* <div className="flex  gap-8 justify-center items-center">
         <AnimatedBtn
           className="w-fit text-lg font-semibold bg-[#3f4de9] rounded-lg"
           href="https://resume.io/r/m2cn8pnqu"
@@ -68,6 +61,28 @@ function Header({}: Props) {
             <FaFilePdf className="h-7 w-7 text-[#fff] " />
             <p>Currículo</p>
           </div>
+        </AnimatedBtn>
+      </div> */}
+
+      <div className="flex gap-8">
+        <AnimatedBtn
+          className="w-fit rounded-xl text-lg font-semibold"
+          href="https://github.com/pefelippe"
+        >
+          <FaGithub className=" h-7 w-7  hover:text-[#5865f2] " />
+        </AnimatedBtn>
+
+        <AnimatedBtn
+          className="w-fit rounded-xl  text-lg font-semibold"
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <FaLinkedinIn className=" h-7 w-7  hover:text-[#5865f2] " />
+        </AnimatedBtn>
+        <AnimatedBtn
+          className="w-fit rounded-xl  text-lg font-semibold"
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <FaFilePdf className="h-7 w-7  hover:text-[#5865f2]" />
         </AnimatedBtn>
       </div>
     </motion.header>

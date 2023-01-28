@@ -20,8 +20,8 @@ function ExperienceCard({
 }: IExperienceCard) {
   return (
     <article
-      className="flex flex-col rounded-xl items-center space-y-7 flex-shrink-0  w-[380px]
-      snap-center bg-[#292929] py-10 hover:bg-[#141414] cursor-pointer transition-opacity duration-200 overflow-hidden text-center"
+      className="flex flex-col rounded-xl items-center space-y-2 flex-shrink-0  p-10
+      snap-center bg-[#292929]  hover:bg-[#141414] cursor-pointer transition-opacity duration-200 overflow-hidden text-center"
     >
       <motion.img
         initial={{

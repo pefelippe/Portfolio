@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaFilePdf } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+
 import AnimatedBtn from "./../components/motion/AnimatedBtn";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -54,6 +54,15 @@ export default function Hero() {
           />
         </motion.p>
       </div>
+      {/* <AnimatedBtn
+        className="w-fit text-lg font-semibold bg-[#3f4de9] rounded-lg"
+        href="https://resume.io/r/m2cn8pnqu"
+      >
+        <div className="flex gap-2  p-3 ">
+          <FaFilePdf className="h-7 w-7 text-[#fff] " />
+          <p>Currículo</p>
+        </div>
+      </AnimatedBtn> */}
     </motion.div>
   );
 }

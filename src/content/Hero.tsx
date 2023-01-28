@@ -1,19 +1,18 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { FaFilePdf } from "react-icons/fa";
+
 import { Typewriter } from "react-simple-typewriter";
 
-import AnimatedBtn from "./../components/motion/AnimatedBtn";
 
 export default function Hero() {
   return (
     <motion.div
-      className="relative  flex flex-col mx-auto 
-     text-center  w-full  max-w-7xl justify-center items-center space-y-10"
+      className="relative flex flex-col mx-auto 
+     text-center  w-full max-w-7xl justify-center items-center space-y-10"
     >
       <div
         className="space-y-6 text-center text-4xl font-bold tracking-tight text-white sm:text-6xl 
-         text-[4rem] sm:text-[5rem] xl:text-[6rem]  2xl:text-[6.5rem] "
+         text-[4rem] sm:text-[5rem] xl:text-[6rem]  2xl:text-[7.5rem] "
       >
         <motion.h1
           initial={{ y: 25, opacity: 0 }}

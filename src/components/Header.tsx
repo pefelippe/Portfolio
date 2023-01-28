@@ -15,8 +15,8 @@ function Header({}: Props) {
     <motion.header
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, delay: 2 }}
-      className=" flex justify-between z-40  max-w-7xl mx-auto py-5 px-8"
+      transition={{ duration: 2, delay: 1 }}
+      className="flex justify-between z-40  w-full mx-auto py-5 px-10"
     >
       <div className="flex text-lg font-semibold items-center gap-8 ">
         <Link
@@ -52,19 +52,7 @@ function Header({}: Props) {
           Posts
         </Link>
       </div>
-      {/* <div className="flex  gap-8 justify-center items-center">
-        <AnimatedBtn
-          className="w-fit text-lg font-semibold bg-[#3f4de9] rounded-lg"
-          href="https://resume.io/r/m2cn8pnqu"
-        >
-          <div className="flex gap-2  p-3 ">
-            <FaFilePdf className="h-7 w-7 text-[#fff] " />
-            <p>Currículo</p>
-          </div>
-        </AnimatedBtn>
-      </div> */}
-
-      <div className="flex gap-8">
+      <div className="flex justify-center items-center gap-8">
         <AnimatedBtn
           className="w-fit rounded-xl text-lg font-semibold"
           href="https://github.com/pefelippe"
@@ -85,6 +73,17 @@ function Header({}: Props) {
           <FaFilePdf className="h-7 w-7  hover:text-[#5865f2]" />
         </AnimatedBtn>
       </div>
+      {/* <div className="flex  gap-8 justify-center items-center">
+        <AnimatedBtn
+          className="w-fit text-lg font-semibold bg-[#3f4de9] rounded-lg"
+          href="https://resume.io/r/m2cn8pnqu"
+        >
+          <div className="flex gap-2  p-3 ">
+            <FaFilePdf className="h-7 w-7 text-[#fff] " />
+            <p>Currículo</p>
+          </div>
+        </AnimatedBtn>
+      </div> */}
     </motion.header>
   );
 }

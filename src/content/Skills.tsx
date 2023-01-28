@@ -21,7 +21,7 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="w-full relative flex flex-row  px-8 justify-center">
+    <div className="w-full relative flex flex-row  pr-10 justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -30,8 +30,8 @@ function Skills({}: Props) {
       >
         <motion.div
           initial={{ x: -200 }}
-          whileInView={{ x: 0 }}
-          transition={{ duration: 2, delay: 1 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2, delay: 1.5 }}
           className="grid grid-cols-6 gap-2"
         >
           <SkillBox title="Html">
@@ -56,8 +56,8 @@ function Skills({}: Props) {
 
         <motion.div
           initial={{ x: 200 }}
-          whileInView={{ x: 0 }}
-          transition={{ duration: 2, delay: 1 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2, delay: 1.5 }}
           className="grid grid-cols-6 gap-2"
         >
           <SkillBox title="Docker">

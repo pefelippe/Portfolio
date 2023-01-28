@@ -7,7 +7,7 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="relative mx-auto  justify-center items-center h-fit space-y-20 ">
+    <div className="flex flex-col mx-auto  justify-center items-center pt-32 space-y-20">
       <AboutMe />
       <Experience />
     </div>

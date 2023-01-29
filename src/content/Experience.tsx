@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import ContentTitle from "../atoms/ContentTitle";
 
 import ExperienceCard from "../components/ExperienceCard";
 
@@ -72,11 +73,10 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col relative  px-8"
+      className="contentStyle"
     >
-      <h3 className=" pb-5 text-center text-3xl font-bold tracking-tight  md:text-4xl ">
-        Experiências Recentes
-      </h3>
+     <ContentTitle title="Experiência" />
+
       <div className="flex max-lg:flex-col max-lg:space-y-8 lg:space-x-8 text-white mx-auto max-w-7xl ">
         {experiences.map((experience) => {
           return (

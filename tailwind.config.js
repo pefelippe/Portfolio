@@ -3,7 +3,7 @@ module.exports = {
   content: ["./pages/**/*.{js.ts,jsx,tsx}", "./src/**/*.{js.ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["Helvetica Neue", "sans-serif"],
+      sans: ["CalcSans", "sans-serif"],
     },
     colors: {
       transparent: "transparent",

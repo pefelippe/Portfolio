@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import ContentTitle from "../atoms/ContentTitle";
 
 type Props = {};
 
@@ -10,13 +11,12 @@ function Projects({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 2, delay: 1.5 }}
-      className="relative flex flex-col  max-w-7xl justify-evenly mx-auto items-center z-0 space-y-10 max-xl:px-8 "
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      className="contentStyle px-10"
     >
-      <h3 className=" w-full  text-center text-3xl font-bold tracking-tight  md:text-4xl ">
-        Projetos
-      </h3>
+      <ContentTitle title="Projetos" />
+
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-hide ">
         {projects.map((proj) => {
           return (

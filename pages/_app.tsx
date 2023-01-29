@@ -1,4 +1,6 @@
-{/* /* background by SVGBackgrounds.com */}
+{
+  /* /* background by SVGBackgrounds.com */
+}
 import "../styles/globals.css";
 
 import type { AppProps } from "next/app";

@@ -20,6 +20,9 @@
     @apply bg-[#fff] text-[#000];
   }
 
+  .contentStyle {
+    @apply flex flex-col w-full max-w-7xl mx-auto gap-8 h-fit;
+  }
   .logoBtn {
     @apply font-semibold
     text-2xl

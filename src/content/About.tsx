@@ -19,8 +19,6 @@ function About({}: Props) {
       <ContentTitle title="Sobre" />
 
       <div className="flex flex-col md:flex-row items-center justify-center xl:gap-20 w-full  ">
-          
-
           <motion.img
             animate={{}}
             transition={{
@@ -36,9 +34,7 @@ function About({}: Props) {
             className="rounded-xl h-[200px] w-[200px] md:h-[250px] md:w-[250px] border-4"
           />
 
-   
-  
-        <span className="flex flex-col w-fit max-w-2xl items-center 
+        <span className="pt-5 flex flex-col w-fit max-w-2xl items-center 
          text-center md:text-left max-lg:px-10 text-[1.1rem] md:text-[1.3rem] text-grey-300 space-y-4"
         >
           Iniciei minha carreira como desenvolvedor no final de 2020. Atualmente

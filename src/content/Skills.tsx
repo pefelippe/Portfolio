@@ -24,24 +24,15 @@ function Skills({}: Props) {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 2, delay: 1.5 }}
+      transition={{ duration: 2 }}
       className="w-full relative flex flex-row max-lg:flex-col justify-center  xl:flex-row  items-center"
     >
       <motion.div
-        initial={{ x: -200 }}
-        animate={{ x: 0 }}
-        transition={{ duration: 2, delay: 1.5 }}
-        className="grid grid-cols-3 xl:grid-cols-6 gap-2"
+        initial={{ x: -100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 2 }}
+        className="grid grid-cols-4 gap-2"
       >
-        <SkillBox title="Html">
-          <SiHtml5 className=" socialMediaIcon" />
-        </SkillBox>
-        <SkillBox title="Css">
-          <SiCss3 className=" socialMediaIcon" />
-        </SkillBox>
-        <SkillBox title="Javascript">
-          <SiJavascript className=" socialMediaIcon" />
-        </SkillBox>
         <SkillBox title="React">
           <SiReact className=" socialMediaIcon" />
         </SkillBox>
@@ -51,13 +42,16 @@ function Skills({}: Props) {
         <SkillBox title="Git">
           <SiGit className=" socialMediaIcon" />
         </SkillBox>
+        <SkillBox title="Typescript">
+          <SiTypescript className=" socialMediaIcon" />
+        </SkillBox>
       </motion.div>
 
       <motion.div
-        initial={{ x: 200 }}
-        animate={{ x: 0 }}
-        transition={{ duration: 2, delay: 1.5 }}
-        className="grid grid-cols-3 xl:grid-cols-6 gap-2"
+        initial={{ x: 100 }}
+        whileInView={{ x: 0 }}
+        transition={{ duration: 2}}
+        className="grid grid-cols-4 gap-2"
       >
         <SkillBox title="Docker">
           <SiDocker className=" socialMediaIcon" />
@@ -68,12 +62,7 @@ function Skills({}: Props) {
         <SkillBox title="Node">
           <SiNodedotjs className=" socialMediaIcon" />
         </SkillBox>
-        <SkillBox title="Typescript">
-          <SiTypescript className=" socialMediaIcon" />
-        </SkillBox>
-        <SkillBox title="AWS">
-          <SiAmazonaws className=" socialMediaIcon" />
-        </SkillBox>
+
         <SkillBox title="MongoDB">
           <SiMongodb className=" socialMediaIcon" />
         </SkillBox>

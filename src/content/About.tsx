@@ -18,7 +18,7 @@ function About({}: Props) {
     >
       <ContentTitle title="Sobre" />
 
-      <div className="flex flex-col md:flex-row items-center justify-center xl:gap-20 w-full  ">
+      <div className="mx-auto max-w-4xl flex flex-col md:flex-row items-center justify-center lg:gap-12 w-full space-y-4 ">
           <motion.img
             animate={{}}
             transition={{
@@ -26,23 +26,47 @@ function About({}: Props) {
               scale: 2,
             }}
             whileHover={{
-              scale: 1.1,
+              scale: 1.05,
               transition: { duration: 0.5 },
             }}
             alt="avatar-pefelippe"
             src="assets/avatar-pdr.png"
             className="rounded-xl h-[200px] w-[200px] md:h-[250px] md:w-[250px] border-4"
-          />
+          /> 
 
-        <span className="pt-5 flex flex-col w-fit max-w-2xl items-center 
-         text-center md:text-left max-lg:px-10 text-[1.1rem] md:text-[1.3rem] text-grey-300 space-y-4"
-        >
-          Iniciei minha carreira como desenvolvedor no final de 2020. Atualmente
-          trabalho como Web Developer no Instituto Atlântico. Sou estudante de
-          Ciência da Computação na UFC. Consigo falar e entender bem Inglês
-          (nível C2).
-   
-        </span>
+        <div className=" flex flex-col space-y-4 w-fit text-center md:text-left max-lg:items-center ">
+          <span className=" max-lg:px-10 text-[1.1rem] md:text-[1.2rem] text-gray-100"
+          >
+            Trabalho há 3 anos me comunicando diariamente em inglês com pessoas do mundo inteiro.
+            Minha principal stack hoje é Javascript e suas blibliotecas e frameworks, principalmente React e Node.
+            Buscando evoluir a qualidade das minhas entregas, venho me especializando em DevOps (Docker, Terraform, AWS).
+          </span>
+
+          <div className="flex gap-4 ">
+            <AnimatedBtn
+              className="w-fit rounded-xl text-md font-semibold  flex  py-4 px-4 border-[#fff] border-2 hover:bg-[#3f4de9]"
+              href="https://github.com/pefelippe"
+            >
+              <FaGithub className=" h-7 w-7 " />
+            </AnimatedBtn>
+
+            <AnimatedBtn
+              className="w-fit rounded-xl text-md font-semibold  py-4 px-4 border-[#fff] border-2 hover:bg-[#3f4de9]  "
+              href="https://www.linkedin.com/in/pedro-felippe/"
+            >
+              <FaLinkedinIn className=" h-7 w-7 " />
+            </AnimatedBtn>
+            <AnimatedBtn
+            className="w-fit text-md font-semibold border-2 border-[#fff] rounded-xl hover:bg-[#3f4de9]"
+            href="https://resume.io/r/m2cn8pnqu"
+          >
+            <div className="flex space-x-2 justify-center items-center py-4 px-4">
+              <FaFilePdf className="h-7 w-7 text-[#fff] " /> <p>Currículo</p>
+            </div>
+          </AnimatedBtn>
+          </div>
+        </div>
+
       </div>
     </motion.div>
   );

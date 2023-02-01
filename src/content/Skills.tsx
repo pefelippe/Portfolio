@@ -25,7 +25,7 @@ function Skills({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="w-full relative flex flex-row max-lg:flex-col justify-center  xl:flex-row  items-center"
+      className="w-full relative flex flex-row max-md:flex-col justify-center gap-2 xl:flex-row  items-center px-10"
     >
       <motion.div
         initial={{ x: -100 }}
@@ -45,6 +45,7 @@ function Skills({}: Props) {
         <SkillBox title="Typescript">
           <SiTypescript className=" socialMediaIcon" />
         </SkillBox>
+
       </motion.div>
 
       <motion.div

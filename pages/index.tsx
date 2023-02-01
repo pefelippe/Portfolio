@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div
       className="relative flex flex-col mx-auto justify-center max-sm:py-20 py-40
-     items-center align-center max-sm:space-y-10 space-y-20"
+     items-center align-center max-sm:space-y-10 space-y-20 min-w-[400px]"
     >
       <Hero />
       <Skills />

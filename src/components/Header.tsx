@@ -14,7 +14,7 @@ function Header({}: Props) {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, delay: 1 }}
-      className="flex justify-end z-40  w-full mx-auto py-4 px-10  items-center"
+      className="flex justify-end z-40  w-full mx-auto py-2 px-10  items-center"
     >
       <div className="flex w-full justify-center lg:justify-end  items-center gap-8 ">
         <AnimatedBtn

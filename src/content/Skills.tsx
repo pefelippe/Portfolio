@@ -23,24 +23,27 @@ function Skills({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="w-full relative max-w-5xl flex flex-row max-md:flex-col justify-center gap-4 xl:flex-row  items-center px-10"
+      className="w-full relative max-w-6xl justify-between flex flex-row max-md:flex-col max-md:space-y-4  xl:flex-row  items-center"
     >
       <motion.div
         initial={{ x: -100 }}
-        whileInView={{ x: 0 }}
+        animate={{ x: 0 }}
         transition={{ duration: 2 }}
-        className="grid grid-cols-4  gap-4"
+        className="flex justify-between w-full"
       >
+        <SkillBox title="Git">
+          <SiGit className=" socialMediaIcon" />
+        </SkillBox>
+        <SkillBox title="Javascript">
+          <SiJavascript className=" socialMediaIcon" />
+        </SkillBox>
         <SkillBox title="React">
           <SiReact className=" socialMediaIcon" />
         </SkillBox>
-        <SkillBox title="Next.js">
+        <SkillBox title="Next">
           <SiNextdotjs className="socialMediaIcon" />
-        </SkillBox>
-        <SkillBox title="Git">
-          <SiGit className=" socialMediaIcon" />
         </SkillBox>
         <SkillBox title="Typescript">
           <SiTypescript className=" socialMediaIcon" />
@@ -49,10 +52,13 @@ function Skills({}: Props) {
 
       <motion.div
         initial={{ x: 100 }}
-        whileInView={{ x: 0 }}
+        animate={{ x: 0 }}
         transition={{ duration: 2 }}
-        className="grid grid-cols-4  gap-4"
+        className="flex justify-between w-full"
       >
+        <SkillBox title="AWS">
+          <SiAmazonaws className=" socialMediaIcon" />
+        </SkillBox>
         <SkillBox title="Docker">
           <SiDocker className=" socialMediaIcon" />
         </SkillBox>

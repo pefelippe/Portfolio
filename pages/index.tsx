@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <About />
-      {/* <Experience /> */}
+      <Experience />
       <Projects />
     </div>
   );

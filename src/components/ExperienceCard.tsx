@@ -20,7 +20,7 @@ function ExperienceCard({
 }: IExperienceCard) {
   return (
     <article
-      className="flex flex-col rounded-xl items-center space-y-2 flex-shrink-0  p-10 w-[350px]
+      className="flex flex-col rounded-xl items-center space-y-2 flex-shrink-0 p-8  w-fit min-w-[350px]
       snap-center bg-[#292929]  hover:bg-[#141414] cursor-pointer transition-opacity duration-200 overflow-hidden text-center"
     >
       <motion.img
@@ -31,13 +31,13 @@ function ExperienceCard({
         transition={{ duration: 1.2 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
-        className="w-32 h-32 rounded-full  object-cover object-center"
+        className="w-24 h-24 rounded-full  object-cover object-center"
         src={imgUrl}
         alt="card image"
       />
 
       <div className="space-y-2">
-        <h4 className="text-3xl font-bold ">{title}</h4>
+        <h4 className="text-2xl font-bold ">{title}</h4>
         <p className=" text-xl ">{company}</p>
         <p className="uppercase  text-gray-300">
           {dateInit} - {dateEnd}

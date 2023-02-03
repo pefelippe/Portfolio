@@ -6,6 +6,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Header from "../src/components/Header";
+import Footer from "../src/components/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Header />
       <Component {...pageProps} />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,20 +1,20 @@
 import React from "react";
 
-import About from "../src/content/About";
+import Details from "../src/content/Details";
+import Experience from "../src/content/Experience";
 import Hero from "../src/content/Hero";
 import Projects from "../src/content/Projects";
 import Skills from "../src/content/Skills";
-import Experience from "../src/content/Experience";
 
 export default function Home() {
   return (
     <div
-      className="relative flex flex-col mx-auto justify-center max-sm:py-20 py-40
-     items-center align-center max-sm:space-y-10 space-y-20 min-w-[400px]"
+      className="relative flex flex-col mx-auto justify-center 
+     items-center align-center max-sm:space-y-10 space-y-20 py-20 md:py-40 min-w-[400px]"
     >
       <Hero />
       <Skills />
-      <About />
+      <Details />
       <Experience />
       <Projects />
     </div>

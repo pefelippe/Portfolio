@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import ContentTitle from "../atoms/ContentTitle";
 
+import ContentTitle from "../atoms/ContentTitle";
 import ExperienceCard from "../components/ExperienceCard";
 
 type Props = {};
@@ -72,7 +72,7 @@ function Experience({}: Props) {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 2 }}
       className="contentStyle "
     >
       <ContentTitle title="Experiência" />

@@ -1,37 +1,40 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 import React from "react";
 
 import ContentTitle from "../atoms/ContentTitle";
+import ProjectCard from "../components/ProjectCard";
 
 type Props = {};
 
 function Projects({}: Props) {
-  const projects = [1, 2, 3];
+  const projects = [
+    {
+      id: 1,
+      link: "https://portfolio-pefelippe.vercel.app/",
+      imgUrl: "assets/portfolio.png",
+      description: "Meu portfolio pessoal.",
+    },
+  ];
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, delay: 2 }}
-      className="contentStyle px-10"
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      className="contentStyle justify-center items-center mx-auto px-8"
     >
-      <ContentTitle title="Meus Projetos" />
+      <ContentTitle title="E meus Projetos?" />
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar-hide ">
+      <div className="relative w-full grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8 z-20 justify-center items-center mx-auto ">
         {projects.map((proj) => {
           return (
-            <div
-              key={proj}
-              className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center scrollbar-hide"
-            >
-              <Image
-                width="700"
-                height="600"
-                src="/assets/banner.png"
-                alt="img"
-              />
-            </div>
+            <ProjectCard
+              key={proj.id}
+              description={proj.description}
+              imgUrl={proj.imgUrl}
+              link={proj.link}
+            />
           );
         })}
       </div>

@@ -13,8 +13,7 @@ const SkillBox = ({ title, children }: ISkillBox) => {
         scale: 1.3,
         transition: { duration: 0.1 },
       }}
-      className="flex flex-col justify-center items-center text-center  mx-auto
-       transition-all ease-in-out space-y-3  w-fit  rounded-full "
+      className="flex flex-col justify-center items-center text-center mx-auto transition-all ease-in-out space-y-3 w-fit rounded-full "
     >
       <div>{children}</div>
       <h2 className="tracking-tight  font-semibold">{title}</h2>

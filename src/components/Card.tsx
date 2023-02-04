@@ -20,8 +20,8 @@ function ExperienceCard({
 }: IExperienceCard) {
   return (
     <article
-      className="flex flex-col rounded-xl items-center space-y-2 flex-shrink-0 p-8  w-fit min-w-[350px]
-      snap-center bg-[#292929]  hover:bg-[#141414] cursor-pointer transition-opacity duration-200 overflow-hidden text-center"
+      className="flex flex-row rounded-xl items-center space-y-2 flex-shrink-0 p-5 min-w-[350px] min-h-[200px]
+      cursor-pointer transition-opacity duration-200 overflow-hidden text-center space-x-4"
     >
       <motion.img
         initial={{
@@ -31,7 +31,7 @@ function ExperienceCard({
         transition={{ duration: 1.2 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
-        className="w-24 h-24 rounded-full  object-cover object-center"
+        className="w-16 h-16 rounded-full  object-cover object-center"
         src={imgUrl}
         alt="card image"
       />

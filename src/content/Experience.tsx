@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import ContentTitle from "../atoms/ContentTitle";
-import ExperienceCard from "../components/ExperienceCard";
+import ExperienceCard from "../components/Card";
 
 type Props = {};
 
@@ -22,36 +22,36 @@ function Experience({}: Props) {
         "Reuniões em inglês com membros internacionais",
       ],
     },
-    {
-      id: 2,
-      title: "Trainee em P&D",
-      imgUrl:
-        "https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg",
-      company: "Instituto Atlântico",
-      dateInit: "set de 2021",
-      dateEnd: "nov de 2021",
-      sumarryPoints: [
-        "Buscar e estudar novas tecnologias",
-        "Criar provas de Conceito (PoCs)",
-        "Participar na criação de Disclosures",
-        "Reuniões em inglês com membros internacionais",
-      ],
-    },
-    {
-      id: 3,
-      title: "Estágio em P&D",
-      imgUrl:
-        "https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg",
-      company: "Instituto Atlântico",
-      dateInit: "dez de 2020",
-      dateEnd: "ago de 2021",
-      sumarryPoints: [
-        "Buscar e estudar novas tecnologias",
-        "Criar provas de Conceito (PoCs)",
-        "Participar na criação de Disclosures",
-        "Reuniões em inglês com membros internacionais",
-      ],
-    },
+    // {
+    //   id: 2,
+    //   title: "Trainee em P&D",
+    //   imgUrl:
+    //     "https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg",
+    //   company: "Instituto Atlântico",
+    //   dateInit: "set de 2021",
+    //   dateEnd: "nov de 2021",
+    //   sumarryPoints: [
+    //     "Buscar e estudar novas tecnologias",
+    //     "Criar provas de Conceito (PoCs)",
+    //     "Participar na criação de Disclosures",
+    //     "Reuniões em inglês com membros internacionais",
+    //   ],
+    // },
+    // {
+    //   id: 3,
+    //   title: "Estágio em P&D",
+    //   imgUrl:
+    //     "https://pbs.twimg.com/profile_images/1413230067862355973/cAOV9v6P_400x400.jpg",
+    //   company: "Instituto Atlântico",
+    //   dateInit: "dez de 2020",
+    //   dateEnd: "ago de 2021",
+    //   sumarryPoints: [
+    //     "Buscar e estudar novas tecnologias",
+    //     "Criar provas de Conceito (PoCs)",
+    //     "Participar na criação de Disclosures",
+    //     "Reuniões em inglês com membros internacionais",
+    //   ],
+    // },
     // {
     //   id: 4,
     //   title: "Bolsista em Q&A",
@@ -72,12 +72,10 @@ function Experience({}: Props) {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1.5 }}
       className="contentStyle "
     >
-      <ContentTitle title="Experiência" />
-
-      <div className="flex  text-white max-w-6xl w-full mx-auto justify-between max-lg:flex-col max-lg:space-y-8 items-center ">
+      <div className="flex  text-white max-w-4xl w-full mx-auto justify-between  gap-4 max-md:flex-col items-center overflow-hidden">
         {experiences.map((experience) => {
           return (
             <ExperienceCard

@@ -1,29 +1,47 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
+
+import AnimatedBtn from "./motion/AnimatedBtn";
 
 type Props = {};
 
 function Header({}: Props) {
   return (
     <motion.header
-      initial={{ opacity: 0, y: -50 }}
+      initial={{ opacity: 0, y: -25 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, delay: 1 }}
-      className="flex max-w-7xl justify-between z-40 mx-auto w-full  pt-8 px-8  items-center"
+      transition={{ duration: 2, delay: 1.5 }}
+      className="flex max-w-7xl justify-between z-40 mx-auto w-full pt-8 max-lg:px-6 items-center"
     >
       <Link href="/">
-        <span className="font-bold text-xl cursor-pointer transition-all hover:text-gray-700">
+        <span className="font-bold text-2xl cursor-pointer transition-all hover:text-gray-300">
           pedrofelippe_
         </span>
       </Link>
 
-      <div className="flex items-center gap-8 font-semibold ">
-        <Link href="/contact">
-          <button className="text-xl rounded-full border-2 transition-all  px-6 p-2 text-[#fff] hover:border-[#3f4de9] hover:bg-[#3f4de9]">
-            Contato
-          </button>
-        </Link>
+      <div className="flex gap-8 max-lg:justify-center pt-4">
+        <AnimatedBtn
+          className="w-fit rounded-xl text-lg font-semibold  "
+          href="https://github.com/pefelippe"
+        >
+          <FaGithub className="h-8 w-8  hover:text-[#5865f2] text-[#fff] " />
+        </AnimatedBtn>
+
+        <AnimatedBtn
+          className="w-fit rounded-xl  text-lg font-semibold"
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <FaLinkedinIn className=" h-8 w-8  hover:text-[#5865f2] text-[#fff]" />
+        </AnimatedBtn>
+
+        <AnimatedBtn
+          className="w-fit rounded-xl text-lg font-semibold  "
+          href="https://resume.io/r/m2cn8pnqu"
+        >
+          <FaFilePdf className="h-8 w-8 hover:text-[#5865f2]  text-[#fff] " />
+        </AnimatedBtn>
       </div>
     </motion.header>
   );

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import React from "react";
 
 import ContentTitle from "../atoms/ContentTitle";
@@ -15,6 +14,18 @@ function Projects({}: Props) {
       imgUrl: "assets/portfolio.png",
       description: "Meu portfolio pessoal.",
     },
+    // {
+    //   id: 2,
+    //   link: "https://portfolio-pefelippe.vercel.app/",
+    //   imgUrl: "assets/portfolio.png",
+    //   description: "Meu portfolio pessoal.",
+    // },
+    // {
+    //   id: 3,
+    //   link: "https://portfolio-pefelippe.vercel.app/",
+    //   imgUrl: "assets/portfolio.png",
+    //   description: "Meu portfolio pessoal.",
+    // },
   ];
 
   return (
@@ -24,9 +35,9 @@ function Projects({}: Props) {
       transition={{ duration: 2 }}
       className="contentStyle justify-center items-center mx-auto px-8"
     >
-      <ContentTitle title="E meus Projetos?" />
+      <ContentTitle title="Projetos" />
 
-      <div className="relative w-full grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-8 z-20 justify-center items-center mx-auto ">
+      <div className="relative max-w-4xl w-full grid  grid-cols-1 gap-8  justify-center items-center mx-auto ">
         {projects.map((proj) => {
           return (
             <ProjectCard

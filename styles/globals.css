@@ -21,7 +21,7 @@
   }
 
   .contentStyle {
-    @apply flex flex-col w-full max-w-7xl mx-auto gap-8 h-fit max-lg:px-8;
+    @apply flex flex-col w-full max-w-7xl mx-auto gap-4 h-fit max-lg:px-8;
   }
   .logoBtn {
     @apply font-semibold

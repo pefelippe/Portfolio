@@ -7,20 +7,20 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <footer className="px-10  flex justify-center py-8 max-w-7xl mx-auto">
-      <div className="flex gap-8">
+    <footer className="absolute bottom-0 right-0 p-10">
+      <div className="flex flex-col justify-center gap-8">
         <AnimatedBtn
           className="w-fit rounded-xl text-lg font-semibold  "
           href="https://github.com/pefelippe"
         >
-          <FaGithub className=" h-7 w-7  hover:text-[#5865f2] text-[#fff] " />
+          <FaGithub className=" h-8 w-8  hover:text-[#5865f2] text-[#fff] " />
         </AnimatedBtn>
 
         <AnimatedBtn
           className="w-fit rounded-xl  text-lg font-semibold"
           href="https://www.linkedin.com/in/pedro-felippe/"
         >
-          <FaLinkedinIn className=" h-7 w-7  hover:text-[#5865f2] text-[#fff]" />
+          <FaLinkedinIn className=" h-8 w-8  hover:text-[#5865f2] text-[#fff]" />
         </AnimatedBtn>
       </div>
     </footer>

@@ -5,9 +5,15 @@ interface iBtnProps {
   href?: string;
   children: JSX.Element;
   className?: string;
+  target?: string;
 }
 
-function AnimatedBtn({ href, children, className }: iBtnProps) {
+function AnimatedBtn({
+  href,
+  children,
+  className,
+  target = "_blank",
+}: iBtnProps) {
   return (
     <motion.a
       whileHover={{
@@ -15,7 +21,7 @@ function AnimatedBtn({ href, children, className }: iBtnProps) {
         transition: { duration: 0.1 },
       }}
       href={href}
-      target="_blank"
+      target={target}
       className={className}
     >
       {children}

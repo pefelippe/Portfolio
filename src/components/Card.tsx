@@ -21,7 +21,7 @@ function ExperienceCard({
   return (
     <article
       className="flex flex-row rounded-xl items-center space-y-2 flex-shrink-0 p-5 min-w-[350px] min-h-[200px]
-      cursor-pointer transition-opacity duration-200 overflow-hidden text-center space-x-4"
+      transition-opacity duration-200 overflow-hidden text-center space-x-4"
     >
       <motion.img
         initial={{

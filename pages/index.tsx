@@ -11,14 +11,14 @@ export default function Home() {
   return (
     <div
       className="relative flex flex-col mx-auto justify-center 
-     items-center align-center max-sm:space-y-14 space-y-28  min-w-[400px] py-20"
+     items-center align-center max-sm:space-y-14 space-y-32  min-w-[400px] py-20 pb-40"
     >
       <Hero />
       <Skills />
-      <Projects />
       <Details />
+      <Projects />
       {/* <Experience /> */}
-      {/* <ContactMessage /> */}
+      <ContactMessage />
     </div>
   );
 }

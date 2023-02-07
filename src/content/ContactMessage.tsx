@@ -14,11 +14,11 @@ function Message({}: Props) {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.75 }}
-      className="contentStyle py-20 "
+      className="contentStyle "
     >
       <ContentTitle title="Contato" />
 
-      <div className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center scrollbar-hide">
+      <div className="w-full h-1/2 flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center scrollbar-hide">
         <Image width="700" height="600" src="/assets/banner.png" alt="img" />
       </div>
     </motion.div>

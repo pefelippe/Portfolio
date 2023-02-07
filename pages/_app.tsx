@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Portfolio" />
       </Head>
 
-      {/* <Header /> */}
+      <Header />
       <Component {...pageProps} />
       {/* <Footer /> */}
     </div>

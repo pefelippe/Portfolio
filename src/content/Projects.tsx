@@ -12,18 +12,8 @@ function Projects({}: Props) {
     {
       id: 1,
       link: "https://portfolio-pefelippe.vercel.app/",
-      imgUrl: "assets/portfolio.png",
-      description: "Meu portfolio pessoal.",
-    },
-    {
-      id: 2,
-      link: "https://portfolio-pefelippe.vercel.app/",
-      imgUrl: "assets/portfolio.png",
-      description: "Meu portfolio pessoal.",
-    },
-    {
-      id: 3,
-      link: "https://portfolio-pefelippe.vercel.app/",
+      repo: "https://github.com/pefelippe",
+      title: "Portfolio",
       imgUrl: "assets/portfolio.png",
       description: "Meu portfolio pessoal.",
     },
@@ -33,12 +23,13 @@ function Projects({}: Props) {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, delay: 2 }}
+      transition={{ duration: 2 }}
       className="contentStyle justify-center items-center mx-auto px-8"
+      id="projetos"
     >
-      <ContentTitle title="Meus Projetos" />
+      <ContentTitle title="Projetos" />
 
-      <div className="relative max-w-7xl w-full grid lg:grid-cols-3  grid-cols-1 gap-8  justify-center items-center mx-auto ">
+      <div className="relative w-full grid grid-cols-1 gap-8  justify-center items-center mx-auto ">
         {projects.map((proj) => {
           return (
             <ProjectCard
@@ -46,6 +37,8 @@ function Projects({}: Props) {
               description={proj.description}
               imgUrl={proj.imgUrl}
               link={proj.link}
+              title={proj.title}
+              repo={proj.repo}
             />
           );
         })}

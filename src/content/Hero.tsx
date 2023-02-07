@@ -4,17 +4,14 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
-    <motion.div
-      className="relative flex flex-col mx-auto 
-     text-center  w-full max-w-7xl justify-center items-center space-y-10 "
-    >
+    <motion.div className="p-[30px] flex items-center justify-center xl:justify-between mx-auto w-full max-w-7xl  text-center xl:text-left xl:pt-40">
       <div
-        className="space-y-6 text-center text-4xl font-bold tracking-tight text-white sm:text-6xl 
+        className="space-y-6  text-4xl font-bold tracking-tight text-white sm:text-6xl 
          text-[4rem] sm:text-[5rem] xl:text-[6rem]  2xl:text-[7.5rem] "
       >
         <motion.h1
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ x: -25, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2 }}
           className="w-full text-[#5865f2]"
         >
@@ -22,8 +19,8 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ x: -25, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 0.5 }}
           className="text-[3rem] sm:text-[4rem] xl:text-[5rem]"
         >
@@ -31,10 +28,10 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ x: -25, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}
-          className="text-[1.5rem] sm:text-[2rem] text-center text-[#a3a3a3]"
+          className="text-[1.5rem] sm:text-[2rem]  text-[#a3a3a3]"
         >
           <Typewriter
             words={[

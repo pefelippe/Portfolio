@@ -19,12 +19,12 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="w-full relative max-w-7xl flex flex-col max-md:flex-col max-md:space-y-8  md:flex-row  items-center max-lg:px-5">
+    <div className=" w-full relative max-w-7xl flex flex-col max-lg:flex-col max-xl:space-y-8  xl:flex-row  items-center max-lg:px-5">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, delay: 1.5 }}
-        className="flex justify-between w-full"
+        className="flex  w-full"
       >
         <SkillBox title="Git">
           <SiGit className="socialMediaIcon" />
@@ -47,7 +47,7 @@ function Skills({}: Props) {
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, delay: 1.5 }}
-        className="flex justify-between w-full"
+        className="flex w-full"
       >
         <SkillBox title="AWS">
           <SiAmazonaws className=" socialMediaIcon" />

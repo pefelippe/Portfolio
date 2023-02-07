@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -10,17 +11,15 @@ type Props = {};
 function Message({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2 }}
-      className="py-10"
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.75 }}
+      className="contentStyle py-20 "
     >
-      <div className="contentStyle  max-w-4xl justify-center items-center gap-6 w-fit">
-        <ContentTitle title="Pronto para começar uma parceria?" />
+      <ContentTitle title="Contato" />
 
-        <button className="justify-center md:justify-start text-2xl font-semibold rounded-full px-8 py-4 cursor-pointer transition-all bg-[#3b47ca] hover:bg-[#3b47ca] hover:underline">
-          <Link href="/contact">Vamos conversar</Link>
-        </button>
+      <div className="w-full flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center scrollbar-hide">
+        <Image width="700" height="600" src="/assets/banner.png" alt="img" />
       </div>
     </motion.div>
   );

@@ -10,7 +10,12 @@ type IProjectCard = {
 
 function ExperienceCard({ description, link, imgUrl }: IProjectCard) {
   return (
-    <article className="relative min-w-[350px] h-[300px] overflow-hidden rounded-lg">
+    <motion.article
+      initial={{ y: 40 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 2 }}
+      className="relative min-w-[350px] h-[300px] overflow-hidden rounded-lg"
+    >
       <motion.img
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -20,7 +25,7 @@ function ExperienceCard({ description, link, imgUrl }: IProjectCard) {
         transition={{ duration: 1.2 }}
         src={imgUrl}
         alt="card image"
-        className="relative cursor:pointer  hover:hidden w-full h-full transition-all object-cover border-4 border-[#121212]"
+        className="relative cursor:pointer  hover:hidden w-full h-full transition-all object-cover border-4 border-[#464545]"
       />
 
       <div className="absolute gap-4  inset-0  bg-[#080808] text-center flex flex-col items-center transition-all justify-center opacity-0 hover:opacity-100 bg-opacity-100 ">
@@ -33,7 +38,7 @@ function ExperienceCard({ description, link, imgUrl }: IProjectCard) {
           </Link>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }
 

@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-import ContentTitle from "../src/atoms/ContentTitle";
-import AnimatedBtn from "../src/components/motion/AnimatedBtn";
-import ProjectCard from "../src/components/ProjectCard";
+import ContentTitle from "../atoms/ContentTitle";
+import AnimatedBtn from "../components/motion/AnimatedBtn";
+import ProjectCard from "../components/ProjectCard";
 
 type Props = {};
 
@@ -24,12 +24,12 @@ function Projects({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2 }}
-      className="min-h-screen contentStyle justify-center items-center mx-auto px-8 space-y-8"
+      className="contentStyle justify-center items-center mx-auto px-8 space-y-8"
       id="projetos"
     >
       <ContentTitle title="Projetos" />
 
-      <div className="relative w-full grid xl:grid-cols-2 grid-cols-1 gap-12  justify-center items-center mx-auto ">
+      <div className="relative w-full grid grid-cols-1 gap-12  justify-center items-center mx-auto ">
         {projects.map((proj) => {
           return (
             <ProjectCard

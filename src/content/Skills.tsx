@@ -20,13 +20,13 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className=" w-full relative max-w-7xl flex flex-col  max-xl:space-y-8  xl:flex-row  items-center max-lg:px-5">
-      <ContentTitle title="Skills" />
+    <div className=" w-full  flex flex-col  max-xl:space-y-8  xl:flex-row  items-center max-lg:px-5">
+
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 2 }}
-        className="flex  w-full"
+        className="flex  w-full "
       >
         <SkillBox title="Git">
           <SiGit className="socialMediaIcon" />

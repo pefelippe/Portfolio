@@ -4,7 +4,10 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
-    <motion.div className="p-[30px] flex items-center justify-center xl:justify-between mx-auto w-full max-w-7xl  text-center xl:text-left xl:pt-20">
+    <motion.div
+      className="p-[30px] flex items-center justify-center xl:justify-between mx-auto
+     w-full max-w-7xl  text-center xl:text-left "
+    >
       <div
         className="space-y-6  text-4xl font-bold tracking-tight text-white sm:text-6xl 
          text-[4rem] sm:text-[5rem] xl:text-[6rem]  2xl:text-[7.5rem] "

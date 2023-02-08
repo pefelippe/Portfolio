@@ -13,12 +13,12 @@ function About({}: Props) {
     <motion.div
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 2 }}
-      className="contentStyle px-5 "
+      transition={{ duration: 2, delay: 1.5 }}
+      className="contentStyle px-8 "
       id="sobre"
     >
       <ContentTitle title="Quem sou" />
-      <div className="mx-auto max-w-7xl w-full flex flex-col xl:flex-row  items-center justify-evenly">
+      <div className="mx-auto max-w-7xl w-full flex flex-col xl:flex-row  items-center justify-between">
         <motion.img
           animate={{}}
           transition={{
@@ -46,7 +46,6 @@ function About({}: Props) {
           </p>
         </span>
       </div>
-      <Icons />
     </motion.div>
   );
 }

@@ -24,12 +24,12 @@ function Projects({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2 }}
-      className="contentStyle justify-center items-center mx-auto px-8"
+      className="contentStyle justify-center items-center mx-auto px-8 space-y-8"
       id="projetos"
     >
       <ContentTitle title="Projetos" />
 
-      <div className="relative w-full grid grid-cols-1 gap-8  justify-center items-center mx-auto ">
+      <div className="relative w-full grid xl:grid-cols-2 grid-cols-1 gap-12  justify-center items-center mx-auto ">
         {projects.map((proj) => {
           return (
             <ProjectCard
@@ -43,7 +43,10 @@ function Projects({}: Props) {
           );
         })}
       </div>
-      {/* <p className=" text-xl flex justify-center cursor-pointer w-full mx-auto border-2 px-20 py-2 rounded-lg transition-all hover:underline hover:bg-[#e5e5e5]">
+      {/* <p
+        className=" text-xl flex justify-center cursor-pointer w-xl mx-auto  rounded-lg transition-all
+       hover:underline "
+      >
         Ver Mais
       </p> */}
     </motion.div>

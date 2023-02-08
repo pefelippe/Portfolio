@@ -12,6 +12,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import ContentTitle from "../atoms/ContentTitle";
 
 import SkillBox from "../components/SkillBox";
 
@@ -22,8 +23,8 @@ function Skills({}: Props) {
     <div className=" w-full relative max-w-7xl flex flex-col max-lg:flex-col max-xl:space-y-8  xl:flex-row  items-center max-lg:px-5">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 1.5 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2 }}
         className="flex  w-full"
       >
         <SkillBox title="Git">
@@ -45,8 +46,8 @@ function Skills({}: Props) {
 
       <motion.div
         initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 1.5 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2 }}
         className="flex w-full"
       >
         <SkillBox title="AWS">

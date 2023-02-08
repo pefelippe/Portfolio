@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
-
-import Icons from "../atoms/Icons";
-import AnimatedBtn from "./motion/AnimatedBtn";
 
 type Props = {};
 
@@ -14,34 +10,44 @@ function Header({}: Props) {
       initial={{ opacity: 0, y: -25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, delay: 1.5 }}
-      className="flex max-w-7xl justify-between z-40 mx-auto pt-8 gap-8 items-center px-8"
+      className="absolute w-full z-40 pt-10 items-center text-xl"
     >
-      <div className="flex w-full mx-auto gap-8 ">
-        <AnimatedBtn
-          className="w-fit rounded-xl text-lg font-semibold hover:text-[#5865f2]"
-          target=""
-          href="#sobre"
-        >
-          <p>Quem sou</p>
-        </AnimatedBtn>
+      <div className="flex  justify-center mx-auto gap-10 md:gap-20">
 
-        <AnimatedBtn
-          className="w-fit rounded-xl  text-lg font-semibold hover:text-[#5865f2]"
-          href="#projetos"
-          target=""
+      <Link
+          className="w-fit rounded-xl   font-semibold hover:text-[#5865f2]"
+          href="/"
+       
+        >
+          <p>Home</p>
+        </Link>
+
+        <Link
+          className="w-fit rounded-xl  font-semibold hover:text-[#5865f2]"
+       
+          href="/details"
+        >
+          <p>Sobre</p>
+        </Link>
+
+        <Link
+          className="w-fit rounded-xl   font-semibold hover:text-[#5865f2]"
+          href="/projects"
+       
         >
           <p>Projetos</p>
-        </AnimatedBtn>
+        </Link>
 
-        <AnimatedBtn
-          className="w-fit rounded-xl  text-lg font-semibold hover:text-[#5865f2]"
-          href="#contato"
-          target=""
+        <Link
+          className="w-fit rounded-xl   font-semibold hover:text-[#5865f2]"
+          href="/contact"
+       
         >
           <p>Contato</p>
-        </AnimatedBtn>
+        </Link>
       </div>
-      <Icons />
+ 
+     
     </motion.header>
   );
 }

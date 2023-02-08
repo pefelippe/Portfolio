@@ -1,24 +1,23 @@
 import React from "react";
 
-import ContactMessage from "../src/content/Contact";
-import Details from "../src/content/Details";
+import ContactMessage from "./contact";
+import Details from "./details";
 import Experience from "../src/content/Experience";
 import Hero from "../src/content/Hero";
-import Projects from "../src/content/Projects";
+import Projects from "./projects";
 import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
     <div
-      className="relative flex flex-col mx-auto justify-center 
-     items-center align-center max-sm:space-y-14 space-y-28  min-w-[400px] py-20"
+      className="relative flex flex-col mx-auto justify-center items-center "
     >
       <Hero />
-      <Skills />
+      {/* <Skills />
       <Details />
       <Projects />
-      {/* <Experience /> */}
-      <ContactMessage />
+      {/* <Experience /> x
+      <ContactMessage /> */}
     </div>
   );
 }

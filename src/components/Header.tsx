@@ -6,34 +6,34 @@ type Props = {};
 
 function Header({}: Props) {
   return (
-    <motion.header
-      initial={{ opacity: 0, y: -25 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, delay: 1.5 }}
-      className="relative w-full  z-40 pt-8  items-center  text-xl"
+    <motion.div
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 2, delay: 2 }}
+      className="flex gap-8 justify-end p-10"
     >
-      <div className="flex  max-w-7xl  justify-between mx-auto items-center">
-
-      <Link
-          className="text-2xl text-[#fff] font-semibold hover:text-[#5865f2]"
-          href="/ "
+      <div className="text-2xl flex gap-8 tracking-wider items-center text-gray-300 pb-10">
+        <Link
+          className="flex  rounded-full  font-semibold hover:underline"
+          href="/"
         >
-          <p>Pedro Felippe</p>
+          <p>Home</p>
+        </Link>
+        <Link
+          className="flex  rounded-full  font-semibold hover:underline"
+          href="/About"
+        >
+          <p>Quem sou</p>
         </Link>
 
-
-      <div className="flex tracking-wider items-center">
         <Link
-          className="w-fit rounded-xl px-6 p-4  font-semibold border-4 border-[#5865f2] "
-          href="/contact"
-       
+          className=" rounded-full  font-semibold  hover:underline "
+          href="/Contact"
         >
           <p>Contato</p>
         </Link>
       </div>
- 
-     </div>
-    </motion.header>
+    </motion.div>
   );
 }
 

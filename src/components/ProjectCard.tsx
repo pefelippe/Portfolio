@@ -22,37 +22,36 @@ function ExperienceCard({
       initial={{ y: 40 }}
       whileInView={{ y: 0 }}
       transition={{ duration: 2 }}
-      className="relative w-full h-[350px] overflow-hidden rounded-lg mx-auto border-4 border-[#080808]"
+      className="relative flex items-center max-md:flex-col justify-between w-fit rounded-xl mx-auto border-[#242424] border-2 bg-gray-500/10 transition-all text-[#fff] p-10 gap-10"
     >
-      <motion.img
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        whileHover={{
-          scale: 1.05,
-        }}
-        transition={{ duration: 1.2 }}
-        src={imgUrl}
-        alt="card image"
-        className="relative cursor:pointer hover:hidden w-full h-full transition-all object-contain "
-      />
-
-      <div className="absolute gap-4  inset-0  bg-[#080808] text-center flex flex-col items-center transition-all justify-center opacity-0 hover:opacity-100 bg-opacity-100 ">
-        <h1 className=" text-[2rem] tracking-wider font-bold">{title}</h1>
-        <p className=" text-[1.5rem] tracking-wider">{description}</p>
+      <div className="relative gap-4  inset-0   text-center flex flex-col items-center transition-all justify-center py-5  px-10 w-2xl">
+        <h1 className=" text-[2rem] tracking-wider font-bold ">{title}</h1>
+        <p className=" text-[1.5rem] tracking-wider text-gray-100">
+          {description}
+        </p>
         <div className="flex space-x-4">
           <Link href={link} target="_blank" rel="noopener">
-            <button className="text-xl rounded-xl border-4 transition-all px-10 p-3 text-[#fff] border-[#3f4de9] hover:bg-[#3f4de9]">
+            <button className="text-xl rounded-xl  bg-[#5865f2]  transition-all px-8 p-3 transition-all hover:bg-[#5865f2]/80">
               Demo
             </button>
           </Link>
 
           <Link href={repo} target="_blank" rel="noopener">
-            <button className="text-xl rounded-xl border-4 transition-all px-10 p-3 text-[#fff] border-[#3f4de9] hover:bg-[#3f4de9]">
+            <button className="text-xl rounded-xl  transition-all px-8 p-3 bg-[#5865f2] transition-all hover:bg-[#5865f2]/80 ">
               Código
             </button>
           </Link>
         </div>
       </div>
+
+      <motion.img
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2 }}
+        src={imgUrl}
+        alt="card image"
+        className="relative rounded-xl transition-all object-cover border-4 mx-auto h-[300px] w-4xl border-[#242424]"
+      />
     </motion.article>
   );
 }

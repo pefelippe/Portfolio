@@ -27,9 +27,9 @@ function Projects({}: Props) {
       className="contentStyle justify-center items-center mx-auto px-8 space-y-8"
       id="projetos"
     >
-      <ContentTitle title="Projetos" />
+      <ContentTitle title="Conheça meus projetos" />
 
-      <div className="relative w-full grid grid-cols-1 gap-12  justify-center items-center mx-auto ">
+      <div className="relative w-full max-w-5xl grid grid-cols-1 gap-12  justify-center items-center mx-auto ">
         {projects.map((proj) => {
           return (
             <ProjectCard

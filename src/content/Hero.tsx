@@ -1,20 +1,17 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
+
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
-    <motion.div
-      className=" flex flex-col items-center justify-center  mx-auto
-     w-full max-w-7xl  text-center "
-    >
-      <div className="xl:space-y-6  font-bold tracking-tight text-white 0 ">
+    <motion.div className="flex flex-col items-center justify-center  mx-auto w-full max-w-7xl  text-center  ">
+      <div className="xl:space-y-6  font-bold tracking-tight text-white   ">
         <motion.h1
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="w-full text-[#5865f2] sm:text-6xl pt-20
+          transition={{ duration: 2.5 }}
+          className="w-full text-[#5865f2] sm:text-6xl
           text-[4rem] sm:text-[5rem] xl:text-[7rem]"
         >
           Pedro Felippe
@@ -23,7 +20,7 @@ export default function Hero() {
         <motion.p
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2, delay: 0.5 }}
+          transition={{ duration: 2.5, delay: 0.5 }}
           className="text-[3rem] sm:text-[4rem] "
         >
           Web Developer{" "}

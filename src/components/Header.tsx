@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import Icons from "../atoms/Icons";
 
 type Props = {};
 
@@ -10,29 +11,13 @@ function Header({}: Props) {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2, delay: 2 }}
-      className="flex gap-8 justify-end p-10"
+      className="flex gap-8 max-w-7xl mx-auto pt-10 text-2xl 8 w-full justify-between items-center max-xl:px-10"
     >
-      <div className="text-2xl flex gap-8 tracking-wider items-center text-gray-300 pb-10">
-        <Link
-          className="flex  rounded-full  font-semibold hover:underline"
-          href="/"
-        >
-          <p>Home</p>
-        </Link>
-        <Link
-          className="flex  rounded-full  font-semibold hover:underline"
-          href="/About"
-        >
-          <p>Quem sou</p>
-        </Link>
+      <Link className="font-bold hover:text-[#3948eb] transition-all" href="/">
+        <p>Pedro Felippe</p>
+      </Link>
 
-        <Link
-          className=" rounded-full  font-semibold  hover:underline "
-          href="/Contact"
-        >
-          <p>Contato</p>
-        </Link>
-      </div>
+      <Icons />
     </motion.div>
   );
 }

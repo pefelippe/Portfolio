@@ -21,37 +21,31 @@ function ExperienceCard({
     <motion.article
       initial={{ y: 40 }}
       whileInView={{ y: 0 }}
-      whileHover={{
-        scale: 1.05,
-        transition: { duration: 0.1 },
-      }}
       className="relative flex items-center flex-col min-w-[1/2] rounded-xl mx-auto
-        border-4 bg-[#121212] transition-all  border-[#242424] text-[#fff] hover:border-[#5865f2]"
+        transition-all   text-[#fff] "
     >
       <motion.img
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1.2 }}
+        whileHover={{
+          scale: 1.05,
+          transition: { duration: 0.1 },
+        }}
         src={imgUrl}
         alt="card image"
-        className="object-contain  mx-auto h-[350px]"
+        className="object-contain  mx-auto h-[350px] rounded-3xl  border-[#414040] border-4 hover:border-[#5865f2]"
       />
 
-      <div className="flex flex-col justify-center  text-center  transition-all py-4 gap-4">
-        <div className="gap-4">
-          <h1 className=" text-[1.75rem] tracking-wider font-bold ">{title}</h1>
-          <p className=" text-[1.5em]  text-gray-100">{description}</p>
-        </div>
+      <h1 className=" text-[2rem] tracking-wider font-bold pt-4">{title}</h1>
 
-        <div className="flex justify-center gap-4 font-semibold text-xl text-[#5865f2] ">
-          <Link href={link} target="_blank" rel="noopener">
-            <button className="hover:underline">Demo</button>
-          </Link>
+      <div className="flex justify-center gap-8 font-semibold text-xl text-[#5865f2] pt-2">
+        <Link href={link} target="_blank" rel="noopener">
+          <button className="hover:underline">Demo</button>
+        </Link>
 
-          <Link href={repo} target="_blank" rel="noopener">
-            <button className="hover:underline">Código</button>
-          </Link>
-        </div>
+        <Link href={repo} target="_blank" rel="noopener">
+          <button className="hover:underline">Código</button>
+        </Link>
       </div>
     </motion.article>
   );

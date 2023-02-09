@@ -1,5 +1,6 @@
+import { useRouter } from "next/router";
 import React from "react";
-import { FaGithub, FaLinkedinIn, FaFilePdf } from "react-icons/fa";
+import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import AnimatedBtn from "./../components/motion/AnimatedBtn";
 

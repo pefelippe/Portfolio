@@ -35,7 +35,7 @@ function Projects({}: Props) {
       className="contentStyle justify-center items-center mx-auto "
       id="projetos"
     >
-      <ContentTitle title="Conheça meus projetos" />
+      <ContentTitle title="Projetos" />
 
       <div className="relative w-full max-w-6xl grid xl:grid-cols-2 grid-cols-1 gap-8 mx-auto pt-10">
         {projects.map((proj) => {

@@ -8,7 +8,7 @@ type Props = {};
 function LetsTalk({}: Props) {
   return (
     <motion.div>
-      <ContentTitle title="Vamos nessa?" />
+      {/* <ContentTitle title="Vamos nessa?" /> */}
 
       <Link
         href="/Contact"

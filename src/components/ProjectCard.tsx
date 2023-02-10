@@ -21,7 +21,7 @@ function ExperienceCard({
     <motion.article
       initial={{ y: 40 }}
       whileInView={{ y: 0 }}
-      className="relative w-full max-w-3xl xl:gap-10 flex items-center  flex-col xl:flex-row  
+      className="relative w-full max-w-4xl xl:gap-10 flex items-center  flex-col xl:flex-row  
       justify-center rounded-lg mx-auto transition-all  text-[#fff]  px-8 "
     >
       <motion.img
@@ -29,7 +29,7 @@ function ExperienceCard({
         animate={{ opacity: 1 }}
         src={imgUrl}
         alt="card image"
-        className="object-contain  mx-auto  transition-all border-[#242424] hover:border-[#4454fa] border-4 rounded-lg "
+        className="object-contain  mx-auto  transition-all border-[#242424]  border-4 rounded-lg "
       />
 
       <div className=" flex flex-col w-full py-3">

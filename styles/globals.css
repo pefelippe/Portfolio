@@ -48,7 +48,7 @@
   }
 
   .socialMediaIcon {
-    @apply h-8 w-8 xl:h-12 xl:w-12  text-[#fff] hover:text-[#5865f2];
+    @apply h-10 w-10  text-[#fff];
   }
 
   .heroBtn {

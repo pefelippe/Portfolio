@@ -29,7 +29,11 @@ function Header({}: Props) {
         </Link>
 
         <Link
-          className={router.pathname === "/Contact" ? "text-[#fff] hover:text-[#5865f2]" : "hover:text-[#5865f2]"}
+          className={
+            router.pathname === "/Contact"
+              ? "text-[#fff] hover:text-[#5865f2]"
+              : "hover:text-[#5865f2]"
+          }
           href="/Contact"
         >
           <p>Contato</p>

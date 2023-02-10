@@ -17,14 +17,6 @@ function Projects({}: Props) {
       imgUrl: "assets/portfolio.png",
       description: "Meu portfolio pessoal.",
     },
-    {
-      id: 2,
-      link: "https://portfolio-pefelippe.vercel.app/",
-      repo: "https://github.com/pefelippe",
-      title: "Portfolio",
-      imgUrl: "assets/portfolio.png",
-      description: "Meu portfolio pessoal.",
-    },
   ];
 
   return (
@@ -32,12 +24,12 @@ function Projects({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, delay: 2.5 }}
-      className="contentStyle justify-center items-center mx-auto "
+      className=" justify-center items-center mx-auto "
       id="projetos"
     >
-      <ContentTitle title="Projetos" />
+      <ContentTitle title="Conheça meu trabalho" />
 
-      <div className="relative w-full max-w-6xl grid xl:grid-cols-2 grid-cols-1 gap-8 mx-auto pt-10">
+      <div className="relative w-fit grid xl:grid-cols-1 grid-cols-1 gap-8 mx-auto pt-8">
         {projects.map((proj) => {
           return (
             <ProjectCard

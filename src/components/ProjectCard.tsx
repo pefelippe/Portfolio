@@ -21,31 +21,31 @@ function ExperienceCard({
     <motion.article
       initial={{ y: 40 }}
       whileInView={{ y: 0 }}
-      className="relative flex items-center flex-col min-w-[1/2] rounded-xl mx-auto
-        transition-all   text-[#fff] "
+      className="relative w-full max-w-3xl xl:gap-10 flex items-center  flex-col xl:flex-row  
+      justify-center rounded-lg mx-auto transition-all  text-[#fff]  px-8 "
     >
       <motion.img
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        whileHover={{
-          scale: 1.05,
-          transition: { duration: 0.1 },
-        }}
         src={imgUrl}
         alt="card image"
-        className="object-contain  mx-auto h-[350px] rounded-3xl  border-[#414040] border-4 hover:border-[#5865f2]"
+        className="object-contain  mx-auto  transition-all border-[#242424] hover:border-[#4454fa] border-4 rounded-lg "
       />
 
-      <h1 className=" text-[2rem] tracking-wider font-bold pt-4">{title}</h1>
+      <div className=" flex flex-col w-full py-3">
+        <p className="text-[2rem] md:text-[3rem] tracking-wider font-bold">
+          {description}
+        </p>
 
-      <div className="flex justify-center gap-8 font-semibold text-xl text-[#5865f2] pt-2">
-        <Link href={link} target="_blank" rel="noopener">
-          <button className="hover:underline">Demo</button>
-        </Link>
+        <div className="flex justify-start gap-8 font-semibold text-xl text-[#fff] pt-2">
+          <Link href={link} target="_blank" rel="noopener">
+            <button className="underline hover:text-[#4454fa]">Demo</button>
+          </Link>
 
-        <Link href={repo} target="_blank" rel="noopener">
-          <button className="hover:underline">Código</button>
-        </Link>
+          <Link href={repo} target="_blank" rel="noopener">
+            <button className="underline hover:text-[#4454fa]">Código</button>
+          </Link>
+        </div>
       </div>
     </motion.article>
   );

@@ -1,19 +1,29 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { SiAmazonaws, SiDocker, SiGit, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiAmazonaws,
+  SiDocker,
+  SiGit,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
-import ContentTitle from "../atoms/ContentTitle";
 import SkillBox from "../components/SkillBox";
 
 type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className=" w-full  flex flex-col  max-md:space-y-8  md:flex-row  items-center max-md:px-5">
+    <div className=" w-full max-w-5xl flex flex-col  max-md:space-y-8  md:flex-row  items-center max-md:px-5">
       <motion.div
-        initial={{ x: -25, opacity: 0 }}
+        initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 2 }}
+        transition={{ duration: 2 }}
         className="flex  w-full "
       >
         <SkillBox title="Git">
@@ -34,9 +44,9 @@ function Skills({}: Props) {
       </motion.div>
 
       <motion.div
-        initial={{ x: 25, opacity: 0 }}
+        initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 2 }}
+        transition={{ duration: 2 }}
         className="flex w-full"
       >
         <SkillBox title="AWS">

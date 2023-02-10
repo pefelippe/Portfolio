@@ -31,7 +31,7 @@ function ExperienceCard({
         transition={{ duration: 1.2 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}
-        className="w-16 h-16 rounded-full  object-cover object-center"
+        className="w-16 h-16 rounded-full  object-cover object-center "
         src={imgUrl}
         alt="card image"
       />

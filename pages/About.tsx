@@ -1,20 +1,18 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
-import ContentTitle from "../atoms/ContentTitle";
+import ContentTitle from "../src/atoms/ContentTitle";
+import Icons from "../src/atoms/Icons";
+import Skills from "../src/content/Skills";
 
 type Props = {};
 
 function About({}: Props) {
   return (
-    <motion.div
-      initial={{ y: 25 }}
-      whileInView={{ y: 0 }}
-      transition={{ duration: 2 }}
-      className="mx-auto w-full flex flex-col items-center justify-center px-8"
-    >
-      <ContentTitle title="Sobre mim" />
-      <div className="flex flex-col md:flex-row  justify-center w-full items-center  mx-auto gap-4 md:gap-8">
+    <motion.div className="mx-auto w-full flex flex-col items-center justify-center px-8  py-20 xl:py-40 gap-10">
+      <ContentTitle title="Quem sou?" />
+      <div className="flex flex-col  justify-center w-full items-center  mx-auto gap-6  xl:flex-row ">
         <motion.img
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
@@ -22,8 +20,8 @@ function About({}: Props) {
         />
 
         <motion.span
-          className=" flex flex-col  w-fit items-center  text-center text-[1.25rem]
-          text-gray-200  max-w-2xl md:text-left  gap-2"
+          className=" flex flex-col  w-fit items-center xl:text-left text-center max-md:text-[1.15rem] text-[1.25rem]
+          text-gray-200  max-w-2xl"
         >
           <p>
             Sou um{" "}
@@ -39,7 +37,7 @@ function About({}: Props) {
           <p>
             Atualmente finalizando meu diploma em{" "}
             <span className="font-semibold ">Ciência da Computação</span> na
-            UFC. Além diss, trabalho como Web Developer no{" "}
+            UFC. Além disso, trabalho como Web Developer no{" "}
             <a
               href="https://www.atlantico.com.br/"
               rel="noreferrer"
@@ -52,12 +50,17 @@ function About({}: Props) {
           </p>
         </motion.span>
       </div>
+      <Skills />
+
+      <Link
+        href="/Contact"
+        target=""
+        className="px-6 text-center text-xl  font-semibold rounded-xl p-5 transition-all bg-[#5865f2]/80  hover:underline hover:bg-[#5865f2]"
+      >
+        Entre em contato!
+      </Link>
     </motion.div>
   );
 }
 
 export default About;
-
-// Estou em busca de novas oportunidades para
-//             colocar meus conhecimentos em prática e contribuir para o sucesso de
-//             projetos desafiadores.

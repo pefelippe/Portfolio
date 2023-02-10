@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Icons({}: Props) {
   return (
-    <div className="flex gap-8">
+    <div className="flex gap-8 justify-center">
       <AnimatedBtn
         className="w-fit rounded-xl text-lg font-semibold  "
         href="https://github.com/pefelippe"

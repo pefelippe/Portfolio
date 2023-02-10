@@ -8,8 +8,8 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <footer className="absolute z-40 bottom-0 p-5 right-0 ">
-      <div className="flex flex-col  gap-12">
+    <footer className="relative ">
+      <div className="flex justify-center items-center pb-10  gap-12">
         <AnimatedBtn
           className="w-fit rounded-xl text-lg font-semibold  "
           href="https://github.com/pefelippe"

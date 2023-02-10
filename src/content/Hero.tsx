@@ -1,31 +1,13 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
-    <motion.div className="flex flex-col items-center justify-center  mx-auto w-full max-w-7xl  text-center  ">
-      <div className="xl:space-y-6  font-bold tracking-tight text-white   ">
-        <motion.h1
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2.5 }}
-          className="w-full text-[#5865f2] sm:text-6xl
-          text-[4rem] sm:text-[5rem] xl:text-[7rem]"
-        >
-          Pedro Felippe
-        </motion.h1>
-
-        <motion.p
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2.5, delay: 0.5 }}
-          className="text-[3rem] sm:text-[4rem] "
-        >
-          Web Developer{" "}
-        </motion.p>
-
+    <motion.div className="flex flex-col w-full max-w-7xl  text-center  ">
+      <div className="xl:space-y-6 font-bold tracking-tight text-white  ">
         <motion.p
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -46,6 +28,47 @@ export default function Hero() {
             delaySpeed={2000}
           />
         </motion.p>
+        <motion.h1
+          initial={{ y: 25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2.5 }}
+          className="w-full text-[#5865f2] sm:text-6xl
+          text-[4rem] sm:text-[5rem] xl:text-[7rem]"
+        >
+          Pedro Felippe
+        </motion.h1>
+
+        <motion.p
+          initial={{ y: 25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2.5, delay: 0.5 }}
+          className="text-[3rem] sm:text-[4rem] "
+        >
+          Web Developer{" "}
+        </motion.p>
+
+        <motion.div
+          initial={{ y: 25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2, delay: 1 }}
+          className="flex gap-4 justify-center items-center"
+        >
+          <Link
+            href="/About"
+            target=""
+            className="px-6  text-center text-xl  font-semibold rounded-xl p-5 transition-all  hover:underline text-[#5865f2]"
+          >
+            Quem sou?
+          </Link>
+
+          <Link
+            href="/Contact"
+            target=""
+            className="px-6 text-center text-xl  font-semibold rounded-xl p-5 transition-all bg-[#5865f2]/80  hover:underline hover:bg-[#5865f2]"
+          >
+            Entre em contato
+          </Link>
+        </motion.div>
       </div>
     </motion.div>
   );

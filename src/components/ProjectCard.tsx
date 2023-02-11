@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import { FaAngleRight, FaGithub } from "react-icons/fa";
 
 type IProjectCard = {
   description: string;
@@ -19,32 +20,28 @@ function ExperienceCard({
 }: IProjectCard) {
   return (
     <motion.article
-      className="relative xl:gap-10 flex xl:items-center  flex-col xl:flex-row  
-      justify-center rounded-lg mx-auto transition-all  text-[#fff]  px-8 "
+      className="flex md:flex-row flex-col w-full justify-between max-w-5xl
+       rounded-lg mx-auto transition-all  text-[#fff] bg-[#101010] hover:bg-[#121212] border-[#141414] border-4  overflow-hidden"
     >
-      <motion.img
-        src={imgUrl}
-        alt="card image"
-        className="object-contain  mx-auto  transition-all border-[#242424]  border-4 rounded-lg w-[800px] "
-      />
-
-      <motion.div className=" flex flex-col  py-3 justify-center xl:justify-start items-center">
-        <p className="items-center text-[2rem] md:text-[3rem] tracking-wider font-bold break-words ">
+      <motion.div className="p-10  w-full flex flex-col justify-center gap-4 ">
+        <p className="items-center text-[3rem] tracking-wider font-bold break-words text-gray-200 ">
           {description}
         </p>
 
-        <div className="flex gap-8 font-semibold text-xl  pt-2 text-[#4454fa]">
+        <div className="flex items-center gap-8 font-semibold text-xl   ">
           <Link href={link} target="_blank" rel="noopener">
-            <button className="underline hover:text-[#4454fa]/80 ">Demo</button>
-          </Link>
-
-          <Link href={repo} target="_blank" rel="noopener">
-            <button className="underline hover:text-[#4454fa]/80">
-              Código
+            <button className="flex items-center gap-2 hover:underline hover:text-[#4454fa]/80 ">
+              Live Demo <FaAngleRight />
             </button>
           </Link>
         </div>
       </motion.div>
+
+      <motion.img
+        src={imgUrl}
+        alt="card image"
+        className="object-fill  xl:max-w-lg max-h-[500px]"
+      />
     </motion.article>
   );
 }

@@ -33,7 +33,7 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2.5 }}
           className="w-full text-[#5865f2] sm:text-6xl
-          text-[4rem] sm:text-[5rem] xl:text-[7rem]"
+          text-[4rem] sm:text-[5rem] xl:text-[8rem]"
         >
           Pedro Felippe
         </motion.h1>
@@ -42,7 +42,7 @@ export default function Hero() {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2.5, delay: 0.5 }}
-          className="text-[3rem] sm:text-[4rem] "
+          className="text-[3rem] sm:text-[4.5rem] "
         >
           Web Developer{" "}
         </motion.p>
@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}
-          className="flex gap-4 justify-center items-center"
+          className="flex gap-8 justify-center items-center"
         >
           <Link
             href="/About"

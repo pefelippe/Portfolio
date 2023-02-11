@@ -19,7 +19,7 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className=" w-full max-w-5xl flex flex-col  max-md:space-y-8  md:flex-row  items-center max-md:px-5">
+    <div className=" w-full  flex flex-col  max-md:space-y-8  md:flex-row  items-center max-md:px-5">
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

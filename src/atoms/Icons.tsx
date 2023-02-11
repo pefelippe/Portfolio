@@ -7,26 +7,26 @@ type Props = {};
 
 export default function Icons({}: Props) {
   return (
-    <div className="flex gap-8 justify-center">
+    <div className="flex gap-12 justify-center">
       <AnimatedBtn
         className="w-fit rounded-xl text-lg font-semibold  "
         href="https://github.com/pefelippe"
       >
-        <FaGithub className=" h-8 w-8   hover:text-[#5865f2] text-[#fff] " />
+        <FaGithub className=" h-10 w-10   hover:text-[#5865f2] text-[#fff] " />
       </AnimatedBtn>
 
       <AnimatedBtn
         className="w-fit rounded-xl  text-lg font-semibold"
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
-        <FaLinkedinIn className=" h-8 w-8  hover:text-[#5865f2] text-[#fff]" />
+        <FaLinkedinIn className="h-10 w-10  hover:text-[#5865f2] text-[#fff]" />
       </AnimatedBtn>
 
       <AnimatedBtn
         className="w-fit rounded-xl  text-lg font-semibold"
         href="https://resume.io/r/m2cn8pnqu"
       >
-        <FaFilePdf className=" h-8 w-8  hover:text-[#5865f2] text-[#fff]" />
+        <FaFilePdf className="h-10 w-10  hover:text-[#5865f2] text-[#fff]" />
       </AnimatedBtn>
     </div>
   );

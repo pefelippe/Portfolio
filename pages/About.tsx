@@ -3,16 +3,20 @@ import Link from "next/link";
 import React from "react";
 
 import ContentTitle from "../src/atoms/ContentTitle";
-import Icons from "../src/atoms/Icons";
 import Skills from "../src/content/Skills";
 
 type Props = {};
 
 function About({}: Props) {
   return (
-    <motion.div className="mx-auto w-full flex flex-col items-center justify-center px-8  py-20 xl:py-40 gap-10">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className=" mx-auto w-full flex flex-col items-center justify-center px-8  py-20  gap-10"
+    >
       <ContentTitle title="Quem sou?" />
-      <div className="flex flex-col  justify-center w-full items-center  mx-auto gap-6  xl:flex-row ">
+      <div className="flex flex-col justify-center w-full items-center  mx-auto gap-6  xl:flex-row ">
         <motion.img
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
@@ -50,15 +54,14 @@ function About({}: Props) {
           </p>
         </motion.span>
       </div>
-      <Skills />
 
-      <Link
+      {/* <Link
         href="/Contact"
         target=""
         className="px-6 text-center text-xl  font-semibold rounded-xl p-5 transition-all bg-[#5865f2]/80  hover:underline hover:bg-[#5865f2]"
       >
         Entre em contato!
-      </Link>
+      </Link> */}
     </motion.div>
   );
 }

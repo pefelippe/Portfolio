@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import AnimatedBtn from "../components/motion/AnimatedBtn";
 
 export default function Hero() {
   return (
@@ -33,7 +34,7 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2.5 }}
           className="w-full text-[#5865f2] sm:text-6xl
-          text-[4rem] sm:text-[5rem] xl:text-[8rem]"
+          text-[4rem] sm:text-[5rem] md:text-[6rem] xl:text-[8rem]"
         >
           Pedro Felippe
         </motion.h1>
@@ -51,23 +52,24 @@ export default function Hero() {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}
-          className="flex gap-8 justify-center items-center"
+          className="flex gap-4 mg:gap-8 justify-center items-center"
         >
-          <Link
-            href="/About"
-            target=""
-            className="px-6  text-center text-xl  font-semibold rounded-xl p-5 transition-all  hover:underline text-[#5865f2]"
+          <AnimatedBtn
+            className="cursor-pointer px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
+            border-2 border-[#5865f2]  hover:underline "
+            href="https://resume.io/r/m2cn8pnqu"
           >
-            Quem sou?
-          </Link>
+            <p>Meu Currículo</p>
+          </AnimatedBtn>
 
-          <Link
+          <AnimatedBtn
+            className="px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
+            border-2 border-[#5865f2]/80 bg-[#5865f2]  hover:underline hover:bg-[#5865f2] hover:border-[#5865f2] "
             href="/Contact"
             target=""
-            className="px-6 text-center text-xl  font-semibold rounded-xl p-5 transition-all bg-[#5865f2]/80  hover:underline hover:bg-[#5865f2]"
           >
-            Entre em contato
-          </Link>
+            <p>Entre em contato</p>
+          </AnimatedBtn>
         </motion.div>
       </div>
     </motion.div>

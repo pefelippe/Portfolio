@@ -30,20 +30,17 @@ function Projects({}: Props) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, delay: 1.5 }}
-      className=" flex flex-col justify-center items-center mx-auto gap-8  px-8 overflow-hidden"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2, delay: 2 }}
+      className=" flex  w-full flex-col justify-between items-center mx-auto  "
       id="projetos"
     >
-      <div
-        className=" flex w-full text-center justify-center tracking-[1px] text-[2rem] xl:text-[3rem] 
-      font-bold "
-      >
+      <div className="bg-[#5865f2] w-fit px-4 flex text-center justify-center tracking-[1px] text-[2.5rem]  font-bold">
         Meus projetos
       </div>
 
-      <div className="relative w-fit grid xl:grid-cols-1 grid-cols-1 gap-12 mx-auto ">
+      <div className="mt-5 relative w-fit grid grid-cols-1 gap-12 mx-auto px-8">
         {projects.map((proj) => {
           return (
             <ProjectCard

@@ -8,12 +8,11 @@ import Icons from "../atoms/Icons";
 type Props = {};
 
 function Header({}: Props) {
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2, delay: 2 }}
+      transition={{ duration: 2 }}
       className="flex  max-w-7xl  mx-auto pt-8 text-xl font-bold transition-all w-full justify-between items-center max-xl:px-10 "
     >
       <Link href="/">

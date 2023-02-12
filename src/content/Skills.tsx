@@ -23,7 +23,7 @@ function Skills({}: Props) {
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 2, delay: 2 }}
         className="flex  w-full "
       >
         <SkillBox title="Git">
@@ -46,7 +46,7 @@ function Skills({}: Props) {
       <motion.div
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 2, delay: 2 }}
         className="flex w-full"
       >
         <SkillBox title="AWS">

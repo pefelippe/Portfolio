@@ -7,7 +7,7 @@ import About from "./About";
 
 export default function Home() {
   return (
-    <div className="relative flex flex-col mx-auto justify-center items-center max-w-7xl space-y-20 lg:space-y-32 py-20">
+    <div className="relative flex flex-col mx-auto justify-center items-center max-w-7xl space-y-14  py-20">
       <Hero />
       {/* <Skills /> */}
       <Projects />

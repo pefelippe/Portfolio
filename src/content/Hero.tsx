@@ -7,7 +7,7 @@ import AnimatedBtn from "../components/motion/AnimatedBtn";
 
 export default function Hero() {
   return (
-    <motion.div className="flex flex-col w-full max-w-7xl  text-center  ">
+    <motion.div className="flex flex-col w-full max-w-7xl  text-center  py-20">
       <div className="xl:space-y-6 font-bold tracking-tight text-white  ">
         <motion.p
           initial={{ y: -25, opacity: 0 }}

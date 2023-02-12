@@ -62,14 +62,18 @@ export default function Hero() {
             <p>Meu Currículo</p>
           </AnimatedBtn>
 
-          <AnimatedBtn
+          <motion.div
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.1 },
+            }}
             className="px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
             border-2 border-[#5865f2]/80 bg-[#5865f2]  hover:underline hover:bg-[#5865f2] hover:border-[#5865f2] "
-            href="/Contact"
-            target=""
           >
+            <Link href="/Contact" target="">
             <p>Entre em contato</p>
-          </AnimatedBtn>
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>

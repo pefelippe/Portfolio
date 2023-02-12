@@ -19,16 +19,16 @@ function ExperienceCard({
   title,
 }: IProjectCard) {
   return (
-    <motion.article className="flex  flex-col w-full justify-between mx-auto rounded-md transition-all xl:flex-row gap-4 xl:gap-8">
+    <motion.article className="flex  flex-col w-full border-4  justify-between mx-auto rounded-md transition-all md:flex-row gap-4 md:gap-8 bg-[#040404] border-[#141414] hover:border-[#202020]">
       <Link href={repo} target="_blank" rel="noopener">
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="object-contain border-[#141414] hover:border-[#202020] border-4 rounded-xl w-[500px] "
+          className="object-contain  rounded-xl w-[500px] "
         />
       </Link>
 
-      <motion.div className=" xl:mr-20 flex flex-col   justify-center gap-2 w-full xl:w-[200px] ">
+      <motion.div className="p-4 md:mr-20 flex flex-col   justify-center gap-2 w-full md:w-[200px] ">
         <p className="items-center text-[2rem] md:text-[2.5rem] tracking-wider font-bold  text-gray-200 underline decoration-[#5865f2] ">
           {description}
         </p>

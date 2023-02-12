@@ -40,7 +40,7 @@ function Projects({}: Props) {
         Meus projetos
       </div>
 
-      <div className="mt-5 relative w-fit grid grid-cols-1 gap-12 mx-auto px-8">
+      <div className="mt-10 relative w-fit grid grid-cols-1 gap-12 mx-auto px-8">
         {projects.map((proj) => {
           return (
             <ProjectCard

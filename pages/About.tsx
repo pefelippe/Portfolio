@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
+import AnimatedBtn from "../src/components/motion/AnimatedBtn";
+
 type Props = {};
 
 function About({}: Props) {
@@ -9,21 +11,21 @@ function About({}: Props) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 2.5 }}
-      className="mx-auto w-full flex flex-col items-center justify-center px-8 gap-4 max-w-4xl "
+      transition={{ duration: 1.5 }}
+      className=" mx-auto w-full flex flex-col items-center justify-center px-8 max-w-2xl "
     >
-      <div className="bg-[#5865f2] w-fit px-4 flex text-center justify-center tracking-[1px] text-[2.5rem]  font-bold ">
+      <div className="mb-4 bg-[#5865f2] w-fit px-4 flex text-center justify-center tracking-[1px] text-[2rem]  font-bold ">
         Quem sou eu
       </div>
 
-      <div className="flex flex-col justify-center w-full items-center mx-auto  gap-4 md:flex-row">
+      <div className="flex flex-col justify-center w-full items-center mx-auto  gap-4 ">
         <motion.img
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
           className="rounded-full h-[200px] w-[200px]  border-4 hover:border-0 transition-all "
         />
 
-        <motion.span className=" flex flex-col w-fit items-center xl:text-left text-center text-[1.15rem]  text-gray-200 ">
+        <motion.span className=" flex flex-col w-fit items-center  text-center text-[1.15rem]  text-gray-200 ">
           <p>
             Sou um{" "}
             <span className="text-[#5865f2]  font-semibold">Web Developer</span>{" "}

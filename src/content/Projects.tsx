@@ -36,11 +36,11 @@ function Projects({}: Props) {
       className=" flex  w-full flex-col justify-between items-center mx-auto  "
       id="projetos"
     >
-      <div className="bg-[#5865f2] w-fit px-4 flex text-center justify-center tracking-[1px] text-[2.5rem]  font-bold">
+      <div className="mb-4 bg-[#5865f2] w-fit px-4 flex text-center justify-center tracking-[1px] text-[2rem]  font-bold">
         Meus projetos
       </div>
 
-      <div className="mt-10 relative w-fit grid grid-cols-1 gap-12 mx-auto px-8">
+      <div className="relative w-fit grid grid-cols-1 gap-12 mx-auto px-8">
         {projects.map((proj) => {
           return (
             <ProjectCard

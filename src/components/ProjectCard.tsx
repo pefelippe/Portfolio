@@ -19,7 +19,7 @@ function ExperienceCard({
   title,
 }: IProjectCard) {
   return (
-    <motion.article className="flex  flex-col w-full border-4  justify-between mx-auto rounded-md transition-all md:flex-row gap-4 md:gap-8 bg-[#040404] border-[#141414] hover:border-[#202020]">
+    <motion.article className="flex  flex-col w-full border-4  justify-between mx-auto rounded-md transition-all md:flex-row gap-4 md:gap-8 bg-[#080808] border-[#141414] hover:border-[#202020]">
       <Link href={repo} target="_blank" rel="noopener">
         <motion.img
           src={imgUrl}

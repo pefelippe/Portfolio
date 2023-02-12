@@ -19,7 +19,9 @@ export default function Hero() {
             words={[
               "ViciadoEmCafé.tsx",
               "Tailwind <3",
-              "i write coffe code and drink javascript",
+              "i write coffe",
+              "i drink javascript",
+              "send pix plz",
             ]}
             loop={0}
             cursor
@@ -52,10 +54,10 @@ export default function Hero() {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}
-          className="flex gap-4 mg:gap-8 justify-center items-center"
+          className="flex gap-4 justify-center items-center"
         >
           <AnimatedBtn
-            className="cursor-pointer px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
+            className=" cursor-pointer px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
             border-2 border-[#5865f2]  hover:underline "
             href="https://resume.io/r/m2cn8pnqu"
           >

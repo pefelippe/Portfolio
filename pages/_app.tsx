@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div
       className=" z-0 
     overflow-x-hidden overflow-y-scroll 
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scroll-smooth 
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2] /80 scroll-smooth 
      text-[#fff]  h-screen bg-[#191919] bg-[url('/assets/endless-constellation.svg')] min-w-[400px]"
     >
       <Head>

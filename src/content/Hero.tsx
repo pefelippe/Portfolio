@@ -56,7 +56,7 @@ export default function Hero() {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}
-          className="flex gap-6 justify-center  items-center"
+          className="flex gap-6 justify-center  items-center pt-6"
         >
           <motion.div
             whileHover={{

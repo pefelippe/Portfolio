@@ -2,7 +2,13 @@
 *screens*
 ## Sobre
 
+falar sobre o deploy
+
 ## Ferramentas Utilizadas
+- React
+- Typescript
+- Next
+- Tailwind
 
 ## TOD
 

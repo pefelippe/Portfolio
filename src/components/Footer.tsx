@@ -9,7 +9,7 @@ type Props = {};
 function Footer({}: Props) {
   return (
     <footer className="relative ">
-      <div className="flex justify-center items-center pb-10  gap-12">
+      <div className="flex justify-center items-center pb-5  gap-12">
         <AnimatedBtn
           className="w-fit rounded-xl text-lg font-semibold  "
           href="https://github.com/pefelippe"

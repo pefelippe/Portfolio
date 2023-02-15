@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
-import Icons from "../atoms/Icons";
+import Icons from "./../atoms/Icons";
 
 type Props = {};
 
@@ -14,14 +14,8 @@ function Header({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="flex  max-w-7xl  mx-auto pt-8 text-xl font-bold transition-all w-full justify-between items-center max-xl:px-10 "
+      className="flex  gap-4 max-w-7xl mx-auto pt-6 md:pt-8 text-xl font-bold transition-all justify-between w-full  items-center max-xl:px-7 "
     >
-      <Link href="/">
-        <p className="text-2xl font-semibold hover:text-gray-300">
-          Pedro Felippe
-        </p>
-      </Link>
-      {/* 
       <div className="flex gap-8">
         <Link
           className={
@@ -33,29 +27,27 @@ function Header({}: Props) {
         >
           <p>Home</p>
         </Link>
-
-        <Link
+        {/* <Link
           className={
-            router.pathname === "/About"
+            router.pathname === "/AboutPage"
               ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
               : ""
           }
-          href="/About"
+          href="/AboutPage"
         >
           <p>Quem sou</p>
-        </Link>
-
+        </Link> */}
         <Link
           className={
-            router.pathname === "/Contact"
+            router.pathname === "/ContactPage"
               ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
               : ""
           }
-          href="/Contact"
+          href="/ContactPage"
         >
           <p>Contato</p>
         </Link>
-      </div> */}
+      </div>
 
       <Icons />
     </motion.div>

@@ -13,17 +13,18 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
+import ContentTitle from "../atoms/ContentTitle";
 import SkillBox from "../components/SkillBox";
 
 type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className=" w-full flex flex-col  max-md:space-y-8  md:flex-row  items-center max-md:px-5">
+    <div className=" w-full flex max-lg:flex-col items-center gap-4 px-8">
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 2 }}
+        transition={{ duration: 2, delay: 1 }}
         className="flex  w-full "
       >
         <SkillBox title="Git">
@@ -46,7 +47,7 @@ function Skills({}: Props) {
       <motion.div
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 2 }}
+        transition={{ duration: 2, delay: 1 }}
         className="flex w-full"
       >
         <SkillBox title="AWS">

@@ -20,11 +20,11 @@ function Projects({}: Props) {
 
     {
       id: 2,
-      link: "https://portfolio-pefelippe.vercel.app/",
-      repo: "https://github.com/pefelippe",
-      title: "Portfolio",
-      imgUrl: "assets/portfolio.png",
-      description: "Uma agregador lo-fi.",
+      link: "",
+      repo: "https://github.com/pefelippe/PomodoroTunes",
+      title: "Pomodoro Tunes",
+      imgUrl: "assets/pomodorotunes.png",
+      description: "A união de música calma e pomodoro.",
     },
   ];
 
@@ -33,14 +33,12 @@ function Projects({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2, delay: 2 }}
-      className=" flex  w-full flex-col justify-between items-center mx-auto  "
+      className=" flex  w-full flex-col justify-between items-center mx-auto  gap-4"
       id="projetos"
     >
-      <div className="mb-4 bg-[#5865f2] w-fit px-4 flex text-center justify-center tracking-[1px] text-[2rem]  font-bold">
-        Meus projetos
-      </div>
+      <ContentTitle title="Projetos" />
 
-      <div className="relative w-fit grid grid-cols-1 gap-12 mx-auto px-8">
+      <div className="relative w-fit grid grid-cols-1 gap-8 mx-auto px-8  w-4xl">
         {projects.map((proj) => {
           return (
             <ProjectCard
@@ -54,6 +52,19 @@ function Projects({}: Props) {
           );
         })}
       </div>
+
+      <p className="italic font-md max-w-sm text-center">
+        Acompanhe meus outros projetos no meu{" "}
+        <a
+          className="font-semibold underline"
+          href="https://github.com/pefelippe"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </a>
+        .
+      </p>
     </motion.div>
   );
 }

@@ -4,10 +4,11 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 import AnimatedBtn from "../components/motion/AnimatedBtn";
+import Icons from "./../atoms/Icons";
 
 export default function Hero() {
   return (
-    <motion.div className="flex flex-col w-full max-w-7xl  text-center ">
+    <motion.div className="flex flex-col w-full  text-center ">
       <div className="xl:space-y-6 font-bold tracking-tight text-white  ">
         <motion.p
           initial={{ y: -25, opacity: 0 }}
@@ -21,7 +22,6 @@ export default function Hero() {
               "Tailwind <3",
               "i write coffe",
               "i drink javascript",
-              "send pix plz",
             ]}
             loop={0}
             cursor
@@ -36,7 +36,7 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2.5 }}
           className="w-full text-[#5865f2] sm:text-6xl
-          text-[3.5rem] sm:text-[5rem] md:text-[6rem] xl:text-[8rem]"
+          text-[4rem] sm:text-[5rem] md:text-[6rem] xl:text-[8rem]"
         >
           Pedro Felippe
         </motion.h1>
@@ -54,26 +54,31 @@ export default function Hero() {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}
-          className="flex gap-4 justify-center items-center"
+          className="flex gap-6 justify-center  items-center"
         >
-          <AnimatedBtn
-            className=" cursor-pointer px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
-            border-2 border-[#5865f2]  hover:underline "
-            href="https://resume.io/r/m2cn8pnqu"
+          <motion.div
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.1 },
+            }}
+            className="cursor-pointer px-6 text-center text-sm md:text-xl  font-semibold rounded-xl p-4 transition-all
+            border-2 border-[#5865f2]  hover:underline"
           >
-            <p>Meu Currículo</p>
-          </AnimatedBtn>
+            <Link href="https://resume.io/r/m2cn8pnqu" target="_blank">
+              <p>Meu currículo</p>
+            </Link>
+          </motion.div>
 
           <motion.div
             whileHover={{
               scale: 1.1,
               transition: { duration: 0.1 },
             }}
-            className="px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
+            className="px-6 text-center text-sm md:text-xl  font-semibold rounded-xl p-4 transition-all
             border-2 border-[#5865f2]/80 bg-[#5865f2]  hover:underline hover:bg-[#5865f2] hover:border-[#5865f2] "
           >
-            <Link href="/Contact" target="">
-              <p>Entre em contato</p>
+            <Link href="/ContactPage" target="">
+              <p>Entre em contato!</p>
             </Link>
           </motion.div>
         </motion.div>

@@ -14,10 +14,36 @@ function Header({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="flex  gap-4 max-w-7xl mx-auto pt-6 md:pt-8 text-xl font-bold transition-all justify-between w-full  items-center max-xl:px-7 "
+      className=" h-[10vh] top-0 left-0 right-0 flex z-40  gap-4 mx-auto  text-[20px] text-[#EFEFEF] font-semibold 
+      transition-all justify-between w-full  items-center max-w-screen-2xl max-lg:px-8"
     >
-      <div className="flex gap-8">
+      <Link href="/">
+        <p>Pedro Felippe</p>
+      </Link>
+      <div className="flex gap-8 max-md:hidden">
         <Link
+          className={
+            router.pathname === "/"
+              ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
+              : ""
+          }
+          href="/"
+        >
+          <p>Home</p>
+        </Link>
+
+        <Link
+          className={
+            router.pathname === "/AboutPage"
+              ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
+              : "hover:decoration-[#5865f2]"
+          }
+          href="/AboutPage"
+        >
+          <p>Quem sou</p>
+        </Link>
+
+        {/* <Link
           className={
             router.pathname === "/"
               ? " underline decoration-2 decoration-[#5865f2] underline-offset-8"
@@ -25,28 +51,20 @@ function Header({}: Props) {
           }
           href="/"
         >
-          <p>Home</p>
-        </Link>
-        {/* <Link
-          className={
-            router.pathname === "/AboutPage"
-              ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
-              : ""
-          }
-          href="/AboutPage"
-        >
-          <p>Quem sou</p>
+          <p>Artigos</p>
         </Link> */}
         <Link
           className={
-            router.pathname === "/ContactPage"
+            router.pathname === "/Contact"
               ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
               : ""
           }
-          href="/ContactPage"
+          href="/Contact"
         >
           <p>Contato</p>
         </Link>
+
+        {/* <p>TODO: localization</p> */}
       </div>
 
       <Icons />

@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 import ContentTitle from "../atoms/ContentTitle";
-import Icons from "./../atoms/Icons";
 
 type Props = {};
 
@@ -13,9 +12,9 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className=" mx-auto w-full flex flex-col items-center justify-center md:justify-start max-lg:px-8 max-w-xl md:max-w-4xl gap-4"
+      className="h-fit mx-auto w-full flex flex-col items-center justify-center md:justify-start max-lg:px-8 max-w-xl md:max-w-2xl gap-4"
     >
-      <ContentTitle title="Quem sou eu" />
+      <ContentTitle title="quem sou eu" />
 
       <motion.img
         alt="avatar-pefelippe"
@@ -59,7 +58,7 @@ function About({}: Props) {
             border-2 border-[#5865f2]/80 bg-[#5865f2]  hover:underline hover:bg-[#5865f2] hover:border-[#5865f2] "
       >
         <Link href="/ContactPage" target="">
-          <p>Mande uma mensagem!</p>
+          <p>Visite meu Currículo</p>
         </Link>
       </motion.div>
     </motion.div>

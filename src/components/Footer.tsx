@@ -1,36 +1,18 @@
-import { useRouter } from "next/router";
 import React from "react";
-import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import AnimatedBtn from "./../components/motion/AnimatedBtn";
+import Icons from "./../atoms/Icons";
 
 type Props = {};
 
 function Footer({}: Props) {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="relative ">
-      <div className="flex justify-center items-center pb-5  gap-12">
-        <AnimatedBtn
-          className="w-fit rounded-xl text-lg font-semibold  "
-          href="https://github.com/pefelippe"
-        >
-          <FaGithub className=" h-8 w-8  hover:text-[#5865f2] text-[#fff] " />
-        </AnimatedBtn>
-
-        <AnimatedBtn
-          className="w-fit rounded-xl  text-lg font-semibold"
-          href="https://www.linkedin.com/in/pedro-felippe/"
-        >
-          <FaLinkedinIn className=" h-8 w-8  hover:text-[#5865f2] text-[#fff]" />
-        </AnimatedBtn>
-
-        <AnimatedBtn
-          className="w-fit rounded-xl  text-lg font-semibold"
-          href="https://www.linkedin.com/in/pedro-felippe/"
-        >
-          <FaFilePdf className=" h-8 w-8  hover:text-[#5865f2] text-[#fff]" />
-        </AnimatedBtn>
-      </div>
+    <footer className="h-[5vh] relative flex justify-center items-center  w-full max-w-7xl mx-auto max-md:flex-col max-md:gap-4">
+      <span className="flex items-center">
+        Desenvolvido por Pedro Felippe. © {year}.
+      </span>
     </footer>
   );
 }

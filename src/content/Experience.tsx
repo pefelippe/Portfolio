@@ -59,11 +59,11 @@ function Experience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="contentStyle "
+      className="mx-auto w-full flex flex-col   "
     >
       <ContentTitle title="Experiência" />
 
-      <div className="flex  text-white max-w-7xl w-full mx-auto justify-between  gap-4 max-md:flex-col items-center overflow-hidden">
+      <div className="flex  text-white  w-full mx-auto justify-center  gap-4 max-md:flex-col items-center overflow-hidden">
         {experiences.map((experience) => {
           return (
             <ExperienceCard

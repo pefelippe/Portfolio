@@ -1,45 +1,38 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 import ContentTitle from "../atoms/ContentTitle";
 import AnimatedBtn from "../components/motion/AnimatedBtn";
 import ProjectCard from "../components/ProjectCard";
 
-type Props = {};
+interface ProjectCard {
+  id: number;
+  description: string;
+  imgUrl: string;
+  link: string;
+  title: string;
+  repo: string;
+}
 
-function Projects({}: Props) {
-  const projects = [
-    {
-      id: 1,
-      link: "https://portfolio-pefelippe.vercel.app/",
-      repo: "https://github.com/pefelippe/Portfolio",
-      title: "Portfolio",
-      imgUrl: "assets/portfolio.png",
-      description: "Meu portfolio pessoal.",
-    },
+type ProjectsType = {
+  projects?: ProjectCard[];
+  title: string;
+};
 
-    {
-      id: 2,
-      link: "",
-      repo: "https://github.com/pefelippe/PomodoroTunes",
-      title: "Pomodoro Tunes",
-      imgUrl: "assets/pomodorotunes.png",
-      description: "A união de música calma e pomodoro.",
-    },
-  ];
-
+function Projects({ projects, title }: ProjectsType) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2, delay: 2 }}
-      className=" flex  w-full flex-col justify-between items-center mx-auto  gap-4"
+      className=" flex  w-full flex-col justify-center items-center  mx-auto  gap-4 max-w-screen-2xl"
       id="projetos"
     >
-      <ContentTitle title="Projetos" />
+      <ContentTitle title={title} />
 
-      <div className="relative w-fit grid grid-cols-1 gap-8 mx-auto px-8  w-4xl">
-        {projects.map((proj) => {
+      <div className="relative  grid xl:grid-cols-2 grid-cols-1 gap-8 mx-auto  ">
+        {projects?.map((proj) => {
           return (
             <ProjectCard
               key={proj.id}
@@ -52,18 +45,17 @@ function Projects({}: Props) {
           );
         })}
       </div>
-
-      <p className="italic font-md max-w-sm text-center">
-        Acompanhe meus outros projetos no meu{" "}
+      <p className="italic">
+        Visite meu{" "}
         <a
-          className="font-semibold underline"
           href="https://github.com/pefelippe"
           target="_blank"
+          className="font-semibold underline"
           rel="noreferrer"
         >
           Github
-        </a>
-        .
+        </a>{" "}
+        para mais projetos.
       </p>
     </motion.div>
   );

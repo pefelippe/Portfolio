@@ -8,8 +8,13 @@ import Icons from "./../atoms/Icons";
 
 export default function Hero() {
   return (
-    <motion.div className="flex flex-col w-full  text-center ">
-      <div className="xl:space-y-6 font-bold tracking-tight text-white  ">
+    <motion.div
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 2.5 }}
+      className=" flex flex-col xl:flex-row w-full text-center pt-20 md:pt-40 mx-auto items-center "
+    >
+      <div className=" font-bold tracking-tight text-white  ">
         <motion.p
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -32,11 +37,8 @@ export default function Hero() {
           />
         </motion.p>
         <motion.h1
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2.5 }}
           className="w-full text-[#5865f2] sm:text-6xl
-          text-[4rem] sm:text-[5rem] md:text-[6rem] xl:text-[8rem]"
+          text-[4rem] sm:text-[5rem] md:text-[6rem] xl:text-[7rem]"
         >
           Pedro Felippe
         </motion.h1>
@@ -47,7 +49,7 @@ export default function Hero() {
           transition={{ duration: 2.5, delay: 0.5 }}
           className="text-[3rem] sm:text-[4.5rem] "
         >
-          Web Developer{" "}
+          Web Developer
         </motion.p>
 
         <motion.div
@@ -64,8 +66,8 @@ export default function Hero() {
             className="cursor-pointer px-6 text-center text-sm md:text-xl  font-semibold rounded-xl p-4 transition-all
             border-2 border-[#5865f2]  hover:underline"
           >
-            <Link href="https://resume.io/r/m2cn8pnqu" target="_blank">
-              <p>Meu currículo</p>
+            <Link href="/AboutPage" target="">
+              <p>Quem sou eu</p>
             </Link>
           </motion.div>
 

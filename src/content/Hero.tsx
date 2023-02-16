@@ -12,7 +12,7 @@ export default function Hero() {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2.5 }}
-      className=" flex flex-col xl:flex-row w-full text-center pt-20 md:pt-40 mx-auto items-center "
+      className="min-h-[70vh] flex flex-col justify-center w-full text-center  mx-auto items-center "
     >
       <div className=" font-bold tracking-tight text-white  ">
         <motion.p
@@ -38,7 +38,7 @@ export default function Hero() {
         </motion.p>
         <motion.h1
           className="w-full text-[#5865f2] sm:text-6xl
-          text-[4rem] sm:text-[5rem] md:text-[6rem] xl:text-[7rem]"
+          text-[3.5rem] sm:text-[5rem] md:text-[6rem] xl:text-[7rem]"
         >
           Pedro Felippe
         </motion.h1>
@@ -47,7 +47,7 @@ export default function Hero() {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2.5, delay: 0.5 }}
-          className="text-[3rem] sm:text-[4.5rem] "
+          className="text-[2rem] sm:text-[4.5rem] "
         >
           Web Developer
         </motion.p>
@@ -63,7 +63,7 @@ export default function Hero() {
               scale: 1.1,
               transition: { duration: 0.1 },
             }}
-            className="cursor-pointer px-6 text-center text-sm md:text-xl  font-semibold rounded-xl p-4 transition-all
+            className="cursor-pointer px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
             border-2 border-[#5865f2]  hover:underline"
           >
             <Link href="/AboutPage" target="">
@@ -76,7 +76,7 @@ export default function Hero() {
               scale: 1.1,
               transition: { duration: 0.1 },
             }}
-            className="px-6 text-center text-sm md:text-xl  font-semibold rounded-xl p-4 transition-all
+            className="px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
             border-2 border-[#5865f2]/80 bg-[#5865f2]  hover:underline hover:bg-[#5865f2] hover:border-[#5865f2] "
           >
             <Link href="/ContactPage" target="">

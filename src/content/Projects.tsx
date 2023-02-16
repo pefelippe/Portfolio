@@ -26,7 +26,7 @@ function Projects({ projects, title }: ProjectsType) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2.5, delay: 2 }}
-      className=" flex  w-screen flex-col justify-center items-center  mx-auto  gap-12 "
+      className=" flex  w-screen flex-col justify-center items-center  mx-auto  gap-12 px-8"
       id="projetos"
     >
       <ContentTitle title={title} />
@@ -45,8 +45,8 @@ function Projects({ projects, title }: ProjectsType) {
           );
         })}
       </div>
-      <p className="italic">
-        Visite meu{" "}
+      <p className="italic text-center">
+        Clique no projeto para ver detalhes. Visite meu{" "}
         <a
           href="https://github.com/pefelippe"
           target="_blank"

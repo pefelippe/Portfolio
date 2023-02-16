@@ -1,11 +1,7 @@
 import React from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
 
 import Hero from "../src/content/Hero";
 import Projects from "../src/content/Projects";
-import About from "./../src/content/About";
-import Skills from "./../src/content/Skills";
-import Contact from "./../src/content/Contact";
 
 export default function Home() {
   const projects = [
@@ -31,18 +27,14 @@ export default function Home() {
   const title = "Conheça meus projetos";
 
   return (
-    <div className=" relative flex flex-col mx-auto justify-center items-center space-y-20 md:space-y-32  max-lg:px-8 max-w-screen-2xl w-screen">
-      <div className="snap-center">
+    <div className=" relative flex flex-col mx-auto justify-center items-center   max-lg:px-8 max-w-screen-2xl w-screen">
+      <div className="x ">
         <Hero />
       </div>
 
-      <div className="snap-start bg-[#fff]/95 text-[#000]  py-10 px-8">
+      <div className=" max-md:snap-start bg-[#fff]/95 text-[#000]  py-10 ">
         <Projects projects={projects} title={title} />
       </div>
-      {/* <div className="snap-start flex ">
-        <About />
-        <Skills />
-      </div> */}
     </div>
   );
 }

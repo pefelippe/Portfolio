@@ -12,10 +12,8 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit mx-auto w-full flex flex-col items-center justify-center md:justify-start max-lg:px-8 max-w-xl md:max-w-2xl gap-4"
+      className="h-full mx-auto w-full flex flex-col items-center justify-center  px-8 max-w-xl md:max-w-2xl gap-4"
     >
-      <ContentTitle title="quem sou eu" />
-
       <motion.img
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"

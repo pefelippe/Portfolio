@@ -20,14 +20,18 @@ function ExperienceCard({
 }: IProjectCard) {
   return (
     <motion.a
+      whileHover={{
+        scale: 1.05,
+        transition: { duration: 0.1 },
+      }}
       className="flex h-fit min-w-[350px] w-full md:w-[450px] flex-col justify-between mx-auto rounded-2xl transition-all  p-2 
-     bg-[#fff] shadow-xl  hover:bg-[#5865f2]/20 "
+     bg-[#fff] shadow-xl  hover:shadow-[#5865f2]/70 "
       href=""
     >
       <motion.img
         src={imgUrl}
         alt="card image"
-        className="object-cover md h-[250px] w-full rounded-md"
+        className="object-cover md h-[300px] w-full rounded-md shadow-xl "
       />
 
       <motion.div className="flex flex-col  items-center justify-center w-full  py-5">

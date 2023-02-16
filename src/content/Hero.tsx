@@ -38,7 +38,7 @@ export default function Hero() {
         </motion.p>
         <motion.h1
           className="w-full text-[#5865f2] sm:text-6xl
-          text-[3rem] sm:text-[5rem] md:text-[6rem] xl:text-[7rem]"
+          text-[3.5rem] sm:text-[5rem] md:text-[6rem] xl:text-[7rem]"
         >
           Pedro Felippe
         </motion.h1>
@@ -47,7 +47,7 @@ export default function Hero() {
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2.5, delay: 0.5 }}
-          className="text-[2rem] sm:text-[4.5rem] "
+          className="text-[2.5rem] sm:text-[4.5rem] "
         >
           Web Developer
         </motion.p>

@@ -25,8 +25,8 @@ function Projects({ projects, title }: ProjectsType) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2, delay: 2 }}
-      className=" flex  w-full flex-col justify-center items-center  mx-auto  gap-4 max-w-screen-2xl"
+      transition={{ duration: 2.5, delay: 2 }}
+      className=" flex  w-screen flex-col justify-center items-center  mx-auto  gap-12  bg-[#fff]/95 text-[#000] py-10 px-8"
       id="projetos"
     >
       <ContentTitle title={title} />

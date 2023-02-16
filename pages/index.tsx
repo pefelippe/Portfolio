@@ -31,7 +31,7 @@ export default function Home() {
   const title = "Conheça meus projetos";
 
   return (
-    <div className=" relative flex flex-col mx-auto justify-center items-center space-y-20 md:space-y-32  pb-20 xl:pb-40 max-lg:px-8 max-w-screen-2xl w-screen">
+    <div className=" relative flex flex-col mx-auto justify-center items-center space-y-20 md:space-y-32  max-lg:px-8 max-w-screen-2xl w-screen">
       <div className="snap-center">
         <Hero />
       </div>

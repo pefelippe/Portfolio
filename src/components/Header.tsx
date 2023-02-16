@@ -67,7 +67,7 @@ function Header({}: Props) {
         {/* <p>TODO: localization</p> */}
       </div>
 
-      <Icons />
+      {/* <Icons /> */}
     </motion.div>
   );
 }

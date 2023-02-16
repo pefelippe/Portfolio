@@ -19,36 +19,26 @@ function ExperienceCard({
   title,
 }: IProjectCard) {
   return (
-    <motion.article
-      className="flex w-fit flex-col 
-      justify-center mx-auto rounded-md transition-all md:flex-row  md:gap-8
-     bg-[#080808] hover:bg-[#101010]  border-4 border-[#080808] hover:border-[#202020] "
+    <motion.a
+      className="flex h-fit min-w-[350px] w-full md:w-[450px] flex-col justify-between mx-auto rounded-2xl transition-all  p-2 
+     bg-[#fff] shadow-xl  hover:bg-[#5865f2]/20 "
+      href=""
     >
-      <Link href={repo} target="_blank" rel="noopener">
-        <motion.img
-          src={imgUrl}
-          alt="card image"
-          className="object-cover md h-[350px] w-[450px]"
-        />
-      </Link>
+      <motion.img
+        src={imgUrl}
+        alt="card image"
+        className="object-cover md h-[250px] w-full rounded-md"
+      />
 
-      <motion.div className="p-4  flex flex-col   justify-center gap-4 w-full md:w-[300px] ">
-        <div>
-          <p className="items-center text-[2rem]  tracking-wider font-bold  text-gray-200 underline decoration-[#5865f2] ">
-            {title}
-          </p>
-          <p className="items-center text-[1.1rem]  tracking-wider font-bold  text-gray-300  ">
-            {description}
-          </p>
-        </div>
-
-        <Link href={repo} target="_blank" rel="noopener">
-          <button className="flex items-center hover:gap-1 transition-all hover:underline text-[#4454fa]/80 font-semibold">
-            Live Demo <FaAngleRight />
-          </button>
-        </Link>
+      <motion.div className="flex flex-col  items-center justify-center w-full  py-5">
+        <p className="items-center text-[1.6rem]   font-semibold  text-gray-200 underline decoration-[#5865f2] ">
+          {title}
+        </p>
+        <p className="items-center text-[1.2rem]  text-gray-200  ">
+          {description}
+        </p>
       </motion.div>
-    </motion.article>
+    </motion.a>
   );
 }
 

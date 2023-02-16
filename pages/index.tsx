@@ -1,11 +1,11 @@
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 import Hero from "../src/content/Hero";
 import Projects from "../src/content/Projects";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import About from "./../src/content/About";
 import Skills from "./../src/content/Skills";
-import Contact from "./../src/content/Contact";
+import Contact from "./Contact";
 
 export default function Home() {
   const projects = [

@@ -38,7 +38,7 @@ export default function Hero() {
         </motion.p>
         <motion.h1
           className="w-full text-[#5865f2] sm:text-6xl
-          text-[3.5rem] sm:text-[5rem] md:text-[6rem] xl:text-[7rem]"
+          text-[3rem] sm:text-[5rem] md:text-[6rem] xl:text-[7rem]"
         >
           Pedro Felippe
         </motion.h1>

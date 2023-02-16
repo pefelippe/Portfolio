@@ -5,7 +5,7 @@ import Hero from "../src/content/Hero";
 import Projects from "../src/content/Projects";
 import About from "./../src/content/About";
 import Skills from "./../src/content/Skills";
-import Contact from "./Contact";
+import Contact from "./../src/content/Contact";
 
 export default function Home() {
   const projects = [

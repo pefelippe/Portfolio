@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import MessageForm from "../src/components/MessageForm";
+import MessageForm from "./../components/MessageForm";
 
 type IProps = {};
 

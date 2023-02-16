@@ -36,7 +36,7 @@ export default function Home() {
         <Hero />
       </div>
 
-      <div className="snap-start">
+      <div className="snap-start bg-[#fff]/95 text-[#000]  py-10 px-8">
         <Projects projects={projects} title={title} />
       </div>
       {/* <div className="snap-start flex ">

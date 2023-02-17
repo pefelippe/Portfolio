@@ -2,6 +2,7 @@
   /* /* background by SVGBackgrounds.com */
 }
 import "../styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -22,8 +23,9 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Header />
-      <Component {...pageProps} />
 
+      <Component {...pageProps} />
+      <Analytics />
       <div className="snap-center">
         <Footer />
       </div>

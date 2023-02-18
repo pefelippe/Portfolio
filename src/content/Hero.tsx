@@ -49,13 +49,13 @@ export default function Hero() {
           Pedro Felippe
         </h1>
 
-        <p className=" text-gray-400 max-w-xl mx-auto text-[0.8rem] md:text-[1.1rem]">
+        <p className=" text-gray-400 max-w-4xl mx-auto text-[0.8rem] md:text-[1.1rem]">
           Sou um{" "}
           <span className="text-[#5865f2]  font-semibold">Web Developer</span>{" "}
           com mais de três anos de experiência em construir soluções inovadoras
           na web. Possuo profundo conhecimento em tecnologias como{" "}
           <span className=" font-semibold">
-            React, Next Node, Typescript e AWS
+            React, Next, Node, Typescript e AWS
           </span>
           .
         </p>
@@ -65,23 +65,14 @@ export default function Hero() {
               className="iconHeader"
               href="https://github.com/pefelippe"
             >
-              <FaGithub className="h-8 w-8  " />
+              <FaGithub className="h-7 w-7 " />
             </AnimatedBtn>
 
             <AnimatedBtn
               className="iconHeader"
               href="https://www.linkedin.com/in/pedro-felippe/"
             >
-              <FaLinkedinIn className="h-8 w-8  text-[#fff]" />
-            </AnimatedBtn>
-
-            <AnimatedBtn
-              className="iconHeader"
-              href="https://resume.io/r/m2cn8pnqu"
-            >
-              <div className="flex items-center space-x-2">
-                <FaFilePdf className="h-8 w-8  text-[#fff]" />
-              </div>
+              <FaLinkedinIn className="h-7 w-7 text-[#fff]" />
             </AnimatedBtn>
           </div>
         </div>

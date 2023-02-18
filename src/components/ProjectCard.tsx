@@ -24,24 +24,16 @@ function ExperienceCard({
         scale: 1.05,
         transition: { duration: 0.1 },
       }}
-      className="flex h-fit min-w-[350px] w-full md:w-[450px] flex-col justify-between mx-auto rounded-2xl transition-all  p-2 
-     bg-[#fff] shadow-xl  hover:shadow-[#5865f2]/70 "
+      className="flex  h-[250px] w-[380px]  shadow-xl rounded-xl hover:shadow-[#5865f2]/70 "
       href=""
     >
       <motion.img
         src={imgUrl}
         alt="card image"
-        className="object-cover md h-[300px] w-full rounded-md shadow-xl "
+        className="object-cover md h-full w-full  rounded-xl shadow-xl border-2 border-[#242424]"
       />
 
-      <motion.div className="flex flex-col  items-center justify-center w-full  py-5">
-        <p className="items-center text-[1.6rem]   font-semibold  text-gray-200 underline decoration-[#5865f2] ">
-          {title}
-        </p>
-        <p className="items-center text-[1.2rem]  text-gray-200  ">
-          {description}
-        </p>
-      </motion.div>
+      <div className=" flex h-[250px] w-[380px] absolute bg-opacity-90 z-40 rounded-xl justify-center items-center text-[2rem] font-semibold  text-white transition-all hover:bg-[#000] hover:bg-opacity-60"></div>
     </motion.a>
   );
 }

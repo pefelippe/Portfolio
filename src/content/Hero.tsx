@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaFilePdf, FaLinkedinIn, FaAngleDoubleRight } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 
 import AnimatedBtn from "../components/motion/AnimatedBtn";
-import Icons from "./../atoms/Icons";
 
 export default function Hero() {
   return (
@@ -12,18 +13,25 @@ export default function Hero() {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2.5 }}
-      className="min-h-[70vh] flex flex-col justify-center w-full text-center  mx-auto items-center h-fit py-10"
+      className="min-h-fit h-[40vh] relative flex w-full justify-center mx-auto  max-md:flex-col max-w-4xl px-8 "
     >
-      <div className=" font-bold tracking-tight text-white  ">
+      <div className="flex w-full flex-col text-center items-center justify-center mx-auto ">
+        {/* <motion.img
+          alt="avatar-pefelippe"
+          src="assets/avatar-pdr.png"
+          className="rounded-full h-[150px] w-[150px]  border-4 hover:border-0 transition-all "
+        /> */}
+
         <motion.p
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}
-          className="text-[1.5rem] sm:text-[2rem]  text-[#a3a3a3]"
+          className="text-[22px] tracking-[2.2px] font-semibold uppercase text-[#a3a3a3]"
         >
           <Typewriter
             words={[
-              "ViciadoEmCafé.tsx",
+              "SOFTWARE ENGINEER",
+              "FRONT END",
               "Tailwind <3",
               "i write coffe",
               "i drink javascript",
@@ -36,54 +44,47 @@ export default function Hero() {
             delaySpeed={2000}
           />
         </motion.p>
-        <motion.h1
-          className="w-full text-[#5865f2] sm:text-6xl
-          text-[3rem] sm:text-[5rem] md:text-[6rem] xl:text-[7rem]"
-        >
+
+        <h1 className=" text-[#5865f2] uppercase text-[3rem] md:text-[4.5rem] font-semibold tracking-[2.2px]">
           Pedro Felippe
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2.5, delay: 0.5 }}
-          className="text-[2.5rem] sm:text-[4.5rem] "
-        >
-          Web Developer
-        </motion.p>
+        <p className=" text-gray-400 max-w-xl mx-auto text-[0.8rem] md:text-[1.1rem]">
+          Sou um{" "}
+          <span className="text-[#5865f2]  font-semibold">Web Developer</span>{" "}
+          com mais de três anos de experiência em construir soluções inovadoras
+          na web. Possuo profundo conhecimento em tecnologias como{" "}
+          <span className=" font-semibold">
+            React, Next Node, Typescript e AWS
+          </span>
+          .
+        </p>
+        <div className="pt-4 flex gap-6 ">
+          <div className="flex gap-3">
+            <AnimatedBtn
+              className="iconHeader"
+              href="https://github.com/pefelippe"
+            >
+              <FaGithub className="h-8 w-8  " />
+            </AnimatedBtn>
 
-        <motion.div
-          initial={{ y: 25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2, delay: 1 }}
-          className="flex gap-6 justify-center  items-center pt-6"
-        >
-          <motion.div
-            whileHover={{
-              scale: 1.1,
-              transition: { duration: 0.1 },
-            }}
-            className="cursor-pointer px-4 md:px-6  text-center text-md md:text-xl  font-semibold rounded-xl  p-3 md:p-4 transition-all
-            border-2 border-[#5865f2]  hover:underline"
-          >
-            <Link href="/AboutPage" target="">
-              <p>Quem sou eu</p>
-            </Link>
-          </motion.div>
+            <AnimatedBtn
+              className="iconHeader"
+              href="https://www.linkedin.com/in/pedro-felippe/"
+            >
+              <FaLinkedinIn className="h-8 w-8  text-[#fff]" />
+            </AnimatedBtn>
 
-          <motion.div
-            whileHover={{
-              scale: 1.1,
-              transition: { duration: 0.1 },
-            }}
-            className=" px-4 md:px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-3 md:p-4 transition-all
-            border-2 border-[#5865f2]/80 bg-[#5865f2]  hover:underline hover:bg-[#5865f2] hover:border-[#5865f2] "
-          >
-            <Link href="/Contact" target="">
-              <p>Entre em contato!</p>
-            </Link>
-          </motion.div>
-        </motion.div>
+            <AnimatedBtn
+              className="iconHeader"
+              href="https://resume.io/r/m2cn8pnqu"
+            >
+              <div className="flex items-center space-x-2">
+                <FaFilePdf className="h-8 w-8  text-[#fff]" />
+              </div>
+            </AnimatedBtn>
+          </div>
+        </div>
       </div>
     </motion.div>
   );

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaGithub, FaLongArrowAltRight } from "react-icons/fa";
 
 import ContentTitle from "../atoms/ContentTitle";
 import AnimatedBtn from "../components/motion/AnimatedBtn";
@@ -17,19 +17,18 @@ interface ProjectCard {
 
 type ProjectsType = {
   projects?: ProjectCard[];
-  title: string;
 };
 
-function Projects({ projects, title }: ProjectsType) {
+function Projects({ projects }: ProjectsType) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2.5, delay: 2 }}
-      className=" flex  w-screen flex-col justify-center items-center  mx-auto  gap-12 px-8"
+      transition={{ duration: 2.5, delay: 1 }}
+      className="h-fit   flex  w-fit flex-col justify-center items-center  mx-auto  gap-12 px-8 "
       id="projetos"
     >
-      <ContentTitle title={title} />
+      <ContentTitle title="Projetos" />
 
       <div className="relative  grid xl:grid-cols-2 grid-cols-1 gap-8 mx-auto  ">
         {projects?.map((proj) => {
@@ -45,18 +44,14 @@ function Projects({ projects, title }: ProjectsType) {
           );
         })}
       </div>
-      <p className="italic text-center">
-        Clique no projeto para ver detalhes. Visite meu{" "}
-        <a
-          href="https://github.com/pefelippe"
-          target="_blank"
-          className="font-semibold underline"
-          rel="noreferrer"
-        >
-          Github
-        </a>{" "}
-        para mais projetos.
-      </p>
+      {/* <a
+        href="https://github.com/pefelippe"
+        rel="noreferrer"
+        target="_blank"
+        className="flex gap-2 items-center text-md font-semibold text-center p-4 px-8 border-2 rounded-full  bg-[#5865f2] transition-all text-[#fff]"
+      >
+        Visite meu Github para mais projetos
+      </a> */}
     </motion.div>
   );
 }

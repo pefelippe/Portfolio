@@ -2,16 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  ::selection {
-    background: #f7ab0a;
-  }
-}
-
 @layer components {
   .contactInput {
     @apply outline-none bg-gray-500/10 rounded-sm px-8 py-4 border-[#242424] w-auto  max-w-full
     text-[#fff] placeholder-gray-500 transition-all;
+  }
+
+  .headerContentSelected {
+    @apply underline decoration-2 decoration-[#5865f2] underline-offset-8;
+  }
+  .headerContent {
+    @apply hover:opacity-80 transition-all;
+  }
+
+  .iconHeader {
+    @apply w-fit text-lg mx-2 rounded-full   hover:opacity-80 transition-all;
   }
 }
 

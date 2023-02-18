@@ -12,8 +12,9 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-full mx-auto w-full flex flex-col items-center justify-center  px-8 max-w-xl md:max-w-2xl gap-4"
+      className="min-h-[70vh] h-full mx-auto w-full flex flex-col items-center justify-center  px-8 max-w-3xl gap-4"
     >
+      <ContentTitle title="Quem sou?" />
       <motion.img
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
@@ -27,7 +28,7 @@ function About({}: Props) {
           com mais de três anos de experiência em construir soluções inovadoras
           na web. Possuo profundo conhecimento em tecnologias como{" "}
           <span className=" font-semibold underline decoration-[#5865f2]">
-            React, Next Node, Typescript e AWS
+            React, Next, Node, Typescript e AWS
           </span>
           .
         </p>
@@ -52,7 +53,7 @@ function About({}: Props) {
           scale: 1.1,
           transition: { duration: 0.1 },
         }}
-        className="px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all
+        className="px-6 text-center text-md md:text-xl  font-semibold rounded-xl p-4 transition-all text-[#fff]
             border-2 border-[#5865f2]/80 bg-[#5865f2]  hover:underline hover:bg-[#5865f2] hover:border-[#5865f2] "
       >
         <Link href="/ContactPage" target="">

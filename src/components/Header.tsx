@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaFilePdf, FaLinkedinIn, FaAngleDoubleRight } from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
 
-import Icons from "./../atoms/Icons";
+import AnimatedBtn from "../components/motion/AnimatedBtn";
 
 type Props = {};
 
@@ -14,60 +17,22 @@ function Header({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className=" h-[10vh] top-0 left-0 right-0 flex z-40  gap-4 mx-auto  text-[20px] text-[#EFEFEF] font-semibold 
-      transition-all justify-between w-full  items-center max-w-screen-2xl max-lg:px-6 py-8"
+      className=" top-0 right-0 left-0 h-fit flex z-40  mx-auto max-w-screen-2xl text-[20px] text-[#EFEFEF]
+       font-semibold justify-between w-full items-center  py-4 px-8"
     >
-      <Link href="/">
-        <p>Pedro Felippe</p>
+      <Link className="headerContent" href="/">
+        <p className="text-3xl">Pedro Felippe </p>
       </Link>
-      <div className="flex gap-8 max-md:hidden">
-        <Link
-          className={
-            router.pathname === "/"
-              ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
-              : ""
-          }
-          href="/"
-        >
-          <p>Home</p>
-        </Link>
 
-        <Link
-          className={
-            router.pathname === "/AboutPage"
-              ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
-              : "hover:decoration-[#5865f2]"
-          }
-          href="/AboutPage"
-        >
-          <p>Quem sou</p>
-        </Link>
-
-        {/* <Link
-          className={
-            router.pathname === "/"
-              ? " underline decoration-2 decoration-[#5865f2] underline-offset-8"
-              : ""
-          }
-          href="/"
-        >
-          <p>Artigos</p>
-        </Link> */}
-        <Link
-          className={
-            router.pathname === "/Contact"
-              ? "underline decoration-2 decoration-[#5865f2] underline-offset-8"
-              : ""
-          }
-          href="/Contact"
-        >
-          <p>Contato</p>
-        </Link>
-
-        {/* <p>TODO: localization</p> */}
-      </div>
-
-      <Icons />
+      <Link
+        href="/Contact"
+        className=" items-center justify-center flex gap-2 p-3 px-4
+          border-2 w-fit text-sm md:text-xl mx auto rounded-xl font-semibold text-[#fff]
+          transition-all border-[#5865f2] hover:bg-[#5865f2] hover:gap-1"
+      >
+        <FaAngleDoubleRight className="h-7 w-7" />
+        <p>Entre em contato</p>
+      </Link>
     </motion.div>
   );
 }

@@ -13,7 +13,6 @@ export default function Home() {
       imgUrl: "assets/portfolio.png",
       description: "Meu portfolio pessoal.",
     },
-
     {
       id: 2,
       link: "",
@@ -24,16 +23,16 @@ export default function Home() {
     },
   ];
 
-  const title = "Conheça meus projetos";
+
 
   return (
-    <div className=" relative flex flex-col mx-auto justify-center items-center   max-lg:px-8 max-w-screen-2xl w-screen">
-      <div className="x ">
+    <div className=" relative w-screen min-h-screen h-fit flex flex-col justify-evenly">
+      <div className="snap-center px-8 ">
         <Hero />
       </div>
 
-      <div className=" max-md:snap-start bg-[#fff]/95 text-[#000]  py-10 ">
-        <Projects projects={projects} title={title} />
+      <div className="snap-start max-md:snap-start  max-lg:px-8  ">
+        <Projects projects={projects}  />
       </div>
     </div>
   );

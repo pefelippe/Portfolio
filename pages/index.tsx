@@ -2,6 +2,7 @@ import React from "react";
 
 import Hero from "../src/content/Hero";
 import Projects from "../src/content/Projects";
+import AnimatedBtn from "./../src/components/motion/AnimatedBtn";
 
 export default function Home() {
   const projects = [
@@ -23,16 +24,14 @@ export default function Home() {
     },
   ];
 
-
-
   return (
-    <div className=" relative w-screen min-h-screen h-fit flex flex-col justify-evenly">
+    <div className=" relative w-screen min-h-screen h-fit flex flex-col justify-evenly items-center">
       <div className="snap-center">
         <Hero />
       </div>
 
       <div className="snap-start max-md:snap-start  ">
-        <Projects projects={projects}  />
+        <Projects projects={projects} />
       </div>
     </div>
   );

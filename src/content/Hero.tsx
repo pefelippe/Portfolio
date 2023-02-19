@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { FaFilePdf, FaLinkedinIn, FaAngleDoubleRight } from "react-icons/fa";
+import { FaAngleDoubleRight, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 
 import AnimatedBtn from "../components/motion/AnimatedBtn";
@@ -20,7 +20,7 @@ export default function Hero() {
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 2, delay: 1 }}
-          className="text-[22px] tracking-[2.2px] font-semibold uppercase text-[#a3a3a3]"
+          className="text-[22px] tracking-[2.2px] font-semibold text-center uppercase text-[#a3a3a3]"
         >
           <Typewriter
             words={[
@@ -38,7 +38,7 @@ export default function Hero() {
             delaySpeed={2000}
           />
         </motion.p>
-        <p className=" text-[#5865f2] uppercase text-[2rem] md:text-[4rem] font-bold tracking-[5px]">
+        <p className=" text-[#5865f2] text-center uppercase text-[2rem] md:text-[4rem] font-bold tracking-[5px]">
           Pedro Felippe
         </p>
 
@@ -65,11 +65,10 @@ export default function Hero() {
           <FaLinkedinIn className="h-10 w-10 " />
         </AnimatedBtn>
       </div>
-
       <motion.img
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="rounded-full h-[200px] w-[200px]  border-4 hover:border-0 transition-all "
+        className="rounded-full h-[180px] w-[180px] "
       />
     </motion.div>
   );

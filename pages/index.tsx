@@ -27,11 +27,11 @@ export default function Home() {
 
   return (
     <div className=" relative w-screen min-h-screen h-fit flex flex-col justify-evenly">
-      <div className="snap-center px-8 ">
+      <div className="snap-center">
         <Hero />
       </div>
 
-      <div className="snap-start max-md:snap-start  max-lg:px-8  ">
+      <div className="snap-start max-md:snap-start  ">
         <Projects projects={projects}  />
       </div>
     </div>

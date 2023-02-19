@@ -13,15 +13,9 @@ export default function Hero() {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2.5 }}
-      className="min-h-fit h-[40vh] relative flex w-full justify-center mx-auto  max-md:flex-col max-w-4xl px-8 "
+      className=" h-[70vh] relative flex w-full flex-col  items-center justify-center mx-auto max-w-4xl px-8 gap-8"
     >
-      <div className="flex w-full flex-col text-center items-center justify-center mx-auto ">
-        {/* <motion.img
-          alt="avatar-pefelippe"
-          src="assets/avatar-pdr.png"
-          className="rounded-full h-[150px] w-[150px]  border-4 hover:border-0 transition-all "
-        /> */}
-
+      <div className="">
         <motion.p
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -44,14 +38,13 @@ export default function Hero() {
             delaySpeed={2000}
           />
         </motion.p>
-
-        <h1 className=" text-[#5865f2] uppercase text-[3rem] md:text-[4.5rem] font-semibold tracking-[2.2px]">
+        <p className=" text-[#5865f2] uppercase text-[2rem] md:text-[4rem] font-bold tracking-[5px]">
           Pedro Felippe
-        </h1>
+        </p>
 
-        <p className=" text-gray-400 max-w-4xl mx-auto text-[0.8rem] md:text-[1.1rem]">
+        <p className=" text-gray-400 text-center max-w-xl mx-auto text-[1rem] md:text-[1.15rem]">
           Sou um{" "}
-          <span className="text-[#5865f2]  font-semibold">Web Developer</span>{" "}
+          <span className="text-[#5865f2] font-semibold">Web Developer</span>{" "}
           com mais de três anos de experiência em construir soluções inovadoras
           na web. Possuo profundo conhecimento em tecnologias como{" "}
           <span className=" font-semibold">
@@ -59,24 +52,25 @@ export default function Hero() {
           </span>
           .
         </p>
-        <div className="pt-4 flex gap-6 ">
-          <div className="flex gap-3">
-            <AnimatedBtn
-              className="iconHeader"
-              href="https://github.com/pefelippe"
-            >
-              <FaGithub className="h-7 w-7 " />
-            </AnimatedBtn>
-
-            <AnimatedBtn
-              className="iconHeader"
-              href="https://www.linkedin.com/in/pedro-felippe/"
-            >
-              <FaLinkedinIn className="h-7 w-7 text-[#fff]" />
-            </AnimatedBtn>
-          </div>
-        </div>
       </div>
+      <div className=" flex gap-8 ">
+        <AnimatedBtn className="iconHeader" href="https://github.com/pefelippe">
+          <FaGithub className="h-10 w-10 " />
+        </AnimatedBtn>
+
+        <AnimatedBtn
+          className="iconHeader"
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <FaLinkedinIn className="h-10 w-10 " />
+        </AnimatedBtn>
+      </div>
+
+      <motion.img
+        alt="avatar-pefelippe"
+        src="assets/avatar-pdr.png"
+        className="rounded-full h-[200px] w-[200px]  border-4 hover:border-0 transition-all "
+      />
     </motion.div>
   );
 }

@@ -6,7 +6,7 @@ type Title = {
 
 function ContentTitle({ title }: Title) {
   return (
-    <div className="flex text-[#fff] w-fit text-center justify-center text-3xl tracking-[5px]  font-bold">
+    <div className="flex  w-fit text-center justify-center text-3xl tracking-[5px]  font-bold">
       {title}
     </div>
   );

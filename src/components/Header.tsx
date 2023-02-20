@@ -1,43 +1,80 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import React from "react";
-import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
-
+import { FaGithub, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
+import Link from "next/link";
 import AnimatedBtn from "./motion/AnimatedBtn";
+import Router from "next/router";
 
 type Props = {};
 
 function Header({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-      className=" top-0 right-0 left-0 h-fit flex z-40  mx-auto max-w-7xl  text-[20px] text-[#EFEFEF]
-       font-semibold justify-between w-full items-center pt-8 max-xl:px-6"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2, delay: 1 }}
+      className="min-h-[10vh]  h-fit flex z-40  mx-auto  text-[20px] text-[#fff] 
+       font-semibold  justify-between  w-full items-center max-xl:px-6 max-w-7xl"
     >
-      <Link className="headerContent" href="/">
-        <p className="text-2xl md:text-3xl">Pedro Felippe </p>
-      </Link>
+      <div className="flex gap-8 text-white">
+        <AnimatedBtn>
+          <Link
+            className={
+              Router.pathname === "/"
+                ? " underline decoration-2 decoration-[#5865f2] underline-offset-8"
+                : "text-gray-300"
+            }
+            href="/"
+            target=""
+          >
+            <span>Home</span>
+          </Link>
+        </AnimatedBtn>
+        <AnimatedBtn>
+          <Link
+            className={
+              Router.pathname === "/Projects"
+                ? " underline decoration-2 decoration-[#5865f2] underline-offset-8"
+                : "text-gray-300"
+            }
+            href="/Projects"
+            target=""
+          >
+            <span>Projetos</span>
+          </Link>
+        </AnimatedBtn>
+        <AnimatedBtn>
+          <Link
+            className={
+              Router.pathname === "/Contact"
+                ? " text-[#fff] underline decoration-2 decoration-[#5865f2] underline-offset-8"
+                : "text-gray-300"
+            }
+            href="/Contact"
+            target=""
+          >
+            <span> Contato </span>
+          </Link>
+        </AnimatedBtn>
+      </div>
 
-      <div className=" flex gap-4 ">
-        <AnimatedBtn className="iconHeader" href="https://github.com/pefelippe">
-          <FaGithub className="h-8 w-8 " />
+      <div className="flex gap-6">
+        <AnimatedBtn className="w-fit" href="https://github.com/pefelippe">
+          <FaGithub className="h-7 w-7  text-[#fff]" />
         </AnimatedBtn>
 
         <AnimatedBtn
-          className="iconHeader"
+          className="w-fit"
           href="https://www.linkedin.com/in/pedro-felippe/"
         >
-          <FaLinkedinIn className="h-8 w-8 " />
+          <FaLinkedinIn className="h-7 w-7 text-[#fff]" />
         </AnimatedBtn>
 
         <AnimatedBtn
-          className="iconHeader"
+          className="w-fit text-[#fff]"
           href="https://resume.io/r/m2cn8pnqu"
         >
-          <FaFilePdf className="h-8 w-8 " />
+          <FaFilePdf className="h-7 w-7  " />
         </AnimatedBtn>
       </div>
     </motion.div>

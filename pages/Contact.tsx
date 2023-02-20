@@ -8,17 +8,21 @@ type IProps = {};
 function Contact({}: IProps) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className=" snap-start h-[80vh] relative flex flex-col items-center justify-center  w-screen max-w-screen-2xl px-8 mx-auto"
+      className="relative px-6 gap-4  min-h-[80vh] w-screen
+      flex flex-col items-center justify-center h-fit py-6
+      text-center bg-[#fefefe] shadow-md rounded-2xl border-2 border-[#242424]"
     >
-      <div className="space-y-4 justify-between text-center p-4 w-full">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="space-y-4 justify-between text-center py-4 w-full"
+      >
         <span className="text-3xl font-semibold ">
           Pronto para começar uma parceria?
         </span>
         <p className="text-xl">Envie uma Mensagem!</p>
-      </div>
+      </motion.div>
       <MessageForm name={""} email={""} subject={""} message={""} />
     </motion.div>
   );

@@ -12,7 +12,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="min-h-[70vh] h-full mx-auto w-full flex flex-col items-center justify-center  px-8 max-w-3xl gap-4"
+      className="min-h-[70vh] h-full mx-auto w-full flex flex-col items-center justify-center  px-8 max-w-3xl gap-4 bg-[#fff] rounded"
     >
       <ContentTitle title="Quem sou?" />
       <motion.img

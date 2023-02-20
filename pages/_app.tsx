@@ -12,10 +12,11 @@ import Footer from "../src/components/Footer";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className=" z-0 font-sans 
-    overflow-x-hidden overflow-y-scroll snap-y snap-mandatory bg-[url('/assets/endless-constellation.svg')]
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth 
-     text-[#fff]  h-screen bg-[#000] min-w-[400px]"
+      className="
+        overflow-x-hidden overflow-y-scroll bg-[url('/assets/endless-constellation.svg')]
+        snap-y snap-mandatory 
+        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth 
+        h-screen min-w-[350px]  min-h-screen  text-[#000] "
     >
       <Head>
         <title>Pedro Felippe | Portfolio</title>
@@ -29,7 +30,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className="snap-center ">
         <Header />
       </div>
+
       <Component {...pageProps} />
+
       <div className="snap-center ">
         <Footer />
       </div>

@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaAngleDoubleRight, FaFilePdf, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaGithub,
+  FaAngleDoubleRight,
+  FaFilePdf,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 
 import AnimatedBtn from "../components/motion/AnimatedBtn";
@@ -10,45 +14,53 @@ import AnimatedBtn from "../components/motion/AnimatedBtn";
 export default function Hero() {
   return (
     <motion.div
-      initial={{ y: 25, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 2.5 }}
-      className=" min-h-[70vh] relative flex w-full flex-col  items-center justify-center
-       mx-auto max-w-4xl px-8 "
+      className="relative px-6 gap-4 mx-auto min-h-[80vh] w-screen
+      flex flex-col items-center justify-center h-fit py-6 md:flex-row
+      text-center  shadow-md text-[#fff]"
     >
-      <motion.p
-        initial={{ y: -25, opacity: 0 }}
+      <motion.div
+        initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 1 }}
-        className="text-[22px] tracking-[2.2px] font-semibold text-center uppercase text-[#a3a3a3]"
+        transition={{ duration: 1 }}
+        className="flex flex-col items-center justify-center gap-4"
       >
-        <Typewriter
-          words={[
-            "SOFTWARE ENGINEER",
-            "FRONT END",
-            "Tailwind <3",
-            "i write coffe",
-            "i drink javascript",
-          ]}
-          loop={0}
-          cursor
-          cursorStyle="_"
-          typeSpeed={75}
-          deleteSpeed={75}
-          delaySpeed={2000}
+        <motion.p
+          initial={{ y: -25, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="text-[22px] tracking-[2.2px] font-semibold text-center uppercase text-[#a3a3a3]"
+        >
+          <Typewriter
+            words={[
+              "SOFTWARE ENGINEER",
+              "FRONT END",
+              "and BACK END TOO",
+              "Tailwind <3",
+              "i write coffe",
+              "i drink javascript",
+            ]}
+            loop={0}
+            cursor
+            cursorStyle="_"
+            typeSpeed={75}
+            deleteSpeed={75}
+            delaySpeed={2000}
+          />
+        </motion.p>
+
+        <motion.img
+          alt="avatar-pefelippe"
+          src="assets/avatar-pdr.png"
+          className="rounded-full h-[180px] w-[180px] "
         />
-      </motion.p>
-      <motion.img
-        alt="avatar-pefelippe"
-        src="assets/avatar-pdr.png"
-        className="rounded-full h-[180px] w-[180px] mt-4"
-      />
-      <div className="flex flex-col items-center justify-items-center">
-        <p className=" text-[#5865f2] text-center uppercase text-[2rem] md:text-[4rem] font-bold tracking-[5px]">
+        <p
+          className="text-[#5865f2] text-center uppercase font-bold 
+        text-4xl tracking-tighter text-black lg:text-5xl"
+        >
           Pedro Felippe
         </p>
 
-        <p className=" text-gray-400 text-center max-w-xl mx-auto text-[1rem] md:text-[1.15rem]">
+        <p className="w-full max-w-xl  text-lg tracking-tight text-gray-600">
           Sou um{" "}
           <span className="text-[#5865f2] font-semibold">Web Developer</span>{" "}
           com mais de três anos de experiência em construir soluções inovadoras
@@ -58,18 +70,27 @@ export default function Hero() {
           </span>
           .
         </p>
-      </div>
-      <div className="flex gap-4">
-        <Link
-          href="/Contact"
-          target=""
-          className=" items-center justify-center flex gap-2 p-4 px-8 my-4
-        w-fit text-lg md:text-xl mx auto rounded-full font-semibold 
-        transition-all   hover:bg-[#5865f2]/70 bg-[#5865f2]   hover:underline"
-        >
-          <p>Envie uma mensagem</p>
-        </Link>
-      </div>
+
+        <div className="w-full mt-2 flex flex-col gap-6 sm:flex-row items-center justify-center text-lg max-sm:px-8 font-semibold">
+          <AnimatedBtn
+            className="inline-flex w-full items-center justify-center rounded-xl border-2 hover:underline bg-[#fff] hover:border-[#5865f2] text-[#000]  px-6 font-semibold
+            py-4 text-center  duration-200  lg:w-auto"
+          >
+            <Link href="/Projects" target="" className="w-full">
+              <span>Meus Projetos</span>
+            </Link>
+          </AnimatedBtn>
+          <AnimatedBtn
+            className="inline-flex w-full items-center justify-center px-6 py-4 border-2  rounded-xl hover:underline 
+            border-[#5865f2] bg-[#5865f2] hover:border-[#fff] text-[#fff] 
+            text-center text-black duration-200 focus:outline-none focus-visible:outline-gray-600 focus-visible:ring-gray-300 lg:w-auto font-semibold"
+          >
+            <Link href="/Contact" target="" className="w-full">
+              <span> Entre em contato </span>
+            </Link>
+          </AnimatedBtn>
+        </div>
+      </motion.div>
     </motion.div>
   );
 }

@@ -25,7 +25,7 @@ export default function Home() {
   ];
 
   return (
-    <div className=" relative w-screen min-h-screen h-fit flex flex-col justify-evenly items-center">
+    <div className=" relative w-screen min-h-screen h-fit flex flex-col justify-evenly items-center py-8 space-y-8">
       <div className="snap-center">
         <Hero />
       </div>

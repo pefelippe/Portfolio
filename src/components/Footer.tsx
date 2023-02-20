@@ -9,7 +9,7 @@ function Footer({}: Props) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="min-h-[10vh]  py-20 relative flex justify-center items-center  w-full max-w-screen-2xl mx-auto max-md:flex-col max-md:gap-4">
+    <footer className="min-h-[10vh]  py-8 relative flex justify-center items-center  w-full max-w-screen-2xl mx-auto max-md:flex-col max-md:gap-4">
       <span className="flex items-center">
         Desenvolvido por Pedro Felippe. © {year}.
       </span>

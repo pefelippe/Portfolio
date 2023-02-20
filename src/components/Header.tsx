@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
+import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import AnimatedBtn from "./motion/AnimatedBtn";
 
@@ -13,29 +14,30 @@ function Header({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className=" top-0 right-0 left-0 h-fit flex z-40  mx-auto max-w-7xl text-[20px] text-[#EFEFEF]
-       font-semibold justify-between w-full items-center  p-8"
+      className=" top-0 right-0 left-0 h-fit flex z-40  mx-auto max-w-7xl  text-[20px] text-[#EFEFEF]
+       font-semibold justify-between w-full items-center pt-8 max-xl:px-6"
     >
       <Link className="headerContent" href="/">
-        <p className="text-3xl">Pedro Felippe </p>
+        <p className="text-2xl md:text-3xl">Pedro Felippe </p>
       </Link>
 
-      <div className="flex gap-4 md:gap-8">
-        <AnimatedBtn
-          href="https://resume.io/r/m2cn8pnqu"
-          className=" items-center justify-center flex
-          w-fit text-md md:text-xl mx auto  font-semibold text-[#fff]  hover:underline"
-        >
-          <p>Currículo</p>
+      <div className=" flex gap-4 ">
+        <AnimatedBtn className="iconHeader" href="https://github.com/pefelippe">
+          <FaGithub className="h-8 w-8 " />
         </AnimatedBtn>
+
         <AnimatedBtn
-          href="/Contact"
-          target=""
-          className=" items-center justify-center flex gap-2 p-3 px-6
-        w-fit text-md md:text-xl mx auto rounded-xl font-semibold text-[#fff]
-        transition-all  bg-[#5865f2] hover:bg-[#5865f2]/80 hover:underline"
+          className="iconHeader"
+          href="https://www.linkedin.com/in/pedro-felippe/"
         >
-          <p>Contato</p>
+          <FaLinkedinIn className="h-8 w-8 " />
+        </AnimatedBtn>
+
+        <AnimatedBtn
+          className="iconHeader"
+          href="https://resume.io/r/m2cn8pnqu"
+        >
+          <FaFilePdf className="h-8 w-8 " />
         </AnimatedBtn>
       </div>
     </motion.div>

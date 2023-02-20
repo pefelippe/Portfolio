@@ -24,7 +24,7 @@ function ExperienceCard({
         scale: 1.05,
         transition: { duration: 0.1 },
       }}
-      className="flex  h-[250px] w-[380px]  shadow-xl rounded-xl hover:shadow-[#5865f2]/70 "
+      className="flex  h-[250px] w-[380px] max-w-full shadow-xl rounded-xl hover:shadow-[#5865f2]/70 "
       href=""
     >
       <motion.img
@@ -33,7 +33,7 @@ function ExperienceCard({
         className="object-cover md h-full w-full  rounded-xl shadow-xl border-2 border-[#242424]"
       />
 
-      <div className=" flex h-[250px] w-[380px] absolute bg-opacity-90 z-40 rounded-xl justify-center items-center text-[2rem] font-semibold  text-white transition-all hover:bg-[#000] hover:bg-opacity-60"></div>
+      <div className=" flex h-[250px] w-[380px] max-w-full absolute bg-opacity-90 z-40 rounded-xl justify-center items-center text-[2rem] font-semibold  text-white transition-all hover:bg-[#000] hover:bg-opacity-60"></div>
     </motion.a>
   );
 }

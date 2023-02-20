@@ -13,8 +13,8 @@ export default function Hero() {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2.5 }}
-      className=" h-[70vh] relative flex w-full flex-col  items-center justify-center
-       mx-auto max-w-4xl px-8 gap-4"
+      className=" min-h-[70vh] relative flex w-full flex-col  items-center justify-center
+       mx-auto max-w-4xl px-8 "
     >
       <motion.p
         initial={{ y: -25, opacity: 0 }}
@@ -41,7 +41,7 @@ export default function Hero() {
       <motion.img
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="rounded-full h-[180px] w-[180px]"
+        className="rounded-full h-[180px] w-[180px] mt-4"
       />
       <div className="flex flex-col items-center justify-items-center">
         <p className=" text-[#5865f2] text-center uppercase text-[2rem] md:text-[4rem] font-bold tracking-[5px]">
@@ -59,17 +59,16 @@ export default function Hero() {
           .
         </p>
       </div>
-      <div className=" flex gap-8 ">
-        <AnimatedBtn className="iconHeader" href="https://github.com/pefelippe">
-          <FaGithub className="h-10 w-10 " />
-        </AnimatedBtn>
-
-        <AnimatedBtn
-          className="iconHeader"
-          href="https://www.linkedin.com/in/pedro-felippe/"
+      <div className="flex gap-4">
+        <Link
+          href="/Contact"
+          target=""
+          className=" items-center justify-center flex gap-2 p-4 px-8 my-4
+        w-fit text-lg md:text-xl mx auto rounded-full font-semibold 
+        transition-all   hover:bg-[#5865f2]/70 bg-[#5865f2]   hover:underline"
         >
-          <FaLinkedinIn className="h-10 w-10 " />
-        </AnimatedBtn>
+          <p>Envie uma mensagem</p>
+        </Link>
       </div>
     </motion.div>
   );

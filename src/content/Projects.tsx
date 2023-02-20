@@ -25,12 +25,12 @@ function Projects({ projects }: ProjectsType) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2.5, delay: 1 }}
-      className="h-fit   flex  w-fit flex-col justify-center items-center  mx-auto  gap-12 px-8 "
+      className="h-fit  max-w-7xl  flex  w-fit flex-col justify-center items-center  mx-auto  gap-8 px-8 "
       id="projetos"
     >
       <ContentTitle title="Projetos" />
 
-      <div className="relative  grid xl:grid-cols-2 grid-cols-1 gap-8 mx-auto  ">
+      <div className="relative  grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-auto  ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

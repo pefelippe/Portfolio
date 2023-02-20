@@ -14,7 +14,7 @@ function Header({}: Props) {
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
       className=" top-0 right-0 left-0 h-fit flex z-40  mx-auto max-w-7xl text-[20px] text-[#EFEFEF]
-       font-semibold justify-between w-full items-center  py-10 px-8"
+       font-semibold justify-between w-full items-center  p-8"
     >
       <Link className="headerContent" href="/">
         <p className="text-3xl">Pedro Felippe </p>

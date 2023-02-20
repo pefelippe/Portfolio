@@ -13,31 +13,37 @@ export default function Hero() {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2.5 }}
-      className=" h-[70vh] relative flex w-full flex-col  items-center justify-center mx-auto max-w-4xl px-8 gap-8"
+      className=" h-[70vh] relative flex w-full flex-col  items-center justify-center
+       mx-auto max-w-4xl px-8 gap-4"
     >
-      <div className="">
-        <motion.p
-          initial={{ y: -25, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2, delay: 1 }}
-          className="text-[22px] tracking-[2.2px] font-semibold text-center uppercase text-[#a3a3a3]"
-        >
-          <Typewriter
-            words={[
-              "SOFTWARE ENGINEER",
-              "FRONT END",
-              "Tailwind <3",
-              "i write coffe",
-              "i drink javascript",
-            ]}
-            loop={0}
-            cursor
-            cursorStyle="_"
-            typeSpeed={75}
-            deleteSpeed={75}
-            delaySpeed={2000}
-          />
-        </motion.p>
+      <motion.p
+        initial={{ y: -25, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 1 }}
+        className="text-[22px] tracking-[2.2px] font-semibold text-center uppercase text-[#a3a3a3]"
+      >
+        <Typewriter
+          words={[
+            "SOFTWARE ENGINEER",
+            "FRONT END",
+            "Tailwind <3",
+            "i write coffe",
+            "i drink javascript",
+          ]}
+          loop={0}
+          cursor
+          cursorStyle="_"
+          typeSpeed={75}
+          deleteSpeed={75}
+          delaySpeed={2000}
+        />
+      </motion.p>
+      <motion.img
+        alt="avatar-pefelippe"
+        src="assets/avatar-pdr.png"
+        className="rounded-full h-[180px] w-[180px]"
+      />
+      <div className="flex flex-col items-center justify-items-center">
         <p className=" text-[#5865f2] text-center uppercase text-[2rem] md:text-[4rem] font-bold tracking-[5px]">
           Pedro Felippe
         </p>
@@ -65,11 +71,6 @@ export default function Hero() {
           <FaLinkedinIn className="h-10 w-10 " />
         </AnimatedBtn>
       </div>
-      <motion.img
-        alt="avatar-pefelippe"
-        src="assets/avatar-pdr.png"
-        className="rounded-full h-[180px] w-[180px] "
-      />
     </motion.div>
   );
 }

@@ -16,9 +16,9 @@ function Header({}: Props) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, delay: 1 }}
       className="min-h-[10vh]  h-fit flex z-40  mx-auto  text-[20px] text-[#fff] 
-       font-semibold  justify-between  w-full items-center max-xl:px-6 max-w-7xl"
+       font-semibold  justify-between max-sm:flex-col max-sm:py-4 max-sm:gap-4 w-full items-center max-xl:px-8 max-w-7xl"
     >
-      <div className="flex gap-8 text-white">
+      <div className="flex gap-4 md:gap-8 text-white">
         <Link
           href="/"
           className={

@@ -71,7 +71,7 @@ export default function Hero() {
           .
         </p>
 
-        <div className="w-full mt-2 flex flex-col gap-6 sm:flex-row items-center justify-center text-lg max-sm:px-8 font-semibold">
+        <div className="w-full mt-2 flex flex-col max-sm:gap-3 gap-6 sm:flex-row items-center justify-center text-lg max-sm:px-8 font-semibold">
           <Link
             href="/Projects"
             target=""

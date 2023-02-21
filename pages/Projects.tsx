@@ -52,7 +52,7 @@ function Projects() {
       >
         <ContentTitle title="Projetos" />
 
-        <p className="italic text-sm">Clique no card para ver detalhes</p>
+        <p className="italic text-sm pt-4">Clique no card para ver detalhes</p>
         <div className="py-10 justify-center items-center relat.ive grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 mx-auto  ">
           {projects?.map((proj) => {
             return (

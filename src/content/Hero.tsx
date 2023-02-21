@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import {
-  FaGithub,
   FaAngleDoubleRight,
   FaFilePdf,
+  FaGithub,
   FaLinkedinIn,
 } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
@@ -72,23 +72,24 @@ export default function Hero() {
         </p>
 
         <div className="w-full mt-2 flex flex-col gap-6 sm:flex-row items-center justify-center text-lg max-sm:px-8 font-semibold">
-          <AnimatedBtn
-            className="inline-flex w-full items-center justify-center rounded-xl border-2 hover:underline bg-[#fff] hover:border-[#5865f2] text-[#000]  px-6 font-semibold
+          <Link
+            href="/Projects"
+            target=""
+            className="w-full inline-flex  items-center justify-center rounded-xl border-2 hover:underline bg-[#fff] hover:border-[#5865f2] text-[#000]  px-6 font-semibold
             py-4 text-center  duration-200  lg:w-auto"
           >
-            <Link href="/Projects" target="" className="w-full">
-              <span>Meus Projetos</span>
-            </Link>
-          </AnimatedBtn>
-          <AnimatedBtn
-            className="inline-flex w-full items-center justify-center px-6 py-4 border-2  rounded-xl hover:underline 
+            <span>Meus Projetos</span>
+          </Link>
+
+          <Link
+            href="/Contact"
+            target=""
+            className="w-full inline-flex  items-center justify-center px-6 py-4 border-2  rounded-xl hover:underline 
             border-[#5865f2] bg-[#5865f2] hover:border-[#fff] text-[#fff] 
             text-center text-black duration-200 focus:outline-none focus-visible:outline-gray-600 focus-visible:ring-gray-300 lg:w-auto font-semibold"
           >
-            <Link href="/Contact" target="" className="w-full">
-              <span> Entre em contato </span>
-            </Link>
-          </AnimatedBtn>
+            <span> Entre em contato </span>
+          </Link>
         </div>
       </motion.div>
     </motion.div>

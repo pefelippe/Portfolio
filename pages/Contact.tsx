@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-
 import React from "react";
+
 import MessageForm from "../src/components/MessageForm";
+import ContentTitle from "./../src/atoms/ContentTitle";
 
 type IProps = {};
 
@@ -16,12 +17,10 @@ function Contact({}: IProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="space-y-4 justify-between text-center py-4 w-full"
+        className="space-y-4 justify-between items-center mx-auto text-center py-4 w-full"
       >
-        <span className="text-3xl font-semibold ">
-          Pronto para começar uma parceria?
-        </span>
-        <p className="text-xl">Envie uma Mensagem!</p>
+        <ContentTitle title="Pronto para começar uma parceria?" />
+        <p className="text-sm italic">Envie uma Mensagem!</p>
       </motion.div>
       <MessageForm name={""} email={""} subject={""} message={""} />
     </motion.div>

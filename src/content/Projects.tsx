@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-import ContentTitle from "../src/atoms/ContentTitle";
-import AnimatedBtn from "../src/components/motion/AnimatedBtn";
-import ProjectCard from "../src/components/ProjectCard";
+import ContentTitle from "../atoms/ContentTitle";
+import AnimatedBtn from "../components/motion/AnimatedBtn";
+import ProjectCard from "../components/ProjectCard";
 
 interface ProjectCard {
   id: number;
@@ -36,24 +36,31 @@ function Projects() {
       imgUrl: "assets/pomodorotunes.png",
       description: "A união de música calma e pomodoro.",
     },
+    {
+      id: 3,
+      link: "",
+      repo: "https://github.com/pefelippe/PomodoroTunes",
+      title: "Pomodoro Tunes",
+      imgUrl: "assets/pomodorotunes.png",
+      description: "A união de música calma e pomodoro.",
+    },
   ];
 
   return (
     <motion.div
+      id="projects"
       className="relative px-6 mx-auto  w-screen
       items-center justify-center h-fit 
-      text-center bg-[#fefefe] shadow-md  border-[#242424]"
+      text-center "
     >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="min-h-[80vh] h-fit w-full flex flex-col justify-center items-center py-10"
+        className="h-fit w-full flex flex-col justify-center items-center py-10  "
       >
         <ContentTitle title="Projetos" />
-
-        <p className="italic text-sm pt-4">Clique no card para ver detalhes</p>
-        <div className="py-10 justify-center items-center relat.ive grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 mx-auto  ">
+        <div className="w-full max-w-7xl py-10 justify-center items-center relative grid xl:grid-cols-3 grid-cols-1 gap-10 mx-auto px-8 ">
           {projects?.map((proj) => {
             return (
               <ProjectCard
@@ -70,9 +77,9 @@ function Projects() {
         <AnimatedBtn
           href="https://github.com/pefelippe?tab=repositories"
           target="_blank"
-          className="flex w-fit  mx-auto gap-2 items-center text-md font-semibold text-center p-4 px-8 border-2 rounded-full  bg-[#5865f2] transition-all text-[#fff]"
+          className="flex w-fit  mx-auto gap-2 items-center text-md font-semibold text-center p-4  border-2 rounded-full  text-[#5865f2] transition-all "
         >
-          <span>Visite meu Github para mais projetos</span>
+          <span>Repositórios no GitHub</span>
         </AnimatedBtn>
       </motion.div>
     </motion.div>

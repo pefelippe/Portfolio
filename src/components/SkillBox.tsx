@@ -10,14 +10,13 @@ const SkillBox = ({ title, children }: ISkillBox) => {
   return (
     <motion.a
       whileHover={{
-        scale: 1.2,
+        scale: 1.1,
         transition: { duration: 0.1 },
       }}
-      className="flex flex-col justify-center items-center text-center mx-auto
-       transition-all ease-in-out space-y-3 w-[90px] h-[90px] hover:bg-[#5865f2] rounded-lg"
+      className="flex flex-col justify-center items-center text-center mx-auto w-full
+       transition-all ease-in-out space-y-3  border-2 border-[#242424] hover:border-[#5865f2]  bg-[#121212] p-10 rounded-xl"
     >
       <div>{children}</div>
-      <h2 className="tracking-tight  font-semibold">{title}</h2>
     </motion.a>
   );
 };

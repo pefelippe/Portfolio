@@ -21,16 +21,18 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <div
-      className="bg-[#101010] p-20 flex flex-col items-center gap-8
-    justify-center mx-auto   max-w-7xl rounded-md"
+      className="relative flex flex-col xl:flex-row items-center w-screen
+    justify-center xl:justify-between mx-auto max-w-7xl rounded-md text-[#fff] gap-4 px-8"
     >
-      <ContentTitle title="Skills" />
+      <div className="w-full">
+        <ContentTitle title="Skills" />
+      </div>
 
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, delay: 1 }}
-        className="flex  w-full "
+        className="w-full max-w-xl grid xl:grid-cols-4 grid-cols-2 mx-auto  gap-4 "
       >
         <SkillBox title="Git">
           <SiGit className="socialMediaIcon" />
@@ -47,14 +49,6 @@ function Skills({}: Props) {
         <SkillBox title="Typescript">
           <SiTypescript className=" socialMediaIcon" />
         </SkillBox>
-      </motion.div>
-
-      <motion.div
-        initial={{ x: 50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 1 }}
-        className="flex w-full"
-      >
         <SkillBox title="AWS">
           <SiAmazonaws className=" socialMediaIcon" />
         </SkillBox>
@@ -67,7 +61,6 @@ function Skills({}: Props) {
         <SkillBox title="Node">
           <SiNodedotjs className=" socialMediaIcon" />
         </SkillBox>
-
         <SkillBox title="MongoDB">
           <SiMongodb className=" socialMediaIcon" />
         </SkillBox>

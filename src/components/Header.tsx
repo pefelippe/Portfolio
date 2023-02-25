@@ -16,64 +16,37 @@ function Header({}: Props) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, delay: 1 }}
       className="min-h-[10vh]  h-fit flex z-40  mx-auto  text-[20px] text-[#fff] 
-       font-semibold  justify-between max-sm:flex-col max-sm:py-4 max-sm:gap-4 w-full items-center max-xl:px-8 max-w-7xl"
+       font-semibold  justify-between max-sm:flex-col max-sm:py-10 max-sm:gap-4 w-full items-center max-xl:px-8 max-w-7xl"
     >
+      <Link
+        href="/"
+        className="text-[#5865f2] text-center uppercase font-bold 
+        text-2xl tracking-tighter text-black lg:text-3xl"
+        target=""
+      >
+        <span>Pedro Felippe</span>
+      </Link>
+
       <div className="flex gap-4 md:gap-8 text-white">
-        <Link
-          href="/"
-          className={
-            router.pathname === "/"
-              ? " underline decoration-2 decoration-[#5865f2] underline-offset-8"
-              : "text-gray-300 hover:text-white"
-          }
-          target=""
-        >
+        <Link href="/" className="text-gray-300 hover:text-white" target="">
           <span>Home</span>
         </Link>
 
         <Link
-          className={
-            router.pathname === "/Projects"
-              ? " underline decoration-2 decoration-[#5865f2] underline-offset-8"
-              : "text-gray-300 hover:text-white"
-          }
-          href="/Projects"
+          className="text-gray-300 hover:text-white"
+          href="#projects"
           target=""
         >
           <span>Projetos</span>
         </Link>
 
         <Link
-          className={
-            router.pathname === "/Contact"
-              ? " text-[#fff] underline decoration-2 decoration-[#5865f2] underline-offset-8"
-              : "text-gray-300 hover:text-white"
-          }
-          href="/Contact"
+          className="text-gray-300 hover:text-white"
+          href="/#contact"
           target=""
         >
           <span> Contato </span>
         </Link>
-      </div>
-
-      <div className="flex gap-6">
-        <AnimatedBtn className="w-fit" href="https://github.com/pefelippe">
-          <FaGithub className="h-7 w-7  text-[#fff]" />
-        </AnimatedBtn>
-
-        <AnimatedBtn
-          className="w-fit"
-          href="https://www.linkedin.com/in/pedro-felippe/"
-        >
-          <FaLinkedinIn className="h-7 w-7 text-[#fff]" />
-        </AnimatedBtn>
-
-        <AnimatedBtn
-          className="w-fit text-[#fff]"
-          href="https://resume.io/r/m2cn8pnqu"
-        >
-          <FaFilePdf className="h-7 w-7  " />
-        </AnimatedBtn>
       </div>
     </motion.div>
   );

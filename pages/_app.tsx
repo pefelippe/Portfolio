@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div
       className="
         overflow-x-hidden overflow-y-scroll bg-[url('/assets/endless-constellation.svg')]
-        snap-y snap-mandatory 
+        
         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth 
         h-screen min-w-[350px]  min-h-screen  text-[#000] "
     >

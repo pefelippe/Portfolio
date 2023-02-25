@@ -21,7 +21,8 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <div
-      className="relative flex flex-col xl:flex-row items-center w-screen
+      id="skills"
+      className="relative flex flex-col xl:flex-row items-center w-screen snap-center
     justify-center xl:justify-between mx-auto max-w-7xl rounded-md text-[#fff] gap-4 px-8"
     >
       <div className="w-full">

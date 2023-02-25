@@ -7,8 +7,8 @@ import { Typewriter } from "react-simple-typewriter";
 export default function Hero() {
   return (
     <motion.div
-      className="relative px-6 gap-4 mx-auto  w-screen
-      flex flex-col items-center justify-center h-fit  md:flex-row
+      className="relative px-6 gap-4 mx-auto  w-screen snap-center
+      flex flex-col items-center justify-center h-fit  md:flex-row min-h-[50vh]
       text-center  shadow-md text-[#fff]"
     >
       <motion.div
@@ -43,14 +43,14 @@ export default function Hero() {
 
         <p
           className="text-[#5865f2] text-center uppercase font-bold 
-        text-4xl tracking-tighter text-black lg:text-6xl"
+        text-4xl tracking-tighter text-black lg:text-7xl"
         >
           Pedro Felippe
         </p>
 
         <p
           className=" text-center uppercase font-bold 
-        text-3xl tracking-tighter text-black lg:text-4xl"
+        text-3xl tracking-tighter text-semibold lg:text-4xl"
         >
           Web Developer
         </p>

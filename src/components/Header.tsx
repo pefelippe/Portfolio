@@ -15,8 +15,8 @@ function Header({}: Props) {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, delay: 1 }}
-      className="min-h-[10vh]  h-fit flex z-40  mx-auto  text-[20px] text-[#fff] 
-       font-semibold  justify-between max-sm:flex-col max-sm:py-10 max-sm:gap-4 w-full items-center max-xl:px-8 max-w-7xl"
+      className="min-h-[10vh]  h-fit flex z-40  mx-auto  text-[20px]  border-b-[1px] border-[#303030] rounded max-w-7xl
+       font-semibold  justify-between max-sm:flex-col max-sm:py-10 max-sm:gap-4 w-full items-center px-8"
     >
       <Link
         href="/"
@@ -30,6 +30,14 @@ function Header({}: Props) {
       <div className="flex gap-4 md:gap-8 text-white">
         <Link href="/" className="text-gray-300 hover:text-white" target="">
           <span>Home</span>
+        </Link>
+
+        <Link
+          className="text-gray-300 hover:text-white"
+          href="#skills"
+          target=""
+        >
+          <span>Skills</span>
         </Link>
 
         <Link

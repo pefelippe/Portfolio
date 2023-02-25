@@ -12,7 +12,7 @@ function Contact({}: IProps) {
       id="contact"
       className="relative  gap-4
       flex flex-col items-center justify-center h-fit
-      text-center bg-[#f9f9f9] min-h-screen"
+      text-center bg-[#f9f9f9] min-h-screen snap-center"
     >
       <motion.div
         initial={{ opacity: 0 }}

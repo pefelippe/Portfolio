@@ -14,7 +14,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className=" h-full w-screen max-w-7xl  text-xl text-[#fff] mx-auto px-8"
+      className=" h-full w-screen max-w-7xl  text-xl text-[#fff] mx-auto px-8 snap-center"
     >
       <div
         className=" flex flex-col w-full md:flex-row 
@@ -52,21 +52,21 @@ function About({}: Props) {
 
           <div className="flex gap-6 justify-center">
             <AnimatedBtn
-              className="w-fit border-2 border-[#242424] p-2 rounded-full hover:border-[#5865f2]"
+              className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2] "
               href="https://github.com/pefelippe"
             >
               <FaGithub className="h-8 w-8  text-[#5865f2]" />
             </AnimatedBtn>
 
             <AnimatedBtn
-              className="w-fit border-2 border-[#242424] p-2 rounded-full hover:border-[#5865f2]"
+              className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2]"
               href="https://www.linkedin.com/in/pedro-felippe/"
             >
               <FaLinkedinIn className="h-8 w-8 text-[#5865f2] " />
             </AnimatedBtn>
 
             <AnimatedBtn
-              className="w-fit border-2 border-[#242424] p-2 rounded-full hover:border-[#5865f2]"
+              className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2]"
               href="https://resume.io/r/m2cn8pnqu"
             >
               <FaFilePdf className="h-8 w-8  text-[#5865f2]" />

@@ -36,22 +36,12 @@ function Projects() {
       imgUrl: "assets/pomodorotunes.png",
       description: "A união de música calma e pomodoro.",
     },
-    {
-      id: 3,
-      link: "",
-      repo: "https://github.com/pefelippe/PomodoroTunes",
-      title: "Pomodoro Tunes",
-      imgUrl: "assets/pomodorotunes.png",
-      description: "A união de música calma e pomodoro.",
-    },
   ];
 
   return (
     <motion.div
       id="projects"
-      className="relative px-6 mx-auto  w-screen
-      items-center justify-center h-fit 
-      text-center "
+      className="relative mx-auto px-8 w-screen items-center justify-center h-fit text-center snap-start"
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -60,7 +50,7 @@ function Projects() {
         className="h-fit w-full flex flex-col justify-center items-center py-10  "
       >
         <ContentTitle title="Projetos" />
-        <div className="w-full max-w-7xl py-10 justify-center items-center relative grid xl:grid-cols-3 grid-cols-1 gap-10 mx-auto px-8 ">
+        <div className="w-full max-w-7xl py-10 justify-center items-center relative grid md:grid-cols-2 grid-cols-1 gap-10 mx-auto  ">
           {projects?.map((proj) => {
             return (
               <ProjectCard
@@ -77,7 +67,7 @@ function Projects() {
         <AnimatedBtn
           href="https://github.com/pefelippe?tab=repositories"
           target="_blank"
-          className="flex w-fit  mx-auto gap-2 items-center text-md font-semibold text-center p-4  border-2 rounded-full  text-[#5865f2] transition-all "
+          className="flex w-fit  mx-auto gap-2 items-center text-lg font-semibold text-center p-4 px-  border-2 rounded-full  text-[#5865f2] transition-all "
         >
           <span>Repositórios no GitHub</span>
         </AnimatedBtn>

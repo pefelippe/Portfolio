@@ -36,7 +36,9 @@ function About({}: Props) {
             <span className=" font-semibold underline decoration-[#5865f2]">
               React, Next, Node, Typescript e AWS
             </span>
-            . Atualmente finalizando meu diploma em{" "}
+            . <br />
+            <br />
+            Atualmente finalizando meu diploma em{" "}
             <span className="font-semibold ">Ciência da Computação</span> na
             UFC. Além disso, trabalho como Web Developer no{" "}
             <a
@@ -49,29 +51,9 @@ function About({}: Props) {
             </a>
             .
           </p>
-
-          <div className="flex gap-6 justify-center">
-            <AnimatedBtn
-              className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2] "
-              href="https://github.com/pefelippe"
-            >
-              <FaGithub className="h-8 w-8  text-[#5865f2]" />
-            </AnimatedBtn>
-
-            <AnimatedBtn
-              className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2]"
-              href="https://www.linkedin.com/in/pedro-felippe/"
-            >
-              <FaLinkedinIn className="h-8 w-8 text-[#5865f2] " />
-            </AnimatedBtn>
-
-            <AnimatedBtn
-              className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2]"
-              href="https://resume.io/r/m2cn8pnqu"
-            >
-              <FaFilePdf className="h-8 w-8  text-[#5865f2]" />
-            </AnimatedBtn>
-          </div>
+          <button className="w-full border-2 p-4 rounded-xl font-semibold  border-[#5865f2] text-[#5865f2] ">
+            Currículo
+          </button>
         </motion.span>
       </div>
     </motion.div>

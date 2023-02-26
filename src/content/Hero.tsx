@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-
+import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+
+import AnimatedBtn from "../components/motion/AnimatedBtn";
 
 export default function Hero() {
   return (
@@ -17,6 +19,12 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className="w-full flex flex-col items-center justify-center gap-4"
       >
+        <motion.img
+          alt="avatar-pefelippe"
+          src="assets/avatar-pdr.png"
+          className="rounded-full h-[200px] transition-all shadow-md object-cover border-1 border-[#121212]"
+        />
+
         <motion.p
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -54,6 +62,29 @@ export default function Hero() {
         >
           Web Developer
         </p>
+
+        <div className="flex gap-4 md:gap-6 justify-center">
+          <AnimatedBtn
+            className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2] "
+            href="https://github.com/pefelippe"
+          >
+            <FaGithub className="h-8 w-8  text-[#5865f2]" />
+          </AnimatedBtn>
+
+          <AnimatedBtn
+            className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2]"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <FaLinkedinIn className="h-8 w-8 text-[#5865f2] " />
+          </AnimatedBtn>
+
+          <AnimatedBtn
+            className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2]"
+            href="https://resume.io/r/m2cn8pnqu"
+          >
+            <FaFilePdf className="h-8 w-8  text-[#5865f2]" />
+          </AnimatedBtn>
+        </div>
 
         {/* <div className="w-full mt-4 flex flex-col max-sm:gap-3 gap-6 sm:flex-row items-center justify-center text-lg max-sm:px-8 font-semibold">
           <Link

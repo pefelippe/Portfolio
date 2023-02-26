@@ -8,7 +8,7 @@ import Projects from "./../src/content/Projects";
 
 export default function Home() {
   return (
-    <div className=" space-y-20 md:space-y-32 pt-8 md:pt-32  ">
+    <div className=" space-y-10 md:space-y-20 py-20 md:py-40  ">
       <Hero />
       <About />
       <Skills />

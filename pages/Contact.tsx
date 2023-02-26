@@ -11,17 +11,10 @@ function Contact({}: IProps) {
     <motion.div
       id="contact"
       className="relative  gap-4
-      flex flex-col items-center justify-center h-fit
-      text-center bg-[#f9f9f9] min-h-screen snap-center"
+      flex flex-col xl:flex-row items-center justify-center h-fit
+      text-center  py-20 snap-center  border-2 border-[#242424]  bg-[#121212]  rounded-2xl  max-w-7xl mx-auto"
     >
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="space-y-4 justify-center items-center mx-auto text-center py-4 w-full  "
-      >
-        <ContentTitle title="Pronto para começar uma parceria?" />
-      </motion.div>
+      <ContentTitle title="Pronto para começar uma parceria?" />
 
       <MessageForm name={""} email={""} subject={""} message={""} />
     </motion.div>

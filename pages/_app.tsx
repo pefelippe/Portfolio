@@ -27,9 +27,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Analytics />
 
-      <div className="snap-center ">
+      {/* <div className="snap-center ">
         <Header />
-      </div>
+      </div> */}
 
       <Component {...pageProps} />
 

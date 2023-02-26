@@ -8,8 +8,8 @@ export default function Hero() {
   return (
     <motion.div
       className="relative px-6 gap-4 mx-auto  w-screen snap-center
-      flex flex-col items-center justify-center h-fit  md:flex-row min-h-[50vh]
-      text-center  shadow-md text-[#fff]"
+      flex flex-col items-center justify-center h-fit  py-20
+      text-center shadow-md text-[#fff]"
     >
       <motion.div
         initial={{ y: 25, opacity: 0 }}
@@ -55,7 +55,7 @@ export default function Hero() {
           Web Developer
         </p>
 
-        <div className="w-full mt-4 flex flex-col max-sm:gap-3 gap-6 sm:flex-row items-center justify-center text-lg max-sm:px-8 font-semibold">
+        {/* <div className="w-full mt-4 flex flex-col max-sm:gap-3 gap-6 sm:flex-row items-center justify-center text-lg max-sm:px-8 font-semibold">
           <Link
             href="#projects"
             target=""
@@ -75,7 +75,7 @@ export default function Hero() {
           >
             <span> Entre em contato </span>
           </Link>
-        </div>
+        </div> */}
       </motion.div>
     </motion.div>
   );

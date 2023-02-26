@@ -67,7 +67,7 @@ function Projects() {
         <AnimatedBtn
           href="https://github.com/pefelippe?tab=repositories"
           target="_blank"
-          className="flex w-fit  mx-auto gap-2 items-center text-lg font-semibold text-center p-4 px-  border-2 rounded-full  text-[#5865f2] transition-all "
+          className="flex w-fit  mx-auto gap-2 items-center text-lg font-semibold text-center p-4 px-6  border-2 rounded-full  text-[#5865f2] transition-all "
         >
           <span>Repositórios no GitHub</span>
         </AnimatedBtn>

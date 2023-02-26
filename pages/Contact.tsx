@@ -12,7 +12,7 @@ function Contact({}: IProps) {
       id="contact"
       className="relative  gap-4
       flex flex-col xl:flex-row items-center justify-center h-fit
-      text-center  py-20 snap-center  border-2 border-[#242424]  bg-[#121212]  rounded-2xl  max-w-7xl mx-auto"
+      text-center  py-20 snap-center  border-2 border-[#242424]  bg-[#121212]  rounded-2xl  max-w-7xl mx-auto max-xl:mx-8"
     >
       <ContentTitle title="Pronto para começar uma parceria?" />
 

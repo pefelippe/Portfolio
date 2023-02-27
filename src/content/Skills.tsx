@@ -23,7 +23,7 @@ function Skills({}: Props) {
     <div
       id="skills"
       className="relative flex flex-col items-center w-full snap-center
-    justify-center xl:justify-between mx-auto max-w-7xl rounded-md text-[#fff] gap-4 "
+    justify-center xl:justify-between mx-auto max-w-7xl rounded-md text-[#fff] gap-10 xl:gap-20 "
     >
       <ContentTitle title="Skills" />
 

@@ -14,20 +14,21 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className=" h-full w-full max-w-7xl  text-xl text-[#fff] mx-auto  snap-center"
+      className=" flex flex-col h-full w-full max-w-7xl  text-xl text-[#fff] mx-auto  snap-center gap-10 xl:gap-20"
     >
+      <ContentTitle title="Quem sou" />
+
       <div
-        className=" flex flex-col w-full md:flex-row 
-        items-center bg-[#09090b]  border-2 border-[#121212]  rounded-2xl  shadow-md gap-12 p-4"
+        className=" flex flex-col w-fit mx-auto
+        items-center bg-[#09090b]  border-2 border-[#121212]  rounded-2xl  shadow-md gap-8 p-10"
       >
         <motion.img
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
-          className="rounded-md w-full md:max-w-[400px] max-md:h-[250px] transition-all shadow-md object-cover border-1 border-[#121212]"
+          className="rounded-full h-[250px] transition-all shadow-md object-cover border-1 border-[#121212]"
         />
 
-        <motion.span className=" flex flex-col w-fit justify-center  xl:justify-start text-center  xl:text-left text-[1rem]  md:text-[1.2rem]  text-gray-200  gap-8 ">
-          <ContentTitle title="Quem sou" />
+        <motion.span className="max-w-xl flex flex-col w-fit justify-center text-center  text-[1rem]  md:text-[1.2rem]  text-gray-200  gap-8 ">
           <p>
             Sou um{" "}
             <span className="text-[#5865f2]  font-semibold">Web Developer</span>{" "}
@@ -51,6 +52,7 @@ function About({}: Props) {
             </a>
             .
           </p>
+
           <button className="w-full border-2 p-4 rounded-xl font-semibold  border-[#5865f2] text-[#5865f2] ">
             Currículo
           </button>

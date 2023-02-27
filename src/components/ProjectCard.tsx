@@ -21,16 +21,15 @@ function ExperienceCard({
   stack,
 }: IProjectCard) {
   return (
-    <motion.article className="flex flex-col h-full max-w-[600px] text-white shadow-xl rounded-xl border-2 border-[#242424]  bg-[#121212] ">
+    <motion.article className="flex flex-col xl:flex-row h-full  text-white shadow-xl rounded-xl  justify-between gap-4 xl:gap-10  ">
       <motion.img
         src={imgUrl}
         alt="card image"
-        className="object-cover h-[300px] w-full "
+        className="object-cover xl:h-[400px] max-h-[400px] mx-auto max-w-xl xl:max-w-[700px] w-full border-2 border-[#242424] rounded-md"
       />
-
-      <div className="gap-8 flex flex-col justify-between p-10">
+      <div className=" flex flex-col justify-center  mx-auto max-w-xl gap-8">
         <p className="font-bold text-3xl ">{title}</p>
-        <div className=" grid grid-cols-4 gap-4">
+        {/* <div className=" grid grid-cols-4 gap-4">
           {stack?.map((item) => {
             return (
               <span
@@ -41,7 +40,7 @@ function ExperienceCard({
               </span>
             );
           })}
-        </div>
+        </div> */}
 
         <p className="text-xl ">{description}</p>
 

@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <motion.div
       className="relative px-6 gap-4 mx-auto  w-full snap-center
-      flex flex-col items-center justify-center h-fit 
+      flex flex-col items-center justify-center h-fit py-10 
       text-center shadow-md text-[#fff]"
     >
       <motion.div

@@ -22,18 +22,16 @@ function Skills({}: Props) {
   return (
     <div
       id="skills"
-      className="relative flex flex-col items-center w-screen snap-center
-    justify-center xl:justify-between mx-auto max-w-7xl rounded-md text-[#fff] gap-4 px-8"
+      className="relative flex flex-col items-center w-full snap-center
+    justify-center xl:justify-between mx-auto max-w-7xl rounded-md text-[#fff] gap-4 "
     >
-      <div className="w-full">
-        <ContentTitle title="Skills" />
-      </div>
+      <ContentTitle title="Skills" />
 
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 2, delay: 1 }}
-        className="w-full grid xl:grid-cols-6 grid-cols-2 mx-auto  gap-4 "
+        className="w-full grid xl:grid-cols-5 grid-cols-2 mx-auto  gap-4 "
       >
         <SkillBox title="Git">
           <SiGit className="socialMediaIcon" />

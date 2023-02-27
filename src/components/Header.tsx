@@ -15,8 +15,8 @@ function Header({}: Props) {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, delay: 1 }}
-      className="min-h-[10vh]  h-fit flex z-40  mx-auto  text-[20px]  border-b-[1px] border-[#303030] rounded max-w-7xl
-       font-semibold  justify-between max-sm:flex-col max-sm:py-10 max-sm:gap-4 w-full items-center px-8"
+      className="min-h-[10vh]  h-fit flex z-40  mx-auto  text-[20px]  rounded max-w-7xl
+       font-semibold  justify-between  max-sm:py-10 max-sm:gap-4 w-full items-center px-8"
     >
       <Link
         href="/"
@@ -27,7 +27,7 @@ function Header({}: Props) {
         <span>Pedro Felippe</span>
       </Link>
 
-      <div className="flex gap-4 md:gap-8 text-white">
+      {/* <div className="flex gap-4 md:gap-8 text-white">
         <Link href="/" className="text-gray-300 hover:text-white" target="">
           <span>Home</span>
         </Link>
@@ -55,6 +55,23 @@ function Header({}: Props) {
         >
           <span> Contato </span>
         </Link>
+      </div> */}
+
+      <div className="flex gap-8  justify-center">
+        <AnimatedBtn className=" " href="https://github.com/pefelippe">
+          <FaGithub className="h-8 w-8 text-white hover:text-[#5865f2]" />
+        </AnimatedBtn>
+
+        <AnimatedBtn
+          className=""
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <FaLinkedinIn className="h-8 w-8 text-white hover:text-[#5865f2] " />
+        </AnimatedBtn>
+
+        <AnimatedBtn className="" href="https://resume.io/r/m2cn8pnqu">
+          <FaFilePdf className="h-8 w-8 text-white hover:text-[#5865f2]" />
+        </AnimatedBtn>
       </div>
     </motion.div>
   );

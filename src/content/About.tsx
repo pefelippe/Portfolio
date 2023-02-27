@@ -14,7 +14,7 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className=" h-full w-screen max-w-7xl  text-xl text-[#fff] mx-auto px-8 snap-center"
+      className=" h-full w-full max-w-7xl  text-xl text-[#fff] mx-auto  snap-center"
     >
       <div
         className=" flex flex-col w-full md:flex-row 

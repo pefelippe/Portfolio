@@ -12,9 +12,8 @@ import Footer from "../src/components/Footer";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
-      className=" snap-y snap-mandatory
+      className="
         overflow-x-hidden overflow-y-scroll bg-[url('/assets/endless-constellation.svg')]
-        
         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth 
         h-screen min-w-[350px]  min-h-screen  text-[#000] "
     >
@@ -27,15 +26,15 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Analytics />
 
-      {/* <div className="snap-center ">
+      <div className="snap-center ">
         <Header />
-      </div> */}
+      </div>
 
       <Component {...pageProps} />
 
-      <div className="snap-center ">
+      {/* <div className="snap-center ">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }

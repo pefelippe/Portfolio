@@ -4,13 +4,11 @@ import React from "react";
 import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 
-import AnimatedBtn from "../components/motion/AnimatedBtn";
-
 export default function Hero() {
   return (
     <motion.div
-      className="relative px-6 gap-4 mx-auto  w-screen snap-center
-      flex flex-col items-center justify-center h-fit  py-20
+      className="relative px-6 gap-4 mx-auto  w-full snap-center
+      flex flex-col items-center justify-center h-fit 
       text-center shadow-md text-[#fff]"
     >
       <motion.div
@@ -19,12 +17,6 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className="w-full flex flex-col items-center justify-center gap-4"
       >
-        <motion.img
-          alt="avatar-pefelippe"
-          src="assets/avatar-pdr.png"
-          className="rounded-full h-[200px] transition-all shadow-md object-cover border-1 border-[#121212]"
-        />
-
         <motion.p
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -62,51 +54,6 @@ export default function Hero() {
         >
           Web Developer
         </p>
-
-        <div className="flex gap-4 md:gap-6 justify-center">
-          <AnimatedBtn
-            className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2] "
-            href="https://github.com/pefelippe"
-          >
-            <FaGithub className="h-8 w-8  text-[#5865f2]" />
-          </AnimatedBtn>
-
-          <AnimatedBtn
-            className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2]"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <FaLinkedinIn className="h-8 w-8 text-[#5865f2] " />
-          </AnimatedBtn>
-
-          <AnimatedBtn
-            className="w-fit border-2 border-[#242424] p-3 rounded-full hover:border-[#5865f2]"
-            href="https://resume.io/r/m2cn8pnqu"
-          >
-            <FaFilePdf className="h-8 w-8  text-[#5865f2]" />
-          </AnimatedBtn>
-        </div>
-
-        {/* <div className="w-full mt-4 flex flex-col max-sm:gap-3 gap-6 sm:flex-row items-center justify-center text-lg max-sm:px-8 font-semibold">
-          <Link
-            href="#projects"
-            target=""
-            className="w-full inline-flex  items-center justify-center rounded-md border-2 hover:underline bg-[#fff]  text-[#000] 
-             px-6 font-semibold
-            py-4 text-center  duration-200  lg:w-auto hover:rounded-2xl"
-          >
-            <span>Meus Projetos</span>
-          </Link>
-
-          <Link
-            href="#contact"
-            target=""
-            className="w-full inline-flex  items-center justify-center px-6 py-4 border-2 rounded-md hover:rounded-2xl hover:underline 
-            border-[#5865f2] bg-[#5865f2]  text-[#fff] 
-            text-center text-black duration-200 focus:outline-none focus-visible:outline-gray-600 focus-visible:ring-gray-300 lg:w-auto font-semibold"
-          >
-            <span> Entre em contato </span>
-          </Link>
-        </div> */}
       </motion.div>
     </motion.div>
   );

@@ -26,31 +26,35 @@ function Projects() {
       repo: "https://github.com/pefelippe/Portfolio",
       title: "Portfolio",
       imgUrl: "assets/portfolio.png",
-      description: "Meu portfolio pessoal.",
+      stack: ["react", "tailwind", "next", "typescript"],
+      description:
+        "Meu primeiro portfolio pessoal, com objetivo de mostrar meus projetos, habilidades e um pouco mais sobre mim. ",
     },
     {
       id: 2,
       link: "",
       repo: "https://github.com/pefelippe/PomodoroTunes",
-      title: "Pomodoro Tunes",
+      title: "Pomodoro-fi",
       imgUrl: "assets/pomodorotunes.png",
-      description: "A união de música calma e pomodoro.",
+      stack: ["react", "tailwind", "next", "typescript"],
+      description:
+        "Nesse projeto tentei uno a tranquilidade do lo-fi com o poderoso método pomodoro.",
     },
   ];
 
   return (
     <motion.div
       id="projects"
-      className="relative mx-auto px-8 w-screen items-center justify-center h-fit text-center snap-start"
+      className="relative mx-auto  w-full items-center justify-center h-fit text-center snap-start"
     >
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="h-fit w-full flex flex-col justify-center items-center py-10  "
+        className="h-fit w-full flex flex-col justify-center items-center  gap-4"
       >
         <ContentTitle title="Projetos" />
-        <div className="w-full max-w-7xl py-10 justify-center items-center relative grid md:grid-cols-2 grid-cols-1 gap-10 mx-auto  ">
+        <div className="w-full max-w-7xl justify-center items-center relative grid md:grid-cols-2 grid-cols-1 gap-10 mx-auto  ">
           {projects?.map((proj) => {
             return (
               <ProjectCard
@@ -60,17 +64,18 @@ function Projects() {
                 link={proj.link}
                 title={proj.title}
                 repo={proj.repo}
+                stack={proj.stack}
               />
             );
           })}
         </div>
-        <AnimatedBtn
+        {/* <AnimatedBtn
           href="https://github.com/pefelippe?tab=repositories"
           target="_blank"
           className="flex w-fit  mx-auto gap-2 items-center text-lg font-semibold text-center p-4 px-6  border-2 rounded-full  text-[#5865f2] transition-all "
         >
           <span>Repositórios no GitHub</span>
-        </AnimatedBtn>
+        </AnimatedBtn> */}
       </motion.div>
     </motion.div>
   );

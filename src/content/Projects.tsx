@@ -40,6 +40,16 @@ function Projects() {
       description:
         "Nesse projeto tentei uno a tranquilidade do lo-fi com o poderoso método pomodoro.",
     },
+    {
+      id: 3,
+      link: "",
+      repo: "https://github.com/pefelippe/PomodoroTunes",
+      title: "Pomodoro-fi",
+      imgUrl: "assets/pomodorotunes.png",
+      stack: ["react", "tailwind", "next", "typescript"],
+      description:
+        "Nesse projeto tentei uno a tranquilidade do lo-fi com o poderoso método pomodoro.",
+    },
   ];
 
   return (
@@ -56,12 +66,13 @@ function Projects() {
         <ContentTitle title="Projetos" />
         <div
           className="w-full max-w-7xl justify-center items-center relative 
-        grid grid-cols-1 gap-20 mx-auto  "
+        grid grid-cols-1 gap-40 mx-auto  "
         >
           {projects?.map((proj) => {
             return (
               <ProjectCard
                 key={proj.id}
+                id={proj.id}
                 description={proj.description}
                 imgUrl={proj.imgUrl}
                 link={proj.link}
@@ -75,9 +86,9 @@ function Projects() {
         <AnimatedBtn
           href="https://github.com/pefelippe?tab=repositories"
           target="_blank"
-          className="flex w-fit hover:underline mx-auto gap-2 items-center text-xl font-semibold text-center rounded-full  text-[#5865f2] transition-all "
+          className="pt-10 flex w-fit hover:underline mx-auto gap-2 items-center text-xl font-semibold text-center rounded-full  text-[#5865f2] transition-all "
         >
-          <span>Repositórios no GitHub</span>
+          <span>Ver mais projetos</span>
         </AnimatedBtn>
       </motion.div>
     </motion.div>

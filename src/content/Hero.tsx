@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+
 import AnimatedBtn from "../components/motion/AnimatedBtn";
 
 export default function Hero() {
@@ -15,9 +16,9 @@ export default function Hero() {
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="w-full flex flex-col items-center justify-center gap-4"
+        className="w-full flex flex-col items-center justify-center md:gap-4"
       >
-        <motion.p
+        {/* <motion.p
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -39,26 +40,20 @@ export default function Hero() {
             deleteSpeed={75}
             delaySpeed={2000}
           />
-        </motion.p>
+        </motion.p> */}
 
-        {/* <motion.img
+        <motion.img
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
           className="rounded-full h-[180px] transition-all shadow-md object-cover border-1 border-[#121212]"
-        /> */}
+        />
         <p
           className="text-[#5865f2] text-center uppercase font-bold 
-        text-[2.5rem] tracking-tighter text-black lg:text-7xl"
+        text-[2.5rem] tracking-tighter text-black lg:text-6xl"
         >
           Pedro Felippe
         </p>
 
-        <p
-          className=" text-center uppercase font-bold 
-          text-[1.6rem]  tracking-widest text-semibold lg:text-4xl"
-        >
-          Web Developer
-        </p>
         <p className=" text-[1.2rem] max-w-xl text-gray-200">
           Sou um{" "}
           <span className="text-[#5865f2]  font-semibold">Web Developer</span>{" "}
@@ -74,6 +69,23 @@ export default function Hero() {
         >
           <span>Currículo</span> 
         </AnimatedBtn>*/}
+
+        <div className="max-md:pt-4 flex gap-8  justify-center">
+          <AnimatedBtn className=" " href="https://github.com/pefelippe">
+            <FaGithub className="h-8 w-8 text-white hover:text-[#5865f2]" />
+          </AnimatedBtn>
+
+          <AnimatedBtn
+            className=""
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <FaLinkedinIn className="h-8 w-8 text-white hover:text-[#5865f2] " />
+          </AnimatedBtn>
+
+          <AnimatedBtn className="" href="https://resume.io/r/m2cn8pnqu">
+            <FaFilePdf className="h-8 w-8 text-white hover:text-[#5865f2]" />
+          </AnimatedBtn>
+        </div>
       </motion.div>
     </motion.div>
   );

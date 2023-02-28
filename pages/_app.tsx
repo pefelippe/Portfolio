@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
       className="
         overflow-x-hidden overflow-y-scroll bg-[url('/assets/endless-constellation.svg')]
         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth 
-        h-screen min-w-[350px]  min-h-screen  text-[#000] "
+        h-screen min-w-[400px]  min-h-screen  text-[#000] "
     >
       <Head>
         <title>Pedro Felippe | Portfolio</title>
@@ -25,16 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Analytics />
-
-      <div className="snap-center ">
-        <Header />
-      </div>
-
       <Component {...pageProps} />
-
-      {/* <div className="snap-center ">
-        <Footer />
-      </div> */}
     </div>
   );
 }

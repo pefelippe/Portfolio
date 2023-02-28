@@ -45,16 +45,19 @@ function Projects() {
   return (
     <motion.div
       id="projects"
-      className="relative mx-auto  w-full items-center justify-center h-fit text-center snap-start"
+      className="relative mx-auto w-full items-center justify-center h-fit "
     >
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        className="h-fit w-full flex flex-col justify-center items-center  gap-10 xl:gap-20 "
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 0.5 }}
+        className="h-fit w-full flex flex-col justify-center items-center  gap-10"
       >
         <ContentTitle title="Projetos" />
-        <div className="w-full max-w-7xl justify-center items-center relative grid grid-cols-1 gap-20 xl:gap-32 mx-auto  ">
+        <div
+          className="w-full max-w-7xl justify-center items-center relative 
+        grid grid-cols-1 gap-20 mx-auto  "
+        >
           {projects?.map((proj) => {
             return (
               <ProjectCard
@@ -69,13 +72,13 @@ function Projects() {
             );
           })}
         </div>
-        {/* <AnimatedBtn
+        <AnimatedBtn
           href="https://github.com/pefelippe?tab=repositories"
           target="_blank"
-          className="flex w-fit  mx-auto gap-2 items-center text-lg font-semibold text-center p-4 px-6  border-2 rounded-full  text-[#5865f2] transition-all "
+          className="flex w-fit hover:underline mx-auto gap-2 items-center text-xl font-semibold text-center rounded-full  text-[#5865f2] transition-all "
         >
           <span>Repositórios no GitHub</span>
-        </AnimatedBtn> */}
+        </AnimatedBtn>
       </motion.div>
     </motion.div>
   );

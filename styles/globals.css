@@ -4,7 +4,7 @@
 
 @layer components {
   .contactInput {
-    @apply outline-none bg-gray-500/10 rounded-sm px-8 py-4 border-[#242424] w-auto  max-w-full
+    @apply outline-none bg-gray-500/10 rounded-sm px-8 py-4 border-2 border-[#242424] w-auto  max-w-full
     text-[#fff] placeholder-gray-500 transition-all;
   }
 
@@ -53,7 +53,7 @@
   }
 
   .socialMediaIcon {
-    @apply h-14 w-14  text-[#5865f2];
+    @apply h-14 w-14  ;
   }
 
   .heroBtn {

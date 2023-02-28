@@ -19,7 +19,7 @@ export default function MessageForm({}: Inputs) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className=" flex flex-col space-y-5 w-full min-w-[400px] max-w-[600px] px-8"
+      className=" flex flex-col gap-6 w-full min-w-[400px]"
     >
       <input
         {...register("name")}
@@ -44,7 +44,7 @@ export default function MessageForm({}: Inputs) {
         placeholder="Mensagem"
         className="contactInput"
       />
-      <button className="bg-[#5865f2] py-5 px-10 rounded-md text-black font-bold text-lg hover:bg-[#5865f2]/90 text-[#1c1c1c] ">
+      <button className="bg-[#5865f2] py-5 px-10 rounded-md text-black font-bold text-xl hover:bg-[#5865f2]/80 text-[#fff] ">
         Enviar Mensagem
       </button>
     </form>

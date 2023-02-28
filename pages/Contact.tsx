@@ -9,14 +9,22 @@ type IProps = {};
 function Contact({}: IProps) {
   return (
     <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
       id="contact"
-      className="relative  gap-4
-      flex flex-col xl:flex-row items-center justify-center h-fit
-      text-center  py-20 snap-center  border-2 border-[#242424]  bg-[#121212]  rounded-2xl  max-w-7xl mx-auto max-xl:mx-8"
+      className="flex flex-col gap-10"
     >
-      <ContentTitle title="Pronto para começar uma parceria?" />
+      <ContentTitle title="Contato" />
 
-      <MessageForm name={""} email={""} subject={""} message={""} />
+      <div
+        className="relative 
+      flex flex-col items-center justify-evenly w-full
+      text-center 
+       rounded-2xl  max-w-xl mx-auto gap-8"
+      >
+        <MessageForm name={""} email={""} subject={""} message={""} />
+      </div>
     </motion.div>
   );
 }

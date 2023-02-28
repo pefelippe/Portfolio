@@ -20,19 +20,17 @@ type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
       id="skills"
       className="relative flex flex-col items-center w-full snap-center
-    justify-center xl:justify-between mx-auto max-w-7xl rounded-md text-[#fff] gap-10 xl:gap-20 "
+    justify-center xl:justify-between mx-auto max-w-7xl rounded-md text-[#fff] gap-10 "
     >
       <ContentTitle title="Skills" />
 
-      <motion.div
-        initial={{ x: -50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 1 }}
-        className="w-full grid xl:grid-cols-5 grid-cols-2 mx-auto  gap-4 "
-      >
+      <motion.div className="w-full grid xl:grid-cols-5 grid-cols-2 mx-auto  gap-4 ">
         <SkillBox title="Git">
           <SiGit className="socialMediaIcon" />
         </SkillBox>
@@ -64,7 +62,7 @@ function Skills({}: Props) {
           <SiMongodb className=" socialMediaIcon" />
         </SkillBox>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

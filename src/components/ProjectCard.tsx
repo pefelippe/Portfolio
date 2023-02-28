@@ -28,13 +28,13 @@ function ExperienceCard({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
       className="h-fit 
-     text-white shadow-xl rounded-xl  max-lg:gap-8 "
+     text-white shadow-xl rounded-xl  max-lg:gap-8 max-lg:text-center"
     >
       <div
         className={
           id % 2 != 0
-            ? "relative mx-auto w-fit flex flex-col lg:flex-row justify-between"
-            : "relative mx-auto w-fit flex flex-col lg:flex-row-reverse justify-between"
+            ? "relative mx-auto w-fit flex flex-col lg:flex-row justify-between gap-10"
+            : "relative mx-auto w-fit flex flex-col lg:flex-row-reverse justify-between  gap-10"
         }
       >
         <motion.img
@@ -44,9 +44,9 @@ function ExperienceCard({
           rounded-md mx-auto border-2 border-[#242424]"
         />
 
-        <div className=" flex flex-col justify-center  mx-auto max-w-xl gap-8 lg:px-8 ">
+        <div className=" flex flex-col justify-center  mx-auto max-w-xl gap-8  ">
           <p className="font-bold text-4xl ">{title}</p>
-          <div className="w-full gap-2 flex text-center text-[1rem]">
+          <div className="w-full gap-2 flex text-center text-[1rem] max-lg:justify-center">
             {stack?.map((item) => {
               return (
                 <span

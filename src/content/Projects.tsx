@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 import ContentTitle from "../atoms/ContentTitle";
 import AnimatedBtn from "../components/motion/AnimatedBtn";
@@ -86,14 +87,16 @@ function Projects() {
         <AnimatedBtn
           href="https://github.com/pefelippe?tab=repositories"
           target="_blank"
-          className="text-white  pt-10 flex w-fit hover:underline mx-auto gap-2 items-center text-xl font-semibold text-center rounded-full  hover:text-[#5865f2] transition-all "
+          className="text-white  mt-20 flex w-fit hover:underline mx-auto gap-2 items-center text-xl font-semibold text-center rounded-full  hover:text-[#5865f2] transition-all "
         >
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
+            className="flex gap-1 items-center justify-center"
           >
-            Ver mais projetos
+            <FaAngleRight className="h-8 w-8 " />
+            <p>Ver mais projetos</p>
           </motion.span>
         </AnimatedBtn>
       </motion.div>

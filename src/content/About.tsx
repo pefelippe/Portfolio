@@ -19,16 +19,16 @@ function About({}: Props) {
       <ContentTitle title="Quem sou" />
 
       <div
-        className=" flex flex-col w-fit mx-auto
+        className=" flex flex-col w-fit mx-auto lg:flex-row
         items-center  rounded-2xl  shadow-md gap-8 p-10"
       >
         <motion.img
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
-          className="rounded-full h-[200px] transition-all shadow-md object-cover border-1 border-[#121212]"
+          className="rounded-xl h-full  max-lg:max-h-[200px] transition-all shadow-md object-cover border-1 border-[#121212]"
         />
 
-        <motion.span className="max-w-xl flex flex-col w-fit justify-center text-center  text-[1rem]  md:text-[1.2rem]  text-gray-200  gap-8 ">
+        <motion.span className="max-w-2xl flex flex-col h-full justify-between  max-lg:text-center  text-[1.1rem]  lg:text-[1.3rem]  text-gray-100 gap-10">
           <p>
             Sou um{" "}
             <span className="text-[#5865f2]  font-semibold">Web Developer</span>{" "}

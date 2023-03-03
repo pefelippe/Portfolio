@@ -30,7 +30,7 @@ function Skills({}: Props) {
     >
       <ContentTitle title="Skills" />
 
-      <motion.div className="w-full grid xl:grid-cols-5 sm:grid-cols-2 mx-auto  gap-4 ">
+      <motion.div className="w-full grid xl:grid-cols-5 grid-cols-2 mx-auto  gap-8 ">
         <SkillBox title="Git">
           <SiGit className="socialMediaIcon" />
         </SkillBox>

@@ -92,7 +92,7 @@ function Projects() {
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 1 }}
             className="flex gap-1 items-center justify-center"
           >
             <FaAngleRight className="h-8 w-8 " />

@@ -14,7 +14,7 @@ const SkillBox = ({ title, children }: ISkillBox) => {
         transition: { duration: 0.1 },
       }}
       className="flex flex-col justify-center items-center text-center mx-auto w-full
-       transition-all ease-in-out space-y-3  border-2 hover:text-[#5865f2]  border-[#242424] hover:border-[#5865f2]  bg-[#121212] p-10 rounded-xl"
+       transition-all ease-in-out space-y-3  border-2 hover:text-[#5865f2]  border-[#242424] hover:border-[#5865f2]  bg-[#121212] p-5 rounded-md"
     >
       <div>{children}</div>
       <div className="font-semibold text-xl">{title}</div>

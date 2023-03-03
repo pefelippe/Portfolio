@@ -23,9 +23,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
-      <Header />
+      {/* <Header /> */}
       <Analytics />
       <Component {...pageProps} />
+      <Footer />
     </div>
   );
 }

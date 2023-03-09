@@ -26,13 +26,13 @@ function Projects() {
       id="work"
       className="relative mx-auto w-full  max-w-7xl h-fit  gap-10 flex flex-col"
     >
-      <ContentTitle title="Projetos" />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, delay: 0.5 }}
         className="h-fit w-full flex flex-col justify-center items-center "
       >
+        <ContentTitle title="Projetos" />
         <div
           className="w-full max-w-7xl justify-center items-center relative 
         grid grid-cols-1 gap-20 md:gap-32 mx-auto  "

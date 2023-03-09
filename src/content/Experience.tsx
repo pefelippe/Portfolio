@@ -62,21 +62,7 @@ function Experience({}: Props) {
     >
       <ContentTitle title="Experiência" />
 
-      {/* <div className="flex  text-white  w-full mx-auto justify-center  gap-4 max-md:flex-col items-center overflow-hidden">
-        {experiences.map((experience) => {
-          return (
-            // <ExperienceCard
-            //   key={experience.id}
-            //   title={experience.title}
-            //   company={experience.company}
-            //   imgUrl={experience.imgUrl}
-            //   dateInit={experience.dateInit}
-            //   dateEnd={experience.dateEnd}
-            //   sumarryPoints={experience.sumarryPoints}
-            // />
-          );
-        })}
-      </div> */}
+
     </motion.div>
   );
 }

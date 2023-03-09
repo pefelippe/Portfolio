@@ -6,8 +6,9 @@ import { Analytics } from "@vercel/analytics/react";
 
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Header from "../src/components/Header";
-import Footer from "../src/components/Footer";
+
+import Footer from "../src/components/layout/Footer";
+import Navbar from "../src/components/layout/NavBar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -23,8 +24,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
-      {/* <Header /> */}
+
       <Analytics />
+      <Navbar />
       <Component {...pageProps} />
       <Footer />
     </div>

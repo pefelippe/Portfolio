@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-
+import ContentTitle from "../src/components/ContentTitle";
 import MessageForm from "../src/components/MessageForm";
-import ContentTitle from "./../src/atoms/ContentTitle";
 
 type IProps = {};
 

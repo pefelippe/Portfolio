@@ -1,30 +1,41 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import AnimatedBtn from "../components/animated/AnimatedBtn";
+import SocialLinks from "../components/SocialLinks";
 
 export default function Hero() {
   return (
     <motion.div
-      className="relative px-6 mx-auto  w-full flex flex-col items-center min-h-[30vh]
+      className="relative px-6 mx-auto  w-full flex flex-col items-center 
       justify-center text-center shadow-md text-[#fff]"
     >
       <motion.div
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="w-full flex flex-col items-center justify-center md:gap-4"
+        className="w-full flex flex-col items-center justify-center gap-4"
       >
-        {/* <motion.img
+        <motion.img
           alt="avatar-pefelippe"
           src="assets/avatar-pdr.png"
-          className="rounded-full h-[180px] transition-all shadow-md object-cover border-1 border-[#121212]"
-        /> */}
+          className="rounded-full h-[180px] 
+          transition-all shadow-md object-fit  border-[#fff] border-2"
+        />
 
-        <motion.p
+        <p
+          className="text-[#fff] text-center uppercase font-bold 
+        text-[2.5rem] lg:text-5xl"
+        >
+          Pedro Felippe
+        </p>
+
+        {/* <motion.p
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-[22px] tracking-[2.2px] font-semibold text-center uppercase text-[#a3a3a3]"
+          className="text-[22px] tracking-[2.2px] font-semibold text-center uppercase text-[#a3a3a3] my-4"
         >
           <Typewriter
             words={[
@@ -40,25 +51,8 @@ export default function Hero() {
             deleteSpeed={75}
             delaySpeed={2000}
           />
-        </motion.p>
-
-        <p
-          className="text-[#5865f2] text-center uppercase font-bold 
-        text-[2.5rem] tracking-tighter text-black lg:text-7xl"
-        >
-          Pedro Felippe
-        </p>
-
-        {/* <p className=" text-[1.4rem] max-w-2xl text-gray-300">
-          Sou um{" "}
-          <span className="text-[#5865f2]  font-semibold">Web Developer</span>{" "}
-          com mais de três anos de experiência em construir soluções inovadoras
-          na web.
-        </p> */}
-
-        {/* <button className="mt-4 w-full max-w-sm p-4 rounded-xl font-semibold transition-all text-[#fff] text-xl bg-[#5865f2]  hover:bg-[#5865f2]/70">
-          Currículo
-        </button> */}
+        </motion.p> */}
+        <SocialLinks />
       </motion.div>
     </motion.div>
   );

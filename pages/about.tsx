@@ -14,7 +14,6 @@ import {
 } from "react-icons/si";
 import ContentTitle from "../src/components/ContentTitle";
 import Experience from "../src/content/Experience";
-import SkillBox from "../src/content/SkillBox";
 
 type Props = {};
 
@@ -72,7 +71,6 @@ function About({}: Props) {
           </button>
         </motion.span>
       </div>
-
 
       {/* <Experience /> */}
     </motion.div>

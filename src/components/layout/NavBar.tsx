@@ -76,12 +76,12 @@ const Navbar = () => {
                       setActive(navLink.title);
                     }}
                   >
-                    <a
+                    <Link
                       className="text-5xl  px-full rounded-md hover:underline "
-                      href={`#${navLink.id}`}
+                      href={`${navLink.id}`}
                     >
                       {navLink.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}

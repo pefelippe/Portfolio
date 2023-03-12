@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+
 import SocialLinks from "../components/SocialLinks";
 
 export default function Hero() {
@@ -9,12 +10,13 @@ export default function Hero() {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative mx-auto w-full flex justify-start md:justify-center items-center max-w-7xl md:py-20 text-white "
+      className="relative mx-auto w-full flex  justify-center max-md:flex-col
+      max-md:text-center items-center max-w-7xl md:py-20 text-white "
     >
       <motion.img
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="rounded-full  max-h-[300px]  md:mr-20 max-md:hidden
+        className="rounded-full  max-h-[300px]  md:mr-20 max-md:h-[150px]
       transition-all shadow-md object-fit border-1 border-[#121212]"
       />
 
@@ -23,7 +25,7 @@ export default function Hero() {
           initial={{ y: -25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-[22px] tracking-[2.2px] font-semibold text-start uppercase text-[#a3a3a3] my-4"
+          className="text-[22px] tracking-[2.2px] max-md:mx-auto font-semibold text-start uppercase text-[#a3a3a3] my-4"
         >
           <Typewriter
             words={[

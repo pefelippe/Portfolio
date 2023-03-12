@@ -23,12 +23,7 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5 }}
-      className="w-full gap-4 flex flex-col"
-    >
+    <motion.article className="w-full gap-4 flex flex-col">
       <Link
         href={`/projects/${id}`}
         className="flex flex-col items-start text-white shadow-xl rounded-2xl  overflow-hidden 

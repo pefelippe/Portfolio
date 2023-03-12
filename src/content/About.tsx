@@ -1,15 +1,17 @@
-import React from "react";
-import ContentTitle from "../components/ContentTitle";
 import { motion } from "framer-motion";
+import React from "react";
+
+import ContentTitle from "../components/ContentTitle";
+
 type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className=" flex flex-col gap-8 md:gap-10 pt-20 ">
+    <div className=" flex flex-col gap-8 md:gap-10 ">
       <ContentTitle title="Quem sou" />
       <div
-        className=" flex flex-col w-full mx-auto lg:flex-row
-    items-center justify-start  rounded-2xl  shadow-md  lg:gap-20 "
+        className=" flex flex-col w-full mx-auto md:flex-row
+    items-center justify-start  rounded-2xl  shadow-md gap-6 lg:gap-20 "
       >
         <motion.img
           alt="avatar-pefelippe"

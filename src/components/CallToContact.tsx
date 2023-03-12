@@ -1,9 +1,9 @@
-import React from "react";
-
 import { motion } from "framer-motion";
 import Link from "next/link";
-import ContentTitle from "./ContentTitle";
+import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+
+import ContentTitle from "./ContentTitle";
 
 type Props = {};
 
@@ -11,11 +11,11 @@ function CallToContact({}: Props) {
   return (
     <div
       className="flex max-md:flex-col justify-between w-full max-w-7xl text-white mx-auto 
-    text-2xl  py-10 md:py-32"
+    text-2xl  pb-10 md:py-32"
     >
-      <div className="flex flex-col justify-center gap-6">
+      <div className="flex flex-col justify-center gap-6 max-md:items-center">
         <ContentTitle title="Entre em contato" />
-        <p className="text-lg text-gray-300">
+        <p className="text-lg text-gray-300 max-md:text-center">
           Não perca tempo. Entre em contato comigo e vamos gerar valor juntos.
         </p>
 

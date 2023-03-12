@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+
 import ContentTitle from "../src/components/ContentTitle";
 import MessageForm from "../src/components/MessageForm";
 
@@ -12,7 +13,7 @@ function Contact({}: IProps) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       id="contact"
-      className="flex flex-col gap-10 min-h-screen justify-center items-center"
+      className="flex flex-col gap-10 min-h-[80vh] justify-center items-center"
     >
       <ContentTitle title="Contato" />
 

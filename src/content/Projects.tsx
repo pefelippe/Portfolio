@@ -24,10 +24,13 @@ function Projects() {
   return (
     <motion.div
       id="work"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5, delay: 0.5 }}
       className="relative w-full mx-auto max-w-7xl flex flex-col gap-4 text-white"
     >
       <ContentTitle title="Projetos" />
-      <p className="text-lg text-gray-300">
+      <p className="text-lg text-gray-300 max-md:mx-auto">
         Conheça meus projetos mais recentes.
       </p>
       <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-10">

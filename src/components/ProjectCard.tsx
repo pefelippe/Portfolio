@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 type IProjectCard = {
   description: string;
@@ -27,42 +27,36 @@ function ProjectCard({
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="h-fit text-white shadow-xl rounded-xl  max-lg:gap-8 text-center"
+      className="w-full gap-4 flex flex-col"
     >
-      <div
-        className={`relative mx-auto w-fit flex flex-col  justify-between gap-4 xl:gap-20 ${
-          id % 2 != 0 ? " xl:flex-row  " : "xl:flex-row-reverse "
-        }} `}
+      <Link
+        href={`/projects/${id}`}
+        className="flex flex-col items-start text-white shadow-xl rounded-2xl  overflow-hidden 
+         border-2 border-[#303030] h-[400px]  max-xl:h-[300px] hover:border-[#5865f2]"
       >
-        <Link href={`/projects/${id}`}>
-          <motion.img
-            src={imgUrl}
-            alt="card image"
-            className="object-cover max-w-[600px] w-full
-          lg:w-[600px] lg:h-[400px] min-h-[280px] min-w-[420px]
-          rounded-2xl mx-auto border-2 border-[#242424]"
-          />
-        </Link>
+        <motion.img
+          src={imgUrl}
+          alt="card image"
+          className="w-full object-cover rounded-2xl hover:scale-125 ease-in-out  duration-500 
+          h-[400px]  max-xl:h-[300px]"
+        />
+      </Link>
 
-        <div className=" flex flex-col justify-center  mx-auto max-w-xl gap-6 xl:gap-8  ">
-          <p className="font-bold text-4xl max-xl:text-3xl">{title}</p>
-          <p className="text-2xl max-xl:text-xl">{description}</p>
-          <div className="gap-6 xl:gap-8 w-full justify-center flex text-lg font-semibold tracking-[1px]">
-            <a
-              href={repo}
-              className="flex gap-4 w-full py-3 border-2 items-center justify-center hover:underline border-[#5865f2] hover:bg-[#5865f2]/30 transition-all rounded-full"
-            >
-              Código
-            </a>
-            <a
-              href={link}
-              className="flex w-full py-4 items-center justify-center hover:underline  bg-[#5865f2] hover:bg-[#5865f2]/80 transition-all rounded-full"
-            >
-              Demo
-            </a>
-          </div>
-        </div>
+      <div className="flex w-full text-white justify-between items-center ">
+        <p className="w-fit text-xl font-bold">{title}</p>
+
+        <Link
+          className=" flex w-fit gap-2 items-center text-xl font-semibold hover:text-[#5865f2]
+         text-center rounded-full transition-all "
+          href={`/projects/${id}`}
+        >
+          <p className="flex gap-1 justify-center items-center font-italic ">
+            Ver detalhes
+          </p>
+          <FaArrowRight className=" h-5 w-5  -rotate-45 " />
+        </Link>
       </div>
+      {/* </div> */}
     </motion.article>
   );
 }

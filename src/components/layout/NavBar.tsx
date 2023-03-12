@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-import { navLinks } from "../../constants";
 import { styles } from "../../../styles/styles";
+import { navLinks } from "../../constants";
 
 const Navbar = () => {
   const [active, setActive] = useState<String>();
@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5  top-0 z-20 bg-primary `}
+      className={`${styles.paddingX} fixed w-full bg-[#000] flex items-center py-6 top-0 z-20 bg-primary `}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -36,8 +36,8 @@ const Navbar = () => {
               <li
                 key={navLink.id}
                 className={`${
-                  active === navLink.title ? "text-white" : "text-secondary"
-                } font-poppins font-medium text-[22px] hover:text-[#5865f2] transition-all`}
+                  active === navLink.title ? "text-gray-200" : "text-secondary"
+                } font-poppins font-medium text-[18px] hover:text-[#5865f2] transition-all`}
                 onClick={() => {
                   setActive(navLink.title);
                 }}
@@ -60,15 +60,15 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 text-xl right-0 mx-4 my-2 items-center
-            text-center w-screen z-10  text-white bg-[#5865f2] transition-all`}
+            } p-6 black-gradient absolute top-[60px] text-2xl right-0 mx-4 my-2 items-center font-medium
+            text-center w-screen z-50  text-white bg-[#5865f2] transition-all`}
           >
-            <ul className="mx-auto items-center  justify-start list-none flex  flex-col gap-10">
+            <ul className="mx-auto items-center h-[100vh] justify-start list-none flex  flex-col gap-20 py-28">
               {navLinks.map((navLink) => {
                 return (
                   <li
                     key={navLink.id}
-                    className={`${
+                    className={`py-4 ${
                       active === navLink.title ? "text-white" : "text-secondary"
                     }`}
                     onClick={() => {
@@ -77,7 +77,7 @@ const Navbar = () => {
                     }}
                   >
                     <a
-                      className="text-2xl w-full  px-full rounded-md "
+                      className="text-5xl  px-full rounded-md hover:underline "
                       href={`#${navLink.id}`}
                     >
                       {navLink.title}

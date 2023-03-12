@@ -46,6 +46,7 @@ export const projects = [
     description:
       "Nesse projeto tentei uno a tranquilidade do lo-fi com o poderoso método pomodoro.",
   },
+
   // {
   //   id: 3,
   //   link: "",
@@ -61,11 +62,7 @@ export const projects = [
 export const navLinks = [
   {
     id: "about",
-    title: "Sobre",
-  },
-  {
-    id: "projects",
-    title: "Projetos",
+    title: "Quem sou",
   },
   {
     id: "contact",

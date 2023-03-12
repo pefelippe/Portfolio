@@ -1,13 +1,16 @@
 import React from "react";
 
+import CallToContact from "../src/components/CallToContact";
 import Hero from "../src/content/Hero";
 import Projects from "./../src/content/Projects";
 
 export default function Home() {
   return (
-    <div className="w-screen space-y-20 md:space-y-32  py-32 px-10">
+    <div className="w-screen space-y-20 pt-32 px-10">
       <Hero />
       <Projects />
+      <CallToContact />
     </div>
   );
 }
+ 

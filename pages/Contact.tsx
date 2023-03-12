@@ -12,7 +12,7 @@ function Contact({}: IProps) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       id="contact"
-      className="flex flex-col gap-10"
+      className="flex flex-col gap-10 min-h-screen justify-center items-center"
     >
       <ContentTitle title="Contato" />
 

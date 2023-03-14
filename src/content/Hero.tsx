@@ -16,7 +16,7 @@ export default function Hero() {
       <motion.img
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="rounded-full  max-h-[300px]  md:mr-20 max-md:h-[150px]
+        className="rounded-full    md:mr-20 max-h-[200px] max-md:h-[150px]
       transition-all shadow-md object-fit border-1 border-[#121212]"
       />
 
@@ -45,7 +45,7 @@ export default function Hero() {
 
         <p
           className="text-[#fff] text-center uppercase font-bold 
-        text-5xl lg:text-7xl bg-[#5865f2]
+        text-5xl lg:text-7xl bg-[#5865f2] mb-4
         "
         >
           Pedro Felippe

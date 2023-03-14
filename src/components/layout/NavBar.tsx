@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import { styles } from "../../../styles/styles";
 import { navLinks } from "../../constants";
+import SocialLinks from "../SocialLinks";
 
 const Navbar = () => {
   const [active, setActive] = useState<String>();
@@ -24,31 +26,34 @@ const Navbar = () => {
         >
           <p
             className="text-[#5865f2] text-center uppercase font-bold hover:text-[#5865f2]/90 transition-all
-        text-[1.5rem] "
+        text-[1.8rem] "
           >
             Pedro Felippe
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:visible sm:flex flex-row gap-10 text-white transition-all">
-          {navLinks.map((navLink) => {
-            return (
-              <li
-                key={navLink.id}
-                className={`${
-                  active === navLink.title ? "text-gray-200" : "text-secondary"
-                } font-poppins font-medium text-[18px] hover:text-[#5865f2] transition-all`}
-                onClick={() => {
-                  setActive(navLink.title);
-                }}
-              >
-                <Link href={`${navLink.id}`}>{navLink.title}</Link>
-              </li>
-            );
-          })}
+        <ul className="list-none hidden sm:visible sm:flex flex-row text-white transition-all gap-2">
+          <Link
+            className=" flex w-fit hover:underline items-center text-xl font-semibold
+        text-center  text-[#fff] hover:text-[#5865f2] transition-all"
+            href="/about"
+          >
+            <motion.span className="flex gap-2 text-md items-center justify-center px-2 rounded-md py-4 font-bold">
+              <p>Quem sou?</p>
+            </motion.span>
+          </Link>
+          <Link
+            className=" flex w-fit hover:underline  gap-2 items-center text-xl font-semibold
+        text-center rounded-full bg-[#fff] text-[#000] hover:bg-[#5865f2] hover:text-[#fff] transition-all border-[1px] border-[#5865f2]"
+            href="/contact"
+          >
+            <motion.span className="flex gap-2 text-md items-center justify-center px-4 rounded-md py-4 font-bold">
+              <p>Entre em contato</p>
+            </motion.span>
+          </Link>
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        {/* <div className="sm:hidden flex flex-1 justify-end items-center">
           <Image
             src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
             alt="menu"
@@ -84,10 +89,19 @@ const Navbar = () => {
                     </Link>
                   </li>
                 );
-              })}
+              })} 
+              <Link
+                className=" flex w-fit hover:underline  gap-2 items-center text-xl font-semibold
+        text-center rounded-full bg-[#fff] text-[#000] hover:bg-[#5865f2] hover:text-[#fff] transition-all border-[1px] border-[#5865f2]"
+                href="/contact"
+              >
+                <motion.span className="flex gap-2 items-center justify-center px-6 rounded-md py-4 font-bold">
+                  <p>Entre em contato</p>
+                </motion.span>
+              </Link>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

@@ -33,7 +33,7 @@ function Projects() {
       <p className="text-lg text-gray-300 max-md:mx-auto">
         Conheça meus projetos mais recentes.
       </p>
-      <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-10">
+      <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-10 pt-4">
         {projects?.map((proj) => {
           return (
             <ProjectCard

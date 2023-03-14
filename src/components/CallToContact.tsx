@@ -10,16 +10,16 @@ type Props = {};
 function CallToContact({}: Props) {
   return (
     <div
-      className="flex max-md:flex-col justify-between w-full max-w-7xl text-white mx-auto 
-    text-2xl  pb-10 md:py-32"
+      className="flex max-md:flex-col justify-center w-full max-w-7xl text-white mx-auto 
+    text-2xl md:py-10"
     >
-      <div className="flex flex-col justify-center gap-6 max-md:items-center">
+      <div className="flex flex-col justify-center gap-6 items-center">
         <ContentTitle title="Entre em contato" />
-        <p className="text-lg text-gray-300 max-md:text-center">
-          Não perca tempo. Entre em contato comigo e vamos gerar valor juntos.
+        <p className="text-lg text-gray-300 text-center">
+          Entre em contato comigo e vamos gerar valor juntos.
         </p>
 
-        <div className="flex justify-start gap-4 ">
+        <div className="flex justify-center gap-8 ">
           <Link
             className=" flex w-fit hover:underline  gap-2 items-center text-xl font-semibold
         text-center rounded-full bg-[#fff] text-[#000] hover:bg-[#5865f2] hover:text-[#fff] transition-all border-[1px] border-[#5865f2]"
@@ -39,7 +39,6 @@ function CallToContact({}: Props) {
             <p className="flex gap-1 justify-center items-center font-italic ">
               Linkedin
             </p>
-            <FaArrowRight className=" h-5 w-5  -rotate-45 " />
           </Link>
         </div>
       </div>

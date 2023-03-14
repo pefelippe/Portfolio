@@ -7,11 +7,14 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className=" flex flex-col gap-8 md:gap-10 ">
+    <div className=" flex flex-col gap-4">
       <ContentTitle title="Quem sou" />
+      <p className="text-lg text-gray-300 max-md:mx-auto">
+        Um pouco sobre mim.
+      </p>
       <div
         className=" flex flex-col w-full mx-auto md:flex-row
-    items-center justify-start  rounded-2xl  shadow-md gap-6 lg:gap-20 "
+    items-center justify-start  rounded-2xl  shadow-md gap-20 max-md:gap-6  "
       >
         <motion.img
           alt="avatar-pefelippe"

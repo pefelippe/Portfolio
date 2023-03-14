@@ -23,36 +23,27 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <motion.article className="w-full gap-4 flex flex-col">
-      <Link
-        href={`/projects/${id}`}
-        className="flex flex-col items-start text-white shadow-xl rounded-2xl  overflow-hidden 
-         border-2 border-[#303030] h-[400px]  max-xl:h-[300px] hover:border-[#5865f2]"
+    <Link
+      href={`/projects/${id}`}
+      className="w-full gap-4 flex flex-col shadow-xl
+       bg-[#000] hover:scale-105 ease-in-out transition-all z-50  overflow-hidden "
+    >
+      <div
+        className="flex flex-col items-start shadow-xl  overflow-hidden 
+         h-[400px]  max-xl:h-[300px] "
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="w-full object-cover rounded-2xl hover:scale-125 ease-in-out  duration-500 
-          h-[400px]  max-xl:h-[300px]"
+          className="w-full object-cover  
+          h-[400px] max-xl:h-[300px] border-2 border-[#303030] rounded-2xl"
         />
-      </Link>
-
-      <div className="flex w-full text-white justify-between items-center ">
-        <p className="w-fit text-xl font-bold">{title}</p>
-
-        <Link
-          className=" flex w-fit gap-2 items-center text-xl font-semibold hover:text-[#5865f2]
-         text-center rounded-full transition-all "
-          href={`/projects/${id}`}
-        >
-          <p className="flex gap-1 justify-center items-center font-italic ">
-            Ver detalhes
-          </p>
-          <FaArrowRight className=" h-5 w-5  -rotate-45 " />
-        </Link>
       </div>
-      {/* </div> */}
-    </motion.article>
+
+      <div className="flex w-full justify-center items-center pb-4 flex-col gap-2">
+        <p className="w-fit text-[1.5rem] font-bold">{title}</p>
+      </div>
+    </Link>
   );
 }
 

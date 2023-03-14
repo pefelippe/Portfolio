@@ -61,8 +61,8 @@ export const projects = [
 
 export const navLinks = [
   {
-    id: "about",
-    title: "Quem sou",
+    id: "home",
+    title: "Home",
   },
   {
     id: "contact",

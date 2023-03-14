@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX}  w-full bg-[#000] flex items-center py-6 top-0 z-20 bg-primary `}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="text-white w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           className="flex items-center gap-2"
           href="/"
@@ -32,7 +32,9 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:visible sm:flex flex-row text-white transition-all gap-2">
+        <SocialLinks />
+
+        {/* <ul className="list-none hidden sm:visible sm:flex flex-row text-white transition-all gap-2">
           <Link
             className=" flex w-fit hover:underline items-center text-xl font-semibold
         text-center  text-[#fff] hover:text-[#5865f2] transition-all"
@@ -51,7 +53,7 @@ const Navbar = () => {
               <p>Entre em contato</p>
             </motion.span>
           </Link>
-        </ul>
+        </ul> */}
 
         {/* <div className="sm:hidden flex flex-1 justify-end items-center">
           <Image

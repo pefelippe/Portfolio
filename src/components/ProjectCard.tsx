@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaGithub } from "react-icons/fa";
 
 type IProjectCard = {
   description: string;
@@ -26,7 +26,7 @@ function ProjectCard({
     <div className="flex flex-col max-w-[600px] max-md:max-w-[400px] mx-auto ">
       <Link
         href={`/projects/${id}`}
-        className="transition-all rounded-2xl border-2 border-[#303030]
+        className="transition-all rounded-2xl border-2 border-[#303030] hover:border-[#505050]
         overflow-hidden min-h-[350px] max-lg:min-h-[250px] "
       >
         <motion.img
@@ -37,17 +37,22 @@ function ProjectCard({
       </Link>
 
       <div
-        className="h-full text-[#fff] flex pt-4
-      w-full justify-start items-start  flex-col gap-2 rounded-b-2xl"
+        className="h-full text-[#fff] flex pt-4 
+      w-full justify-start items-start flex-col gap-2 rounded-b-2xl"
       >
-        <a
-          href={link}
-          target="_blank"
-          className="w-fit text-2xl font-bold underline"
-          rel="noreferrer"
-        >
-          {title}
-        </a>
+        <div className="flex w-full justify-between">
+          <a
+            href={link}
+            target="_blank"
+            className="flex  gap-2 items-center w-fit text-2xl font-bold underline hover:text-gray-500"
+            rel="noreferrer"
+          >
+            {title} <FaArrowRight className="-rotate-45" />
+          </a>
+          <a href={repo} className="p-2 rounded-md  bg-[#303030] hover:bg-[#202020]">
+            <FaGithub className="h-6 w-6 " />
+          </a>
+        </div>
         <p className="w-fit text-lg text-gray-300">{description}</p>
       </div>
     </div>

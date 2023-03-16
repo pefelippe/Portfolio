@@ -14,7 +14,7 @@ function CallToContact({}: Props) {
     text-2xl md:py-10"
     >
       <div className="flex flex-col justify-center gap-4 items-start">
-        <ContentTitle title="Entre em contato" />
+        <ContentTitle title="Contato" />
 
         <p className="text-lg text-gray-300 text-center">
           Entre em contato comigo e vamos gerar valor juntos.

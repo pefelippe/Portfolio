@@ -44,7 +44,7 @@ export const projects = [
     imgUrl: "assets/pomodorotunes.png",
     stack: ["react", "tailwind", "next", "typescript"],
     description:
-      "Nesse projeto tentei uno a tranquilidade do lo-fi com o poderoso método pomodoro.",
+      "Nesse projeto tentei unir a tranquilidade do lo-fi com o poderoso método pomodoro.",
   },
 
   // {

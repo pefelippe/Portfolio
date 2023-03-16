@@ -49,7 +49,10 @@ function ProjectCard({
           >
             {title} <FaArrowRight className="-rotate-45" />
           </a>
-          <a href={repo} className="p-2 rounded-md  bg-[#303030] hover:bg-[#202020]">
+          <a
+            href={repo}
+            className="p-2 rounded-md  bg-[#303030] hover:bg-[#202020]"
+          >
             <FaGithub className="h-6 w-6 " />
           </a>
         </div>

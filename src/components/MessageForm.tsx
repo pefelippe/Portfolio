@@ -19,7 +19,7 @@ export default function MessageForm({}: Inputs) {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className=" flex flex-col gap-6 w-full "
+      className=" flex flex-col gap-6 w-full  max-w-xl "
     >
       <input
         {...register("name")}
@@ -42,10 +42,10 @@ export default function MessageForm({}: Inputs) {
       <textarea
         {...register("message")}
         placeholder="Mensagem"
-        className="contactInput"
+        className="contactInput pb-20"
       />
       <button className="bg-[#5865f2] py-5 px-10 rounded-md text-black font-bold text-xl hover:bg-[#5865f2]/80 text-[#fff] ">
-        Enviar Mensagem
+        Começar parceria
       </button>
     </form>
   );

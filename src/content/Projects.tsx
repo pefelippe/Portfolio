@@ -26,14 +26,14 @@ function Projects() {
       id="work"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5, delay: 0.5 }}
-      className="relative w-full mx-auto max-w-7xl flex flex-col gap-4 text-white"
+      transition={{ duration: 1.5 }}
+      className="relative w-full mx-auto max-w-7xl flex flex-col gap-2 text-white"
     >
       <ContentTitle title="Projetos" />
       <p className="text-lg text-gray-300 max-md:mx-auto">
         Conheça meus projetos mais recentes.
       </p>
-      <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-10 pt-4">
+      <div className="w-full grid md:gap-20 md:grid-cols-2 grid-cols-1 gap-8 pt-2">
         {projects?.map((proj) => {
           return (
             <ProjectCard
@@ -49,16 +49,6 @@ function Projects() {
           );
         })}
       </div>
-      {/* <AnimatedBtn
-        href="https://github.com/pefelippe?tab=repositories"
-        target="_blank"
-        className="text-white  flex w-fit hover:underline mx-auto gap-2 items-center text-xl font-semibold
-         text-center rounded-full bg-[#5865f2] hover:text-[#fff] transition-all "
-      >
-        <motion.span className="flex gap-2 items-center justify-center px-6 rounded-md py-4">
-          <p>Ver mais projetos</p>
-        </motion.span>
-      </AnimatedBtn> */}
     </motion.div>
   );
 }

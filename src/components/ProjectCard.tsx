@@ -23,27 +23,34 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <Link
-      href={`/projects/${id}`}
-      className="w-full gap-4 flex flex-col shadow-xl
-       bg-[#000] hover:scale-105 ease-in-out transition-all z-50  overflow-hidden "
-    >
-      <div
-        className="flex flex-col items-start shadow-xl  overflow-hidden 
-         h-[400px]  max-xl:h-[300px] "
+    <div className="flex flex-col max-w-[600px] max-md:max-w-[400px] mx-auto ">
+      <Link
+        href={`/projects/${id}`}
+        className="transition-all rounded-2xl border-2 border-[#303030]
+        overflow-hidden min-h-[350px] max-lg:min-h-[250px] "
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="w-full object-cover  
-          h-[400px] max-xl:h-[300px] border-2 border-[#303030] rounded-2xl"
+          className="w-full h-full  object-cover hover:scale-105 ease-in-out transition-all"
         />
-      </div>
+      </Link>
 
-      <div className="flex w-full justify-center items-center pb-4 flex-col gap-2">
-        <p className="w-fit text-[1.5rem] font-bold">{title}</p>
+      <div
+        className="h-full text-[#fff] flex pt-4
+      w-full justify-start items-start  flex-col gap-2 rounded-b-2xl"
+      >
+        <a
+          href={link}
+          target="_blank"
+          className="w-fit text-2xl font-bold underline"
+          rel="noreferrer"
+        >
+          {title}
+        </a>
+        <p className="w-fit text-lg text-gray-300">{description}</p>
       </div>
-    </Link>
+    </div>
   );
 }
 

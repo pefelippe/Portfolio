@@ -10,26 +10,26 @@ type Props = {};
 function CallToContact({}: Props) {
   return (
     <div
-      className="flex max-md:flex-col justify-center w-full max-w-7xl text-white mx-auto 
+      className=" w-full max-w-7xl text-white mx-auto 
     text-2xl md:py-10"
     >
-      <div className="flex flex-col justify-center gap-4 items-center">
+      <div className="flex flex-col justify-center gap-4 items-start">
         <ContentTitle title="Entre em contato" />
+
         <p className="text-lg text-gray-300 text-center">
           Entre em contato comigo e vamos gerar valor juntos.
         </p>
 
-        <div className="flex justify-center  ">
-          <Link
-            className=" flex w-fit hover:underline  gap-2 items-center text-xl font-semibold
-        text-center rounded-full text-[#fff] bg-[#5865f2]  transition-all border-[1px] border-[#5865f2]"
-            href="/contact"
-          >
-            <motion.span className="flex gap-2 items-center justify-center px-6 rounded-md py-4 font-bold">
-              <p>Entre em contato</p>
-            </motion.span>
-          </Link>
-        </div>
+        <Link
+          className=" flex w-fit hover:underline gap-2 items-center text-xl 
+          font-semibold text-center rounded-full text-[#fff] max-md:mx-auto
+          bg-[#5865f2]  transition-all border-[1px] border-[#5865f2]"
+          href="/contact"
+        >
+          <span className="flex items-center  px-6 rounded-md py-4 font-bold ">
+            <p>Entre em contato</p>
+          </span>
+        </Link>
       </div>
     </div>
   );

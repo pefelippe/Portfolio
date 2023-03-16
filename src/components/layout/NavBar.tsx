@@ -1,7 +1,7 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 import { styles } from "../../../styles/styles";
 import { navLinks } from "../../constants";
@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX}  w-full bg-[#000] flex items-center py-6 top-0 z-20 bg-primary `}
+      className={`${styles.paddingX}  w-full flex items-center py-6 top-0 z-20 bg-primary `}
     >
       <div className="text-white w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link

@@ -7,25 +7,36 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className=" flex flex-col gap-4">
+    <div className=" flex flex-col gap-2">
       <ContentTitle title="Quem sou" />
+
       <p className="text-lg text-gray-300 max-md:mx-auto">
         Um pouco sobre mim.
       </p>
+
       <div
-        className=" flex flex-col w-full mx-auto md:flex-row
+        className=" flex flex-col w-full mx-auto md:flex-row pt-2
     items-center justify-start  rounded-2xl  shadow-md gap-20 max-md:gap-6  "
       >
-        <motion.img
-          alt="avatar-pefelippe"
-          src="assets/avatar-pdr.png"
-          className="rounded-xl h-full  max-lg:h-[200px] max-lg:rounded-full
-      transition-all shadow-md object-fit border-1 border-[#121212]"
-        />
+        <div className="flex flex-col gap-2">
+          <motion.img
+            alt="avatar-pefelippe"
+            src="assets/avatar-pdr.png"
+            className="rounded-xl h-full max-h-[350px]  max-lg:h-[200px] max-lg:rounded-full
+          transition-all shadow-md object-fit border-2"
+          />
+
+          <button
+            className="w-full  p-4 rounded-md font-semibold transition-all
+             hover:bg-[#5865f2]/80 text-[#fff] border-2 hover:border-[#5865f2]/80"
+          >
+            Currículo
+          </button>
+        </div>
 
         <motion.span
-          className="w-full flex flex-col  max-lg:text-center gap-10
-     text-[1.2rem]  lg:text-[1.3rem] text-gray-100 "
+          className="w-full flex flex-col h-full max-lg:text-center gap-10
+     text-[1.2rem]  lg:text-[1.3rem] text-gray-100"
         >
           <p>
             Sou um{" "}
@@ -50,10 +61,6 @@ export default function About({}: Props) {
             </a>
             .
           </p>
-
-          <button className="w-full border-2 p-4 rounded-xl font-semibold transition-all hover:text-[#fff] hover:bg-[#5865f2] border-[#5865f2] text-[#5865f2] ">
-            Currículo
-          </button>
         </motion.span>
       </div>
     </div>

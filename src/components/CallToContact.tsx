@@ -10,18 +10,15 @@ type Props = {};
 
 function CallToContact({}: Props) {
   return (
-    <div
-      className=" w-full max-w-7xl text-white mx-auto 
-    text-xl md:py-10"
-    >
-      <div className="flex flex-col justify-center gap-4 items-start">
+    <div className=" relative w-full max-w-7xl text-white mx-auto text-xl md:py-10">
+      <div className="relative flex flex-col justify-start gap-4 items-start mx-auto  h-fit">
         <ContentTitle title="Contato" />
 
-        <p className="text-lg text-gray-300 text-center">
+        <p className=" text-lg text-gray-300 text-center">
           Tem alguma ideia em mente? Vamos gerar valor juntos.
         </p>
 
-        <div className="py-4 relative flex flex-col w-full ">
+        <div className="py-4 relative flex flex-col w-full  mx-auto items-start justify-center">
           <MessageForm name={""} email={""} subject={""} message={""} />
         </div>
       </div>

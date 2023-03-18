@@ -17,7 +17,7 @@ function AnimatedBtn({
   return (
     <motion.a
       whileHover={{
-        scale: 1.05,
+        scale: 1.1,
         transition: { duration: 0.1 },
       }}
       href={href}

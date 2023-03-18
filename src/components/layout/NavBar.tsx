@@ -13,9 +13,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX}  w-full flex items-center py-6 top-0 z-20 bg-primary `}
+      className={`${styles.paddingX}  w-full flex items-center py-8 top-0 z-20 bg-primary `}
     >
-      <div className="text-white w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="text-white w-full flex justify-center md:justify-start items-center max-w-7xl mx-auto">
         <Link
           className="flex items-center gap-2"
           href="/"
@@ -25,14 +25,12 @@ const Navbar = () => {
           }}
         >
           <p
-            className="text-[#5865f2] text-center uppercase font-bold hover:text-[#5865f2]/90 transition-all
-        text-[1.8rem] "
+            className="text-[#5865f2] text-center uppercase font-bold hover:text-[#5865f2]/80 transition-all
+        text-[2.0rem] "
           >
             Pedro Felippe
           </p>
         </Link>
-
-        <SocialLinks />
 
         {/* <ul className="list-none hidden sm:visible sm:flex flex-row text-white transition-all gap-2">
           <Link

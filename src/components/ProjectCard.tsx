@@ -51,7 +51,9 @@ function ProjectCard({
           </a>
           <a
             href={repo}
-            className="p-2 rounded-md  bg-[#303030] hover:bg-[#202020]"
+            target="_blank"
+            className="p-2 rounded-md bg-[#303030] hover:bg-[#101010]"
+            rel="noreferrer"
           >
             <FaGithub className="h-6 w-6 " />
           </a>

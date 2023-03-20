@@ -23,7 +23,7 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <div className="flex flex-col max-w-[600px] max-md:max-w-[400px] mx-auto ">
+    <div className="flex flex-col max-w-xl  mx-auto ">
       <Link
         href={`/projects/${id}`}
         className="transition-all rounded-2xl border-2 border-[#303030] hover:border-[#505050]

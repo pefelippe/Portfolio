@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaFilePdf } from "react-icons/fa";
 
+import AnimatedBtn from "../components/animated/AnimatedBtn";
 import ContentTitle from "../components/ContentTitle";
 
 type Props = {};
@@ -14,10 +16,10 @@ export default function About({}: Props) {
       <motion.img
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className=" rounded-full max-h-[220px] transition-all object-cover "
+        className=" rounded-full max-h-[180px] transition-all object-cover "
       />
-      <div className="flex item-center justify-center text-center">
-        <motion.span className=" max-w-xl text-xl">
+      <div className="flex flex-col gap-8 item-center justify-center text-center">
+        <motion.span className=" max-w-xl text-md md:text-xl">
           Meu nome é <b className="">Pedro Felippe</b> e eu sou um Web Developer
           com mais de 3 anos de experiência na criação de componentes
           reutilizáveis e escaláveis. Entre as tecnologias as quais trabalho
@@ -29,6 +31,16 @@ export default function About({}: Props) {
           minha graduação em <b className="">Ciência da Computação</b> na{" "}
           <b className="">Universidade Federal do Ceará</b>.
         </motion.span>
+
+        <AnimatedBtn className="" href="https://github.com/pefelippe">
+          <div
+            className=" mx-auto flex gap-3 items-center px-8 p-4  rounded-md font-semibold transition-all  justify-center
+        w-fit hover:bg-[#fff]/80 text-[#000]  bg-[#fff] "
+          >
+            <FaFilePdf className="h-7 w-7 " />
+            Currículo
+          </div>
+        </AnimatedBtn>
       </div>
     </div>
   );

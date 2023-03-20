@@ -7,7 +7,7 @@ import Projects from "./../src/content/Projects";
 
 export default function Home() {
   return (
-    <div className="w-screen space-y-20  px-10 max-w-7xl mx-auto py-32">
+    <div className="w-screen space-y-20  px-8 max-w-7xl mx-auto py-32">
       <Hero />
       <Projects />
       <About />

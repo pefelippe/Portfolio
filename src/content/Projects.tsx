@@ -27,14 +27,14 @@ function Projects() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="relative w-full  max-w-7xl flex flex-col gap-2 text-white items-center md:items-start"
+      className="relative w-full  max-w-7xl flex flex-col gap-2 text-white items-center"
     >
       <ContentTitle title="Projetos" />
       <p className="text-lg text-gray-300">
         Conheça meus projetos mais recentes.
       </p>
 
-      <div className="w-full grid xl:gap-20 md:grid-cols-2 grid-cols-1 gap-8 py-4">
+      <div className="w-full grid xl:gap-20 grid-cols-1 gap-8 py-4">
         {projects?.map((proj) => {
           return (
             <ProjectCard

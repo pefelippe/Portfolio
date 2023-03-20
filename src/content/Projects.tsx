@@ -34,7 +34,7 @@ function Projects() {
         Conheça meus projetos mais recentes.
       </p>
 
-      <div className="w-full grid xl:gap-20 grid-cols-1 gap-8 py-4">
+      <div className="w-full grid xl:gap-20 xl:grid-cols-2 grid-cols-1 gap-8 py-4">
         {projects?.map((proj) => {
           return (
             <ProjectCard

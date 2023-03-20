@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaFilePdf } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 
+import AnimatedBtn from "../components/animated/AnimatedBtn";
 import SocialLinks from "../components/SocialLinks";
 
 export default function Hero() {
@@ -11,7 +13,7 @@ export default function Hero() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.5 }}
       className="relative mx-auto w-full flex justify-start max-lg:justify-center gap-8 lg:gap-32 max-lg:flex-col
-       items-center max-w-7xl text-white min-h-[50vh] "
+       items-center max-w-7xl text-white min-h-[40vh] "
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -42,7 +44,7 @@ export default function Hero() {
         </motion.p>
         <p
           className="text-[#fff]  uppercase font-bold mx-auto
-        text-4xl sm:text-5xl lg:text-7xl 
+        text-4xl sm:text-5xl lg:text-7xl underline decoration-[#5865f2]
         "
         >
           Pedro Felippe

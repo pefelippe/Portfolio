@@ -13,34 +13,47 @@ export default function About({}: Props) {
       <ContentTitle title="Quem sou" />
       <p className="text-lg text-gray-300">Um pouco sobre mim.</p>
 
-      <motion.img
-        alt="avatar-pefelippe"
-        src="assets/avatar-pdr.png"
-        className=" rounded-full max-h-[180px] transition-all object-cover "
-      />
-      <div className="flex flex-col gap-8 item-center justify-center text-center">
-        <motion.span className=" max-w-xl text-md md:text-xl">
-          Meu nome é <b className="">Pedro Felippe</b> e eu sou um Web Developer
-          com mais de 3 anos de experiência na criação de componentes
-          reutilizáveis e escaláveis. Entre as tecnologias as quais trabalho
-          destaco: <span className=" ">React, Node, Typescript e Next.js.</span>
-          <br />
-          <br />
-          Atualmente trabalho em tempo integral no{" "}
-          <b className="">Instituto Atlântico</b>. Além disso, estou finalizando
-          minha graduação em <b className="">Ciência da Computação</b> na{" "}
-          <b className="">Universidade Federal do Ceará</b>.
-        </motion.span>
+      <div className="pt-8 flex max-lg:flex-col gap-6 lg:gap-16 item-center justify-center  text-center lg:text-start">
+        <motion.img
+          alt="avatar-pefelippe"
+          src="assets/avatar-pdr.png"
+          className=" rounded-full max-h-[200px] max-w-[200px] mx-auto transition-all object-cover "
+        />
+        <motion.span className="flex flex-col max-w-2xl text-md md:text-xl gap-4">
+          <p>
+            Meu nome é <b className=" ">Pedro Felippe</b> e eu sou um
+            <b className=""> Web Developer</b> com mais de 3 anos de experiência
+            de experiência de mercado na criação de componentes WEB
+            reutilizáveis e escaláveis
+          </p>
 
-        <AnimatedBtn className="" href="https://github.com/pefelippe">
-          <div
-            className=" mx-auto flex gap-3 items-center px-8 p-4  rounded-md font-semibold transition-all  justify-center
-        w-fit hover:bg-[#fff]/80 text-[#000]  bg-[#fff] "
-          >
-            <FaFilePdf className="h-7 w-7 " />
-            Currículo
-          </div>
-        </AnimatedBtn>
+          <p className="w-full flex gap-2 max-sm:flex-col">
+            Atualmente trabalho em tempo integral no{" "}
+            <b className="text-[#5865f2]">
+              <AnimatedBtn
+                className=""
+                href="https://institutoatlantico.gupy.io/"
+              >
+                <div className="hover:text-[#5865f2]/80 ">
+                  Instituto Atlântico
+                </div>
+              </AnimatedBtn>
+            </b>
+          </p>
+          <p>
+            Estou finalizando minha graduação em{" "}
+            <b className="">Ciência da Computação</b> na <b className="">UFC</b>
+          </p>
+
+          <span className=" text-gray-300 text-md flex gap-2 justify-end pt-5 ">
+            Para maiores detalhes, visite meu{" "}
+            <b className="text-[#5865f2] underline hover:text-[#5865f2]/80 ">
+              <AnimatedBtn className="" href="https://resume.io/r/m2cn8pnqu">
+                <div className=" ">Currículo</div>
+              </AnimatedBtn>
+            </b>
+          </span>
+        </motion.span>
       </div>
     </div>
   );

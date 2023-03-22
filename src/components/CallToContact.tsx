@@ -10,19 +10,25 @@ type Props = {};
 
 function CallToContact({}: Props) {
   return (
-    <div className=" relative w-full max-w-7xl text-white mx-auto text-xl md:py-10">
-      <div className="relative flex flex-col justify-center gap-4 items-center mx-auto  h-fit">
-        <ContentTitle title="Contato" />
-
-        <p className=" text-lg text-gray-300 text-center">
-          Tem alguma ideia em mente? Vamos gerar valor juntos.
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+      className="h-[70vh] relative w-full max-w-7xl text-white mx-auto text-xl "
+    >
+      <div className="mx-auto relative flex flex-col justify-center gap-6  h-fit">
+        <p className=" text-[2.5rem] text-white font-medium mx-auto underline decoration-[#5865f2]">
+          Tem alguma ideia em mente?
+        </p>
+        <p className=" text-[1.5rem] font-medium text-gray-300 mx-auto">
+          Manda uma <b className="text-white ">mensagem</b>!
         </p>
 
-        <div className="py-4 relative flex flex-col w-full  mx-auto items-center justify-center">
+        <div className=" relative flex flex-col w-full mx-auto justify-center items-center">
           <MessageForm name={""} email={""} subject={""} message={""} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

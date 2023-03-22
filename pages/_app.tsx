@@ -16,17 +16,17 @@ export default function App({ Component, pageProps }: AppProps) {
       className="
         overflow-x-hidden overflow-y-scroll bg-[url('/assets/endless-constellation.svg')]
         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth 
-        h-screen min-w-[400px]  min-h-screen  text-[#000] "
+        h-screen min-w-[400px]  min-h-screen  text-[#000] font-Matter "
     >
       <Head>
-        <title>Pedro Felippe | Portfolio</title>
+        <title>Pedro Felippe</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
 
       <Analytics />
-      <Navbar />
+      {/* <Navbar /> */}
       <Component {...pageProps} />
       <Footer />
     </div>

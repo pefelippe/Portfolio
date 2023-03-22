@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Matter";
+    src: url("/assets/fonts/Matter-Regular.otf");
+  }
+}
+
 @layer components {
   .contactInput {
     @apply outline-none bg-gray-500/10 rounded-sm px-8 py-4 border-2 border-[#242424] w-auto  max-w-full

@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       fontFamily: {
         sans: ["Poppins"],
+        Matter: ["Matter", "cursive"],
       },
     },
     colors: {

@@ -1,60 +1,44 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { FaFilePdf } from "react-icons/fa";
-
-import AnimatedBtn from "../components/animated/AnimatedBtn";
-import ContentTitle from "../components/ContentTitle";
 
 type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className="h-full flex flex-col justify-center gap-4 items-center mx-auto text-lg text-gray-100">
-      <ContentTitle title="Quem sou" />
-      <p className="text-lg text-gray-300">Um pouco sobre mim.</p>
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.5 }}
+      className="h-[70vh] flex max-lg:flex-col justify-center gap-8 lg:gap-20  items-center mx-auto  "
+    >
+      <motion.img
+        alt="avatar-pefelippe"
+        src="assets/avatar-pdr.png"
+        className="relative object-cover rounded-md mx-auto
+        max-lg:w-full max-lg:h-[300px]   h-[600px] w-[500px] max-w-xl"
+      />
 
-      <div className="pt-8 flex max-lg:flex-col gap-6 lg:gap-16 item-center justify-center  text-center lg:text-start">
-        <motion.img
-          alt="avatar-pefelippe"
-          src="assets/avatar-pdr.png"
-          className=" rounded-full max-h-[200px] max-w-[200px] mx-auto transition-all object-cover "
-        />
-        <motion.span className="flex flex-col max-w-2xl text-md md:text-xl gap-4">
-          <p>
-            Meu nome é <b className=" ">Pedro Felippe</b> e eu sou um
-            <b className=""> Web Developer</b> com mais de 3 anos de experiência
-            de experiência de mercado na criação de componentes WEB
-            reutilizáveis e escaláveis
-          </p>
+      <motion.div
+        className="mx-auto  text-white h-fit
+        flex flex-col text-3xl  justify-start  text-start 
+        gap-6 md:gap-12 max-w-2xl"
+      >
+        <h2 className="text-[2.5rem] leading-tight  text-black dark:text-white">
+          Me chamo Pedro Felippe. Eu construo software para Web.
+        </h2>
 
-          <p className="w-full flex gap-2 max-sm:flex-col">
-            Atualmente trabalho em tempo integral no{" "}
-            <b className="text-[#5865f2]">
-              <AnimatedBtn
-                className=""
-                href="https://institutoatlantico.gupy.io/"
-              >
-                <div className="hover:text-[#5865f2]/80 ">
-                  Instituto Atlântico
-                </div>
-              </AnimatedBtn>
-            </b>
-          </p>
-          <p>
-            Estou finalizando minha graduação em{" "}
-            <b className="">Ciência da Computação</b> na <b className="">UFC</b>
-          </p>
+        <p className="text-xl font-normal md:text-3xl text-gray-300 dark:text-slate-500">
+          Sou um desenvolvedor Javascript, amante de filmes e fascinado por
+          tecnologia.
+        </p>
 
-          <span className=" text-gray-300 text-md flex gap-2 justify-end pt-5 ">
-            Para maiores detalhes, visite meu{" "}
-            <b className="text-[#5865f2] underline hover:text-[#5865f2]/80 ">
-              <AnimatedBtn className="" href="https://resume.io/r/m2cn8pnqu">
-                <div className=" ">Currículo</div>
-              </AnimatedBtn>
-            </b>
-          </span>
-        </motion.span>
-      </div>
-    </div>
+        <button
+          className="text-md text-primary inline-flex
+        font-medium focus:outline-none cursor-pointer transition underline"
+        >
+          Conheça mais sobre mim
+        </button>
+      </motion.div>
+    </motion.div>
   );
 }

@@ -14,10 +14,10 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="h-[70vh] relative w-full max-w-7xl text-white mx-auto text-xl "
+      className="h-fit relative w-full max-w-7xl text-white mx-auto text-xl "
     >
       <div className="mx-auto relative flex flex-col justify-center gap-6  h-fit">
-        <p className=" text-[2.5rem] text-white font-medium mx-auto underline decoration-[#5865f2]">
+        <p className=" text-[2.0rem] md:text-[2.5rem] text-white font-medium mx-auto underline decoration-[#5865f2]">
           Tem alguma ideia em mente?
         </p>
         <p className=" text-[1.5rem] font-medium text-gray-300 mx-auto">

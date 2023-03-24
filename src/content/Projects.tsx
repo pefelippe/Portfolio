@@ -24,17 +24,13 @@ function Projects() {
   return (
     <motion.div
       id="work"
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1.5 }}
-      className="h-[70vh] relative w-full  max-w-7xl flex flex-col gap-2 text-white "
+      className="h-fit relative w-full  max-w-7xl flex flex-col  text-white gap-20"
     >
-      <ContentTitle title="Projetos" />
-      <p className="text-[1.5rem] font-medium text-gray-300 ">
-        Conheça meus projetos mais recentes.
-      </p>
+      <h2 className="text-[2.5rem] leading-tight font-semibold dark:text-white text-center underline decoration-blue">
+        Conheça meus projetos mais recentes
+      </h2>
 
-      <div className="w-full grid xl:gap-20 xl:grid-cols-2 grid-cols-1 gap-8 py-4">
+      <div className="w-full grid gap-32 grid-cols-1 py-4">
         {projects?.map((proj) => {
           return (
             <ProjectCard

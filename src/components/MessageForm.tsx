@@ -11,7 +11,7 @@ type Inputs = {
 };
 
 export default function MessageForm({}: Inputs) {
-  const { register, handleSubmit, reset, formState } = useForm<Inputs>();
+  const { register, handleSubmit, reset } = useForm<Inputs>();
 
   const [isLoading, setIsLoading] = useState(false);
 
@@ -47,7 +47,7 @@ export default function MessageForm({}: Inputs) {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" flex flex-col gap-6 w-full  max-w-lg "
+        className=" flex flex-col gap-6 w-full  max-w-xl "
       >
         <input
           {...register("name", { required: true, maxLength: 50 })}

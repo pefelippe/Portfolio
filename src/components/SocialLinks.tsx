@@ -7,13 +7,13 @@ type Props = {};
 
 export default function SocialLinks({}: Props) {
   return (
-    <div className="flex  gap-6 justify-center mx-auto text-xl ">
+    <div className="flex w-fit gap-8 justify-center  items-center  text-xl ">
       <AnimatedBtn className="" href="https://github.com/pefelippe">
         <div
-          className="p-3 border-2 rounded-full  flex gap-3 items-center 
-         font-semibold transition-all text-[#fff]  border-[#5865f2]"
+          className=" flex gap-3 items-center 
+         font-semibold transition-all text-white  hover:text-[#5865f2]"
         >
-          <FaGithub className="h-7 w-7 " />
+          <FaGithub className="h-8 w-8 " />
         </div>
       </AnimatedBtn>
 
@@ -22,19 +22,19 @@ export default function SocialLinks({}: Props) {
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
         <div
-          className="p-3 border-2 rounded-full  flex gap-3 items-center 
-         font-semibold transition-all text-[#fff]  border-[#5865f2]"
+          className="  flex gap-3 items-center 
+          font-semibold transition-all text-white  hover:text-[#5865f2]"
         >
-          <FaLinkedinIn className="h-7 w-7 " />
+          <FaLinkedinIn className="h-8 w-8 " />
         </div>
       </AnimatedBtn>
 
       <AnimatedBtn className="" href="https://resume.io/r/m2cn8pnqu">
         <div
-          className="p-3 border-2 rounded-full  flex gap-3 items-center 
-         font-semibold transition-all text-[#fff]  border-[#5865f2]"
+          className="  flex gap-3 items-center 
+          font-semibold transition-all   text-white  hover:text-[#5865f2]"
         >
-          <FaFilePdf className="h-7 w-7 " />
+          <FaFilePdf className="h-8 w-8 " />
         </div>
       </AnimatedBtn>
     </div>

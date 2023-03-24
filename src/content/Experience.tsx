@@ -61,8 +61,6 @@ function Experience({}: Props) {
       className="mx-auto w-full flex flex-col   "
     >
       <ContentTitle title="Experiência" />
-
-
     </motion.div>
   );
 }

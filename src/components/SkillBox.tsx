@@ -14,10 +14,12 @@ const SkillBox = ({ title, children }: ISkillBox) => {
         transition: { duration: 0.1 },
       }}
       className="flex flex-col justify-center items-center text-center mx-auto w-full
-       transition-all ease-in-out space-y-3  border-2 hover:text-[#5865f2]  border-[#242424] hover:border-[#5865f2]  bg-[#121212] p-5 rounded-md"
+       transition-all ease-in-out space-y-3  
+       border-2 text-white hover:text-[#5865f2]  border-[#242424]
+        hover:border-[#5865f2]  bg-[#121212] p-6 rounded-md"
     >
       <div>{children}</div>
-      <div className="font-semibold text-xl">{title}</div>
+      {/* <div className="font-semibold t ext-xl">{title}</div> */}
     </motion.a>
   );
 };

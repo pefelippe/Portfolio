@@ -44,7 +44,7 @@ function ProjectCard({
       </Link>
 
       <div
-        className="h-full text-[#fff] flex
+        className="h-full text-[#000] flex
       w-full justify-center items-start flex-col gap-2 rounded-b-2xl max-w-2xl "
       >
         <div className="flex w-full justify-start max-md:justify-center gap-2">
@@ -59,23 +59,14 @@ function ProjectCard({
         </div>
         <p className="w-fit text-[1.5rem] text-gray-300">{description}</p>
 
-        <div className="flex  w-full justify-between">
+        <div className="flex w-full justify-between pt-4">
           <Link
             href={`/projects/${id}`}
-            className="flex gap-2 items-center w-fit text-[1.5rem] font-bold hover:underline text-gray-100 "
+            className="flex gap-2 p-2 px-4 items-center w-fit text-[1.5rem] font-bold hover:underline text-white  bg-blue hover:bg-blue/90 rounded-md "
             rel="noreferrer"
           >
             Veja detalhes <FaArrowRight className="-rotate-45" />
           </Link>
-
-          <a
-            href={repo}
-            target="_blank"
-            className="p-2 rounded-md bg-[#303030] hover:bg-[#222222] max-w-md"
-            rel="noreferrer"
-          >
-            <FaGithub className="h-7 w-7" />
-          </a>
         </div>
       </div>
     </motion.div>

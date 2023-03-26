@@ -21,13 +21,13 @@ function Projects() {
   return (
     <motion.div
       id="work"
-      className="max-w-7xl h-fit relative w-full mx-auto flex flex-col  text-white gap-10 md:gap-20"
+      className="h-fit  w-screen  relative   flex flex-col bg-[#fafafa] p-10 rounded-md text-black gap-10 "
     >
       <h2 className="text-[2.5rem] leading-tight font-semibold dark:text-white text-center underline decoration-blue">
         Conheça meus projetos mais recentes
       </h2>
 
-      <div className="w-full grid gap-20 md:gap-40 grid-cols-1 py-4">
+      <div className="w-full grid gap-20 md:gap-32 grid-cols-1 py-4">
         {projects?.map((proj) => {
           return (
             <ProjectCard

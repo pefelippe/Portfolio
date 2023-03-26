@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import SocialLinks from "../components/SocialLinks";
 
 type Props = {};
 
@@ -10,8 +11,15 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-fit max-w-7xl flex max-lg:flex-col justify-start mx-auto items-center lg:gap-24 "
+      className="min-h-[80vh] px-8 h-fit max-w-7xl flex max-lg:flex-col 
+      justify-center lg:justify-start mx-auto items-center lg:gap-20"
     >
+      {/* <div className="absolute left-0 p-2 bg-white  rounded-sm border-2 border-[#202020]">
+        <div className="flex relative p-2 z-40">
+         
+        </div>
+      </div> */}
+
       <motion.img
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -19,7 +27,7 @@ export default function About({}: Props) {
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
         className="relative object-cover rounded-full lg:rounded-2xl
-        max-sm:h-[200px] max-lg:h-[250px]  lg:h-[550px] lg:w-[450px] max-w-xl"
+        max-sm:h-[200px] max-lg:h-[250px]  lg:h-[500px] lg:w-[450px] max-w-xl"
       />
 
       <motion.div
@@ -29,7 +37,7 @@ export default function About({}: Props) {
       >
         <h2 className="text-[3.5rem] lg:text-[4.5rem] leading-tight font-semibold dark:text-white ">
           <Typewriter
-            words={["Prazer, eu sou Pedro Felippe"]}
+            words={["Olá, eu sou Pedro Felippe"]}
             cursor
             cursorStyle="_"
             typeSpeed={75}
@@ -42,6 +50,7 @@ export default function About({}: Props) {
           Sou um desenvolvedor Javascript, amante de filmes e fascinado por
           tecnologia.
         </p>
+        <SocialLinks />
 
         {/* <button
           className="text-md text-primary inline-flex  p-4 px-8 w-fit rounded-full max-lg:mt-6

@@ -5,9 +5,8 @@ import Projects from "./../src/content/Projects";
 
 export default function Home() {
   return (
-    <div className="w-screen max-w-7xl px-8 mx-auto py-10 md:py-20 space-y-10 md:space-y-32 ">
+    <div className="w-screen ">
       <Hero />
-      <Skills />
       <Projects />
       <CallToContact />
     </div>

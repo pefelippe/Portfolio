@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
-import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 
-import ContentTitle from "./ContentTitle";
+import React from "react";
+
 import MessageForm from "./MessageForm";
 
 type Props = {};
@@ -14,19 +12,18 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="max-w-7x mx-auto h-fit relative w-full  text-white  text-xl "
+      className=" h-fit px-8 max-w-7xl mx-auto text-white  text-xl py-20 xl:py-32"
     >
-      <div className="mx-auto relative flex flex-col justify-center gap-6  h-fit">
-        <p className=" text-[2.0rem] md:text-[2.5rem] text-white font-medium mx-auto underline decoration-[#5865f2]">
-          Tem alguma ideia em mente?
-        </p>
-        <p className=" text-[1.5rem] font-medium text-gray-300 mx-auto">
-          Manda uma <b className="text-white ">mensagem</b>!
-        </p>
-
-        <div className=" relative flex flex-col w-full mx-auto justify-center items-center">
-          <MessageForm name={""} email={""} subject={""} message={""} />
+      <div className="mx-auto flex max-lg:flex-col justify-between gap-6 items-center text-center lg:gap-20">
+        <div className="flex flex-col gap-4">
+          <p className=" text-[2.0rem] md:text-[2.5rem] text-white font-medium mx-auto underline decoration-[#5865f2]">
+            Tem alguma ideia em mente?
+          </p>
+          <p className=" text-[1.5rem] font-medium text-gray-300 mx-auto">
+            Manda uma <b className="text-white ">mensagem</b>!
+          </p>
         </div>
+        <MessageForm name={""} email={""} subject={""} message={""} />
       </div>
     </motion.div>
   );

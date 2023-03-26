@@ -8,7 +8,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 
 import Footer from "../src/components/layout/Footer";
-import Navbar from "../src/components/layout/NavBar";
+import Header from "../src/components/layout/Header";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Analytics />
-      <Navbar />
+      <Header />
       <Component {...pageProps} />
       <Footer />
     </div>

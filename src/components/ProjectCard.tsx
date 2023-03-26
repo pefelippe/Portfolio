@@ -22,15 +22,17 @@ function ProjectCard({
   stack,
   id,
 }: IProjectCard) {
+  const findX = id % 2 == 0 ? 100 : -100;
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5 }}
+      initial={{ opacity: 0, x: findX }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 2 }}
       className="flex max-lg:flex-col w-full max-w-7xl justify-center lg:gap-10  mx-auto gap-2 "
     >
       <Link
-        href={`/projects/${id}`}
+        href={link}
         className="transition-all rounded-2xl border-2 border-[#303030] hover:border-[#505050]
         overflow-hidden min-h-[400px] max-lg:min-h-[250px] w-full"
       >
@@ -49,21 +51,32 @@ function ProjectCard({
           <a
             href={link}
             target="_blank"
-            className="flex gap-2 items-center w-fit text-[2rem] font-bold underline hover:text-gray-500 "
+            className="flex gap-2 items-center w-fit text-[2rem] font-bold  hover:text-gray-500 "
             rel="noreferrer"
           >
-            {title} <FaArrowRight className="-rotate-45" />
+            {title}
           </a>
-          {/* <a
+        </div>
+        <p className="w-fit text-[1.5rem] text-gray-300">{description}</p>
+
+        <div className="flex  w-full justify-between">
+          <Link
+            href={`/projects/${id}`}
+            className="flex gap-2 items-center w-fit text-[1.5rem] font-bold hover:underline text-gray-100 "
+            rel="noreferrer"
+          >
+            Veja detalhes <FaArrowRight className="-rotate-45" />
+          </Link>
+
+          <a
             href={repo}
             target="_blank"
             className="p-2 rounded-md bg-[#303030] hover:bg-[#222222] max-w-md"
             rel="noreferrer"
           >
-            <FaGithub className="h-5 w-5 " />
-          </a> */}
+            <FaGithub className="h-7 w-7" />
+          </a>
         </div>
-        <p className="w-fit text-[1.5rem] text-gray-300">{description}</p>
       </div>
     </motion.div>
   );

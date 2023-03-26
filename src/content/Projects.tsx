@@ -27,7 +27,7 @@ function Projects() {
         Conheça meus projetos mais recentes
       </h2>
 
-      <div className="w-full grid gap-20 md:gap-32 grid-cols-1 py-4">
+      <div className="w-full grid gap-20 md:gap-40 grid-cols-1 py-4">
         {projects?.map((proj) => {
           return (
             <ProjectCard

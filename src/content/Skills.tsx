@@ -1,6 +1,17 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { SiAmazonaws, SiDocker, SiGit, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiAmazonaws,
+  SiDocker,
+  SiGit,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 import SkillBox from "../components/SkillBox";
 
@@ -10,8 +21,8 @@ function Skills({}: Props) {
   return (
     <div className="w-full flex flex-col  max-md:space-y-8  md:flex-row  items-center  ">
       <motion.div
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 1 }}
         className=" gap-4 w-full justify-evenly grid grid-cols-9 max-lg:grid-cols-3"
       >

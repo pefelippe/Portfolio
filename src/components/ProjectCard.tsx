@@ -22,19 +22,19 @@ function ProjectCard({
   stack,
   id,
 }: IProjectCard) {
-  const findX = id % 2 == 0 ? 100 : -100;
+  const findX = id % 2 === 0 ? -100 : 100;
 
   return (
     <motion.div
       initial={{ opacity: 0, x: findX }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       className="flex max-lg:flex-col w-full max-w-7xl justify-center lg:gap-10  mx-auto gap-2 "
     >
       <Link
         href={link}
         className="transition-all rounded-2xl border-2 border-[#303030] hover:border-[#505050]
-        overflow-hidden min-h-[400px] max-lg:min-h-[250px] w-full"
+        overflow-hidden min-h-[400px] max-lg:min-h-[350px] max-md:min-h-[250px] w-full max-w-xl mx-auto"
       >
         <motion.img
           src={imgUrl}
@@ -44,14 +44,14 @@ function ProjectCard({
       </Link>
 
       <div
-        className="h-full text-[#000] flex
-      w-full justify-center items-start flex-col gap-2 rounded-b-2xl max-w-2xl "
+        className="h-full text-[#fff] flex mx-auto
+      w-full justify-center items-start flex-col gap-2 rounded-b-2xl max-w-xl "
       >
-        <div className="flex w-full justify-start max-md:justify-center gap-2">
+        <div className="flex w-full justify-start  gap-2">
           <a
             href={link}
             target="_blank"
-            className="flex gap-2 items-center w-fit text-[2rem] font-bold  hover:text-gray-500 "
+            className="flex gap-2 items-center w-fit text-[2rem] font-bold  hover:text-gray-500 underline"
             rel="noreferrer"
           >
             {title}

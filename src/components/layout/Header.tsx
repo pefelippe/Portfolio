@@ -8,12 +8,12 @@ import HamburgerMenu from "./../HamburgerMenu";
 const Navbar = () => {
   return (
     <nav
-      className={`${styles.paddingX}  max-w-screen-2xl font-semibold mx-auto w-full flex 
-      justify-between items-center pt-4 top-0 z-20 bg-primary`}
+      className={`${styles.paddingX}  max-w-7xl font-semibold mx-auto w-full flex 
+      justify-between items-center h-[10vh] top-0 z-20 bg-primary`}
     >
       {/* <SocialLinks /> */}
       <div className="flex items-center">
-        <Link href="/" className="text-bold text-2xl  text-white">
+        <Link href="/" className="text-bold text-3xl  text-white">
           Pedro Felippe
         </Link>
       </div>

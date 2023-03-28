@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins"],
         Matter: ["Matter", "cursive"],
+        roboto: ["Roboto", "sans-serif"],
       },
     },
     colors: {

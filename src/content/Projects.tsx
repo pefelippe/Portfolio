@@ -20,14 +20,22 @@ type ProjectsType = {
 function Projects() {
   return (
     <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, delay: 2 }}
       id="work"
-      className="h-fit  w-screen  relative   flex flex-col bg-[#fafafa] p-10 rounded-md text-black gap-10 "
+      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-10 "
     >
-      <h2 className="text-[2.5rem] leading-tight font-semibold dark:text-white text-center underline decoration-blue">
+      <motion.h2
+        initial={{ y: 50 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1.5, delay: 2 }}
+        className="text-[2.5rem] leading-tight font-semibold dark:text-white text-center underline decoration-blue"
+      >
         Conheça meus projetos mais recentes
-      </h2>
+      </motion.h2>
 
-      <div className="w-full grid gap-20 md:gap-32 grid-cols-1 py-4">
+      <div className="mx-auto w-full grid gap-20 md:gap-32 grid-cols-1 py-20">
         {projects?.map((proj) => {
           return (
             <ProjectCard

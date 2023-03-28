@@ -62,10 +62,11 @@ function ProjectCard({
         <div className="flex w-full justify-between pt-4">
           <Link
             href={`/projects/${id}`}
-            className="flex gap-2 p-2 px-4 items-center w-fit text-[1.5rem] font-bold hover:underline text-white  bg-blue hover:bg-blue/90 rounded-md "
+            className="flex gap-2 p-3 px-6 items-center w-fit text-[1.5rem] justify-between
+             font-semibold hover:underline text-white  bg-blue hover:bg-blue/90 rounded-lg "
             rel="noreferrer"
           >
-            Veja detalhes <FaArrowRight className="-rotate-45" />
+            <p>Veja detalhes</p> <FaArrowRight className="-rotate-45" />
           </Link>
         </div>
       </div>

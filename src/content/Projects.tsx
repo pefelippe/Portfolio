@@ -24,7 +24,7 @@ function Projects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5, delay: 2 }}
       id="work"
-      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-10 "
+      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-20 "
     >
       <motion.h2
         initial={{ y: 50 }}
@@ -35,7 +35,7 @@ function Projects() {
         Conheça meus projetos mais recentes
       </motion.h2>
 
-      <div className="mx-auto w-full grid gap-20 md:gap-32 grid-cols-1 py-20">
+      <div className="mx-auto w-full grid gap-20 md:gap-32 grid-cols-1 ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

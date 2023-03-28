@@ -25,11 +25,11 @@ export default function About({}: Props) {
       />
 
       <motion.div
-        className=" text-white h-max
-        flex flex-col text-3xl justify-around text-center lg:text-start w-full max-w-lg"
+        className=" text-white h-max w-fit
+        flex flex-col text-3xl justify-around text-center lg:text-start  max-w-lg"
       >
-        <h2 className="text-[3.5rem] lg:text-[4.5rem] leading-tight font-semibold dark:text-white ">
-          Olá, me chamo Pedro Felippe
+        <h2 className="text-[2.5rem] lg:text-[4rem] leading-tight font-semibold dark:text-white ">
+          Olá, me chamo <p className="text-blue">Pedro Felippe</p>
         </h2>
 
         <p className="text-xl font-normal lg:text-3xl text-gray-300 dark:text-slate-500 py-5">
@@ -44,14 +44,9 @@ export default function About({}: Props) {
             delaySpeed={2000}
           />
         </p>
-        {/* <SocialLinks /> */}
+        <SocialLinks />
 
-        {/* <button
-          className="text-md text-primary inline-flex  p-4 px-8 w-fit rounded-full max-lg:mt-6
-        font-medium focus:outline-none cursor-pointer transition max-lg:mx-auto bg-blue hover:bg-blue/80 hover:underline"
-        >
-          Conheça mais
-        </button> */}
+
       </motion.div>
     </motion.div>
   );

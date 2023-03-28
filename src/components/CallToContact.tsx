@@ -14,9 +14,9 @@ function CallToContact({}: Props) {
       transition={{ duration: 1.5 }}
       className=" h-fit max-w-7xl mx-auto text-white  text-xl"
     >
-      <div className="mx-auto flex max-lg:flex-col justify-between gap-6 items-center text-center lg:gap-20">
+      <div className="mx-auto flex flex-col justify-between gap-6 items-center text-center ">
         <div className="flex flex-col gap-4">
-          <p className=" text-[2.0rem] md:text-[2.5rem] text-white font-medium mx-auto underline decoration-[#5865f2]">
+          <p className=" text-[2.5rem] lg:text-[3rem] leading-tight font-semibold dark:text-white text-white  mx-auto underline decoration-[#5865f2]">
             Tem alguma ideia em mente?
           </p>
           <p className=" text-[1.5rem] font-medium text-gray-300 mx-auto">

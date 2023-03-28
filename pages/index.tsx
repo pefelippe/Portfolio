@@ -4,7 +4,7 @@ import Projects from "./../src/content/Projects";
 
 export default function Home() {
   return (
-    <div className="w-screen  px-8 max-w-7xl mx-auto space-y-20 md:space-y-32 py-28">
+    <div className="w-screen  px-8 max-w-7xl mx-auto space-y-20 md:space-y-32 py-32">
       <Hero />
       <Projects />
       <CallToContact />

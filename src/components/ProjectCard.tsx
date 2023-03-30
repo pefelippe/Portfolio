@@ -28,7 +28,7 @@ function ProjectCard({
     <motion.div
       initial={{ opacity: 0, x: findX }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1.5 }}
       className="flex max-lg:flex-col w-full max-w-7xl justify-center lg:gap-10  mx-auto gap-2 "
     >
       <Link

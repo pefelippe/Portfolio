@@ -11,7 +11,6 @@ const Navbar = () => {
       className={`${styles.paddingX}  max-w-7xl font-semibold mx-auto w-full flex 
       justify-between items-center h-[10vh] top-0 z-20 bg-primary`}
     >
-      {/* <SocialLinks /> */}
       <div className="flex items-center">
         <Link href="/" className="text-bold text-3xl  text-white">
           Pedro Felippe

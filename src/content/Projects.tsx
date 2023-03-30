@@ -24,13 +24,14 @@ function Projects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5, delay: 2 }}
       id="work"
-      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-20 "
+      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-10 md:gap-20 "
     >
       <motion.h2
         initial={{ y: 50 }}
         animate={{ y: 0 }}
         transition={{ duration: 1.5, delay: 2 }}
-        className="text-[2.5rem] leading-tight font-semibold dark:text-white text-center underline decoration-blue"
+        className="text-[2rem] md:text-[2.5rem] leading-tight font-semibold dark:text-white
+        text-center underline decoration-blue max-w-sm md:max-w-md mx-auto"
       >
         Conheça meus projetos mais recentes
       </motion.h2>

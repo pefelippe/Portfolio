@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { FaArrowRight, FaLink } from "react-icons/fa";
 
 import { navLinks } from "../constants";
+import SocialLinks from "./SocialLinks";
 
 type Props = {};
 
@@ -12,52 +13,57 @@ function HamburgerMenu({}: Props) {
   const [toggle, setToggle] = useState<Boolean>(false);
   return (
     <>
-      <ul className="max-sm:hidden text-xl  items-center text-white justify-start list-none flex gap-8 ">
-        {navLinks.map((navLink) => {
-          return (
-            <li
-              key={navLink.id}
-              className={`py-4 ${
-                active === navLink.title ? "text-white" : "text-secondary"
-              }`}
-              onClick={() => {
-                setToggle(!toggle);
-                setActive(navLink.title);
-              }}
-            >
-              <Link
-                className=" px-full rounded-md hover:underline "
-                href={`${navLink.id}`}
+      <div className="max-lg:hidden text-xl  items-center text-white justify-start list-none flex gap-10 divider-x ">
+        <div className="flex gap-8">
+          {navLinks.map((navLink) => {
+            return (
+              <li
+                key={navLink.id}
+                className={`py-4 ${
+                  active === navLink.title ? "text-white" : "text-secondary"
+                }`}
+                onClick={() => {
+                  setToggle(!toggle);
+                  setActive(navLink.title);
+                }}
               >
-                {navLink.title}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+                <Link
+                  className=" px-full rounded-full hover:underline "
+                  href={`${navLink.id}`}
+                >
+                  {navLink.title}
+                </Link>
+              </li>
+            );
+          })}
+        </div>
+        <div>
+          <SocialLinks />
+        </div>
+      </div>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center w-full">
+      <div className="lg:hidden flex flex-1 justify-end items-center w-full">
         <Image
           src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
           alt="menu"
           width="100"
           height="100"
-          className="w-[28px] h-[28px] object-contain cursor-pointer"
+          className="w-[28px] h-[28px] object-contain cursor-pointer z-50 absolute top-10 right-10"
           onClick={() => setToggle(!toggle)}
         />
         <div
           className={`${
-            !toggle ? "hidden" : "flex"
-          } p-6 black-gradient absolute top-[10vh]
-             text-xl right-0 mx-4 my-2 items-center 
-        text-center w-screen z-50  text-white bg-blue transition-all`}
+            !toggle ? "hidden" : "flex flex-col"
+          }  black-gradient absolute 
+             text-xl right-0 items-center top-0 h-screen min-h-fit text-center max-w-[80vw] w-[350px] z-40 mx-auto 
+              text-white bg-[#101010]  transition-all  gap-10`}
         >
-          <ul className="mx-auto items-center h-fit rounded-b-md justify-start list-none flex  flex-col gap-10 py-10">
+          <ul className="mx-auto items-center  rounded-b-md justify-center list-none flex  flex-col gap-5 pt-40">
             {navLinks.map((navLink) => {
               return (
                 <li
                   key={navLink.id}
-                  className={`py-4 w-[80vw] border-[1px] rounded-md bg-white text-blue border-[#303030] hover:bg-[#303030] ${
+                  className={`py-4 w-[80vw] max-w-[300px] rounded-md transition-all text-white bg-blue hover:bg-blue/90 ${
                     active === navLink.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
@@ -76,6 +82,8 @@ function HamburgerMenu({}: Props) {
               );
             })}
           </ul>
+
+          <SocialLinks />
         </div>
       </div>
     </>

@@ -21,18 +21,18 @@ export default function About({}: Props) {
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
         className="relative object-cover rounded-full lg:rounded-2xl
-        max-sm:h-[180px] max-lg:h-[250px]  lg:h-[500px] lg:w-[450px] max-w-xl"
+        max-lg:h-[180px]  xl:h-[500px] xl:w-[450px] max-w-xl"
       />
 
       <motion.div
         className=" text-white h-max w-fit
-        flex flex-col text-3xl justify-around text-center lg:text-start  max-w-lg"
+        flex flex-col text-3xl justify-around text-center md:text-start max-w-lg"
       >
-        <h2 className="text-[2.5rem] lg:text-[4rem] leading-tight font-semibold dark:text-white ">
+        <h2 className="text-[3rem] md:text-[4rem] leading-tight font-semibold dark:text-white py-2">
           Olá, me chamo <p className="text-blue">Pedro Felippe</p>
         </h2>
 
-        <p className="text-xl font-normal lg:text-3xl text-gray-300 dark:text-slate-500 py-5">
+        <p className="text-xl font-normal md:text-3xl text-gray-300 dark:text-slate-500 max-w-sm md:max-w-md">
           <Typewriter
             words={[
               "Sou um desenvolvedor Javascript, amante de filmes e fascinado por tecnologia.",
@@ -44,9 +44,6 @@ export default function About({}: Props) {
             delaySpeed={2000}
           />
         </p>
-        <SocialLinks />
-
-
       </motion.div>
     </motion.div>
   );

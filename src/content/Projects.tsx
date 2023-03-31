@@ -31,7 +31,7 @@ function Projects() {
         animate={{ y: 0 }}
         transition={{ duration: 1.5, delay: 2 }}
         className="text-[2rem] md:text-[2.5rem] leading-tight font-semibold dark:text-white
-        text-center underline decoration-blue max-w-sm md:max-w-md mx-auto"
+        text-center underline decoration-blue max-w-sm md:max-w-md mx-auto pb-10"
       >
         Conheça meus projetos mais recentes
       </motion.h2>
@@ -52,6 +52,13 @@ function Projects() {
           );
         })}
       </div>
+
+      <button
+        className="mx-auto text-xl px-8 py-3 w-fit 
+      font-semibold border-2 border-gray-800 bg-[#000] hover:bg-gray-800 transition-all rounded-full"
+      >
+        Veja mais projetos
+      </button>
     </motion.div>
   );
 }

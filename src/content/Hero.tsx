@@ -12,7 +12,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className=" h-fit max-w-7xl flex max-lg:flex-col justify-center  mx-auto items-center lg:gap-20"
+      className="max-lg:h-[50vh] h-fit max-w-7xl flex max-lg:flex-col justify-center mx-auto items-center lg:gap-20 w-full"
     >
       <motion.img
         initial={{ opacity: 0, x: -100 }}
@@ -20,19 +20,15 @@ export default function About({}: Props) {
         transition={{ duration: 2 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="relative object-cover rounded-full lg:rounded-2xl
-        max-lg:h-[180px]  xl:h-[500px] xl:w-[450px] max-w-xl"
+        className="relative object-cover rounded-md max-lg:hidden xl:h-[400px] "
       />
-
-      <motion.div
-        className=" text-white h-max w-fit
-        flex flex-col text-3xl justify-around text-center md:text-start max-w-lg"
-      >
-        <h2 className="text-[3rem] md:text-[4rem] leading-tight font-semibold dark:text-white py-2">
-          Olá, me chamo <p className="text-blue">Pedro Felippe</p>
+      <motion.div className="text-white  flex flex-col text-3xl text-start">
+        <h2 className="text-[3rem] md:text-[4rem] leading-tight font-bold max-w-xl">
+          Olá! Sou <span className="text-blue">Pedro Felippe</span> e sou um Web
+          Developer.
         </h2>
 
-        <p className="text-xl font-normal md:text-3xl text-gray-300 dark:text-slate-500 max-w-sm md:max-w-md">
+        <p className="text-lg font-normal md:text-3xl text-gray-300 dark:text-slate-500 max-w-md md:max-w-lg pt-2 pb-8">
           <Typewriter
             words={[
               "Sou um desenvolvedor Javascript, amante de filmes e fascinado por tecnologia.",
@@ -44,6 +40,7 @@ export default function About({}: Props) {
             delaySpeed={2000}
           />
         </p>
+        <SocialLinks />
       </motion.div>
     </motion.div>
   );

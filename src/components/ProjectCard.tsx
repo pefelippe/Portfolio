@@ -28,7 +28,7 @@ function ProjectCard({
     <motion.div
       initial={{ opacity: 0, x: findX }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1 }}
       className="flex max-lg:flex-col w-full max-w-7xl justify-center lg:gap-10  mx-auto gap-2 "
     >
       <Link
@@ -63,7 +63,7 @@ function ProjectCard({
           <Link
             href={`/projects/${id}`}
             className="flex gap-2 p-3 px-6 items-center w-fit text-[1.5rem] justify-between
-             font-semibold hover:underline text-white  bg-blue hover:bg-blue/90 rounded-lg "
+             font-semibold hover:underline text-white  bg-[#000] border-blue hover:bg-blue border-2  rounded-lg transition-all "
             rel="noreferrer"
           >
             <p>Veja detalhes</p> <FaArrowRight className="-rotate-45" />

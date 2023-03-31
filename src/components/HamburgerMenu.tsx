@@ -14,32 +14,27 @@ function HamburgerMenu({}: Props) {
   return (
     <>
       <div className="max-lg:hidden text-xl  items-center text-white justify-start list-none flex gap-10 divider-x ">
-        <div className="flex gap-8">
-          {navLinks.map((navLink) => {
-            return (
-              <li
-                key={navLink.id}
-                className={`py-4 ${
-                  active === navLink.title ? "text-white" : "text-secondary"
-                }`}
-                onClick={() => {
-                  setToggle(!toggle);
-                  setActive(navLink.title);
-                }}
+        {navLinks.map((navLink) => {
+          return (
+            <li
+              key={navLink.id}
+              className={`py-4 ${
+                active === navLink.title ? "text-white" : "text-secondary"
+              }`}
+              onClick={() => {
+                setToggle(!toggle);
+                setActive(navLink.title);
+              }}
+            >
+              <Link
+                className=" px-full rounded-full hover:underline "
+                href={`${navLink.id}`}
               >
-                <Link
-                  className=" px-full rounded-full hover:underline "
-                  href={`${navLink.id}`}
-                >
-                  {navLink.title}
-                </Link>
-              </li>
-            );
-          })}
-        </div>
-        <div>
-          <SocialLinks />
-        </div>
+                {navLink.title}
+              </Link>
+            </li>
+          );
+        })}
       </div>
 
       <div className="lg:hidden flex flex-1 justify-end items-center w-full">
@@ -64,7 +59,7 @@ function HamburgerMenu({}: Props) {
                 <li
                   key={navLink.id}
                   className={`py-4 w-[80vw] max-w-[300px] rounded-md transition-all text-white bg-blue hover:bg-blue/90 ${
-                    active === navLink.title ? "text-white" : "text-secondary"
+                    active === navLink.title ? "text-white" : "text-gray-300"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
@@ -82,8 +77,6 @@ function HamburgerMenu({}: Props) {
               );
             })}
           </ul>
-
-          <SocialLinks />
         </div>
       </div>
     </>

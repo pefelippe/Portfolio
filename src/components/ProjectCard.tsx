@@ -57,16 +57,28 @@ function ProjectCard({
             {title}
           </a>
         </div>
-        <p className="w-fit text-[1.5rem] text-gray-300">{description}</p>
+        <p className="w-fit text-[1.5rem] text-gray-300 max-w-md">
+          {description}
+        </p>
 
-        <div className="flex w-full justify-between pt-4">
+        <div className="flex max-sm:flex-col w-full max-md:justify-center items-center gap-4 pt-4 ">
           <Link
             href={`/projects/${id}`}
-            className="flex gap-2 p-3 px-6 items-center w-fit text-[1.5rem] justify-between
-             font-semibold hover:underline text-white  bg-[#000] border-blue hover:bg-blue border-2  rounded-lg transition-all "
+            className="flex gap-2 p-3 px-6 items-center w-fit text-[1.5rem] justify-center max-sm:w-full
+             font-semibold hover:underline text-white bg-blue rounded-lg transition-all "
             rel="noreferrer"
           >
-            <p>Veja detalhes</p> <FaArrowRight className="-rotate-45" />
+            <p>Veja detalhes</p>
+          </Link>
+          <Link
+            href={repo}
+            target="_blank"
+            className="flex gap-3 p-3 px-6 items-center w-fit text-[1.5rem] justify-center max-sm:w-full
+             font-semibold hover:underline text-white bg-black rounded-lg transition-all border-2 border-blue"
+            rel="noreferrer"
+          >
+            <FaGithub />
+            <p>Código</p>
           </Link>
         </div>
       </div>

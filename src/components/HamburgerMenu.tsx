@@ -13,37 +13,40 @@ function HamburgerMenu({}: Props) {
   const [toggle, setToggle] = useState<Boolean>(false);
   return (
     <>
-      <div className="max-lg:hidden text-xl  items-center text-white justify-start list-none flex gap-10 divider-x ">
-        {navLinks.map((navLink) => {
-          return (
-            <li
-              key={navLink.id}
-              className={`py-4 ${
-                active === navLink.title ? "text-white" : "text-secondary"
-              }`}
-              onClick={() => {
-                setToggle(!toggle);
-                setActive(navLink.title);
-              }}
-            >
-              <Link
-                className=" px-full rounded-full hover:underline "
-                href={`${navLink.id}`}
+      <div className="w-full pl-10 justify-between max-md:hidden text-xl  items-center text-white  list-none flex  divider-x ">
+        <div className="flex gap-8">
+          {navLinks.map((navLink) => {
+            return (
+              <li
+                key={navLink.id}
+                className={`py-4 ${
+                  active === navLink.title ? "text-white" : "text-secondary"
+                }`}
+                onClick={() => {
+                  setToggle(!toggle);
+                  setActive(navLink.title);
+                }}
               >
-                {navLink.title}
-              </Link>
-            </li>
-          );
-        })}
+                <Link
+                  className=" px-full rounded-full hover:underline "
+                  href={`${navLink.id}`}
+                >
+                  {navLink.title}
+                </Link>
+              </li>
+            );
+          })}
+        </div>
+        <SocialLinks />
       </div>
 
-      <div className="lg:hidden flex flex-1 justify-end items-center w-full">
+      <div className="md:hidden flex flex-1 justify-end items-center w-full">
         <Image
           src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
           alt="menu"
           width="100"
           height="100"
-          className="w-[28px] h-[28px] object-contain cursor-pointer z-50 absolute top-10 right-10"
+          className="w-[28px] h-[28px] object-contain cursor-pointer z-50  top-10 right-10"
           onClick={() => setToggle(!toggle)}
         />
         <div
@@ -58,9 +61,7 @@ function HamburgerMenu({}: Props) {
               return (
                 <li
                   key={navLink.id}
-                  className={`py-4 w-[80vw] max-w-[300px] rounded-md transition-all text-white bg-blue hover:bg-blue/90 ${
-                    active === navLink.title ? "text-white" : "text-gray-300"
-                  }`}
+                  className="py-4 w-[80vw] max-w-[300px] rounded-md transition-all text-white bg-blue hover:bg-blue/90"
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(navLink.title);

@@ -30,10 +30,10 @@ function Projects() {
         initial={{ y: 50 }}
         animate={{ y: 0 }}
         transition={{ duration: 1.5, delay: 2 }}
-        className="text-[2rem] md:text-[2.5rem] leading-tight font-semibold dark:text-white
-        text-center underline decoration-blue max-w-sm md:max-w-md mx-auto pb-10"
+        className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
+        text-center underline decoration-blue max-w-md md:max-w-xl mx-auto"
       >
-        Conheça meus projetos mais recentes
+        Meus projetos mais recentes
       </motion.h2>
 
       <div className="mx-auto w-full grid gap-20 md:gap-32 grid-cols-1 ">

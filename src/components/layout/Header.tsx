@@ -13,7 +13,7 @@ const Navbar = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5, delay: 1 }}
       className={`${styles.paddingX}  max-w-7xl font-semibold mx-auto w-full flex 
-      justify-between items-center h-[10vh] top-0 z-20 bg-primary`}
+       items-center h-[10vh] top-0 z-20 bg-primary`}
     >
       <div className="flex items-center">
         <Link href="/" className="text-bold text-3xl  text-white">

@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
-import SocialLinks from "../components/SocialLinks";
-
 type Props = {};
 
 export default function About({}: Props) {
@@ -12,7 +10,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="max-lg:h-[50vh] h-fit max-w-7xl flex max-lg:flex-col justify-center mx-auto items-center lg:gap-20 w-full"
+      className=" h-fit max-w-7xl flex max-lg:flex-col justify-center mx-auto items-center lg:gap-20 w-full"
     >
       <motion.img
         initial={{ opacity: 0, x: -100 }}
@@ -28,19 +26,17 @@ export default function About({}: Props) {
           Developer.
         </h2>
 
-        <p className="text-lg font-normal md:text-3xl text-gray-300 dark:text-slate-500 max-w-md md:max-w-lg pt-2 pb-8">
+        <p className="text-lg font-normal md:text-3xl text-gray-300 dark:text-slate-500 max-w-md md:max-w-lg pt-2">
           <Typewriter
             words={[
               "Sou um desenvolvedor Javascript, amante de filmes e fascinado por tecnologia.",
             ]}
             cursor
             cursorStyle="_"
-            typeSpeed={75}
-            deleteSpeed={100}
+            typeSpeed={25}
             delaySpeed={2000}
           />
         </p>
-        <SocialLinks />
       </motion.div>
     </motion.div>
   );

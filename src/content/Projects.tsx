@@ -22,14 +22,14 @@ function Projects() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 2 }}
+      transition={{ duration: 1.5 }}
       id="work"
-      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-10 md:gap-20 "
+      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-10 md:gap-20 py-40"
     >
       <motion.h2
         initial={{ y: 50 }}
         animate={{ y: 0 }}
-        transition={{ duration: 1.5, delay: 2 }}
+        transition={{ duration: 1.5 }}
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
         text-center underline decoration-blue max-w-md md:max-w-xl mx-auto"
       >
@@ -52,13 +52,6 @@ function Projects() {
           );
         })}
       </div>
-
-      <button
-        className="mx-auto text-xl px-8 py-3 w-fit 
-      font-semibold border-2 border-gray-800 bg-[#000] hover:bg-gray-800 transition-all rounded-full"
-      >
-        Veja mais projetos
-      </button>
     </motion.div>
   );
 }

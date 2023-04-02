@@ -10,7 +10,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className=" h-fit max-w-7xl flex max-lg:flex-col justify-center mx-auto items-center lg:gap-20 w-full"
+      className="h-[80vh] min-h-fit max-w-7xl flex max-lg:flex-col justify-center mx-auto items-center lg:gap-20 w-full"
     >
       <motion.img
         initial={{ opacity: 0, x: -100 }}

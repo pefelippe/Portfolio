@@ -1,30 +1,3 @@
-// import {
-//   backend,
-//   carrent,
-//   creator,
-//   css,
-//   docker,
-//   figma,
-//   git,
-//   html,
-//   javascript,
-//   jobit,
-//   meta,
-//   mobile,
-//   mongodb,
-//   nodejs,
-//   reactjs,
-//   redux,
-//   shopify,
-//   starbucks,
-//   tailwind,
-//   tesla,
-//   threejs,
-//   tripguide,
-//   typescript,
-//   web,
-// } from "../../public/assets";
-
 export const projects = [
   {
     id: 1,

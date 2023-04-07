@@ -9,18 +9,20 @@ import SocialLinks from "./SocialLinks";
 type Props = {};
 
 function HamburgerMenu({}: Props) {
-  const [active, setActive] = useState<String>();
+  const [active, setActive] = useState<String>("Home");
   const [toggle, setToggle] = useState<Boolean>(false);
   return (
     <>
-      <div className="w-full pl-10 justify-between max-md:hidden text-xl  items-center text-white  list-none flex  divider-x ">
-        <div className="flex gap-8">
+      <div className="w-full pl-10 max-md:hidden list-none text-xl justify-end items-center  text-white flex ">
+        <div className="flex gap-8 items-center">
           {navLinks.map((navLink) => {
             return (
               <li
                 key={navLink.id}
-                className={`py-4 ${
-                  active === navLink.title ? "text-white" : "text-secondary"
+                className={` py-3  ${
+                  active === navLink.title
+                    ? "bg-blue hover:text-white rounded-sm"
+                    : " text-secondary hover:text-blue"
                 }`}
                 onClick={() => {
                   setToggle(!toggle);
@@ -28,7 +30,7 @@ function HamburgerMenu({}: Props) {
                 }}
               >
                 <Link
-                  className=" px-full rounded-full hover:underline "
+                  className="px-8 py-3 rounded-full hover:underline cursor-pointer"
                   href={`${navLink.id}`}
                 >
                   {navLink.title}
@@ -37,7 +39,6 @@ function HamburgerMenu({}: Props) {
             );
           })}
         </div>
-        <SocialLinks />
       </div>
 
       <div className="md:hidden flex flex-1 justify-end items-center w-full">

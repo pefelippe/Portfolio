@@ -39,7 +39,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="w-full h-full  object-cover hover:scale-105 ease-in-out transition-all"
+          className="w-full h-full  object-cover hover:scale-105 ease-in-out transition-all max-h-[400px]"
         />
       </Link>
 

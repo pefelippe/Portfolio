@@ -1,6 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import React from "react";
 
 type Props = {};
 
@@ -10,7 +10,7 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="py-10 mx-auto w-full max-x-5xl flex flex-col justify-center items-center text-white gap-6 text-xl"
+      className="pb-40 mx-auto w-full max-x-5xl flex flex-col justify-center items-center text-white gap-6 text-xl"
     >
       <motion.h2
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold text-white

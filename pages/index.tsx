@@ -6,7 +6,7 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="w-screen py-20 max-md:px-6  mx-auto space-y-20 lg:space-y-36  ">
+    <div className="w-screen pt-20 max-md:px-6  mx-auto space-y-20 lg:space-y-40  ">
       <Hero />
       <Skills />
       {/* <Experience /> */}

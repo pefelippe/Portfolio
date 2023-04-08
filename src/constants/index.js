@@ -90,7 +90,7 @@ export const technologies = [
   {
     name: "Git",
     description:
-      "Sistema de controle de versão distribuído para gerenciamento de código fonte",
+      "Sistema de controle de versão",
     imgUrl: "/assets/tech/git.png",
   },
   {

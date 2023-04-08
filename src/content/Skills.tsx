@@ -1,96 +1,43 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
-import {
-  SiAmazonaws,
-  SiDocker,
-  SiGit,
-  SiJavascript,
-  SiMongodb,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiReact,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
 
 import SkillBox from "../components/SkillBox";
-import Image from "next/image";
+import { technologies } from "../constants";
 
 type Props = {};
 
 function Skills({}: Props) {
   return (
-    <div className="w-full mx-auto max-w-7xl flex flex-col justify-center  items-center text-white gap-10 md:gap-16">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 1 }}
-        className=" gap-16 grid w-fit grid-cols-9 max-lg:grid-cols-3 "
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2, delay: 1 }}
+      className="max-w-5xl w-full gap-10  flex max-lg:flex-col justify-between  lg:gap-20 items-center text-white lg:mx-auto"
+    >
+      <motion.h2
+        initial={{ y: 50 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1.5 }}
+        className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
+        underline decoration-blue  max-w-sm w-fit mx-auto text-center"
       >
-        <SkillBox title="Git">
-          <Image width="70" height="70" src="/assets/tech/git.png" alt="git" />
-        </SkillBox>
-        <SkillBox title="Javascript">
-          <Image
-            width="70"
-            height="70"
-            src="/assets/tech/javascript.png"
-            alt="javascript"
-          />
-        </SkillBox>
-        <SkillBox title="React">
-          <Image
-            width="70"
-            height="70"
-            src="/assets/tech/reactjs.png"
-            alt="react"
-          />
-        </SkillBox>
-        <SkillBox title="Node">
-          <Image
-            width="70"
-            height="70"
-            src="/assets/tech/nodejs.png"
-            alt="nodejs"
-          />
-        </SkillBox>
-        <SkillBox title="Typescript">
-          <Image
-            width="70"
-            height="70"
-            src="/assets/tech/typescript.png"
-            alt="typescript"
-          />
-        </SkillBox>
-        <SkillBox title="CSS">
-          <Image width="70" height="70" src="/assets/tech/css.png" alt="css" />
-        </SkillBox>
-        <SkillBox title="Docker">
-          <Image
-            width="70"
-            height="70"
-            src="/assets/tech/docker.png"
-            alt="docker"
-          />
-        </SkillBox>
-        <SkillBox title="Tailwind">
-          <Image
-            width="70"
-            height="70"
-            src="/assets/tech/tailwind.png"
-            alt="tailwind"
-          />
-        </SkillBox>
-        <SkillBox title="mongodb">
-          <Image
-            width="70"
-            height="70"
-            src="/assets/tech/mongodb.png"
-            alt="mongodb"
-          />
-        </SkillBox>
+        Tecnologias e ferramentas
+      </motion.h2>
+      <motion.div className="gap-10 md:gap-20 grid w-fit grid-cols-4 max-lg:grid-cols-3">
+        {technologies.map((tech) => {
+          return (
+            <SkillBox
+              title={tech.name}
+              description={tech.description}
+              key={tech.name}
+            >
+              <Image width={80} height={80} src={tech.imgUrl} alt={tech.name} />
+            </SkillBox>
+          );
+        })}
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -31,7 +31,7 @@ function Projects() {
         animate={{ y: 0 }}
         transition={{ duration: 1.5 }}
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
-        text-center underline decoration-blue max-w-md md:max-w-xl mx-auto"
+        text-center underline decoration-blue  mx-auto"
       >
         Meus projetos mais recentes
       </motion.h2>

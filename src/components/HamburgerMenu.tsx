@@ -14,14 +14,14 @@ function HamburgerMenu({}: Props) {
   return (
     <>
       <div className="w-full pl-10 max-md:hidden list-none text-xl justify-end items-center  text-white flex ">
-        <div className="flex gap-8 items-center">
+        <div className="flex items-center">
           {navLinks.map((navLink) => {
             return (
               <li
                 key={navLink.id}
                 className={` py-3  ${
                   active === navLink.title
-                    ? "bg-blue hover:text-white rounded-sm"
+                    ? "bg-blue hover:text-white rounded-full"
                     : " text-secondary hover:text-blue"
                 }`}
                 onClick={() => {

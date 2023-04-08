@@ -4,19 +4,6 @@ import React from "react";
 import ProjectCard from "../../src/components/ProjectCard";
 import { projects } from "../../src/constants";
 
-interface ProjectCard {
-  id: number;
-  description: string;
-  imgUrl: string;
-  link: string;
-  title: string;
-  repo: string;
-}
-
-type ProjectsType = {
-  projects?: ProjectCard[];
-};
-
 function Projects() {
   return (
     <motion.div
@@ -33,25 +20,8 @@ function Projects() {
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
         text-center underline decoration-blue max-w-md md:max-w-xl mx-auto"
       >
-        Meus projetos mais recentes
+        Meus projetos
       </motion.h2>
-
-      <div className="mx-auto w-full grid gap-20 md:gap-32 grid-cols-1 ">
-        {projects?.map((proj) => {
-          return (
-            <ProjectCard
-              key={proj.id}
-              id={proj.id}
-              description={proj.description}
-              imgUrl={proj.imgUrl}
-              link={proj.link}
-              title={proj.title}
-              repo={proj.repo}
-              stack={proj.stack}
-            />
-          );
-        })}
-      </div>
     </motion.div>
   );
 }

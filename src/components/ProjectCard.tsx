@@ -29,23 +29,23 @@ function ProjectCard({
       initial={{ opacity: 0, x: findX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
-      className="flex max-lg:flex-col w-full max-w-7xl justify-center lg:gap-10  mx-auto gap-2 "
+      className="flex max-lg:flex-col w-full  justify-between  mx-auto gap-2 "
     >
       <Link
         href={link}
         className="transition-all rounded-2xl border-2 border-[#303030] hover:border-[#505050]
-        overflow-hidden min-h-[400px] max-lg:min-h-[350px] max-md:min-h-[250px] w-full max-w-xl mx-auto"
+        overflow-hidden h-[330px] max-lg:h-[250px] w-full max-w-lg mx-auto "
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="w-full h-full  object-cover hover:scale-105 ease-in-out transition-all max-h-[400px]"
+          className="w-full h-full  object-cover hover:scale-105 ease-in-out transition-all "
         />
       </Link>
 
       <div
-        className="h-full text-[#fff] flex mx-auto
-      w-full justify-center items-start flex-col gap-2 rounded-b-2xl max-w-xl "
+        className="h-full max-lg:h-fit text-[#fff] flex mx-auto
+       justify-center items-start flex-col gap-2 rounded-b-2xl max-w-xl w-fit"
       >
         <div className="flex w-full justify-start  gap-2">
           <a
@@ -57,11 +57,11 @@ function ProjectCard({
             {title}
           </a>
         </div>
-        <p className="w-fit text-[1.5rem] text-gray-300 max-w-md">
+        <p className="w-fit text-normal md:text-[1.5rem] text-gray-300 max-w-md">
           {description}
         </p>
 
-        <div className="flex max-sm:flex-col w-full max-md:justify-center items-center gap-4 pt-4 ">
+        <div className="flex max-sm:flex-col w-full max-md:justify-center items-center gap-4 pt-2">
           <Link
             href={`/projects/${id}`}
             className="flex gap-2 p-3 px-6 items-center w-fit text-[1.5rem] justify-center max-sm:w-full

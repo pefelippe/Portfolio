@@ -10,7 +10,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="min-h-fit max-w-5xl flex max-lg:flex-col justify-center items-center gap-4 md:gap-16  w-full mx-auto"
+      className="min-h-fit max-w-5xl flex max-lg:flex-col justify-center items-center gap-4 lg:gap-16  w-full mx-auto"
     >
       <motion.img
         initial={{ opacity: 0, x: -50 }}
@@ -25,17 +25,17 @@ export default function About({}: Props) {
         animate={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: 50 }}
         transition={{ duration: 2 }}
-        className="text-white  flex flex-col text-3xl text-start max-lg:text-center  "
+        className="text-white  flex flex-col text-3xl text-start max-lg:text-center  mx-auto"
       >
-        <h2 className="text-[2.4rem] md:text-[3.3rem]  lg:text-[3.5rem] leading-normal font-bold ">
-          <div className="flex w-full max-lg:justify-center max-w-sm lg:max-w-xl">
+        <h2 className="text-[2.4rem] md:text-[3.3rem]  lg:text-[3.5rem] leading-normal font-bold max-w-sm lg:max-w-xl mx-auto">
+          <div className="flex w-full max-lg:justify-center ">
             <p>Olá!</p>
             <span className="animate-bounce">👋</span>
           </div>
           Eu sou <span className="text-blue ">Pedro Felippe</span>
         </h2>
 
-        <p className="text-[1.2rem] lg:text-[1.8rem] text-gray-300 pt-2 max-w-sm lg:max-w-xl ">
+        <p className="text-[1.2rem] lg:text-[1.8rem] text-gray-300 pt-2 max-w-sm lg:max-w-xl mx-auto">
           Sou um Web Developer, amante de filmes e fascinado por tecnologia.
         </p>
         <div className="w-full flex  max-md:flex-col gap-4 pt-8  text-2xl font-medium max-lg:mx-auto">

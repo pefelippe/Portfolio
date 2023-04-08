@@ -54,13 +54,17 @@ function Experience({}: Props) {
   ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
-      className="mx-auto w-full flex flex-col   "
-    >
-      <ContentTitle title="Experiência" />
+    <motion.div className="mx-auto max-w-5xl w-full flex flex-col  justify-between ">
+      <div> </div>
+      <motion.h2
+        initial={{ y: 50 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1.5 }}
+        className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold text-white
+        underline decoration-blue  max-w-sm w-fit mx-auto text-center"
+      >
+        Experiência
+      </motion.h2>
     </motion.div>
   );
 }

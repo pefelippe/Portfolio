@@ -24,7 +24,7 @@ function Skills({}: Props) {
       >
         Tecnologias e ferramentas
       </motion.h2>
-      <motion.div className="gap-10 md:gap-20 grid w-fit grid-cols-4 max-lg:grid-cols-3">
+      <motion.div className="gap-10 md:gap-20 grid w-fit grid-cols-4 max-md:grid-cols-3">
         {technologies.map((tech) => {
           return (
             <SkillBox

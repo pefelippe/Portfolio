@@ -18,7 +18,7 @@ export default function About({}: Props) {
         transition={{ duration: 2 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="relative object-cover  rounded-md max-lg:h-[180px] max-lg:rounded-full lg:h-[300px] xl:h-[400px] w-fit max-w-xl"
+        className="relative object-cover max-lg:hidden  rounded-md max-lg:h-[180px] max-lg:rounded-full lg:h-[300px] xl:h-[400px] w-fit max-w-xl"
       />
 
       <motion.div
@@ -27,7 +27,7 @@ export default function About({}: Props) {
         transition={{ duration: 2 }}
         className="text-white  flex flex-col text-3xl text-start max-lg:text-center  mx-auto"
       >
-        <h2 className="text-[2.4rem] md:text-[3.3rem]  lg:text-[3.5rem] leading-normal font-bold max-w-sm lg:max-w-xl mx-auto">
+        <h2 className="text-[3.5rem] leading-normal font-bold max-w-sm lg:max-w-xl mx-auto">
           <div className="flex w-full max-lg:justify-center ">
             <p>Olá!</p>
             <span className="animate-bounce">👋</span>
@@ -35,7 +35,7 @@ export default function About({}: Props) {
           Eu sou <span className="text-blue ">Pedro Felippe</span>
         </h2>
 
-        <p className="text-[1.2rem] lg:text-[1.8rem] text-gray-300 pt-2 max-w-sm lg:max-w-xl mx-auto">
+        <p className="text-[1.5rem] lg:text-[2rem] text-gray-300 pt-2 max-w-sm lg:max-w-xl mx-auto">
           Sou um Web Developer, amante de filmes e fascinado por tecnologia.
         </p>
         <div className="w-full flex  max-md:flex-col gap-4 pt-8  text-2xl font-medium max-lg:mx-auto">

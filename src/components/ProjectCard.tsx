@@ -29,7 +29,7 @@ function ProjectCard({
       initial={{ opacity: 0, x: findX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
-      className="flex max-lg:flex-col w-full  justify-between  mx-auto gap-2 "
+      className="flex max-lg:flex-col w-full  justify-between  mx-auto gap-4 "
     >
       <Link
         href={link}
@@ -45,9 +45,9 @@ function ProjectCard({
 
       <div
         className="h-full max-lg:h-fit text-[#fff] flex mx-auto
-       justify-center items-start flex-col gap-2 rounded-b-2xl max-w-xl w-fit"
+       justify-center items-start flex-col gap-4 rounded-b-2xl max-w-xl w-fit max-lg:text-center"
       >
-        <div className="flex w-full justify-start  gap-2">
+        <div className="flex w-full justify-start max-lg:justify-center gap-2">
           <a
             href={link}
             target="_blank"
@@ -57,14 +57,14 @@ function ProjectCard({
             {title}
           </a>
         </div>
-        <p className="w-fit text-normal md:text-[1.5rem] text-gray-300 max-w-md">
+        <p className="w-fit text-[1.5rem] text-gray-300 max-w-md">
           {description}
         </p>
 
-        <div className="flex max-sm:flex-col w-full max-md:justify-center items-center gap-4 pt-2">
+        <div className="flex max-sm:flex-col w-full max-md:justify-center items-center gap-4 pt-2 max-lg:px-8">
           <Link
             href={`/projects/${id}`}
-            className="flex gap-2 p-3 px-6 items-center w-fit text-[1.5rem] justify-center max-sm:w-full
+            className="flex gap-2 p-3 px-6 items-center  text-[1.5rem] justify-center w-full
              font-semibold hover:underline text-white bg-blue rounded-lg transition-all "
             rel="noreferrer"
           >
@@ -73,7 +73,7 @@ function ProjectCard({
           <Link
             href={repo}
             target="_blank"
-            className="flex gap-3 p-3 px-6 items-center w-fit text-[1.5rem] justify-center max-sm:w-full
+            className="flex gap-3 p-3 px-6 items-center text-[1.5rem] justify-center w-full
              font-semibold hover:underline text-white bg-black rounded-lg transition-all border-2 border-blue"
             rel="noreferrer"
           >

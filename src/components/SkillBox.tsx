@@ -15,10 +15,10 @@ const SkillBox = ({ title, description, children }: ISkillBox) => {
         transition: { duration: 0.1 },
       }}
       className="flex flex-col justify-center items-center text-center mx-auto w-full rounded-md
-       transition-all ease-in-out space-y-3  max-w-[100px]
+       transition-all ease-in-out space-y-3  max-w-[100px] z-50
        text-white  "
     >
-      <div className="group ">
+      <div className="group z-50">
         <div className="">{children}</div>
         <span className="z-50 absolute top-20 right-0 left-0 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 w-[90px] gap-2">
           <p className="font-medium pb-2 text-normal">{title}</p>

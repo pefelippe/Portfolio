@@ -10,15 +10,12 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2, delay: 1 }}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 1.75 }}
       className="max-w-5xl w-full gap-10  flex max-lg:flex-col justify-between  lg:gap-20 items-center text-white lg:mx-auto"
     >
       <motion.h2
-        initial={{ y: 50 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1.5 }}
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
         underline decoration-blue  max-w-sm w-fit mx-auto text-center"
       >

@@ -24,7 +24,7 @@ function Projects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-10 md:gap-20 py-40"
+      className="h-fit  relative  text-white flex flex-col  rounded-md text-black gap-10 md:gap-20 py-40 max-lg:px-8"
     >
       <motion.h2
         initial={{ y: 50 }}

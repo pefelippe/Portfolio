@@ -19,11 +19,11 @@ function HamburgerMenu({}: Props) {
             return (
               <li
                 key={navLink.id}
-                className={` py-3  ${
-                  active === navLink.title
-                    ? "bg-blue hover:text-white rounded-full"
-                    : " text-secondary hover:text-blue"
-                }`}
+                // className={` py-3  ${
+                //   active === navLink.title
+                //     ? "bg-blue hover:text-white rounded-full"
+                //     : " text-secondary hover:text-blue"
+                // }`}
                 onClick={() => {
                   setToggle(!toggle);
                   setActive(navLink.title);

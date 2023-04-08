@@ -6,11 +6,13 @@ type Props = {};
 
 function CallToContact({}: Props) {
   return (
-    <div className="py-10 mx-auto w-full max-x-5xl flex flex-col justify-center items-center text-white gap-6 text-xl">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="py-10 mx-auto w-full max-x-5xl flex flex-col justify-center items-center text-white gap-6 text-xl"
+    >
       <motion.h2
-        initial={{ y: 50 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1.5 }}
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold text-white
   underline decoration-blue max-w-lg w-fit mx-auto text-center"
       >
@@ -23,7 +25,7 @@ function CallToContact({}: Props) {
       >
         Entre em contato
       </Link>
-    </div>
+    </motion.div>
   );
 }
 

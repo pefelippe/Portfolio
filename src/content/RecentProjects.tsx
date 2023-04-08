@@ -28,9 +28,6 @@ function RecentProjects() {
        text-black gap-10 md:gap-20  max-w-5xl"
     >
       <motion.h2
-        initial={{ y: 50 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1.5 }}
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
         text-center underline decoration-blue max-w-md md:max-w-xl mx-auto z-40"
       >

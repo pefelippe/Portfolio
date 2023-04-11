@@ -16,7 +16,7 @@ const SkillBox = ({ title, description, children }: ISkillBox) => {
       }}
       className="flex flex-col justify-center items-center text-center mx-auto w-full rounded-md
        transition-all ease-in-out space-y-3  max-w-[100px] 
-       text-white "
+       text-white"
     >
       <div className="group">
         <div className="">{children}</div>

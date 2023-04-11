@@ -25,11 +25,11 @@ function RecentProjects() {
       transition={{ duration: 1.5 }}
       id="work"
       className="h-full relative  text-white flex flex-col mx-auto  rounded-md
-       text-black gap-10 md:gap-20  max-w-5xl"
+       text-black gap-10 md:gap-20  max-w-5xl "
     >
       <motion.h2
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
-        text-center underline decoration-blue max-w-md md:max-w-xl mx-auto z-40"
+        text-center underline decoration-blue max-w-md md:max-w-xl mx-auto z-30"
       >
         Projetos mais recentes
       </motion.h2>

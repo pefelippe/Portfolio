@@ -30,11 +30,6 @@ export const navLinks = [
     id: "projects",
     title: "Projetos",
   },
-
-  {
-    id: "contact",
-    title: "Contato",
-  },
 ];
 
 export const technologies = [
@@ -89,8 +84,7 @@ export const technologies = [
   },
   {
     name: "Git",
-    description:
-      "Sistema de controle de versão",
+    description: "Sistema de controle de versão",
     imgUrl: "/assets/tech/git.png",
   },
   {

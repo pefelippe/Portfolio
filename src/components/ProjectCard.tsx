@@ -29,12 +29,12 @@ function ProjectCard({
       initial={{ opacity: 0, x: findX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
-      className="flex max-lg:flex-col w-full  justify-between  mx-auto gap-4 "
+      className="flex max-lg:flex-col w-full  justify-between  mx-auto gap-2 xl:gap-10 px-10"
     >
       <Link
         href={link}
         className="transition-all rounded-2xl border-2 border-[#303030] hover:border-[#505050]
-        overflow-hidden h-[330px] max-lg:h-[250px] w-full max-w-lg mx-auto "
+        overflow-hidden h-[330px] max-lg:h-[250px] w-full max-w-lg mx-auto  "
       >
         <motion.img
           src={imgUrl}
@@ -51,20 +51,20 @@ function ProjectCard({
           <a
             href={link}
             target="_blank"
-            className="flex gap-2 items-center w-fit text-[2rem] font-bold  hover:text-gray-500 underline"
+            className="flex gap-2 items-center w-fit text-[2.2rem] font-bold  hover:text-gray-500 underline"
             rel="noreferrer"
           >
             {title}
           </a>
         </div>
-        <p className="w-fit text-[1.5rem] text-gray-300 max-w-md">
+        <p className="w-fit text-[1.3rem] text-gray-300 max-w-md">
           {description}
         </p>
 
         <div className="flex max-sm:flex-col w-full max-md:justify-center items-center gap-4 pt-2 max-lg:px-8">
           <Link
             href={`/projects/${id}`}
-            className="flex gap-2 p-3 px-6 items-center  text-[1.5rem] justify-center w-full
+            className="flex gap-2 p-3 px-6 items-center  text-[1.5rem] justify-center w-full min-w-fit
              font-semibold hover:underline text-white bg-blue rounded-lg transition-all "
             rel="noreferrer"
           >

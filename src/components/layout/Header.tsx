@@ -19,7 +19,7 @@ const Navbar = () => {
         <motion.img
           alt="avatar-pefelippe"
           src="assets/caneca.jpg"
-          className="relative object-cover rounded h-[50px] w-[50px]"
+          className="relative object-cover rounded h-[50px] w-[50px] z-50"
         />
       </Link>
 

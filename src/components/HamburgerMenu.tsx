@@ -47,17 +47,17 @@ function HamburgerMenu({}: Props) {
           alt="menu"
           width="100"
           height="100"
-          className="w-[28px] h-[28px] object-contain cursor-pointer z-50  top-10 right-10"
+          className={`${toggle ? 'absolute' : ''} w-[28px] h-[28px] object-contain cursor-pointer z-50  top-8 right-10`}
           onClick={() => setToggle(!toggle)}
         />
         <div
           className={`${
             !toggle ? "hidden" : "flex flex-col"
-          }  black-gradient absolute 
-             text-xl right-0 items-center top-0 h-screen min-h-fit text-center max-w-[80vw] w-[350px] z-40 mx-auto 
-              text-white bg-[#101010]  transition-all  gap-10`}
+          }  black-gradient absolute py-50 z-40
+             text-xl right-0 items-center top-0 h-[50vh] min-h-fit text-center w-screen mx-auto 
+              text-white bg-[#101010] transition-all  gap-10`}
         >
-          <ul className="mx-auto items-center  rounded-b-md justify-center list-none flex  flex-col gap-5 pt-40">
+          <ul className="mx-auto items-center  rounded-b-md justify-center list-none flex  flex-col gap-8 pt-40">
             {navLinks.map((navLink) => {
               return (
                 <li

@@ -6,10 +6,9 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="w-screen pt-20 max-md:px-6  mx-auto space-y-20 lg:space-y-40  ">
+    <div className="w-screen h-fit max-md:px-6  mx-auto ">
       <Hero />
-      <Skills />
-      {/* <Experience /> */}
+      {/* <Skills /> */}
       <RecentProjects />
       <CallToContact />
     </div>

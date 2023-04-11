@@ -1,30 +1,32 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import React from "react";
+
+import MessageForm from "../components/MessageForm";
 
 type Props = {};
 
 function CallToContact({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      className="pb-40 mx-auto w-full max-x-5xl flex flex-col justify-center items-center text-white gap-6 text-xl"
+      transition={{ duration: 1.5 }}
+      className="min-h-fit py-40 max-w-7xl mx-auto text-white w-full text-xl max-lg:px-8 
+      flex flex-col justify-between gap-6  items-center text-center"
     >
-      <motion.h2
-        className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold text-white
-  underline decoration-blue max-w-lg w-fit mx-auto text-center"
-      >
-        Pronto para começar uma parceria?
-      </motion.h2>
+      <div className="flex flex-col gap-4 w-fit">
+        <p
+          className=" text-[2.5rem] lg:text-[3rem] leading-tight font-semibold dark:text-white text-white text-center
+          mx-auto underline decoration-[#5865f2]"
+        >
+          Tem alguma ideia em mente?
+        </p>
+        <p className=" text-[1.5rem] font-medium text-gray-300 mx-auto">
+          Manda uma <b className="text-white ">mensagem</b>!
+        </p>
+      </div>
 
-      <Link
-        href="/contact"
-        className=" text-center w-fit font-bold text-2xl bg-blue hover:bg-blue/80 max-w-[300px] py-4 px-8 rounded-md max-md:w-full hover:underline  transition-all"
-      >
-        Entre em contato
-      </Link>
+      <MessageForm name={""} email={""} subject={""} message={""} />
     </motion.div>
   );
 }

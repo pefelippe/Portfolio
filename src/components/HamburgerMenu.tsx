@@ -13,8 +13,8 @@ function HamburgerMenu({}: Props) {
   const [toggle, setToggle] = useState<Boolean>(false);
   return (
     <>
-      <div className="w-full pl-10 max-md:hidden list-none text-xl justify-end items-center  text-white flex ">
-        <div className="flex items-center">
+      <div className="w-full max-md:hidden list-none text-xl  items-center  text-white flex justify-between">
+        <div className="flex items-center gap-8">
           {navLinks.map((navLink) => {
             return (
               <li
@@ -30,7 +30,7 @@ function HamburgerMenu({}: Props) {
                 }}
               >
                 <Link
-                  className="px-8 py-3 rounded-full hover:underline cursor-pointer"
+                  className="py-3 rounded-full hover:underline cursor-pointer"
                   href={`${navLink.id}`}
                 >
                   {navLink.title}
@@ -39,37 +39,40 @@ function HamburgerMenu({}: Props) {
             );
           })}
         </div>
+        <SocialLinks />
       </div>
 
-      <div className="md:hidden flex flex-1 justify-end items-center w-full">
+      <div className="md:hidden flex flex-1 justify-end items-center w-full ">
         <Image
           src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
           alt="menu"
           width="100"
           height="100"
-          className={`${toggle ? 'absolute' : ''} w-[28px] h-[28px] object-contain cursor-pointer z-50  top-8 right-10`}
+          className={`${
+            toggle ? "absolute" : ""
+          } w-[28px] h-[28px] object-contain cursor-pointer z-50  top-8 right-10`}
           onClick={() => setToggle(!toggle)}
         />
         <div
           className={`${
             !toggle ? "hidden" : "flex flex-col"
-          }  black-gradient absolute py-50 z-40
-             text-xl right-0 items-center top-0 h-[50vh] min-h-fit text-center w-screen mx-auto 
-              text-white bg-[#101010] transition-all  gap-10`}
+          }  black-gradient absolute  z-40 pt-32 pb-20
+             text-xl right-0 items-center top-0 min-h-fit text-center w-screen mx-auto 
+              text-white bg-[#121212] transition-all `}
         >
-          <ul className="mx-auto items-center  rounded-b-md justify-center list-none flex  flex-col gap-8 pt-40">
+          <ul className="mx-auto items-center  rounded-b-md justify-center list-none flex flex-col pb-20">
             {navLinks.map((navLink) => {
               return (
                 <li
                   key={navLink.id}
-                  className="py-4 w-[80vw] max-w-[300px] rounded-md transition-all text-white bg-blue hover:bg-blue/90"
+                  className="py-4 px-4 w-[80vw] rounded-md transition-all text-white hover:bg-blue/90"
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(navLink.title);
                   }}
                 >
                   <Link
-                    className="w-full flex justify-between px-4 items-center text-2xl   "
+                    className="w-full flex justify-start gap-4  items-center text-5xl   "
                     href={`${navLink.id}`}
                   >
                     {navLink.title}
@@ -79,6 +82,7 @@ function HamburgerMenu({}: Props) {
               );
             })}
           </ul>
+          <SocialLinks />
         </div>
       </div>
     </>

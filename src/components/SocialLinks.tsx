@@ -7,11 +7,10 @@ type Props = {};
 
 export default function SocialLinks({}: Props) {
   return (
-    <div className="flex  w-fit gap-10 justify-start text-white items-center text-xl text-black max-w-xl">
+    <div className="flex  w-fit gap-10 justify-start items-center text-xl text-black max-w-xl">
       <AnimatedBtn className="" href="https://github.com/pefelippe">
         <div
-          className=" flex gap-3 items-center w-full 
-         font-semibold transition-all hover:text-[#5865f2]"
+          className=" flex gap-3 items-center w-full font-semibold transition-all hover:text-[#5865f2]"
         >
           <FaGithub className="h-8 w-8" />
         </div>

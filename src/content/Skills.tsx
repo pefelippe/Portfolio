@@ -13,11 +13,11 @@ function Skills({}: Props) {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 1.75 }}
-      className="max-w-5xl w-full gap-10  flex max-lg:flex-col justify-between  lg:gap-20 items-center text-white lg:mx-auto"
+      className="max-w-7xl w-full gap-10  flex max-lg:flex-col justify-center  lg:gap-20 items-center text-white lg:mx-auto"
     >
       <motion.h2
         className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
-        underline decoration-blue  max-w-sm w-fit mx-auto text-center"
+        underline decoration-blue  max-w-sm w-fit  text-center"
       >
         Tecnologias e ferramentas
       </motion.h2>

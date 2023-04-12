@@ -47,7 +47,7 @@ export default function MessageForm({}: Inputs) {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" flex flex-col gap-6 w-full  max-w-xl "
+        className=" flex flex-col gap-6 w-full  max-w-[500px] "
       >
         <input
           {...register("name", { required: true, maxLength: 50 })}

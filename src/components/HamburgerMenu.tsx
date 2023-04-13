@@ -14,6 +14,7 @@ function HamburgerMenu({}: Props) {
   return (
     <>
       <div className="w-full max-md:hidden list-none text-xl  items-center  text-white flex justify-between">
+        <Link href="/" className="text-3xl font-bold underline decoration-blue ">Pedro Felippe</Link>
         <div className="flex items-center gap-8">
           {navLinks.map((navLink) => {
             return (
@@ -43,6 +44,8 @@ function HamburgerMenu({}: Props) {
       </div>
 
       <div className="md:hidden flex flex-1 justify-end items-center w-full ">
+        <p className="text-2xl ">Pedro Felippe</p>
+
         <Image
           src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
           alt="menu"
@@ -65,14 +68,15 @@ function HamburgerMenu({}: Props) {
               return (
                 <li
                   key={navLink.id}
-                  className="py-4 px-4 w-[80vw] rounded-md transition-all text-white hover:bg-blue/90"
+                  className="py-4 px-4 w-[80vw] rounded-md transition-all text-white"
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(navLink.title);
                   }}
                 >
                   <Link
-                    className="w-full flex justify-start gap-4  items-center text-5xl   "
+                    className="w-full flex  gap-4  items-center justify-between text-4xl  p-4
+                     rounded-md bg-blue hover:bg-blue/90 "
                     href={`${navLink.id}`}
                   >
                     {navLink.title}

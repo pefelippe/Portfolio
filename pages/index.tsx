@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="w-screen h-fit max-md:px-6  mx-auto space-y-20 md:space-y-40 py-20 lg:py-40">
       <Hero />
-      <Skills />
+      {/* <Skills /> */}
       <RecentProjects />
-      <CallToContact />
+      {/* <CallToContact /> */}
     </div>
   );
 }

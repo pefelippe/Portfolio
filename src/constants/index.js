@@ -26,9 +26,17 @@ export const navLinks = [
     id: "/",
     title: "Home",
   },
+  // {
+  //   id: "quem",
+  //   title: "Quem Sou",
+  // },
+  // {
+  //   id: "projects",
+  //   title: "Projetos",
+  // },
   {
-    id: "projects",
-    title: "Projetos",
+    id: "contact",
+    title: "Contato",
   },
 ];
 

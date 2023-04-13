@@ -14,7 +14,9 @@ function HamburgerMenu({}: Props) {
   return (
     <>
       <div className="w-full max-md:hidden list-none text-xl  items-center  text-white flex justify-between">
-        <Link href="/" className="text-3xl font-bold underline decoration-blue ">Pedro Felippe</Link>
+        <Link href="/" className="text-[1.8rem] font-bold  ">
+          Pedro Felippe
+        </Link>
         <div className="flex items-center gap-8">
           {navLinks.map((navLink) => {
             return (

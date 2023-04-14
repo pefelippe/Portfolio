@@ -11,14 +11,11 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="min-h-fit max-w-7xl mx-auto text-white  text-xl max-lg:px-8 rounded-md
-      flex max-lg:flex-col justify-between gap-10 md:gap-20  items-center text-center bg-[#101010] md:p-20 p-10"
+      className="h-fit min-h-[90vh] xl:min-h-[75vh] max-w-7xl mx-auto text-white  text-xl max-lg:px-8 rounded-md 
+      flex max-lg:flex-col justify-between gap-10 md:gap-20  items-center text-center p-10"
     >
       <div className="flex flex-col gap-4 w-fit">
-        <p
-          className=" text-[2.5rem] lg:text-[4rem] leading-tight font-semibold dark:text-white text-white text-center 
-          mx-auto"
-        >
+        <p className=" text-[2.5rem] lg:text-[4rem] leading-tight font-semibold dark:text-white text-white text-center ">
           Tem alguma ideia em mente?
         </p>
         <p className=" text-[1.5rem] font-medium text-gray-300 ">

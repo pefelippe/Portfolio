@@ -11,8 +11,8 @@ function Projects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="min-h-fit h-[80vh] max-w-5xl mx-auto text-white w-full text-xl max-lg:px-8 
-      flex max-lg:flex-col justify-between gap-6 lg:gap-20 items-center text-center"
+      className="h-fit min-h-[80vh] max-w-5xl mx-auto text-white w-full text-xl max-lg:px-8 
+      flex flex-col justify-start gap-6 lg:gap-20 items-center text-center py-20"
     >
       <motion.h2
         initial={{ y: 50 }}
@@ -23,6 +23,23 @@ function Projects() {
       >
         Meus projetos
       </motion.h2>
+
+      <div className=" w-full grid gap-10  grid-cols-2 ">
+        {projects?.map((proj) => {
+          return (
+            <ProjectCard
+              key={proj.id}
+              id={proj.id}
+              description={proj.description}
+              imgUrl={proj.imgUrl}
+              link={proj.link}
+              title={proj.title}
+              repo={proj.repo}
+              stack={proj.stack}
+            />
+          );
+        })}
+      </div>
     </motion.div>
   );
 }

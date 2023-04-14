@@ -2,26 +2,57 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
 
-import { styles } from "../../../styles/styles";
+import { navLinks } from "../../constants";
 import SocialLinks from "../SocialLinks";
 import HamburgerMenu from "./../HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <motion.nav
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 2, delay: 1 }}
-      className={` font-semibold mx-auto w-full flex max-w-7xl max-xl:px-10 gap-8
-       items-center h-[10vh] top-0 z-20 bg-primary`}
-    >
-      <Link
-        href="/"
-        className="text-[1.8rem] font-bold  text-white min-w-fit underline decoration-blue "
+    <motion.nav className="font-semibold  px-8 text-white bg-[#181818]">
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="w-full  max-w-screen-2xl flex justify-between items-center mx-auto h-[10vh] xl:h-[15vh] "
       >
-        Pedro Felippe
-      </Link>
-      <HamburgerMenu />
+        <Link
+          href="/"
+          className="text-[1.6rem] xl:text-[1.8rem] font-semibold  text-white min-w-fit hover:text-gray-300 transition-all hover:underline "
+        >
+          Pedro Felippe
+        </Link>
+
+        <div className="max-md:hidden list-none text-gray-300 text-lg  flex items-center gap-8">
+          {navLinks.map((navLink) => {
+            return (
+              <li
+                key={navLink.id}
+                // className={` py-3  ${
+                //   active === navLink.title
+                //     ? "bg-blue hover:text-white rounded-full"
+                //     : " text-secondary hover:text-blue"
+                // }`}
+                // onClick={() => {
+                //   setToggle(!toggle);
+                //   setActive(navLink.title);
+                // }}
+              >
+                <Link
+                  className="py-3 rounded-full hover:underline cursor-pointer"
+                  href={`${navLink.id}`}
+                >
+                  {navLink.title}
+                </Link>
+              </li>
+            );
+          })}
+        </div>
+        <div className="max-md:hidden">
+          <SocialLinks />
+        </div>
+
+        <HamburgerMenu />
+      </motion.div>
     </motion.nav>
   );
 };

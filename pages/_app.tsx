@@ -14,9 +14,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
       className="
-        overflow-x-hidden overflow-y-scroll bg-[url('/assets/endless-constellation.svg')]
+        overflow-x-hidden overflow-y-scroll 
         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth 
-        h-screen min-w-[400px]   text-[#000] font-roboto min-h-fit"
+        h-screen min-w-[400px]    font-roboto min-h-fit  bg-[#141414]"
     >
       <Head>
         <title>Pedro Felippe</title>

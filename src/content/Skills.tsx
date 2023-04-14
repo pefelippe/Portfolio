@@ -10,18 +10,21 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 1.75 }}
-      className="max-w-7xl w-full gap-10  flex max-lg:flex-col justify-center  lg:gap-20 items-center text-white lg:mx-auto"
+      className="h-fit  max-w-7xl mx-auto text-white  text-xl max-lg:px-8 rounded-md 
+      flex max-lg:flex-col justify-between gap-10 md:gap-20  items-center text-center p-10 "
     >
-      <motion.h2
-        className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
-        underline decoration-blue  max-w-sm w-fit  text-center"
+      <p
+        className=" text-[2.5rem] lg:text-[4rem] leading-tight font-semibolde text-white text-center mx-auto
+         "
       >
-        Tecnologias e ferramentas
-      </motion.h2>
-      <motion.div className="gap-10 md:gap-20 grid w-fit grid-cols-4 max-md:grid-cols-3">
+        Minhas skills
+      </p>
+      <motion.div
+        initial={{ opacity: 0, x: 300 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
+        className="gap-10 xl:gap-16  grid w-fit grid-cols-3 md:grid-cols-4"
+      >
         {technologies.map((tech) => {
           return (
             <SkillBox

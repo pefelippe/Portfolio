@@ -13,38 +13,7 @@ function HamburgerMenu({}: Props) {
   const [toggle, setToggle] = useState<Boolean>(false);
   return (
     <>
-      <div className="w-full max-md:hidden list-none text-xl  items-center  text-white flex justify-between">
-        <div className="flex items-center gap-8">
-          {navLinks.map((navLink) => {
-            return (
-              <li
-                key={navLink.id}
-                // className={` py-3  ${
-                //   active === navLink.title
-                //     ? "bg-blue hover:text-white rounded-full"
-                //     : " text-secondary hover:text-blue"
-                // }`}
-                onClick={() => {
-                  setToggle(!toggle);
-                  setActive(navLink.title);
-                }}
-              >
-                <Link
-                  className="py-3 rounded-full hover:underline cursor-pointer"
-                  href={`${navLink.id}`}
-                >
-                  {navLink.title}
-                </Link>
-              </li>
-            );
-          })}
-        </div>
-        <SocialLinks />
-      </div>
-
       <div className="md:hidden flex flex-1 justify-end items-center w-full ">
-        <p className="text-2xl ">Pedro Felippe</p>
-
         <Image
           src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
           alt="menu"

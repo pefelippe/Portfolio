@@ -24,17 +24,16 @@ function RecentProjects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="h-full relative  text-white flex flex-col mx-auto  rounded-md
-       text-black gap-10 md:gap-20  max-w-5xl "
+      className="min-h-fit h-[75vh]  w-full flex flex-col mx-auto rounded-md  gap-10 max-w-7xl "
     >
       <motion.h2
-        className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
-        text-center underline decoration-blue max-w-md md:max-w-xl mx-auto z-30"
+        className="text-[2.5rem] leading-tight font-semibold 
+        max-w-md md:max-w-xl underline decoration-blue mx-auto"
       >
         Projetos mais recentes
       </motion.h2>
 
-      <div className="mx-auto w-full grid gap-20 md:gap-32 grid-cols-1 ">
+      <div className=" w-fit mx-auto grid gap-10  grid-cols-2 ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

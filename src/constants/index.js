@@ -22,22 +22,22 @@ export const projects = [
 ];
 
 export const navLinks = [
-  {
-    id: "/",
-    title: "Home",
-  },
   // {
-  //   id: "quem",
+  //   id: "about",
   //   title: "Quem Sou",
   // },
   // {
   //   id: "projects",
   //   title: "Projetos",
   // },
-  {
-    id: "contact",
-    title: "Contato",
-  },
+  // {
+  //   id: "blog",
+  //   title: "Blog",
+  // },
+  // {
+  //   id: "contact",
+  //   title: "Contato",
+  // },
 ];
 
 export const technologies = [

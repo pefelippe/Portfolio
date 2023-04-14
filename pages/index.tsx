@@ -6,17 +6,17 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="w-screen h-fit  mx-auto  text-white ">
+    <div className="w-screen h-fit mx-auto text-white bg-[#101010] pb-10">
       <section className="">
         <Hero />
       </section>
-      <section className="bg-[#fff] text-[#000]">
+      {/* <section className=" py-10">
         <Skills />
-      </section>
-      {/* <section className="  w-full mx-auto rounded-md py-10">
+      </section> */}
+      {/* <section className=" w-full  py-10">
         <RecentProjects />
       </section> */}
-      <section className="">
+      <section className="bg-[#101010]">
         <CallToContact />
       </section>
     </div>

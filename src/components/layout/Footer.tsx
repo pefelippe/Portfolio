@@ -11,19 +11,16 @@ function Footer({}: Props) {
   return (
     <footer
       className="w-full min-h-[10vh] py-10 flex justify-center items-center mx-auto text-lg max-xl:px-6 text-black 
-    text-white bg-[#2e3039] "
+    text-[#000] bg-[#fff] "
     >
-      <div className="w-full max-w-screen-2xl gap-8 flex items-center max-sm:flex-col justify-around">
-        {/* <div className="flex flex-col gap-10">
-          <Link
-            href="/"
-            className="text-[1.8rem] font-bold  text-white min-w-fit "
-          >
+      <div className="w-full max-w-screen-2xl gap-8 flex items-center max-sm:flex-col justify-center">
+        <div className="flex flex-col gap-10 items-center">
+          {/* <Link href="/" className="text-[1.8rem] font-bold min-w-fit ">
             Pedro Felippe
-          </Link>
-          <SocialLinks />
-        </div> */}
-        <span className="">Desenvolvido por Pedro Felippe. © {year}.</span>
+          </Link> */}
+          <span className="">Desenvolvido por Pedro Felippe. © {year}.</span>
+          {/* <SocialLinks /> */}
+        </div>
       </div>
     </footer>
   );

@@ -22,14 +22,14 @@ export const projects = [
 ];
 
 export const navLinks = [
-  // {
-  //   id: "about",
-  //   title: "Quem Sou",
-  // },
-  // {
-  //   id: "projects",
-  //   title: "Projetos",
-  // },
+  {
+    id: "about",
+    title: "Quem Sou",
+  },
+  {
+    id: "projects",
+    title: "Projetos",
+  },
   // {
   //   id: "blog",
   //   title: "Blog",

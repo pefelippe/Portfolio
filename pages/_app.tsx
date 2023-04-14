@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
       className="
         overflow-x-hidden overflow-y-scroll 
         scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth 
-        h-screen min-w-[400px]    font-roboto min-h-fit  bg-[#101010]"
+        h-screen min-w-[400px] font-roboto min-h-fit bg-[#fff] "
     >
       <Head>
         <title>Pedro Felippe</title>

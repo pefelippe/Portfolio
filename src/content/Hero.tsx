@@ -11,8 +11,8 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit min-h-[80vh] max-w-7xl flex max-lg:flex-col justify-center  items-center 
-      gap-4 lg:gap-16 xl:gap-20 w-full mx-auto max-xl:px-10 "
+      className="h-fit min-h-[60vh] max-w-7xl flex max-lg:flex-col justify-center  items-center 
+      gap-4 lg:gap-16 xl:gap-20 w-full mx-auto max-xl:px-10 py-10"
     >
       <motion.img
         initial={{ opacity: 0, x: -50 }}
@@ -28,7 +28,7 @@ export default function About({}: Props) {
         transition={{ duration: 2 }}
         className="flex flex-col text-3xl text-start max-lg:text-center gap-4 "
       >
-        <h2 className="text-[2.8rem] xl:text-[4.5rem] leading-normal font-bold ">
+        <h2 className="text-[3rem] xl:text-[4.5rem] leading-normal font-bold ">
           <div className="flex w-full max-lg:justify-center ">
             <p>Olá!</p>
             <span className="animate-bounce">👋</span>

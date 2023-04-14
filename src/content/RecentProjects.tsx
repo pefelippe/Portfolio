@@ -24,7 +24,7 @@ function RecentProjects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="min-h-fit h-[75vh]  w-full flex flex-col mx-auto rounded-md  gap-10 max-w-7xl "
+      className="h-fit min-h-[75vh]  w-full flex flex-col mx-auto rounded-md  gap-10 max-w-7xl "
     >
       <motion.h2
         className="text-[2.5rem] leading-tight font-semibold 
@@ -33,7 +33,7 @@ function RecentProjects() {
         Projetos mais recentes
       </motion.h2>
 
-      <div className=" w-fit mx-auto grid gap-10  grid-cols-2 ">
+      <div className=" w-fit mx-auto grid gap-10  grid-cols-1 ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

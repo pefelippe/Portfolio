@@ -10,11 +10,11 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <motion.div
-      className="h-fit  max-w-7xl mx-auto text-white  text-xl max-lg:px-8 rounded-md 
+      className="h-fit min-h-[60vh]  max-w-7xl mx-auto   text-xl max-lg:px-8 rounded-md 
       flex max-lg:flex-col justify-between gap-10 md:gap-20  items-center text-center p-10 "
     >
       <p
-        className=" text-[2.5rem] lg:text-[4rem] leading-tight font-semibolde text-white text-center mx-auto
+        className=" text-[2.5rem] lg:text-[4rem] leading-tight font-semibold  text-center mx-auto
          "
       >
         Minhas skills

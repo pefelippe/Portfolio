@@ -8,7 +8,7 @@ import HamburgerMenu from "./../HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <motion.nav className="font-semibold  px-8 text-white bg-[#181818]">
+    <motion.nav className="font-semibold  px-8 text-white bg-[#121212]">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ const Navbar = () => {
       >
         <Link
           href="/"
-          className="text-[1.6rem] xl:text-[1.8rem] font-semibold  text-white min-w-fit hover:text-gray-300 transition-all hover:underline "
+          className="text-[1.6rem] xl:text-[1.8rem] font-semibold min-w-fit hover:text-gray-300 transition-all hover:underline "
         >
           Pedro Felippe
         </Link>

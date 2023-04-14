@@ -10,7 +10,7 @@ export default function Home() {
       <section className="">
         <Hero />
       </section>
-      <section className="bg-[#161616]">
+      <section className="bg-[#fff] text-[#000]">
         <Skills />
       </section>
       {/* <section className="  w-full mx-auto rounded-md py-10">

@@ -9,16 +9,16 @@ export const projects = [
     description:
       "Meu primeiro portfolio pessoal, com objetivo de mostrar meus projetos, habilidades e um pouco mais sobre mim. ",
   },
-  {
-    id: 2,
-    link: "",
-    repo: "https://github.com/pefelippe/PomodoroTunes",
-    title: "Pomodoro-fi",
-    imgUrl: "assets/pomodorotunes.png",
-    stack: ["react", "tailwind", "next", "typescript"],
-    description:
-      "Nesse projeto tentei unir a tranquilidade do lo-fi com o poderoso método pomodoro.",
-  },
+  // {
+  //   id: 2,
+  //   link: "",
+  //   repo: "https://github.com/pefelippe/PomodoroTunes",
+  //   title: "Pomodoro-fi",
+  //   imgUrl: "assets/pomodorotunes.png",
+  //   stack: ["react", "tailwind", "next", "typescript"],
+  //   description:
+  //     "Nesse projeto tentei unir a tranquilidade do lo-fi com o poderoso método pomodoro.",
+  // },
 ];
 
 export const navLinks = [

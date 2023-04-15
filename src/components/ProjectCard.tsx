@@ -25,16 +25,11 @@ function ProjectCard({
   const findX = id % 2 !== 0 ? -100 : 100;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: findX }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1 }}
-      className="flex flex-col w-full  justify-between  mx-auto gap-2 bg-[#2e3039] p-6 rounded-xl max-w-[450px]"
-    >
+    <motion.div className="flex flex-col w-full justify-between  mx-auto gap-2 rounded-xl min-w-fit max-w-[550px] p-5 bg-[#efefef]">
       <Link
         href={link}
         className="transition-all rounded-2xl border-2 border-[#303030] hover:border-[#505050]
-        overflow-hidden max-w-md mx-auto h-full w-fit "
+        overflow-hidden w-full max-h-[300px]"
       >
         <motion.img
           src={imgUrl}
@@ -44,29 +39,18 @@ function ProjectCard({
       </Link>
 
       <div
-        className="max-lg:h-fit text-white flex 
-       justify-center items-center flex-col gap-4 rounded-b-2xl  w-fit max-lg:text-center px-2"
+        className="max-lg:h-fit text-[#000] flex 
+       justify-center items-center flex-col gap-4 rounded-b-2xl w-fit max-lg:text-center px-2"
       >
-        <div className="flex w-full justify-between items-center max-lg:justify-center gap-4">
-          <a
-            href={link}
-            target="_blank"
-            className="flex gap-2 items-center w-fit text-[2.2rem] font-bold  hover:text-gray-500 underline"
-            rel="noreferrer"
-          >
-            {title}
-            <FaLink className="h-6 w-6"/>
-          </a>
-          <Link
-            href={repo}
-            target="_blank"
-            className="flex items-center justify-center
-             font-semibold hover:underline  bg-black rounded-lg transition-all "
-            rel="noreferrer"
-          >
-            <FaGithub className="h-8 w-8" />
-          </Link>
-        </div>
+        <a
+          href={link}
+          target="_blank"
+          className="flex gap-2 items-center w-fit text-[2.2rem] font-bold  hover:text-gray-500 underline py-2"
+          rel="noreferrer"
+        >
+          {title}
+        </a>
+
         <p className="w-fit text-[1.3rem] text-gray-300 max-w-md">
           {description}
         </p>
@@ -80,6 +64,15 @@ function ProjectCard({
           >
             <p>Veja detalhes</p>
           </Link>
+
+          {/* <Link
+            href={repo}
+            target="_blank"
+            className="flex items-center justify-center font-semibold hover:underline  bg-black rounded-lg transition-all "
+            rel="noreferrer"
+          >
+            <FaGithub className="h-8 w-8" />
+          </Link> */}
         </div>
       </div>
     </motion.div>

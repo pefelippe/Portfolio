@@ -11,7 +11,7 @@ function QuickAbout({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit max-w-7xl flex max-lg:flex-col justify-center  items-center w-full mx-auto max-xl:px-10 gap-6 lg:gap-24 "
+      className="h-fit min-h-[70vh] max-w-7xl flex max-lg:flex-col justify-center  items-center w-full mx-auto max-xl:px-10 gap-6 lg:gap-24 "
     >
       <motion.img
         initial={{ opacity: 0, x: -50 }}
@@ -19,28 +19,30 @@ function QuickAbout({}: Props) {
         transition={{ duration: 2 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="relative object-cover w-full max-md:max-h-[250px] md:h-[350px] lg:h-[400px] rounded-xl max-w-xl"
+        className="relative object-cover max-md:hidden w-full max-md:max-h-[250px] md:h-[350px] lg:h-[450px] rounded-xl max-w-xl"
       />
       <motion.div
         animate={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: 50 }}
         transition={{ duration: 2 }}
-        className="flex flex-col text-start max-md:gap-4 gap-8 mx-auto max-w-xl"
+        className="flex flex-col text-start gap-2 mx-auto max-w-xl"
       >
         <p className=" text-[1.4rem] font-bold text-blue">Sobre</p>
-        <h2 className="leading-tight text-[1.6rem] xl:text-[2.5rem] text-black ">
-          Me chamo Pedro Felippe. Trabalho há 3 anos com desenvolvimento Web.
+
+        <h2 className="text-[2.5rem] lg:text-[3.3rem] leading-tight font-semibold">
+          Trabalho há 3 anos com desenvolvimento Web.
         </h2>
 
-        <p className="text-[1.6rem] xl:text-[1.8rem]  text-gray-300   ">
-          Sou um Web Developer, amante de filmes e fascinado por tecnologia.
+        <p className=" text-[1.5rem] font-medium text-gray-300  ">
+          Conheça detalhes sobre minha trajetória.
         </p>
+
         <Link
           href="/about"
-          className="font-semibold  text-white  max-lg:mx-auto max-lg:text-md text-[1.8rem]
-            transition-all flex items-center gap-3 underline hover:text-gray-300"
+          className="font-semibold  text-white  max-lg:text-md text-[1.8rem]
+            transition-all flex items-center gap-3 underline hover:text-gray-300 pt-8"
         >
-          <p>Descubra mais </p> <FaArrowRight className="" />
+          <p>Conheça mais </p> <FaArrowRight className="" />
         </Link>
       </motion.div>
     </motion.div>

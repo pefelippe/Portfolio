@@ -7,20 +7,20 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="w-screen h-fit mx-auto text-white  xl:py-20 space-y-10 xl:space-y-32 py-20">
-      <section className="">
+    <div className="w-screen h-fit mx-auto text-white ">
+      <section className=" bg-[#fefefe] text-[#121212]">
         <Hero />
       </section>
-      <section className="bg-[#121212] py-10 md:py-20">
+      <section className=" bg-[#121212]">
         <QuickAbout />
       </section>
-      {/* <section className="">
+      {/* <section className="py-20 bg-[#121212]">
         <Skills />
       </section> */}
-      {/* <section className=" w-full  py-10">
+      <section className="py-10 bg-[#fefefe] text-[#121212]">
         <RecentProjects />
-      </section> */}
-      <section className="bg-[#101010]">
+      </section>
+      <section className="  bg-[#121212] ">
         <CallToContact />
       </section>
     </div>

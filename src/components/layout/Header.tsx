@@ -8,7 +8,7 @@ import HamburgerMenu from "./../HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <motion.nav className="font-semibold  px-8 text-white bg-[#131313]">
+    <motion.nav className="font-semibold  px-8 text-white bg-[#161616]">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

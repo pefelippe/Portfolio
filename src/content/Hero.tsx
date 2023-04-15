@@ -9,24 +9,31 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit  max-w-7xl flex max-lg:flex-col justify-start items-center 
-      gap-4 lg:gap-16 xl:gap-20 w-full mx-auto  p-10"
+      className="h-fit min-h-[60vh] max-w-7xl flex flex-col justify-center items-center gap-4 w-full mx-auto  max-xl:px-10"
     >
+      {/* <motion.img
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2 }}
+        alt="avatar-pefelippe"
+        src="assets/avatar-pdr.png"
+        className=" object-cover w-fit max-md:max-h-[150px] max-h-[200px] rounded-full "
+      /> */}
       <motion.div
         animate={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: 50 }}
         transition={{ duration: 2 }}
-        className="flex flex-col text-3xl text-start gap-4 "
+        className="flex flex-col text-3xl text-center gap-4 "
       >
-        <h2 className="text-[3rem] xl:text-[4.5rem] leading-normal font-bold ">
-          <div className="flex w-full  ">
-            <p>Olá!</p>
+        <h2 className="text-[3rem] xl:text-[4.5rem] leading-normal font-bold mx-auto">
+          <div className="flex justify-center items-center mx-auto">
+            <p className="">Olá!</p>
             <span className="animate-bounce">👋</span>
           </div>
           Eu sou <span className="text-blue ">Pedro Felippe</span>
         </h2>
 
-        <p className="text-[1.6rem] xl:text-[1.8rem]  text-gray-300  max-w-sm lg:max-w-2xl">
+        <p className="text-[1.3rem] xl:text-[1.8rem]  text-gray-300  max-w-sm lg:max-w-2xl">
           Sou um Web Developer, amante de filmes e fascinado por tecnologia.
         </p>
       </motion.div>

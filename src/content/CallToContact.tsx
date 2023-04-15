@@ -11,13 +11,13 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="h-fit min-h-[60vh] max-w-7xl mx-auto   text-xl max-xl:px-8 rounded-md 
-      flex max-lg:flex-col justify-between gap-10 md:gap-20  items-center text-center"
+      className="h-fit min-h-[80vh] max-w-7xl mx-auto   text-xl max-xl:px-8 rounded-md 
+      flex max-lg:flex-col justify-between gap-10 md:gap-20  items-center text-center py-10"
     >
       <div className="flex flex-col gap-2 w-fit text-start">
         <p className=" text-[1.4rem] font-bold text-blue">Contato</p>
         <p className=" text-[2.5rem] lg:text-[3.5rem] leading-tight font-semibold max-w-xl">
-          Tem alguma ideia em mente?
+          Pronto para começar uma parceria?
         </p>
         <p className=" text-[1.3rem] font-medium text-gray-300 ">
           Manda uma <b className=" ">mensagem</b>!

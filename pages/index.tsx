@@ -8,7 +8,7 @@ import Skills from "../src/content/Skills";
 export default function Home() {
   return (
     <div className="w-screen h-fit mx-auto text-white ">
-      <section className=" bg-[#fefefe] text-[#121212]">
+      <section className="py-10 bg-[#fefefe] text-[#121212]">
         <Hero />
       </section>
       <section className=" bg-[#121212]">

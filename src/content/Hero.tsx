@@ -9,20 +9,20 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit min-h-[60vh] max-w-7xl flex flex-col justify-center items-center gap-4 w-full mx-auto  max-xl:px-10"
+      className="h-fit min-h-[70vh] max-w-7xl flex flex-col justify-center items-center  w-full mx-auto  max-xl:px-10"
     >
-      {/* <motion.img
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2 }}
+      <motion.img
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className=" object-cover w-fit max-md:max-h-[150px] max-h-[200px] rounded-full "
-      /> */}
+        className=" object-cover w-fit max-md:max-h-[180px] max-h-[200px] rounded-full "
+      />
       <motion.div
-        animate={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: 50 }}
-        transition={{ duration: 2 }}
+        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        transition={{ duration: 1 }}
         className="flex flex-col text-3xl text-center gap-4 "
       >
         <h2 className="text-[3rem] xl:text-[4.5rem] leading-normal font-bold mx-auto">

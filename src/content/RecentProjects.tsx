@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 import ProjectCard from "../../src/components/ProjectCard";
 import { projects } from "../../src/constants";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 
 interface ProjectCard {
   id: number;
@@ -26,8 +26,9 @@ function RecentProjects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="h-fit min-h-[70vh] max-w-7xl mx-auto  text-xl max-xl:px-8 rounded-md 
-      flex max-lg:flex-col justify-between items-center text-center gap-10"
+      className="h-fit min-h-[50vh] max-xl:py-10 max-w-7xl mx-auto
+       text-xl max-xl:px-8 rounded-xl flex max-lg:flex-col 
+        items-center text-center gap-10 "
     >
       <div className="flex flex-col gap-2 text-start max-w-xl">
         <p className="text-[1.4rem] font-bold text-blue">Projetos</p>
@@ -43,10 +44,10 @@ function RecentProjects() {
           className="font-semibold max-lg:text-md text-[1.8rem]
             transition-all flex items-center gap-3 underline hover:text-gray-300 py-4"
         >
-          <p>Veja demais projetos </p> <FaArrowRight className="" />
+          <p>Descubra meus projetos </p> <FaArrowRight className="" />
         </Link>
       </div>
-      <div className=" w-fit grid grid-cols-1 ">
+      {/* <div className=" w-fit grid grid-cols-1 ">
         {projects?.map((proj) => {
           return (
             <ProjectCard
@@ -61,7 +62,7 @@ function RecentProjects() {
             />
           );
         })}
-      </div>
+      </div> */}
     </motion.div>
   );
 }

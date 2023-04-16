@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 type Props = {};
 
@@ -9,33 +11,44 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit min-h-[70vh] max-w-7xl flex flex-col justify-center items-center  w-full mx-auto  max-xl:px-10"
+      className="w-full h-fit min-h-[75vh]  mx-auto max-w-7xl flex max-lg:flex-col max-xl:px-10 xl:gap-20
+      justify-center lg:justify-start items-center"
     >
-      <motion.img
+      {/* <motion.img
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className=" object-cover w-fit max-md:max-h-[180px] max-h-[200px] rounded-full "
-      />
+        className=" object-cover w-fit max-md:max-h-[150px]  max-lg:max-h-[200px] rounded-full "
+      /> */}
       <motion.div
         animate={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 50 }}
         transition={{ duration: 1 }}
-        className="flex flex-col text-3xl text-center gap-4 "
+        className="flex flex-col w-fit max-lg:justify-center text-start max-lg:text-center"
       >
-        <h2 className="text-[3rem] xl:text-[4.5rem] leading-normal font-bold mx-auto">
-          <div className="flex justify-center items-center mx-auto">
+        <h2 className="text-[3.3rem] md:text-[4.5rem] leading-normal font-bold w-fit mx-auto max-lg:justify-center">
+          <div className="flex w-fit max-lg:mx-auto">
             <p className="">Olá!</p>
             <span className="animate-bounce">👋</span>
           </div>
           Eu sou <span className="text-blue ">Pedro Felippe</span>
         </h2>
 
-        <p className="text-[1.3rem] xl:text-[1.8rem]  text-gray-300  max-w-sm lg:max-w-2xl">
+        <p
+          className="text-[1.5rem] xl:text-[1.8rem]  text-gray-300 font-semibold 
+          max-w-sm lg:max-w-2xl w-fit max-lg:text-center"
+        >
           Sou um Web Developer, amante de filmes e fascinado por tecnologia.
         </p>
+
+        <Link
+          href="/contact"
+          className="font-semibold w-fit max-lg:mx-auto text-white text-[1.8rem] transition-all flex items-center gap-3 underline hover:text-gray-300 pt-6"
+        >
+          <p>Entre em contato</p> <FaArrowRight className="" />
+        </Link>
       </motion.div>
     </motion.div>
   );

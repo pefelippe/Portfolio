@@ -8,12 +8,12 @@ import HamburgerMenu from "./../HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <motion.nav className="font-semibold  px-8 text-white bg-[#161616]">
+    <motion.nav className="font-semibold   text-white max-w-7xl h-[10vh] bg-[#181818] shadow px-8 rounded-b-2xl mx-auto flex items-center">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="w-full  max-w-7xl flex justify-between items-center mx-auto h-[12vh] "
+        className="w-full  flex justify-between items-center "
       >
         <Link
           href="/"
@@ -22,7 +22,7 @@ const Navbar = () => {
           Pedro Felippe
         </Link>
 
-        <div className="max-md:hidden list-none text-gray-300 text-lg  flex items-center gap-8">
+        <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center gap-8">
           {navLinks.map((navLink) => {
             return (
               <li

@@ -25,11 +25,10 @@ function ProjectCard({
   const findX = id % 2 !== 0 ? -100 : 100;
 
   return (
-    <motion.div className="flex flex-col w-full justify-between  mx-auto gap-2 rounded-xl min-w-fit max-w-[550px] p-5 bg-[#efefef]">
+    <motion.div className="shadow flex flex-col w-full justify-between  mx-auto gap-2 rounded-2xl min-w-fit max-w-[450px]  bg-[#fff]">
       <Link
         href={link}
-        className="transition-all rounded-2xl border-2 border-[#303030] hover:border-[#505050]
-        overflow-hidden w-full max-h-[300px]"
+        className="transition-all overflow-hidden w-full max-h-[300px] rounded-t-2xl"
       >
         <motion.img
           src={imgUrl}
@@ -40,18 +39,17 @@ function ProjectCard({
 
       <div
         className="max-lg:h-fit text-[#000] flex 
-       justify-center items-center flex-col gap-4 rounded-b-2xl w-fit max-lg:text-center px-2"
+       justify-center items-center flex-col gap-4  p-5 w-fit max-lg:text-center "
       >
         <a
           href={link}
           target="_blank"
-          className="flex gap-2 items-center w-fit text-[2.2rem] font-bold  hover:text-gray-500 underline py-2"
+          className=" text-[#000] gap-2 items-center w-fit text-[2.2rem] font-bold underline py-2"
           rel="noreferrer"
         >
           {title}
         </a>
-
-        <p className="w-fit text-[1.3rem] text-gray-300 max-w-md">
+        <p className="w-fit text-[1.3rem] text-[#191919] max-w-md">
           {description}
         </p>
 

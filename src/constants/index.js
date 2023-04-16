@@ -22,6 +22,7 @@ export const projects = [
 ];
 
 export const navLinks = [
+
   {
     id: "/",
     title: "Home",
@@ -35,8 +36,8 @@ export const navLinks = [
     title: "Projetos",
   },
   {
-    id: "blog",
-    title: "Blog",
+    id: "contact",
+    title: "Contato",
   },
 ];
 

@@ -8,12 +8,17 @@ import HamburgerMenu from "./../HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <motion.nav className="z-50 font-semibold absolute w-full top-0  text-white px-8 h-[10vh]  mx-auto flex items-center bg-[#191919] ">
-      <motion.div
+    <motion.nav
+      className="z-50 font-semibold absolute w-full top-0  text-[#000] justify-center
+    h-[10vh]  mx-auto flex items-center px-8  "
+    >
+      {/* <SocialLinks /> */}
+      {/* <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="w-full h-full  flex justify-between items-center shadow  max-w-7xl mx-auto "
+        className=" h-full  flex items-center   w-fit 
+        bg-[#080808] rounded-b-2xl shadow-2xl  "
       >
         {/* <Link
           href="/"
@@ -22,7 +27,7 @@ const Navbar = () => {
           Pedro Felippe
         </Link> */}
 
-        <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center gap-8">
+      {/* <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center  divide-x">
           {navLinks.map((navLink) => {
             return (
               <li
@@ -38,7 +43,7 @@ const Navbar = () => {
                 // }}
               >
                 <Link
-                  className="py-3 rounded-full hover:underline cursor-pointer"
+                  className="py-3 rounded-full hover:underline cursor-pointer px-6"
                   href={`${navLink.id}`}
                 >
                   {navLink.title}
@@ -46,13 +51,12 @@ const Navbar = () => {
               </li>
             );
           })}
-        </div>
-        <div className="max-md:hidden">
-          <SocialLinks />
-        </div>
+        </div> */}
+      {/* <div className="max-md:hidden">
+        </div> */}
 
-        <HamburgerMenu />
-      </motion.div>
+      {/* <HamburgerMenu /> 
+      </motion.div> */}
     </motion.nav>
   );
 };

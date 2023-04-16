@@ -26,16 +26,16 @@ function RecentProjects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="h-fit max-w-7xl mx-auto xl:min-h-[50vh] 
+      className="h-fit max-w-7xl mx-auto min-h-screen
        text-xl max-xl:px-8 rounded-xl flex max-lg:flex-col 
         items-center text-center gap-10 "
     >
       <div className="flex flex-col gap-2 text-start max-w-xl">
-        <p className="text-[1.4rem] font-bold text-blue">Projetos</p>
-        <p className="text-[2.5rem] lg:text-[3.3rem] leading-tight font-semibold">
+        <p className="text-[1.7rem] font-bold text-blue">Projetos</p>
+        <p className="text-[2.5rem] lg:text-[4rem] leading-tight font-semibold">
           Confira meus projetos
         </p>
-        <p className="text-[1.5rem] font-medium text-gray-300 ">
+        <p className="text-[1.8rem] font-medium text-gray-300 ">
           Confira uma seleção dos meus projetos mais recentes
         </p>
 

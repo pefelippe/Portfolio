@@ -11,7 +11,7 @@ function QuickAbout({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit  xl:min-h-[60vh] max-w-7xl flex max-lg:flex-col justify-center 
+      className="h-fit  min-h-screen max-w-7xl flex max-lg:flex-col justify-center 
        items-center w-full mx-auto max-xl:px-10 gap-6 lg:gap-20 "
     >
       <motion.img
@@ -28,13 +28,13 @@ function QuickAbout({}: Props) {
         transition={{ duration: 2 }}
         className="flex flex-col text-start gap-6 mx-auto "
       >
-        <p className=" text-[1.4rem] font-bold text-blue">Sobre</p>
+        <p className="text-[1.7rem] font-bold text-blue">Sobre</p>
 
-        <h2 className="text-[2.5rem] lg:text-[3.3rem] leading-tight font-semibold">
+        <h2 className="text-[2.5rem] lg:text-[4rem] leading-tight font-semibold">
           Trabalho há 3 anos com desenvolvimento Web.
         </h2>
 
-        <p className=" text-[1.5rem] font-medium text-gray-300  ">
+        <p className=" text-[1.8rem] font-medium text-gray-300  ">
           Conheça detalhes sobre minha trajetória.
         </p>
 

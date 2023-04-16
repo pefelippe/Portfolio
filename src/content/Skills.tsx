@@ -10,23 +10,25 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <motion.div
-      className="h-fit min-h-[40vh]  max-w-7xl mx-auto  text-xl max-xl:px-8 rounded-md 
+      className="h-fit min-h-[50vh]  max-w-7xl mx-auto max-xl:px-8 text-xl  rounded-md 
       flex max-lg:flex-col justify-between gap-10 lg:gap-20  items-center "
     >
       <motion.div
         animate={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: 50 }}
         transition={{ duration: 2 }}
-        className="flex flex-col text-start gap-2  w-fit
-        items-start justify-start "
+        className="flex flex-col text-start gap-2  
+        items-start justify-start max-w-xl mx-auto max-lg:text-center"
       >
-        <p className="text-[1.4rem] font-bold text-blue">Skills</p>
+        <p className="text-[1.4rem] font-bold text-blue max-lg:mx-auto">
+          Skills
+        </p>
 
-        <h2 className="text-[2.5rem] md:text-[3.3rem] leading-tight font-semibold ">
-          Conheça <br /> as minhas skills
+        <h2 className="text-[2.8rem] md:text-[3.3rem] leading-tight font-semibold ">
+          Conheça as minhas skills
         </h2>
 
-        <p className=" text-[1.5rem] font-medium text-gray-300  ">
+        <p className=" text-[1.5rem] font-medium text-gray-300  max-lg:mx-auto">
           Passe o mouse para detalhes
         </p>
       </motion.div>

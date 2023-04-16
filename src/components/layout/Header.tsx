@@ -8,12 +8,12 @@ import HamburgerMenu from "./../HamburgerMenu";
 
 const Navbar = () => {
   return (
-    <motion.nav className="font-semibold   text-white max-w-7xl h-[10vh] bg-[#181818] shadow px-8 rounded-b-2xl mx-auto flex items-center">
+    <motion.nav className="z-50 font-semibold absolute w-full top-0  text-white px-8 h-[10vh]  mx-auto flex items-center bg-[#191919] ">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="w-full  flex justify-between items-center "
+        className="w-full h-full  flex justify-between items-center shadow  max-w-7xl mx-auto "
       >
         <Link
           href="/"

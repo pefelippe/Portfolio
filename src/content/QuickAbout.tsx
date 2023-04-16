@@ -11,7 +11,7 @@ function QuickAbout({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit max-xl:py-10 xl:min-h-[70vh] max-w-7xl flex max-lg:flex-col justify-center 
+      className="h-fit  xl:min-h-[60vh] max-w-7xl flex max-lg:flex-col justify-center 
        items-center w-full mx-auto max-xl:px-10 gap-6 lg:gap-20 "
     >
       <motion.img
@@ -20,13 +20,13 @@ function QuickAbout({}: Props) {
         transition={{ duration: 2 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="relative object-cover max-md:hidden w-full max-md:max-h-[250px] md:h-[350px] lg:h-[450px] rounded-xl max-w-lg"
+        className="relative object-cover max-md:hidden w-full max-md:max-h-[250px] md:h-[350px] lg:h-[400px] rounded-xl max-w-md"
       />
       <motion.div
         animate={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: 50 }}
         transition={{ duration: 2 }}
-        className="flex flex-col text-start gap-2 mx-auto max-w-xl"
+        className="flex flex-col text-start gap-6 mx-auto "
       >
         <p className=" text-[1.4rem] font-bold text-blue">Sobre</p>
 
@@ -40,8 +40,8 @@ function QuickAbout({}: Props) {
 
         <Link
           href="/about"
-          className="font-semibold  text-white  max-lg:text-md text-[1.8rem]
-            transition-all flex items-center gap-3 underline hover:text-gray-300 pt-8"
+          className="rounded-md  font-semibold w-fit max-lg:mx-auto  text-white hover:underline 
+          text-[1.8rem] transition-all flex items-center gap-3 bg-[#414fe9] py-3 px-6"
         >
           <p>Conheça mais </p> <FaArrowRight className="" />
         </Link>

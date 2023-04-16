@@ -26,7 +26,7 @@ function RecentProjects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="h-fit min-h-[50vh] max-xl:py-10 max-w-7xl mx-auto
+      className="h-fit max-w-7xl mx-auto xl:min-h-[50vh] 
        text-xl max-xl:px-8 rounded-xl flex max-lg:flex-col 
         items-center text-center gap-10 "
     >

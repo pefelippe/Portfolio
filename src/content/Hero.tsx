@@ -11,7 +11,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="w-full h-fit min-h-[75vh]  mx-auto max-w-7xl flex max-lg:flex-col max-xl:px-10 xl:gap-20
+      className="w-full min-h-fit h-[90vh]  mx-auto max-w-7xl flex max-lg:flex-col max-xl:px-10 xl:gap-20
       justify-center lg:justify-start items-center"
     >
       {/* <motion.img
@@ -20,7 +20,7 @@ export default function About({}: Props) {
         transition={{ duration: 1 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className=" object-cover w-fit max-md:max-h-[150px]  max-lg:max-h-[200px] rounded-full "
+        className=" object-cover w-fit max-md:max-h-[150px]  max-h-[200px] rounded-full "
       /> */}
       <motion.div
         animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function About({}: Props) {
         transition={{ duration: 1 }}
         className="flex flex-col w-fit max-lg:justify-center text-start max-lg:text-center"
       >
-        <h2 className="text-[3.3rem] md:text-[4.5rem] leading-normal font-bold w-fit mx-auto max-lg:justify-center">
+        <h2 className="text-[3.3rem] md:text-[5rem] leading-normal font-bold w-fit mx-auto max-lg:justify-center">
           <div className="flex w-fit max-lg:mx-auto">
             <p className="">Olá!</p>
             <span className="animate-bounce">👋</span>
@@ -38,17 +38,10 @@ export default function About({}: Props) {
 
         <p
           className="text-[1.5rem] xl:text-[1.8rem]  text-gray-300 font-semibold 
-          max-w-sm lg:max-w-2xl w-fit max-lg:text-center"
+          max-w-sm lg:max-w-2xl w-fit max-lg:text-center pb-4"
         >
           Sou um Web Developer, amante de filmes e fascinado por tecnologia.
         </p>
-
-        <Link
-          href="/contact"
-          className="font-semibold w-fit max-lg:mx-auto text-white text-[1.8rem] transition-all flex items-center gap-3 underline hover:text-gray-300 pt-6"
-        >
-          <p>Entre em contato</p> <FaArrowRight className="" />
-        </Link>
       </motion.div>
     </motion.div>
   );

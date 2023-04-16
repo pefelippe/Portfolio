@@ -33,7 +33,7 @@ function RecentProjects() {
       <div className="flex flex-col gap-2 text-start max-w-xl">
         <p className="text-[1.7rem] font-bold text-blue">Projetos</p>
         <p className="text-[2.5rem] lg:text-[4rem] leading-tight font-semibold">
-          Confira meus projetos
+          Confira meus <b className="bg-blue text-white px-2">projetos</b>
         </p>
         <p className="text-[1.8rem] font-medium text-gray-300 ">
           Confira uma seleção dos meus projetos mais recentes

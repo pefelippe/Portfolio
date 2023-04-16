@@ -9,25 +9,23 @@ import HamburgerMenu from "./../HamburgerMenu";
 const Navbar = () => {
   return (
     <motion.nav
-      className="z-50 font-semibold absolute w-full top-0  text-[#000] justify-center
-    h-[10vh]  mx-auto flex items-center px-8  "
+      className=" z-40 font-semibold  w-full top-0  text-[#000] justify-center max-md:justify-end
+    h-[10vh]  mx-auto flex items-center px-8 bg-[#080808] snap-start "
     >
-      {/* <SocialLinks /> */}
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className=" h-full  flex items-center   w-fit 
-        bg-[#080808] rounded-b-2xl shadow-2xl  "
+        className=" h-full  flex items-center   w-full justify-between
+      max-w-7xl"
       >
-        {/* <Link
+        <Link
           href="/"
-          className="text-[1.6rem] xl:text-[1.8rem] font-semibold min-w-fit hover:text-gray-300 transition-all hover:underline "
+          className="text-white text-[1.6rem] xl:text-[1.8rem] font-semibold min-w-fit hover:text-gray-300 transition-all hover:underline "
         >
           Pedro Felippe
-        </Link> */}
-
-      {/* <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center  divide-x">
+        </Link>
+        <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center">
           {navLinks.map((navLink) => {
             return (
               <li
@@ -51,12 +49,13 @@ const Navbar = () => {
               </li>
             );
           })}
-        </div> */}
-      {/* <div className="max-md:hidden">
-        </div> */}
+        </div>
+        <div className="max-md:hidden text-white">
+          <SocialLinks />
+        </div>
 
-      {/* <HamburgerMenu /> 
-      </motion.div> */}
+        <HamburgerMenu />
+      </motion.div>
     </motion.nav>
   );
 };

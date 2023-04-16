@@ -7,19 +7,19 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="w-screen h-fit mx-auto  bg-[#fafafa]   text-[#141414] ">
+    <div className="w-screen h-fit mx-auto  bg-[#fff]   text-[#141414] ">
       <section className=" snap-center">
         <Hero />
       </section>
 
-      {/* <section className="text-[#ffff]  bg-[#141414] snap-center">
+      <section className="text-[#ffff]  bg-[#141414] snap-center">
         <QuickAbout />
       </section>
 
       <section className=" snap-center bg-[#fafafa] ">
         <RecentProjects />
       </section>
-*/}
+
       <section className=" bg-[#141414] text-white snap-center">
         <CallToContact />
       </section>

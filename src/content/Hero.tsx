@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+
 import SocialLinks from "../components/SocialLinks";
 
 type Props = {};
@@ -12,7 +13,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="w-full min-h-fit h-screen  mx-auto max-w-7xl flex flex-col max-xl:px-10 justify-center items-center gap-4"
+      className="w-full min-h-fit h-[80vh] mx-auto max-w-7xl flex flex-col max-xl:px-10 justify-center items-center gap-4"
     >
       <motion.img
         initial={{ opacity: 0, y: -50 }}
@@ -20,7 +21,7 @@ export default function About({}: Props) {
         transition={{ duration: 1 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className=" object-cover w-fit max-h-[180px]  rounded-full shadow-xl "
+        className=" object-cover max-h-[180px]  rounded-full max-md:hidden"
       />
       <motion.div
         animate={{ opacity: 1, y: 0 }}

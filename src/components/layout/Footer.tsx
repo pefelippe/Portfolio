@@ -11,7 +11,7 @@ function Footer({}: Props) {
   return (
     <footer
       className="w-full min-h-[10vh] py-10 flex justify-center items-center mx-auto text-lg max-xl:px-6 text-black 
-    bg-[#191919] text-[#fff] font-semibold"
+    bg-[#000] text-[#fff]  snap-center"
     >
       <div className="w-full max-w-screen-2xl gap-8 flex items-center max-sm:flex-col justify-center">
         <div className="flex flex-col gap-10 items-center">

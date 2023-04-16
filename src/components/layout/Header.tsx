@@ -15,12 +15,12 @@ const Navbar = () => {
         transition={{ duration: 1 }}
         className="w-full h-full  flex justify-between items-center shadow  max-w-7xl mx-auto "
       >
-        <Link
+        {/* <Link
           href="/"
           className="text-[1.6rem] xl:text-[1.8rem] font-semibold min-w-fit hover:text-gray-300 transition-all hover:underline "
         >
           Pedro Felippe
-        </Link>
+        </Link> */}
 
         <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center gap-8">
           {navLinks.map((navLink) => {

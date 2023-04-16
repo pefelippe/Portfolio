@@ -15,7 +15,7 @@ const SkillBox = ({ title, description, children }: ISkillBox) => {
         transition: { duration: 0.1 },
       }}
       className="flex flex-col justify-center items-center text-center mx-auto w-full rounded-md
-       transition-all ease-in-out space-y-3  max-w-[100px] 
+        space-y-3  max-w-[100px] 
        text-white"
     >
       <div className="group n">

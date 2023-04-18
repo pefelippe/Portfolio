@@ -7,7 +7,7 @@ import RecentProjects from "../src/content/RecentProjects";
 export default function Home() {
   return (
     <div className="w-screen h-fit mx-auto  bg-[#fff]   text-[#141414] ">
-      <section className=" snap-center ">
+      <section className="pt-[15vh] snap-center ">
         <Hero />
       </section>
 

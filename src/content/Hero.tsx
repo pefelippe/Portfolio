@@ -11,7 +11,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="relative w-full min-h-fit h-[85vh] mx-auto flex flex-col max-xl:px-10 justify-center items-center  "
+      className="relative w-full min-h-fit h-[70vh] mx-auto flex flex-col max-xl:px-10 justify-start items-center  "
     >
       {/* <motion.img
         initial={{ opacity: 0, y: -50 }}
@@ -53,6 +53,7 @@ export default function About({}: Props) {
         >
           <p>Conheça mais </p> <FaArrowRight className="" />
         </Link> */}
+        <SocialLinks />
       </motion.div>
     </motion.div>
   );

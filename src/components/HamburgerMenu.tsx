@@ -21,7 +21,7 @@ function HamburgerMenu({}: Props) {
           height="100"
           className={`${
             toggle ? "absolute" : ""
-          } w-[28px] h-[28px] object-contain cursor-pointer z-50  top-8 right-10`}
+          } w-[28px] h-[28px] object-contain cursor-pointer z-50  top-8 right-10 `}
           onClick={() => setToggle(!toggle)}
         />
         <div

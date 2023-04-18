@@ -22,13 +22,11 @@ function ProjectCard({
   stack,
   id,
 }: IProjectCard) {
-  const findX = id % 2 !== 0 ? -100 : 100;
-
   return (
-    <motion.div className="shadow flex flex-col w-full justify-between  mx-auto gap-2 rounded-2xl min-w-fit max-w-[450px]  bg-[#fff]">
+    <motion.div className="shadow-2xl flex flex-col justify-start  mx-auto rounded-2xl min-h-fit w-[400px]  bg-[#fff]">
       <Link
         href={link}
-        className="transition-all overflow-hidden w-full max-h-[300px] rounded-t-2xl"
+        className="transition-all overflow-hidden  rounded-t-2xl h-[300px] w-[400px] "
       >
         <motion.img
           src={imgUrl}
@@ -38,40 +36,40 @@ function ProjectCard({
       </Link>
 
       <div
-        className="max-lg:h-fit text-[#000] flex 
-       justify-center items-center flex-col gap-4  p-5 w-fit max-lg:text-center "
+        className=" text-[#000] flex 
+       justify-center  flex-col gap-4 py-8 p-5 w-fit text-start "
       >
         <a
           href={link}
           target="_blank"
-          className=" text-[#000] gap-2 items-center w-fit text-[2.2rem] font-bold underline py-2"
+          className=" text-[#000] gap-2 items-center w-fit text-[1.9rem] font-bold underline"
           rel="noreferrer"
         >
           {title}
         </a>
-        <p className="w-fit text-[1.3rem] text-[#191919] max-w-md">
+        <p className="w-fit text-[1.2rem] text-[#191919] max-w-sm">
           {description}
         </p>
 
-        <div className="flex max-sm:flex-col w-full max-md:justify-center items-center gap-4 pt-2 max-lg:px-8">
+        {/* <div className="flex max-sm:flex-col w-full justify-center items-center gap-4 pt-2 max-lg:px-8 mx-auto">
           <Link
             href={`/projects/${id}`}
-            className="flex gap-2 p-3 px-6 items-center  text-[1.5rem] justify-center w-full min-w-fit
+            className="flex gap-2 p-3 px-6 items-center  text-[1.5rem] justify-center w-fit
              font-semibold hover:underline text-white bg-blue rounded-lg transition-all "
             rel="noreferrer"
           >
             <p>Veja detalhes</p>
           </Link>
 
-          {/* <Link
+          <Link
             href={repo}
             target="_blank"
             className="flex items-center justify-center font-semibold hover:underline  bg-black rounded-lg transition-all "
             rel="noreferrer"
           >
             <FaGithub className="h-8 w-8" />
-          </Link> */}
-        </div>
+          </Link>
+        </div> */}
       </div>
     </motion.div>
   );

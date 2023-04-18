@@ -11,7 +11,7 @@ function QuickAbout({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-fit  min-h-screen max-w-7xl flex max-lg:flex-col justify-center 
+      className="min-h-fit h-screen  max-w-7xl flex max-lg:flex-col justify-center 
        items-center w-full mx-auto max-xl:px-10 gap-6 lg:gap-20 "
     >
       <motion.img
@@ -40,7 +40,7 @@ function QuickAbout({}: Props) {
 
         <Link
           href="/about"
-          className="rounded-md  font-semibold w-fit max-lg:mx-auto  text-white hover:underline 
+          className="rounded-md  font-semibold w-fit  text-white hover:underline 
           text-[1.8rem] transition-all flex items-center gap-3 bg-[#414fe9] py-3 px-6"
         >
           <p>Conheça mais </p> <FaArrowRight className="" />

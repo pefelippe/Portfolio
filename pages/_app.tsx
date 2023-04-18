@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div
       className="
         overflow-x-hidden overflow-y-scroll 
-        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 scroll-smooth  text-white
+        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80  text-white
         h-screen min-w-[400px] font-roboto min-h-fit snap-mandatory snap-y"
     >
       <Head>

@@ -26,43 +26,26 @@ function RecentProjects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="h-fit max-w-7xl mx-auto min-h-screen
-       text-xl max-xl:px-8 rounded-xl flex max-lg:flex-col 
-        items-center text-center gap-10 "
+      className="max-w-7xl mx-auto min-h-fit h-[60vh] text-xl max-xl:px-8 rounded-xl flex max-lg:flex-col  justify-center
+      items-center text-center gap-10 "
     >
-      <div className="flex flex-col gap-2 text-start max-w-xl">
+      <div className="flex flex-col gap-4 text-center">
         <p className="text-[1.7rem] font-bold text-blue">Projetos</p>
         <p className="text-[2.5rem] lg:text-[4rem] leading-tight font-semibold">
           Confira meus <b className="bg-blue text-white px-2">projetos</b>
         </p>
-        <p className="text-[1.8rem] font-medium text-gray-300 ">
+        <p className="text-[1.8rem] font-medium text-gray-500 mx-auto max-w-xl text-center">
           Confira uma seleção dos meus projetos mais recentes
         </p>
 
         <Link
           href="/projects"
-          className="font-semibold max-lg:text-md text-[1.8rem]
-            transition-all flex items-center gap-3 underline hover:text-gray-300 py-4"
+          className="font-semibold max-lg:text-md text-[1.8rem] mx-auto text-center
+            transition-all flex items-center gap-3 underline hover:text-gray-300 "
         >
-          <p>Descubra meus projetos </p> <FaArrowRight className="" />
+          <p>Projetos </p> <FaArrowRight className="" />
         </Link>
       </div>
-      {/* <div className=" w-fit grid grid-cols-1 ">
-        {projects?.map((proj) => {
-          return (
-            <ProjectCard
-              key={proj.id}
-              id={proj.id}
-              description={proj.description}
-              imgUrl={proj.imgUrl}
-              link={proj.link}
-              title={proj.title}
-              repo={proj.repo}
-              stack={proj.stack}
-            />
-          );
-        })}
-      </div> */}
     </motion.div>
   );
 }

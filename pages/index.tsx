@@ -1,14 +1,13 @@
 import CallToContact from "../src/content/CallToContact";
-import Experience from "../src/content/Experience";
+
 import Hero from "../src/content/Hero";
 import QuickAbout from "../src/content/QuickAbout";
 import RecentProjects from "../src/content/RecentProjects";
-import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
     <div className="w-screen h-fit mx-auto  bg-[#fff]   text-[#141414] ">
-      <section className=" snap-center">
+      <section className=" snap-center ">
         <Hero />
       </section>
 
@@ -20,7 +19,7 @@ export default function Home() {
         <RecentProjects />
       </section>
 
-      <section className=" bg-[#141414] text-white snap-center">
+      <section className=" bg-[#141414] text-white snap-center py-5">
         <CallToContact />
       </section>
     </div>

@@ -23,10 +23,10 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <motion.div className="shadow-2xl flex flex-col justify-start  mx-auto rounded-2xl min-h-fit w-[400px]  bg-[#fff]">
+    <motion.div className="shadow-2xl flex flex-col justify-start  mx-auto rounded-2xl min-h-fit w-[400px] max-w-full bg-[#fff]">
       <Link
         href={link}
-        className="transition-all overflow-hidden  rounded-t-2xl h-[300px] w-[400px] "
+        className="transition-all overflow-hidden  rounded-t-2xl h-[300px] w-[400px] max-w-full"
       >
         <motion.img
           src={imgUrl}

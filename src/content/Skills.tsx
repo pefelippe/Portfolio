@@ -10,14 +10,14 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <motion.div
-      className="h-fit   max-w-7xl mx-auto max-xl:px-8 text-xl  rounded-md 
+      className="h-fit max-w-4xl mx-auto max-xl:px-8 text-xl  rounded-md 
       flex max-lg:flex-col justify-start gap-10 lg:gap-20  items-center "
     >
       <motion.div
         initial={{ opacity: 0, x: 300 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2 }}
-        className="gap-10 grid w-fit grid-cols-4 md:grid-cols-6 xl:grid-cols-12 mx-auto"
+        className="gap-10 grid w-fit grid-cols-4 md:grid-cols-6  mx-auto"
       >
         {technologies.map((tech) => {
           return (

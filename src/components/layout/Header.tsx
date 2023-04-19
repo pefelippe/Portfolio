@@ -13,13 +13,13 @@ const Navbar = () => {
   return (
     <motion.nav
       className=" z-10 font-semibold  w-full  max-md:h-[10vh] justify-between max-w-7xl
-    h-[15vh]  mx-auto flex items-center px-8  snap-start text-[#000]"
+    h-[15vh]  mx-auto flex items-center max-lg:px-6  snap-start text-[#000] border-b-[1px] border-[#303030]"
     >
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className=" h-full  flex items-center w-full justify-between  max-w-7xl  border-b-[#303030] px-2 "
+        className=" h-full  flex items-center w-full justify-between  max-w-7xl "
       >
         <Link
           href="/"

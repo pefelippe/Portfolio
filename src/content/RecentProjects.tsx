@@ -26,18 +26,18 @@ function RecentProjects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="max-w-7xl mx-auto min-h-fit  text-xl max-xl:px-8 rounded-xl flex max-lg:flex-col  justify-center
+      className="w-full max-w-7xl mx-auto min-h-fit  text-xl max-xl:px-8 rounded-xl flex max-lg:flex-col justify-center
       items-center text-center gap-10 "
     >
       <div className="flex flex-col gap-4 text-center">
-        <p className="text-[2.5rem] lg:text-[4rem] leading-tight font-semibold">
+        <p className="text-[3rem] lg:text-[4rem] leading-tight font-semibold">
           Confira meus <b className="bg-blue text-white px-2">projetos</b>
         </p>
         <p className="text-[1.8rem] font-medium text-gray-500 mx-auto max-w-xl text-center">
           Confira uma seleção dos meus projetos mais recentes
         </p>
 
-        <div className=" w-full grid gap-10 xl:grid-cols-2 py-10">
+        <div className=" w-full grid gap-10 lg:grid-cols-2 lg:py-10 ">
           {projects?.map((proj) => {
             return (
               <ProjectCard

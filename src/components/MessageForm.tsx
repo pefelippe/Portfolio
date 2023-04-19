@@ -67,7 +67,7 @@ export default function MessageForm({}: Inputs) {
           placeholder="Mensagem"
           className="contactInput pb-20 md:pb-40"
         />
-        <button className="bg-[#5865f2] py-5 px-10 rounded-md text-black font-bold text-xl hover:bg-[#5865f2]/80 text-[#fff] ">
+        <button className="bg-[#5865f2] py-5 px-10 rounded-md text-black font-bold text-2xl hover:bg-[#5865f2]/80 text-[#fff] ">
           {isLoading ? (
             <svg
               aria-hidden="true"

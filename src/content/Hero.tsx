@@ -12,16 +12,16 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="relative w-full h-fit   flex flex-col max-xl:px-6 justify-start items-center  gap-4 mx-auto"
+      className="relative w-full h-fit  max-w-4xl  flex flex-col max-xl:px-6 justify-start items-center  gap-4 mx-auto"
     >
-      {/* <motion.img
+      <motion.img
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
         className=" object-cover max-h-[150px] max-w-xl  rounded-full "
-      /> */}
+      />
 
       <motion.div
         animate={{ opacity: 1, y: 0 }}

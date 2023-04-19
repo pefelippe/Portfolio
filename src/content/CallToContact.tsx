@@ -12,10 +12,9 @@ function CallToContact({}: Props) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
       className="relative min-h-fit h-screen max-w-7xl mx-auto  text-xl max-xl:px-8 rounded-md 
-      flex max-lg:flex-col justify-center gap-10  items-center text-center "
+      flex max-lg:flex-col justify-center gap-6 md:gap-10  items-center text-center "
     >
-      <div className="flex flex-col gap-4 text-start w-full">
-        <p className=" text-[1.6rem] font-bold text-blue">Contato</p>
+      <div className="flex flex-col gap-4  w-full text-center md:text-start">
         <p className=" text-[3rem] lg:text-[4rem] leading-normal font-semibold ">
           Manda uma <b className=" bg-blue">mensagem</b>!
         </p>

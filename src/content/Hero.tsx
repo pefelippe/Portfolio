@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
+
 import SocialLinks from "../components/SocialLinks";
 
 type Props = {};
@@ -11,7 +12,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="relative w-full min-h-fit h-[70vh] mx-auto flex flex-col max-xl:px-10 justify-start items-center  "
+      className="relative w-full h-fit   flex flex-col max-xl:px-6 justify-start items-center  gap-4 mx-auto"
     >
       {/* <motion.img
         initial={{ opacity: 0, y: -50 }}
@@ -21,9 +22,6 @@ export default function About({}: Props) {
         src="assets/avatar-pdr.png"
         className=" object-cover max-h-[150px] max-w-xl  rounded-full "
       /> */}
-      <div className="absolute bottom-5 border p-2 rounded-full animate-bounce text-blue">
-        <FaArrowDown className="h-6 w-6 " />
-      </div>
 
       <motion.div
         animate={{ opacity: 1, y: 0 }}
@@ -53,7 +51,6 @@ export default function About({}: Props) {
         >
           <p>Conheça mais </p> <FaArrowRight className="" />
         </Link> */}
-        <SocialLinks />
       </motion.div>
     </motion.div>
   );

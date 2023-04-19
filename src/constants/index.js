@@ -26,10 +26,10 @@ export const navLinks = [
     id: "/",
     title: "Home",
   },
-  {
-    id: "about",
-    title: "Quem Sou",
-  },
+  // {
+  //   id: "about",
+  //   title: "Quem Sou",
+  // },
   {
     id: "projects",
     title: "Projetos",

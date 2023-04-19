@@ -12,8 +12,8 @@ const Navbar = () => {
   const { id } = router.query;
   return (
     <motion.nav
-      className=" z-10 font-semibold  w-full top-0   justify-center max-md:justify-end 
-    h-[15vh]  mx-auto flex items-center px-8 max-md:bg-[#202020] snap-start "
+      className=" z-10 font-semibold  w-full  max-md:h-[10vh] justify-between max-w-7xl
+    h-[15vh]  mx-auto flex items-center px-8  snap-start text-[#000]"
     >
       <motion.div
         initial={{ opacity: 0, y: -50 }}
@@ -23,11 +23,11 @@ const Navbar = () => {
       >
         <Link
           href="/"
-          className=" text-[1.6rem] xl:text-[1.8rem] font-semibold min-w-fit max-md:hover:text-white transition-all text-blue "
+          className=" text-[1.6rem] xl:text-[2.2rem] font-semibold min-w-fit max-md:hover:text-white transition-all text-blue "
         >
           Pedro Felippe
         </Link>
-        <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center gap-4">
+        {/* <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center gap-4 ">
           {navLinks.map((navLink) => {
             return (
               <li
@@ -47,9 +47,11 @@ const Navbar = () => {
               </li>
             );
           })}
-        </div>
+        </div> */}
 
-        <HamburgerMenu />
+        <SocialLinks />
+
+        {/* <HamburgerMenu /> */}
       </motion.div>
     </motion.nav>
   );

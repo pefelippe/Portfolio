@@ -13,7 +13,7 @@ function Skills({}: Props) {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 1.5 }}
-      className="h-fit max-w-4xl min-h-[40vh] mx-auto max-xl:px-8 text-xl  rounded-md text-center 
+      className="h-fit max-w-4xl mx-auto max-xl:px-8 text-xl  rounded-md text-center 
       flex flex-col justify-center gap-4  items-center "
     >
       <p className="text-[3rem] lg:text-[4rem] leading-tight font-semibold">
@@ -26,7 +26,7 @@ function Skills({}: Props) {
         initial={{ opacity: 0, x: 250 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="gap-10 grid w-fit grid-cols-4 md:grid-cols-6  mx-auto py-5"
+        className="gap-10  grid w-fit grid-cols-4 md:grid-cols-6  mx-auto py-5 "
       >
         {technologies.map((tech) => {
           return (

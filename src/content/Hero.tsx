@@ -12,7 +12,7 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="relative min-h-[60vh] w-full h-fit  max-w-4xl  flex flex-col max-xl:px-6 justify-center items-center  mx-auto"
+      className="relative min-h-fit  w-full  max-w-4xl  flex flex-col max-xl:px-6 justify-center items-center  mx-auto"
     >
       {/* <motion.img
         initial={{ opacity: 0, y: -50 }}
@@ -20,7 +20,7 @@ export default function About({}: Props) {
         transition={{ duration: 1 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className=" object-cover max-h-[150px] max-w-xl  rounded-full "
+        className=" object-cover max-h-[180px] max-w-xl  rounded-full "
       /> */}
 
       <motion.div
@@ -53,7 +53,6 @@ export default function About({}: Props) {
           <p>Conheça mais </p> <FaArrowRight className="" />
         </Link> */}
         </motion.div>
-        <SocialLinks />
       </motion.div>
     </motion.div>
   );

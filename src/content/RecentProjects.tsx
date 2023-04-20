@@ -26,7 +26,7 @@ function RecentProjects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="w-full mx-auto  h-fit max-w-4xl min-h-[60vh] text-xl max-xl:px-8 rounded-xl flex max-lg:flex-col justify-center
+      className="w-full mx-auto  h-fit max-w-4xl min-h-[70vh] py-10 text-xl max-xl:px-10 rounded-xl flex max-lg:flex-col justify-center
       items-center text-center gap-10 "
     >
       <div className="flex flex-col gap-4 text-center">
@@ -37,7 +37,7 @@ function RecentProjects() {
           Confira uma seleção dos meus projetos mais recentes
         </p>
 
-        <div className=" w-full grid gap-10 lg:grid-cols-2 py-5 ">
+        <div className=" w-full grid gap-10 lg:gap-20 lg:grid-cols-2 py-5 max-xl:px-10 ">
           {projects?.map((proj) => {
             return (
               <ProjectCard

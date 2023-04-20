@@ -11,7 +11,7 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
-      className="relative min-h-fit max-w-4xl  mx-auto  text-xl max-xl:px-4 rounded-md 
+      className="relative min-h-fit max-w-4xl  mx-auto  text-xl max-xl:px-8  rounded-md 
       flex flex-col justify-center gap-6 md:gap-10  items-center text-center "
     >
       <div className="flex flex-col gap-4  w-full text-center ">

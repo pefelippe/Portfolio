@@ -13,7 +13,7 @@ function Skills({}: Props) {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 1.5 }}
-      className="h-fit max-w-4xl mx-auto max-xl:px-8 text-xl  rounded-md text-center 
+      className="h-fit max-w-4xl min-h-[60vh] mx-auto max-xl:px-8 text-xl  rounded-md text-center 
       flex flex-col justify-center gap-4  items-center "
     >
       <p className="text-[3rem] lg:text-[4rem] leading-tight font-semibold">

@@ -8,8 +8,8 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="w-screen h-fit mx-auto  bg-[#fff] text-[#141414] space-y-32 pt-52">
-      <section className="relative  snap-center ">
+    <div className="w-screen h-fit mx-auto  bg-[#fff] text-[#141414]  ">
+      <section className="relative  snap-center py-32">
         <Hero />
       </section>
 

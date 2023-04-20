@@ -19,7 +19,7 @@ function Footer({}: Props) {
             Pedro Felippe
           </Link>
           <span className="">Desenvolvido por Pedro Felippe. © {year}.</span>
-          {/* <SocialLinks /> */}
+          <SocialLinks />
         </div>
       </div>
     </footer>

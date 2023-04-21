@@ -8,8 +8,8 @@ import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="w-screen  mx-auto  bg-[#fff] text-[#141414] py-24 md:py-40 space-y-20 md:space-y-32  max-xl:px-8 max-w-4xl">
-      <section className="relative  snap-center ">
+    <div className="w-screen  mx-auto  bg-[#fff] text-[#141414] space-y-20 md:space-y-32 py-32 max-xl:px-6 max-w-4xl">
+      <section className="relative  snap-center pb-10">
         <Hero />
       </section>
 
@@ -20,7 +20,7 @@ export default function Home() {
         <Skills />
       </section> */}
 
-      <section className=" snap-center   ">
+      <section className="realtive snap-center   ">
         <RecentProjects />
       </section>
 

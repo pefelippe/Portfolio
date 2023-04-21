@@ -9,9 +9,9 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 50 }}
       transition={{ duration: 1 }}
-      className="flex flex-col justify-start w-full max-w-4xl mx-auto items-start"
+      className="flex flex-col justify-center w-full max-w-4xl mx-auto items-start h-fit "
     >
-      <h2 className="text-[3.3rem] md:text-[4.5rem] font-bold  justify-start ">
+      <h2 className="text-[3rem] md:text-[4.5rem] font-bold  justify-start ">
         <div className="flex w-full justify-start">
           <p>Olá!</p>
           <p className="animate-bounce">👋</p>

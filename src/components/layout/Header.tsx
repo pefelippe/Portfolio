@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="font-semibold  w-full  justify-end max-w-4xl max-md:px-8 pt-8 mx-auto
+      className="font-semibold  w-full  justify-end max-w-4xl max-md:px-8  mx-auto h-[15vh]
        flex items-center snap-start text-[#000] bg-[#fff]"
     >
       <SocialLinks />

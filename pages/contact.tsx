@@ -8,19 +8,15 @@ type Props = {};
 function CallToContact({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5 }}
-      className="h-fit min-h-screen max-w-7xl mx-auto  text-xl max-xl:px-8 rounded-md  text-white
-      flex max-lg:flex-col justify-between gap-10 md:gap-20  items-center text-center py-10"
+      className="relative h-fit  max-md:py-10 mx-auto  text-xl max-xl:px-8  rounded-md max-w-4xl
+      flex flex-col justify-start  items-center text-center text-[#161616] mt-[15vh]"
     >
-      <div className="flex flex-col gap-2 w-fit text-start">
-        <p className=" text-[1.4rem] font-bold text-blue">Contato</p>
-        <p className=" text-[2.5rem] lg:text-[3.5rem] leading-tight font-semibold max-w-xl">
-          Pronto para começar uma parceria?
+      <div className="flex flex-col gap-4  w-full text-center  ">
+        <p className=" text-[3rem] lg:text-[4rem] leading-tight font-semibold">
+          Manda uma <b className=" bg-blue text-white px-2">mensagem</b>!
         </p>
-        <p className=" text-[1.3rem] font-medium text-gray-300 ">
-          Manda uma <b className=" ">mensagem</b>!
+        <p className="text-[1.8rem] font-medium text-gray-500 mx-auto max-w-xl text-center">
+          Pronto para começar uma parceria?
         </p>
       </div>
 

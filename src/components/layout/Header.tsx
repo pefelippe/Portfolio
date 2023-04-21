@@ -9,25 +9,20 @@ import HamburgerMenu from "./../HamburgerMenu";
 
 const Navbar = () => {
   const router = useRouter();
-  const { id } = router.query;
+
   return (
     <motion.nav
-      className="absolute z-40  font-semibold  w-full  bg-[#171717] justify-between max-w-full
-    h-[10vh]  mx-auto flex items-center max-lg:px-6  snap-start text-[#000] border-b"
+      className="font-semibold  w-full  justify-end max-w-4xl max-md:px-8 pt-8 mx-auto
+       flex items-center snap-start text-[#000] bg-[#fff]"
     >
-      <motion.div
+      <SocialLinks />
+      {/*<motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className=" h-full flex items-center w-full justify-between  max-w-7xl mx-auto text-white"
+        className=" h-full flex items-center w-full justify-center "
       >
-        <Link
-          href="/"
-          className=" text-[1.8rem] font-semibold min-w-fit max-md:hover:text-white transition-all text-white "
-        >
-          Pedro Felippe
-        </Link>
-        <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center gap-4 ">
+         <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center gap-8 ">
           {navLinks.map((navLink) => {
             return (
               <li
@@ -39,18 +34,18 @@ const Navbar = () => {
                 }`}
               >
                 <Link
-                  className="rounded-full cursor-pointer px-6 py-3 hover:bg-blue hover:text-white transition-all"
+                  className="rounded-xl p-2 cursor-pointer  hover:bg-blue hover:text-white transition-all"
                   href={`${navLink.id}`}
+     
                 >
                   {navLink.title}
                 </Link>
               </li>
             );
           })}
-        </div>
-        <SocialLinks />
-        <HamburgerMenu />
-      </motion.div>
+        </div> 
+
+      </motion.div>*/}
     </motion.nav>
   );
 };

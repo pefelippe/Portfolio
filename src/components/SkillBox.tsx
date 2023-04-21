@@ -20,7 +20,7 @@ const SkillBox = ({ title, description, children }: ISkillBox) => {
         <div className="z-20 max-w-[100px] ">{children}</div>
         <span className="flex flex-col w-[100px] z-50 absolute top-20 right-0 left-0 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 gap-2 ">
           <p className="font-semibold text-sm ">{title}</p>
-          <p className="max-md:hidden zx">{description}</p>
+          {/* <p className="max-md:hidden zx">{description}</p> */}
         </span>
       </div>
     </motion.a>

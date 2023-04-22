@@ -15,12 +15,12 @@ function CallToContact({}: Props) {
       flex flex-col justify-center  items-center gap-6  text-center"
     >
       <div className="flex flex-col gap-4 text-center">
-        <b className="mx-auto text-[2.5rem] md:text-[3rem] leading-tight  bg-blue text-white px-2 w-fit rounded-xl">
-          Entre em contato
+        <b className="mx-auto text-[2.5rem] md:text-[3rem] leading-tight  bg-blue text-white px-6 py-1  w-fit rounded-xl">
+          contato
         </b>
 
         <p className="text-[1.6rem] md:text-[1.8rem] font-medium text-gray-500 max-w-xl">
-          Confira uma seleção dos meus projetos mais recentes
+          Pronto para começar uma parceria?
         </p>
       </div>
 

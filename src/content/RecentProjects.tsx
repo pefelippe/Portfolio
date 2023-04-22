@@ -24,18 +24,18 @@ function RecentProjects() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      transition={{ duration: 1.5, delay: 1.5 }}
       id="work"
       className=" w-fit mx-auto h-fit max-w-4xl text-xl  rounded-xl flex flex-col justify-center
       items-center text-center gap-8  "
     >
-      <div className="flex flex-col gap-4 text-start justify-start items-start w-full">
-        <b className="text-[2.5rem] md:text-[3rem] leading-tight  bg-blue text-white px-2 w-fit rounded-xl">
-          trabalhos
+      <div className="flex flex-col gap-4 text-start justify-center items-center w-full">
+        <b className="text-[2.5rem] md:text-[3rem] leading-tight  bg-blue text-white px-6 py-1 w-fit rounded-xl">
+          projetos
         </b>
 
         <p className="text-[1.6rem] md:text-[1.8rem] font-medium text-gray-500 max-w-xl">
-          Confira uma seleção dos meus projetos mais recentes
+          Talk is cheap. Show me projetinhos.
         </p>
       </div>
       <div className="max-w-4xl w-full grid gap-10 lg:gap-20 lg:grid-cols-2 py-5  ">

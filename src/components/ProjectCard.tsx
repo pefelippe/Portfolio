@@ -23,13 +23,10 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <motion.div
-      className="bg-[#fff] p-5 flex max-md:flex-col gap-6 justify-between mx-auto 
-    rounded-2xl shadow w-full md:h-[400px] border-1"
-    >
+    <motion.div className="bg-[#fff] p-8 flex max-md:flex-col gap-6 justify-between mx-auto rounded-2xl shadow w-full md:h-[400px]">
       <Link
         href={link}
-        className="transition-all overflow-hidden  w-full rounded-2xl  shadow md:max-w-[500px] border-2"
+        className="transition-all overflow-hidden  w-full rounded-2xl  shadow md:max-w-[450px] border-2 hover:text-blue "
       >
         <motion.img
           src={imgUrl}
@@ -53,14 +50,14 @@ function ProjectCard({
           <Link
             href={repo}
             target="_blank"
-            className="flex gap-2 items-center hover:text-blue transition-all text-xl border-2 justify-center rounded-xl w-full max-w-[200px] py-2"
+            className="flex gap-2 bg-[#000] text-[#fff] items-center hover:text-blue transition-all text-xl border-2 justify-center rounded-xl w-full max-w-[200px] py-3"
           >
-            Código <FaGithub className="h-7 w-7" />
+            Código <FaGithub className="h-7 w-7 " />
           </Link>
           <Link
             href={link}
             target="_blank"
-            className="flex gap-4 items-center hover:text-blue transition-all text-xl border-2 justify-center rounded-xl w-full max-w-[200px] py-2"
+            className="flex gap-4 items-center hover:text-blue transition-all text-xl border-2 justify-center rounded-xl w-full max-w-[200px] py-3"
           >
             Live Demo
           </Link>

@@ -16,15 +16,16 @@ export default function Home() {
       {/* <section className="text-white  snap-center ">
         <Skills />
       </section> */}
+
+      <section className="realtive snap-center  bg-[#181818] py-10 md:py-20 max-xl:px-6">
+        <RecentProjects />
+      </section>
+
       {/* <section className="text-[#141414] bg-[#fff] snap-center max-xl:px-8">
         <QuickAbout />
       </section> */}
 
-      <section className="realtive snap-center  bg-[#f5f5f5] py-10 md:py-20 max-xl:px-6">
-        <RecentProjects />
-      </section>
-
-      <section className="relative snap-center py-10 md:py-20 max-xl:px-6">
+      <section className="relative snap-center py-10 md:py-20 max-xl:px-6 bg-[#fff]">
         <CallToContact />
       </section>
     </div>

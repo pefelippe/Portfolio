@@ -34,11 +34,11 @@ function RecentProjects() {
           projetos
         </b>
 
-        <p className=" font-semibold text-[#000] text-[1.6rem]">
+        <p className=" font-semibold text-[#FFF] text-[1.6rem]">
           Talk is cheap. Show me projetinhos.
         </p>
       </div>
-      <div className="max-w-4xl w-full grid gap-10 lg:gap-20  ">
+      <div className="max-w-4xl w-full grid gap-10 pt-10 ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

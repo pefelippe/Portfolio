@@ -22,7 +22,7 @@ export default function About() {
         </h2>
 
         <p className="text-[1.5rem] text-gray-500">
-          Olá. Eu sou Pedro Felippe. Sou um Web Developer, amante de filmes e
+          Olá. Eu sou Pedro Felippe. Sou um desenvolvedor, amante de filmes e
           fascinado por tecnologia.
         </p>
 

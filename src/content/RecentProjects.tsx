@@ -27,18 +27,18 @@ function RecentProjects() {
       transition={{ duration: 1.5, delay: 1.5 }}
       id="work"
       className=" w-fit mx-auto h-fit max-w-4xl text-xl  rounded-xl flex flex-col justify-center
-      items-center text-center gap-8  "
+      items-center text-center gap-4 "
     >
-      <div className="flex flex-col gap-4 text-start justify-center items-center w-full">
-        <b className="text-[2.5rem] md:text-[3rem] leading-tight  bg-blue text-white px-6 py-1 w-fit rounded-xl">
+      <div className="flex flex-col gap-4  justify-center items-center w-full ">
+        <b className="bg-blue text-white p-2 w-fit rounded-xl tracking-[5px] text-[2rem] px-10">
           projetos
         </b>
 
-        <p className="text-[1.6rem] md:text-[1.8rem] font-medium text-gray-500 max-w-xl">
+        <p className=" font-semibold text-[#000] text-[1.6rem]">
           Talk is cheap. Show me projetinhos.
         </p>
       </div>
-      <div className="max-w-4xl w-full grid gap-10 lg:gap-20 lg:grid-cols-2 py-5  ">
+      <div className="max-w-4xl w-full grid gap-10 lg:gap-20  ">
         {projects?.map((proj) => {
           return (
             <ProjectCard
@@ -53,14 +53,6 @@ function RecentProjects() {
             />
           );
         })}
-
-        {/* <Link
-          href="/projects"
-          className="font-semibold max-lg:text-md text-[1.8rem] mx-auto text-center
-            transition-all flex items-center gap-3 underline hover:text-gray-300 "
-        >
-          <p>Projetos </p> <FaArrowRight className="" />
-        </Link> */}
       </div>
     </motion.div>
   );

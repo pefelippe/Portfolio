@@ -23,10 +23,13 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <motion.div className=" flex flex-col justify-start mx-auto rounded-2xl lg:max-w-[450px] w-full ">
+    <motion.div
+      className="bg-[#fff] p-5 flex max-md:flex-col gap-6 justify-between mx-auto 
+    rounded-2xl shadow w-full md:h-[400px] border-1"
+    >
       <Link
         href={link}
-        className="transition-all overflow-hidden h-[300px] w-full rounded-2xl "
+        className="transition-all overflow-hidden  w-full rounded-2xl  shadow md:max-w-[500px] border-2"
       >
         <motion.img
           src={imgUrl}
@@ -35,39 +38,33 @@ function ProjectCard({
         />
       </Link>
 
-      <div
-        className=" text-[#000] flex pt-4
-       justify-center  flex-col gap-2  w-fit text-start "
-      >
+      <div className=" text-[#000] flex items-center  justify-center  flex-col gap-8   text-center max-w-xl">
         <a
           href={link}
           target="_blank"
-          className=" text-[#000] gap-2 items-center w-fit text-[1.8rem] font-semibold underline"
+          className=" text-[#000] gap-2 items-center w-fit text-[2rem] font-bold "
           rel="noreferrer"
         >
           {title}
         </a>
-        <p className="text-[1.2rem] text-[#191919] max-w-md">{description}</p>
+        <p className="text-[1.3rem] text-gray-500 max-w-md">{description}</p>
 
-        {/* <div className="flex  w-full justify-center items-center gap-4 pt-2 max-lg:px-8 mx-auto">
-          <Link
-            href={`/projects/${id}`}
-            className="flex gap-2 p-3 px-6 items-center  text-[1.5rem] justify-center w-fit
-             font-semibold hover:underline text-white bg-blue rounded-lg transition-all "
-            rel="noreferrer"
-          >
-            <p>Veja detalhes</p>
-          </Link>
-
+        <div className="flex flex-col w-full justify-evenly font-semibold text-xl items-center gap-4">
           <Link
             href={repo}
             target="_blank"
-            className="flex items-center justify-center font-semibold hover:underline  bg-black rounded-lg transition-all "
-            rel="noreferrer"
+            className="flex gap-2 items-center hover:text-blue transition-all text-xl border-2 justify-center rounded-xl w-full max-w-[200px] py-2"
           >
-            <FaGithub className="h-8 w-8" />
+            Código <FaGithub className="h-7 w-7" />
           </Link>
-        </div> */}
+          <Link
+            href={link}
+            target="_blank"
+            className="flex gap-4 items-center hover:text-blue transition-all text-xl border-2 justify-center rounded-xl w-full max-w-[200px] py-2"
+          >
+            Live Demo
+          </Link>
+        </div>
       </div>
     </motion.div>
   );

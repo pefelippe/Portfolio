@@ -6,26 +6,26 @@ import SocialLinks from "../components/SocialLinks";
 export default function About() {
   return (
     <motion.div
-      animate={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ x: -250 }}
+      whileInView={{ x: 0 }}
       transition={{ duration: 1 }}
-      className="flex flex-col justify-center w-full max-w-4xl mx-auto items-center h-fit"
+      className="flex max-md:flex-col h-fit w-full justify-center items-center gap-20 "
     >
-      <h2 className="text-[3.3rem] md:text-[4.5rem] font-bold  justify-center text-center  items-center">
-        <div className="flex w-full justify-center items-center ">
-          <p>Olá!</p>
-          <p className="animate-bounce ">👋</p>
-        </div>
-        Eu sou <span className="text-blue ">Pedro Felippe</span>
-      </h2>
+      <motion.img
+        alt="avatar-pefelippe"
+        src="assets/avatar-pdr.png"
+        className="relative object-contain max-h-[250px] rounded-xl max-w-md max-md:hidden"
+      />
+      <div className="flex flex-col max-w-xl gap-6 leading-tight">
+        <h2 className="flex flex-col text-[4rem] font-bold  justify-start text-start  items-start ">
+          <span className="">Web Developer </span>
+        </h2>
 
-      <p
-        className="text-[1.6rem] md:text-[2rem]  text-gray-500 justify-center
-          max-w-xl w-fit text-center "
-      >
-        Sou um Web Developer, amante de filmes e fascinado por tecnologia.
-      </p>
-      <div className="pt-6">
+        <p className="text-[1.5rem] text-gray-500">
+          Olá. Eu sou Pedro Felippe. Sou um Web Developer, amante de filmes e
+          fascinado por tecnologia.
+        </p>
+
         <SocialLinks />
       </div>
     </motion.div>

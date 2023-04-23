@@ -13,7 +13,7 @@ function Skills({}: Props) {
       initial={{ x: 250 }}
       whileInView={{ x: 0 }}
       transition={{ duration: 1 }}
-      className="gap-10 md:gap-16 grid w-fit grid-cols-3 md:grid-cols-6 xl:grid-cols-12  mx-auto "
+      className="gap-8 grid w-full grid-cols-4 md:grid-cols-6  mx-auto "
     >
       {technologies.map((tech) => {
         return (
@@ -22,7 +22,7 @@ function Skills({}: Props) {
             description={tech.description}
             key={tech.name}
           >
-            <Image width={90} height={90} src={tech.imgUrl} alt={tech.name} />
+            <Image width={70} height={70} src={tech.imgUrl} alt={tech.name} />
           </SkillBox>
         );
       })}

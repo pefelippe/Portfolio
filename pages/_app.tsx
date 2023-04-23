@@ -15,8 +15,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <div
       className="
         overflow-x-hidden overflow-y-scroll 
-        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80  text-white
-        h-screen min-w-[400px] font-roboto min-h-fit max-md:snap-mandatory max-md:ssnap-y"
+        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80  text-white bg-[#fff]
+        h-screen min-w-[400px] font-roboto min-h-fit "
     >
       <Head>
         <title>Pedro Felippe</title>
@@ -26,9 +26,9 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Analytics />
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

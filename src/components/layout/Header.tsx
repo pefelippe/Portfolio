@@ -12,10 +12,17 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="font-semibold  w-full  justify-center max-w-4xl max-md:px-8  mx-auto h-[15vh]
-       flex items-center snap-start text-[#000] bg-[#fff]"
+      className="font-semibold  w-full mx-auto h-[10vh]
+       flex items-center snap-start text-[#000] bg-[#fff] shadow-sm"
     >
-      {/* <SocialLinks /> */}
+      <div className="flex max-w-4xl mx-auto justify-between w-full max-xl:px-6">
+        <Link href="/">
+          <h3 className="font-bold text-[#2d2e32] text-2xl">
+            PedroFelippe.dev
+          </h3>
+        </Link>
+        {/* <SocialLinks /> */}
+      </div>
       {/*<motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

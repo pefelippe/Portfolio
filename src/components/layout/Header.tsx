@@ -17,11 +17,11 @@ const Navbar = () => {
     >
       <div className="flex max-w-4xl mx-auto justify-between w-full max-xl:px-6">
         <Link href="/">
-          <h3 className="font-bold text-[#2d2e32] text-2xl">
-            PedroFelippe.dev
+          <h3 className="font-bold text-[#2d2e32] text-2xl hover:text-gray-500 transition-all">
+            Pedro Felippe
           </h3>
         </Link>
-        {/* <SocialLinks /> */}
+        <SocialLinks />
       </div>
       {/*<motion.div
         initial={{ opacity: 0, y: -50 }}

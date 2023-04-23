@@ -22,9 +22,9 @@ type ProjectsType = {
 function RecentProjects() {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.5, delay: 1.5 }}
+      initial={{ x: 250 , opacity: 0}}
+      whileInView={{ x: 0 , opacity: 1}}
+      transition={{ duration: 1, delay: 1 }}
       id="work"
       className=" w-fit mx-auto h-fit max-w-4xl text-xl  rounded-xl flex flex-col justify-center
       items-center text-center gap-4 "

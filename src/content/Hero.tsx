@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-
+import { Typewriter } from "react-simple-typewriter";
 import SocialLinks from "../components/SocialLinks";
 
 export default function About() {
@@ -9,7 +9,7 @@ export default function About() {
       initial={{ x: -250 }}
       whileInView={{ x: 0 }}
       transition={{ duration: 1 }}
-      className="flex max-md:flex-col h-fit w-full justify-center items-center gap-20 "
+      className="flex max-md:flex-col h-fit w-full justify-center items-center gap-16 "
     >
       <motion.img
         alt="avatar-pefelippe"
@@ -18,15 +18,20 @@ export default function About() {
       />
       <div className="flex flex-col max-w-xl gap-6 leading-tight">
         <h2 className="flex flex-col text-[4rem] font-bold  justify-start text-start  items-start ">
-          <span className="">Web Developer </span>
+          <Typewriter
+            words={["Pedro Felippe", "Web Developer", "Amante de café.tsx"]}
+            typeSpeed={50}
+            deleteSpeed={50}
+            delaySpeed={50}
+            loop
+          />
         </h2>
 
-        <p className="text-[1.5rem] text-gray-500">
-          Olá. Eu sou Pedro Felippe. Sou um desenvolvedor, amante de filmes e
-          fascinado por tecnologia.
+        <p className="flex text-[1.5rem] text-gray-500 max-w-lg">
+          Sou um desenvolvedor, amante de filmes e fascinado por tecnologia.
         </p>
 
-        <SocialLinks />
+        {/* <SocialLinks /> */}
       </div>
     </motion.div>
   );

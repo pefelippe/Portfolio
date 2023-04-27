@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+
 import SocialLinks from "../components/SocialLinks";
 
 export default function About() {
@@ -16,7 +17,7 @@ export default function About() {
         src="assets/avatar-pdr.png"
         className="relative object-contain max-h-[250px] rounded-xl max-w-md max-md:hidden"
       />
-      <div className="flex flex-col max-w-xl gap-6 leading-tight">
+      <div className="flex flex-col max-w-xl  leading-tight">
         <h2 className="flex flex-col text-[4rem] font-bold  justify-start text-start  items-start ">
           <Typewriter
             words={["Pedro Felippe", "Web Developer", "Amante de café.tsx"]}

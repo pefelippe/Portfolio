@@ -23,7 +23,8 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <motion.div className="bg-[#fff] p-8 flex max-md:flex-col gap-6 justify-between mx-auto rounded-2xl shadow w-full md:h-[400px]">
+    <motion.div className="bg-[#fff] p-8 flex max-md:flex-col gap-6 
+    justify-between mx-auto rounded-xl shadow w-full md:h-[400px]">
       <Link
         href={link}
         className="transition-all overflow-hidden  w-full rounded-2xl  shadow md:max-w-[450px] border-2 hover:text-blue "

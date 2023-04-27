@@ -9,15 +9,15 @@ import Skills from "../src/content/Skills";
 export default function Home() {
   return (
     <div className="w-screen   text-[#2d2e32]  ">
-      <section className="relative  snap-center max-w-4xl mx-auto py-20 max-xl:px-6">
+      <section className="relative  snap-center max-w-4xl mx-auto py-10 max-xl:px-6">
         <Hero />
       </section>
 
-      {/* <section className="text-white  snap-center ">
+      <section className="text-white  snap-center  max-w-4xl mx-auto py-10">
         <Skills />
-      </section> */}
+      </section>
 
-      <section className="realtive snap-center  bg-[#181818] py-10 md:py-20 max-xl:px-6">
+      <section className="relative snap-center   py-10 max-xl:px-6">
         <RecentProjects />
       </section>
 
@@ -25,7 +25,7 @@ export default function Home() {
         <QuickAbout />
       </section> */}
 
-      <section className="relative snap-center py-10 md:py-20 max-xl:px-6 bg-[#fff]">
+      <section className="relative snap-center py-10 max-xl:px-6 bg-[#fff]">
         <CallToContact />
       </section>
     </div>

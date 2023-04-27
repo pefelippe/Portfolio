@@ -30,7 +30,7 @@ function RecentProjects() {
       items-center text-center gap-4 "
     >
       <div className="flex flex-col   justify-center items-center w-full ">
-        <b className="bg-blue text-white p-2 w-fit rounded-xl tracking-[5px] text-[2rem] px-10">
+        <b className="bg-blue text-white p-2 w-fit rounded-xl tracking-[5px] text-[2rem] ">
           projetos
         </b>
 
@@ -38,7 +38,7 @@ function RecentProjects() {
           Talk is cheap. Show me projetinhos.
         </p>
       </div>
-      <div className="max-w-4xl w-full grid gap-6 lg:grid-cols-2">
+      <div className="max-w-4xl w-full grid gap-10 lg:grid-cols-2">
         {projects?.map((proj) => {
           return (
             <ProjectCard

@@ -15,7 +15,7 @@ function CallToContact({}: Props) {
       flex flex-col justify-center  items-center gap-6  text-center"
     >
       <div className="flex flex-col gap-4 justify-center items-center w-full text-[1.6rem]">
-        <b className="bg-blue text-white p-2 w-fit rounded-xl tracking-[5px] text-[2rem] px-10">
+        <b className="bg-blue text-white p-2 w-fit rounded-xl tracking-[5px] text-[2rem]">
           contato
         </b>
 

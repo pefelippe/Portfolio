@@ -7,7 +7,7 @@ export const projects = [
     imgUrl: "assets/portfolio.png",
     stack: ["react", "tailwind", "next", "typescript"],
     description:
-      "Meu primeiro portfolio pessoal, com objetivo de mostrar meus projetos, habilidades e um pouco mais sobre mim. ",
+      "Meu primeiro portfolio pessoal. ",
   },
   {
     id: 2,
@@ -16,8 +16,7 @@ export const projects = [
     title: "Pomodoro-fi",
     imgUrl: "assets/pomodorotunes.png",
     stack: ["react", "tailwind", "next", "typescript"],
-    description:
-      "Nesse projeto tentei unir a tranquilidade do lo-fi com o poderoso método pomodoro.",
+    description: "Lo-fi com o poderoso método pomodoro.",
   },
 ];
 

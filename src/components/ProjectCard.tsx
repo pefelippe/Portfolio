@@ -29,13 +29,13 @@ function ProjectCard({
       initial={{ x: direction, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex  max-md:flex-col mx-auto rounded-xl  max-w-4xl w-full text-[#000] justify-start
-      items-center text-center border border-[#242424] p-5 "
+      className="flex  max-md:flex-col mx-auto rounded-md  w-full text-[#000] justify-start
+      items-center text-center   bg-[#fafafa] "
     >
       <Link
         href={link}
-        className="transition-all overflow-hidden md:h-[400px] 
-        flex-shrink-0 rounded-2xl w-full md:max-w-sm  border-2 border-[#171717]"
+        className="transition-all overflow-hidden h-[330px] 
+        flex-shrink-0 rounded-md w-full md:max-w-lg shadow-2xl"
       >
         <motion.img
           src={imgUrl}
@@ -46,7 +46,7 @@ function ProjectCard({
       </Link>
 
       <div
-        className="py-5  flex flex-col  gap-4 mx-auto
+        className="p-5  flex flex-col  gap-4 mx-auto
        text-center items-center  rounded-md "
       >
         <a

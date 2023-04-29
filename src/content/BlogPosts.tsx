@@ -51,11 +51,11 @@ const posts = [
   },
 ];
 
-export default function Example() {
+export default function Blog() {
   return (
     <div className="bg-white ">
       <div className="mx-auto max-w-7xl ">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="mx-auto  lg:mx-0 text-center w-full justify-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Direto do blog
           </h2>

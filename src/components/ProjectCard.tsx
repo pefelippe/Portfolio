@@ -22,17 +22,20 @@ function ProjectCard({
   stack,
   id,
 }: IProjectCard) {
+  const direction = id % 2 === 0 ? -250 : 250;
+
   return (
     <motion.div
-      className="flex  max-md:flex-col gap-10
-      mx-auto rounded-xl  w-full text-[#000] 
-      items-center justify-start 
-      text-center "
+      initial={{ x: direction, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="flex  max-md:flex-col mx-auto rounded-xl  w-full text-[#fff] justify-center
+      items-center text-center bg-[#171717] p-6 "
     >
       <Link
         href={link}
-        className="transition-all overflow-hidden md:h-[350px] 
-        flex-shrink-0 rounded-2xl w-full max-w-lg "
+        className="transition-all overflow-hidden md:h-[400px] 
+        flex-shrink-0 rounded-2xl w-full md:max-w-sm shadow"
       >
         <motion.img
           src={imgUrl}
@@ -43,13 +46,13 @@ function ProjectCard({
       </Link>
 
       <div
-        className="p-5  flex flex-col  gap-4 xs
-       text-start items-start  w-fit h-fit rounded-md max-w-sm"
+        className="py-5  flex flex-col  gap-4 
+       text-center items-center  w-full  h-fit rounded-md "
       >
         <a
           href={link}
           target="_blank"
-          className=" text-[#000] gap-2  w-fit text-[2rem] font-semibold "
+          className=" gap-2  w-fit text-[2.2rem] font-semibold "
           rel="noreferrer"
         >
           {title}
@@ -60,7 +63,7 @@ function ProjectCard({
           className="flex w-full max-w-sm  justify-center 
         font-semibold text-xl items-center gap-2"
         >
-          <Link
+          {/* <Link
             href={repo}
             target="_blank"
             className="flex bg-[#000] text-[#fff] items-center
@@ -68,13 +71,13 @@ function ProjectCard({
              justify-center rounded-full w-fit p-3"
           >
             <FaGithub className="h-7 w-7 " />
-          </Link>
+          </Link> */}
           <Link
             href={link}
             target="_blank"
             className="flex gap-4  items-center bg-blue hover:bg-blue/80
              text-white transition-all text-xl 
-            border-2 justify-center rounded-full w-full  py-3"
+            justify-center rounded-full w-full  py-3"
           >
             Live Demo
           </Link>

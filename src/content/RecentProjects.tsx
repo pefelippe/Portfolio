@@ -20,15 +20,14 @@ type ProjectsType = {
 function RecentProjects() {
   return (
     <motion.div
-      initial={{ x: -250, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ opacity: 0 }}
+      whileInView={{opacity: 1 }}
       transition={{ duration: 1 }}
       id="work"
       className=" w-full mx-auto h-fit text-xl 
-      rounded-xl flex flex-col justify-between
-      items-start "
+      rounded-xl flex flex-col justify-between items-start "
     >
-      <div className=" max-w-2xl lg:mx-0">
+      <div className=" lg:mx-0 w-full justify-center text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Meus projetos
         </h2>
@@ -39,7 +38,7 @@ function RecentProjects() {
 
       <div
         className="w-full grid border-t
-       border-gray-200 mt-10 pt-10 lg:mx-0 gap-16"
+       border-gray-200 mt-10 pt-10 lg:mx-0 gap-10"
       >
         {projects?.map((proj) => {
           return (

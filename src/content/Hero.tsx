@@ -16,7 +16,7 @@ export default function About() {
   });
 
   return (
-    <motion.div className="flex flex-col h-fit w-full justify-center items-center py-10 ">
+    <motion.div className="flex flex-col h-fit w-full justify-center items-center">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -28,14 +28,14 @@ export default function About() {
       />
 
       <h2
-        className="flex text-[3rem] md:text-[4rem] font-bold 
+        className="flex text-[3rem] font-bold 
        justify-center text-center items-center "
       >
         {text}
         <Cursor cursorColor="blue" />
       </h2>
 
-      <p className="flex text-[1.3rem] text-gray-500 max-w-sm md:max-w-md  text-center">
+      <p className="flex text-[1.2rem] text-gray-500 max-w-sm md:max-w-md  text-center">
         {heroDescription}
       </p>
     </motion.div>

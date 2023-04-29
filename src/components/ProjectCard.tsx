@@ -29,19 +29,18 @@ function ProjectCard({
       initial={{ x: direction, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex  max-md:flex-col mx-auto rounded-md  w-full text-[#000] justify-start
-      items-center text-center   bg-[#fafafa] "
+      className="flex  max-md:flex-col mx-auto rounded-md w-full text-[#000] justify-start
+      items-center text-center   bg-[#fafafa] shadow-md"
     >
       <Link
         href={link}
-        className="transition-all overflow-hidden h-[330px] 
-        flex-shrink-0 rounded-md w-full md:max-w-lg shadow-2xl"
+        className="transition-all overflow-hidden h-[350px] 
+        flex-shrink-0 rounded-l-md w-full md:max-w-lg "
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className=" object-cover h-full w-full hover:scale-105 
-          ease-in-out transition-all "
+          className=" object-cover h-full w-full hover:scale-105 ease-in-out transition-all "
         />
       </Link>
 

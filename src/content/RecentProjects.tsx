@@ -21,7 +21,7 @@ function RecentProjects() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="work"
       className=" w-full mx-auto h-fit text-xl 
@@ -38,7 +38,7 @@ function RecentProjects() {
 
       <div
         className="w-full grid border-t
-       border-gray-200 mt-10 pt-10 lg:mx-0 gap-10"
+       border-gray-200 mt-10 pt-10 lg:mx-0 gap-20"
       >
         {projects?.map((proj) => {
           return (

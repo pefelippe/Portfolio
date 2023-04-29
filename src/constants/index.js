@@ -6,8 +6,7 @@ export const projects = [
     title: "Portfolio",
     imgUrl: "assets/portfolio.png",
     stack: ["react", "tailwind", "next", "typescript"],
-    description:
-      "Meu primeiro portfolio pessoal. ",
+    description: "Meu primeiro portfolio pessoal. ",
   },
   {
     id: 2,

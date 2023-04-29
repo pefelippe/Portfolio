@@ -24,44 +24,57 @@ function ProjectCard({
 }: IProjectCard) {
   return (
     <motion.div
-      className="flex flex-col gap-6 
-    justify-start mx-auto rounded-xl  w-full "
+      className="flex  max-md:flex-col gap-10
+      mx-auto rounded-xl  w-full text-[#000] 
+      items-center justify-start 
+      text-center "
     >
-      <div className=" text-[#000] flex items-center h-full justify-between  w-full  flex-col gap-4   text-center max-w-xl">
-        <div className="flex flex-col gap-4 text-center items-center  w-full ">
-          <Link
-            href={link}
-            className="transition-all overflow-hidden w-full flex-shrink-0 rounded-2xl h-[270px] shadow md:max-w-[450px] border-2 hover:text-blue "
-          >
-            <motion.img
-              src={imgUrl}
-              alt="card image"
-              className=" object-cover h-full w-full hover:scale-105 ease-in-out transition-all "
-            />
-          </Link>
-          <a
-            href={link}
-            target="_blank"
-            className=" text-[#000] gap-2 items-center w-fit text-[2rem] font-bold "
-            rel="noreferrer"
-          >
-            {title}
-          </a>
-          <p className="text-[1.3rem] text-gray-500 max-w-md">{description}</p>
-        </div>
+      <Link
+        href={link}
+        className="transition-all overflow-hidden md:h-[350px] 
+        flex-shrink-0 rounded-2xl w-full max-w-lg "
+      >
+        <motion.img
+          src={imgUrl}
+          alt="card image"
+          className=" object-cover h-full w-full hover:scale-105 
+          ease-in-out transition-all "
+        />
+      </Link>
 
-        <div className="  flex max-md:flex-col w-full justify-center font-semibold text-xl items-center gap-2">
+      <div
+        className="p-5  flex flex-col  gap-4 xs
+       text-start items-start  w-fit h-fit rounded-md max-w-sm"
+      >
+        <a
+          href={link}
+          target="_blank"
+          className=" text-[#000] gap-2  w-fit text-[2rem] font-semibold "
+          rel="noreferrer"
+        >
+          {title}
+        </a>
+        <p className="text-[1.3rem] text-gray-500 max-w-md">{description}</p>
+
+        <div
+          className="flex w-full max-w-sm  justify-center 
+        font-semibold text-xl items-center gap-2"
+        >
           <Link
             href={repo}
             target="_blank"
-            className="flex gap-2 bg-[#000] text-[#fff] items-center hover:bg-[#000]/80 transition-all text-xl border-2 justify-center rounded-xl w-full py-3"
+            className="flex bg-[#000] text-[#fff] items-center
+             hover:bg-[#000]/80 transition-all text-xl border-2 
+             justify-center rounded-full w-fit p-3"
           >
-            Código <FaGithub className="h-7 w-7 " />
+            <FaGithub className="h-7 w-7 " />
           </Link>
           <Link
             href={link}
             target="_blank"
-            className="flex gap-4 items-center bg-blue hover:bg-blue/80 text-white transition-all text-xl border-2 justify-center rounded-xl w-full  py-3"
+            className="flex gap-4  items-center bg-blue hover:bg-blue/80
+             text-white transition-all text-xl 
+            border-2 justify-center rounded-full w-full  py-3"
           >
             Live Demo
           </Link>

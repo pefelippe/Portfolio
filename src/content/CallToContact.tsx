@@ -11,16 +11,15 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative h-fit mx-auto  text-xl w-full  max-w-4xl 
+      className="relative h-fit mx-auto  text-xl w-full   
       flex flex-col justify-center  items-center gap-6  text-center"
     >
-      <div className="flex flex-col gap-4 justify-center items-center w-full text-[1.6rem]">
-        <b className="bg-blue text-white p-2 w-fit rounded-xl tracking-[5px] text-[2rem]">
-          contato
-        </b>
-
-        <p className=" font-semibold text-[#000] ">
-          Não perca tempo. Entre em contato
+      <div className="mx-auto max-w-2xl lg:mx-0">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Contato
+        </h2>
+        <p className="mt-2 text-lg leading-8 text-gray-600">
+          Não perca tempo. Vamos começar uma parceria.
         </p>
       </div>
 

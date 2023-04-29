@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="font-semibold  w-full mx-auto h-[10vh]
-       flex items-center snap-start text-[#000] bg-[#fff] shadow-sm"
+      className="font-semibold  w-full mx-auto h-[10vh] max-lg:px-8 max-w-5xl
+       flex items-center  text-[#000] bg-[#fff] shadow-sm"
     >
-      <div className="flex max-w-4xl mx-auto justify-between w-full max-xl:px-6">
+      <div className="w-full flex  justify-between items-center">
         <Link href="/">
           <h3 className="font-bold text-[#2d2e32] text-2xl hover:text-gray-500 transition-all">
             Pedro Felippe

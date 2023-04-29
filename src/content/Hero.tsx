@@ -1,39 +1,43 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import SocialLinks from "../components/SocialLinks";
 
+const wordsList = ["Pedro Felippe", "Web Developer", "Amante de café.tsx"];
+const heroDescription =
+  "Sou um desenvolvedor web, amante de filmes e e fascinado por tecnologia.";
+
 export default function About() {
+  const [text] = useTypewriter({
+    words: wordsList,
+    loop: 0,
+    typeSpeed: 75,
+  });
+
   return (
-    <motion.div
-      initial={{ x: -250 }}
-      whileInView={{ x: 0 }}
-      transition={{ duration: 1 }}
-      className="flex max-md:flex-col h-fit w-full justify-center items-center gap-16 "
-    >
+    <motion.div className="flex flex-col h-fit w-full justify-center items-center py-10 ">
       <motion.img
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="relative object-contain max-h-[250px] rounded-xl max-w-md max-md:hidden"
+        className="relative object-contain max-h-[120px] 
+        rounded-full flex "
       />
-      <div className="flex flex-col max-w-xl  leading-tight">
-        <h2 className="flex flex-col text-[4rem] font-bold  justify-start text-start  items-start ">
-          <Typewriter
-            words={["Pedro Felippe", "Web Developer", "Amante de café.tsx"]}
-            typeSpeed={50}
-            deleteSpeed={50}
-            delaySpeed={50}
-            loop
-          />
-        </h2>
 
-        <p className="flex text-[1.5rem] text-gray-500 max-w-lg">
-          Sou um desenvolvedor, amante de filmes e fascinado por tecnologia.
-        </p>
+      <h2
+        className="flex text-[3rem] md:text-[4rem] font-bold 
+       justify-center text-center items-center "
+      >
+        {text}
+        <Cursor cursorColor="blue" />
+      </h2>
 
-        {/* <SocialLinks /> */}
-      </div>
+      <p className="flex text-[1.3rem] text-gray-500 max-w-sm md:max-w-md  text-center">
+        {heroDescription}
+      </p>
     </motion.div>
   );
 }

@@ -7,10 +7,10 @@ type Props = {};
 
 export default function SocialLinks({}: Props) {
   return (
-    <div className="flex gap-8 w-fit items-center text-xl text-black max-w-xl">
+    <div className="relative flex gap-8 w-fit items-center text-xl text-black max-w-xl pt-4">
       <AnimatedBtn className="" href="https://github.com/pefelippe">
         <div className=" flex gap-3 items-center w-full font-semibold transition-all hover:text-[#5865f2]">
-          <FaGithub className="h-8 w-8" />
+          <FaGithub className="h-9 w-9" />
         </div>
       </AnimatedBtn>
 
@@ -22,7 +22,7 @@ export default function SocialLinks({}: Props) {
           className="  flex gap-3 items-center 
           font-semibold transition-all  hover:text-[#5865f2]"
         >
-          <FaLinkedinIn className="h-8 w-8 " />
+          <FaLinkedinIn className="h-9 w-9 " />
         </div>
       </AnimatedBtn>
 
@@ -31,7 +31,7 @@ export default function SocialLinks({}: Props) {
           className="  flex gap-3 items-center 
           font-semibold transition-all  hover:text-[#5865f2]"
         >
-          <FaFilePdf className="h-8 w-8 " />
+          <FaFilePdf className="h-9 w-9 " />
         </div>
       </AnimatedBtn>
     </div>

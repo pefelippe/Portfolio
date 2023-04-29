@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import ContentTitle from "../components/ContentTitle";
+
 import ExperienceCard from "../components/ProjectCard";
 
 type Props = {};

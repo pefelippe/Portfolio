@@ -1,33 +1,15 @@
-import { FaArrowDown } from "react-icons/fa";
-
 import CallToContact from "../src/content/CallToContact";
 import Hero from "../src/content/Hero";
-import QuickAbout from "../src/content/QuickAbout";
+import BlogPosts from "../src/content/BlogPosts";
 import RecentProjects from "../src/content/RecentProjects";
-import Skills from "../src/content/Skills";
 
 export default function Home() {
   return (
-    <div className="w-screen   text-[#2d2e32]  ">
-      <section className="relative  snap-center max-w-4xl mx-auto py-10 max-xl:px-6">
-        <Hero />
-      </section>
-
-      <section className="text-white  snap-center  max-w-4xl mx-auto py-10">
-        <Skills />
-      </section>
-
-      <section className="relative snap-center   py-10 max-xl:px-6">
-        <RecentProjects />
-      </section>
-
-      {/* <section className="text-[#141414] bg-[#fff] snap-center max-xl:px-8">
-        <QuickAbout />
-      </section> */}
-
-      <section className="relative snap-center py-10 max-xl:px-6 bg-[#fff]">
-        <CallToContact />
-      </section>
+    <div className="w-screen max-w-5xl mx-auto text-[#2d2e32] space-y-20 md:space-y-32 py-20 md:py-32 max-xl:px-8 ">
+      <Hero />
+      <RecentProjects />
+      <BlogPosts />
+      <CallToContact />
     </div>
   );
 }

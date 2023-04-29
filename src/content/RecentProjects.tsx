@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 
 import ProjectCard from "../../src/components/ProjectCard";
 import { projects } from "../../src/constants";
@@ -24,21 +22,25 @@ function RecentProjects() {
     <motion.div
       initial={{ x: -250, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ duration: 1, delay: 1 }}
+      transition={{ duration: 1 }}
       id="work"
-      className=" w-fit mx-auto h-fit max-w-4xl text-xl  rounded-xl flex flex-col justify-center
-      items-center text-center gap-4 "
+      className=" w-full mx-auto h-fit text-xl 
+      rounded-xl flex flex-col justify-between
+      items-start "
     >
-      <div className="flex flex-col   justify-center items-center w-full ">
-        <b className="bg-blue text-white p-2 w-fit rounded-xl tracking-[5px] text-[2rem] ">
-          projetos
-        </b>
-
-        <p className=" font-semibold py-4 text-[1.6rem]">
-          Talk is cheap. Show me projetinhos.
+      <div className=" max-w-2xl lg:mx-0">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Meus projetos
+        </h2>
+        <p className="mt-2 text-lg leading-8 text-gray-600">
+          Conheça meus projetos mais recentes.
         </p>
       </div>
-      <div className="max-w-4xl w-full grid gap-10 lg:grid-cols-2">
+
+      <div
+        className="w-full grid border-t
+       border-gray-200 mt-10 pt-10 lg:mx-0 gap-16"
+      >
         {projects?.map((proj) => {
           return (
             <ProjectCard

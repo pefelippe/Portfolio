@@ -14,7 +14,7 @@ function CallToContact({}: Props) {
       className="relative h-fit mx-auto  text-xl w-full   
       flex flex-col justify-center  items-center  text-center"
     >
-      <div className="mx-auto lg:mx-0 mb-10 pb-10 border-b w-full max-w-xl">
+      <div className="mx-auto lg:mx-0 pb-10  w-full max-w-xl">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contato
         </h2>

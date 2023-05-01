@@ -65,7 +65,7 @@ export default function Blog() {
         </div>
         <div
           className="mx-auto grid max-w-2xl grid-cols-1 
-        gap-x-4 gap-y-10 border-t border-gray-200 mt-8 pt-8 lg:mx-0 
+        gap-x-4 gap-y-10 border-gray-200  lg:mx-0 pt-10
         lg:max-w-none lg:grid-cols-3"
         >
           {posts.map((post) => (

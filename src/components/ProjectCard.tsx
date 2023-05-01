@@ -26,11 +26,11 @@ function ProjectCard({
 
   return (
     <motion.div
-      initial={{ x: direction, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      initial={{ x: direction }}
+      whileInView={{ x: 0 }}
       transition={{ duration: 1 }}
       className="flex  max-md:flex-col mx-auto rounded-md w-full text-[#000] justify-start
-      items-center text-center   bg-[#fafafa] shadow-md"
+      items-center text-center   bg-gray-100/30"
     >
       <Link
         href={link}
@@ -62,7 +62,7 @@ function ProjectCard({
           className="flex w-full max-w-sm  justify-center 
         font-semibold text-xl items-center gap-2"
         >
-          {/* <Link
+          <Link
             href={repo}
             target="_blank"
             className="flex bg-[#000] text-[#fff] items-center
@@ -70,7 +70,7 @@ function ProjectCard({
              justify-center rounded-full w-fit p-3"
           >
             <FaGithub className="h-7 w-7 " />
-          </Link> */}
+          </Link>
           <Link
             href={link}
             target="_blank"

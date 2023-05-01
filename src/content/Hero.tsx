@@ -16,19 +16,19 @@ export default function About() {
   });
 
   return (
-    <motion.div className="flex flex-col h-fit w-full justify-center items-center">
+    <motion.div className="flex mx-auto flex-col h-fit w-fit justify-center items-center  ">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         alt="avatar-pefelippe"
         src="assets/avatar-pdr.png"
-        className="relative object-contain max-h-[120px] 
+        className="relative object-contain max-h-[120px] md:max-h-[180px] shadow-md
         rounded-full flex "
       />
 
       <h2
-        className="flex text-[3rem] font-bold 
+        className="flex text-[3rem] md:text-[3.5rem] font-bold 
        justify-center text-center items-center "
       >
         {text}

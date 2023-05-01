@@ -1,19 +1,14 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React from "react";
 
-import { navLinks } from "../../constants";
 import SocialLinks from "../SocialLinks";
-import HamburgerMenu from "./../HamburgerMenu";
 
 const Navbar = () => {
-  const router = useRouter();
-
   return (
     <motion.nav
       className="font-semibold  w-full mx-auto h-[10vh] max-lg:px-8 max-w-5xl
-       flex items-center  text-[#000] bg-[#fff] shadow-sm"
+       flex items-center  text-[#000] bg-[#fff]"
     >
       <div className="w-full flex  justify-between items-center">
         <Link href="/">

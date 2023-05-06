@@ -5,7 +5,7 @@ import RecentProjects from "../src/content/RecentProjects";
 
 export default function Home() {
   return (
-    <div className="w-screen max-w-5xl mx-auto text-[#2d2e32] space-y-32 py-40 max-xl:px-8 ">
+    <div className="w-full max-w-7xl text-[#2d2e32] space-y-32 py-40 mx-auto">
       <Hero />
       <RecentProjects />
       <BlogPosts />

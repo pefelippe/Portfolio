@@ -30,7 +30,7 @@ function ProjectCard({
       whileInView={{ x: 0 }}
       transition={{ duration: 1 }}
       className="flex  max-md:flex-col mx-auto rounded-md w-full text-[#000] justify-start
-      items-center text-center   bg-gray-100/30"
+      items-center text-center   bg-white"
     >
       <Link
         href={link}

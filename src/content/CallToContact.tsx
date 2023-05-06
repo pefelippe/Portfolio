@@ -15,10 +15,10 @@ function CallToContact({}: Props) {
       flex flex-col justify-center  items-center  text-center"
     >
       <div className="mx-auto lg:mx-0 pb-10  w-full max-w-xl">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Contato
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600">
+        <p className="mt-2 text-lg leading-8 text-gray-300">
           Não perca tempo. Vamos começar uma parceria.
         </p>
       </div>

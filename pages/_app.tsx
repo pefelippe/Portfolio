@@ -1,5 +1,6 @@
-import "../styles/globals.css";
 import { Analytics } from "@vercel/analytics/react";
+
+import "../styles/globals.css";
 
 import type { AppProps } from "next/app";
 import Head from "next/head";
@@ -11,9 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
       className="
-        overflow-x-hidden overflow-y-scroll 
-        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80  text-white bg-[#fff]
-        h-screen min-w-[400px] font-roboto min-h-fit "
+        overflow-x-hidden overflow-y-scroll bg-[url('/assets/endless-constellation.svg')]
+        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80  text-white bg-[#fefefe]/90
+        h-screen min-w-[400px] font-poppins min-h-fit "
     >
       <Head>
         <title>Pedro Felippe</title>

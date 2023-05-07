@@ -38,7 +38,7 @@ const posts = [
     title: "How blockchain is transforming supply chain management",
     href: "#",
     description:
-      "Blockchain technology has the potential to revolutionize supply chain management by increasing transparency, reducing costs, and improving security. In this article, we explore some of the latest developments in blockchain-based supply chain management and the potential benefits they offer.",
+      "Blockchain technology has the potential to revolutionize supply chain management by increasing transparency, reducing costs, and improving security. In this article, we explore some of the latest developments in blockchain-based supply chain management.",
     date: "Feb 18, 2022",
     datetime: "2022-02-18",
     category: { title: "Technology", href: "#" },
@@ -53,7 +53,7 @@ const posts = [
 
 export default function Blog() {
   return (
-    <div className="pb-20 max-xl:px-8 ">
+    <div className="  ">
       <div className="mx-auto max-w-6xl ">
         <div className="mx-auto  lg:mx-0 text-center w-full justify-center py-10">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -65,14 +65,14 @@ export default function Blog() {
         </div>
         <div
           className="mx-auto grid grid-cols-1 max-w-5xl w-full
-        gap-x-6  gap-y-10 border-gray-200  lg:mx-0 
+        gap-10 border-gray-200  lg:mx-0 
         lg:max-w-none lg:grid-cols-3"
         >
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex max-w-xl flex-col items-start justify-between transition-all p-5
-               bg-white rounded-md cursor-none"
+              className="flex max-w-xl flex-col items-start justify-between transition-all p-5 mx-auto
+               rounded-md h-full hover:shadow-xl hover:bg-gray-800 hover:border-transparent cursor-pointer"
             >
               <div className="flex items-center gap-x-4 text-xs">
                 <time dateTime={post.datetime} className="text-gray-500">
@@ -86,13 +86,13 @@ export default function Blog() {
                 </a>
               </div>
               <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900">
+                <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
                   <a href={post.href}>
                     <span className="absolute inset-0  " />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-300">
                   {post.description}
                 </p>
               </div>
@@ -105,13 +105,13 @@ export default function Blog() {
                   className="h-10 w-10 rounded-full bg-gray-50"
                 />
                 <div className="text-sm leading-6">
-                  <p className="font-semibold text-gray-900">
+                  <p className="font-semibold text-gray-300">
                     <a href={post.author.href}>
                       <span className="absolute inset-0" />
                       {post.author.name}
                     </a>
                   </p>
-                  <p className="text-gray-600">{post.author.role}</p>
+                  <p className="text-gray-100">{post.author.role}</p>
                 </div>
               </div>
             </article>

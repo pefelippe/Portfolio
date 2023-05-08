@@ -16,7 +16,7 @@ export default function About() {
   });
 
   return (
-    <motion.div className="flex mx-auto flex-col h-fit  max-w-5xl w-full gap-4">
+    <motion.div className="flex mx-auto flex-col h-fit  max-w-4xl w-full text-center items-center ">
       <h2
         className="flex text-[1.8rem]  font-medium 
        items-center text-gray-500"

@@ -71,7 +71,7 @@ export default function Blog() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex max-w-xl flex-col items-start justify-between transition-all p-5 mx-auto
+              className="flex flex-col items-start justify-between transition-all p-5 mx-auto
                rounded-md h-full hover:shadow-xl hover:bg-gray-800 hover:border-transparent cursor-pointer"
             >
               <div className="flex items-center gap-x-4 text-xs">
@@ -119,7 +119,7 @@ export default function Blog() {
         </div>
 
         <div className="w-full flex mx-auto">
-          <button className="w-fit mx-auto px-6 p-4 mt-10 text-2xl font-medium bg-blue hover:bg-blue/90 transition-all text-white rounded-md">
+          <button className="w-fit mx-auto px-6 p-4 mt-10 text-xl font-medium bg-blue hover:bg-blue/90 transition-all text-white rounded-full">
             Ver todos os posts
           </button>
         </div>

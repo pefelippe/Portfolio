@@ -36,7 +36,7 @@ function ProjectCard({
     >
       <Link
         href={link}
-        className="transition-all overflow-hidden h-[250px] lg:h-[300px] 
+        className="transition-all overflow-hidden h-[250px] lg:h-[350px] 
         flex-shrink-0 rounded-md w-full lg:max-w-lg hover:border-gray-700 "
       >
         <motion.img
@@ -63,7 +63,7 @@ function ProjectCard({
         </div>
         <div
           className="flex max-lg:flex-col w-full  justify-center 
-        font-semibold text-xl items-center gap-6 mt-2 lg:mt-6"
+        font-semibold text-xl items-center gap-6 mt-2 "
         >
           <Link
             href={repo}

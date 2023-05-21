@@ -36,7 +36,7 @@ function RecentProjects() {
         </p>
       </div>
 
-      <div className="w-full grid lg:mx-0 gap-20 ">
+      <div className="w-full grid lg:mx-0 gap-20 mt-10">
         {projects?.map((proj) => {
           return (
             <ProjectCard

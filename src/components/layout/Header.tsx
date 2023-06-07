@@ -7,12 +7,12 @@ import { navLinks } from "../../constants";
 const Navbar = () => {
   return (
     <motion.nav
-      className="font-medium w-full max-w-5xl  mx-auto h-[10vh] max-lg:px-8 shadow-sm
-       flex items-center text-[#fff]"
+      className="font-medium w-full max-w-5xl  mx-auto h-[8vh] max-lg:px-8 shadow-current px-2 border-b-[1px] border-gray-100
+       flex items-center "
     >
       <div className="w-full flex  justify-between items-center max-w-5xl mx-auto">
         <Link href="/">
-          <h3 className="font-bold  text-2xl hover:text-gray-300 transition-all">
+          <h3 className="font-medium  text-xl hover:text-gray-300 transition-all">
             Pedro Felippe
           </h3>
         </Link>
@@ -21,14 +21,14 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className=" h-full flex items-center w-full justify-center "
+        className=" h-full flex items-center w-full justify-end "
       >
-        <div className="max-md:hidden list-none text-gray-300 text-xl  flex items-center gap-8 ">
+        <div className=" list-none text-gray-300 text-lg  flex items-center gap-4">
           {navLinks.map((navLink) => {
             return (
               <li key={navLink.id}>
                 <Link
-                  className="rounded-xl p-2 cursor-pointer  hover:bg-blue hover:text-white transition-all"
+                  className="rounded-xl p-2 cursor-pointer  hover:text-blue  transition-all"
                   href={`${navLink.id}`}
                 >
                   {navLink.title}

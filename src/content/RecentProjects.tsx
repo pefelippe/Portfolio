@@ -24,11 +24,11 @@ function RecentProjects() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="work"
-      className=" w-full mx-auto h-fit text-xl max-w-5xl 
+      className=" w-full mx-auto h-fit text-xl max-w-3xl 
       rounded-xl flex flex-col justify-between items-start "
     >
       <div className=" lg:mx-0 w-full justify-center text-center py-10">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">
           Meus projetos
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-300">
@@ -36,7 +36,7 @@ function RecentProjects() {
         </p>
       </div>
 
-      <div className="w-full grid lg:mx-0 gap-20 mt-10">
+      <div className="w-full grid lg:mx-0 gap-20 ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

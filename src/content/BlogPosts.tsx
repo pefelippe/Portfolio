@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const posts = [
   {
@@ -53,76 +54,55 @@ const posts = [
 
 export default function Blog() {
   return (
-    <div className="  ">
-      <div className="mx-auto max-w-6xl ">
-        <div className="mx-auto  lg:mx-0 text-center w-full justify-center py-10">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Direto do blog
-          </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-300">
-            Meus posts mais recentes.
-          </p>
-        </div>
-        <div
-          className="mx-auto grid grid-cols-1 max-w-5xl w-full
-        gap-10 border-gray-200  lg:mx-0 
+    <div className="mx-auto max-w-6xl ">
+      <div className="mx-auto  lg:mx-0 text-center w-full justify-center py-6">
+        <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">
+          Direto do blog
+        </h2>
+        <p className="mt-2 text-lg leading-8 text-gray-300">
+          Meus posts mais recentes.
+        </p>
+      </div>
+      <div
+        className="mx-auto grid grid-cols-1 max-w-5xl w-full
+        gap-5 border-gray-200  lg:mx-0 
         lg:max-w-none lg:grid-cols-3"
-        >
-          {posts.map((post) => (
-            <article
-              key={post.id}
-              className="flex flex-col items-start justify-between transition-all p-5 mx-auto
-               rounded-md h-full hover:shadow-xl hover:bg-gray-800 hover:border-transparent cursor-pointer"
-            >
-              <div className="flex items-center gap-x-4 text-xs">
-                <time dateTime={post.datetime} className="text-gray-500">
-                  {post.date}
-                </time>
-                <a
-                  href={post.category.href}
-                  className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 bg-gray-100"
-                >
-                  {post.category.title}
+      >
+        {posts.map((post) => (
+          <article
+            key={post.id}
+            className="flex flex-col items-start justify-between transition-all px-8 py-4 mx-auto
+               rounded-md h-full hover:shadow-xl hover:bg-gray-800 
+              hover:bg-opacity-10 hover:text-white hover:border-transparent cursor-pointer"
+          >
+            <div className="flex items-center gap-x-2 text-xs">
+              <time dateTime={post.datetime} className="text-gray-500">
+                {post.date}
+              </time>
+            </div>
+            <div className="group relative">
+              <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-800">
+                <a href={post.href}>
+                  <span className="absolute inset-0  " />
+                  {post.title}
                 </a>
-              </div>
-              <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                  <a href={post.href}>
-                    <span className="absolute inset-0  " />
-                    {post.title}
-                  </a>
-                </h3>
-                <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-300">
-                  {post.description}
-                </p>
-              </div>
-              <div className="relative mt-8 flex items-center gap-x-2">
-                <Image
-                  width={300}
-                  height={300}
-                  src={post.author.imageUrl}
-                  alt=""
-                  className="h-10 w-10 rounded-full bg-gray-50"
-                />
-                <div className="text-sm leading-6">
-                  <p className="font-semibold text-gray-300">
-                    <a href={post.author.href}>
-                      <span className="absolute inset-0" />
-                      {post.author.name}
-                    </a>
-                  </p>
-                  <p className="text-gray-100">{post.author.role}</p>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
+              </h3>
+              <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-300">
+                {post.description}
+              </p>
+            </div>
+          </article>
+        ))}
+      </div>
 
-        <div className="w-full flex mx-auto">
-          <button className="w-fit mx-auto px-6 p-4 mt-10 text-xl font-medium bg-blue hover:bg-blue/90 transition-all text-white rounded-full">
-            Ver todos os posts
-          </button>
-        </div>
+      <div className="w-full flex mx-auto">
+        <Link
+          href="/blog"
+          className="w-fit mx-auto px-6 p-3 mt-8 text-xl font-medium bg-blue 
+          hover:bg-blue/90 text-white rounded-full hover:underline transition-all drop-shadow-md"
+        >
+          Ver todos os posts
+        </Link>
       </div>
     </div>
   );

@@ -12,8 +12,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
       className="
-        overflow-x-hidden overflow-y-scroll bg-[url('/assets/endless-constellation.svg')]
-        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80  text-white bg-[#fefefe]/90
+        overflow-x-hidden overflow-y-scroll bg-gray-50
+        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80  text-[#1f2937] bg-[#fefefe]/90
         h-screen min-w-[400px] font-poppins min-h-fit "
     >
       <Head>
@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Analytics />
-      {/* <Header /> */}
+      <Header />
       <Component {...pageProps} />
       <Footer />
     </div>

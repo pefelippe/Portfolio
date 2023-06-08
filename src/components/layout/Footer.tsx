@@ -14,8 +14,8 @@ function Footer({}: Props) {
     snap-start"
     >
       <div className="w-full max-w-3xl flex justify-center max-md:flex-col max-md:justify-center items-center gap-6">
-        <span className="">Desenvolvido por Pedro Felippe. © {year}.</span>
-        <SocialLinks />
+        <span className="">Pedro Felippe. © {year}.</span>
+        {/* <SocialLinks /> */}
       </div>
     </footer>
   );

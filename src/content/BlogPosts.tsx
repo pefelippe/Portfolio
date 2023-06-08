@@ -57,7 +57,7 @@ export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
     <div className=" ">
-      <div className=" lg:mx-0 text-center w-full  ">
+      <div className=" lg:mx-0 text-start w-full  ">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Latest Posts
         </h2>
@@ -71,18 +71,18 @@ export default function BlogPosts({ qnt = 0 }) {
           <article
             key={post.id}
             className="flex flex-col items-start justify-between transition-all px-8 py-10 mx-auto
-               rounded-md h-full hover:shadow-xl bg-[#fafafa]
+               rounded-md h-full hover:shadow-xl bg-[#fafafa] 
               hover:bg-opacity-90 hover:text-white hover:border-transparent cursor-pointer"
           >
-            <div className="flex items-center gap-x-2 text-xs">
+            <div className="flex items-center gap-x-2 text-xs h-fit">
               <time dateTime={post.datetime} className="text-gray-500">
                 {post.date}
               </time>
             </div>
-            <div className="group relative">
+            <div className="group relative h-full">
               <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-800">
                 <a href={post.href}>
-                  <span className="absolute inset-0  " />
+                  <span className="absolute inset-0 h-fit " />
                   {post.title}
                 </a>
               </h3>
@@ -97,7 +97,7 @@ export default function BlogPosts({ qnt = 0 }) {
       <Link
         href="/about"
         className="w-fit text-xl font-medium flex items-center justify-center gap-2 
-          underline transition-all drop-shadow-md hover:text-gray-300 hover:text-blue"
+          underline transition-all drop-shadow-md  hover:text-blue"
       >
         See posts
         <FaArrowRight />

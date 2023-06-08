@@ -5,7 +5,6 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import { FaArrowRight } from "react-icons/fa";
-import SocialLinks from "../components/SocialLinks";
 
 const wordsList = ["Web Developer", "CoffeEnjoyer.tsx"];
 
@@ -23,7 +22,7 @@ export default function About() {
         <Cursor cursorColor="blue" />
       </h2>
 
-      <span className="font-bold  text-[2.4rem] md:text-[2.7rem] w-fit leading-[1.2] ">
+      <span className="font-bold  text-[2rem] md:text-[2.7rem] w-fit leading-[1.2] ">
         Web developer passionate about crafting powerful{" "}
         <span className="border-b border-dashed text-[#BBF7D0]">tools</span> and
         visually stunning{" "}

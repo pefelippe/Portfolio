@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 import MessageForm from "../src/components/MessageForm";
+import AnimatedBtn from "../src/components/animated/AnimatedBtn";
+import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 type Props = {};
 
@@ -11,18 +13,35 @@ function CallToContact({}: Props) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="relative h-fit mx-auto text-xl w-full   
-      flex flex-col justify-center  items-center  text-center min-h-[90vh]"
+      flex flex-col justify-start  items-start  text-start gap-20"
     >
-      <div className="mx-auto lg:mx-0 pb-4  w-full max-w-xl">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Contato
-        </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-300">
-          Não perca tempo. Vamos começar uma parceria.
-        </p>
-      </div>
+      <span className="text-[2rem] font-bold">Get in Touch</span>
 
-      <MessageForm name={""} email={""} subject={""} message={""} />
+      <div className="flex flex-col w-full justify-between items-start gap-20">
+        <div className="flex gap-7">
+          <AnimatedBtn className="" href="https://github.com/pefelippe">
+            <div className=" flex gap-3 items-center w-full font-semibold transition-all hover:text-blue">
+              <FaGithub className="h-8 w-8" />
+              Github
+            </div>
+          </AnimatedBtn>
+
+          <AnimatedBtn
+            className=""
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <div
+              className="  flex gap-3 items-center 
+            font-semibold transition-all  hover:text-blue"
+            >
+              <FaLinkedinIn className="h-8 w-8 " />
+              Linkedin
+            </div>
+          </AnimatedBtn>
+        </div>
+
+        <MessageForm name={""} email={""} subject={""} message={""} />
+      </div>
     </motion.div>
   );
 }

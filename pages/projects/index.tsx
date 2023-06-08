@@ -11,20 +11,20 @@ function Projects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       id="work"
-      className="h-fit min-h-screen max-w-4xl mx-auto text-[#000] w-full text-xl max-lg:px-8 
+      className="h-fit min-h-screen max-w-4xl mx-auto  w-full text-xl max-lg:px-8 
       flex flex-col justify-start gap-6 lg:gap-20 items-center text-center mt-[15vh]"
     >
       <motion.h2
         initial={{ y: 50 }}
         animate={{ y: 0 }}
         transition={{ duration: 1.5 }}
-        className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold dark:text-white
+        className="text-[2.5rem] md:text-[3rem] leading-tight font-semibold 
         text-center underline decoration-blue max-w-md md:max-w-xl mx-auto"
       >
-        Meus projetos
+        Projects
       </motion.h2>
 
-      <div className=" w-full grid gap-10  grid-cols-2 ">
+      {/* <div className=" w-full grid gap-10  grid-cols-2 ">
         {projects?.map((proj) => {
           return (
             <ProjectCard
@@ -39,7 +39,7 @@ function Projects() {
             />
           );
         })}
-      </div>
+      </div> */}
     </motion.div>
   );
 }

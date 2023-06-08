@@ -10,12 +10,12 @@ function Footer({}: Props) {
 
   return (
     <footer
-      className="bg-[#131313] text-white w-full py-10 flex h-[10vh]  justify-center items-center mx-auto text-lg max-xl:px-6 text-black 
+      className="w-full py-10 flex h-[10vh]  justify-center items-center mx-auto text-lg max-xl:px-6 text-black 
     snap-start"
     >
       <div className="w-full max-w-3xl flex justify-center max-md:flex-col max-md:justify-center items-center gap-6">
         <span className="">Desenvolvido por Pedro Felippe. © {year}.</span>
-        {/* <SocialLinks /> */}
+        <SocialLinks />
       </div>
     </footer>
   );

@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: ["./pages/**/*.{js.ts,jsx,tsx}", "./src/**/*.{js.ts,jsx,tsx}"],
   theme: {
+    darkMode: "class",
     fontFamily: {
       fontFamily: {
-        sans: ["Poppins"],
+        sans: ['"Fira Sans"', "sans-serif"],
         Matter: ["Matter", "cursive"],
         roboto: ["Roboto", "sans-serif"],
       },
@@ -14,7 +16,9 @@ module.exports = {
       current: "currentColor",
       white: "#ffffff",
       blue: "#5865f2",
-
+      dark: {
+        DEFAULT: "#FAFAFA",
+      },
       gray: {
         100: "#e1e1e6",
         300: "#A9ADC1",
@@ -29,5 +33,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwind-scrollbar"), require("tailwind-scrollbar-hide")],
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+    require("tailwind-scrollbar"),
+    require("tailwind-scrollbar-hide"),
+  ],
 };

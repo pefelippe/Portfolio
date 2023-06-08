@@ -3,16 +3,23 @@ import Link from "next/link";
 import React from "react";
 
 import { navLinks } from "../../constants";
+import { FaMoon, FaSun } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({
+  isDarkMode,
+  handleDarkMode,
+}: {
+  isDarkMode: boolean;
+  handleDarkMode: () => void;
+}) => {
   return (
     <motion.nav
-      className="font-medium w-full max-w-5xl  mx-auto h-[8vh] max-lg:px-8 shadow-current px-2 border-b-[1px] border-gray-100
+      className="font-medium w-full max-w-screen-md mx-auto max-lg:px-8  text-[1.25rem] py-6
        flex items-center "
     >
-      <div className="w-full flex  justify-between items-center max-w-5xl mx-auto">
+      <div className="w-full flex  justify-between items-center  mx-auto text-[1.5rem]">
         <Link href="/">
-          <h3 className="font-medium  text-xl hover:text-gray-300 transition-all">
+          <h3 className="font-medium   hover:text-gray-300 transition-all">
             Pedro Felippe
           </h3>
         </Link>
@@ -23,12 +30,12 @@ const Navbar = () => {
         transition={{ duration: 1 }}
         className=" h-full flex items-center w-full justify-end "
       >
-        <div className=" list-none text-gray-300 text-lg  flex items-center gap-4">
+        <div className=" list-none flex items-center gap-2 pr-4">
           {navLinks.map((navLink) => {
             return (
               <li key={navLink.id}>
                 <Link
-                  className="rounded-xl p-2 cursor-pointer  hover:text-blue  transition-all"
+                  className="rounded-xl p-2 cursor-pointer hover:text-blue transition-all"
                   href={`${navLink.id}`}
                 >
                   {navLink.title}
@@ -37,6 +44,22 @@ const Navbar = () => {
             );
           })}
         </div>
+        <button className=" focus:outline-none  " onClick={handleDarkMode}>
+          <motion.div
+            animate={{ rotate: isDarkMode ? 0 : 360 }}
+            transition={{ duration: 0.5 }}
+            style={{ display: isDarkMode ? "block" : "none" }}
+          >
+            <FaSun className="text-gray-900" />
+          </motion.div>
+          <motion.div
+            animate={{ rotate: isDarkMode ? -360 : 0 }}
+            transition={{ duration: 0.5 }}
+            style={{ display: isDarkMode ? "none" : "block" }}
+          >
+            <FaMoon className="text-[#fafafa]" />
+          </motion.div>
+        </button>
       </motion.div>
     </motion.nav>
   );

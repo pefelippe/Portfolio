@@ -1,24 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
 
-@layer components {
-  .contactInput {
-    @apply outline-none bg-gray-500/10 rounded-sm px-4 py-4 border-[1px] border-[#242424] 
-    w-auto  max-w-xl text-[#fff] placeholder-gray-500 transition-all focus:border-[#5865f2];
-  }
+.dark {
+  @apply bg-white text-gray-900;
+}
 
-  .headerContentSelected {
-    @apply underline decoration-2 decoration-[#5865f2] underline-offset-8;
-  }
-  .headerContent {
-    @apply hover:opacity-80 transition-all;
-  }
+.contactInput {
+  @apply outline-none bg-gray-500/10 rounded-sm px-4 py-4 border-[1px] border-[#242424] w-auto max-w-xl text-[#fff] placeholder-gray-500 transition-all focus:border-[#5865f2];
+}
 
-  .iconHeader {
-    @apply w-fit text-lg mx-2 rounded-full   hover:opacity-80 transition-all;
-  }
+.headerContentSelected {
+  @apply underline decoration-2 decoration-[#5865f2] underline-offset-8;
+}
+
+.headerContent {
+  @apply hover:opacity-80 transition-all;
+}
+
+.iconHeader {
+  @apply w-fit text-lg mx-2 rounded-full hover:opacity-80 transition-all;
 }
 
 @layer pages {
@@ -29,66 +32,6 @@
   .contentStyle {
     @apply flex flex-col w-full max-w-7xl mx-auto gap-4 h-fit max-lg:px-8;
   }
-  .logoBtn {
-    @apply font-semibold
-    text-2xl
-    p-3
-    flex hover:text-[#a7a7a7]
-    rounded-lg
-    transition-all
-    ease-in;
-  }
 
-  .customUnderline {
-    @apply link-underline link-underline-black transition-all  py-2;
-  }
-  .headerBtn {
-    @apply font-medium
-    text-[#111]
-     py-4
-    text-xl
-    hover:text-[#F7AB0A]
-    customUnderline
-    max-md:hidden
-    transition-all;
-  }
-
-  .socialMediaIcon {
-    @apply h-16 w-16;
-  }
-
-  .heroBtn {
-    @apply w-fit p-4 px-4 border-2
-    hover:border-[#5865f2]/70 hover:text-[#5865f2]/70 transition-all hover:underline
-    rounded-xl font-semibold text-xl mx-auto md:mx-0;
-  }
-
-  .component-base {
-    @apply flex relative overflow-hidden flex-col text-left 
-    justify-center mx-auto items-center;
-  }
-
-  .component-title {
-    @apply absolute top-28 uppercase tracking-[20px] text-gray-500 text-2xl;
-  }
-
-  .link-underline {
-    border-bottom-width: 0;
-    background-image: linear-gradient(transparent, transparent),
-      linear-gradient(#fff, #fff);
-    background-size: 0 3px;
-    background-position: 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 2s ease-in-out;
-  }
-
-  .link-underline-black {
-    background-image: linear-gradient(transparent, transparent),
-      linear-gradient(#f7ab0a, #f7ab0a);
-  }
-
-  .link-underline:hover {
-    background-size: 100% 3px;
-    background-position: 0 100%;
-  }
+  /* Resto do código... */
 }

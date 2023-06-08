@@ -67,7 +67,7 @@ export default function MessageForm({}: Inputs) {
           placeholder="Mensagem"
           className="contactInput pb-20 md:pb-40"
         />
-        <button className="bg-[#5865f2] py-5 px-10 rounded-md text-black font-bold text-2xl hover:bg-[#5865f2]/80 text-[#fff] ">
+        <button className="bg-[#5865f2] py-3 px-6 w-fit mx-auto rounded-xl text-black font-medium text-2xl  text-[#fff] ">
           {isLoading ? (
             <svg
               aria-hidden="true"
@@ -85,7 +85,7 @@ export default function MessageForm({}: Inputs) {
               />
             </svg>
           ) : (
-            "Começar parceria!"
+            "Enviar mensagem"
           )}
         </button>
       </form>

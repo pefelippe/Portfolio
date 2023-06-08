@@ -32,7 +32,7 @@ function ProjectCard({
       className={`${
         id % 2 ? "flex-row-reverse" : ""
       }  flex max-lg:flex-col mx-auto rounded-md w-full  justify-start
-      items-center text-center max-w-[450px] lg:max-w-7xl gap-6 lg:gap-20`}
+      items-center text-center max-w-[450px] lg:max-w-4xl gap-6 lg:gap-10`}
     >
       <Link
         href={link}
@@ -54,7 +54,7 @@ function ProjectCard({
           <a
             href={link}
             target="_blank"
-            className=" gap-2 w-fit text-[2.2rem] lg:text-[2.5rem] font-semibold hover:text-gray-300 transition-all"
+            className=" gap-2 w-fit text-[2.2rem]  font-semibold hover:text-gray-300 transition-all"
             rel="noreferrer"
           >
             {title}

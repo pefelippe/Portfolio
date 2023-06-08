@@ -13,7 +13,7 @@ function Skills({}: Props) {
       initial={{ x: 250 }}
       whileInView={{ x: 0 }}
       transition={{ duration: 1 }}
-      className="gap-8 grid w-full grid-cols-4  mx-auto max-w-lg "
+      className="gap-8 grid w-full grid-cols-12  mx-auto  "
     >
       {technologies.map((tech) => {
         return (

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 const posts = [
   {
@@ -35,45 +36,43 @@ const posts = [
     },
   },
   {
-    id: 23,
-    title: "How blockchain is transforming supply chain management",
+    id: 3,
+    title: "The future of work: How automation is changing the job market",
     href: "#",
     description:
-      "Blockchain technology has the potential to revolutionize supply chain management by increasing transparency, reducing costs, and improving security. In this article, we explore some of the latest developments in blockchain-based supply chain management.",
-    date: "Feb 18, 2022",
-    datetime: "2022-02-18",
+      "Automation is transforming the job market, but what does that mean for workers? In this article, we explore the potential impact of automation on employment, and what companies and policymakers can do to mitigate the risks.",
+    date: "Mar 28, 2023",
+    datetime: "2023-03-28",
     category: { title: "Technology", href: "#" },
     author: {
       name: "Pedro Felippe",
-      role: "Senior Blockchain Engineer",
+      role: "Senior AI Engineer",
       href: "#",
       imageUrl: "/assets/avatar-pdr.png",
     },
   },
 ];
 
-export default function Blog() {
+export default function BlogPosts({ qnt = 0 }) {
+  const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className="mx-auto max-w-6xl ">
-      <div className="mx-auto  lg:mx-0 text-center w-full justify-center py-6">
-        <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">
-          Direto do blog
+    <div className=" ">
+      <div className=" lg:mx-0 text-center w-full  ">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          Latest Posts
         </h2>
-        <p className="mt-2 text-lg leading-8 text-gray-300">
-          Meus posts mais recentes.
-        </p>
       </div>
       <div
-        className="mx-auto grid grid-cols-1 max-w-5xl w-full
+        className="mx-auto grid grid-cols-1  w-full py-10
         gap-5 border-gray-200  lg:mx-0 
-        lg:max-w-none lg:grid-cols-3"
+        lg:max-w-none lg:grid-cols-2"
       >
-        {posts.map((post) => (
+        {postsToShow.map((post) => (
           <article
             key={post.id}
-            className="flex flex-col items-start justify-between transition-all px-8 py-4 mx-auto
-               rounded-md h-full hover:shadow-xl hover:bg-gray-800 
-              hover:bg-opacity-10 hover:text-white hover:border-transparent cursor-pointer"
+            className="flex flex-col items-start justify-between transition-all px-8 py-10 mx-auto
+               rounded-md h-full hover:shadow-xl bg-[#fafafa]
+              hover:bg-opacity-90 hover:text-white hover:border-transparent cursor-pointer"
           >
             <div className="flex items-center gap-x-2 text-xs">
               <time dateTime={post.datetime} className="text-gray-500">
@@ -95,15 +94,14 @@ export default function Blog() {
         ))}
       </div>
 
-      <div className="w-full flex mx-auto">
-        <Link
-          href="/blog"
-          className="w-fit mx-auto px-6 p-3 mt-8 text-xl font-medium bg-blue 
-          hover:bg-blue/90 text-white rounded-full hover:underline transition-all drop-shadow-md"
-        >
-          Ver todos os posts
-        </Link>
-      </div>
+      <Link
+        href="/about"
+        className="w-fit text-xl font-medium flex items-center justify-center gap-2 
+          underline transition-all drop-shadow-md hover:text-gray-300 hover:text-blue"
+      >
+        See posts
+        <FaArrowRight />
+      </Link>
     </div>
   );
 }

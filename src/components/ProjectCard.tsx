@@ -32,7 +32,7 @@ function ProjectCard({
       className={`${
         id % 2 ? "flex-row-reverse" : ""
       }  flex max-lg:flex-col mx-auto rounded-md w-full  justify-start
-      items-center text-center max-w-[450px] lg:max-w-4xl gap-6 lg:gap-10`}
+      items-center text-center max-w-[450px] lg:max-w-4xl gap-6 lg:gap-10 `}
     >
       <Link
         href={link}

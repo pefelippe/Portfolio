@@ -47,11 +47,11 @@ export default function MessageForm({}: Inputs) {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="mx-auto flex flex-col gap-6 w-full max-w-lg "
+        className=" flex flex-col gap-6 w-full max-w-[400px] "
       >
         <input
           {...register("name", { required: true, maxLength: 50 })}
-          placeholder="your beautiful name  "
+          placeholder="Your beautiful name  "
           className="contactInput caret-white"
           type="text"
         />
@@ -64,10 +64,13 @@ export default function MessageForm({}: Inputs) {
 
         <textarea
           {...register("message", { required: true, maxLength: 500 })}
-          placeholder="message"
-          className="contactInput pb-20 md:pb-40"
+          placeholder="Tell me about your project here."
+          className="contactInput min-h-[200px] "
         />
-        <button className="bg-[#5865f2] py-4 px-6 w-full mx-auto rounded-xl text-black font-medium text-2xl  text-[#fff] ">
+        <button
+          className="bg-[#5865f2] py-4 px-6 w-full hover:underline hover:bg-blue/80 mx-auto rounded-md 
+        text-black font-semibold text-[1.4rem]  text-[#fff] "
+        >
           {isLoading ? (
             <svg
               aria-hidden="true"
@@ -85,7 +88,7 @@ export default function MessageForm({}: Inputs) {
               />
             </svg>
           ) : (
-            "Enviar mensagem"
+            "Send message"
           )}
         </button>
       </form>

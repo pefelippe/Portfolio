@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-
 import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
+
 import AnimatedBtn from "./animated/AnimatedBtn";
 
 type Props = {};
@@ -12,15 +12,13 @@ function Socials({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative h-fit mx-auto text-xl w-full   
+      className="relative h-fit mx-auto text-xl w-full  
       flex flex-col justify-start  items-start  text-start gap-10"
     >
-      <span className="text-[2rem] font-bold">Links</span>
-
-      <div className="flex max-md:flex-col gap-8">
+      <div className="flex  gap-8">
         <AnimatedBtn className="" href="https://github.com/pefelippe">
           <div className=" flex gap-2 items-center w-full font-semibold transition-all hover:text-blue">
-            <FaGithub className="h-8 w-8" />
+            <FaGithub className="h-7 w-7" />
             Github
           </div>
         </AnimatedBtn>
@@ -33,7 +31,7 @@ function Socials({}: Props) {
             className="  flex gap-2 items-center 
             font-semibold transition-all  hover:text-blue"
           >
-            <FaLinkedinIn className="h-8 w-8 " />
+            <FaLinkedinIn className="h-7 w-7 " />
             Linkedin
           </div>
         </AnimatedBtn>
@@ -45,7 +43,7 @@ function Socials({}: Props) {
             className="  flex gap-2 items-center 
           font-semibold transition-all  hover:text-blue"
           >
-            <FaFilePdf className="h-8 w-8" /> Resume
+            <FaFilePdf className="h-7 w-7" /> Resume
           </div>
         </AnimatedBtn>
       </div>

@@ -14,9 +14,7 @@ function Blog({}: Props) {
       flex flex-col justify-center  items-center  text-center min-h-[90vh]"
     >
       <div className="mx-auto lg:mx-0 pb-4  w-full max-w-xl">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Blog
-        </h2>
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Blog</h2>
       </div>
     </motion.div>
   );

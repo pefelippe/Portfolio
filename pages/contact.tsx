@@ -1,8 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import React from "react";
-import MessageForm from "../src/components/MessageForm";
-import AnimatedBtn from "../src/components/animated/AnimatedBtn";
 import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
+
+import AnimatedBtn from "../src/components/animated/AnimatedBtn";
+import MessageForm from "../src/components/MessageForm";
 
 type Props = {};
 
@@ -12,34 +14,24 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative h-fit mx-auto text-xl w-full   
-      flex flex-col justify-start  items-start  text-start gap-20"
+      className="relative h-fit  text-xl w-full  mx-auto max-w-screen-md max-lg:px-8
+      flex flex-col justify-center  items-center  text-start pt-10"
     >
-      <span className="text-[2rem] font-bold">Get in Touch</span>
+      <div className="flex max-md:flex-col w-full items-center  justify-between h-full">
+        <div className=" flex flex-col w-full md:max-w-xs text-[1.25rem] gap-6 h-full justify-start items-start ">
+          <span className="text-[2rem] font-bold  text-black">
+            Get in Touch
+          </span>
+          <p className="text-gray-300">
+            I look forward to hearing from you soon and engaging in meaningful
+            conversations.
+          </p>
 
-      <div className="flex flex-col w-full justify-between items-start gap-20">
-        <div className="flex gap-7">
-          <AnimatedBtn className="" href="https://github.com/pefelippe">
-            <div className=" flex gap-3 items-center w-full font-semibold transition-all hover:text-blue">
-              <FaGithub className="h-8 w-8" />
-              Github
-            </div>
-          </AnimatedBtn>
-
-          <AnimatedBtn
-            className=""
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <div
-              className="  flex gap-3 items-center 
-            font-semibold transition-all  hover:text-blue"
-            >
-              <FaLinkedinIn className="h-8 w-8 " />
-              Linkedin
-            </div>
-          </AnimatedBtn>
+          <p className="text-gray-300">
+            Let's{" "}
+            <span className="font-semibold 0 text-[#3b83f6d8] ">connect</span>!
+          </p>
         </div>
-
         <MessageForm name={""} email={""} subject={""} message={""} />
       </div>
     </motion.div>

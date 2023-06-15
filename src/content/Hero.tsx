@@ -3,11 +3,20 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {
+  FaArrowRight,
+  FaFilePdf,
+  FaGithub,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-import { FaArrowRight } from "react-icons/fa";
+import AnimatedBtn from "../components/animated/AnimatedBtn";
+import Socials from "../components/Socials";
 
-const wordsList = ["Web Developer", "CoffeEnjoyer.tsx"];
+const wordsList = ["CoffeEnjoyer.tsx"];
+
+const imgUrl = "";
 
 export default function About() {
   const [text] = useTypewriter({
@@ -17,35 +26,27 @@ export default function About() {
   });
 
   return (
-    <motion.div className="mx-auto flex flex-col h-fit w-full text-left items-left justify-left gap-7">
-      <h2 className="flex text-[1.6rem]  font-medium text-left w-fit items-left text-gray-500">
-        {text}
-        <Cursor cursorColor="blue" />
-      </h2>
-
-      <span className="font-bold  text-[2rem] md:text-[2.7rem] w-fit leading-[1.2] ">
-        Web developer passionate about crafting powerful{" "}
-        <span className="border-b border-dashed text-[#BBF7D0]">tools</span> and
-        visually stunning{" "}
-        <span className="border-b border-dashed text-[#3b83f6d8]">
-          user interfaces
-        </span>
+    <motion.div className=" flex flex-col h-fit w-full  ">
+      <motion.img
+        src="/assets/avatar-pdr.png"
+        alt="card image"
+        className="rounded-full object-fit h-24 w-24 hover:scale-105 ease-in-out transition-all mb-5"
+      />
+      <span className="font-bold  text-[2.5rem] md:text-[3.5rem] leading-[1.2] flex w-full">
+        Bridging technology and creativity to craft exceptional web experiences.
       </span>
 
-      <span className=" text-[1.2rem] md:text-[1.4rem] text-gray-300  font-normal">
-        Hi, I'm{" "}
-        <span className="font-semibold text-blue "> Pedro Felippe </span>- a
-        frontend web developer based in BR with experience working on both
-        frontend and backend development projects.
+      <span className=" text-gray-300  font-normal text-left w-full text-[1.1rem] py-14">
+        I'm <b>Pedro Felippe</b>, a <b>Web Developer</b> from Brazil with a
+        strong background in IT, specializing in web development. Currently
+        working as a full-time Web Developer at <b>Instituto Atlântico</b>.
+        <br />
+        <br />
+        With fluency in English and proficiency in modern web development tools,
+        I thrive on contributing to project success and continuously expanding
+        my expertise.
       </span>
-
-      <Link
-        href="/about"
-        className="w-fit text-xl font-medium flex items-center justify-center gap-2  md:text-[1.4rem]
-          underline transition-all drop-shadow-md  hover:text-blue"
-      >
-        More about me <FaArrowRight />
-      </Link>
+      <Socials />
     </motion.div>
   );
 }

@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
-function Projects() {
+function ProjectsCarousel() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -21,12 +21,7 @@ function Projects() {
       className="max-w-4xl mx-auto w-full text-xl 
       flex flex-col justify-start gap-6  items-start text-start"
     >
-      {/* <motion.h2
-        initial={{ y: 50 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1.5 }}
-        className="text-3xl font-bold tracking-tight sm:text-4xl "
-      >
+      <motion.h2 className="text-3xl font-bold tracking-tight sm:text-4xl ">
         Projects
       </motion.h2>
 
@@ -48,7 +43,7 @@ function Projects() {
                   src={proj.imgUrl}
                 />
               </Link>
-               <ProjectCard
+              {/* <ProjectCard
                 key={proj.id}
                 id={proj.id}
                 description={proj.description}
@@ -57,13 +52,13 @@ function Projects() {
                 title={proj.title}
                 repo={proj.repo}
                 stack={proj.stack}
-              /> 
+              /> */}
             </SwiperSlide>
           );
         })}
-      </Swiper> */}
+      </Swiper>
     </motion.div>
   );
 }
 
-export default Projects;
+export default ProjectsCarousel;

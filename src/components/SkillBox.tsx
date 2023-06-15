@@ -17,10 +17,9 @@ const SkillBox = ({ title, description, children }: ISkillBox) => {
       className="flex flex-col justify-center items-center text-center mx-auto w-full rounded-md text-white"
     >
       <div className="group">
-        <div className="z-20 max-w-[70px] ">{children}</div>
-        <span className="flex flex-col  z-50 absolute  right-0 left-0 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 gap-2 ">
-          <p className="font-semibold text-sm ">{title}</p>
-          {/* <p className="max-md:hidden zx">{description}</p> */}
+        <div className="z-50  ">{children}</div>
+        <span className="w-fit flex flex-col  z-50 absolute  right-[-10] left-0 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 gap-2 ">
+          <p className="w-fit font-semibold text-sm ">{title}</p>
         </span>
       </div>
     </motion.a>

@@ -1,10 +1,8 @@
-import BlogPosts from "../src/content/BlogPosts";
 import { motion } from "framer-motion";
 
-import Hero from "../src/content/Hero";
-
-import CallToContact from "./contact";
+import SocialLinks from "../src/components/SocialLinks";
 import Socials from "../src/components/Socials";
+import Hero from "../src/content/Hero";
 
 export default function Home() {
   return (
@@ -12,11 +10,9 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full max-w-screen-md mx-auto max-lg:px-8 py-20 md:py-20 space-y-20 md:space-y-32"
+      className="w-full max-w-4xl mx-auto max-lg:px-8 py-10 md:py-24 space-y-10 min-h-[8vh]"
     >
       <Hero />
-      <BlogPosts qnt={2} />
-      <Socials />
     </motion.div>
   );
 }

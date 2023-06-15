@@ -1,6 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import AnimatedBtn from "../components/animated/AnimatedBtn";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper";
 
 const posts = [
   {
@@ -57,51 +67,53 @@ export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
     <div className=" ">
-      <div className=" lg:mx-0 text-start w-full  ">
+      <div className="flex lg:mx-0 text-start w-full justify-between pb-10">
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Latest Posts
         </h2>
-      </div>
-      <div
-        className="mx-auto grid grid-cols-1  w-full py-10
-        gap-5 border-gray-200  lg:mx-0 
-        lg:max-w-none lg:grid-cols-2"
-      >
-        {postsToShow.map((post) => (
-          <article
-            key={post.id}
-            className="flex flex-col items-start justify-between transition-all px-8 py-10 mx-auto
-               rounded-md h-full hover:shadow-xl bg-[#fafafa] 
-              hover:bg-opacity-90 hover:text-white hover:border-transparent cursor-pointer"
-          >
-            <div className="flex items-center gap-x-2 text-xs h-fit">
-              <time dateTime={post.datetime} className="text-gray-500">
-                {post.date}
-              </time>
-            </div>
-            <div className="group relative h-full">
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-800">
-                <a href={post.href}>
-                  <span className="absolute inset-0 h-fit " />
-                  {post.title}
-                </a>
-              </h3>
-              <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-300">
-                {post.description}
-              </p>
-            </div>
-          </article>
-        ))}
+
+        <Link
+          href="/blog"
+          className="w-fit text-lg font-normal flex items-center justify-center  text-gray-300
+           transition-all   hover:underline"
+        >
+          Read all posts
+        </Link>
       </div>
 
-      <Link
-        href="/about"
-        className="w-fit text-xl font-medium flex items-center justify-center gap-2 
-          underline transition-all drop-shadow-md  hover:text-blue"
+      <Swiper
+        slidesPerView={2}
+        spaceBetween={30}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="freeMode "
       >
-        See posts
-        <FaArrowRight />
-      </Link>
+        {postsToShow.map((post) => {
+          return (
+            <SwiperSlide key={post.id}>
+              <AnimatedBtn key={post.id}>
+                <div
+                  className="flex flex-col items-start justify-end transition-all p-5 py-10 min-h-[350px] mx-auto
+              rounded-md h-full hover:shadow-xl bg-[#fafafa] 
+              hover:bg-opacity-90 hover:text-white hover:border-transparent cursor-pointer"
+                >
+                  <div className="flex items-center gap-x-2 text-xs h-fit">
+                    <time dateTime={post.datetime} className="text-gray-500">
+                      {post.date}
+                    </time>
+                  </div>
+                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-800">
+                    {post.title}
+                  </h3>
+                </div>
+              </AnimatedBtn>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </div>
   );
 }

@@ -14,25 +14,21 @@ function CallToContact({}: Props) {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative h-fit  text-xl w-full  mx-auto max-w-screen-md max-lg:px-8
-      flex flex-col justify-center  items-center  text-start pt-10"
+      className="relative h-fit  text-xl w-full  mx-auto max-lg:px-8
+      flex flex-col justify-center  items-center  text-start "
     >
-      <div className="flex max-md:flex-col w-full items-center  justify-between h-full">
-        <div className=" flex flex-col w-full md:max-w-xs text-[1.25rem] gap-6 h-full justify-start items-start ">
-          <span className="text-[2rem] font-bold  text-black">
-            Get in Touch
-          </span>
-          <p className="text-gray-300">
-            I look forward to hearing from you soon and engaging in meaningful
-            conversations.
-          </p>
+      <div className=" flex flex-col w-full text-[1.25rem] gap-10 h-full  ">
+        <span className="text-[2.5rem] font-bold  text-black">
+          Let's work together
+        </span>
 
-          <p className="text-gray-300">
-            Let's{" "}
-            <span className="font-semibold 0 text-[#3b83f6d8] ">connect</span>!
+        <div className="flex w-full">
+          <p className="text-gray-700  font-normal text-left w-full text-[1rem] xl:text-[1.2rem] max-w-xl">
+            If you’d like to chat about anything get in touch at
+            pedfelippe@gmail.com or reach out to me on LinkedIn.
           </p>
+          <MessageForm name={""} email={""} subject={""} message={""} />
         </div>
-        <MessageForm name={""} email={""} subject={""} message={""} />
       </div>
     </motion.div>
   );

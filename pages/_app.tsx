@@ -9,7 +9,7 @@ import Header from "../src/components/layout/Header";
 import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -40,8 +40,10 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Analytics />
-      <Header isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
-      <Component {...pageProps} />
+      <div className="w-full">
+        <Header isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
+        <Component {...pageProps} />
+      </div>
       <Footer />
     </div>
   );

@@ -14,13 +14,16 @@ const SkillBox = ({ title, description, children }: ISkillBox) => {
         scale: 1.1,
         transition: { duration: 0.1 },
       }}
-      className="flex flex-col justify-center items-center text-center mx-auto w-full rounded-md text-white"
+      className="flex flex-col justify-center items-center text-center mx-auto w-fit rounded-md text-white"
     >
       <div className="group">
         <div className="z-50  ">{children}</div>
-        <span className="w-fit flex flex-col  z-50 absolute  right-[-10] left-0 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 gap-2 ">
-          <p className="w-fit font-semibold text-sm ">{title}</p>
-        </span>
+        {/* <span
+          className="w-fit flex flex-col  z-50 absolute  right-[-10]
+         left-0 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100 gap-2 "
+        > */}
+        {/* <p className="w-fit font-semibold text-sm ">{title}</p> */}
+        {/* </span> */}
       </div>
     </motion.a>
   );

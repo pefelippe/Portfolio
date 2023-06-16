@@ -21,7 +21,7 @@ const Navbar = ({
 }) => {
   return (
     <motion.nav
-      className="font-medium  w-full max-w-4xl mx-auto max-lg:px-8  text-[1.25rem] pt-8 justify-between
+      className="font-medium  w-full max-w-5xl mx-auto max-xl:px-8  text-[1.25rem] pt-8 justify-between
        flex items-center "
     >
       <motion.div
@@ -35,7 +35,7 @@ const Navbar = ({
             return (
               <li key={navLink.id}>
                 <Link
-                  className="hover:bg-gray-900 font-medium rounded-xl p-3 px-4 cursor-pointer hover:text-white transition-all max-md:hidden"
+                  className="hover:bg-gray-900 font-medium rounded-xl p-3 px-4 cursor-pointer hover:text-white transition-all max-xs:hidden"
                   href={`${navLink.id}`}
                 >
                   {navLink.title}
@@ -58,14 +58,14 @@ const Navbar = ({
           transition={{ duration: 0.5 }}
           style={{ display: isDarkMode ? "block" : "none" }}
         >
-          <FaSun className="text-gray-900" />
+          <FaMoon className="text-gray-900" />
         </motion.div>
         <motion.div
           animate={{ rotate: isDarkMode ? -360 : 0 }}
           transition={{ duration: 0.5 }}
           style={{ display: isDarkMode ? "none" : "block" }}
         >
-          <FaMoon className="text-[#fafafa]" />
+          <FaSun className="text-[#fafafa]" />
         </motion.div>
       </motion.button>
     </motion.nav>

@@ -31,38 +31,25 @@ function ProjectCard({
       transition={{ duration: 1 }}
       className={`${
         id % 2 ? "flex-row-reverse" : ""
-      }  flex max-lg:flex-col mx-auto rounded-md w-full  justify-start
-      items-center text-center max-w-[450px] lg:max-w-4xl gap-6 lg:gap-10 `}
+      }  flex max-lg:flex-col mx-auto rounded-md w-full  justify-start 
+      items-center text-start gap-20 `}
     >
-      <Link
-        href={link}
-        className="transition-all overflow-hidden h-[250px] lg:h-[350px] 
-        flex-shrink-0 rounded-md w-full lg:max-w-lg hover:border-gray-700 "
-      >
+      <Link href={link} className="flex h-[350px] w-[600px]">
         <motion.img
           src={imgUrl}
           alt="card image"
-          className=" object-cover h-full w-full hover:scale-105 ease-in-out transition-all "
+          className=" rounded-xl object-cover h-full w-full hover:scale-105 ease-in-out transition-all "
         />
       </Link>
 
-      <div
-        className=" w-full flex flex-col gap-4 mx-auto
-       text-center items-center  "
-      >
-        <div className="flex flex-col gap-6 w-full ">
-          <a
-            href={link}
-            target="_blank"
-            className=" gap-2 w-fit text-[2.2rem]  font-semibold hover:text-gray-300 transition-all"
-            rel="noreferrer"
-          >
-            {title}
-          </a>
-          <p className="w-fit text-[1.3rem]  text-gray-300 ">{description}</p>
-        </div>
-        <div
-          className="flex flex-col w-full  justify-center 
+      <div className="h-full w-fit flex flex-col gap-4 text-start items-start  justify-start">
+        <p className=" gap-2 w-fit text-[2.2rem]  font-semibold hover:text-gray-300 transition-all">
+          {title}
+        </p>
+        <p className="w-fit text-[1.3rem]  text-gray-300 ">{description}</p>
+
+        {/* <div
+          className="flex  w-full  justify-center 
         font-semibold text-xl items-center gap-6 mt-2 "
         >
           <Link
@@ -83,7 +70,7 @@ function ProjectCard({
           >
             Live Demo
           </Link>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

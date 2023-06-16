@@ -52,6 +52,10 @@
 }
 
 @layer pages {
+  .component {
+    @apply max-w-5xl mx-auto w-full text-xl min-h-[90vh] py-32
+    flex flex-col justify-start gap-6 items-start text-start;
+  }
   .white-component {
     @apply bg-[#fff] text-[#000];
   }

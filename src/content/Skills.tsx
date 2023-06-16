@@ -22,7 +22,7 @@ function Skills({}: Props) {
             description={tech.description}
             key={tech.name}
           >
-            <Image width={70} height={70} src={tech.imgUrl} alt={tech.name} />
+            <Image width={50} height={50} src={tech.imgUrl} alt={tech.name} />
           </SkillBox>
         );
       })}

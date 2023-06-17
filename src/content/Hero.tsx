@@ -32,11 +32,12 @@ export default function About() {
         alt="card image"
         className="rounded-full object-fit h-24 w-24 hover:scale-105 ease-in-out transition-all mb-5"
       />
-      <span className="font-bold  text-[2.5rem] md:text-[3.5rem] leading-[1.2] flex w-full">
+      <span className="font-bold  text-[2.5rem] md:text-[3.5rem] leading-[1.2] flex w-full py-20">
         Bridging technology and creativity to craft exceptional web experiences.
       </span>
 
-      <span className=" text-gray-300  font-normal text-left w-full text-[1.1rem] py-14">
+      <Socials />
+      <span className=" text-gray-300  font-normal text-left w-full text-[1.1rem] ">
         I'm <b>Pedro Felippe</b>, a <b>Web Developer</b> from Brazil with a
         strong background in IT, specializing in web development. Currently
         working as a full-time Web Developer at <b>Instituto Atlântico</b>.
@@ -46,7 +47,6 @@ export default function About() {
         I thrive on contributing to project success and continuously expanding
         my expertise.
       </span>
-      <Socials />
     </motion.div>
   );
 }

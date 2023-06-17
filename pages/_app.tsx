@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
     overflow-x-hidden overflow-y-scroll 
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 dark:text-gray-900 text-[#FAFAFA] 
     h-screen font-sans relative ${isDarkMode ? "dark" : ""} bg-[#08070B]
-    min-h-screen min-w-full 
+    min-h-screen min-w-full  max-xl:px-8
   `}
     >
       <Head>

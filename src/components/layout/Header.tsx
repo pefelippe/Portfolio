@@ -21,14 +21,14 @@ const Navbar = ({
 }) => {
   return (
     <motion.nav
-      className="font-medium  w-full max-w-5xl mx-auto max-xl:px-8  text-[1.25rem] pt-8 
+      className="h-[10vh] font-medium  w-full max-w-5xl mx-auto max-xl:px-8  text-[1.25rem] pt-8 
        flex items-center "
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="w-full flex  items-center  mx-auto text-[1.2rem] text-[#8F9BA8] justify-end  "
+        className="w-full flex  items-center  mx-auto text-[1.2rem] text-[#8F9BA8] justify-center md:justify-end  "
       >
         <div className=" list-none flex items-center gap-3">
           {navLinks.map((navLink) => {

@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-
-import Socials from "../src/components/Socials";
 import { useTypewriter } from "react-simple-typewriter";
-import CallToContact from "./contact";
+
+import AnimatedBtn from "../src/components/animated/AnimatedBtn";
+import Socials from "../src/components/Socials";
 import Skills from "../src/content/Skills";
+import CallToContact from "./contact";
 
 const wordsList = ["CoffeEnjoyer.tsx"];
 
@@ -22,33 +23,22 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="component pb-20 max-md:pt-10 max-xl:px-8 flex flex-col text-start gap-10 "
+      className="component pb-20 flex flex-col  text-start gap-10 "
     >
-      <motion.img
-        src="/assets/avatar-pdr.png"
-        alt="card image"
-        className="rounded-full object-fit w-28 h-28  hover:scale-110 ease-in-out transition-all "
-      />
-      <span className="font-bold text-[3rem] md:text-[3.5rem] lg:text-[4.5rem] leading-[1.2] flex w-full max-w-3xl">
-        I'm Pedro Felippe, <br /> a web developer.
-      </span>
+      <h1 className="font-bold text-[3rem] md:text-[3.5rem] lg:text-[4.7rem] leading-[1.2]  w-full ">
+        Nice to meet you. Lets build something great together.
+      </h1>
 
-      <motion.div className="flex w-full gap-8 md:gap-14 max-md:flex-col justify-center max-w-3xl md:items-center ">
-        <span className=" text-gray-500 font-normal text-left w-full text-[1.2rem] ">
-          Hi. I'm <b>Pedro Felippe</b>, a <b>Web Developer</b> from Brazil with
-          a strong background in IT, specializing in web development. Currently
-          working as a full-time Web Developer at <b>Instituto Atlântico</b>.
-          <br />
-          <br />
-          With fluency in English and proficiency in modern web development
-          tools, I thrive on contributing to project success and continuously
-          expanding my expertise.
+      <motion.div className="flex w-full gap-10  max-md:flex-col justify-center max-w-4xl md:items-center ">
+        <span className=" text-gray-700 font-[350] md:text-left w-full text-[1rem] md:text-[1.5rem] leading-normal">
+          Hey. I'm <b className="font-medium">Pedro Felippe — Web Developer</b>{" "}
+          from Brazil with a strong background in IT, specializing in web
+          development. Currently working as a full-time Web Developer at
+          Instituto Atlântico.
         </span>
       </motion.div>
 
       <Socials />
-      {/* <Skills /> */}
-      {/* <CallToContact /> */}
     </motion.div>
   );
 }

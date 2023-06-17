@@ -23,11 +23,11 @@ function CallToContact({}: Props) {
         </span>
 
         <div className="flex w-full">
-          <p className="text-gray-700  font-normal text-left w-full text-[1rem] xl:text-[1.2rem] max-w-xl">
+          <p className="text-gray-700  font-[350] text-left w-full text-[1rem] xl:text-[1.2rem] max-w-xl">
             If you’d like to chat about anything get in touch at
             pedfelippe@gmail.com or reach out to me on LinkedIn.
           </p>
-          <MessageForm name={""} email={""} subject={""} message={""} />
+          {/* <MessageForm name={""} email={""} subject={""} message={""} /> */}
         </div>
       </div>
     </motion.div>

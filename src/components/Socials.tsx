@@ -13,7 +13,7 @@ function Socials({}: Props) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="relative h-fit mx-auto text-xl w-fit  justify-end
-      flex items-center  gap-8"
+      flex items-center  gap-6"
     >
       <AnimatedBtn className="" href="https://github.com/pefelippe">
         <div className=" flex gap-2 items-center w-full font-semibold transition-all hover:text-blue">

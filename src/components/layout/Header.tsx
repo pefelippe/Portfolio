@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaFilePdf, FaGithub, FaLinkedinIn, FaMoon, FaSun } from "react-icons/fa";
+import {
+  FaFilePdf,
+  FaGithub,
+  FaLinkedinIn,
+  FaMoon,
+  FaSun,
+} from "react-icons/fa";
 
 import { navLinks } from "../../constants";
 import AnimatedBtn from "../animated/AnimatedBtn";
@@ -25,12 +31,12 @@ const Navbar = ({
         transition={{ duration: 1 }}
         className="w-full flex  items-center  mx-auto text-[1.2rem] text-[#8F9BA8] justify-start "
       >
-        <div className=" list-none flex items-center gap-3">
+        <div className=" list-none flex items-center gap-8">
           {navLinks.map((navLink) => {
             return (
               <li key={navLink.id}>
                 <Link
-                  className="hover:bg-gray-900 font-medium rounded-xl p-3 px-4 cursor-pointer hover:text-white transition-all max-xs:hidden"
+                  className="hover:underline underline-offset-8  font-medium  cursor-pointer  transition-all max-xs:hidden"
                   href={`${navLink.id}`}
                 >
                   {navLink.title}

@@ -54,7 +54,7 @@
 
 @layer pages {
   .component {
-    @apply max-w-5xl mx-auto w-full text-xl py-10 md:py-32
+    @apply max-w-7xl mx-auto w-full text-xl py-10 md:py-20
     flex flex-col justify-start gap-6 items-start text-start;
   }
   .white-component {

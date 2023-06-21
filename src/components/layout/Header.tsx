@@ -1,13 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import {
-  FaFilePdf,
-  FaGithub,
-  FaLinkedinIn,
-  FaMoon,
-  FaSun,
-} from "react-icons/fa";
+import { FaFilePdf, FaGithub, FaLinkedinIn, FaMoon, FaSun } from "react-icons/fa";
 
 import { navLinks } from "../../constants";
 import AnimatedBtn from "../animated/AnimatedBtn";
@@ -22,14 +16,14 @@ const Navbar = ({
 }) => {
   return (
     <motion.nav
-      className="h-[10vh] font-medium  w-full max-w-5xl mx-auto  text-[1.25rem] pt-8 
+      className="h-[10vh] font-medium  w-full max-w-7xl mx-auto  text-[1.25rem]
        flex items-center justify-between"
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="w-full flex  items-center  mx-auto text-[1.2rem] text-[#8F9BA8] justify-start "
+        className="w-full flex  items-center  mx-auto text-[1.2rem] text-[#aaaa] justify-start "
       >
         <div className=" list-none flex items-center gap-8">
           {navLinks.map((navLink) => {
@@ -46,8 +40,6 @@ const Navbar = ({
           })}
         </div>
       </motion.div>
-
-      <Socials />
 
       {/* <motion.button
         initial={{ opacity: 0, y: -50 }}

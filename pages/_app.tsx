@@ -27,13 +27,13 @@ export default function App({ Component, pageProps }: AppProps) {
     <div
       className={`
     overflow-x-hidden overflow-y-scroll 
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 dark:text-gray-900 text-[#FAFAFA] 
-    h-screen font-sans relative ${isDarkMode ? "dark" : ""} bg-[#08070B]
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 text-[#FAFAFA] 
+    h-screen font-sans relative  bg-[#000]
     min-h-screen min-w-full  max-xl:px-8
   `}
     >
       <Head>
-        <title>Pedro Felippe</title>
+        <title>Pedro Felippe — Web Developer</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -10,7 +10,7 @@ function Footer({}: Props) {
 
   return (
     <footer
-      className="h-[10vh] font-light text-gray-500 w-full py-10 flex  justify-center items-center mx-auto text-md  text-black 
+      className="h-[10vh] font-light text-gray-100 w-full py-10 flex  justify-center items-center mx-auto text-md  text-black 
     snap-start"
     >
       <div className="w-full max-w-3xl flex justify-center max-md:flex-col max-md:justify-center items-center gap-6">

@@ -25,17 +25,33 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       className="component  flex flex-col  text-start gap-10 "
     >
-      <h1 className="font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[4.7rem] leading-[1.2]  w-full ">
-        Nice to meet you. Lets build something great together.
+      <h1 className="font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[5.5rem] leading-[1.2]  w-full ">
+        I'm Pedro Felippe — web developer, dev ops enthusiast & coffe lover.
       </h1>
 
-      <motion.div className="flex w-full gap-10  max-md:flex-col justify-center max-w-4xl md:items-center ">
-        <span className="text-gray-700 font-[350] md:text-left w-full text-[1rem] md:text-[1.5rem] leading-normal">
-          Hey. I'm <b className="font-medium">Pedro Felippe — Web Developer</b>{" "}
-          from Brazil with a strong background in IT, specializing in web
-          development. Currently working as a full-time Web Developer at
-          Instituto Atlântico.
-        </span>
+      <Socials />
+
+      <motion.div className="flex w-full justify-start gap-32 items-start pt-20">
+        <motion.div className="h-fit flex w-full gap-10 flex-col justify-center  max-w-xl  text-[#aaaa] font-[350] md:text-left  text-[1rem] md:text-[1.4rem] leading-normal">
+          <span className="">
+            Hey. I'm{" "}
+            <b className="font-medium text-white">
+              Pedro Felippe — Web Developer
+            </b>{" "}
+            from Brazil with a strong background in IT, specializing in web
+            development.
+          </span>
+          <span className="">
+            Currently working as a full-time Web Developer at Instituto
+            Atlântico.
+          </span>
+        </motion.div>
+
+        <motion.img
+          src="/assets/avatar-pdr.png"
+          alt="card image"
+          className=" rounded-2xl object-cover max-w-xs h-fit hover:scale-105 ease-in-out transition-all "
+        />
       </motion.div>
     </motion.div>
   );

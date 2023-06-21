@@ -41,7 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Analytics />
       <div className="w-full">
-        <Header isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} />
+        {/* <Header isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} /> */}
         <Component {...pageProps} />
       </div>
       <Footer />

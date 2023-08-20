@@ -9,20 +9,6 @@ import Header from "../src/components/layout/Header";
 import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
-
-  function handleDarkMode() {
-    setIsDarkMode(!isDarkMode);
-  }
-
   return (
     <div
       className={`
@@ -41,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Analytics />
       <div className="w-full">
-        {/* <Header isDarkMode={isDarkMode} handleDarkMode={handleDarkMode} /> */}
+        <Header />
         <Component {...pageProps} />
       </div>
       <Footer />

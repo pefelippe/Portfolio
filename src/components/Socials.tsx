@@ -9,14 +9,14 @@ type Props = {};
 function Socials({}: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="relative h-fit text-xl w-fit  justify-start text-[#aaa] flex items-center  gap-8"
+      initial={{ opacity: 0, x: 75 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.75 }}
+      className="mx-auto relative h-fit text-xl w-full  justify-end text-gray flex items-center  gap-6"
     >
       <AnimatedBtn className="" href="https://github.com/pefelippe">
         <div className=" flex gap-2 items-center w-full font-semibold transition-all hover:text-blue">
-          <FaGithub className="h-7 w-7 md:h-8 md:w-8" />
+          <FaGithub className="h-8 w-8" />
         </div>
       </AnimatedBtn>
 
@@ -28,7 +28,7 @@ function Socials({}: Props) {
           className="  flex gap-2 items-center 
             font-semibold transition-all  hover:text-blue"
         >
-          <FaLinkedinIn className="h-7 w-7 md:h-8 md:w-8 " />
+          <FaLinkedinIn className="h-8 w-8" />
         </div>
       </AnimatedBtn>
       <AnimatedBtn
@@ -39,7 +39,7 @@ function Socials({}: Props) {
           className="  flex gap-2 items-center 
           font-semibold transition-all  hover:text-blue"
         >
-          <FaFilePdf className="h-7 w-7 md:h-8 md:w-8" />
+          <FaFilePdf className="h-8 w-8" />
         </div>
       </AnimatedBtn>
     </motion.div>

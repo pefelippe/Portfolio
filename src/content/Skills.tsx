@@ -10,10 +10,10 @@ type Props = {};
 function Skills({}: Props) {
   return (
     <motion.div
-      initial={{ x: 250 }}
-      whileInView={{ x: 0 }}
-      transition={{ duration: 1 }}
-      className="gap-8 grid w-full grid-cols-6 md:grid-cols-12 mx-auto  "
+      initial={{ opacity: 0, x: -75 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.75 }}
+      className="gap-10 grid w-full grid-cols-4 md:grid-cols-12 mx-auto "
     >
       {technologies.map((tech) => {
         return (
@@ -22,7 +22,7 @@ function Skills({}: Props) {
             description={tech.description}
             key={tech.name}
           >
-            <Image width={50} height={50} src={tech.imgUrl} alt={tech.name} />
+            <Image width={70} height={70} src={tech.imgUrl} alt={tech.name} />
           </SkillBox>
         );
       })}

@@ -13,7 +13,7 @@ function Skills({}: Props) {
       initial={{ opacity: 0, x: -75 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.75 }}
-      className="gap-10 grid w-full grid-cols-4 md:grid-cols-12 mx-auto "
+      className="gap-10 grid w-full grid-cols-4 md:grid-cols-12 mx-auto max-md:hidden"
     >
       {technologies.map((tech) => {
         return (

@@ -14,12 +14,12 @@ export default function App({ Component, pageProps }: AppProps) {
       className={`
     overflow-x-hidden overflow-y-scroll 
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 text-[#FAFAFA] 
-    h-screen font-sans relative  bg-[#000]
+    h-screen font-sans relative  bg-gray-900
     min-h-screen min-w-full  max-xl:px-8
   `}
     >
       <Head>
-        <title>Pedro Felippe — Web Developer</title>
+        <title>Pedro Felippe</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -29,8 +29,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className="w-full">
         <Header />
         <Component {...pageProps} />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

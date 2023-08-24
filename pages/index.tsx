@@ -1,72 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import { useTypewriter } from "react-simple-typewriter";
-
-import Socials from "../src/components/Socials";
-import Skills from "../src/content/Skills";
-import CallToContact from "./contact";
-
-const wordsList = ["CoffeEnjoyer.tsx"];
+import Contact from "../src/content/contact";
+import Hero from "../src/content/Hero";
 
 export default function Home() {
-  const [text] = useTypewriter({
-    words: wordsList,
-    loop: 0,
-    typeSpeed: 75,
-  });
-
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -75 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.75 }}
-      className="h-[80vh] max-w-7xl mx-auto flex flex-col  text-start  leading-[1.1] py-10  max-lg:items-center  max-lg:justify-center "
-    >
-      <motion.img
-        src="/assets/avatar-pdr.png"
-        alt="card image"
-        className="max-lg:mx-auto rounded-full object-cover w-24 h-24  hover:scale-105 ease-in-out transition-all "
-      />
-
-      <motion.h1 className="max-lg:text-center font-bold text-[2.5rem] lg:text-[5.5rem]  w-full py-4 lg:py-10 lg:pb-20 ">
-        I'm <span className="text-blue">Pedro Felippe</span> — web developer,
-        dev ops enthusiast & coffee lover.
-      </motion.h1>
-
-      <Skills />
-
-      {/* <motion.div
-        initial={{ opacity: 0, x: -75 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.75 }}
-        className="flex justify-start w-full items-center gap-10 bg-gray-900 text-[#000]  p-6 rounded-md"
-      >
-        <motion.img
-          src="/assets/eu.jpg"
-          alt="card image"
-          className="xl:h-[350px] rounded-md  object-cover  "
-        />
-
-        <span
-          className="flex w-full max-lg:flex-col  gap-4  flex-col 
-           text-[#f8f8f8] "
-        >
-          <p className="flex w-full text-[2.2rem] leading-normal font-bold  text-center  items-center">
-            Passionate Web Developer
-          </p>
-          <p>
-            In recent years, I've been focused on programming, building a solid
-            frontend stack and creating exciting projects that solve real-world
-            problems.
-          </p>
-          <p>
-            Take a look at my work below to see what I'm working on, and get in
-            touch if you'd like to work together!
-          </p>
-        </span>
-      </motion.div> */}
-
-      {/* <CallToContact /> */}
+    <motion.div className="max-w-7xl mx-auto flex flex-col text-start leading-[1.1] gap-40 py-20 max-lg:items-center max-lg:justify-center">
+      <Hero />
+      <Contact />
     </motion.div>
   );
 }

@@ -44,35 +44,36 @@ export default function MessageForm({}: Inputs) {
   };
 
   return (
-    <div className="w-full bg-gray-900 py-10 px-10 md:px-16 gap-10 flex flex-col rounded-md shadow-md ">
-      <h1 className="text-[2.5rem]  leading-[1.2] font-semibold ">Contact</h1>
-
+    <div className="w-full gap-10 flex flex-col rounded-md shadow-md ">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" flex flex-col gap-10 w-full max-w-3xl mx-auto"
+        className=" flex flex-col gap-10 w-full mx-auto"
       >
-        <input
-          {...register("name", { required: true, maxLength: 50 })}
-          placeholder="Enter your name"
-          className="contactInput caret-white"
-          type="text"
-        />
-        <input
-          {...register("email", { required: true, maxLength: 50 })}
-          placeholder="Enter your email"
-          className="contactInput"
-          type="email"
-        />
+        <div className="flex max-md:flex-col gap-10 w-full ">
+          <input
+            {...register("name", { required: true, maxLength: 50 })}
+            placeholder="Enter your name..."
+            className="contactInput caret-white"
+            type="text"
+          />
+          <input
+            {...register("email", { required: true, maxLength: 50 })}
+            placeholder="Enter your email..."
+            className="contactInput"
+            type="email"
+          />
+        </div>
 
         <textarea
           {...register("message", { required: true, maxLength: 500 })}
-          placeholder="Enter your message"
+          placeholder="Enter your message..."
           className="contactInput min-h-[300px] "
         />
       </form>
+
       <button
-        className="bg-[#5865f2] py-5 px-16 hover:bg-blue/70 mx-auto rounded-full w-fit
-        text-black font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff] "
+        className="bg-gray-850 py-4 px-20 hover:bg-gray-850/70 rounded w-fit uppercase border border-gray-850
+        text-black font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff] hover:underline hover:border-white transition-all"
       >
         {isLoading ? (
           <svg
@@ -91,7 +92,7 @@ export default function MessageForm({}: Inputs) {
             />
           </svg>
         ) : (
-          "Send message"
+          "Send "
         )}
       </button>
     </div>

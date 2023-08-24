@@ -37,7 +37,8 @@
 }
 
 .contactInput {
-  @apply outline-none bg-gray-500/10 rounded-sm px-4 py-4 border-[1px] border-[#242424]   text-[#fff] placeholder-gray-500 transition-all focus:border-[#5865f2];
+  @apply outline-none bg-gray-500/10  w-full px-4 py-4 rounded
+  border-[1px] border-[#242424]   text-[#fff] placeholder-gray-500 transition-all focus:border-[#5865f2];
 }
 
 .headerContentSelected {

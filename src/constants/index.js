@@ -64,13 +64,13 @@ export const technologies = [
     imgUrl: "/assets/tech/reactjs.png",
   },
   {
-    name: "Redux Toolkit",
+    name: "RTK",
     description:
       "Ferramenta oficial do Redux para gerenciamento de estado em aplicações React",
     imgUrl: "/assets/tech/redux.png",
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     description: "Framework CSS utilitário para estilização de interfaces",
     imgUrl: "/assets/tech/tailwind.png",
   },

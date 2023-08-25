@@ -7,14 +7,14 @@ interface ISkillBox {
   children?: JSX.Element;
 }
 
-const SkillBox = ({ title, description, children }: ISkillBox) => {
+const SkillBox = ({ children }: ISkillBox) => {
   return (
     <motion.a
       whileHover={{
         scale: 1.1,
         transition: { duration: 0.1 },
       }}
-      className="flex flex-col justify-center items-center text-center mx-auto w-fit rounded-md text-white"
+      className="flex flex-col justify-center items-center text-center mx-auto w-fit rounded-md text-white bg-gray-850"
     >
       <div className="group">
         <div className="z-50  ">{children}</div>

@@ -9,9 +9,7 @@ const Navbar = () => {
     <motion.nav
       className="h-[10vh] font-medium  w-full max-w-7xl mx-auto  text-[1.25rem] text-gray-100
        flex items-center justify-end"
-    >
-      <Socials />
-    </motion.nav>
+    ></motion.nav>
   );
 };
 

@@ -72,8 +72,8 @@ export default function MessageForm({}: Inputs) {
       </form>
 
       <button
-        className="bg-gray-850 py-5 px-32 shadow hover:bg-gray-850/70 rounded w-fit uppercase border border-gray-850
-        text-black font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff] hover:underline hover:border-white transition-all"
+        className="bg-gray-850 py-5 px-32 shadow hover:bg-gray-850/70 rounded w-fit uppercase border border-gray-850 max-md:mx-auto
+        text-black font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff] hover:text-blue  hover:border-blue transition-all"
       >
         {isLoading ? (
           <svg

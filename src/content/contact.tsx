@@ -14,7 +14,7 @@ function Contact() {
         Contact
       </p> */}
 
-      <h1 className="font-bold text-[2.5rem] xl:text-[4rem] leading-tight  text-black  pb-10 xl:pb-20 max-w-5xl">
+      <h1 className="font-bold text-[2.5rem] xl:text-[4rem] leading-tight  text-black  pb-10  max-w-5xl">
         Feel free to reach out with questions or to say hello.
       </h1>
       <MessageForm name={""} email={""} subject={""} message={""} />

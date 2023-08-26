@@ -14,11 +14,11 @@ function Socials({}: Props) {
         className="flex gap-2 items-center w-full font-semibold transition-all hover:text-blue
         text-xl hover:underline"
       >
-        <FaFilePdf className="h-10 w-10" />
+        <FaFilePdf className="h-8 w-8" />
       </AnimatedBtn>
       <AnimatedBtn className="" href="https://github.com/pefelippe">
         <div className=" flex gap-2 items-center w-full font-semibold transition-all hover:text-blue">
-          <FaGithub className="h-10 w-10" />
+          <FaGithub className="h-8 w-8" />
         </div>
       </AnimatedBtn>
 
@@ -30,7 +30,7 @@ function Socials({}: Props) {
           className="  flex gap-2 items-center 
             font-semibold transition-all  hover:text-blue"
         >
-          <FaLinkedinIn className="h-10 w-10" />
+          <FaLinkedinIn className="h-8 w-8" />
         </div>
       </AnimatedBtn>
     </motion.div>

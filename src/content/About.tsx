@@ -1,29 +1,30 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import React from "react";
-import Socials from "../components/Socials";
+import { Typewriter } from "react-simple-typewriter";
+
 
 export default function About() {
   return (
-    <motion.div className=" flex w-full mx-auto max-w-7xl pb-[66px] ">
-      <div className=" flex flex-col  justify-start items-start">
-        <h1 className="font-bold text-[2.5rem] xl:text-[4rem] text-black max-w-5xl   leading-tight w-full">
-          I'm a web developer, dev ops enthusiast & coffee lover.
+    <motion.div className=" flex w-full mx-auto max-w-7xl h-[50vh] items-center pb-[66px] gap-20">
+      <div className=" flex flex-col  justify-start items-start gap-5">
+
+        <h1 className="font-bold text-[2.5rem] xl:text-[4.5rem] text-black max-w-5xl   leading-tight w-full">
+          <Typewriter
+            words={["Im a web developer, dev ops enthusiast & coffee lover"]}
+            cursor
+            cursorStyle="_"
+            typeSpeed={50}
+          />
         </h1>
 
-        <div className=" w-full mx-auto flex gap-12 ">
-          <div className="flex flex-col justify-center gap-5 max-w-4xl">
-            <p className="text-md xl:text-xl leading-relaxed">
-              I'm a multi-talented software engineer, designer, and creator with
-              a passion for using technology to solve real-world problems. I
-              have the skills and expertise to take on a wide range of projects,
-              from building scalable and reliable software systems to crafting
+        <p className="text-base xl:text-xl leading-relaxed max-w-3xl">
+              I'm a software engineer with skills and expertise to take on from
+              building scalable and reliable software systems to crafting
               beautiful and intuitive user experiences.
-            </p>
-          </div>
-        </div>
+        </p>
 
-        <Socials />
+
       </div>
     </motion.div>
   );

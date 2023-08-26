@@ -18,12 +18,6 @@ const SkillBox = ({ children }: ISkillBox) => {
     >
       <div className="group">
         <div className="z-50  ">{children}</div>
-        <span
-          className="w-fit flex flex-col  z-50 absolute  right-[-10]
-         left-0 scale-0 rounded bg-gray-800 px-4 p-2 text-xs text-white group-hover:scale-100 gap-2 "
-        >
-          <p className="w-fit font-semibold text-sm ">{title}</p>
-        </span>
       </div>
     </motion.a>
   );

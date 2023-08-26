@@ -7,14 +7,16 @@ import MessageForm from "../components/MessageForm";
 function Contact() {
   return (
     <motion.div
-      className="min-h-screen text-xl w-full  mx-auto  gap-6 
-      flex flex-col justify-center  items-start  "
+      className=" text-xl w-full 
+      flex flex-col justify-start gap-2 "
     >
-      <h1 className="text-[2rem]  leading-[1.2] font-bold ">Contact</h1>
+      {/* <p className="bg-blue text-white p-1 px-3 text-md font-medium rounded text-black mx-auto">
+        Contact
+      </p> */}
 
-      <p className="text-gray-100">
-        Feel free to reach out with feedback, questions or just to say hello.
-      </p>
+      <h1 className="font-bold text-[2.5rem] xl:text-[4rem] leading-tight  text-black  pb-10 xl:pb-20 max-w-5xl">
+        Feel free to reach out with questions or to say hello.
+      </h1>
       <MessageForm name={""} email={""} subject={""} message={""} />
     </motion.div>
   );

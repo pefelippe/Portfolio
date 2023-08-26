@@ -11,8 +11,11 @@ function Skills() {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.75 }}
       className=" text-xl w-full  mx-auto  gap-6
-      flex flex-col justify-start  items-start "
+      flex flex-col justify-center  items-start  "
     >
+      {/* <h1 className="text-[2rem]  leading-[1.2] font-bold ">Skills</h1>
+
+      <p className="text-gray-100">Skiilssssssssss</p> */}
       <div className="gap-6 grid w-full grid-cols-2 md:grid-cols-4 xl:grid-cols-6 ">
         {technologies.map((tech) => {
           return (

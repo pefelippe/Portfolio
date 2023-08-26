@@ -7,8 +7,13 @@ function Footer({}: Props) {
   const year = new Date().getFullYear();
 
   return (
-    <motion.footer className="font-normal uppercase text-gray-100  flex  max-w-7xl mx-auto  justify-center lg:justify-start text-lg ">
-      <span className="py-20">© Pedro Felippe {year}</span>
+    <motion.footer
+      className="py-20 bg-white   w-screen font-light uppercase text-gray-850 leading-relaxed  flex  mx-auto  
+    justify-center lg:justify-start text-lg max-xl:px-8"
+    >
+      <div className="w-full max-w-7xl  mx-auto  ">
+        <span className="">© Pedro Felippe {year}</span>
+      </div>
     </motion.footer>
   );
 }

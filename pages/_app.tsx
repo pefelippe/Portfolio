@@ -7,6 +7,7 @@ import Head from "next/head";
 import Footer from "../src/components/layout/Footer";
 import Header from "../src/components/layout/Header";
 import { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,8 +15,8 @@ export default function App({ Component, pageProps }: AppProps) {
       className={`
     overflow-x-hidden overflow-y-scroll 
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 text-[#FAFAFA] 
-    h-screen font-sans relative  bg-gray-900
-    min-h-screen min-w-full  max-xl:px-8
+     font-sans   bg-gray-900
+     
   `}
     >
       <Head>
@@ -26,11 +27,16 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Analytics />
-      <div className="w-full">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="w-full"
+      >
         <Header />
         <Component {...pageProps} />
         <Footer />
-      </div>
+      </motion.div>
     </div>
   );
 }

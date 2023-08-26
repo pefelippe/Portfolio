@@ -67,12 +67,12 @@ export default function MessageForm({}: Inputs) {
         <textarea
           {...register("message", { required: true, maxLength: 500 })}
           placeholder="Enter your message..."
-          className="contactInput min-h-[400px] "
+          className="contactInput min-h-[250px] xl:min-h-[350px] "
         />
       </form>
 
       <button
-        className="bg-gray-850 py-5 px-32 shadow hover:bg-gray-850/70 rounded w-fit uppercase border border-gray-850 max-md:mx-auto
+        className="bg-gray-850 py-6 px-48 mx-auto shadow hover:bg-gray-850/70 rounded w-fit uppercase border border-gray-850 max-md:mx-auto
         text-black font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff] hover:text-blue  hover:border-blue transition-all"
       >
         {isLoading ? (

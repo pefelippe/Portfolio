@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
-
 import React from "react";
 
 import Socials from "../Socials";
 
 const Navbar = () => {
   return (
-    <motion.nav
-      className="h-[10vh] font-medium  w-full max-w-7xl mx-auto  text-[1.25rem] text-gray-100
-       flex items-center justify-end"
-    ></motion.nav>
+    <motion.nav className="h-[66px] text-[#000] bg-white w-screen font-semibold flex justify-center max-xl:px-8">
+      <div className="flex items-center justify-between max-w-7xl w-full mx-auto text-[1.35rem]">
+        <p>Pedro Felippe</p>
+      </div>
+    </motion.nav>
   );
 };
 

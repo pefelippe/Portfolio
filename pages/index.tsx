@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import About from "../src/content/About";
 import Contact from "../src/content/contact";
-
 import Resume from "../src/content/Resume";
 import Skills from "../src/content/Skills";
 import Projects from "./projects";
@@ -11,7 +10,7 @@ import Projects from "./projects";
 export default function Home() {
   return (
     <motion.div className="flex flex-col text-start">
-      <section className="white-component">
+      <section className="component">
         <About />
       </section>
 

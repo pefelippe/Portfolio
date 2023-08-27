@@ -7,7 +7,7 @@ import Head from "next/head";
 import Footer from "../src/components/layout/Footer";
 import Header from "../src/components/layout/Header";
 import { useEffect, useState } from "react";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -33,9 +33,9 @@ export default function App({ Component, pageProps }: AppProps) {
         transition={{ duration: 1 }}
         className="w-full"
       >
-        <Header />
+        {/* <Header /> */}
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
       </motion.div>
     </div>
   );

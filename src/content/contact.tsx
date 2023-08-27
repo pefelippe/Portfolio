@@ -7,8 +7,8 @@ import MessageForm from "../components/MessageForm";
 function Contact() {
   return (
     <motion.div
-      className=" text-xl w-full 
-      flex flex-col justify-start gap-2 "
+      className=" text-xl w-full h-screen
+      flex flex-col justify-center items-start gap-2 "
     >
       {/* <p className="bg-blue text-white p-1 px-3 text-md font-medium rounded text-black mx-auto">
         Contact

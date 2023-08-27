@@ -55,11 +55,11 @@
 
 @layer pages {
   .component {
-    @apply max-w-7xl mx-auto w-full text-xl py-10 xl:py-20 
+    @apply max-w-7xl mx-auto w-full text-xl 
     flex flex-col justify-center gap-10 items-start text-start max-xl:px-8;
   }
   .white-component {
-    @apply w-full text-xl py-10 xl:py-20 flex flex-col bg-[#fff] text-[#000]
+    @apply w-full text-xl flex flex-col bg-[#fff] text-[#000]
       justify-center gap-10 items-start text-start max-xl:px-8;
   }
 

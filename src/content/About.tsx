@@ -1,31 +1,25 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
 
-import Socials from "../components/Socials";
+import AnimatedBtn from "../components/animated/AnimatedBtn";
 
 export default function About() {
   return (
-    <motion.div className=" flex w-full mx-auto max-w-7xl  items-center h-screen gap-20">
-      <div className=" flex flex-col  justify-start items-start gap-5">
-        <h1 className="font-bold text-[2.5rem] xl:text-[4.5rem] text-black  uppercase  leading-tight w-full">
-          <Typewriter
-            words={["Web Developer, Dev-Ops enthusiast & Coffee lover"]}
-            cursor
-            cursorStyle="_"
-            typeSpeed={50}
-          />
-        </h1>
+    <motion.div
+      className="min-h-fit max-md:px-8 font-light flex w-full mx-auto
+     max-w-3xl flex-col items-center h-screen  justify-center"
+    >
+      {/* <motion.img
+        alt="project-img "
+        className="rounded-full w-28 h-28 md:w-48 md:h-48 border-4 "
+        src="assets/avatar-pdr.png"
+      /> */}
 
-        <p className="text-[1.2rem] xl:text-[1.4rem] leading-tight max-w-4xl text-gray-100">
-          I'm a software engineer with skills and expertise to take on from
-          building scalable and reliable software systems to crafting beautiful
-          and intuitive user experiences.
-        </p>
-
-        <Socials />
-      </div>
+      <h1 className="text-[1.8rem] md:text-[2.8rem] leading-normal w-full">
+        I'm <b>Pedro Felippe</b>. A <b>full-stack developer</b> with experience
+        in developing sites & apps with React.
+      </h1>
     </motion.div>
   );
 }

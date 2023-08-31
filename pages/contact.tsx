@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-import MessageForm from "../components/MessageForm";
+import MessageForm from "../src/components/MessageForm";
 
 function Contact() {
   return (

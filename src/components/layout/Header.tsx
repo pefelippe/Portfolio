@@ -5,9 +5,11 @@ import Socials from "../Socials";
 
 const Navbar = () => {
   return (
-    <motion.nav className="h-[66px] text-[#000] bg-white w-screen font-semibold flex justify-center max-md:px-8">
-      <div className="flex items-center justify-between max-w-7xl w-full mx-auto text-[1.35rem]">
-        <p>Pedro Felippe</p>
+    <motion.nav className="absolute p-8 py-6 text-[#FFF]  w-screen font-light flex justify-start max-md:px-8">
+      <div className="flex items-start justify-between w-full mx-auto text-[1.35rem]">
+        <p className="text-[1.8rem] md:text-[2.8rem] font-semibold uppercase ">
+          Pedro Felippe
+        </p>
         <Socials />
       </div>
     </motion.nav>

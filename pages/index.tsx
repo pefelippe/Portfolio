@@ -1,28 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import { FaFilePdf, FaGithub, FaLinkedinIn } from "react-icons/fa";
+
+import AnimatedBtn from "../src/components/animated/AnimatedBtn";
 import About from "../src/content/About";
-import Contact from "../src/content/contact";
 import Resume from "../src/content/Resume";
 import Skills from "../src/content/Skills";
+import Contact from "./contact";
 import Projects from "./projects";
-import AnimatedBtn from "../src/components/animated/AnimatedBtn";
 
 export default function Home() {
   return (
-    <motion.div className="relative flex flex-col text-center ">
-      <section className="relative snap-center">
-        <About />
-      </section>
+    <motion.div className=" flex flex-col text-center">
+      <About />
 
-      {/* <section className="component">
-        <Skills />
-      </section> */}
-      <section className="relative component snap-center">
-        <Contact />
-      </section>
-
-      <motion.div className="fixed left-5 bottom-5 flex flex-col items-center gap-6  text-[#000] max-md:hidden">
+      {/* <motion.div className="fixed left-5 bottom-5 flex flex-col items-center gap-6  text-[#000] max-md:hidden">
         <AnimatedBtn
           className=""
           href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
@@ -49,7 +41,7 @@ export default function Home() {
             <FaLinkedinIn className="h-6 w-6" />
           </div>
         </AnimatedBtn>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }

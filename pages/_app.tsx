@@ -31,11 +31,11 @@ export default function App({ Component, pageProps }: AppProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="w-full"
+        className="w-full h-screen"
       >
-        {/* <Header /> */}
+        <Header />
         <Component {...pageProps} />
-        {/* <Footer /> */}
+        <Footer />
       </motion.div>
     </div>
   );

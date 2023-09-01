@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import React from "react";
+import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import AnimatedBtn from "../components/animated/AnimatedBtn";
 
@@ -23,10 +24,10 @@ export default function About() {
         </h1>
       </div>
 
-      <div className="w-full    flex text-xl gap-10 max-w-xl">
+      <div className="w-full flex text-xl gap-10 max-w-xl">
         <AnimatedBtn className="" href="https://github.com/pefelippe">
           <div className=" flex gap-2 items-center w-full transition-all hover:text-blue">
-            Github
+            <FaGithub /> Github
           </div>
         </AnimatedBtn>
 
@@ -38,7 +39,7 @@ export default function About() {
             className="  flex gap-2 items-center 
              transition-all  hover:text-blue"
           >
-            Linkedin
+            <FaLinkedin /> Linkedin
           </div>
         </AnimatedBtn>
         <AnimatedBtn
@@ -46,7 +47,10 @@ export default function About() {
           className=" flex gap-2 items-center 
           transition-all  hover:text-blue"
         >
-          <p>Resume</p>
+          <>
+            <FaFilePdf />
+            <p>Resume</p>
+          </>
         </AnimatedBtn>
       </div>
     </motion.div>

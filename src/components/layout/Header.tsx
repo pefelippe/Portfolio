@@ -7,8 +7,8 @@ import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <motion.nav className="absolute gap-10 p-8 text-gray-850  mx-auto font-light flex justify-center max-md:px-8 ">
-      <nav className="gap-10 flex">
+    <motion.nav className="absolute  p-8 text-gray-850  mx-auto font-light flex max-md:px-8 right-0 left-0 max-w-xl w-full">
+      <nav className="justify-between w-full flex">
         <Link target="" href="/">
           Home
         </Link>

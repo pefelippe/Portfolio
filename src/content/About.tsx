@@ -18,7 +18,7 @@ export default function About() {
             transition: { duration: 0.1 },
           }}
           alt="project-img "
-          className="rounded-full w-24 h-24"
+          className="rounded-full w-16 h-16"
           src="assets/avatar-pdr.png"
         />
         <p className=" text-6xl  font-bold uppercase  ">Pedro Felippe</p>
@@ -28,7 +28,7 @@ export default function About() {
         </h1>
       </div>
 
-      <div className="w-full font-medium flex text-2xl gap-12 max-w-xl pt-2 ">
+      <div className="w-full font-medium flex text-xl gap-10 max-w-xl pt-2 items-center ">
         <AnimatedBtn className="" href="https://github.com/pefelippe">
           <div className=" flex gap-2 items-center w-full transition-all hover:text-blue">
             <FaGithub /> Github

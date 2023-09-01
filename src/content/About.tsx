@@ -9,7 +9,7 @@ export default function About() {
   return (
     <motion.div
       className="min-h-screen  font-light flex w-full  text-center max-w-3xl mx-auto
-      flex-col items-center  justify-center leading-[1.3] gap-6"
+      flex-col items-center  justify-center leading-[1.3] gap-4"
     >
       <motion.img
         whileHover={{
@@ -29,7 +29,7 @@ export default function About() {
         </h1>
       </div>
 
-      <div className="w-full flex text-xl gap-10 max-w-xl justify-center ">
+      <div className="w-full flex text-xl gap-10 max-w-xl justify-center pt-2">
         <AnimatedBtn className="" href="https://github.com/pefelippe">
           <div className=" flex gap-2 items-center w-full transition-all hover:text-blue">
             <FaGithub /> Github

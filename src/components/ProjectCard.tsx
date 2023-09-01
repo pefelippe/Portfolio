@@ -30,19 +30,19 @@ function ProjectCard({
       whileInView={{ x: 0 }}
       transition={{ duration: 1 }}
       className={`${
-        id % 2 ? "flex-row-reverse" : ""
+        id % 2 ? "flex-row-reverse " : ""
       }  flex max-lg:flex-col mx-auto rounded-md w-full  justify-start 
       items-center text-start gap-20 `}
     >
-      <Link href={link} className="flex h-[350px] w-[600px]">
+      <Link href={link} className="flex h-[250px] ">
         <motion.img
           src={imgUrl}
           alt="card image"
-          className=" rounded-xl object-cover h-full w-full hover:scale-105 ease-in-out transition-all "
+          className="flex-shrink-0 rounded-xl object-cover h-full w-full hover:scale-105 ease-in-out transition-all "
         />
       </Link>
 
-      <div className="h-full w-fit flex flex-col gap-4 text-start items-start  justify-start">
+      <div className="h-full flex flex-col  text-start items-start  justify-start leading-normal">
         <p className=" gap-2 w-fit text-[2.2rem]  font-semibold hover:text-gray-300 transition-all">
           {title}
         </p>

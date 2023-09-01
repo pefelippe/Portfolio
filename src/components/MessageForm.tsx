@@ -44,12 +44,12 @@ export default function MessageForm({}: Inputs) {
   };
 
   return (
-    <div className="w-full gap-10 flex flex-col rounded-md shadow-md ">
+    <div className="w-full gap-6 flex flex-col rounded-md  ">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" flex flex-col gap-10 w-full mx-auto"
+        className=" flex flex-col gap-6 w-full mx-auto"
       >
-        <div className="flex max-sm:flex-col gap-10 w-full ">
+        <div className="flex max-sm:flex-col gap-6 w-full ">
           <input
             {...register("name", { required: true, maxLength: 50 })}
             placeholder="Enter your name..."
@@ -72,7 +72,7 @@ export default function MessageForm({}: Inputs) {
       </form>
 
       <button
-        className="bg-gray-850 py-6  w-full md:max-w-[300px]  shadow hover:bg-gray-850/70 
+        className="bg-gray-850 py-5  w-full md:max-w-[300px]  shadow hover:bg-gray-850/70 
         rounded  uppercase border border-gray-850 mx-auto
          font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff] hover:text-blue  hover:border-blue transition-all"
       >

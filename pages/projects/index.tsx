@@ -18,13 +18,9 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className="component "
+      className=" "
     >
-      <span className="font-bold text-[3rem] md:text-[3.5rem] xl:text-[4.5rem] leading-[1.2] flex w-full">
-        Creating powerful products that are utilized by millions of people every
-        day.
-      </span>
-      <div className="flex flex-col w-full pt-40 gap-40">
+      <div className="flex flex-col w-full gap-20">
         {projects?.map((proj) => {
           return (
             <ProjectCard

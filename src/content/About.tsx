@@ -7,27 +7,48 @@ import AnimatedBtn from "../components/animated/AnimatedBtn";
 export default function About() {
   return (
     <motion.div
-      className="min-h-fit max-md:px-8 font-light flex w-full mx-auto text-center
-     max-w-2xl flex-col items-center h-screen  justify-center gap-4"
+      className="min-h-fit px-8 font-light flex w-full  text-left max-w-2xl mx-auto
+      flex-col items-start h-screen  justify-center gap-6 leading-normal"
     >
-      {/* <motion.img
-        alt="project-img "
-        className="rounded-full w-28 h-28 md:w-40 md:h-40 "
-        src="assets/avatar-pdr.png"
-      /> */}
+      <div className=" flex flex-col gap-6 ">
+        <motion.img
+          alt="project-img "
+          className="rounded-full w-20 h-20 "
+          src="assets/avatar-pdr.png"
+        />
+        <p className=" text-7xl  font-bold uppercase ">Pedro Felippe</p>
+        <h1 className="max-w-xl w-full text-2xl font-thin text-gray-100">
+          A <b>full-stack developer</b> with experience in developing sites &
+          apps with React.
+        </h1>
+      </div>
 
-      <h1 className="text-[1.8rem] md:text-[3.2rem] leading-normal w-full">
-        A <b>full-stack developer</b> with experience in developing sites & apps
-        with React.
-      </h1>
+      <div className="w-full    flex text-xl gap-10 max-w-xl">
+        <AnimatedBtn className="" href="https://github.com/pefelippe">
+          <div className=" flex gap-2 items-center w-full transition-all hover:text-blue">
+            Github
+          </div>
+        </AnimatedBtn>
 
-      {/* <AnimatedBtn
-        href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
-        className="flex pt-2 items-center  mx-auto  px-12 border rounded-full font-semibold transition-all hover:text-blue
-        text-xl hover:underline p-4"
-      >
-        <p>Resume</p>
-      </AnimatedBtn> */}
+        <AnimatedBtn
+          className=""
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <div
+            className="  flex gap-2 items-center 
+             transition-all  hover:text-blue"
+          >
+            Linkedin
+          </div>
+        </AnimatedBtn>
+        <AnimatedBtn
+          href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
+          className=" flex gap-2 items-center 
+          transition-all  hover:text-blue"
+        >
+          <p>Resume</p>
+        </AnimatedBtn>
+      </div>
     </motion.div>
   );
 }

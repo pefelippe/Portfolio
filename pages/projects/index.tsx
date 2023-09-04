@@ -12,9 +12,9 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className="max-w-4xl flex mx-auto py-20 min-h-[80vh]"
+      className="max-w-xl flex mx-auto py-20 min-h-[80vh]"
     >
-      <div className="grid w-full grid-cols-2 gap-10 justify-between">
+      <div className="grid w-full grid-cols-1 gap-10 justify-between">
         {projects?.map((proj) => {
           return (
             <ProjectCard

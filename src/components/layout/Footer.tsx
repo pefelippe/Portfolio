@@ -11,7 +11,7 @@ function Footer({}: Props) {
   const year = new Date().getFullYear();
 
   return (
-    <motion.footer className="h-[10vh] justify-between font-thin text-md text-gray-850 mx-auto   flex px-8 p-10  max-w-4xl w-full">
+    <motion.footer className="h-[10vh] justify-between font-thin text-sm md:text-md text-gray-850 mx-auto   flex px-8 p-10  max-w-4xl w-full">
       <p className="flex">Pedro Felippe © {year}</p>
       <div className="flex font-normal  justify-center gap-4 ">
         <Link

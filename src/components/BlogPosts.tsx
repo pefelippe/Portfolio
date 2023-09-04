@@ -57,7 +57,7 @@ const posts = [
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className=" mx-auto gap-4 flex flex-col max-w-md">
+    <div className=" mx-auto gap-4 flex flex-col ">
       <div className="flex  text-start w-full justify-center ">
         <h2 className="font-thin text-3xl  leading-tight text-gray-100  ">
           Last Posts
@@ -81,7 +81,7 @@ export default function BlogPosts({ qnt = 0 }) {
             key={post.id}
           >
             <div
-              className="flex flex-col items-start  transition-all p-5 py-10  mx-auto
+              className="max-w-md flex flex-col items-start  transition-all p-5 py-10  mx-auto
               rounded-md h-full hover:shadow-xl bg-[#fafafa] 
               hover:bg-opacity-90 hover:text-white hover:border-transparent cursor-pointer"
             >

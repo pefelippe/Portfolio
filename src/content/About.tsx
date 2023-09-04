@@ -32,7 +32,7 @@ export default function About() {
         </h1>
       </div>
 
-      {/* <div className="ml-6 w-full flex gap-4 items-center justify-center text-lg  font-medium max-w-xl ">
+      <div className="ml-6 w-full flex gap-6 items-center justify-center text-lg  font-medium max-w-xl ">
         <Link className="hover:underline" href="/projects">
           <motion.p
             whileHover={{
@@ -56,30 +56,6 @@ export default function About() {
           >
             Contact me
           </motion.p>
-        </Link>
-      </div> */}
-
-      <div className="flex gap-8 mx-auto ">
-        <Link
-          className="hover:text-blue"
-          target="_blank"
-          href="github.com/pefelippe"
-        >
-          <FaGithub className="h-10 w-10 hover:text-blue" />
-        </Link>
-        <Link
-          className="hover:text-blue"
-          target="_blank"
-          href="https://www.linkedin.com/in/pedro-felippe/"
-        >
-          <FaLinkedin className="h-10 w-10 hover:text-blue" />
-        </Link>
-        <Link
-          className="hover:text-blue"
-          target="_blank"
-          href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
-        >
-          <FaFilePdf className="h-10 w-10 hover:text-blue" />
         </Link>
       </div>
     </motion.div>

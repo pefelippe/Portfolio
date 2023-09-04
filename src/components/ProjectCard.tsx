@@ -31,7 +31,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="flex-shrink-0 object-cover  transition-allflex h-[250px] w-full rounded-md"
+          className="flex-shrink-0 object-cover  transition-allflex h-[300px] w-full rounded-md"
         />
 
         <div className="w-full flex flex-col  text-center items-center  justify-center leading-normal  pt-4 ">

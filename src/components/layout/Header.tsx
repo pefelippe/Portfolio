@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <motion.nav
       className="h-[10vh] items-center text-gray-850   mx-auto font-light text-lg flex max-md:gap-6 max-md:px-8  max-w-xl 
-    w-full justify-between"
+    w-full justify-center"
     >
-      <nav className=" flex gap-6 text-md items-center">
+      <nav className=" flex gap-20 text-md items-center">
         <Link className="hover:text-blue" target="" href="/">
           Home
         </Link>
@@ -20,7 +20,7 @@ const Navbar = () => {
           Contact
         </Link>
       </nav>
-      <div className="flex gap-6">
+      {/* <div className="flex gap-6">
         <Link
           className="hover:text-blue"
           target="_blank"
@@ -42,7 +42,7 @@ const Navbar = () => {
         >
           <FaFilePdf className="h-6 w-6 hover:text-blue" />
         </Link>
-      </div>
+      </div> */}
     </motion.nav>
   );
 };

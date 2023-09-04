@@ -60,7 +60,7 @@ export default function BlogPosts({ qnt = 0 }) {
     <div className=" mx-auto gap-4 flex flex-col max-w-md">
       <div className="flex  text-start w-full justify-center ">
         <h2 className="font-thin text-3xl  leading-tight text-gray-100  ">
-          Posts
+          Last Posts
         </h2>
 
         {/* <Link

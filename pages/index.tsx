@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import BlogPosts from "../src/components/BlogPosts";
 import About from "../src/content/About";
@@ -14,6 +16,7 @@ export default function Home() {
       className=" flex flex-col text-center mx-auto px-6 gap-20 pt-20 pb-10"
     >
       <About />
+
       {/* <Skills /> */}
       <BlogPosts />
     </motion.div>

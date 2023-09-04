@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <Header />
         <Component {...pageProps} />
-        {/* <Footer /> */}
+        <Footer />
       </motion.div>
     </div>
   );

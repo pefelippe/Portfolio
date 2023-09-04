@@ -56,7 +56,7 @@ const posts = [
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className="pt-10 mx-auto gap-4 flex flex-col ">
+    <div className="pt-20 mx-auto gap-4 flex flex-col ">
       <div className="flex  text-start w-full justify-between ">
         <h2 className="text-xl font-bold tracking-tight ">Latest Posts</h2>
 

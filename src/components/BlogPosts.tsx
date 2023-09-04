@@ -1,16 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 import AnimatedBtn from "../components/animated/AnimatedBtn";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-
-// import required modules
-import { FreeMode, Pagination } from "swiper";
 
 const posts = [
   {
@@ -66,54 +55,44 @@ const posts = [
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className=" ">
-      <div className="flex lg:mx-0 text-start w-full justify-between pb-10">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Latest Posts
-        </h2>
+    <div className="pt-10 mx-auto gap-4 flex flex-col ">
+      <div className="flex  text-start w-full justify-between ">
+        <h2 className="text-xl font-bold tracking-tight ">Latest Posts</h2>
 
-        <Link
+        {/* <Link
           href="/blog"
           className="w-fit text-lg font-normal flex items-center justify-center  text-gray-300
            transition-all   hover:underline"
         >
           Read all posts
-        </Link>
+        </Link> */}
       </div>
-
-      <Swiper
-        slidesPerView={2}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="freeMode "
-      >
-        {postsToShow.map((post) => {
-          return (
-            <SwiperSlide key={post.id}>
-              <AnimatedBtn key={post.id}>
-                <div
-                  className="flex flex-col items-start justify-end transition-all p-5 py-10 min-h-[350px] mx-auto
+      {postsToShow.map((post) => {
+        return (
+          <motion.a
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.1 },
+            }}
+            key={post.id}
+          >
+            <div
+              className="flex flex-col items-start  transition-all p-5 py-10  mx-auto
               rounded-md h-full hover:shadow-xl bg-[#fafafa] 
               hover:bg-opacity-90 hover:text-white hover:border-transparent cursor-pointer"
-                >
-                  <div className="flex items-center gap-x-2 text-xs h-fit">
-                    <time dateTime={post.datetime} className="text-gray-500">
-                      {post.date}
-                    </time>
-                  </div>
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-800">
-                    {post.title}
-                  </h3>
-                </div>
-              </AnimatedBtn>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
+            >
+              <div className="flex items-center gap-x-2 text-xs h-fit">
+                <time dateTime={post.datetime} className="text-gray-500">
+                  {post.date}
+                </time>
+              </div>
+              <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-800 text-left">
+                {post.title}
+              </h3>
+            </div>
+          </motion.a>
+        );
+      })}
     </div>
   );
 }

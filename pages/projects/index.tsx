@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import ProjectCard from "../../src/components/ProjectCard";
 import { projects } from "../../src/constants";
 
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Image from "next/image";
-import Link from "next/link";
+import "swiper/css/pagination";
 
 function Projects() {
   return (
@@ -18,7 +19,7 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className=" "
+      className="max-w-xl flex mx-auto py-20"
     >
       <div className="flex flex-col w-full gap-20">
         {projects?.map((proj) => {

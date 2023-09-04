@@ -10,7 +10,7 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="min-h-[90vh] text-xl w-full max-w-xl mx-auto text-center
+      className="text-xl w-full max-w-xl mx-auto text-center
       flex flex-col justify-center gap-6 px-8 "
     >
       <h1 className="font-thin text-3xl  leading-tight text-gray-100 ">

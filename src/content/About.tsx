@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
+import { FaFilePdf } from "react-icons/fa";
 
 import AnimatedBtn from "../components/animated/AnimatedBtn";
 import Skills from "./Skills";
-import { FaFilePdf } from "react-icons/fa";
-import Link from "next/link";
 
 export default function About() {
   return (
@@ -32,7 +32,9 @@ export default function About() {
         </h1>
       </div>
 
-      <div className="w-full flex gap-6 items-center justify-center text-lg  font-medium max-w-xl ">
+      <Skills />
+
+      {/* <div className="w-full flex gap-6 items-center justify-center text-lg  font-medium max-w-xl ">
         <Link className="hover:underline" href="/contact">
           <motion.p
             whileHover={{
@@ -51,7 +53,7 @@ export default function About() {
         >
           <>Resume</>
         </AnimatedBtn>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

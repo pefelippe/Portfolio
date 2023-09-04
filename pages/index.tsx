@@ -15,6 +15,7 @@ export default function Home() {
     >
       <About />
       <BlogPosts />
+      <Contact />
     </motion.div>
   );
 }

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import AnimatedBtn from "../components/animated/AnimatedBtn";
+import Link from "next/link";
 
 const posts = [
   {
@@ -59,13 +60,13 @@ export default function BlogPosts({ qnt = 0 }) {
       <div className="flex  text-start w-full justify-between ">
         <h2 className="text-xl font-bold tracking-tight ">Latest Posts</h2>
 
-        {/* <Link
+        <Link
           href="/blog"
           className="w-fit text-lg font-normal flex items-center justify-center  text-gray-300
            transition-all   hover:underline"
         >
           Read all posts
-        </Link> */}
+        </Link>
       </div>
       {postsToShow.map((post) => {
         return (

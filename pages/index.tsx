@@ -4,6 +4,7 @@ import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 import AnimatedBtn from "../src/components/animated/AnimatedBtn";
 import BlogPosts from "../src/components/BlogPosts";
 import About from "../src/content/About";
+import Contact from "./contact";
 
 export default function Home() {
   return (
@@ -41,6 +42,8 @@ export default function Home() {
       </div>
 
       <BlogPosts />
+
+      <Contact />
     </motion.div>
   );
 }

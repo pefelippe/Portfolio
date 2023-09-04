@@ -56,17 +56,19 @@ const posts = [
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className="py-10 mx-auto gap-4 flex flex-col ">
-      <div className="flex  text-start w-full justify-between ">
-        <h2 className="text-xl font-bold tracking-tight ">Latest Posts</h2>
+    <div className=" mx-auto gap-4 flex flex-col max-w-md">
+      <div className="flex  text-start w-full justify-center ">
+        <h2 className="font-thin text-3xl  leading-tight text-gray-100  ">
+          Latest Posts
+        </h2>
 
-        <Link
+        {/* <Link
           href="/blog"
-          className="w-fit text-lg font-normal flex items-center justify-center  text-gray-300
+          className="w-fit text-md font-normal flex items-center justify-center  text-gray-300
            transition-all   hover:underline"
         >
           Read all posts
-        </Link>
+        </Link> */}
       </div>
       {postsToShow.map((post) => {
         return (

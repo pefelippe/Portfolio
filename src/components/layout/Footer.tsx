@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
-import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 type Props = {};
 
@@ -10,48 +11,29 @@ function Footer({}: Props) {
   const year = new Date().getFullYear();
 
   return (
-    <motion.footer
-      className="md:absolute bottom-0 p-6 px-4 font-light  text-black leading-relaxed  flex  mx-auto
-    justify-center lg:justify-start text-lg "
-    >
-      <div className="w-full  text-xl mx-auto flex md:flex-col max-md:justify-around md:gap-4">
-        <motion.a
-          whileHover={{
-            transition: { duration: 0.1 },
-          }}
-          className=""
-          href="https://github.com/pefelippe"
+    <motion.footer className=" justify-between font-xs font-thin text-gray-850 mx-auto  text-lg flex px-8 p-10  max-w-xl w-full">
+      <div className="flex w-full justify-center gap-4 ">
+        <Link
+          className="hover:text-blue"
+          target="_blank"
+          href="github.com/pefelippe"
         >
-          <div className=" flex gap-2 items-center w-full transition-all hover:text-blue">
-            <FaGithub /> Github
-          </div>
-        </motion.a>
-
-        <motion.a
-          whileHover={{
-            transition: { duration: 0.1 },
-          }}
-          className=""
+          Github
+        </Link>
+        <Link
+          className="hover:text-blue"
+          target="_blank"
           href="https://www.linkedin.com/in/pedro-felippe/"
         >
-          <div
-            className="  flex gap-2 items-center 
-             transition-all  hover:text-blue"
-          >
-            <FaLinkedin /> Linkedin
-          </div>
-        </motion.a>
-
-        <motion.a
+          Linkedin
+        </Link>
+        <Link
+          className="hover:text-blue"
+          target="_blank"
           href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
-          className=" flex gap-1 items-center 
-          transition-all  hover:text-blue"
         >
-          <>
-            <FaFilePdf />
-            <p>Resume</p>
-          </>
-        </motion.a>
+          Resume
+        </Link>
       </div>
     </motion.footer>
   );

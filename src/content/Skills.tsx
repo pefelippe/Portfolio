@@ -10,16 +10,13 @@ function Skills() {
       initial={{ opacity: 0, x: -75 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.75 }}
-      className=" text-xl w-full  mx-auto font-thin max-w-sm
-      flex flex-col justify-center  items-start  "
+      className=" text-xl  font-thin max-w-sm mx-auto
+      flex flex-col  items-center w-full "
     >
-      <div className="grid w-full grid-cols-6 ">
+      <div className="grid w-full grid-cols-8 gap-4 justify-between ">
         {technologies.map((tech) => {
           return (
-            <div
-              key={tech.name}
-              className="text-sm gap-1 flex justify-center items-center  text-black rounded-md flex-col "
-            >
+            <div key={tech.name} className=" ">
               <Image width={35} height={35} src={tech.imgUrl} alt={tech.name} />
               {/* <span className="font-semibold">{tech.name}</span> */}
             </div>

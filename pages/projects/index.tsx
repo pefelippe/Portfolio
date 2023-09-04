@@ -19,10 +19,11 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className="max-w-xl flex mx-auto py-20"
+      className="max-w-xl flex mx-auto py-20 min-h-[80vh]"
     >
       <div className="flex flex-col w-full gap-20">
-        {projects?.map((proj) => {
+        Work in Progress
+        {/* {projects?.map((proj) => {
           return (
             <ProjectCard
               key={proj.id}
@@ -35,7 +36,7 @@ function Projects() {
               stack={proj.stack}
             />
           );
-        })}
+        })} */}
       </div>
     </motion.div>
   );

@@ -36,6 +36,13 @@
   @apply bg-white text-gray-900;
 }
 
+.btnSocial {
+  @apply justify-center text-sm font-medium 
+  transition-colors focus-visible:outline-none 
+  h-10 flex items-center gap-2 rounded-lg 
+  border-2 px-4 py-3 dark:text-white  md:inline-flex;
+}
+
 .contactInput {
   @apply outline-none bg-gray-500/10  w-full px-4 py-4 rounded
   border-[1px] border-[#242424]   text-[#fafafa] placeholder-gray-500 transition-all focus:border-[#5865f2];

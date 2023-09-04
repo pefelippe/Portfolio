@@ -14,6 +14,7 @@ export default function Home() {
       className=" flex flex-col text-center mx-auto px-6 gap-20 pt-20 pb-10"
     >
       <About />
+      {/* <Skills /> */}
       <BlogPosts />
     </motion.div>
   );

@@ -32,28 +32,34 @@ export default function About() {
         </h1>
       </div>
 
-      <Skills />
+     
 
-      {/* <div className="w-full flex gap-6 items-center justify-center text-lg  font-medium max-w-xl ">
-        <Link className="hover:underline" href="/contact">
+      <div className="ml-6 w-full flex gap-4 items-center justify-center text-lg  font-medium max-w-xl ">
+        <Link className="hover:underline" href="/projects">
           <motion.p
             whileHover={{
               scale: 1.05,
               transition: { duration: 0.1 },
             }}
           >
-            Contact
+            Projects
           </motion.p>
         </Link>
-        <AnimatedBtn
-          className="bg-gray-850 hover:bg-gray-850/70 text-white flex gap-2 h-12 items-center 
-          transition-all  rounded-full  py-2 px-12"
-          target="_blank"
-          href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
+        <Link
+          className="bg-gray-850 hover:bg-gray-850/80 text-white flex gap-2 h-12 items-center 
+          transition-all  rounded-full  py-2 px-8 hover:underline"
+          href="/contact"
         >
-          <>Resume</>
-        </AnimatedBtn>
-      </div> */}
+          <motion.p
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.1 },
+            }}
+          >
+            Contact me
+          </motion.p>
+        </Link>
+      </div>
     </motion.div>
   );
 }

@@ -26,7 +26,7 @@ export default function About() {
         <p className="text-4xl sm:text-5xl  font-bold uppercase  ">
           Pedro Felippe
         </p>
-        <h1 className="font-thin text-base sm:text-lg  leading-tight text-gray-500 ">
+        <h1 className="font-thin text-base sm:text-xl  leading-tight text-gray-500 ">
           I'm a passionate software engineer - Front End Specialist and
           Architect, Development Generalist and Open sourcerer.
         </h1>
@@ -45,7 +45,7 @@ export default function About() {
         </Link>
         <AnimatedBtn
           className="bg-gray-850 hover:bg-gray-850/70 text-white flex gap-2 h-12 items-center 
-          transition-all  rounded-full  py-2 px-6"
+          transition-all  rounded-full  py-2 px-12"
           target="_blank"
           href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
         >

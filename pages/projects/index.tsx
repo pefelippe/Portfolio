@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-
 import React from "react";
 
 import ProjectCard from "../../src/components/ProjectCard";
@@ -12,7 +11,7 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className="max-w-xl flex mx-auto py-20 min-h-[80vh]"
+      className="max-w-xl flex mx-auto py-20 min-h-[80vh] max-md:px-8"
     >
       <div className="grid w-full grid-cols-1 gap-10 justify-between">
         {projects?.map((proj) => {

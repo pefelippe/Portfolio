@@ -24,7 +24,7 @@ function RecentProjects() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id="work"
-      className=" w-full mx-auto h-fit text-xl max-w-3xl 
+      className=" w-full mx-auto h-fit text-xl max-w-xl 
       rounded-xl flex flex-col justify-between items-start "
     >
       <div className=" lg:mx-0 w-full justify-center text-center py-10">

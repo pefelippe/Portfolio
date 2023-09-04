@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <motion.nav
       className="h-[10vh] items-center text-gray-850   mx-auto font-light text-lg  flex max-md:gap-6 max-md:px-8  max-w-xl 
-    w-full justify-center"
+    w-full  "
     >
-      <nav className=" flex gap-14 md:gap-20 text-md items-center">
+      <nav className=" flex gap-14 text-md items-center justify-center md:justify-between w-full">
         <Link className="hover:text-blue" target="" href="/">
           Home
         </Link>

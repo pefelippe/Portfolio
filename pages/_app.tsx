@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
       className={`
-    overflow-x-hidden overflow-y-scroll min-w-full h-screen min-h-[300px]
+    overflow-x-hidden overflow-y-scroll min-w-3xl h-screen min-h-[300px] mx-auto
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 
      font-sans text-gray-900
      snap-mandatory snap-y 

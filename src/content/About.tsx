@@ -19,7 +19,7 @@ export default function About() {
           src="assets/avatar-pdr.png"
         />
         <p className=" text-5xl  font-bold uppercase  ">Pedro Felippe</p>
-        <h1 className="font-thin text-xl  leading-tight text-gray-100">
+        <h1 className="font-thin text-xl  leading-tight text-gray-500">
           I'm a passionate software engineer - Front End Specialist and
           Architect, Development Generalist and Open sourcerer.
         </h1>

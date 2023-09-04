@@ -11,8 +11,8 @@ function Footer({}: Props) {
 
   return (
     <motion.footer
-      className="md:absolute bottom-0 p-8 font-light  text-black leading-relaxed  flex  mx-auto
-    justify-center lg:justify-start text-lg px-8"
+      className="md:absolute bottom-0 p-6 px-4 font-light  text-black leading-relaxed  flex  mx-auto
+    justify-center lg:justify-start text-lg "
     >
       <div className="w-full  text-xl mx-auto flex md:flex-col max-md:justify-around md:gap-4">
         <motion.a

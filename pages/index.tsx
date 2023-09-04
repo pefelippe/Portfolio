@@ -4,27 +4,14 @@ import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 import AnimatedBtn from "../src/components/animated/AnimatedBtn";
 import BlogPosts from "../src/components/BlogPosts";
 import About from "../src/content/About";
-import Contact from "./contact";
 import Skills from "../src/content/Skills";
+import Contact from "./contact";
 
 export default function Home() {
   return (
     <motion.div className=" flex flex-col text-center max-w-xl mx-auto px-8 gap-4 py-20">
       <About />
-
-      {/* <div className="w-full  flex text-xl justify-center max-w-sm mx-auto  gap-10 items-center font-light ">
-        <AnimatedBtn
-          href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
-          className=" flex gap-1 items-center 
-          transition-all  hover:text-blue"
-        >
-          <>
-            <FaFilePdf />
-            <p>Resume</p>
-          </>
-        </AnimatedBtn>
-      </div> */}
-
+      <Skills />
       <BlogPosts />
     </motion.div>
   );

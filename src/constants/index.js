@@ -36,22 +36,22 @@ export const navLinks = [
 ];
 
 export const technologies = [
-  {
-    name: "HTML 5",
-    description: "Linguagem de marcação para criar conteúdo na web",
-    imgUrl: "/assets/tech/html.png",
-  },
-  {
-    name: "CSS 3",
-    description: "Folhas de estilo para estilizar conteúdo web",
-    imgUrl: "/assets/tech/css.png",
-  },
-  {
-    name: "JavaScript",
-    description:
-      "Linguagem de programação para criação de interatividade em páginas web",
-    imgUrl: "/assets/tech/javascript.png",
-  },
+  // {
+  //   name: "HTML 5",
+  //   description: "Linguagem de marcação para criar conteúdo na web",
+  //   imgUrl: "/assets/tech/html.png",
+  // },
+  // {
+  //   name: "CSS 3",
+  //   description: "Folhas de estilo para estilizar conteúdo web",
+  //   imgUrl: "/assets/tech/css.png",
+  // },
+  // {
+  //   name: "JavaScript",
+  //   description:
+  //     "Linguagem de programação para criação de interatividade em páginas web",
+  //   imgUrl: "/assets/tech/javascript.png",
+  // },
   {
     name: "TypeScript",
     description: "Superset do JavaScript com tipagem estática",
@@ -63,12 +63,12 @@ export const technologies = [
       "Biblioteca JavaScript para construção de interfaces de usuário declarativas e reutilizáveis",
     imgUrl: "/assets/tech/reactjs.png",
   },
-  {
-    name: "RTK",
-    description:
-      "Ferramenta oficial do Redux para gerenciamento de estado em aplicações React",
-    imgUrl: "/assets/tech/redux.png",
-  },
+  // {
+  //   name: "RTK",
+  //   description:
+  //     "Ferramenta oficial do Redux para gerenciamento de estado em aplicações React",
+  //   imgUrl: "/assets/tech/redux.png",
+  // },
   {
     name: "Tailwind",
     description: "Framework CSS utilitário para estilização de interfaces",
@@ -80,22 +80,22 @@ export const technologies = [
       "Ambiente de execução do JavaScript fora do navegador, para construção de aplicações server-side",
     imgUrl: "/assets/tech/nodejs.png",
   },
-  {
-    name: "MongoDB",
-    description: "Banco de dados NoSQL orientado a documentos",
-    imgUrl: "/assets/tech/mongodb.png",
-  },
+  // {
+  //   name: "MongoDB",
+  //   description: "Banco de dados NoSQL orientado a documentos",
+  //   imgUrl: "/assets/tech/mongodb.png",
+  // },
   {
     name: "Git",
     description: "Sistema de controle de versão",
     imgUrl: "/assets/tech/git.png",
   },
-  {
-    name: "Figma",
-    description:
-      "Ferramenta de design colaborativa para criação de interfaces gráficas",
-    imgUrl: "/assets/tech/figma.png",
-  },
+  // {
+  //   name: "Figma",
+  //   description:
+  //     "Ferramenta de design colaborativa para criação de interfaces gráficas",
+  //   imgUrl: "/assets/tech/figma.png",
+  // },
   {
     name: "Docker",
     description:

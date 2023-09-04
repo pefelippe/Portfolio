@@ -18,8 +18,10 @@ export default function About() {
           className="rounded-full w-24 h-24"
           src="assets/avatar-pdr.png"
         />
-        <p className=" text-5xl  font-bold uppercase  ">Pedro Felippe</p>
-        <h1 className="font-thin text-xl  leading-tight text-gray-500">
+        <p className="text-4xl sm:text-5xl  font-bold uppercase  ">
+          Pedro Felippe
+        </p>
+        <h1 className="font-thin text-md sm:text-xl  leading-tight text-gray-500">
           I'm a passionate software engineer - Front End Specialist and
           Architect, Development Generalist and Open sourcerer.
         </h1>

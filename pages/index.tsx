@@ -9,7 +9,7 @@ import Contact from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className=" flex flex-col text-center max-w-xl mx-auto px-8 gap-4 py-20">
+    <motion.div className=" flex flex-col text-center max-w-xl mx-auto px-6 gap-4 py-20">
       <About />
       <Skills />
       <BlogPosts />

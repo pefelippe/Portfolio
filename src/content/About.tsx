@@ -10,7 +10,7 @@ import Skills from "./Skills";
 export default function About() {
   return (
     <motion.div
-      className=" font-light flex w-full  text-center mx-auto
+      className=" font-light flex w-full  text-center mx-auto max-w-xl 
       flex-col items-start  justify-center leading-[1.3] gap-3"
     >
       <div className="flex flex-col gap-3 items-center">

@@ -15,7 +15,7 @@ export const projects = [
     title: "Pomodoro-fi",
     imgUrl: "assets/pomodorotunes.png",
     stack: ["react", "tailwind", "next", "typescript"],
-    description: "Lo-fi com o poderoso método pomodoro.",
+    description: "Lo-fi com  pomodoro.",
   },
 ];
 

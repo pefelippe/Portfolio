@@ -21,31 +21,26 @@ function ProjectCard({
   stack,
   id,
 }: IProjectCard) {
-  const direction = id % 2 === 0 ? -250 : 250;
-
   return (
-    <motion.div
-      initial={{ x: direction }}
-      whileInView={{ x: 0 }}
-      transition={{ duration: 1 }}
-      className={`flex flex-col mx-auto rounded-lg w-full  justify-start 
-      items-center text-start  bg-[#fafafa]  `}
-    >
-      <Link href={link} className="flex h-[300px] w-full">
+    <motion.div transition={{ duration: 1 }}>
+      <Link
+        className="flex flex-col mx-auto  w-full  justify-start  min-h-fit 
+       items-center text-start  bg-[#fafafa] hover:shadow-md rounded-xl p-4"
+        href={link}
+      >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="flex-shrink-0 object-cover h-full w-full t transition-all "
+          className="flex-shrink-0 object-cover  transition-allflex h-[250px] w-full rounded-md"
         />
-      </Link>
 
-      <div className="h-full w-full flex flex-col  text-left items-start  justify-start leading-normal p-8 py-6">
-        <p className=" gap-2 w-fit text-[2.2rem]  font-semibold hover:text-gray-300 transition-all">
-          {title}
-        </p>
-        <p className="w-fit text-[1.3rem]  text-gray-300 ">{description}</p>
+        <div className="w-full flex flex-col  text-center items-center  justify-center leading-normal  pt-4 ">
+          <p className=" gap-2 w-fit text-2xl  font-semibold hover:text-gray-300 transition-all">
+            {title}
+          </p>
+          <p className="w-fit text-lg text-gray-300 ">{description}</p>
 
-        <div
+          {/* <div
           className="flex  w-full  justify-center 
         font-semibold text-xl items-center gap-6 mt-5 "
         >
@@ -67,8 +62,9 @@ function ProjectCard({
           >
             Demo
           </Link>
+        </div> */}
         </div>
-      </div>
+      </Link>
     </motion.div>
   );
 }

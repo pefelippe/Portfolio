@@ -13,12 +13,12 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" flex flex-col text-center mx-auto px-6 gap-20 pt-20 pb-10 min-h-[80vh] "
+      className=" flex flex-col justify-center items-center text-center mx-auto px-6 gap-20  min-h-[80vh] "
     >
       <About />
 
       {/* <Skills /> */}
-      <BlogPosts />
+      {/* <BlogPosts /> */}
       {/* <Contact /> */}
     </motion.div>
   );

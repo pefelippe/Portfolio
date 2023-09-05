@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
         className="w-full h-screen"
       >
         <Header />
-        <div className="max-md:hidden absolute flex-col left-4 bottom-4  flex gap-8 mx-auto justify-center">
+        {/* <div className="max-md:hidden absolute flex-col left-4 bottom-4  flex gap-8 mx-auto justify-center">
           <Link
             className="hover:text-blue"
             target="_blank"
@@ -58,7 +58,7 @@ export default function App({ Component, pageProps }: AppProps) {
           >
             <FaFilePdf className="h-10 w-10 hover:text-blue" />
           </Link>
-        </div>
+        </div> */}
         <Component {...pageProps} />
         <Footer />
       </motion.div>

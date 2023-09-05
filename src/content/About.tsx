@@ -11,7 +11,7 @@ export default function About() {
   return (
     <motion.div
       className=" font-light flex w-full  text-center mx-auto max-w-xl 
-      flex-col items-start  justify-center leading-[1.3] gap-4"
+      flex-col items-center  justify-center leading-[1.3] gap-4"
     >
       <div className="flex flex-col gap-3 items-center">
         <motion.img
@@ -31,8 +31,30 @@ export default function About() {
           Architect and Development Generalist.
         </h1>
       </div>
-
-      <div className="ml-6 w-full flex gap-6 items-center justify-center text-lg  font-medium max-w-xl ">
+      <div className="    flex gap-8 mx-auto justify-center">
+        <AnimatedBtn
+          className="hover:text-blue"
+          target="_blank"
+          href="github.com/pefelippe"
+        >
+          <FaGithub className="h-10 w-10 hover:text-blue" />
+        </AnimatedBtn>
+        <AnimatedBtn
+          className="hover:text-blue"
+          target="_blank"
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <FaLinkedin className="h-10 w-10 hover:text-blue" />
+        </AnimatedBtn>
+        <AnimatedBtn
+          className="hover:text-blue"
+          target="_blank"
+          href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
+        >
+          <FaFilePdf className="h-10 w-10 hover:text-blue" />
+        </AnimatedBtn>
+      </div>
+      {/* <div className="ml-6 w-full flex gap-6 items-center justify-center text-lg  font-medium max-w-xl ">
         <Link className="hover:underline" href="/projects">
           <motion.p
             whileHover={{
@@ -57,7 +79,7 @@ export default function About() {
             Contact me
           </motion.p>
         </Link>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

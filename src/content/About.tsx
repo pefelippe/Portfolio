@@ -13,25 +13,26 @@ export default function About() {
       className=" font-light flex w-full  text-center mx-auto max-w-xl 
       flex-col items-center  justify-center leading-[1.3] gap-4"
     >
-      <div className="flex flex-col gap-3 items-center">
-        <motion.img
-          whileHover={{
-            scale: 1.1,
-            transition: { duration: 0.1 },
-          }}
-          alt="project-img "
-          className="rounded-full w-24 h-24"
-          src="assets/avatar-pdr.png"
-        />
-        <p className="text-4xl sm:text-5xl  font-bold uppercase  ">
+      <motion.img
+        whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.1 },
+        }}
+        alt="project-img "
+        className="rounded-full w-24 h-24 md:w-28 md:h-28"
+        src="assets/avatar-pdr.png"
+      />
+      <div className="flex flex-col items-center gap-2">
+        <p className="text-4xl sm:text-5xl  font-bold uppercase ">
           Pedro Felippe
         </p>
-        <h1 className="font-thin text-base sm:text-xl  leading-tight text-gray-500 ">
+        <h1 className="font-thin text-base sm:text-2xl max-w-xl leading-tight text-gray-500 ">
           I'm a passionate software engineer - Front End Specialist and
           Architect and Development Generalist.
         </h1>
       </div>
-      <div className="    flex gap-8 mx-auto justify-center">
+
+      <div className=" flex gap-8 mx-auto justify-center">
         <AnimatedBtn
           className="hover:text-blue"
           target="_blank"

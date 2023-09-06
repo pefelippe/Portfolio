@@ -22,11 +22,11 @@ export default function About() {
         className="rounded-full w-24 h-24 md:w-28 md:h-28"
         src="assets/avatar-pdr.png"
       />
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-1">
         <p className="text-4xl sm:text-5xl  font-bold uppercase ">
           Pedro Felippe
         </p>
-        <h1 className="font-thin text-base sm:text-2xl max-w-xl leading-tight text-gray-500 ">
+        <h1 className="font-thin text-md sm:text-xl max-w-xl leading-tight text-gray-500 ">
           I'm a passionate software engineer - Front End Specialist and
           Architect and Development Generalist.
         </h1>
@@ -38,21 +38,21 @@ export default function About() {
           target="_blank"
           href="github.com/pefelippe"
         >
-          <FaGithub className="h-10 w-10 hover:text-blue" />
+          <FaGithub className="h-8 w-8 md:h-10 md:w-10 hover:text-blue" />
         </AnimatedBtn>
         <AnimatedBtn
           className="hover:text-blue"
           target="_blank"
           href="https://www.linkedin.com/in/pedro-felippe/"
         >
-          <FaLinkedin className="h-10 w-10 hover:text-blue" />
+          <FaLinkedin className="h-8 w-8 md:h-10 md:w-10 hover:text-blue" />
         </AnimatedBtn>
         <AnimatedBtn
           className="hover:text-blue"
           target="_blank"
           href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
         >
-          <FaFilePdf className="h-10 w-10 hover:text-blue" />
+          <FaFilePdf className="h-8 w-8 md:h-10 md:w-10 hover:text-blue" />
         </AnimatedBtn>
       </div>
       {/* <div className="ml-6 w-full flex gap-6 items-center justify-center text-lg  font-medium max-w-xl ">

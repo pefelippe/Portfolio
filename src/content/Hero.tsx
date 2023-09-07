@@ -10,7 +10,7 @@ export default function About() {
         FULL STACK DEVELOPER
       </p>
       <p className="text-[1.3rem] sm:text-[1.8rem] max-w-md sm:max-w-2xl font-light text-gray-100">
-        I'm Pedro Felippe. A passionate software engineer based in Brazil. 📍
+        Im Pedro Felippe. A passionate software engineer based in Brazil. 📍
       </p>
       <LinksDetailed />
     </motion.div>

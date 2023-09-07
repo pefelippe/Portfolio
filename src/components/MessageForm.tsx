@@ -45,33 +45,35 @@ export default function MessageForm({}: Inputs) {
   };
 
   return (
-    <div className="w-full gap-4 flex flex-col rounded-md ">
+    <div className="w-full flex flex-col rounded-md max-w-xl max-md:max-w-lg">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" flex flex-col gap-4 w-full mx-auto"
+        className=" flex flex-col gap-6 w-full mx-auto text-xl"
       >
-        <input
-          {...register("name", { required: true, maxLength: 50 })}
-          placeholder="Enter your name..."
-          className="contactInput "
-          type="text"
-        />
-        <input
-          {...register("email", { required: true, maxLength: 50 })}
-          placeholder="Enter your email..."
-          className="contactInput"
-          type="email"
-        />
+        <div className="flex gap-10 max-md:flex-col max-md:gap-6 w-full">
+          <input
+            {...register("name", { required: true, maxLength: 50 })}
+            placeholder="Enter your name..."
+            className="contactInput "
+            type="text"
+          />
+          <input
+            {...register("email", { required: true, maxLength: 50 })}
+            placeholder="Enter your email..."
+            className="contactInput"
+            type="email"
+          />
+        </div>
 
         <textarea
           {...register("message", { required: true, maxLength: 500 })}
           placeholder="Enter your message..."
-          className="contactInput min-h-[250px] "
+          className="contactInput min-h-[250px] md:min-h-[350px] "
         />
 
         <button
-          className="bg-gray-850 py-4  w-full   shadow hover:bg-gray-850/70 
-        rounded  uppercase border border-gray-850 mx-auto
+          className="bg-[#000] py-8 w-full   shadow hover:bg-[#101010]
+        rounded  uppercase  mx-auto
          font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff]  transition-all"
         >
           {isLoading ? (

@@ -15,9 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div
       className={`
-    overflow-x-hidden overflow-y-scroll min-w-3xl h-screen min-h-[300px] mx-auto
+    overflow-x-hidden overflow-y-scroll h-screen min-h-[300px] mx-auto scroll-smooth
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 
-     font-sans text-gray-900
+     font-sans text-white bg-[#1A1A1C]
      snap-mandatory snap-y 
   `}
     >
@@ -32,33 +32,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
         className="w-full h-screen"
       >
-        <Header />
-        {/* <div className="max-md:hidden absolute flex-col left-4 bottom-4  flex gap-8 mx-auto justify-center">
-          <Link
-            className="hover:text-blue"
-            target="_blank"
-            href="github.com/pefelippe"
-          >
-            <FaGithub className="h-10 w-10 hover:text-blue" />
-          </Link>
-          <Link
-            className="hover:text-blue"
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <FaLinkedin className="h-10 w-10 hover:text-blue" />
-          </Link>
-          <Link
-            className="hover:text-blue"
-            target="_blank"
-            href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
-          >
-            <FaFilePdf className="h-10 w-10 hover:text-blue" />
-          </Link>
-        </div> */}
+        {/* <Header /> */}
         <Component {...pageProps} />
         <Footer />
       </motion.div>

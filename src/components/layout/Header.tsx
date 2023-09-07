@@ -1,48 +1,25 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
+
+import AnimatedBtn from "../animated/AnimatedBtn";
+import Links from "../Links";
 
 const Navbar = () => {
   return (
     <motion.nav
-      className="h-[10vh] items-center text-gray-850   mx-auto font-light text-xl  flex max-md:gap-6 max-md:px-8  max-w-xl 
-    w-full  "
+      className="absolute h-[10vh] items-center text-white font-semibold justify-end mx-auto 
+    text-2xl  flex  px-8 md:px-20  w-full  "
     >
-      <nav className=" flex gap-14 text-md items-center justify-center w-full">
-        <Link className="hover:text-blue" target="" href="/">
-          Home
-        </Link>
-        <Link className="hover:text-blue" target="" href="/projects">
+      {/* <nav className=" flex gap-14 text-md items-center justify-center ">
+        <Link className="hover:text-blue" target="" href="#projects">
           Projects
         </Link>
-        <Link className="hover:text-blue" target="" href="/contact">
+        <Link className="hover:text-blue" target="" href="#contact">
           Contact
         </Link>
-      </nav>
-      {/* <div className="flex gap-6">
-        <Link
-          className="hover:text-blue"
-          target="_blank"
-          href="github.com/pefelippe"
-        >
-          <FaGithub className="h-6 w-6 hover:text-blue" />
-        </Link>
-        <Link
-          className="hover:text-blue"
-          target="_blank"
-          href="https://www.linkedin.com/in/pedro-felippe/"
-        >
-          <FaLinkedin className="h-6 w-6 hover:text-blue" />
-        </Link>
-        <Link
-          className="hover:text-blue"
-          target="_blank"
-          href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit"
-        >
-          <FaFilePdf className="h-6 w-6 hover:text-blue" />
-        </Link>
-      </div> */}
+      </nav> */}{" "}
+      <Links />
     </motion.nav>
   );
 };

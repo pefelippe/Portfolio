@@ -1,18 +1,13 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
+
 import React from "react";
-import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
-import AnimatedBtn from "../animated/AnimatedBtn";
-
-type Props = {};
-
-function Footer({}: Props) {
+function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <motion.footer className="h-[10vh] justify-center font-thin text-sm md:text-md text-gray-850 mx-auto   flex px-8 p-10  max-w-xl  w-full">
-      <p className="flex">Pedro Felippe © {year}</p>
+    <motion.footer className="h-[20vh] bg-[#1d1d1d] text-gray-100 gap-6 justify-center items-center font-thin text-sm md:text-md  mx-auto   flex px-8 p-10  w-screen flex-col">
+      <p className="flex text-xl">Pedro Felippe © {year}</p>
     </motion.footer>
   );
 }

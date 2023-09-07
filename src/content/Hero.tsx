@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import React from "react";
+import LinksDetailed from "../components/LinksDetailed";
 
 export default function About() {
   return (
@@ -11,6 +12,7 @@ export default function About() {
       <p className="text-[1.3rem] sm:text-[1.8rem] max-w-md sm:max-w-2xl font-light text-gray-100">
         I'm Pedro Felippe. A passionate software engineer based in Brazil. 📍
       </p>
+      <LinksDetailed />
     </motion.div>
   );
 }

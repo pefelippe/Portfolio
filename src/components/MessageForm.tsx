@@ -45,7 +45,7 @@ export default function MessageForm({}: Inputs) {
   };
 
   return (
-    <div className="w-full flex flex-col rounded-md max-w-xl max-md:max-w-lg">
+    <div className="w-full flex flex-col rounded-md max-w-2xl">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className=" flex flex-col gap-6 w-full mx-auto text-xl"
@@ -72,8 +72,8 @@ export default function MessageForm({}: Inputs) {
         />
 
         <button
-          className="bg-[#000] py-8 w-full   shadow hover:bg-[#101010]
-        rounded  uppercase  mx-auto
+          className="hover:bg-blue py-6 max-md:w-full shadow bg-blue/70 w-1/2
+        rounded  uppercase  mx-auto 
          font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff]  transition-all"
         >
           {isLoading ? (

@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       className={`
     overflow-x-hidden overflow-y-scroll h-screen min-h-[300px] mx-auto scroll-smooth
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#5865f2]/80 
-     font-sans text-white bg-[#1A1A1C]
+     font-sans text-white bg-[#0f0f11]
      snap-mandatory snap-y 
   `}
     >
@@ -35,9 +35,8 @@ export default function App({ Component, pageProps }: AppProps) {
         transition={{ duration: 1.5 }}
         className="w-full h-screen"
       >
-        {/* <Header /> */}
+        <Header />
         <Component {...pageProps} />
-        <Footer />
       </motion.div>
     </div>
   );

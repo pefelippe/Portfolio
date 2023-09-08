@@ -11,13 +11,15 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className="max-w-screen-xl  mx-auto"
+      className=" mx-auto gap-20 flex flex-col text-center w-full"
     >
-      <div className="w-full max-w-4xl text-4xl leading-1 gap-5 flex flex-col">
-        <h1>Selected Work</h1>
-        <h1 className="text-gray-100 text-4xl">Selected Work</h1>
+      <div className=" max-w-4xl  leading-1  gap-2 flex flex-col justify-center mx-auto">
+        <h1 className="text-4xl">Selected Work</h1>
+        <h3 className="text-4xl max-w-xl text-gray-300">
+          Explore the following projects to get a glimpse of my projects:{" "}
+        </h3>
       </div>
-      <div className="grid h-full w-full md:grid-cols-2 gap-20 justify-center md:pt-10">
+      <div className="grid h-full w-full xl:grid-cols-2 gap-20 justify-center ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

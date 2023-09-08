@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-import MessageForm from "../src/components/MessageForm";
 import LinksDetailed from "../src/components/LinksDetailed";
+import MessageForm from "../src/components/MessageForm";
 
 function Contact() {
   return (
@@ -11,7 +11,7 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col max-w-screen-2xl mx-auto  gap-10 items-center justify-center"
+      className="flex flex-col max-w-screen-2xl mx-auto  gap-10 items-center justify-center min-h-screen"
     >
       <h1 className="font-thin text-3xl md:text-[3rem]  leading-tight  ">
         Get in touch.

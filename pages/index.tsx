@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
+import LinksDetailed from "../src/components/LinksDetailed";
+import About from "../src/content/About";
 import Hero from "../src/content/Hero";
-
 import Contact from "./contact";
 import Projects from "./projects";
-import About from "../src/content/About";
 
 export default function Home() {
   return (
@@ -12,22 +12,22 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className=" flex flex-col min-h-fit w-screen gap-40 py-40"
+      className=" flex flex-col min-h-fit w-screen"
     >
-      <section id="hero" className="px-20 max-md:px-10  ">
+      <section id="hero" className="px-10  ">
         <Hero />
       </section>
 
       {/* <section
         id="hero"
-        className="min-h-screen  w-full flex mx-auto   bg-[#1A1A1C] p-20  max-md:px-10 flex-col gap-10 "
+        className="  w-screen flex mx-auto bg-[#1d1d1d] p-20  max-md:px-10 flex-col gap-10 "
       >
         <Projects />
       </section> */}
 
-      <section id="hero" className=" bg-[#1A1A1C] px-20 max-md:px-10 ">
+      {/* <section id="hero" className=" bg-[#000] px-20 max-md:px-10 ">
         <Contact />
-      </section>
+      </section> */}
     </motion.div>
   );
 }

@@ -11,9 +11,9 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col  mx-auto  items-start justify-center gap-4"
+      className="flex flex-col  mx-auto  items-center justify-center gap-8 w-full h-full"
     >
-      <h1 className="font-thin text-3xl  leading-tight text-gray-100 ">
+      <h1 className="font-thin text-3xl md:text-5xl  leading-tight text-gray-100 ">
         Get in touch.
       </h1>
 

@@ -8,7 +8,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <motion.nav
-      className="h-[10vh] items-center text-white font-semibold justify-center mx-auto max-w-xl gap-12
+      className="h-[10vh] items-center text-white font-semibold  mx-auto max-w-lg justify-between
     text-lg  flex px-10  w-full "
     >
       <Link className="font-medium hover:text-blue" target="" href="/">

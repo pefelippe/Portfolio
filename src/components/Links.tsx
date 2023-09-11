@@ -5,8 +5,8 @@ import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className="flex flex-col gap-4 mx-auto">
-      <div className=" flex gap-8 ">
+    <div className="flex flex-col gap-4 ">
+      <div className=" flex gap-10 ">
         <AnimatedBtn
           className="hover:text-blue"
           target="_blank"

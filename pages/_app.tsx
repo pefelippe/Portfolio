@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import AnimatedBtn from "../src/components/animated/AnimatedBtn";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -37,6 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <Header />
         <Component {...pageProps} />
+        {/* <Footer /> */}
       </motion.div>
     </div>
   );

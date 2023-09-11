@@ -14,20 +14,24 @@ export default function Home() {
       transition={{ duration: 1 }}
       className=" flex flex-col min-h-fit w-screen"
     >
-      <section id="hero" className="px-10  ">
+      <section id="hero" className=" bg-[#0f0f11] ">
         <Hero />
       </section>
 
+      {/* <section id="about" className="  w-screen flex mx-auto bg-[#1A1A1C]  ">
+        <About />
+      </section> */}
+
       {/* <section
-        id="hero"
-        className="  w-screen flex mx-auto bg-[#1d1d1d] p-20  max-md:px-10 flex-col gap-10 "
+        id="projects"
+        className="  w-screen flex mx-auto bg-[#141414] md:p-20 p-10 "
       >
         <Projects />
       </section> */}
 
-      {/* <section id="hero" className=" bg-[#000] px-20 max-md:px-10 ">
+      <section id="contact" className=" w-screen bg-[#121212] mx-auto">
         <Contact />
-      </section> */}
+      </section>
     </motion.div>
   );
 }

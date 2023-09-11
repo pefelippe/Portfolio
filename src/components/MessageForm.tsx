@@ -50,25 +50,23 @@ export default function MessageForm({}: Inputs) {
         onSubmit={handleSubmit(onSubmit)}
         className=" flex flex-col gap-6 w-full mx-auto text-xl"
       >
-        <div className="flex gap-6 max-md:flex-col max-md:gap-6 w-full">
-          <input
-            {...register("name", { required: true, maxLength: 50 })}
-            placeholder="Enter your name..."
-            className="contactInput "
-            type="text"
-          />
-          <input
-            {...register("email", { required: true, maxLength: 50 })}
-            placeholder="Enter your email..."
-            className="contactInput"
-            type="email"
-          />
-        </div>
+        <input
+          {...register("name", { required: true, maxLength: 50 })}
+          placeholder="Enter your name..."
+          className="contactInput "
+          type="text"
+        />
+        <input
+          {...register("email", { required: true, maxLength: 50 })}
+          placeholder="Enter your email..."
+          className="contactInput"
+          type="email"
+        />
 
         <textarea
           {...register("message", { required: true, maxLength: 500 })}
           placeholder="Enter your message..."
-          className="contactInput min-h-[250px] md:min-h-[400px] "
+          className="contactInput min-h-[250px] md:min-h-[300px] "
         />
 
         <button

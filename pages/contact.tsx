@@ -11,9 +11,11 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col  mx-auto  gap-10 items-start justify-center min-h-[90vh] px-10 max-w-lg"
+      className="flex flex-col  mx-auto  items-start justify-center gap-4"
     >
-      <h1 className="font-thin text-5xl  leading-tight  ">Get in touch.</h1>
+      <h1 className="font-thin text-3xl  leading-tight text-gray-100 ">
+        Get in touch.
+      </h1>
 
       <MessageForm name={""} email={""} subject={""} message={""} />
     </motion.div>

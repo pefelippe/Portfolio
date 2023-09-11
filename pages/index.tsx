@@ -31,7 +31,7 @@ export default function Home() {
         <Projects />
       </section> */}
 
-      {/* <section id="contact" className=" w-screen  mx-auto">
+      {/* <section id="contact" className=" w-full mx-auto">
         <Contact />
       </section> */}
     </motion.div>

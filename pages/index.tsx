@@ -5,6 +5,8 @@ import About from "../src/content/About";
 import Hero from "../src/content/Hero";
 import Contact from "./contact";
 import Projects from "./projects";
+import BlogPosts from "../src/components/BlogPosts";
+import Links from "../src/components/Links";
 
 export default function Home() {
   return (
@@ -12,11 +14,11 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className=" flex flex-col min-h-fit w-screen"
+      className=" flex flex-col min-h-fit w-screen max-w-lg mx-auto  gap-20 py-20 px-10"
     >
-      <section id="hero" className=" bg-[#0f0f11] ">
-        <Hero />
-      </section>
+      <Hero />
+
+      <BlogPosts />
 
       {/* <section id="about" className="  w-screen flex mx-auto bg-[#1A1A1C]  ">
         <About />
@@ -29,9 +31,9 @@ export default function Home() {
         <Projects />
       </section> */}
 
-      <section id="contact" className=" w-screen bg-[#121212] mx-auto">
+      {/* <section id="contact" className=" w-screen  mx-auto">
         <Contact />
-      </section>
+      </section> */}
     </motion.div>
   );
 }

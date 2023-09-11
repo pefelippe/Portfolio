@@ -6,15 +6,16 @@ import Links from "../components/Links";
 export default function About() {
   return (
     <motion.div
-      className="relative items-center text-center leading-none  justify-center
-    flex flex-col gap-2 md:gap-4  max-w-screen-2xl  mx-auto min-h-[90vh]"
+      className="relative items-start text-center leading-none  justify-start
+    flex flex-col gap-4 max-md:max-w-md"
     >
-      <p className="text-[4rem] sm:text-[6rem] lg:text-[10rem] 2xl:text-[14rem]  uppercase font-bold text-blue">
+      <p className="text-7xl uppercase font-bold text-blue">
         FULL-STACK DEVELOPER
       </p>
-      <p className="text-[1.3rem] md:text-[2rem] max-md:max-w-sm font-extralight text-gray-100 leading-[1.2]">
-        📍 Based in Brazil
+      <p className="text-2xl font-extralight text-gray-100 leading-[1.2]">
+        Hey! My name is Pedro Felippe and i'm a passionate software engineer.
       </p>
+      <Links />
     </motion.div>
   );
 }

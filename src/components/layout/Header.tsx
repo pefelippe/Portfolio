@@ -8,11 +8,17 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <motion.nav
-      className="z-50  h-[10vh] items-center text-white font-semibold justify-between mx-auto 
-    text-3xl  flex px-10  w-full "
+      className="h-[10vh] items-center text-white font-semibold justify-center mx-auto max-w-xl gap-12
+    text-lg  flex px-10  w-full "
     >
       <Link className="font-medium hover:text-blue" target="" href="/">
-        Pedro Felippe
+        Home
+      </Link>
+      <Link className="font-medium hover:text-blue" target="" href="/projects">
+        Projects
+      </Link>
+      <Link className="font-medium hover:text-blue" target="" href="/contact">
+        Contact
       </Link>
 
       {/* <nav className=" flex gap-14 text-md items-center justify-center ">
@@ -23,7 +29,7 @@ const Navbar = () => {
           Contact
         </Link>
       </nav> */}
-      <Links />
+      {/* <Links /> */}
     </motion.nav>
   );
 };

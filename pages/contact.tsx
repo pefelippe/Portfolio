@@ -13,7 +13,7 @@ function Contact() {
       className="flex flex-col  mx-auto  items-center justify-center gap-4 md:gap-6 w-full max-w-xl
        h-fit "
     >
-      <h1 className="font-thin text-4xl  leading-tight text-gray-100 ">
+      <h1 className="text-2xl font-thin xs:text-4xl  leading-tight text-gray-100 ">
         Get in touch.
       </h1>
 

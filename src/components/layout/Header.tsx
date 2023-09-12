@@ -1,24 +1,12 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
+
 import React from "react";
+import Links from "../Links";
 
 const Navbar = () => {
   return (
-    <motion.nav
-      className=" h-[10vh]  text-white font-semibold  mx-auto  justify-center items-center
-    text-lg  flex px-10  w-full z-40  gap-20"
-    >
-      <Link className="font-medium hover:text-blue " target="" href="/">
-        Home
-      </Link>
-
-      {/*<Link className="font-medium hover:text-blue" target="" href="/projects">
-        Projects
-      </Link>*/}
-
-      <Link className="font-medium hover:text-blue" target="" href="/contact">
-        Contact
-      </Link>
+    <motion.nav className=" text-white lg:absolute left-5 bottom-5">
+      <Links />
     </motion.nav>
   );
 };

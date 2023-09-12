@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
         transition={{ duration: 1.5 }}
         className="w-full h-screen"
       >
-        {/* <Header /> */}
+        <Header />
         <Component {...pageProps} />
         {/* <Footer /> */}
       </motion.div>

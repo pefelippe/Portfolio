@@ -45,7 +45,7 @@ export default function MessageForm({}: Inputs) {
   };
 
   return (
-    <div className="w-full flex flex-col rounded-md max-w-2xl ">
+    <div className="flex flex-col rounded-md max-w-lg w-full">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className=" flex flex-col gap-6 w-full mx-auto text-xl"
@@ -70,7 +70,7 @@ export default function MessageForm({}: Inputs) {
         />
 
         <button
-          className="hover:bg-blue py-6 w-full shadow bg-blue/70 
+          className="hover:bg-blue py-5 w-full shadow bg-blue/70 
         rounded  uppercase  mx-auto 
          font-semibold text-[1.4rem]  leading-[1.2]  text-[#fff]  transition-all"
         >

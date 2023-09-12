@@ -13,7 +13,7 @@ function Skills() {
       className=" text-xl  font-thin mx-auto
       flex flex-col  items-center w-full "
     >
-      <div className="grid w-full grid-cols-8 gap-4  max-w-3xl ">
+      <div className="grid w-full grid-cols-8 gap-10  max-w-4xl ">
         {technologies.map((tech) => {
           return (
             <div key={tech.name} className="flex flex-col items-center gap-2 ">

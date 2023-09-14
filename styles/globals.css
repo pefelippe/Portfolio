@@ -43,6 +43,14 @@
   border-2 px-4 py-3 dark:text-white  md:inline-flex;
 }
 
+.headerLink {
+  @apply hover:text-white hover:underline h-full text-[16px] px-4 py-1;
+}
+
+.headerSocial {
+  @apply h-7 w-7 hover:text-blue;
+}
+
 .contactInput {
   @apply outline-none bg-gray-500/10  w-full px-4 py-4 rounded
   border-[1px] border-[#242424]   text-[#242424] placeholder-gray-500 transition-all focus:border-[#5865f2];

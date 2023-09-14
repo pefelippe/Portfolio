@@ -14,7 +14,7 @@ function Projects() {
       transition={{ duration: 0.5 }}
       id="work"
       className=" mx-auto flex max-lg:flex-col-reverse text-start  
-      w-full items-center min-h-[40vh]  max-w-7xl justify-center lg:gap-10 rounded-[30px]"
+      w-full items-center  max-w-7xl justify-center lg:gap-20 rounded-[30px]"
     >
       <div className="leading-1 gap-3 flex flex-col justify-between items-start  max-w-lg w-full">
         <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 ">

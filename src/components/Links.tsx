@@ -5,13 +5,13 @@ import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className=" flex gap-10 justify-center items-center">
+    <div className=" flex gap-6 justify-center items-center">
       <AnimatedBtn
         className="hover:text-blue"
         target="_blank"
         href="https://github.com/pefelippe"
       >
-        <FaGithub className="h-10 w-10 hover:text-blue" />
+        <FaGithub className="headerSocial" />
       </AnimatedBtn>
 
       <AnimatedBtn
@@ -19,7 +19,7 @@ function Links() {
         target="_blank"
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
-        <FaLinkedin className="h-10 w-10 hover:text-blue" />
+        <FaLinkedin className="headerSocial" />
       </AnimatedBtn>
 
       <AnimatedBtn
@@ -27,7 +27,7 @@ function Links() {
         target="_blank"
         href="https://docs.google.com/document/d/e/2PACX-1vQ0oK4H_ynaCvtXwtO4OvYmIIt4_6vn8lTQlWqj2KnoTR4ZfUWCzjpAuDPGToTPzwoqkN9FIEbiD7MU/pub"
       >
-        <FaFilePdf className="h-10 w-10 hover:text-blue" />
+        <FaFilePdf className="headerSocial" />
       </AnimatedBtn>
     </div>
   );

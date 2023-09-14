@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       className={`
     overflow-x-hidden overflow-y-scroll h-screen min-h-fit min-w-[400px] mx-auto scroll-smooth
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-blue
-     font-sans text-white bg-[#000500]
+     font-sans text-white bg-[#fff]
      snap-mandatory snap-y 
   `}
     >
@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <Header />
         <Component {...pageProps} />
-        {/* <Footer /> */}
+        <Footer />
       </motion.div>
     </div>
   );

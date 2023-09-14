@@ -9,7 +9,7 @@ export default function About() {
   return (
     <motion.div
       className="flex max-lg:flex-col max-lg:  mx-auto  items-center 
-    justify-center lg:gap-10  w-full max-w-7xl  min-h-[40vh]   rounded-[30px] "
+    justify-center lg:gap-20  w-full max-w-7xl rounded-[30px] "
     >
       <motion.img
         src="/assets/avatar-pdr.png"
@@ -17,6 +17,7 @@ export default function About() {
         className="max-w-xl max-h-[40vh] object-fit items-center 
         flex-shrink-0 object-cover transition-all flex  w-full  rounded-[30px] hover:blur-sm"
       />
+
       <div className="leading-1 gap-3 flex flex-col justify-between items-start  max-w-lg w-full">
         <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 ">
           :$~ whoami

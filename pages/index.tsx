@@ -11,22 +11,18 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className=" flex flex-col   w-screen max-lg:px-10"
+      className=" flex flex-col max-w-7xl mx-auto w-screen max-lg:px-10 pt-[77px]"
     >
       <section>
         <HeroContent />
       </section>
-      <div className="flex w-full flex-col  gap-20 xl:gap-40">
+      <div className="flex w-full flex-col  gap-20 xl:gap-40  pb-[20vh]">
         <section className="">
           <AboutContent />
         </section>
 
         <section>
           <ProjectContent />
-        </section>
-
-        <section className="">
-          <ContactContent />
         </section>
       </div>
     </motion.div>

@@ -6,10 +6,12 @@ function Footer() {
 
   return (
     <motion.footer
-      className="min-h-[30vh]  bg-[#101010] text-[#fefef1] gap-6 justify-center items-center
-    font-thin text-sm md:text-md  mx-auto   flex px-8 p-10  w-screen flex-col"
+      className="text-[#8d8d99] gap-6 justify-center items-center border-t-[0.05rem]
+    font-thin text-sm md:text-md  mx-auto   flex p-8   w-screen flex-col"
     >
-      <p className="flex text-xl">Pedro Felippe © {year}</p>
+      <div className="w-full max-w-7xl justify-start items-start mx-auto  flex">
+        <p className="flex text-md">Pedro Felippe © {year}</p>
+      </div>
     </motion.footer>
   );
 }

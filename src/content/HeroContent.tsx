@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import React from "react";
-import AnimatedLink from "../components/animated/AnimatedLink";
+import Links from "../components/Links";
 
 export default function About() {
   return (
@@ -9,28 +8,19 @@ export default function About() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="relative flex flex-col gap-3  items-center mx-auto min-h-[50vh] max-w-7xl 
-    text-center leading-none  justify-center  "
+      className="relative flex flex-col gap-4  items-start mx-auto md:min-h-[90vh] min-h-[60vh] max-w-7xl
+    text-center leading-none  justify-end pb-[20vh]  "
     >
       <p
-        className="text-[6rem] 
-       md:text-[7rem] uppercase font-bold text-blue"
+        className="text-[3rem] md:text-[9rem]
+        uppercase font-bold text-blue"
       >
         Pedro Felippe
       </p>
-      <p className="text-[1.2rem] md:text-[2rem]  uppercase text-gray-100 tracking-[10px] font-light">
+      <p className="ml-2 text-[1.2rem] md:text-[2rem]  uppercase text-gray-100 tracking-[5px] md:tracking-[10px] font-light">
         FULL-STACK DEVELOPER
       </p>
-
-      {/* <AnimatedLink
-        href="/contact"
-        className="text-[20px] px-9 text-center font-normal
-          text-[#f5f5f5] leading-tight hover:bg-blue/90 transition-all 
-           py-3  bg-blue rounded-full "
-      >
-        Get in touch
-      </AnimatedLink> */}
-      {/* <Links /> */}
+      <Links />
     </motion.div>
   );
 }

@@ -6,8 +6,9 @@ module.exports = {
     darkMode: "class",
     fontFamily: {
       fontFamily: {
+        gotham: ["Gotham HTF", "sans"],
         sans: ['"Fira Sans"', "sans-serif"],
-        Matter: ["Matter", "cursive"],
+        matter: ["Matter", "cursive"],
         roboto: ["Roboto", "sans-serif"],
       },
     },

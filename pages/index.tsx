@@ -4,29 +4,29 @@ import AboutContent from "../src/content/AboutContent";
 import ContactContent from "../src/content/ContactContent";
 import HeroContent from "../src/content/HeroContent";
 import ProjectContent from "../src/content/ProjectContent";
-import Contact from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className=" flex flex-col mx-auto w-screen py-[10vh]">
-      <section className=" max-lg:px-10  py-[10vh]">
+    <motion.div className=" flex flex-col mx-auto w-screen ">
+      <section className="snap-center max-lg:px-10 pt-[92px]">
         <HeroContent />
       </section>
+
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="flex w-full flex-col  gap-20 xl:gap-40   max-lg:px-10 "
+        className="flex w-full flex-col  max-lg:px-10 max-md:gap-20"
       >
-        <section className="">
+        <section className="snap-center bg-[#121212]">
           <AboutContent />
         </section>
 
-        <section>
+        <section className="snap-center bg-[#101010]">
           <ProjectContent />
         </section>
 
-        <section>
+        <section className="snap-center bg-[#080808]">
           <ContactContent />
         </section>
       </motion.div>

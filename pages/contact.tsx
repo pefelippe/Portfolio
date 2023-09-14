@@ -1,10 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import React from "react";
 
 import MessageForm from "../src/components/MessageForm";
-import Link from "next/link";
-import AnimatedBtn from "../src/components/animated/AnimatedBtn";
 
 function Contact() {
   return (
@@ -12,8 +9,11 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" min-h-[90vh] mx-auto w-full max-w-xl flex items-center justify-center "
+      className="h-fit min-h-[90vh] mx-auto w-full max-w-xl flex  flex-col items-center justify-center pt-[10vh] gap-6 max-xl:px-8"
     >
+      <h1 className="text-6xl font-thin xs:text-4xl  leading-tight text-gray-100 ">
+        Get in touch.
+      </h1>
       <MessageForm name={""} email={""} subject={""} message={""} />
     </motion.div>
   );

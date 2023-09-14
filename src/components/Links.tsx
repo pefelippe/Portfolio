@@ -1,11 +1,10 @@
-import React from "react";
 import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className=" flex gap-6 justify-center items-center">
+    <div className="ml-2  mt-2 flex gap-10 justify-center items-center">
       <AnimatedBtn
         className="hover:text-blue"
         target="_blank"

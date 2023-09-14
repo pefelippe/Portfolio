@@ -1,15 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import React from "react";
-import { FaArrowCircleRight } from "react-icons/fa";
 
-import AnimatedLink from "../components/animated/AnimatedLink";
 import Link from "next/link";
 
 export default function About() {
   return (
     <motion.div
-      className="flex max-lg:flex-col max-lg:  mx-auto  items-center 
+      className="flex max-lg:flex-col max-lg:  mx-auto  items-center h-[70vh]
     justify-center lg:gap-20  w-full max-w-7xl rounded-[30px] "
     >
       <Link
@@ -24,13 +21,13 @@ export default function About() {
         flex-shrink-0 object-cover transition-all flex  w-full  rounded-[30px] hover:blur-sm"
         />
       </Link>
-      <div className="leading-1 gap-3 flex flex-col justify-between items-start  max-w-lg w-full">
-        <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 tracking-[5px]">
-          who am i
+      <div className="leading-1 gap-3 flex flex-col justify-between items-start  max-w-xl w-full">
+        <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 ">
+          more about me
         </h1>
 
         <h3 className="text-[1.4rem] max-w-2xl text-[#BABABA] leading-tight">
-          I'm Pedro Felippe - A Full-Stack developer. Based in Brazil.
+          I'm Pedro Felippe. Based in Brazil.
         </h3>
 
         {/* <AnimatedLink

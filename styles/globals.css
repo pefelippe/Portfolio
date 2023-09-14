@@ -5,6 +5,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap");
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 .freeMode {
   width: 100%;
   height: 700px;
@@ -44,11 +50,11 @@
 }
 
 .headerLink {
-  @apply hover:text-white hover:underline underline-offset-4 decoration-blue h-full text-[16px] px-4 py-1 active:text-blue;
+  @apply hover:text-white hover:underline underline-offset-8 decoration-blue h-full text-[16px] py-7 active:text-blue;
 }
 
 .headerSocial {
-  @apply h-7 w-7 hover:text-blue;
+  @apply h-10 w-10 hover:text-blue text-gray-500;
 }
 
 .contactInput {

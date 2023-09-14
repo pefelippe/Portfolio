@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
-import React from "react";
-import { FaArrowCircleRight } from "react-icons/fa";
 
 import ProjectCard from "../../src/components/ProjectCard";
 import { projects } from "../../src/constants";
-import AnimatedLink from "../components/animated/AnimatedLink";
 
 function Projects() {
   return (
@@ -13,7 +10,7 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className=" mx-auto flex max-lg:flex-col-reverse text-start  
+      className=" mx-auto flex max-lg:flex-col-reverse text-start h-[70vh]
       w-full items-center  max-w-7xl justify-center lg:gap-20 rounded-[30px]"
     >
       <div className="leading-1 gap-2 flex flex-col justify-between items-start  max-w-lg w-full">
@@ -35,7 +32,7 @@ function Projects() {
         </AnimatedLink> */}
       </div>
 
-      <div className="grid h-full  gap-10 xl:gap-14 justify-center ">
+      <div className="grid  gap-10 xl:gap-14 justify-center ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

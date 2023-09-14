@@ -30,12 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <Analytics />
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        className="w-full h-screen"
-      >
+      <motion.div className="w-full h-screen">
         <Header />
         <Component {...pageProps} />
         <Footer />

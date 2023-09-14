@@ -8,16 +8,16 @@ import Contact from "./contact";
 
 export default function Home() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      className=" flex flex-col mx-auto w-screen "
-    >
+    <motion.div className=" flex flex-col mx-auto w-screen ">
       <section className="bg-gray-600 max-lg:px-10 ">
         <HeroContent />
       </section>
-      <div className="flex w-full flex-col  gap-20 xl:gap-40  py-[20vh] max-lg:px-10 ">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="flex w-full flex-col  gap-20 xl:gap-40  py-[20vh] max-lg:px-10 "
+      >
         <section className="">
           <AboutContent />
         </section>
@@ -29,7 +29,7 @@ export default function Home() {
         <section>
           <ContactContent />
         </section>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

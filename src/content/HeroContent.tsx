@@ -6,6 +6,9 @@ import AnimatedLink from "../components/animated/AnimatedLink";
 export default function About() {
   return (
     <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
       className="relative flex flex-col gap-3  items-center mx-auto min-h-screen max-w-7xl 
     text-center leading-none  justify-center  "
     >

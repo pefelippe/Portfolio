@@ -16,7 +16,7 @@ const Navbar = () => {
         <AnimateLink href="/" className="text-xl text-[#fff] font-semibold">
           Pedro Felippe
         </AnimateLink>
-        <div className="flex text-gray-100">
+        <div className="flex text-gray-100 max-md:hidden">
           <AnimateLink href="/about" className="headerLink">
             About
           </AnimateLink>

@@ -6,7 +6,7 @@ import AnimatedLink from "../components/animated/AnimatedLink";
 export default function About() {
   return (
     <motion.div
-      className="relative flex flex-col gap-3  items-center mx-auto min-h-[60vh] max-w-4xl
+      className="relative flex flex-col gap-3  items-center mx-auto min-h-screen max-w-7xl 
     text-center leading-none  justify-center  "
     >
       <p

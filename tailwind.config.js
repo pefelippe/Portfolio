@@ -19,6 +19,7 @@ module.exports = {
       dark: {
         DEFAULT: "#FAFAFA",
       },
+      green: "#00E88F",
       gray: {
         100: "#9BA0B3",
         300: "#A9ADC1",
@@ -30,6 +31,7 @@ module.exports = {
       },
       yellow: {
         500: "#F4F1D0",
+        700: "FED600",
       },
     },
   },

@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 import ProjectCard from "../../src/components/ProjectCard";
 import { projects } from "../../src/constants";
+import AnimatedLink from "../components/animated/AnimatedLink";
 
 function Projects() {
   return (
@@ -11,16 +13,28 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className=" mx-auto flex text-start w-full items-center min-h-[60vh]  max-w-7xl justify-center gap-20 "
+      className=" mx-auto flex max-lg:flex-col-reverse text-start  
+      w-full items-center min-h-[40vh]  max-w-7xl justify-center lg:gap-10 rounded-[30px]"
     >
-      <div className="   leading-1 gap-2 flex flex-col justify-center items-start  max-w-md w-full">
+      <div className="leading-1 gap-3 flex flex-col justify-between items-start  max-w-lg w-full">
         <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 ">
           Selected work
         </h1>
-        <h3 className="text-[1.6rem] max-w-2xl text-[#BABABA] leading-tight">
+        <h3 className="text-[1.4rem] max-w-2xl text-[#BABABA] leading-tight">
           Explore the following projects to get a glimpse of my job experience.
         </h3>
+
+        <AnimatedLink
+          href="/projects"
+          className="text-[1.4rem] max-w-2xl text-gray-500 leading-tight transition-all
+            rounded-full underline hover:text-blue "
+        >
+          <div className="flex gap-2 items-center ">
+            <p>See my projects</p>
+          </div>
+        </AnimatedLink>
       </div>
+
       <div className="grid h-full  gap-10 xl:gap-14 justify-center ">
         {projects?.map((proj) => {
           return (

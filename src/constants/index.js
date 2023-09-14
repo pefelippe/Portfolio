@@ -1,13 +1,13 @@
 export const projects = [
-  {
-    id: 1,
-    link: "https://portfolio-pefelippe.vercel.app/",
-    repo: "https://github.com/pefelippe/Portfolio",
-    title: "Portfolio",
-    imgUrl: "assets/portfolio.png",
-    stack: ["react", "tailwind", "next", "typescript"],
-    description: "Meu primeiro portfolio pessoal. ",
-  },
+  // {
+  //   id: 1,
+  //   link: "https://portfolio-pefelippe.vercel.app/",
+  //   repo: "https://github.com/pefelippe/Portfolio",
+  //   title: "Portfolio",
+  //   imgUrl: "assets/portfolio.png",
+  //   stack: ["react", "tailwind", "next", "typescript"],
+  //   description: "Meu primeiro portfolio pessoal. ",
+  // },
   {
     id: 2,
     link: "",

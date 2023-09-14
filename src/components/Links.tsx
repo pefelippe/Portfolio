@@ -5,7 +5,7 @@ import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className=" flex gap-12 lg:flex-col max-lg:py-10 max-lg:w-full justify-center items-center">
+    <div className=" flex gap-10 justify-center items-center">
       <AnimatedBtn
         className="hover:text-blue"
         target="_blank"

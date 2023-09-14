@@ -9,7 +9,7 @@ export default function About() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="relative flex flex-col gap-3  items-center mx-auto min-h-screen max-w-7xl 
+      className="relative flex flex-col gap-3  items-center mx-auto min-h-[50vh] max-w-7xl 
     text-center leading-none  justify-center  "
     >
       <p

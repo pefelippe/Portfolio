@@ -8,9 +8,9 @@ import Links from "../Links";
 const Navbar = () => {
   return (
     <motion.nav
-      className="absolute w-full
-      items-center justify-center flex mx-auto  bg-gray-600
-      h-[77px] text-xl font-normal z-20 backdrop-blur-sm "
+      className="absolute w-full  max-w-7xl left-0 right-0
+      items-center justify-center flex mx-auto  
+      h-[77px] text-xl font-normal backdrop-blur-sm "
     >
       <div className=" max-w-7xl mx-auto px-8 justify-between flex items-center w-full">
         <AnimateLink href="/" className="text-xl text-[#fff] font-semibold">

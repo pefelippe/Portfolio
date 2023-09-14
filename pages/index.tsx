@@ -8,15 +8,15 @@ import Contact from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className=" flex flex-col mx-auto w-screen ">
-      <section className="bg-gray-600 max-lg:px-10 ">
+    <motion.div className=" flex flex-col mx-auto w-screen py-[10vh]">
+      <section className=" max-lg:px-10  py-[10vh]">
         <HeroContent />
       </section>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="flex w-full flex-col  gap-20 xl:gap-40  py-[20vh] max-lg:px-10 "
+        className="flex w-full flex-col  gap-20 xl:gap-40   max-lg:px-10 "
       >
         <section className="">
           <AboutContent />

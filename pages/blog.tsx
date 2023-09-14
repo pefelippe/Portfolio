@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
 
 import LinksDetailed from "../src/components/LinksDetailed";
-import About from "../src/content/About";
-import Hero from "../src/content/Hero";
-import Contact from "./contact";
-import Projects from "./projects";
+
 import BlogPosts from "../src/components/BlogPosts";
 
 export default function Home() {

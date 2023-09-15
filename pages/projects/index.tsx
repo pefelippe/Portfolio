@@ -10,7 +10,7 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className=" min-h-[90vh] mx-auto w-full  flex items-center justify-center pt-[10vh] "
+      className=" min-h-screen mx-auto w-full  flex items-start justify-center  "
     >
       <div className="   leading-1 gap-2 flex flex-col justify-center items-start  max-w-md w-full">
         <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 ">

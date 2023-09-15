@@ -9,7 +9,7 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex max-lg:flex-col  h-[70vh]  items-center justify-center 
+      className="flex max-lg:flex-col   items-center justify-center 
       gap-10 w-full 
      "
     >

@@ -1,7 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
-
-import AnimatedBtn from "../components/animated/AnimatedBtn";
 
 const posts = [
   {
@@ -57,19 +54,11 @@ const posts = [
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className=" gap-4 flex flex-col ">
-      <div className="flex  text-start w-full justify-start ">
+    <div className=" gap-4 flex flex-col max-w-lg mx-auto py-16">
+      <div className="flex  text-center w-full justify-center ">
         <h2 className="font-thin text-3xl  leading-tight text-gray-100  ">
           Latest Posts
         </h2>
-
-        {/* <Link
-          href="/blog"
-          className="w-fit text-md font-normal flex items-center justify-center  text-gray-300
-           transition-all   hover:underline"
-        >
-          Read all posts
-        </Link> */}
       </div>
       {postsToShow.map((post) => {
         return (

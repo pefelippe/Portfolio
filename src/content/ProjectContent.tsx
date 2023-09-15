@@ -10,12 +10,12 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className=" mx-auto flex max-lg:flex-col-reverse text-start h-[70vh]
+      className=" mx-auto flex max-lg:flex-col-reverse text-start
       w-full items-center  max-w-7xl justify-center lg:gap-20 rounded-[30px]"
     >
       <div className="leading-1 gap-2 flex flex-col justify-between items-start  max-w-lg w-full">
         <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 tracking-[5px]">
-          selected work
+          my works
         </h1>
         <h3 className="text-[1.4rem] max-w-2xl text-[#BABABA] leading-tight">
           Explore the following projects to get a glimpse of my job experience.

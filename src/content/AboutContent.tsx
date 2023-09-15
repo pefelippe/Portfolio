@@ -1,17 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-
 import Link from "next/link";
 
 export default function About() {
   return (
     <motion.div
-      className="flex max-lg:flex-col max-lg:  mx-auto  items-center h-[70vh]
+      className="flex max-lg:flex-col max-lg:  mx-auto  items-center 
     justify-center lg:gap-20  w-full max-w-7xl rounded-[30px] "
     >
       <Link
         className="max-w-xl max-h-[40vh] object-fit items-center 
-        flex-shrink-0 object-cover transition-all flex  w-full  rounded-[30px] hover:blur-sm"
+        flex-shrink-0 object-cover transition-all flex  w-full  rounded-[30px] hover:blur"
         href="/about"
       >
         <motion.img

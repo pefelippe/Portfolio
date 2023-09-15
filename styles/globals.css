@@ -50,7 +50,7 @@
 }
 
 .headerLink {
-  @apply hover:text-white hover:underline underline-offset-8 decoration-blue h-full text-[16px] py-7 active:text-blue;
+  @apply hover:text-blue hover:underline underline-offset-8 decoration-blue h-full text-[16px] active:text-blue;
 }
 
 .headerSocial {

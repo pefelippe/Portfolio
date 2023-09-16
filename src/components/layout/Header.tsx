@@ -12,8 +12,11 @@ const Navbar = () => {
      border-gray-700/10  max-md:px-8 py-4 text-sm 
     leading-6 font-semibold text-slate-700 dark:text-slate-200 bg-white"
     >
-      <div className="max-w-xl  justify-center md:justify-between flex items-center w-full ">
-        <Link href="/" className="  text-xl text-[#090909] hover:text-[#090909]/80 ">
+      <div className="max-w-5xl  justify-center md:justify-between flex items-center w-full ">
+        <Link
+          href="/"
+          className="  text-xl text-[#090909] hover:text-[#090909]/80 "
+        >
           Pedro Felippe
         </Link>
         <div className="gap-[40px]  relative hidden lg:flex items-center ml-auto ">

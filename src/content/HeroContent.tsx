@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 
 import BlogPosts from "../components/BlogPosts";
-import Links from "../components/Links";
 
 export default function About() {
   return (
@@ -22,7 +21,7 @@ export default function About() {
       <p className="ml-2 text-[1.4rem] md:text-[1.6rem] uppercase text-gray-100 tracking-[5px] md:tracking-[10px] font-normal py-4">
         FULL-STACK DEVELOPER
       </p>
-      <Links />
+      {/* <Links /> */}
 
       <BlogPosts />
     </motion.div>

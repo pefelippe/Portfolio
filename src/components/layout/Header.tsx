@@ -1,25 +1,23 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 import AnimateLink from "../animated/AnimatedLink";
+import Links from "../Links";
 
 const Navbar = () => {
   return (
     <motion.nav
       className="sticky z-40 w-full backdrop-blur  transition-colors 
-    duration-500 left-0 right-0 top-0  text-gray-100 h-[8vh]
-    items-center justify-center flex mx-auto  mr-[16px]  border border-b
-     border-gray-700/10  max-md:px-8 py-4 text-sm 
-    leading-6 font-semibold text-slate-700 dark:text-slate-200 bg-white"
+    duration-500 left-0 right-0 top-0  text-gray-100
+    items-center justify-center flex mx-auto   border border-b
+     border-gray-700/10  max-md:px-8  py-4 text-base 
+    leading-6 font-normal text-slate-700 dark:text-slate-200 bg-white"
     >
-      <div className="max-w-5xl  justify-center md:justify-between flex items-center w-full ">
-        <Link
-          href="/"
-          className="  text-xl text-[#090909] hover:text-[#090909]/80 "
-        >
-          Pedro Felippe
-        </Link>
-        <div className="gap-[40px]  relative hidden lg:flex items-center ml-auto ">
+      <div className="flex w-full max-w-xl justify-between items-center space-x-2">
+        <div className=" flex items-center  space-x-6 justify-center">
+          <AnimateLink href="/" className=" headerLink ">
+            Home
+          </AnimateLink>
+
           <AnimateLink href="/about" className="headerLink">
             About
           </AnimateLink>
@@ -27,10 +25,11 @@ const Navbar = () => {
             Projects
           </AnimateLink>
 
-          <AnimateLink href="/contact" className="headerLink ">
-            Contact-me
+          <AnimateLink href="/contact" className="headerLink  ">
+            Contact
           </AnimateLink>
         </div>
+        <Links />
       </div>
     </motion.nav>
   );

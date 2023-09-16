@@ -50,11 +50,11 @@
 }
 
 .headerLink {
-  @apply hover:text-blue hover:underline underline-offset-8 decoration-blue h-full text-[16px] active:text-blue;
+  @apply hover:text-blue hover:underline underline-offset-8 decoration-blue h-full active:text-blue;
 }
 
 .headerSocial {
-  @apply h-10 w-10 hover:text-blue text-gray-500;
+  @apply h-6 w-6 text-gray-900 hover:text-blue;
 }
 
 .contactInput {

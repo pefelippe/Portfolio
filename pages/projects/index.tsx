@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 
-import ProjectCard from "../../src/components/ProjectCard";
-import { projects } from "../../src/constants";
-
 function Projects() {
   return (
     <motion.div
@@ -12,7 +9,7 @@ function Projects() {
       id="work"
       className=" min-h-screen mx-auto w-full  flex items-start justify-center  "
     >
-      <div className="   leading-1 gap-2 flex flex-col justify-center items-start  max-w-md w-full">
+      {/* <div className="   leading-1 gap-2 flex flex-col justify-center items-start  max-w-md w-full">
         <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 ">
           Selected work
         </h1>
@@ -35,7 +32,7 @@ function Projects() {
             />
           );
         })}
-      </div>
+      </div> */}
     </motion.div>
   );
 }

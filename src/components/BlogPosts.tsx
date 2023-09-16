@@ -54,7 +54,7 @@ const posts = [
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className=" gap-4 flex flex-col max-w-lg mx-auto py-16">
+    <div className=" gap-4 flex flex-col max-w-lg mx-auto py-[10vh]">
       <div className="flex  text-center w-full justify-center ">
         <h2 className="font-thin text-3xl  leading-tight text-gray-100  ">
           Latest Posts

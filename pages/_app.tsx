@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
       className={`
     overflow-x-hidden overflow-y-scroll h-screen min-h-fit min-w-[400px] mx-auto scroll-smooth w-full
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-blue scrollbar-track-[#929af6] 
-     font-sans text-white bg-[#fffff] pt-[20vh]`}
+     font-sans text-white bg-[#fffff] antialiased `}
     >
       <Head>
         <title>Pedro Felippe | Work in progress</title>

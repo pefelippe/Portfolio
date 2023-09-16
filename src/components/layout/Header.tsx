@@ -6,28 +6,25 @@ import AnimateLink from "../animated/AnimatedLink";
 const Navbar = () => {
   return (
     <motion.nav
-      className="fixed w-full   font-roboto max-h-[10vh]   left-0 right-0 top-0  text-gray-100 
-      items-center justify-center flex mx-auto  mr-[16px] shadow bg-[#fff]
-      text-lg font-normal  z-10   max-md:px-8"
+      className="sticky z-40 w-full backdrop-blur  transition-colors 
+    duration-500 left-0 right-0 top-0  text-gray-100 h-[8vh]
+    items-center justify-center flex mx-auto  mr-[16px]  border border-b
+     border-gray-700/10  max-md:px-8 py-4 text-sm 
+    leading-6 font-semibold text-slate-700 dark:text-slate-200 bg-white"
     >
-      <div className="max-w-7xl  justify-center md:justify-between flex items-center w-full py-7">
-        <AnimateLink href="/" className="text-2xl  font-semibold ">
+      <div className="max-w-xl  justify-center md:justify-between flex items-center w-full ">
+        <Link href="/" className="  text-xl text-[#090909] hover:text-[#090909]/80 ">
           Pedro Felippe
-        </AnimateLink>
-        <div className="flex items-center max-md:hidden gap-[40px] font-[13px]">
-          <Link href="/about" className="headerLink">
+        </Link>
+        <div className="gap-[40px]  relative hidden lg:flex items-center ml-auto ">
+          <AnimateLink href="/about" className="headerLink">
             About
-          </Link>
-          <Link href="/projects" className="headerLink">
+          </AnimateLink>
+          <AnimateLink href="/projects" className="headerLink">
             Projects
-          </Link>
+          </AnimateLink>
 
-          <AnimateLink
-            href="/contact"
-            className="px-6 text-center font-semibold bg-blue hover:underline min-w-fit
-          text-[#f5f5f5] leading-tight hover:bg-blue/90 transition-all 
-           py-3  rounded-full "
-          >
+          <AnimateLink href="/contact" className="headerLink ">
             Contact-me
           </AnimateLink>
         </div>

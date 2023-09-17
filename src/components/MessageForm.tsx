@@ -47,12 +47,12 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex items-center justify-center h-fit min-h-[80vh] text-[#090909]  w-full">
-      <div className="bg-white w-full max-w-xl">
-        <h2 className="text-3xl font-medium mb-2">Contact Me</h2>
-        <p className="text-gray-500 mb-6">
+    <div className="flex items-center justify-center h-fit min-h-[80vh] text-[#090909]  w-full ">
+      <div className="bg-white w-full max-w-lg text-start">
+        <h2 className="text-3xl font-medium mb-5 ">Contact Me</h2>
+        {/*<p className="text-gray-500 mb-4 text-center">
           Fill out the form below, and i get back to you as soon as possible.
-        </p>
+        </p> */}
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">

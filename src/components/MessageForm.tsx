@@ -49,8 +49,8 @@ export default function MessageForm({}) {
   return (
     <div className="flex items-center justify-center h-fit min-h-[50vh] text-[#090909]  w-full ">
       <div className="bg-white w-full max-w-lg">
-        <h2 className="text-3xl font-medium mb-2 text-center  ">Contact Me</h2>
-        <p className="text-gray-500 mb-6 text-center ">
+        <h2 className="text-3xl font-medium mb-2 text-start  ">Contact Me</h2>
+        <p className="text-gray-500 mb-4 text-start ">
           Fill out the form below, and i get back to you as soon as possible.
         </p>
         <form
@@ -72,20 +72,6 @@ export default function MessageForm({}) {
                 className="border border-gray-300 px-3 py-2 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
               />
             </div>
-            {/* <div className="space-y-2">
-              <label
-                htmlFor="last-name"
-                className="block font-semibold text-gray-800"
-              >
-                Last name
-              </label>
-              <input
-                {...register("lastName", { required: true, maxLength: 50 })}
-                id="last-name"
-                placeholder="Enter your last name"
-                className="border border-gray-300 px-3 py-2 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 "
-              />
-            </div> */}
           </div>
           <div className="space-y-2">
             <label

@@ -10,12 +10,12 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       className="relative flex flex-col  items-center mx-auto  w-full
-    text-center leading-none  justify-center min-h-[50vh] "
+    text-start leading-none  justify-center min-h-[50vh] "
     >
       <motion.img
         src="/assets/avatar-pdr.png"
         alt="me"
-        className="object-fit items-center max-w-[140px] mt-20
+        className="object-fit items-center max-w-[140px] mt-20 
         flex-shrink-1 object-cover transition-all flex  rounded-full "
       />
       <div className="py-4 flex flex-col text-center items-center gap-2">

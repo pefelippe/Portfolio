@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
 
 import { technologies } from "../constants";
 
@@ -13,7 +12,7 @@ function Skills() {
       className=" text-xl  font-thin mx-auto
       flex flex-col  items-center w-full "
     >
-      <div className="grid w-full grid-cols-4 gap-10 max-w-xl ">
+      <div className="grid w-full grid-cols-8 gap-10 max-w-lg ">
         {technologies.map((tech) => {
           return (
             <div key={tech.name} className="flex flex-col items-center gap-2 ">

@@ -54,7 +54,7 @@
 }
 
 .headerSocial {
-  @apply h-6 w-6 text-gray-900 hover:text-blue;
+  @apply h-10 w-10 text-gray-900 hover:text-blue;
 }
 
 .contactInput {

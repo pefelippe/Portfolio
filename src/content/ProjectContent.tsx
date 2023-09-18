@@ -10,29 +10,17 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className=" mx-auto flex max-lg:flex-col-reverse text-start
-      w-full items-center  max-w-7xl justify-center lg:gap-20 rounded-[30px]"
+      className=" mx-auto flex flex-col text-start
+      w-full items-start  justify-start "
     >
-      <div className="leading-1 gap-2 flex flex-col justify-between items-start  max-w-lg w-full">
-        <h1 className="text-7xl font-thin xs:text-4xl  leading-tight text-gray-100 tracking-[5px]">
-          my works
-        </h1>
-        <h3 className="text-[1.4rem] max-w-2xl text-[#BABABA] leading-tight">
+      <div className="leading-1 gap-2 flex flex-col justify-between items-start  max-w-lg w-full text-[#090909] ">
+        <h1 className="text-3xl font-medium mb-2">My works</h1>
+        <h3 className="text-gray-500 mb-6">
           Explore the following projects to get a glimpse of my job experience.
         </h3>
-
-        {/* <AnimatedLink
-          href="/projects"
-          className="text-[1.4rem] max-w-2xl text-gray-500 leading-tight transition-all
-            rounded-full underline hover:text-blue pt-full"
-        >
-          <div className="flex gap-2 items-center ">
-            <p>See my projects</p>
-          </div>
-        </AnimatedLink> */}
       </div>
 
-      <div className="grid  gap-10 xl:gap-14 justify-center ">
+      <div className="grid md:grid-cols-2 gap-10  justify-center ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

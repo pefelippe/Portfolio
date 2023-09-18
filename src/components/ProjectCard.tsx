@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import React from "react";
 
 type IProjectCard = {
   description: string;
@@ -24,14 +23,14 @@ function ProjectCard({
   return (
     <motion.div transition={{ duration: 1 }}>
       <Link
-        className="flex flex-col mx-auto  w-full  justify-start  min-h-fit h-full max-w-xl
+        className="flex flex-col mx-auto  w-full  justify-start  min-h-fit h-full 
        items-center text-start    "
         href={link}
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="flex-shrink-0 object-cover transition-all flex h-full w-full  rounded-[30px] hover:blur-sm"
+          className="flex-shrink-0 object-cover transition-all flex h-full w-full  rounded-[10px] "
         />
       </Link>
     </motion.div>

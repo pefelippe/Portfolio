@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 
 import MessageForm from "../src/components/MessageForm";
 import HeroContent from "../src/content/HeroContent";
-import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (

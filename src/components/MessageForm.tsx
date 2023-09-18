@@ -49,8 +49,8 @@ export default function MessageForm({}) {
   return (
     <div className="flex items-center justify-center h-fit min-h-[50vh] text-[#090909]  w-full ">
       <div className="bg-white w-full max-w-lg">
-        <h2 className="text-3xl font-medium mb-2 text-start  ">Contact Me</h2>
-        <p className="text-gray-500 mb-4 text-start ">
+        <h2 className="text-4xl font-medium mb-2 text-center  ">Contact Me</h2>
+        <p className="text-gray-500 mb-6 text-center ">
           Fill out the form below, and i get back to you as soon as possible.
         </p>
         <form

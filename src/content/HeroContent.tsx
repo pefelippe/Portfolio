@@ -31,7 +31,7 @@ export default function About() {
       <motion.img
         src="/assets/avatar-pdr.png"
         alt="me"
-        className="object-fit items-center max-w-[250px] mt-6
+        className="object-fit items-center max-w-[250px] mt-6 mb-10
         flex-shrink-1 object-cover transition-all flex  rounded-full "
       />
     </motion.div>

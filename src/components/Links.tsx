@@ -4,7 +4,7 @@ import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className=" flex items-center space-x-4  md:space-x-10 justify-center ">
+    <div className=" flex items-center space-x-12 justify-center ">
       <AnimatedBtn
         className="hover:text-blue"
         target="_blank"

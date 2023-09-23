@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Analytics />
 
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
       <Footer />
     </div>

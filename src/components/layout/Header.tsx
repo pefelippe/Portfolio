@@ -10,8 +10,8 @@ const Navbar = () => {
     leading-6 font-normal text-slate-700 dark:text-slate-200 bg-white"
     >
       <div className="flex w-full  justify-between items-center space-x-2 ">
-        <p className="font-bold text-xl  text-blue px-2 py-2 rounded-md tracking-[1px]">
-          Pedro Felippe
+        <p className="font-bold text-xl   px-2 py-2 rounded-md tracking-[3px] uppercase">
+          PedroFelippe
         </p>
       </div>
     </motion.nav>

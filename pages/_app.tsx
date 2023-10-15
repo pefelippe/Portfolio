@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
      font-sans bg-[#161616]`}
     >
       <Head>
-        <title>Pedro Felippe | Work in progress</title>
+        <title>Pedro Felippe - Software Engineer</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -49,18 +50,18 @@ export default function MessageForm({}) {
 
   return (
     <div
-      className="flex flex-col items-center justify-center text-center h-fit  text-[#090909]
-     w-full max-w-2xl bg-[#fff] px-6 rounded-3xl pt-6 pb-12 "
+      className="flex flex-col items-center justify-center text-center h-fit  
+     w-full max-w-5xl text-[#fff] rounded-3xl gap-2"
     >
-      <p className="text-[2rem] md:text-[48px] font-bold ">
-        Lets work together
+      <p className="text-[2rem] md:text-5xl font-semibold  max-w-xl">
+        Let's work together
       </p>
-      <p className="text-[1rem] md:text-[1.2rem] max-w-lg font-medium  mx-auto pb-6">
+      <p className="text-[1.25rem] font-thin max-w-lg   text-gray-300 pb-3">
         I love partnering. Send a concise message and describe your project.
       </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-6 w-full flex flex-col max-w-lg mx-auto "
+        className="gap-6 w-full flex flex-col max-w-lg  "
       >
         <div className="grid grid-cols-2 gap-6">
           <div className="space-y-4">
@@ -68,7 +69,7 @@ export default function MessageForm({}) {
               {...register("firstName", { required: true, maxLength: 50 })}
               id="first-name"
               placeholder="Enter your first name"
-              className="bg-gray-800/10 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+              className="bg-gray-800/50 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
             />
           </div>
           <input
@@ -76,7 +77,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className="bg-gray-800/10 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+            className="bg-gray-800/50 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
           />
         </div>
 
@@ -85,7 +86,7 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-3 py-3 w-full rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[280px] bg-gray-800/10 "
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[280px] bg-gray-800/50 "
         />
 
         <motion.button

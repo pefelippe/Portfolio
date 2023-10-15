@@ -11,8 +11,8 @@ export default function About() {
         alt="me"
         className="h-[120px] w-[120px] rounded-full"
       />
-      <p className="text-[2rem] sm:text-[2.5rem]   text-white leading-tight font-semibold  max-w-xl pb-3">
-        Hey👋🏻 I'm a Software Engineer based in Brazil. 
+      <p className="text-[2rem] sm:text-[2.5rem]   text-white leading-tight font-semibold  max-w-lg pb-2">
+        Hey👋🏻 I'm a Software Engineer based in Brazil.
       </p>
 
       <Links />

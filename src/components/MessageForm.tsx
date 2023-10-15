@@ -50,14 +50,13 @@ export default function MessageForm({}) {
   return (
     <div
       className="flex flex-col items-center justify-center text-center h-fit  text-[#090909]
-     w-full max-w-2xl bg-[#fff] px-6 rounded-3xl pt-5 pb-10"
+     w-full max-w-2xl bg-[#fff] px-6 rounded-3xl pt-5 pb-10 "
     >
-      <p className="text-[2rem] md:text-[2.5rem]  font-bold ">
+      <p className="text-[2rem] md:text-[40px] font-bold ">
         Lets work together
       </p>
-      <p className="text-[1.1rem] max-w-lg font-medium pb-6 mx-auto ">
+      <p className="text-[0.85rem] md:text-[1.2rem] max-w-lg font-medium  mx-auto pb-4">
         I love partnering. Send a concise message and describe your project.
-        Within 2 business days I will get back to you.
       </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -86,7 +85,7 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-3 py-3 w-full rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[300px] bg-gray-800/10 "
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[280px] bg-gray-800/10 "
         />
 
         <motion.button

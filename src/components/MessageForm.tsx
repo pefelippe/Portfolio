@@ -50,12 +50,12 @@ export default function MessageForm({}) {
   return (
     <div
       className="flex flex-col items-center justify-center text-center h-fit  text-[#090909]
-     w-full max-w-2xl bg-[#fff] px-6 rounded-3xl pt-5 pb-10 "
+     w-full max-w-2xl bg-[#fff] px-6 rounded-3xl pt-6 pb-12 "
     >
-      <p className="text-[2rem] md:text-[40px] font-bold ">
+      <p className="text-[2rem] md:text-[48px] font-bold ">
         Lets work together
       </p>
-      <p className="text-[0.85rem] md:text-[1.2rem] max-w-lg font-medium  mx-auto pb-4">
+      <p className="text-[1rem] md:text-[1.2rem] max-w-lg font-medium  mx-auto pb-6">
         I love partnering. Send a concise message and describe your project.
       </p>
       <form

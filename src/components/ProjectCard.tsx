@@ -24,13 +24,17 @@ function ProjectCard({
     <motion.div transition={{ duration: 1 }}>
       <Link
         className="flex flex-col mx-auto  w-full  justify-start  min-h-fit h-full 
-       items-center text-start    "
+       items-center text-start rounded-3xl   overflow-hidden"
         href={link}
       >
         <motion.img
+          whileHover={{
+            scale: 1.1,
+            transition: { duration: 0.1 },
+          }}
           src={imgUrl}
           alt="card image"
-          className="flex-shrink-0 object-cover transition-all flex h-full w-full  rounded-[10px] "
+          className="flex-shrink-0 object-cover transition-all flex h-full w-full rounded-3xl  "
         />
       </Link>
     </motion.div>

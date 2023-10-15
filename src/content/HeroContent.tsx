@@ -1,32 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
+import Links from "../components/Links";
+
 export default function About() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="relative flex flex-col  items-center mx-auto  w-full
-    text-center leading-none  justify-center 
-"
-    >
-      <div className=" flex flex-col text-center items-center ">
-        <p className="text-[1.4rem]   text-gray-100 tracking-[5px] md:tracking-[10px] font-normal mb-4 ">
-          FULL-STACK DEVELOPER
-        </p>
-        <p
-          className="text-[3rem] md:text-[4rem] text-gray-900
-         font-bold mb-4"
-        >
-          Pedro Felippe
-        </p>
-        <p className="max-w-lg  text-[1.3rem]  text-gray-100  font-normal  leading-[1.2]">
-          I am developer where passion lies in creating simple yet visually
-          appealing interfaces.
-        </p>
-        
-      </div>
+    <motion.div className="flex flex-col text-center items-center  rounded-3xl  w-full justify-around  gap-6 max-w-xl">
+      <motion.img
+        src="/assets/avatar-pdr.png"
+        alt="me"
+        className="h-[120px] w-[120px] rounded-full"
+      />
+      <p className="text-[2rem] sm:text-[2.5rem] md:text-[3rem]  text-white leading-tight font-semibold   max-w-xl pb-3">
+        Hello 👋🏻 I'm a Software Engineer from Brazil
+      </p>
+
+      <Links />
     </motion.div>
   );
 }

@@ -10,7 +10,7 @@ function Footer() {
     font-thin text-sm md:text-md  mx-auto   flex   w-screen flex-col  mr-[15.5px]"
     >
       <div className="w-full max-w-7xl justify-center items-start mx-auto  flex">
-        <p className="flex text-md">Pedro Felippe © {year}</p>
+        <p className="flex text-lg">Pedro Felippe © {year}</p>
       </div>
     </motion.footer>
   );

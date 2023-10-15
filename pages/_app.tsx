@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { motion } from "framer-motion";
 
 import "../styles/globals.css";
 
@@ -8,11 +9,14 @@ import Footer from "../src/components/layout/Footer";
 import Header from "../src/components/layout/Header";
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
       className={`
     overflow-x-hidden overflow-y-scroll h-screen min-h-fit min-w-[400px] mx-auto scroll-smooth w-full
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-blue scrollbar-track-[#929af6] overflow-hidden
-     font-sans text-white bg-[#fffff] antialiased `}
+     font-sans bg-[#161616]`}
     >
       <Head>
         <title>Pedro Felippe | Work in progress</title>
@@ -23,9 +27,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Analytics />
 
-      {/* <Header /> */}
+      <Header />
       <Component {...pageProps} />
       <Footer />
-    </div>
+    </motion.div>
   );
 }

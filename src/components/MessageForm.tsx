@@ -1,4 +1,5 @@
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { SubmitHandler } from "react-hook-form/dist/types";
@@ -47,56 +48,55 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex items-center justify-center h-fit min-h-[50vh] text-[#090909]  w-full ">
-      <div className="bg-white w-full max-w-md">
-        <h2 className="text-4xl font-medium mb-2 text-center  ">Contact</h2>
-        <p className="text-gray-500  mb-4 text-center ">
-          Fill out the form below, and i get back to you.
-        </p>
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="gap-4 w-full flex flex-col mx-auto"
-        >
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-4">
-              {/* <label
-                htmlFor="first-name"
-                className="block font-semibold text-gray-800"
-              >
-                First name
-              </label> */}
-              <input
-                {...register("firstName", { required: true, maxLength: 50 })}
-                id="first-name"
-                placeholder="Enter your first name"
-                className="border border-gray-300 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
-              />
-            </div>
+    <div
+      className="flex flex-col items-center justify-center text-center h-fit  text-[#090909]
+     w-full max-w-2xl bg-[#fff] px-6 rounded-3xl pt-5 pb-10"
+    >
+      <p className="text-[2rem] md:text-[2.5rem]  font-bold ">
+        Lets work together
+      </p>
+      <p className="text-[1.1rem] max-w-lg font-medium pb-6 mx-auto ">
+        I love partnering. Send a concise message and describe your project.
+        Within 2 business days I will get back to you.
+      </p>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="gap-6 w-full flex flex-col max-w-lg mx-auto "
+      >
+        <div className="grid grid-cols-2 gap-6">
+          <div className="space-y-4">
             <input
-              {...register("email", { required: true, maxLength: 50 })}
-              id="email"
-              placeholder="Enter your email"
-              type="email"
-              className="border border-gray-300 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+              {...register("firstName", { required: true, maxLength: 50 })}
+              id="first-name"
+              placeholder="Enter your first name"
+              className="bg-gray-800/10 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
             />
           </div>
-
-          <textarea
-            {...register("message", { required: true, maxLength: 500 })}
-            id="message"
-            placeholder="Message"
-            className="border border-gray-300 px-3 py-2 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px]"
+          <input
+            {...register("email", { required: true, maxLength: 50 })}
+            id="email"
+            placeholder="Enter your email"
+            type="email"
+            className="bg-gray-800/10 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
           />
+        </div>
 
-          <button
-            type="submit"
-            className="bg-gray-800  text-white py-3 px-12 rounded-md justify-center
-             hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-500 max-md:w-full"
-          >
-            {isLoading ? "Sending..." : "Send message"}
-          </button>
-        </form>
-      </div>
+        <textarea
+          {...register("message", { required: true, maxLength: 500 })}
+          id="message"
+          placeholder="Message"
+          className="  px-3 py-3 w-full rounded-md 
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[300px] bg-gray-800/10 "
+        />
+
+        <motion.button
+          type="submit"
+          className="bg-[#000]  text-white py-5 px-12 rounded-md justify-center transition-all font-semibold text-xl
+             hover:[#000]/80 focus:outline-none focus:ring focus:ring-blue-500 max-md:w-full"
+        >
+          {isLoading ? "Sending..." : "Send message"}
+        </motion.button>
+      </form>
     </div>
   );
 }

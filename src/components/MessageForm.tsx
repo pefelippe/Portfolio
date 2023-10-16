@@ -50,18 +50,12 @@ export default function MessageForm({}) {
 
   return (
     <div
-      className="flex flex-col items-center justify-center text-center h-fit  
-     w-full max-w-5xl text-[#fff] rounded-3xl gap-2"
+      className="flex flex-col items-start md:text-center  h-fit  
+      text-[#fff] rounded-3xl gap-2 w-full"
     >
-      <p className="text-[2rem] md:text-5xl font-semibold  max-w-xl">
-        Let's work together
-      </p>
-      <p className="text-[1.25rem] font-thin max-w-lg   text-gray-300 pb-3">
-        I love partnering. Send a concise message and describe your project.
-      </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-6 w-full flex flex-col max-w-lg  "
+        className="gap-6 w-full flex flex-col max-w-3xl  "
       >
         <div className="grid grid-cols-2 gap-6">
           <div className="space-y-4">
@@ -86,15 +80,16 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-3 py-3 w-full rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[280px] bg-gray-800/50 "
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[300px] bg-gray-800/50 "
         />
 
         <motion.button
           type="submit"
-          className="bg-[#000]  text-white py-5 px-12 rounded-md justify-center transition-all font-semibold text-xl
-             hover:[#000]/80 focus:outline-none focus:ring focus:ring-blue-500 max-md:w-full"
+          className="bg-[#000] hover:bg-[#101010] text-white py-4 px-12 rounded-md justify-start 
+          transition-all font-medium text-lg
+              focus:outline-none focus:ring focus:ring-blue-500 max-md:w-full"
         >
-          {isLoading ? "Sending..." : "Send message"}
+          {isLoading ? "Sending..." : "Start partnership"}
         </motion.button>
       </form>
     </div>

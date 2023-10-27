@@ -12,7 +12,7 @@ function Contact() {
       className="mx-auto flex flex-col w-full items-start  justify-start max-w-2xl"
     >
       <div className="leading-1 gap-5 flex flex-col justify-between items-center text-center  w-full text-white ">
-        <h1 className="text-[2.4rem] sm:text-6xl text-white leading-tight font-bold  max-w-xl">
+        <h1 className="text-[2.4rem] text-white leading-tight font-bold  max-w-xl sm:text-5xl bg-blue p-2">
           Contact-me.
         </h1>
         <h3 className="text-gray-300 mb-10  text-xl">

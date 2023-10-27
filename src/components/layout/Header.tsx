@@ -8,7 +8,7 @@ const Navbar = () => {
     <motion.nav
       className=" z-20   transition-colors  fixed
     duration-500 left-0 right-0 top-0  text-white 
-    items-center justify-center flex mx-auto   max-w-4xl py-5 px-10 xl:px-20
+    items-center justify-center flex mx-auto   max-w-4xl py-5 px-10 xl:px-16
      border-gray-700/10   text-base  
     leading-6 font-normal text-slate-700 dark:text-slate-200"
     >

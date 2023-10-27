@@ -11,7 +11,7 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className=" flex flex-col px-10 xl:px-20 mt-[10vh]
-      py-20  mx-auto gap-10  items-center justify-center max-w-4xl "
+      py-10 xl:py-20  mx-auto gap-8  items-center justify-center max-w-4xl "
     >
       <HeroContent />
       <AboutContent />

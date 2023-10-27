@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function AboutContent() {
   return (
     <motion.div className="flex flex-col w-full items-center   ">
-      <div className="flex max-lg:flex-col w-full lg:items-center gap-6 lg:gap-10 justify-center">
+      <div className="flex max-lg:flex-col w-full lg:items-center gap-8 justify-center">
         <div className="flex flex-col text-start items-center text-gray-300 rounded-3xl  w-full  gap-8 max-w-4xl  ">
           <p className="w-full text-2xl  font-light ">
             I am Pedro Felippe. My passion lies in creating simple yet visually

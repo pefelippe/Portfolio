@@ -6,9 +6,10 @@ import AnimateLink from "../animated/AnimatedLink";
 const Navbar = () => {
   return (
     <motion.nav
-      className=" w-full fixed text-white 
-    items-center justify-center flex mx-auto  p-10 py-6 px-10 xl:px-20 
-      text-base  mr-14
+      className=" z-20   transition-colors  fixed
+    duration-500 left-0 right-0 top-0  text-white 
+    items-center justify-center flex mx-auto   max-w-4xl py-5 px-10
+     border-gray-700/10   text-base  
     leading-6 font-normal text-slate-700 dark:text-slate-200"
     >
       <div className="flex w-full  justify-start items-center">
@@ -21,12 +22,6 @@ const Navbar = () => {
       </div>
 
       <div className="flex relative max-md:hidden">
-        <AnimateLink
-          href="/contact"
-          className="font-semibold text-md px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
-        >
-          <p>Contact</p>
-        </AnimateLink>
         <AnimatedBtn
           href="https://github.com/pefelippe"
           className="font-semibold text-md px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"

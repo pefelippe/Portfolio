@@ -1,38 +1,34 @@
-import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import AnimatedBtn from "./animated/AnimatedBtn";
+import AnimateLink from "./animated/AnimatedLink";
 
 function Links() {
   return (
-    <div className=" flex items-center flex-col gap-3 w-full ">
+    <div className=" flex items-center  justify-center gap-3 w-full max-w-md ">
       <AnimatedBtn
-        className="rounded-full p-2 bg-[#fff]  w-full px-6 py-4 gap-4 font-bold"
+        className="rounded-md bg-[#fff] p-2 font-semibold"
         target="_blank"
         href="https://github.com/pefelippe"
       >
-        <div className=" flex justify-center items-center transition-all rounded-xl gap-4 text-xl">
-          <FaGithub className="headerSocial" /> <p>Github</p>
-        </div>
+        <FaGithub className="headerSocial" />
       </AnimatedBtn>
 
       <AnimatedBtn
-        className="rounded-full p-2 bg-[#fff]  w-full px-6 py-4 gap-4 font-bold"
+        className="rounded-md p-2 bg-[#fff] font-semibold"
         target="_blank"
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
-        <div className=" justify-center flex items-center gap-3 transition-all rounded-xl text-xl">
-          <FaLinkedin className="headerSocial" /> <p>Linkedin </p>
-        </div>
+        <FaLinkedin className="headerSocial" />
       </AnimatedBtn>
-      <AnimatedBtn
-        className="rounded-full p-2 bg-[#fff]  w-full px-6 py-4 gap-4 font-bold"
-        target="_blank"
-        href="https://docs.google.com/document/d/e/2PACX-1vQ0oK4H_ynaCvtXwtO4OvYmIIt4_6vn8lTQlWqj2KnoTR4ZfUWCzjpAuDPGToTPzwoqkN9FIEbiD7MU/pub"
+      <AnimateLink
+        className="rounded-md x bg-blue px-6 w-full  py-3 gap-3 font-semibold text-white"
+        href="/contact"
       >
-        <div className=" justify-center flex items-center gap-3 transition-all rounded-xl text-xl">
-          <FaFilePdf className="headerSocial" /> <p>Resume </p>
+        <div className=" justify-center flex items-center gap-3 transition-all rounded-xl text-2xl">
+          <p>Contact-me </p>
         </div>
-      </AnimatedBtn>
+      </AnimateLink>
     </div>
   );
 }

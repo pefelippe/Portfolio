@@ -7,17 +7,18 @@ function Projects() {
   return (
     <motion.div
       id="work"
-      className=" mx-auto flex flex-col text-center
-      w-full items-center  justify-center "
+      className=" mx-auto flex flex-col w-full items-start  justify-center "
     >
-      {/* <div className="leading-1 gap-2 flex flex-col justify-between items-center  max-w-lg w-full text-[#090909] ">
-        <h1 className="text-3xl md:text-4xl font-medium mb-2">My works</h1>
-        <h3 className="text-gray-500 mb-6">
-          Explore the following projects to get a glimpse of my job experience.
+      <div className="leading-1 gap-5 flex flex-col justify-between items-start   w-full text-white ">
+        <h1 className="text-[2.4rem] sm:text-6xl text-white leading-tight font-bold  max-w-xl">
+          My works
+        </h1>
+        <h3 className="text-gray-300 mb-10  text-xl">
+          Explore the following projects.
         </h3>
-      </div> */}
+      </div>
 
-      <div className="grid md:grid-cols-2 gap-6  justify-center ">
+      <div className="grid md:grid-cols-2 gap-10 justify-center ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

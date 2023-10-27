@@ -10,7 +10,15 @@ interface iBtnProps {
 function AnimateLink({ href, children, className }: iBtnProps) {
   return (
     <Link href={href} className={className}>
-      <motion.div className="w-full h-full">{children}</motion.div>
+      <motion.div
+        whileHover={{
+          scale: 1.03,
+          transition: { duration: 0.1 },
+        }}
+        className="w-full h-full"
+      >
+        {children}
+      </motion.div>
     </Link>
   );
 }

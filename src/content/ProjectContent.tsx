@@ -10,7 +10,7 @@ function Projects() {
       className=" mx-auto flex flex-col w-full items-start  justify-center "
     >
       <div className="leading-1 gap-5 flex flex-col justify-between items-start   w-full text-white ">
-        <h1 className="text-[2.4rem] sm:text-5xl bg-blue p-2 text-white leading-tight font-bold  max-w-xl">
+        <h1 className="text-[1.6rem] sm:text-5xl bg-blue p-2 text-white leading-tight font-semibold   max-w-xl">
           My works
         </h1>
         <h3 className="text-gray-300 mb-10  text-xl">

@@ -51,19 +51,19 @@ export default function MessageForm({}) {
   return (
     <div
       className="flex flex-col items-start md:text-center  h-fit 
-      text-[#fff] rounded-3xl gap-2 w-full max-w-3xl  "
+      text-[#fff] rounded-3xl gap-2 w-full   "
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-6 w-full flex flex-col max-w-3xl  "
+        className="gap-6 w-full flex flex-col "
       >
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 grid-cols-1">
           <div className="space-y-4">
             <input
               {...register("firstName", { required: true, maxLength: 50 })}
               id="first-name"
-              placeholder="Enter your first name"
-              className="bg-gray-800/50 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+              placeholder="Enter your name"
+              className="bg-gray-800/50 px-6 py-5 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
             />
           </div>
           <input
@@ -71,7 +71,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className="bg-gray-800/50 px-3 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+            className="bg-gray-800/50 px-6 py-5 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
           />
         </div>
 
@@ -79,15 +79,14 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className="  px-3 py-3 w-full rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[400px] bg-gray-800/50 "
+          className="  px-6 py-5 w-full rounded-md 
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[400px] bg-gray-800/50 "
         />
 
         <motion.button
           type="submit"
-          className="bg-blue/80 hover:bg-blue/70 text-white py-6 px-12 rounded-md justify-start 
-          transition-all font-medium text-xl
-              focus:outline-none focus:ring focus:ring-blue-500 max-md:w-full"
+          className="bg-blue/80 hover:bg-blue/70 text-white py-5 px-12 rounded-md justify-start 
+          transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 "
         >
           {isLoading ? "Sending..." : "Start partnership"}
         </motion.button>

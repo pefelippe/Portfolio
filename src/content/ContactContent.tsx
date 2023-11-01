@@ -9,15 +9,17 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mx-auto flex flex-col w-full items-start  justify-start max-w-5xl"
+      className="mx-auto flex flex-col w-full items-center text-center  justify-center max-w-xl "
     >
-      <div className="leading-1 gap-6 flex flex-col justify-between items-start  text-start   w-full text-white ">
-        <h1 className="text-[1.6rem] text-white leading-tight font-semibold  sm:text-3xl ">
-          Contact-me.
+      <div className="leading-1 gap-3 flex flex-col justify-between items-center  text-center   w-full  ">
+        <h1 className="text-sm leading-tight font-bold  w-fit uppercase tracking-[8px] bg-blue text-white p-1">
+          Contact
         </h1>
-        <h3 className="text-gray-300 mb-6  text-lg">
-          I love partnering. Send a concise message and describe your project.
+        <h1 className="text-[1.6rem]  leading-tight   sm:text-3xl ">
           Let's work together.
+        </h1>
+        <h3 className="text-gray-300 mb-6  text-xl  font-light">
+          Send a concise message and describe your project.
         </h3>
       </div>
       <MessageForm />

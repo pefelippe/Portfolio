@@ -1,15 +1,13 @@
 import { motion } from "framer-motion";
-import React from "react";
+import Link from "next/link";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import ProjectCard from "../../src/components/ProjectCard";
+
 import { projects } from "../../src/constants";
 
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
-import Image from "next/image";
-import Link from "next/link";
+import "swiper/css/pagination";
 
 function ProjectsCarousel() {
   return (

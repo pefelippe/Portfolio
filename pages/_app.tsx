@@ -13,10 +13,12 @@ export default function App({ Component, pageProps }: AppProps) {
       className={`
     overflow-x-hidden overflow-y-scroll h-screen min-h-fit min-w-[400px] mx-auto scroll-smooth w-full
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-blue scrollbar-track-[#929af6] overflow-hidden
-     font-sans bg-[#080808]`}
+     font-sans bg-[#0E0D11]`}
     >
       <Head>
-        <title>Pedro Felippe - Software Engineer</title>
+        <title>
+          Pedro Felippe - Web developer, dev-ops enthusiast & UI/UX designer
+        </title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

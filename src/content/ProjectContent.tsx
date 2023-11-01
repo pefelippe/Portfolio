@@ -1,24 +1,28 @@
 import { motion } from "framer-motion";
 
-import ProjectCard from "../../src/components/ProjectCard";
-import { projects } from "../../src/constants";
-
 function Projects() {
   return (
     <motion.div
       id="work"
-      className=" mx-auto flex flex-col w-full items-start  justify-center "
+      className=" mx-auto flex  w-full items-center  justify-start  min-h-[80vh] max-w-7xl max-xl:px-6"
     >
-      <div className="leading-1 gap-5 flex flex-col justify-between items-start   w-full text-white ">
-        <h1 className="text-[1.6rem] sm:text-5xl bg-blue p-2 text-white leading-tight font-semibold   max-w-xl">
-          My works
+      <div className="flex flex-col justify-start items-start   w-full text-[#000]  max-w-xl mx-auto gap-5">
+        <h1 className="text-[1.6rem] sm:text-3xl leading-tight font-bold   max-w-xl">
+          Featured projects
         </h1>
-        <h3 className="text-gray-300 mb-10  text-xl">
-          Explore the following projects.
+        <h3 className="text-gray-300  text-xl max-w-md text-md">
+          I work remotely with clients of all sizes right around the world.
+          <br />
+          <br /> As well as client work, I have also created a number of
+          personal projects that allow me to explore new skills.
         </h3>
-      </div>
 
-      <div className="grid md:grid-cols-2 gap-10 justify-center ">
+        <p className="text-xl text-blue underline font-semibold">
+          View more recent projects ⟶
+        </p>
+      </div>
+      <div className="w-full"></div>
+      {/* <div className="grid md:grid-cols-2 gap-10 justify-center ">
         {projects?.map((proj) => {
           return (
             <ProjectCard
@@ -33,7 +37,7 @@ function Projects() {
             />
           );
         })}
-      </div>
+      </div> */}
     </motion.div>
   );
 }

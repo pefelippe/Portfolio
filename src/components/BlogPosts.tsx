@@ -1,90 +1,62 @@
 import { motion } from "framer-motion";
 
-const posts = [
-  {
-    id: 1,
-    title: "How AI is revolutionizing the healthcare industry",
-    href: "#",
-    description:
-      "From predictive analytics to personalized medicine, AI is transforming the healthcare industry. In this article, we explore some of the latest applications of AI in healthcare and the potential impact they could have on patient outcomes.",
-    date: "Apr 12, 2022",
-    datetime: "2022-04-12",
-    category: { title: "Technology", href: "#" },
-    author: {
-      name: "Pedro Felippe",
-      role: "Senior AI Engineer",
-      href: "#",
-      imageUrl: "/assets/avatar-pdr.png",
-    },
-  },
-  {
-    id: 2,
-    title: "The future of work: How automation is changing the job market",
-    href: "#",
-    description:
-      "Automation is transforming the job market, but what does that mean for workers? In this article, we explore the potential impact of automation on employment, and what companies and policymakers can do to mitigate the risks.",
-    date: "Mar 28, 2023",
-    datetime: "2023-03-28",
-    category: { title: "Technology", href: "#" },
-    author: {
-      name: "Pedro Felippe",
-      role: "Senior AI Engineer",
-      href: "#",
-      imageUrl: "/assets/avatar-pdr.png",
-    },
-  },
-  {
-    id: 3,
-    title: "The future of work: How automation is changing the job market",
-    href: "#",
-    description:
-      "Automation is transforming the job market, but what does that mean for workers? In this article, we explore the potential impact of automation on employment, and what companies and policymakers can do to mitigate the risks.",
-    date: "Mar 28, 2023",
-    datetime: "2023-03-28",
-    category: { title: "Technology", href: "#" },
-    author: {
-      name: "Pedro Felippe",
-      role: "Senior AI Engineer",
-      href: "#",
-      imageUrl: "/assets/avatar-pdr.png",
-    },
-  },
-];
+import { posts } from "./../constants/posts";
+
+const Post = (postInfo: {
+  id: number;
+  title: string;
+  href: string;
+  description: string;
+  date: string;
+  datetime: string;
+  category: {
+    title: string;
+    href: string;
+  };
+  author: {
+    name: string;
+    role: string;
+    href: string;
+    imageUrl: string;
+  };
+}) => {
+  return (
+    <motion.a
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="md:max-w-[400px] w-full rounded-3xl overflow-hidden border-2 hover:border-gray-100"
+      key={postInfo.id}
+    >
+      <div
+        className="flex flex-col items-start  transition-all   rounded-xl overflow-hidden 
+        hover:shadow-xl bg-[#1d1b22] max-md:flex-col 
+       hover:bg-opacity-95 hover:text-white hover:border-transparent cursor-pointer"
+      >
+        <motion.img
+          src="/assets/avatar-pdr.png"
+          alt="me"
+          className="w-full max-h-[224px] object-cover"
+        />
+        <div className="flex-col items-center gap-x-2  h-fit p-6 justify-center my-auto max-w-xl">
+          <h1 className="text-xl font-semibold leading-6 text-white text-left text-ellipsis overflow-hidden ">
+            {postInfo.title}
+          </h1>
+          <h3 className="my-3 text-lg font-normal leading-6 text-gray-100 text-left text-ellipsis overflow-hidden ">
+            {postInfo.description}
+          </h3>
+        </div>
+      </div>
+    </motion.a>
+  );
+};
 
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className=" gap-4 flex flex-col max-w-lg mx-auto py-[10vh]">
-      <div className="flex  text-center w-full justify-center ">
-        <h2 className="font-thin text-3xl  leading-tight text-gray-100  ">
-          Latest Posts
-        </h2>
-      </div>
-      {postsToShow.map((post) => {
-        return (
-          <motion.a
-            whileHover={{
-              scale: 1.05,
-              transition: { duration: 0.1 },
-            }}
-            key={post.id}
-          >
-            <div
-              className="flex flex-col items-start  transition-all p-5 py-10  
-              rounded-md h-full hover:shadow-xl bg-[#fafafa] 
-              hover:bg-opacity-90 hover:text-white hover:border-transparent cursor-pointer"
-            >
-              <div className="flex items-center gap-x-2 text-xs h-fit">
-                <time dateTime={post.datetime} className="text-gray-500">
-                  {post.date}
-                </time>
-              </div>
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-800 text-left">
-                {post.title}
-              </h3>
-            </div>
-          </motion.a>
-        );
+    <div className="grid  grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-8  ">
+      {postsToShow.map((postInfo) => {
+        return Post(postInfo);
       })}
     </div>
   );

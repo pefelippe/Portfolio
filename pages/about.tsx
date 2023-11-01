@@ -6,7 +6,10 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className=" flex flex-col min-h-screen w-screen max-w-3xl mx-auto"
-    ></motion.div>
+      className=" flex max-md:flex-col min-h-screen w-screen max-w-5xl mx-auto"
+    >
+      <motion.img></motion.img>
+      <p>yarn add react-particles</p>
+    </motion.div>
   );
 }

@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 function AboutContent() {
   return (
-    <motion.div className="  flex  w-full items-start  justify-start   mx-auto  bg-[#1d1b22]  max-w-5xl rounded-3xl p-12">
-      <div className="flex  gap-12 items-center  justify-start text-start  ">
+    <motion.div className="  flex  w-full items-start  justify-center   mx-auto  bg-[#1d1b22]   rounded-3xl py-20">
+      <div className="flex max-lg:flex-col  gap-12 items-center  justify-start text-start max-w-5xl  ">
         <motion.img
           src="/assets/avatar-pdr.png"
           alt="me"

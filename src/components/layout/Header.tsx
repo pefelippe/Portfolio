@@ -11,7 +11,7 @@ const Navbar = () => {
     >
       <Link
         href="/"
-        className="font-bold text-xl uppercase flex  items-center tracking-[4px]"
+        className="font-bold text-2xl uppercase flex  items-center tracking-[4px]"
       >
         Pedro Felippe
       </Link>

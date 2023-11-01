@@ -11,7 +11,7 @@ const HighlightedPost = () => {
   return (
     <a
       href={postInfo.href}
-      className="flex w-full gap-10 items-center bg-[#1d1b22] rounded-3xl overflow-hidden  border-2 hover:border-gray-100"
+      className="flex w-full gap-10 items-center bg-[#1d1b22] rounded-3xl overflow-hidden  border-2 hover:border-gray-100 max-md:hidden"
     >
       <motion.img
         src={postInfo?.author?.imageUrl}

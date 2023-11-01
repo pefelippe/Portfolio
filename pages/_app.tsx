@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     >
       <Head>
         <title>
-          Pedro Felippe - Web developer, dev-ops enthusiast & UI/UX designer
+          Pedro Felippe - Web developer & Dev-Ops enthusiast.
         </title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

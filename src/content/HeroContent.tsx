@@ -11,7 +11,7 @@ export default function About() {
       <motion.img
         src="/assets/avatar-pdr.png"
         alt="me"
-        className=" h-[150px] lg:h-[256px]  mx-auto rounded-full"
+        className=" h-[150px] lg:h-[220px]  mx-auto rounded-full"
       />
 
       <div className="flex max-w-5xl flex-col gap-4">
@@ -25,7 +25,7 @@ export default function About() {
           detail.
         </h3>
 
-        <div className="flex relative items-center justify-center gap-5">
+        <div className="flex relative items-center justify-center gap-8">
           <AnimatedBtn
             href="https://github.com/pefelippe"
             className="font-semibold text-md px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
@@ -38,6 +38,12 @@ export default function About() {
             className="font-semibold text-md  px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
           >
             <p>Linkedin</p>
+          </AnimatedBtn>
+          <AnimatedBtn
+            href="https://docs.google.com/document/d/e/2PACX-1vQ0oK4H_ynaCvtXwtO4OvYmIIt4_6vn8lTQlWqj2KnoTR4ZfUWCzjpAuDPGToTPzwoqkN9FIEbiD7MU/pub"
+            className="font-semibold text-md  px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
+          >
+            <p>Resume</p>
           </AnimatedBtn>
         </div>
       </div>

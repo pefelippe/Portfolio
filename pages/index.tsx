@@ -13,9 +13,6 @@ export default function Home() {
     >
       <HeroContent />
       <AboutContent />
-
-      {/* <PostsContent /> */}
-      {/* <ContactContent /> */}
     </motion.div>
   );
 }

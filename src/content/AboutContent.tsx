@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+
 import Skills from "../components/Skills";
 
 function AboutContent() {
@@ -14,7 +15,7 @@ function AboutContent() {
         className="  w-full md:max-w-sm max-md:max-h-[250px] object-cover"
       />
 
-      <div className="text-[#B3AFC0] font-light text-lg px-5 xl:px-10 gap-4 flex flex-col py-4 ">
+      <div className="text-[#B3AFC0] font-light text-lg px-5 xl:px-10 gap-4 flex flex-col justify-between h-full">
         <h1 className="text-white text-3xl font-semibold ">Whoami?</h1>
         <p>
           I've been developing digital products since 2018, including web

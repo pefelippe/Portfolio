@@ -11,7 +11,8 @@ export const HighlightedPost = () => {
   return (
     <a
       href={postInfo.href}
-      className="flex w-full gap-10 items-center bg-[#1d1b22] rounded-3xl overflow-hidden  border-2 hover:border-gray-100 max-md:hidden"
+      className="flex w-full gap-10 items-center bg-[#1d1b22] rounded-3xl overflow-hidden 
+       border-2 hover:border-gray-300 max-md:hidden"
     >
       <motion.img
         src={postInfo?.author?.imageUrl}
@@ -20,10 +21,12 @@ export const HighlightedPost = () => {
       />
 
       <div className="flex flex-col items-start justify-start   ">
-        <h1 className="text-2xl font-semibold leading-6 text-white text-left">
+        <div className="text-gray-300 text-sm">{postInfo.datetime}</div>
+
+        <h1 className="text-4xl font-semibold leading-6 text-white text-left py-4">
           {postInfo.title}
         </h1>
-        <h3 className="my-3 text-lg font-normal leading-6 text-gray-100 text-left">
+        <h3 className="my-3 text-xxl font-normal leading-6 text-gray-100 text-left">
           {postInfo.description}
         </h3>
       </div>
@@ -37,9 +40,11 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" flex flex-col min-h-fit mx-auto max-w-5xl  py-32 gap-16 max-xl:px-6 items-center"
+      className=" flex flex-col min-h-fit mx-auto max-w-5xl  py-16 gap-8 max-xl:px-6 items-start "
     >
       <HighlightedPost />
+      <h3 className="text-3xl font-thin py-4 text-gray-300">Lastests Posts</h3>
+
       <BlogPosts />
     </motion.main>
   );

@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-
 import { posts } from "./../constants/posts";
 
-const Post = (postInfo: {
+type PostInfo = {
   id: number;
   title: string;
   href: string;
@@ -19,30 +18,35 @@ const Post = (postInfo: {
     href: string;
     imageUrl: string;
   };
-}) => {
+};
+
+const Post = ({ postInfo }: { postInfo: PostInfo }) => {
   return (
     <motion.a
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="md:max-w-[400px] w-full rounded-3xl overflow-hidden border-2 hover:border-gray-100"
+      className="md:max-w-[400px] w-full overflow-hidden  border-2
+       hover:border-gray-100 rounded-3xl shadow bg-[#1d1b22]"
       key={postInfo.id}
     >
       <div
-        className="flex flex-col items-start  transition-all   rounded-xl overflow-hidden 
-        hover:shadow-xl bg-[#1d1b22] max-md:flex-col 
-       hover:bg-opacity-95 hover:text-white hover:border-transparent cursor-pointer"
+        className="flex flex-col items-start transition-all
+       overflow-hidden hover:shadow-xl max-md:flex-col hover:bg-opacity-95
+        hover:text-white hover:border-transparent cursor-pointer"
       >
         <motion.img
           src="/assets/avatar-pdr.png"
-          alt="me"
+          alt={postInfo.title}
           className="w-full max-h-[224px] object-cover"
         />
-        <div className="flex-col items-center gap-x-2  h-fit p-6 justify-center my-auto max-w-xl">
-          <h1 className="text-xl font-semibold leading-6 text-white text-left text-ellipsis overflow-hidden ">
+        <div className="flex-col items-center gap-y-3 h-fit p-6 justify-between my-auto max-w-xl">
+          <div className="text-gray-300 text-sm">{postInfo.datetime}</div>
+
+          <h1 className="text-xl font-semibold leading-6 text-white text-left line-clamp-2 my-3">
             {postInfo.title}
           </h1>
-          <h3 className="my-3 text-lg font-normal leading-6 text-gray-100 text-left text-ellipsis overflow-hidden ">
+          <h3 className=" text-lg font-normal leading-6 text-gray-100 text-left line-clamp-3">
             {postInfo.description}
           </h3>
         </div>
@@ -54,9 +58,10 @@ const Post = (postInfo: {
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className="grid  grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-8  ">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
       {postsToShow.map((postInfo) => {
-        return Post(postInfo);
+        if (postInfo.id === 1) return null;
+        return <Post key={postInfo.id} postInfo={postInfo} />;
       })}
     </div>
   );

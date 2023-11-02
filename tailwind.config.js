@@ -40,6 +40,7 @@ module.exports = {
   plugins: [
     require("@tailwindcss/aspect-ratio"),
     require("tailwind-scrollbar"),
+    require("@tailwindcss/line-clamp"),
     require("tailwind-scrollbar-hide"),
   ],
 };

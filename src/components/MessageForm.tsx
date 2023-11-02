@@ -53,11 +53,6 @@ export default function MessageForm({}) {
       className="flex flex-col items-center text-center  h-fit mx-auto 
       text-white rounded-md gap-2 w-full "
     >
-      <div className="leading-1  flex flex-col h-full justify-center items-center text-start w-full pb-4 my-auto ">
-        <h1 className="font-thin text-4xl  leading-tight text-white text-center">
-          Let's connect!{" "}
-        </h1>
-      </div>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="gap-6 w-full flex flex-col max-w-xl "

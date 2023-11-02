@@ -5,10 +5,10 @@ function Footer() {
 
   return (
     <motion.footer
-      className="z-20  text-white py-[72px] max-w-5xl
-     items-center  flex mx-auto  max-xl:px-6 text-base font-normal justify-between "
+      className="z-20  text-white h-[15vh] max-w-5xl
+     items-center  flex mx-auto  max-xl:px-6 text-base font-normal justify-center "
     >
-      <div className="flex text-center items-center max-w-5xl justify-between mx-auto w-full">
+      <div className="flex text-center items-center max-w-5xl justify-center mx-auto w-full">
         <p className=" text-lg font-extralight text-[#A1A1AA]">
           Created by <span className="text-[#e4e4e7]">Pedro Felippe</span> - ©{" "}
           {year}{" "}

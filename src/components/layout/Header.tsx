@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <motion.header
-      className="w-full  top-0 left-0 right-0  bg-[#161616] py-5
+      className="w-full  top-0 left-0 right-0  bg-[#161616] py-6
       text-white"
     >
       <div className="  max-w-5xl flex items-center mx-auto max-xl:px-6 text-base font-normal justify-between">

@@ -11,7 +11,7 @@ export const HighlightedPost = () => {
   return (
     <a
       href={postInfo.href}
-      className="flex w-full gap-10 items-center bg-[#1d1b22] rounded-3xl overflow-hidden 
+      className="flex w-full gap-10 items-center bg-[#1d1b22] rounded-3xl overflow-hidden min-h-fit
        border-2 hover:border-gray-300 max-md:hidden"
     >
       <motion.img
@@ -40,10 +40,12 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" flex flex-col min-h-fit mx-auto max-w-5xl  gap-8  py-32 max-xl:px-6 items-start "
+      className=" flex flex-col min-h-fit mx-auto max-w-5xl  gap-8 py-16  max-xl:px-6 items-start "
     >
+      <h3 className="text-3xl font-thin  text-gray-300">Highlighted Post</h3>
+
       <HighlightedPost />
-      <h3 className="text-3xl font-thin py-4 text-gray-300">Lastests Posts</h3>
+      <h3 className="text-3xl font-thin  text-gray-300">Lastests Posts</h3>
 
       <BlogPosts />
     </motion.main>

@@ -55,7 +55,7 @@ export default function MessageForm({}) {
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-6 w-full flex flex-col max-w-xl "
+        className="gap-6 w-full flex flex-col max-w-5xl "
       >
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
           <div className="space-y-4">
@@ -80,15 +80,15 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[300px] bg-[#1d1b22] "
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[350px] bg-[#1d1b22] "
         />
 
         <motion.button
           type="submit"
-          className="bg-blue/80 hover:bg-blue/70 text-white py-4 px-12 rounded-md justify-start 
+          className="bg-blue/80 hover:bg-blue/70 text-white py-4 px-12 rounded-md justify-start w-full md:max-w-xs mx-auto
           transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 "
         >
-          {isLoading ? "Sending..." : "Start partnership"}
+          {isLoading ? "Sending..." : "Start partnership!"}
         </motion.button>
       </form>
     </div>

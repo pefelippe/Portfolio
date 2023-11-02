@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import { posts } from "./../constants/posts";
 
 type PostInfo = {
@@ -58,7 +59,7 @@ const Post = ({ postInfo }: { postInfo: PostInfo }) => {
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
       {postsToShow.map((postInfo) => {
         if (postInfo.id === 1) return null;
         return <Post key={postInfo.id} postInfo={postInfo} />;

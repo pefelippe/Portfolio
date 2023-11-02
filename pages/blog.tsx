@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import BlogPosts from "../src/components/BlogPosts";
 import { posts } from "../src/constants/posts";
 
-const HighlightedPost = () => {
+export const HighlightedPost = () => {
   const postInfo = posts[0];
 
   if (!postInfo) return <></>;

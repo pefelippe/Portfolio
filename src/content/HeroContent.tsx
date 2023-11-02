@@ -6,7 +6,7 @@ export default function About() {
   return (
     <motion.div
       className="flex flex-col items-center w-full  text-white text-center
-    justify-center   max-xl:px-6  mx-auto max-w-5xl py-10 gap-6 "
+    justify-center    mx-auto max-w-5xl py-10 gap-6 "
     >
       <motion.img
         src="/assets/avatar-pdr.png"
@@ -21,27 +21,27 @@ export default function About() {
 
         <h3 className="text-[#B3AFC0] font-light text-xl lg:text-2xl max-w-3xl mx-auto">
           Web Developer with passion in creating simple yet visually appealing
-          UIs. Always strive to deliver high-quality code with great
-          attention to detail.
+          UIs. Always strive to deliver high-quality code with great attention
+          to detail.
         </h3>
 
-        <div className="flex relative items-center justify-center gap-8">
+        <div className="flex relative items-center justify-center gap-8 text-lg">
           <AnimatedBtn
             href="https://github.com/pefelippe"
-            className="font-semibold text-md px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
+            className="font-semibold px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
           >
             <p>Github</p>
           </AnimatedBtn>
 
           <AnimatedBtn
             href="https://www.linkedin.com/in/pedro-felippe/"
-            className="font-semibold text-md  px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
+            className="font-semibold   px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
           >
             <p>Linkedin</p>
           </AnimatedBtn>
           <AnimatedBtn
             href="https://docs.google.com/document/d/e/2PACX-1vQ0oK4H_ynaCvtXwtO4OvYmIIt4_6vn8lTQlWqj2KnoTR4ZfUWCzjpAuDPGToTPzwoqkN9FIEbiD7MU/pub"
-            className="font-semibold text-md  px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
+            className="font-semibold  px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
           >
             <p>Resume</p>
           </AnimatedBtn>

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 function AboutContent() {
   return (
     <motion.div
-      className="  flex  w-full items-center  justify-center   mx-auto  gap-6 lg:gap-20   pb-10 lg:py-20  bg-[#1d1b22] rounded-xl
-       max-lg:flex-col text-start "
+      className="  flex  w-full items-center  justify-start   mx-auto   overflow-hidden  bg-[#1d1b22] rounded-3xl
+       max-md:flex-col text-start max-w-5xl  "
     >
       {/* <h1 className="text-5xl font-semibold text-white w-full max-w-md leading-[1.2]">
         I love to code solutions to enable the best of companies and people
@@ -14,19 +14,26 @@ function AboutContent() {
       <motion.img
         src="/assets/eu.jpg"
         alt="me"
-        className=" rounded-3xl w-full max-w-md"
+        className="  w-full md:max-w-sm max-md:max-h-[250px] object-cover"
       />
 
-      <span className="text-[#B3AFC0] font-light text-xl   max-w-md max-lg:px-6">
-        <h1 className="text-white text-3xl font-semibold mb-5">About me</h1>
-        I have been coding digital products since 2017, such as web
-        applications, PWAs, websites, e-commerce, and mobile apps that help
-        organizations refine their online presence and grow. <br />
-        <br />I specialize in Frontend development with a focus on web
-        standards, UX, performance, accessibility, security, tests, and
-        analytics. In the Backend, I work with cloud services, CI/CD, databases,
-        and APIs integrations.
-      </span>
+      <div className="text-[#B3AFC0] font-light text-xl px-6 gap-4 flex flex-col py-6 ">
+        <h1 className="text-white text-3xl font-semibold ">Whoami?</h1>
+        <p>
+          I've been developing digital products since 2018, including web
+          applications, PWAs, websites, e-commerce solutions, and mobile apps
+          that assist organizations in refining their online presence and
+          fostering growth.
+        </p>
+        <p>
+          My area of expertise is{" "}
+          <span className="text-blue font-medium">Web Development</span>, with a
+          strong emphasis on key areas like web standards, user experience (UX),
+          performance optimization, accessibility, security, continuous
+          integration/continuous deployment (CI/CD), databases, and API
+          integrations.
+        </p>
+      </div>
     </motion.div>
   );
 }

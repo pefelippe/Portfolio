@@ -6,12 +6,12 @@ import AnimateLink from "../animated/AnimatedLink";
 const Navbar = () => {
   return (
     <motion.header
-      className="w-full mx-auto top-0 left-0 right-0 max-w-5xl
-      text-white h-[10vh] items-center  flex max-xl:px-6 text-base font-normal justify-between  "
+      className="w-full mx-auto top-0 left-0 right-0 max-w-7xl
+      text-white h-[15vh] items-center  flex max-xl:px-6 text-base font-normal justify-between  "
     >
       <Link
         href="/"
-        className="font-bold text-2xl uppercase flex  items-center tracking-[4px] hover:text-gray-300"
+        className=" font-bold max text-2xl uppercase flex  items-center tracking-[1px] hover:text-gray-300"
       >
         Pedro Felippe
       </Link>

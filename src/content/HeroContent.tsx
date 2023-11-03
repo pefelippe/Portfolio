@@ -1,53 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
-import AnimatedBtn from "../components/animated/AnimatedBtn";
-
 export default function About() {
   return (
     <motion.div
-      className="flex flex-col items-center w-full  text-white text-center
-    justify-center    mx-auto max-w-5xl  gap-6 "
+      className="flex flex-col items-start w-full  text-white text-start max-xl:px-6
+    justify-start    mx-auto max-w-5xl  gap-6 "
     >
-      <motion.img
+      {/* <motion.img
         src="/assets/avatar-pdr.png"
         alt="me"
-        className=" h-[150px] lg:h-[200px]  mx-auto rounded-full"
-      />
+        className=" h-[100px]   rounded-full"
+      /> */}
 
-      <div className="flex max-w-5xl flex-col gap-6">
-        <span className="text-4xl lg:text-6xl font-bold text-white w-full">
-          Hey. I'm <span className="text-blue">Pedro Felippe</span>!
+      <div className="flex flex-col gap-4 lg:gap-6 max-w-3xl">
+        <span className="text-4xl lg:text-6xl font-bold text-white">
+          Hey. I'm <span className="text-blue">Pedro Felippe</span> - Front-end
+          Developer
         </span>
 
-        <h3 className="text-[#B3AFC0] font-light text-xl max-w-3xl mx-auto">
-          Web Developer with passion in creating simple yet visually appealing
-          UIs. Always strive to deliver high-quality code with great attention
-          to detail.
+        <h3 className="text-lg font-medium text-[#888]  ">
+          Passion in creating simple yet visually appealing UIs.
         </h3>
-
-        <div className="flex relative items-center justify-center gap-8 text-lg">
-          <AnimatedBtn
-            href="https://github.com/pefelippe"
-            className="font-semibold px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
-          >
-            <p>Github</p>
-          </AnimatedBtn>
-
-          <AnimatedBtn
-            href="https://www.linkedin.com/in/pedro-felippe/"
-            className="font-semibold   px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
-          >
-            <p>Linkedin</p>
-          </AnimatedBtn>
-          <AnimatedBtn
-            href="https://docs.google.com/document/d/e/2PACX-1vQ0oK4H_ynaCvtXwtO4OvYmIIt4_6vn8lTQlWqj2KnoTR4ZfUWCzjpAuDPGToTPzwoqkN9FIEbiD7MU/pub"
-            className="font-semibold  px-2 py-2 tracking-[4px] uppercase hover:text-gray-300"
-          >
-            <p>Resume</p>
-          </AnimatedBtn>
-        </div>
       </div>
+      {/* <Links /> */}
     </motion.div>
   );
 }

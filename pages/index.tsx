@@ -9,7 +9,7 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" flex flex-col   justify-center gap-12 xl:gap-32 py-32  w-full mx-auto max-xl:px-6 min-h-fit"
+      className=" flex flex-col   justify-center gap-12 py-12 xl:gap-24 xl:py-24  w-full mx-auto  min-h-fit max-w-5xl"
     >
       <HeroContent />
       <AboutContent />

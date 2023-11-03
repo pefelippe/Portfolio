@@ -27,27 +27,27 @@ const Post = ({ postInfo }: { postInfo: PostInfo }) => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="md:max-w-[400px] w-full overflow-hidden  border-2
-       hover:border-gray-100 rounded-3xl shadow bg-[#1d1b22]"
+      className=" w-full overflow-hidden  border-2
+       hover:border-gray-100 rounded-3xl shadow bg-[#1d1b22] max-lg:max-w-xl max-lg:mx-auto max-lg:flex-col"
       key={postInfo.id}
     >
       <div
-        className="flex flex-col items-start transition-all
-       overflow-hidden hover:shadow-xl max-md:flex-col hover:bg-opacity-95
+        className="flex max-lg:flex-col items-start transition-all w-full
+       overflow-hidden hover:shadow-xl  hover:bg-opacity-95
         hover:text-white hover:border-transparent cursor-pointer"
       >
         <motion.img
           src="/assets/avatar-pdr.png"
           alt={postInfo.title}
-          className="w-full max-h-[224px] object-cover"
+          className="max-h-[280px] object-cover w-full lg:max-w-sm"
         />
-        <div className="flex-col items-center gap-y-3 h-fit p-6 justify-between my-auto max-w-xl">
-          <div className="text-gray-300 text-sm">{postInfo.datetime}</div>
+        <div className="flex-col items-center gap-y-3 h-fit p-6 justify-between my-auto w-full">
+          <div className="text-gray-300 text-md">{postInfo.datetime}</div>
 
-          <h1 className="text-xl font-semibold leading-6 text-white text-left line-clamp-2 my-3">
+          <h1 className="text-xl font-semibold leading-6 text-white text-left line-clamp-2 my-3 lg:text-3xl">
             {postInfo.title}
           </h1>
-          <h3 className=" text-lg font-normal leading-6 text-gray-100 text-left line-clamp-3">
+          <h3 className=" text-xl font-normal leading-6 text-gray-100 text-left line-clamp-3">
             {postInfo.description}
           </h3>
         </div>
@@ -59,9 +59,8 @@ const Post = ({ postInfo }: { postInfo: PostInfo }) => {
 export default function BlogPosts({ qnt = 0 }) {
   const postsToShow = qnt > 0 ? posts.slice(0, qnt) : posts;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 w-full gap-8 lg:gap-12">
       {postsToShow.map((postInfo) => {
-        if (postInfo.id === 1) return null;
         return <Post key={postInfo.id} postInfo={postInfo} />;
       })}
     </div>

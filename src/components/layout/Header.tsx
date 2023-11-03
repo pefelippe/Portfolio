@@ -9,13 +9,13 @@ const Navbar = () => {
 
   return (
     <motion.header
-      className="w-full  top-0 left-0 right-0  bg-[#080808] py-6
+      className="w-full  top-0 left-0 right-0  bg-[#121212]
       text-white"
     >
-      <div className="  max-w-5xl flex items-center mx-auto max-xl:px-6 text-base font-normal justify-between">
+      <div className="h-[10vh]  max-w-5xl  max-lg:max-w-xl mx-auto flex items-center  max-xl:px-6 text-base font-normal justify-between">
         <Link
           href="/"
-          className=" flex items-center justify-center gap-2 font-bold hover:text-gray-300 text-xl tracking-[1px]"
+          className=" flex items-center justify-center gap-2 font-bold hover:text-gray-300 text-lg tracking-[1px]"
         >
           pedrofelippe
         </Link>
@@ -24,18 +24,34 @@ const Navbar = () => {
           <AnimateLink
             href="/"
             className={`p-2 px-6 ${
-              router.pathname === "/" ? "bg-blue text-white" : ""
+              router.pathname === "/" ? "bg-[#202020] text-white" : ""
             } rounded-md hover:text-white`}
           >
             <p>Home</p>
           </AnimateLink>
           <AnimateLink
-            href="/blog"
+            href="/about"
             className={`p-2 px-6 ${
-              router.pathname === "/blog" ? "bg-blue text-white" : ""
+              router.pathname === "/about" ? "bg-[#202020] text-white" : ""
             } rounded-md hover:text-white`}
           >
-            <p>Posts</p>
+            <p>About</p>
+          </AnimateLink>
+          <AnimateLink
+            href="/projects"
+            className={`p-2 px-6 ${
+              router.pathname === "/projects" ? "bg-[#202020] text-white" : ""
+            } rounded-md hover:text-white`}
+          >
+            <p>Projects</p>
+          </AnimateLink>
+          <AnimateLink
+            href="/contact"
+            className={`p-2 px-6 ${
+              router.pathname === "/contact" ? "bg-[#202020] text-white" : ""
+            } rounded-md hover:text-white`}
+          >
+            <p>Contact</p>
           </AnimateLink>
         </div>
       </div>

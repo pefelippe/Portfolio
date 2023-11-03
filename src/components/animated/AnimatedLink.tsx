@@ -13,7 +13,7 @@ function AnimateLink({ href, children, className }: iBtnProps) {
       <motion.div
         whileHover={{
           scale: 1.01,
-          transition: { duration: 0.5 },
+          transition: { duration: 0.1 },
         }}
         className="w-full h-full"
       >

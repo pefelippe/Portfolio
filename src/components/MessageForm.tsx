@@ -80,12 +80,12 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[300px]  bg-[#1d1b22] "
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[400px]  bg-[#1d1b22] "
         />
 
         <motion.button
           type="submit"
-          className="bg-blue/80 hover:bg-blue/70 text-white py-4  px-12 rounded-md justify-start max-md:w-full  mx-auto
+          className="bg-blue/80 hover:bg-blue/70 text-white py-4  px-12 rounded-full justify-start max-md:w-full  mx-auto
           transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 "
         >
           {isLoading ? "Sending..." : "Start partnership!"}

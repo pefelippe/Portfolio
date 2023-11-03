@@ -20,22 +20,22 @@ export const projects = [
 ];
 
 export const technologies = [
-  // {
-  //   name: "HTML 5",
-  //   description: "Linguagem de marcação para criar conteúdo na web",
-  //   imgUrl: "/assets/tech/html.png",
-  // },
-  // {
-  //   name: "CSS 3",
-  //   description: "Folhas de estilo para estilizar conteúdo web",
-  //   imgUrl: "/assets/tech/css.png",
-  // },
-  // {
-  //   name: "JavaScript",
-  //   description:
-  //     "Linguagem de programação para criação de interatividade em páginas web",
-  //   imgUrl: "/assets/tech/javascript.png",
-  // },
+  {
+    name: "HTML 5",
+    description: "Linguagem de marcação para criar conteúdo na web",
+    imgUrl: "/assets/tech/html.png",
+  },
+  {
+    name: "CSS 3",
+    description: "Folhas de estilo para estilizar conteúdo web",
+    imgUrl: "/assets/tech/css.png",
+  },
+  {
+    name: "JavaScript",
+    description:
+      "Linguagem de programação para criação de interatividade em páginas web",
+    imgUrl: "/assets/tech/javascript.png",
+  },
   {
     name: "TypeScript",
     description: "Superset do JavaScript com tipagem estática",
@@ -74,12 +74,12 @@ export const technologies = [
     description: "Sistema de controle de versão",
     imgUrl: "/assets/tech/git.png",
   },
-  // {
-  //   name: "Figma",
-  //   description:
-  //     "Ferramenta de design colaborativa para criação de interfaces gráficas",
-  //   imgUrl: "/assets/tech/figma.png",
-  // },
+  {
+    name: "Figma",
+    description:
+      "Ferramenta de design colaborativa para criação de interfaces gráficas",
+    imgUrl: "/assets/tech/figma.png",
+  },
   {
     name: "Docker",
     description:

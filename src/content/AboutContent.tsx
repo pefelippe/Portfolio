@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
-import Links from "../components/Links";
+import Skills from "../components/Skills";
 
 function AboutContent() {
   return (
@@ -9,14 +9,14 @@ function AboutContent() {
       <h1 className="text-white text-3xl lg:text-4xl font-semibold ">
         About me
       </h1>
-      <div className="flex max-lg:flex-col gap-5 lg:gap-10 my-auto h-full relative">
+      <div className="flex max-lg:flex-col gap-5 lg:gap-20 items-center relative max-lg:max-w-xl">
         <motion.img
           src="/assets/pedro.jpg"
           alt="me"
-          className="max-md:max-h-[250px] max-lg:max-h-[400px]  w-full lg:max-w-[450px] h-[600px] object-cover rounded-3xl"
+          className="max-lg:max-h-[250px]  w-full lg:max-w-[450px] h-[600px] object-cover rounded-3xl"
         />
 
-        <div className="realative text-[#B3AFC0]  font-light text-lg lg:px-5 xl:px-10 gap-6 flex flex-col justify-between h-full">
+        <div className="realative text-[#B3AFC0]  font-light text-xl  gap-6 flex flex-col justify-between h-full">
           <p>
             I've been developing digital products since 2018, including web
             applications, PWAs, websites, e-commerce solutions, and mobile apps
@@ -33,8 +33,7 @@ function AboutContent() {
             </span>
             .
           </p>
-          {/* <Skills /> */}
-          <Links />
+          <Skills />
         </div>
       </div>
     </motion.div>

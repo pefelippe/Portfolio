@@ -4,8 +4,8 @@ import Link from "next/link";
 
 function AboutContent() {
   return (
-    <motion.div className="flex  w-full   mx-auto  gap-5 lg:gap-10  flex-col text-start max-w-5xl max-xl:px-6 pb-16">
-      <div className="flex gap-10 lg:gap-16 items-center relative max-lg:max-w-xl max-lg:mx-auto max-lg:flex-col ">
+    <motion.div className="flex  w-full   mx-auto  gap-6 lg:gap-10  flex-col text-start max-w-5xl max-xl:px-6 ">
+      <div className="flex gap-6 lg:gap-16 items-center relative max-lg:max-w-xl max-lg:mx-auto max-lg:flex-col ">
         <motion.img
           whileHover={{
             scale: 1.01,
@@ -17,7 +17,9 @@ function AboutContent() {
         />
 
         <div className="relative text-[#B3AFC0]  font-light text-xl  gap-6 flex flex-col justify-between h-full ">
-          <h1 className="text-5xl font-thin  text-white ">About me</h1>
+          <h1 className="text-4xl lg:text-5xl font-thin  text-white ">
+            About me
+          </h1>
           <p>
             I've been developing digital products since 2018, including web
             applications, PWAs, websites, e-commerce solutions, and mobile apps

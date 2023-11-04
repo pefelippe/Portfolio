@@ -17,12 +17,12 @@ const Navbar = () => {
       <div className="h-[15vh]  max-w-7xl  max-lg:max-w-xl mx-auto flex items-center  max-xl:px-6 text-base font-normal justify-between">
         <Link
           href="/"
-          className=" flex items-center justify-center gap-2 font-bold hover:text-gray-300 text-lg tracking-[1px] w-fit"
+          className="uppercase tracking-[5px] flex items-center justify-center gap-2 font-bold hover:text-gray-300 text-xl w-fit"
         >
-          pedrofelippe
+          pedro felippe
         </Link>
 
-        <div className="flex items-center text-lg font-medium text-gray-100 transition-all    w-fit">
+        <div className="flex items-center text-lg font-medium text-gray-100 transition-all  max-md:hidden  w-fit">
           <AnimateLink
             href="/"
             className={`p-2 px-6 ${

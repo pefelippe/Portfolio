@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <motion.div
-      className="flex flex-col items-center w-full  text-white text-center max-xl:px-6 lg:py-16 
+      className="flex flex-col items-center w-full  text-white text-start max-xl:px-6 py-12 mt-5 lg:py-24 lg:mt-10
     justify-center mx-auto   gap-6 max-lg:max-w-xl max-lg:mx-auto max-lg:flex-col"
     >
       <div className="flex flex-col gap-4 lg:gap-6 ">

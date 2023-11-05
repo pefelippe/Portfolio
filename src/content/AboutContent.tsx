@@ -11,7 +11,7 @@ function AboutContent() {
             scale: 1.01,
             transition: { duration: 0.1 },
           }}
-          src="/assets/pedro.jpg"
+          src="/assets/pedrof.jpg"
           alt="me"
           className="max-lg:max-h-[250px]  w-full lg:max-w-[450px] h-[550px] object-cover rounded-xl"
         />

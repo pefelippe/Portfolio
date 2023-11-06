@@ -10,9 +10,7 @@ function PostsContent() {
       transition={{ duration: 0.5 }}
       className=" flex flex-col min-h-fit mx-auto max-w-5xl gap-6 lg:gap-10 max-xl:px-6 items-start "
     >
-      <h1 className="text-3xl lg:text-4xl font-normal   text-white ">
-        My posts
-      </h1>
+      <h1 className="font-thin  text-gray-300 text-3xl">My posts</h1>
       <BlogPosts />
     </motion.main>
   );

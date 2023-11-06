@@ -51,7 +51,7 @@ export default function MessageForm({}) {
   return (
     <div
       className="flex flex-col items-center text-center  h-fit mx-auto 
-      text-white rounded-md gap-2 w-full "
+      text-white rounded-md gap-2 w-full max-w-3xl "
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -80,7 +80,7 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[400px]  bg-[#1d1b22] "
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[300px] lg:min-h-[450px]  bg-[#1d1b22] "
         />
 
         <motion.button

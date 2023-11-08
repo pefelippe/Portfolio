@@ -7,20 +7,20 @@ import AnimatedBtn from "../components/animated/AnimatedBtn";
 export default function About() {
   return (
     <motion.div
-      className="flex flex-col items-center w-full  text-white text-start max-xl:px-6 py-12 mt-5 lg:py-24 lg:mt-10
+      className="flex flex-col items-center w-full  text-white text-center max-xl:px-6
     justify-center mx-auto   gap-6 max-lg:max-w-xl max-lg:mx-auto max-lg:flex-col"
     >
       <div className="flex flex-col gap-4 lg:gap-6 ">
-        <span className="text-7xl lg:text-8xl font-bold text-white max-lg:text-start ">
+        <span className="text-6xl lg:text-8xl font-bold text-white  ">
           I'm <span className="text-blue">Pedro Felippe</span>. Front-End
           Developer.
         </span>
 
-        <h3 className="text-2xl font-normal text-[#888]  max-lg:text-start  ">
+        <h3 className="text-2xl font-normal text-[#888]   ">
           Passion in creating simple yet visually appealing UIs.
         </h3>
 
-        <div className=" items-start  justify-start gap-6  text-gray-100 flex  ">
+        <div className=" items-center  justify-center gap-8  text-gray-100 flex  ">
           <AnimatedBtn
             className="rounded-full   font-semibold   "
             target="_blank"

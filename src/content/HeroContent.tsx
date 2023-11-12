@@ -11,7 +11,7 @@ export default function About() {
     justify-start  gap-6  max-lg:flex-col"
     >
       <div className="flex flex-col gap-4 lg:gap-6 max-w-3xl ">
-        <span className="text-5xl md:text-7xl  font-bold text-white  ">
+        <span className="text-5xl md:text-7xl  font-bold text-white leading-[1.3] ">
           Web Developer. <br />
           DevOps Enthusiast. <br />
           Content Creator.

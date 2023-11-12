@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+import AboutContent from "../src/content/AboutContent";
+import ContactContent from "../src/content/ContactContent";
 import HeroContent from "../src/content/HeroContent";
 
 export default function Home() {
@@ -8,10 +10,11 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" flex flex-col justify-center gap-10 w-full mx-auto h-fit max-w-5xl min-h-[90vh] mt-[10vh] items-center"
+      className=" flex flex-col justify-start gap-[10vh] w-full mx-auto h-fit max-w-5xl min-h-screen my-[10vh] items-start"
     >
       <HeroContent />
-      {/* <PostsContent /> */}
+      <AboutContent />
+      <ContactContent />
     </motion.div>
   );
 }

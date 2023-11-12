@@ -51,19 +51,19 @@ export default function MessageForm({}) {
   return (
     <div
       className="flex flex-col items-center text-center  h-fit mx-auto 
-      text-white rounded-md gap-2 w-full max-w-3xl "
+      text-white rounded-md gap-2 w-full max-w-2xl "
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-6 w-full flex flex-col  "
+        className="gap-5 w-full flex flex-col  "
       >
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
           <div className="space-y-4">
             <input
               {...register("firstName", { required: true, maxLength: 50 })}
               id="first-name"
               placeholder="Enter your name"
-              className="bg-[#1d1b22] px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+              className="bg-[#242424] px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
             />
           </div>
           <input
@@ -71,7 +71,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className="bg-[#1d1b22]  px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+            className="bg-[#242424]  px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500"
           />
         </div>
 
@@ -80,12 +80,12 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[300px] lg:min-h-[450px]  bg-[#1d1b22] "
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[300px]  bg-[#242424] "
         />
 
         <motion.button
           type="submit"
-          className="bg-blue/80 hover:bg-blue/70 text-white py-4  px-12 rounded-full justify-start max-md:w-full  mx-auto
+          className="bg-blue/80 hover:bg-blue/70 text-white py-4  px-12 rounded-md justify-start w-full  mx-auto
           transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 "
         >
           {isLoading ? "Sending..." : "Start partnership!"}

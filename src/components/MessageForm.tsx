@@ -55,9 +55,9 @@ export default function MessageForm({}) {
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-5 w-full flex flex-col  "
+        className="gap-3 lg:gap-5 w-full flex flex-col  "
       >
-        <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
+        <div className="grid gap-3 lg:gap-5  grid-cols-1 md:grid-cols-2">
           <div className="space-y-4">
             <input
               {...register("firstName", { required: true, maxLength: 50 })}

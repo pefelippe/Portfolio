@@ -5,9 +5,9 @@ function AboutContent() {
   return (
     <motion.div
       className="flex flex-col justify-start gap-12 w-full mx-auto h-fit max-w-5xl
-      items-center lg:items-start  max-lg:px-6"
+      items-center lg:items-start "
     >
-      <div className="flex gap-6 lg:gap-[10vh] items-center relative max-lg:max-w-xl max-lg:mx-auto max-lg:flex-col ">
+      <div className="flex gap-6 lg:gap-[5vh] lg:items-center relative max-lg:flex-col ">
         <motion.img
           initial={{ opacity: 0, x: -75 }}
           animate={{ opacity: 1, x: 0 }}
@@ -15,10 +15,10 @@ function AboutContent() {
           whileHover={{
             scale: 1.01,
             transition: { duration: 0.1 },
-          }}
-          src="/assets/pedrof.jpg"
+          }} 
+          src="/assets/avatar-pdr.png"
           alt="me"
-          className="max-lg:max-h-[220px]  w-full lg:max-w-[450px] h-[650px] object-cover rounded-xl"
+          className="max-lg:hidden max-lg:w-40 max-lg:h-40   lg:w-full lg:max-w-[450px] lg:h-[550px] object-cover rounded-xl"
         />
 
         <motion.div

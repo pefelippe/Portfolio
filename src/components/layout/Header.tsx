@@ -7,10 +7,13 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <motion.header className="w-full  top-0 left-0 right-0   bg-[#080808]  z-20  shadow shadow-gray-300 text-gray-300">
-      <div className="h-[10vh]  text-lg  max-w-5xl  mx-auto flex items-center  max-xl:px-6  font-light justify-between ">
+    <motion.header
+      className="w-full  top-0 left-0 right-0  z-20  text-white h-[10vh]   shadow-xs shadow-gray-300
+    items-center  flex mx-auto  text-base font-normal justify-center"
+    >
+      <div className=" text-lg  max-w-5xl  mx-auto flex items-center  max-xl:px-6  font-light justify-between px-6 ">
         <AnimateLink href="/" className="">
-          <p className="text-2xl font-light ">Pedro Felippe</p>
+          <p className="text-2xl font-medium ">Pedro Felippe</p>
         </AnimateLink>
       </div>
     </motion.header>

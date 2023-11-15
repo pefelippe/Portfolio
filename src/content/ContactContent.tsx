@@ -11,7 +11,7 @@ function Contact() {
       transition={{ duration: 0.5 }}
       className="mx-auto flex flex-col w-full items-start h-fit justify-start max-w-5xl gap-8 "
     >
-      <h1 className="font-medium  text-white text-4xl">Let's work together!</h1>
+      <h1 className="font-medium  text-white text-3xl">Let's work together!</h1>
 
       <MessageForm />
     </motion.div>

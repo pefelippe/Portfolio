@@ -1,40 +1,33 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className="  items-center  justify-start gap-8 w-full text-gray-300 grid grid-cols-2">
+    <div className="w-full flex items-center  justify-center gap-6  text-gray-300 mt-2">
       <AnimatedBtn
-        className="rounded-md   font-semibold  w-full "
+        className="rounded-md   font-semibold "
         target="_blank"
         href="https://github.com/pefelippe"
       >
-        <div className="flex flex-col items-center justify-center rounded-md gap-2 text-xl border py-5">
-          <FaGithub className="headerSocial" />
-          Github
-        </div>
+        <FaGithub className="headerSocial" />
       </AnimatedBtn>
 
       <AnimatedBtn
-        className="rounded-md  font-semibold w-full"
+        className="rounded-md  font-semibold "
         target="_blank"
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
-        <div className="flex flex-col items-center justify-center   rounded-md gap-2 text-xl border py-5">
-          <FaLinkedin className="headerSocial" /> Linkedin
-        </div>
+        <FaLinkedin className="headerSocial" />
       </AnimatedBtn>
 
-      {/* <AnimatedBtn
-        className="rounded-md  font-semibold w-full "
+      <AnimatedBtn
+        className="rounded-md  font-semibold"
         target="_blank"
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
-        <div className="flex flex-col items-center justify-center  rounded-md gap-2 text-xl border py-5">
-          <FaLinkedin className="headerSocial" /> Resume
-        </div>
-      </AnimatedBtn> */}
+        <FaFilePdf className="headerSocial" />
+      </AnimatedBtn>
     </div>
   );
 }

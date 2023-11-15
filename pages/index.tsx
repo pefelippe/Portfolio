@@ -10,7 +10,7 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" flex flex-col justify-start gap-[10vh] w-full mx-auto h-fit max-w-5xl min-h-screen my-[10vh] items-start  px-6"
+      className=" flex flex-col justify-start gap-[10vh] max-w-xl w-full mx-auto h-fit  min-h-screen my-[10vh] items-start  px-6"
     >
       <HeroContent />
       <AboutContent />

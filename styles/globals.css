@@ -54,7 +54,7 @@
 }
 
 .headerSocial {
-  @apply h-9 w-9;
+  @apply h-8 w-8;
 }
 
 .contactInput {

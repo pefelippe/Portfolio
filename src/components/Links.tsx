@@ -4,7 +4,7 @@ import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className="w-full flex items-center  justify-center gap-6  text-gray-300 mt-2">
+    <div className="w-full flex items-center  justify-center gap-8  text-gray-300 mt-2">
       <AnimatedBtn
         className="rounded-md   font-semibold "
         target="_blank"

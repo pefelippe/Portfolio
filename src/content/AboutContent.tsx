@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
+import Skills from "../components/Skills";
+
 function AboutContent() {
   return (
     <motion.div
@@ -32,6 +34,7 @@ function AboutContent() {
             </span>
             .
           </p>
+          <Skills />
         </motion.div>
       </div>
     </motion.div>

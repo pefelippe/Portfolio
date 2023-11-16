@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-import AboutContent from "../src/content/AboutContent";
-import ContactContent from "../src/content/ContactContent";
 import HeroContent from "../src/content/HeroContent";
 
 export default function Home() {
@@ -10,11 +8,11 @@ export default function Home() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" flex flex-col justify-start gap-[15vh] max-w-xl w-full mx-auto h-fit  min-h-screen my-[15vh] items-start  px-6"
+      className=" flex flex-col justify-center gap-[15vh] mx-auto w-full  h-fit  min-h-screen  items-start  px-6"
     >
       <HeroContent />
-      <AboutContent />
-      <ContactContent />
+      {/* <AboutContent /> */}
+      {/* <ContactContent /> */}
     </motion.div>
   );
 }

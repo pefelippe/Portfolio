@@ -6,26 +6,46 @@ import Links from "../components/Links";
 export default function About() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.75 }}
-      className="flex  w-full  text-white text-center 
-    justify-center items-center  gap-3  flex-col"
+      className="flex  w-full text-start max-w-xl mx-auto
+    justify-center items-start  gap-3  flex-col"
     >
       <motion.img
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
         src="/assets/avatar-pdr.png"
         alt="me"
-        className="w-16 h-16 lg:w-24 lg:h-24  object-fit rounded-full"
+        className="w-16 h-16 lg:w-20 lg:h-20  object-fit rounded-full"
       />
-      <div className="flex flex-col gap-2 max-w-3xl ">
-        <span className="text-3xl md:text-4xl  font-medium text-white leading-[1.2] ">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-col gap-3 max-w-3xl text-md font-normal"
+      >
+        <span className="text-3xl md:text-4xl  font-medium leading-[1.2] ">
           Pedro Felippe <br />
         </span>
-        <h3 className="text-xl font-normal text-[#888]  max-w-sm ">
+        <h3 className="text-xl  text-[#888] font-normal ">
           Passion in creating simple yet visually appealing UIs.
         </h3>
+
+        <p className="   ">
+          I have been developing digital products since 2018, including web
+          applications, PWAs, websites, e-commerce solutions, and mobile apps
+          that assist organizations in refining their online presence and
+          fostering growth.
+        </p>
+        <p className="  ">
+          With a strong emphasis on key areas like{" "}
+          <span className="">
+            user experience (UX), performance, accessibility, security, (CI/CD),
+            databases and API integrations
+          </span>
+          .
+        </p>
         <Links />
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

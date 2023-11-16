@@ -4,7 +4,7 @@ import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className="w-full flex items-center  justify-center gap-8  text-gray-300 mt-2">
+    <div className="w-full flex items-center  justify-start gap-6  text-[#001514] mt-2">
       <AnimatedBtn
         className="rounded-md   font-semibold "
         target="_blank"
@@ -24,7 +24,7 @@ function Links() {
       <AnimatedBtn
         className="rounded-md  font-semibold"
         target="_blank"
-        href="https://www.linkedin.com/in/pedro-felippe/"
+        href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit?usp=sharing"
       >
         <FaFilePdf className="headerSocial" />
       </AnimatedBtn>

@@ -1,27 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
-import Links from "../components/Links";
-
 export default function About() {
   return (
     <motion.div
-      className="flex  w-full text-start max-w-xl mx-auto
-    justify-center items-start  gap-3  flex-col"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="flex  w-full  mx-auto text-center lg:text-start max-lg:flex-col
+    justify-center items-center gap-3 lg:gap-10"
     >
       <motion.img
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ y: -25 }}
+        animate={{ y: 0 }}
         transition={{ duration: 1.5 }}
         src="/assets/avatar-pdr.png"
         alt="me"
-        className="w-16 h-16 lg:w-20 lg:h-20  object-fit rounded-full"
+        className="max-lg:max-h-[150px] max-lg:max-w-[150px]  w-full max-w-xs object-fit rounded-full lg:rounded-lg"
       />
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ y: 25 }}
+        animate={{ y: 0 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col gap-3 max-w-3xl text-md font-normal"
+        className="flex flex-col gap-2 text-md font-normal max-w-xl "
       >
         <span className="text-3xl md:text-4xl  font-medium leading-[1.2] ">
           Pedro Felippe <br />
@@ -44,7 +45,6 @@ export default function About() {
           </span>
           .
         </p>
-        <Links />
       </motion.div>
     </motion.div>
   );

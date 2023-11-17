@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
 import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Links() {
   return (
-    <div className="w-fit flex items-center  justify-start gap-10  text-[#001514]  ">
+    <motion.div
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, delay: 1 }}
+      className="w-fit flex items-center  justify-start gap-5  text-[#001514]  "
+    >
       <AnimatedBtn
         className="rounded-md   font-semibold "
         target="_blank"
@@ -28,7 +34,7 @@ function Links() {
       >
         <FaFilePdf className="headerSocial" />
       </AnimatedBtn>
-    </div>
+    </motion.div>
   );
 }
 

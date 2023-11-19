@@ -5,12 +5,7 @@ module.exports = {
   theme: {
     darkMode: "class",
     fontFamily: {
-      fontFamily: {
-        gotham: ["Gotham HTF", "sans"],
-        sans: ['"Fira Sans"', "sans-serif"],
-        matter: ["Matter", "cursive"],
-        roboto: ["Roboto", "sans-serif"],
-      },
+      "bricolage-grotesque": ["Bricolage Grotesque", "sans-serif"],
     },
     colors: {
       transparent: "transparent",

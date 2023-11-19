@@ -47,7 +47,7 @@ const Navbar = () => {
 
 export default Navbar;
 
-const ListItem = ({ children, NavLink }) => {
+const ListItem = ({ children, NavLink }: any) => {
   return (
     <>
       <li>

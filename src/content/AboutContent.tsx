@@ -9,7 +9,7 @@ function AboutContent() {
       className="flex flex-col justify-start gap-20 w-full mx-auto h-fit max-w-5xl
     items-center md:items-start py-8 "
     >
-      <div className="flex gap-8 md:gap-16 items-center relative max-md:max-w-xl max-md:mx-auto max-md:flex-col ">
+      <div className="flex gap-6 md:gap-16 items-center relative max-md:max-w-xl max-md:mx-auto max-md:flex-col ">
         <motion.img
           initial={{ opacity: 0, x: -75 }}
           animate={{ opacity: 1, x: 0 }}
@@ -18,9 +18,9 @@ function AboutContent() {
             scale: 1.01,
             transition: { duration: 0.1 },
           }}
-          src="/assets/pedrof.jpg"
+          src="/assets/avatar-pdr.png"
           alt="me"
-          className="max-md:max-h-[300px]  w-full md:max-w-[450px] h-[650px] object-cover rounded-xl"
+          className="max-md:max-h-[250px]  w-full md:max-w-[480px] h-[650px] object-cover rounded-xl"
         />
 
         <motion.div

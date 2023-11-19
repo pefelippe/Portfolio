@@ -80,7 +80,7 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[300px]  bg-[#f5f5f5] "
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[350px]  bg-[#f5f5f5] "
         />
 
         <motion.button

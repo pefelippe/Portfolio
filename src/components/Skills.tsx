@@ -12,7 +12,7 @@ function Skills() {
       className=" text-xl  font-thin 
       flex flex-col  items-center   "
     >
-      <div className="grid grid-cols-6 gap-8">
+      <div className="grid grid-cols-6 gap-10">
         {technologies.map((tech) => {
           return (
             <motion.div

@@ -31,9 +31,11 @@ const Navbar = () => {
             } `}
           >
             <ul className="block lg:flex w-fit gap-10 ">
-              <ListItem NavLink="/#about">About</ListItem>
-              <ListItem NavLink="/#">Resume</ListItem>
-              <ListItem NavLink="/#">Contact</ListItem>
+              <ListItem NavLink="/about">About</ListItem>
+              <ListItem NavLink="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit">
+                Resume
+              </ListItem>
+              <ListItem NavLink="/contact">Contact</ListItem>
             </ul>
           </nav>
         </div>
@@ -48,12 +50,12 @@ const ListItem = ({ children, NavLink }: any) => {
   return (
     <>
       <li>
-        <a
+        <Link
           href={NavLink}
           className="flex py-2   lg:inline-flex font-medium text-lg"
         >
           {children}
-        </a>
+        </Link>
       </li>
     </>
   );

@@ -5,7 +5,7 @@ import Skills from "../src/components/Skills";
 export default function Home() {
   return (
     <motion.div
-      className="flex flex-col justify-start gap-12 w-full mx-auto h-fit max-w-5xl
+      className="flex flex-col justify-start gap-12 w-full mx-auto h-fit max-w-7xl
      my-[10vh] min-h-[90vh] items-center lg:items-start py-8 max-lg:px-6"
     >
       <div className="flex gap-6 lg:gap-12 items-center relative max-lg:max-w-xl max-lg:mx-auto max-lg:flex-col ">

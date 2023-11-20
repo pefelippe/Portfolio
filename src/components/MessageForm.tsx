@@ -63,7 +63,7 @@ export default function MessageForm({}) {
               {...register("firstName", { required: true, maxLength: 50 })}
               id="first-name"
               placeholder="Enter your name"
-              className="shadow  px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#f5f5f5]"
+              className="shadow  px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#f9f9f9]"
             />
           </div>
           <input
@@ -71,7 +71,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className="shadow  px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#f5f5f5]"
+            className="shadow  px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#f9f9f9]"
           />
         </div>
 
@@ -80,7 +80,7 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[450px] shadow  bg-[#f5f5f5]"
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[450px] shadow  bg-[#f9f9f9]"
         />
 
         <motion.button

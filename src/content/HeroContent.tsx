@@ -6,17 +6,9 @@ import Links from "../components/Links";
 export default function About() {
   return (
     <motion.div
-      className="flex  w-full  text-start flex-col h-[40vh] lg:h-screen max-lg:text-center
+      className="flex  w-full  text-start flex-col h-[50vh] lg:h-[60vh] max-lg:text-center
     justify-center items-center lg:items-start gap-4 lg:gap-6 max-w-7xl mx-auto"
     >
-      <motion.img
-        initial={{ opacity: 0, y: -25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 1 }}
-        src="/assets/avatar-pdr.png"
-        alt="me"
-        className=" object-cover rounded-full w-28"
-      />
       <motion.span
         initial={{ opacity: 0, x: -75 }}
         animate={{ opacity: 1, x: 0 }}

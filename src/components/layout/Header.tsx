@@ -5,15 +5,13 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex w-full bg-[#121212] absolute z-20">
+    <header className="flex w-full   z-20 backdrop bg-white px-6">
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between">
         <Link href="/#" className="block w-full py-3">
-          <p className="hidden dark:block w-60  text-white text-xl text-semibold">
-            Pedro Felippe
-          </p>
+          <p className="  text-[22px] font-semibold">Pedro Felippe</p>
         </Link>
 
-        <div className="relative flex items-center ml-auto justify-between px-4 text-white">
+        <div className="relative flex items-center ml-auto justify-between ">
           <button
             onClick={() => setOpen(!open)}
             id="navbarToggler"
@@ -32,11 +30,10 @@ const Navbar = () => {
               !open && "hidden"
             } `}
           >
-            <ul className="block lg:flex w-fit">
-              <ListItem NavLink="/#">Home</ListItem>
-              <ListItem NavLink="/#">Payment</ListItem>
-              <ListItem NavLink="/#">About</ListItem>
-              <ListItem NavLink="/#">Blog</ListItem>
+            <ul className="block lg:flex w-fit gap-10 ">
+              <ListItem NavLink="/#about">About</ListItem>
+              <ListItem NavLink="/#">Resume</ListItem>
+              <ListItem NavLink="/#">Contact</ListItem>
             </ul>
           </nav>
         </div>
@@ -53,7 +50,7 @@ const ListItem = ({ children, NavLink }: any) => {
       <li>
         <a
           href={NavLink}
-          className="flex py-2 text-base font-medium text-white hover:text-dark dark:text-dark-6 dark:hover:text-white lg:ml-12 lg:inline-flex"
+          className="flex py-2   lg:inline-flex font-medium text-lg"
         >
           {children}
         </a>

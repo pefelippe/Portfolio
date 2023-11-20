@@ -5,7 +5,7 @@ import Skills from "../components/Skills";
 
 function AboutContent() {
   return (
-    <motion.div className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl lg:h-[80vh] items-start   ">
+    <motion.div className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl lg:h-screen items-start   ">
       <div className="flex gap-6 lg:gap-12 xl:gap-24 items-center relative  max-lg:flex-col ">
         <motion.img
           initial={{ opacity: 0, x: -75 }}

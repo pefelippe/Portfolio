@@ -6,8 +6,8 @@ import Links from "../components/Links";
 export default function About() {
   return (
     <motion.div
-      className="flex  w-full  text-start flex-col h-[40vh] lg:h-screen 
-    justify-center items-start gap-4 lg:gap-6 max-w-7xl mx-auto"
+      className="flex  w-full  text-start flex-col h-[40vh] lg:h-screen max-lg:text-center
+    justify-center items-center lg:items-start gap-4 lg:gap-6 max-w-7xl mx-auto"
     >
       <motion.img
         initial={{ opacity: 0, y: -25 }}

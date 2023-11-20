@@ -45,7 +45,7 @@
   @apply justify-center text-sm font-medium 
   transition-colors focus-visible:outline-none 
   h-10 flex items-center gap-2 rounded-lg 
-  border-2 px-4 py-3 dark:text-white  md:inline-flex;
+  border-2 px-4 py-3 dark:text-white  lg:inline-flex;
 }
 
 .headerLink {

@@ -23,7 +23,7 @@ function Projects() {
         </p>
       </div>
       <div className="w-full"></div>
-      <div className="grid md:grid-cols-2 gap-10 justify-center ">
+      <div className="grid lg:grid-cols-2 gap-10 justify-center ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

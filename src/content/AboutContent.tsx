@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+
 import Skills from "../components/Skills";
 
 function AboutContent() {
   return (
-    <motion.div className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl h-[80vh] items-start   ">
-      <div className="flex gap-6 md:gap-24 items-center relative  max-md:flex-col ">
+    <motion.div className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl lg:h-[80vh] items-start   ">
+      <div className="flex gap-6 lg:gap-12 xl:gap-24 items-center relative  max-lg:flex-col ">
         <motion.img
           initial={{ opacity: 0, x: -75 }}
           animate={{ opacity: 1, x: 0 }}
@@ -16,7 +17,7 @@ function AboutContent() {
           }}
           src="/assets/avatar-pdr.png"
           alt="me"
-          className="max-md:max-h-[250px]  w-full md:max-w-lg h-[600px] object-cover rounded-xl"
+          className="max-lg:max-h-[250px]  w-full max-w-lg h-[600px] object-cover rounded-xl max-xl:hidden"
         />
 
         <motion.div
@@ -25,7 +26,7 @@ function AboutContent() {
           transition={{ duration: 0.75 }}
           className="relative text-[#888]  font-extralight text-xl  gap-4 flex flex-col  h-full w-full"
         >
-          <h1 className="text-5xl md:text-7xl text-[#222222] font-bold leading-[1.2]">
+          <h1 className="text-5xl lg:text-7xl text-[#222222] font-bold leading-[1.2]">
             About-me.
           </h1>
 

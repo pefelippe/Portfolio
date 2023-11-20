@@ -51,13 +51,13 @@ export default function MessageForm({}) {
   return (
     <div
       className="flex flex-col items-center text-center  h-fit 
-      text-white rounded-md gap-2 w-full max-w-xl"
+      text-white rounded-md gap-2 w-full lg:max-w-xl"
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="gap-5 w-full flex flex-col   "
       >
-        <div className="grid gap-5  grid-cols-1 md:grid-cols-2">
+        <div className="grid gap-5  grid-cols-1 lg:grid-cols-2">
           <div className="space-y-4">
             <input
               {...register("firstName", { required: true, maxLength: 50 })}
@@ -80,7 +80,7 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="  px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[350px] shadow  bg-[#f5f5f5]"
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[350px] shadow  bg-[#f5f5f5]"
         />
 
         <motion.button

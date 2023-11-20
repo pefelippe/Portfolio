@@ -9,15 +9,15 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mx-auto flex flex-col w-full items-start  justify-center max-w-7xl gap-4 min-h-[80vh] my-10"
+      className="mx-auto flex flex-col w-full items-center lg:items-start  justify-center max-w-7xl gap-4 min-h-[80vh] my-10"
     >
-      <div className="w-full flex justify-between gap-6 md:gap-20 max-md:flex-col">
-        <div className="flex flex-col justify-between">
-          <div className="w-full max-w-xl  text-[#888] text-xl gap-4 flex flex-col mb-4">
-            <h1 className="text-5xl md:text-7xl  font-bold leading-[1.2] text-[#222222] ">
+      <div className="w-full flex justify-between gap-6 lg:gap-20 max-lg:flex-col items-center lg:items-start">
+        <div className="flex flex-col justify-between lg:max-w-xl w-full">
+          <div className="w-full lg:max-w-xl  text-[#888] text-xl gap-4 flex flex-col mb-4">
+            <h1 className="text-5xl lg:text-7xl  font-bold leading-[1.2] text-[#222222] ">
               Contact-me.
             </h1>
-            <h3 className="w-full max-w-lg">
+            <h3 className="w-full xl:max-w-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
               adiqua minim veniam quis nostrud exercitation ullamco

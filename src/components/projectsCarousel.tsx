@@ -29,7 +29,7 @@ function ProjectsCarousel() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="w-full md:max-w-4xl mx-auto rounded-2xl max-h-[400px]  h-full"
+        className="w-full lg:max-w-4xl mx-auto rounded-2xl max-h-[400px]  h-full"
       >
         {projects?.map((proj) => {
           return (

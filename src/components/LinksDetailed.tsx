@@ -12,7 +12,7 @@ function LinksDetailed() {
         className="flex flex-col gap-2 text-xl justify-center items-center bg-[#272727] hover:bg-[#222222] rounded-3xl"
       >
         <>
-          <FaGithub className="md:h-9 md:w-9 h-8 w-8" />
+          <FaGithub className="lg:h-9 lg:w-9 h-8 w-8" />
 
           {/* <div className=" gap-10 flex flex-col font-medium">Github</div> */}
         </>
@@ -24,7 +24,7 @@ function LinksDetailed() {
         className="flex flex-col gap-2 text-xl  justify-center  items-center bg-[#272727] hover:bg-[#222222] rounded-3xl"
       >
         <>
-          <FaLinkedin className="md:h-9 md:w-9 h-8 w-8" />
+          <FaLinkedin className="lg:h-9 lg:w-9 h-8 w-8" />
 
           {/* <div className=" gap-10 flex flex-col font-medium">Linkedin</div> */}
         </>
@@ -36,7 +36,7 @@ function LinksDetailed() {
         className="flex flex-col gap-2 text-xl   justify-center  items-center bg-[#272727] hover:bg-[#222222] rounded-3xl"
       >
         <>
-          <FaFilePdf className="md:h-9 md:w-9 h-8 w-8" />
+          <FaFilePdf className="lg:h-9 lg:w-9 h-8 w-8" />
 
           {/* <div className=" gap-10 flex flex-col font-medium">Resume</div> */}
         </>

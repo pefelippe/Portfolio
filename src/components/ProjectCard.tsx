@@ -37,9 +37,9 @@ function ProjectCard({
           className="flex-shrink-0 object-cover transition-all flex h-full w-full rounded-md  "
         />
       </Link>
-      <div className="flex flex-col pt-3  text-[#222]">
+      <div className="flex flex-col pt-2  text-[#222] text-center">
         <p className="text-[22px] font-semibold">{title}</p>
-        <p className="font-regular text-[16px] md:text-[18px] mb-[13px]">
+        <p className="font-regular text-[16px] md:text-[18px] ">
           {description}
         </p>
       </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
     <header className="flex w-full   z-40 backdrop bg-white  shadow  text-[#222222] h-[72px] ">
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between max-xl:px-6">
         <Link href="/#">
-          <p className=" text-2xl text-[#2E2E2E] font-bold">Pedro Felippe</p>
+          <p className=" text-xl text-[#2E2E2E] font-bold">Pedro Felippe</p>
         </Link>
 
         <div className="relative flex items-center  justify-between  ">
@@ -33,7 +33,7 @@ const Navbar = () => {
               !open && "hidden"
             } `}
           >
-            <ul className=" flex max-lg:flex-col w-fit max-lg:gap-32 max-lg:items-center text-[20px] font-medium py-4 gap-8">
+            <ul className=" flex max-lg:flex-col w-fit max-lg:gap-32 max-lg:items-center text-lg font-medium py-4 gap-8">
               <Link
                 onClick={() => setOpen(!open)}
                 href="/about"

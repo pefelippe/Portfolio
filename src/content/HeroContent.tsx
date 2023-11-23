@@ -11,7 +11,7 @@ export default function About() {
         initial={{ opacity: 0, x: -75 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.75 }}
-        className="text-[16px] md:text-[20px] font-regular w-full md:w-[420px]"
+        className="text-[20px] font-regular w-full md:w-[420px]"
       >
         Hello! I’m a UI/UX designer strongly focused on creating beautiful,
         functional UI’s.

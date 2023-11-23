@@ -5,10 +5,10 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex w-full   z-40 backdrop bg-white  shadow h-[10vh] text-[#222222]  ">
-      <div className="flex w-full max-w-7xl mx-auto items-center justify-between">
-        <Link href="/#" className="block w-full py-3 pl-6">
-          <p className="  text-[22px] font-semibold">Pedro Felippe</p>
+    <header className="flex w-full   z-40 backdrop bg-white  shadow  text-[#222222] h-[72px] ">
+      <div className="flex w-full max-w-7xl mx-auto items-center justify-between max-lg:px-6">
+        <Link href="/#">
+          <p className=" text-2xl text-[#2E2E2E] font-bold">Pedro Felippe</p>
         </Link>
 
         <div className="relative flex items-center  justify-between pr-6 ">
@@ -17,7 +17,7 @@ const Navbar = () => {
             id="navbarToggler"
             className={` ${
               open && "navbarTogglerActive border-2"
-            } absolute right-0 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary mx-6
+            } absolute right-0 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary
             focus:ring-2 lg:hidden  border-[#242424]`}
           >
             <span className="relative my-[6px] block h-[4px] w-[30px] bg-[#222222] "></span>
@@ -33,11 +33,11 @@ const Navbar = () => {
               !open && "hidden"
             } `}
           >
-            <ul className=" flex max-lg:flex-col w-fit gap-32 max-lg:items-center lg:gap-12">
+            <ul className=" flex max-lg:flex-col w-fit max-lg:gap-32 max-lg:items-center text-[20px] font-medium">
               <Link
                 onClick={() => setOpen(!open)}
                 href="/about"
-                className="flex py-2   lg:inline-flex font-medium text-lg max-lg:text-7xl"
+                className="hover:underline py-4 px-6"
               >
                 About
               </Link>
@@ -45,14 +45,14 @@ const Navbar = () => {
                 onClick={() => setOpen(!open)}
                 target="_blank"
                 href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0"
-                className="flex py-2   lg:inline-flex font-medium text-lg max-lg:text-7xl"
+                className="hover:underline py-4 px-6"
               >
                 Resume
               </Link>
               <Link
                 onClick={() => setOpen(!open)}
                 href="/contact"
-                className="flex py-2   lg:inline-flex font-medium text-lg max-lg:text-7xl"
+                className="hover:underline py-4 px-6"
               >
                 Contact
               </Link>

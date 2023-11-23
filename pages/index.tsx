@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 
 import HeroContent from "../src/content/HeroContent";
+import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className="z-10 flex flex-col justify-center gap-[5vh] lg:gap-[10vh]  mx-auto w-full  h-fit  min-h-[90vh]  items-start  px-6 overflow-hidden">
+    <motion.div
+      className="z-10 flex flex-col justify-start gap-10 py-10   max-w-7xl
+     mx-auto w-full  h-fit  min-h-[90vh]  items-start  max-lg:px-6 overflow-hidden"
+    >
       <HeroContent />
+      <ProjectContent />
     </motion.div>
   );
 }

@@ -10,7 +10,7 @@ function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="mx-auto flex flex-col w-full max-lg:text-center items-center px-6 max-lg:py-10
-      lg:items-start  justify-center max-w-7xl gap-4 h-fit lg:min-h-[90vh]"
+      lg:items-start  justify-center max-w-7xl gap-4 h-fit lg:min-h-[80vh]"
     >
       <div className="relative h-full w-full flex justify-between gap-6 lg:gap-20 max-lg:flex-col items-center ">
         <div className="relative flex flex-col justify-center lg:max-w-xl w-full h-full ">
@@ -19,7 +19,7 @@ function Contact() {
               Contact-me.
             </h1>
 
-            <h3 className="w-full text-[16px] lg:text-[20px] lg:max-w-lg lg:mb-10">
+            <h3 className="w-full text-[16px] lg:text-[20px] lg:max-w-lg ">
               I'm here to help bring your online ideas to reality. Drop me a
               message and let's make your web dreams happen!
             </h3>

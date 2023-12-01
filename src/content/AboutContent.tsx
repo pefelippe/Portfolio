@@ -13,16 +13,16 @@ function AboutContent() {
             scale: 1.01,
             transition: { duration: 0.1 },
           }}
-          src="/assets/avatar-pdr.png"
+          src="/assets/pedrof.jpg"
           alt="me"
-          className="max-lg:max-h-[250px]  w-full max-w-lg h-[600px] object-cover rounded-xl max-xl:hidden"
+          className="max-lg:max-h-[350px]  w-full lg:max-w-[450px] shadow h-[550px] object-cover rounded-xl"
         />
 
         <motion.div
           initial={{ opacity: 0, y: -75 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75 }}
-          className="relative text-[#888]  font-extralight text-xl  gap-4 flex flex-col  h-full w-full items-center lg:max-w-2xl"
+          className="relative text-[#888]  font-extralight text-xl  gap-4 flex flex-col  h-full w-full items-start lg:max-w-2xl"
         >
           <h1 className="text-4xl lg:text-6xl text-[#222222] font-bold leading-[1.2]">
             About-me.

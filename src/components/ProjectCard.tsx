@@ -21,29 +21,36 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <motion.div className="w-full h-full" transition={{ duration: 1 }}>
+    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow  ">
       <Link
-        className="flex flex-col mx-auto  w-full  justify-start  min-h-fit h-[300px]
-       items-center text-start "
+        className="flex flex-col mx-auto  w-full  justify-start  min-h-fit h-[250px] items-center text-start "
         href={link}
       >
         <motion.img
-          whileHover={{
-            scale: 1.01,
-            transition: { duration: 0.1 },
-          }}
           src={imgUrl}
           alt="card image"
-          className="flex-shrink-0 object-cover transition-all flex h-full w-full rounded-md  "
+          className="flex-shrink-0 object-cover transition-all flex h-full w-full   "
         />
       </Link>
-      <div className="flex flex-col pt-2  text-[#222] text-center">
-        <p className="text-[22px] font-semibold">{title}</p>
-        <p className="font-regular text-[16px] md:text-[18px] ">
+      <div className="flex flex-col  text-start p-5 rounded-sm">
+        <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-whit">
+          {title}
+        </h5>
+        <p className="mb-2 font-normal text-xl text-gray-700 dark:text-gray-400">
           {description}
         </p>
+
+        <Link
+          href={link}
+          className="inline-flex items-center px-6 bg-blue hover:bg-blue/90 transition-all  gap-2 py-2 text-lg w-fit
+          font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 
+          focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 
+          dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Live Demo
+        </Link>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

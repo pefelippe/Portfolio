@@ -46,7 +46,7 @@ const Navbar = () => {
           <p className=" text-[24px]  font-bold">Pedro Felippe</p>
         </Link>
 
-        <div className="max-lg:hidden flex items-center text-[20px] font-medium py-5 gap-8">
+        <div className="max-lg:hidden flex items-center text-[18px] font-medium py-5 gap-8">
           <Links />
         </div>
 

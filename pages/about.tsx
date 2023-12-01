@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <motion.div
       className="flex flex-col justify-start lg:justify-center gap-12 w-full mx-auto h-fit max-w-7xl
-     min-h-[90vh] items-center lg:items-start py-8 px-6"
+     min-h-[85vh] items-center lg:items-start py-8 px-6"
     >
       <div className="flex gap-6 lg:gap-24 items-center relative max-lg:max-w-xl max-lg:mx-auto max-lg:flex-col ">
         <motion.img

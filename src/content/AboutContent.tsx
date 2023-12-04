@@ -5,8 +5,10 @@ import Skills from "../components/Skills";
 
 function AboutContent() {
   return (
-    <motion.div className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl
-     min-h-[50vh] max-lg:py-5 lg:min-h-screen max-lg:text-center items-center lg:items-start    ">
+    <motion.div
+      className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl
+     min-h-[50vh] max-lg:py-5  items-center lg:items-start    "
+    >
       <div className="flex gap-6 lg:gap-12 xl:gap-20 items-center relative  max-lg:flex-col ">
         <motion.img
           initial={{ opacity: 0, x: -75 }}
@@ -18,7 +20,7 @@ function AboutContent() {
           }}
           src="/assets/pedrof.jpg"
           alt="me"
-          className="max-lg:max-h-[350px]  w-full lg:max-w-[450px] shadow h-[550px] object-cover rounded-xl"
+          className="max-lg:max-h-[250px]  w-full lg:max-w-[450px] shadow h-[550px] object-cover rounded-xl"
         />
 
         <motion.div
@@ -28,7 +30,7 @@ function AboutContent() {
           className="relative text-[#888]  font-extralight text-xl  gap-4 flex flex-col  h-full w-full items-start lg:max-w-2xl"
         >
           <h1 className="text-4xl lg:text-6xl text-[#222222] font-bold leading-[1.2]">
-            About-me.
+            Pedro Felippe
           </h1>
 
           <p>

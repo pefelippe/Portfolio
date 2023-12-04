@@ -20,7 +20,7 @@ function AboutContent() {
           }}
           src="/assets/pedrof.jpg"
           alt="me"
-          className="max-lg:max-h-[250px]  w-full lg:max-w-[450px] shadow h-[550px] object-cover rounded-xl"
+          className="max-lg:max-h-[300px]  w-full lg:max-w-[450px] shadow h-[550px] object-cover rounded-xl"
         />
 
         <motion.div

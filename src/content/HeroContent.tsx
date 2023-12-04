@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <motion.div
-      className="flex  w-full   flex-col  text-start gap-2
-    items-start  max-w-7xl mx-auto"
+      className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl
+      min-h-[50vh] max-lg:py-5 lg:min-h-screen max-lg:text-center items-center lg:items-start  "
     >
       <motion.span
         initial={{ opacity: 0, x: -75 }}

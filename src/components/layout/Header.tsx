@@ -39,18 +39,19 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex w-full   z-40 backdrop bg-white    text-[#101010] h-[72px] "
+      className="flex w-screen fixed border-b border-r border-l rounded-sm z-40 backdrop bg-white mx-auto
+         text-[#101010] h-[88px]  top-0 left-0 right-[10]"
     >
-      <div className="flex w-full max-w-7xl mx-auto items-center justify-between px-6">
+      <div className="flex w-full max-w-7xl mx-auto items-center justify-between max-lg:px-6">
         <Link href="/#">
           <p className=" text-[24px]  font-bold">Pedro Felippe</p>
         </Link>
 
-        <div className="max-lg:hidden flex items-center text-[18px] font-medium py-5 gap-8">
+        <div className="flex items-center text-[18px] font-medium py-5 gap-8">
           <Links />
         </div>
 
-        <div className="relative flex items-center  justify-between  lg:hidden">
+        <div className="relative  items-center  justify-between  hidden">
           <button
             onClick={() => setOpen(!open)}
             id="navbarToggler"

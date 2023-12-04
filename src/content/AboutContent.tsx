@@ -1,9 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
+import Skills from "../components/Skills";
+
 function AboutContent() {
   return (
-    <motion.div className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl min-h-[50vh] max-lg:py-5 lg:min-h-[70vh] max-lg:text-center items-center lg:items-start    ">
+    <motion.div className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl
+     min-h-[50vh] max-lg:py-5 lg:min-h-screen max-lg:text-center items-center lg:items-start    ">
       <div className="flex gap-6 lg:gap-12 xl:gap-20 items-center relative  max-lg:flex-col ">
         <motion.img
           initial={{ opacity: 0, x: -75 }}
@@ -42,7 +45,7 @@ function AboutContent() {
             </span>
             .
           </p>
-          {/* <Skills /> */}
+          <Skills />
         </motion.div>
       </div>
     </motion.div>

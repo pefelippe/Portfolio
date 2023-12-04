@@ -9,7 +9,7 @@ function AboutContent() {
       className="flex flex-col justify-center gap-12 w-full mx-auto  max-w-7xl
      min-h-[50vh] max-lg:py-5  items-center lg:items-start    "
     >
-      <div className="flex gap-6 lg:gap-12 xl:gap-20 items-center relative  max-lg:flex-col ">
+      <div className="flex gap-6 lg:gap-12 xl:gap-24 items-center relative  max-lg:flex-col ">
         <motion.img
           initial={{ opacity: 0, x: -75 }}
           animate={{ opacity: 1, x: 0 }}
@@ -27,7 +27,7 @@ function AboutContent() {
           initial={{ opacity: 0, y: -75 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75 }}
-          className="relative text-[#888]  font-extralight text-xl  gap-4 flex flex-col  h-full w-full items-start lg:max-w-2xl"
+          className="relative text-[#888]  font-extralight text-xl  gap-4 flex flex-col  h-full w-full items-start lg:max-w-4xl"
         >
           <h1 className="text-4xl lg:text-6xl text-[#222222] font-bold leading-[1.2]">
             Pedro Felippe

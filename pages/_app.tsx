@@ -6,6 +6,8 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Footer from "../src/components/layout/Footer";
+import Header from "../src/components/layout/Header";
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
@@ -23,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Analytics />
 
-      {/* <Header /> */}
+      <Header />
       <Component {...pageProps} />
       <Footer />
     </motion.div>

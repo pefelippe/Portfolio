@@ -40,7 +40,7 @@ const Navbar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="flex w-screen fixed border-b border-r border-l rounded-sm z-40 backdrop bg-white mx-auto
-         text-[#101010] h-[88px]  top-0 left-0 right-[10]"
+         text-[#101010] h-[10vh]  top-0 left-0 right-10"
     >
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between max-lg:px-6">
         <Link href="/#">
@@ -48,7 +48,7 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center text-[18px] font-medium py-5 gap-8">
-          <Links />
+          {/* <Links /> */}
         </div>
 
         <div className="relative  items-center  justify-between  hidden">
@@ -71,7 +71,7 @@ const Navbar = () => {
             text-[24px]  font-medium  py-10 
               ${!open && "hidden"} `}
           >
-            <Links />
+            {/* <Links /> */}
           </nav>
         </div>
       </div>

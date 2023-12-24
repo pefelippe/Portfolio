@@ -51,7 +51,7 @@ export default function MessageForm({}) {
   return (
     <div
       className="flex flex-col items-center text-center  h-fit 
-      text-white rounded-md gap-2 w-full lg:max-w-xl"
+      text-white rounded-md gap-2 w-full lg:max-w-2xl"
     >
       <form
         onSubmit={handleSubmit(onSubmit)}

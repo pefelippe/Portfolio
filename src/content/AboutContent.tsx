@@ -47,7 +47,7 @@ function AboutContent() {
             </span>
             .
           </p>
-          <Skills />
+          {/* <Skills /> */}
         </motion.div>
       </div>
     </motion.div>

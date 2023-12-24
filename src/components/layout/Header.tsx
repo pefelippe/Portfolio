@@ -40,7 +40,7 @@ const Navbar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="flex w-screen   rounded-sm z-40 backdrop text-white mx-auto
-         bg-[#101010] h-[10vh]  top-0 left-0 right-10"
+         bg-[#121212] h-[10vh]  top-0 left-0 right-10"
     >
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between max-lg:px-6">
         <Link href="/#">

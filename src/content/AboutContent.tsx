@@ -42,7 +42,7 @@ function AboutContent() {
         transition={{ duration: 0.75 }}
         src="/assets/pedrof.jpg"
         alt="me"
-        className="h-fit shadow object-cover rounded-xl max-xl:hidden max-h-[80vh]"
+        className="h-fit shadow object-cover rounded-xl max-xl:hidden max-h-[60vh]"
       />
     </motion.div>
   );

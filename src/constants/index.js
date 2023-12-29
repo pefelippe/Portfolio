@@ -64,22 +64,22 @@ export const technologies = [
       "Ambiente de execução do JavaScript fora do navegador, para construção de aplicações server-side",
     imgUrl: "/assets/tech/nodejs.png",
   },
-  {
-    name: "MongoDB",
-    description: "Banco de dados NoSQL orientado a documentos",
-    imgUrl: "/assets/tech/mongodb.png",
-  },
+  // {
+  //   name: "MongoDB",
+  //   description: "Banco de dados NoSQL orientado a documentos",
+  //   imgUrl: "/assets/tech/mongodb.png",
+  // },
   {
     name: "Git",
     description: "Sistema de controle de versão",
     imgUrl: "/assets/tech/git.png",
   },
-  {
-    name: "Figma",
-    description:
-      "Ferramenta de design colaborativa para criação de interfaces gráficas",
-    imgUrl: "/assets/tech/figma.png",
-  },
+  // {
+  //   name: "Figma",
+  //   description:
+  //     "Ferramenta de design colaborativa para criação de interfaces gráficas",
+  //   imgUrl: "/assets/tech/figma.png",
+  // },
   {
     name: "Docker",
     description:

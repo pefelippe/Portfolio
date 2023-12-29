@@ -9,7 +9,7 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mx-auto flex flex-col w-full items-center lg:items-centerx
+      className="mx-auto flex flex-col w-full items-center lg:items-center min-h-screen
       justify-center max-w-7xl gap-4  "
     >
       <div className="relative h-full w-full flex justify-between gap-6 lg:gap-20 max-lg:flex-col items-center ">

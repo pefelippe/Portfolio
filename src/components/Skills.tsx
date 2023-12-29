@@ -11,7 +11,7 @@ function Skills() {
       transition={{ duration: 0.75 }}
       className=" text-xl  font-thin flex flex-col  items-center   "
     >
-      <div className="grid grid-cols-5 lg:grid-cols-9 gap-8">
+      <div className="grid grid-cols-7 gap-5 xl:gap-8">
         {technologies.map((tech) => {
           return (
             <motion.div
@@ -22,7 +22,7 @@ function Skills() {
               key={tech.name}
               className="flex flex-col items-center w-full"
             >
-              <Image width={50} height={50} src={tech.imgUrl} alt={tech.name} />
+              <Image width={60} height={60} src={tech.imgUrl} alt={tech.name} />
             </motion.div>
           );
         })}

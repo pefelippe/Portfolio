@@ -9,7 +9,7 @@ function Links() {
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 1 }}
-      className="w-fit flex  items-center  justify-center gap-8 text-[#001514] "
+      className="w-fit flex  items-center  justify-center gap-6 text-[#fff] "
     >
       <AnimatedBtn
         className="rounded-md   font-semibold "

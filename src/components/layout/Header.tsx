@@ -45,13 +45,29 @@ const Navbar = () => {
     >
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between px-6">
         <Link href="/#">
-          <p className=" text-[24px]  font-semibold">Pedro Felippe</p>
+          <p className=" text-xl font-semibold -tracking-tight">
+            Pedro Felippe
+          </p>
         </Link>
 
-        <div className="flex items-center text-[18px] font-medium py-5 gap-8">
-          <Socials />
+        <div className="w-fit mx-auto justify-center gap-6 flex max-md:hidden">
+          <Link
+            href="/"
+            className="uppercase tracking-[3px] font-semibold transition-all rounded-xl text-base hover:text-gray-300"
+          >
+            Home
+          </Link>
+          <Link
+            href="/contact"
+            className="uppercase tracking-[3px] font-semibold transition-all rounded-xl text-base hover:text-gray-300"
+          >
+            Contact
+          </Link>
         </div>
 
+        <div className="flex items-center text-[18px] font-medium py-5 gap-8 ">
+          <Socials />
+        </div>
         <div className="relative  items-center  justify-between  hidden">
           <button
             onClick={() => setOpen(!open)}

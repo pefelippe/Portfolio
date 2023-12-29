@@ -1,12 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 import Skills from "../components/Skills";
 
 function AboutContent() {
   return (
     <motion.div
-      className="flex justify-center w-full mx-auto  max-w-7xl  h-fit pt-[25vh] px-6 max-h-[80vh] min-h-fit
-       gap-20 items-center relative  max-xl:flex-col  "
+      className="flex justify-between w-full mx-auto  max-w-7xl  h-fit pt-[25vh] px-6 max-h-[80vh] min-h-fit
+       items-center relative  max-xl:flex-col  "
     >
       <motion.div
         initial={{ opacity: 0, y: -75 }}
@@ -26,7 +28,7 @@ function AboutContent() {
           Pedro Felippe
         </h1>
 
-        <p className=" text-gray-300 font-thin text-base xl:text-xl max-xl:text-center pb-4">
+        <p className=" text-gray-300 font-thin text-base xl:text-xl max-xl:max-w-xl max-xl:text-center pb-4">
           I have been developing digital products since 2018, including web
           applications, PWAs, websites, e-commerce solutions, and mobile apps
           that assist organizations in refining their online presence and
@@ -34,6 +36,13 @@ function AboutContent() {
         </p>
 
         <Skills />
+
+        <Link
+          href="/contact"
+          className="text-uppercase font-semibold hover:bg-gray-600 transition-all rounded-xl text-xl p-3 px-9 border-2 mt-4 max-xl:w-full max-w-xl text-center"
+        >
+          Contact-me
+        </Link>
       </motion.div>
 
       <motion.img

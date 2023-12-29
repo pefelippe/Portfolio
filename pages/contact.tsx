@@ -15,7 +15,7 @@ function Contact() {
       <div className="relative h-full w-full flex justify-between gap-6 lg:gap-20 max-lg:flex-col items-center ">
         <div className="relative flex flex-col justify-center lg:max-w-xl w-full h-full ">
           <div className="w-full lg:max-w-2xl  text-[#888] text-xl gap-4 flex flex-col mb-4">
-            <h1 className="text-4xl lg:text-6xl  font-bold leading-[1.2] text-[#222222] ">
+            <h1 className="text-4xl lg:text-6xl  font-bold leading-[1.2] text-[#f9f9f9] ">
               Contact-me.
             </h1>
 
@@ -25,15 +25,15 @@ function Contact() {
             </h3>
           </div>
 
-          <div className="flex gap-3  rounded-full text-[#222222] py-3 max-lg:mx-auto ">
+          <div className="flex gap-3  rounded-full text-[#f9f9f9] w-fit  max-lg:mx-auto bg-[#202020] justify-center items-center ">
             <motion.img
               src="/assets/vito.jpg"
               alt="me"
-              className="rounded-full h-12 w-12"
+              className="rounded-full h-16 w-16"
             />
-            <div className="flex flex-col justify-center ">
+            <div className="flex flex-col justify-center pr-3 ">
               <h3 className="font-medium text-sm lg:text-md">
-                "I’m gonna make him an offer he can’t refuse."
+                I’m gonna make him an offer he can’t refuse.
               </h3>
               <h3 className="font-bold text-sm">Vito Corleone</h3>
             </div>

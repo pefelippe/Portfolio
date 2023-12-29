@@ -39,7 +39,8 @@ function AboutContent() {
 
         <Link
           href="/contact"
-          className="text-uppercase font-semibold hover:bg-gray-600 transition-all rounded-xl text-xl p-3 px-9 border-2 mt-4 max-xl:w-full max-w-xl text-center"
+          className="text-uppercase font-semibold hover:bg-blue hover:underline
+          transition-all rounded-xl text-xl p-3 px-9 border-2 border-blue mt-4 max-xl:w-full max-w-xl text-center"
         >
           Contact-me
         </Link>

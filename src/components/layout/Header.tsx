@@ -44,7 +44,7 @@ const Navbar = () => {
       className="flex w-screen bg-[#090909] fixed  rounded-sm z-40 backdrop text-white mx-auto h-[10vh]  top-0 left-0 right-10 "
     >
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between px-6">
-        <Link href="/#">
+        <Link href="/">
           <p className=" text-xl font-semibold -tracking-tight">
             Pedro Felippe
           </p>

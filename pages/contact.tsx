@@ -13,7 +13,7 @@ function Contact() {
       items-center relative  max-xl:flex-col "
     >
       <div className="relative h-full w-full flex justify-between gap-6 lg:gap-20 max-lg:flex-col items-center ">
-        <div className="relative flex flex-col justify-center lg:max-w-xl w-full h-full ">
+        <div className=" flex flex-col gap-4 lg:max-w-xl w-full h-full ">
           <div className="w-full lg:max-w-2xl  text-[#888] text-xl gap-4 flex flex-col mb-4">
             <h1 className="text-4xl lg:text-6xl  font-bold leading-[1.2] text-[#f9f9f9] ">
               Contact-me.
@@ -21,13 +21,13 @@ function Contact() {
 
             <h3 className="w-full text-[16px] lg:text-[20px] lg:max-w-lg ">
               I'm here to help bring your online ideas to reality. Drop me a
-              message and let's make your web dreams happen!
+              message and let's make things happen!
             </h3>
           </div>
 
           <div
             className="flex gap-3  rounded-full text-[#f9f9f9] w-fit 
-           max-lg:mx-auto bg-[#181818] justify-center items-center mt-auto"
+           max-lg:mx-auto bg-[#181818] justify-center items-center "
           >
             <motion.img
               src="/assets/vito.jpg"

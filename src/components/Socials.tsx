@@ -30,7 +30,7 @@ function Links() {
       <AnimatedBtn
         className="rounded-md  font-semibold"
         target="_blank"
-        href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0/edit?usp=sharing"
+        href="https://www.canva.com/design/DAF4ag89vUY/gjr8C6XNtvnagWcuDl5bzQ/edit?utm_content=DAF4ag89vUY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
       >
         <FaFilePdf className="headerSocial" />
       </AnimatedBtn>

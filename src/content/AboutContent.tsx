@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 import Skills from "../components/Skills";
 
@@ -37,13 +36,22 @@ function AboutContent() {
 
         <Skills />
 
-        <Link
-          href="/contact"
-          className="text-uppercase font-semibold hover:bg-blue hover:underline
-          transition-all rounded-xl text-xl p-3 px-9 border-2 border-blue mt-4 max-xl:w-full max-w-xl text-center"
-        >
-          Contact-me
-        </Link>
+        {/* <div className="mt-4 flex items-center gap-4">
+          <Link
+            href="/contact"
+            className="text-uppercase font-semibold hover:underline
+          transition-all rounded-xl text-xl p-3  max-xl:w-full max-w-xl text-center"
+          >
+            Projects
+          </Link>
+          <Link
+            href="/contact"
+            className="text-uppercase font-semibold hover:bg-blue hover:underline
+          transition-all rounded-xl text-xl p-3 px-9 border-2 border-blue  max-xl:w-full max-w-xl text-center"
+          >
+            Contact-me
+          </Link>
+        </div> */}
       </motion.div>
 
       <motion.img

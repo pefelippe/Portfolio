@@ -22,7 +22,7 @@ function Skills() {
               key={tech.name}
               className="flex flex-col items-center w-full"
             >
-              <Image width={60} height={60} src={tech.imgUrl} alt={tech.name} />
+              <Image width={50} height={50} src={tech.imgUrl} alt={tech.name} />
             </motion.div>
           );
         })}

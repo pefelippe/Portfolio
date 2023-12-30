@@ -41,7 +41,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex w-screen bg-[#080808] fixed  rounded-sm z-40 backdrop text-white mx-auto h-[10vh]  top-0 left-0 right-10 "
+      className="flex w-screen bg-[#090909] fixed  rounded-sm z-40 backdrop text-white mx-auto h-[10vh]  top-0 left-0 right-10 "
     >
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between px-6">
         <Link href="/#">
@@ -56,6 +56,12 @@ const Navbar = () => {
             className="uppercase tracking-[3px] font-semibold transition-all rounded-xl text-base hover:text-gray-300"
           >
             Home
+          </Link>
+          <Link
+            href="/projects"
+            className="uppercase tracking-[3px] font-semibold transition-all rounded-xl text-base hover:text-gray-300"
+          >
+            Projects
           </Link>
           <Link
             href="/contact"

@@ -47,28 +47,28 @@ export const technologies = [
       "Biblioteca JavaScript para construção de interfaces de usuário declarativas e reutilizáveis",
     imgUrl: "/assets/tech/reactjs.png",
   },
-  {
-    name: "RTK",
-    description:
-      "Ferramenta oficial do Redux para gerenciamento de estado em aplicações React",
-    imgUrl: "/assets/tech/redux.png",
-  },
-  {
-    name: "Tailwind",
-    description: "Framework CSS utilitário para estilização de interfaces",
-    imgUrl: "/assets/tech/tailwind.png",
-  },
+  // {
+  //   name: "RTK",
+  //   description:
+  //     "Ferramenta oficial do Redux para gerenciamento de estado em aplicações React",
+  //   imgUrl: "/assets/tech/redux.png",
+  // },
+  // {
+  //   name: "Tailwind",
+  //   description: "Framework CSS utilitário para estilização de interfaces",
+  //   imgUrl: "/assets/tech/tailwind.png",
+  // },
   {
     name: "Node JS",
     description:
       "Ambiente de execução do JavaScript fora do navegador, para construção de aplicações server-side",
     imgUrl: "/assets/tech/nodejs.png",
   },
-  // {
-  //   name: "MongoDB",
-  //   description: "Banco de dados NoSQL orientado a documentos",
-  //   imgUrl: "/assets/tech/mongodb.png",
-  // },
+  {
+    name: "MongoDB",
+    description: "Banco de dados NoSQL orientado a documentos",
+    imgUrl: "/assets/tech/mongodb.png",
+  },
   {
     name: "Git",
     description: "Sistema de controle de versão",

@@ -9,9 +9,9 @@ function Skills() {
       initial={{ opacity: 0, x: 75 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.75 }}
-      className=" text-xl  font-thin flex flex-col  items-center   "
+      className=" text-xl  font-thin flex flex-col  items-start max-xl:items-center  "
     >
-      <div className="grid grid-cols-7 gap-5 xl:gap-8">
+      <div className="grid grid-cols-6 gap-4 ">
         {technologies.map((tech) => {
           return (
             <motion.div

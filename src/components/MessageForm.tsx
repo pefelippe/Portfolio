@@ -51,7 +51,7 @@ export default function MessageForm({}) {
   return (
     <div
       className="flex flex-col items-center text-center  h-fit 
-      text-white rounded-md gap-2 w-full lg:max-w-2xl"
+      text-white rounded-md gap-2 w-full max-w-2xl"
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -64,7 +64,7 @@ export default function MessageForm({}) {
               id="first-name"
               placeholder="Enter your name"
               className="shadow border border-[#242424] px-6 py-4 w-full 
-              rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
+              rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/70"
             />
           </div>
           <input
@@ -72,7 +72,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className="shadow border border-[#242424] px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
+            className="shadow border border-[#242424] px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/70"
           />
         </div>
 
@@ -81,13 +81,13 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className=" border border-[#242424] px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[450px] shadow  bg-[#202020]/10"
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[400px] shadow  bg-[#202020]/70"
         />
 
         <motion.button
           type="submit"
           className="bg-blue/95 hover:bg-blue/80 text-white py-4  px-12 rounded-md justify-start w-full  mx-auto
-          transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500bg-[#f5f5f5] "
+          transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 "
         >
           {isLoading ? "Sending..." : "Start partnership!"}
         </motion.button>

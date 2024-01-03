@@ -6,45 +6,26 @@ import Links from "../components/Socials";
 function AboutContent() {
   return (
     <motion.div
-      className="flex justify-between w-full mx-auto  max-w-7xl  h-fit  px-6 
-       items-center relative  max-xl:flex-col  "
+      className="flex justify-center w-full mx-auto min-h-fit py-10 xl:py-20 gap-10
+       items-center relative  max-xl:flex-colm max-w-7xl text-white "
     >
       <motion.div
         initial={{ opacity: 0, y: -75 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
-        className="font-extralight text-xl  gap-4 flex flex-col  h-full w-full justify-center items-start xl:max-w-2xl"
+        className="font-extralight text-xl  flex flex-col gap-4
+         h-full w-full justify-center text-center items-center xl:max-w-3xl"
       >
-        <motion.img
-          initial={{ opacity: 0, x: -75 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.75 }}
-          src="/assets/avatar-pdr.png"
-          alt="me"
-          className="flex w-28 h-28 xl:w-32 xl:h-32  rounded-full xl:hidden"
-        />
-        <h1 className="text-5xl xl:text-7xl  font-bold leading-[1.2]">
-          Hello 👋🏻 I'm a Software Engineer from Brazil
+        <h1 className="text-[40px] xl:text-8xl max-w-3xl font-bold leading-relaxed tracking-tighter ">
+          Hello, <br />
+          I'm Pedro Felippe. <br />
         </h1>
 
-        <p className=" text-gray-900 font-thin text-base xl:text-xl max-xl:max-w-lg  pb-4">
-          I have been developing digital products since 2018, including web
-          applications, PWAs, websites, e-commerce solutions, and mobile apps
-          that assist organizations in refining their online presence and
-          fostering growth.
-        </p>
+        <h3 className="font-thin text-xl xl:text-3xl max-xl:max-w-lg text-[#f9f9f9]">
+          A Software Engineer based in Brazil.
+        </h3>
         <Links />
- 
       </motion.div>
-
-      <motion.img
-        initial={{ opacity: 0, x: -75 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.75 }}
-        src="/assets/pedrof.jpg"
-        alt="me"
-        className="h-fit shadow object-cover rounded-xl max-xl:hidden max-h-[60vh]"
-      />
     </motion.div>
   );
 }

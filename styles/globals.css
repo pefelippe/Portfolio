@@ -10,68 +10,14 @@
   }
 }
 
-.freeMode {
-  width: 100%;
-  height: 700px;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.dark {
-  @apply bg-white text-gray-900;
-}
-
-.btnSocial {
-  @apply justify-center text-sm font-medium 
-  transition-colors focus-visible:outline-none 
-  h-10 flex items-center gap-2 rounded-lg 
-  border-2 px-4 py-3 dark:text-white  lg:inline-flex;
-}
-
-.headerLink {
-  @apply hover:text-blue hover:underline underline-offset-8 decoration-blue h-full active:text-blue;
-}
-
 .headerSocial {
-  @apply h-8 w-8;
+  @apply h-10 w-10;
 }
 
-.contactInput {
+/* .contactInput {
   @apply outline-none bg-gray-500/10  w-full px-4 py-4 rounded
   border-[1px] border-[#242424]   text-[#242424] placeholder-gray-500 transition-all focus:border-[#5865f2];
-}
-
-.headerContentSelected {
-  @apply underline decoration-2 decoration-[#5865f2] underline-offset-8;
-}
-
-.headerContent {
-  @apply hover:opacity-80 transition-all;
-}
-
-.iconHeader {
-  @apply w-fit text-lg mx-2 rounded-full hover:opacity-80 transition-all;
-}
+} */
 
 @layer pages {
   .component {

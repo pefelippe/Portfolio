@@ -5,15 +5,17 @@ import "../styles/globals.css";
 
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Header from "../src/components/layout/Header";
+import Footer from "../src/components/layout/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
       className={`
-    overflow-x-hidden overflow-y-scroll h-screen min-h-fit min-w-[400px] mx-auto scroll-smooth w-full z-20
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-blue scrollbar-track-[#929af6] overflow-hidden
-     font-bricolage-grotesque text-[#FBFFFE] bg-[#080808]`}
+        overflow-x-hidden overflow-y-scroll min-h-screen min-w-[400px] mx-auto 
+        scroll-smooth w-full font-antialiased flex flex-col
+        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-blue 
+        scrollbar-track-[#929af6] overflow-hidden
+        text-[#101010] bg-[#FBFFFE]`}
     >
       <Head>
         <title>Pedro Felippe</title>
@@ -24,9 +26,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Analytics />
 
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </motion.div>
   );
 }

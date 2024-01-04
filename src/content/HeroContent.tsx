@@ -21,8 +21,11 @@ export default function About() {
         initial={{ opacity: 0, x: -75 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.75 }}
-        className="flex flex-col w-full gap-8"
+        className="flex flex-col w-full gap-4"
       >
+        <h4 className="text-md px-2 bg-blue font-medium w-fit text-white uppercase tracking-[2px]">
+          About-me
+        </h4>
         <h1 className="text-5xl xl:text-6xl  font-bold leading-[1.2] max-w-xl w-fit ">
           Creativity to <span className="">build digital solutions</span>
         </h1>

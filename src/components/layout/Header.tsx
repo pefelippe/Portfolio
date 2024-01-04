@@ -39,7 +39,7 @@ const Header = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex w-screen   rounded-sm z-40 backdrop mx-auto h-18 py-4 "
+      className="flex w-screen  fixed rounded-sm z-40 backdrop mx-auto h-18 py-4 bg-transparent"
     >
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between ">
         <Link href="/">

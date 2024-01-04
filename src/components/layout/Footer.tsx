@@ -5,8 +5,8 @@ function Footer() {
 
   return (
     <motion.footer
-      className="z-40 h-20  font-extralight items-center  flex mx-auto text-[#101010]  w-screen
-     text-lg  justify-between max-xl:px-6 max-w-7xl"
+      className="z-40 h-20 w-screen font-extralight items-center  flex mx-auto  text-[#fff] bg-[#000]
+     text-lg  justify-center max-xl:px-6 "
     >
       <p>Pedro Felippe © {year}</p>
     </motion.footer>

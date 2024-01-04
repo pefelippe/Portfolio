@@ -71,13 +71,10 @@ export default function MessageForm({}) {
       );
   };
 
-
-
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-
       <DialogTrigger>
-        <div className="bg-blue px-12 font-normal rounded-md py-3 text-2xl">
+        <div className="bg-blue/95 hover:bg-blue/80 hover:underline px-12 font-normal rounded-md py-3 text-2xl">
           Let's chat!
         </div>
       </DialogTrigger>

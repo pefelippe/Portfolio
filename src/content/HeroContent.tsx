@@ -1,48 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import Skills from "../components/Skills";
+import Links from "../components/Socials";
 
-export default function About() {
+function AboutContent() {
   return (
     <motion.div
-      className="flex justify-center w-full mx-auto  max-w-6xl py-24 gap-6 xl:gap-24 max-xl:text-center max-xl:max-w-3xl max-xl:flex-col
-     h-fit  items-center   "
+      className="flex justify-center w-full mx-auto min-h-fit py-10 xl:py-20 gap-10
+       items-center relative  max-xl:flex-col max-w-5xl text-white "
     >
-      <motion.img
-        initial={{ opacity: 0, x: -75 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.75 }}
-        src="/assets/pedrof.jpg"
-        alt="me"
-        className="h-fit  object-cover max-xl:rounded-full max-xl:w-28 max-xl:h-28 rounded-md  max-h-[60vh] shadow"
-      />
-
       <motion.div
-        initial={{ opacity: 0, x: -75 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: -75 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
-        className="flex flex-col w-full gap-4"
+        className="font-extralight text-xl  flex flex-col gap-4
+         h-full w-full justify-center text-center items-center xl:max-w-3xl"
       >
-        <h4 className="text-md px-2 bg-blue font-medium w-fit text-white uppercase tracking-[2px]">
-          About-me
-        </h4>
-        <h1 className="text-5xl xl:text-6xl  font-bold leading-[1.2] max-w-xl w-fit ">
-          Creativity to <span className="">build digital solutions</span>
+        <h1 className="text-[40px] xl:text-7xl max-w-3xl font-bold leading-relaxed tracking-tighter ">
+          Hello, <br />
+          I'm Pedro Felippe. <br />
         </h1>
 
-        <motion.span
-          initial={{ opacity: 0, x: -75 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.75 }}
-          className="text-[20px] font-regular w-full text-gray-700"
-        >
-          I've been coding since 2018, creating digital solutions. My focus is
-          on create simple, fast and easy to use interfaces. I deal with cloud
-          services, keeping everything connected, and making sure the databases
-          work smoothly.
-        </motion.span>
-        <Skills />
+        <h3 className="font-thin text-xl xl:text-3xl max-xl:max-w-lg text-[#f9f9f9]">
+          A Full-Stack Web Developer based in Brazil.
+        </h3>
+
+        <Links />
       </motion.div>
     </motion.div>
   );
 }
+
+export default AboutContent;

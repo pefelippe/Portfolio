@@ -8,6 +8,7 @@ import Head from "next/head";
 import Footer from "../src/components/layout/Footer";
 import { Toaster } from "../src/components/ui/toaster"
 import Header from "../src/components/layout/Header";
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
@@ -19,13 +20,13 @@ export default function App({ Component, pageProps }: AppProps) {
         text-[#101010] bg-[#FBFFFE]`}
     >
       <Head>
-        <title>Pedro Felippe</title>
+        <title>Pedro Felippe - Web Developer</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <Analytics />
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
       <Toaster />
       <Footer />

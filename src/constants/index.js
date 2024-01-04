@@ -3,39 +3,41 @@ export const projects = [
     id: 1,
     link: "https://portfolio-pefelippe.vercel.app/",
     repo: "https://github.com/pefelippe/Portfolio",
-    title: "Portfolio",
+    title: "Under Construction",
     imgUrl: "assets/portfolio.png",
     stack: ["react", "tailwind", "next", "typescript"],
-    description: "Meu primeiro portfolio pessoal. ",
+    description: "Something good will be here.",
   },
   {
     id: 2,
     link: "",
     repo: "https://github.com/pefelippe/PomodoroTunes",
-    title: "Pomodoro-fi",
-    imgUrl: "assets/pomodorotunes.png",
+    title: "Under Construction",
+    imgUrl: "assets/portfolio.png",
     stack: ["react", "tailwind", "next", "typescript"],
-    description: "Lo-fi com  pomodoro.",
+    description: "Something good will be here.",
+  },
+  {
+    id: 3,
+    link: "",
+    repo: "https://github.com/pefelippe/PomodoroTunes",
+    title: "Under Construction",
+    imgUrl: "assets/portfolio.png",
+    stack: ["react", "tailwind", "next", "typescript"],
+    description: "Something good will be here.",
+  },
+  {
+    id: 4,
+    link: "",
+    repo: "",
+    title: "Under Construction",
+    imgUrl: "assets/portfolio.png",
+    stack: ["react", "tailwind", "next", "typescript"],
+    description: "Something good will be here.",
   },
 ];
 
 export const technologies = [
-  // {
-  //   name: "HTML 5",
-  //   description: "Linguagem de marcação para criar conteúdo na web",
-  //   imgUrl: "/assets/tech/html.png",
-  // },
-  // {
-  //   name: "CSS 3",
-  //   description: "Folhas de estilo para estilizar conteúdo web",
-  //   imgUrl: "/assets/tech/css.png",
-  // },
-  // {
-  //   name: "JavaScript",
-  //   description:
-  //     "Linguagem de programação para criação de interatividade em páginas web",
-  //   imgUrl: "/assets/tech/javascript.png",
-  // },
   {
     name: "TypeScript",
     description: "Superset do JavaScript com tipagem estática",
@@ -47,17 +49,17 @@ export const technologies = [
       "Biblioteca JavaScript para construção de interfaces de usuário declarativas e reutilizáveis",
     imgUrl: "/assets/tech/reactjs.png",
   },
-  // {
-  //   name: "RTK",
-  //   description:
-  //     "Ferramenta oficial do Redux para gerenciamento de estado em aplicações React",
-  //   imgUrl: "/assets/tech/redux.png",
-  // },
-  // {
-  //   name: "Tailwind",
-  //   description: "Framework CSS utilitário para estilização de interfaces",
-  //   imgUrl: "/assets/tech/tailwind.png",
-  // },
+  {
+    name: "RTK",
+    description:
+      "Ferramenta oficial do Redux para gerenciamento de estado em aplicações React",
+    imgUrl: "/assets/tech/redux.png",
+  },
+  {
+    name: "Tailwind",
+    description: "Framework CSS utilitário para estilização de interfaces",
+    imgUrl: "/assets/tech/tailwind.png",
+  },
   {
     name: "Node JS",
     description:
@@ -87,60 +89,3 @@ export const technologies = [
     imgUrl: "/assets/tech/docker.png",
   },
 ];
-
-// const experiences = [
-//   {
-//     title: "React.js Developer",
-//     company_name: "Starbucks",
-//     icon: starbucks,
-//     iconBg: "#383E56",
-//     date: "March 2020 - April 2021",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "React Native Developer",
-//     company_name: "Tesla",
-//     icon: tesla,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2021 - Feb 2022",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Web Developer",
-//     company_name: "Shopify",
-//     icon: shopify,
-//     iconBg: "#383E56",
-//     date: "Jan 2022 - Jan 2023",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Full stack Developer",
-//     company_name: "Meta",
-//     icon: meta,
-//     iconBg: "#E6DEDD",
-//     date: "Jan 2023 - Present",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-// ];
-
-// export { services, technologies, experiences, testimonials, projects };

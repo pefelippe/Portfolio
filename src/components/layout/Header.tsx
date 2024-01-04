@@ -5,41 +5,12 @@ import { useState } from "react";
 const Header = () => {
   const [open, setOpen] = useState(false);
 
-  const Links = () => {
-    return (
-      <>
-        <Link
-          onClick={() => setOpen(!open)}
-          href="/about"
-          className="hover:underline "
-        >
-          About
-        </Link>
-        <Link
-          onClick={() => setOpen(!open)}
-          target="_blank"
-          href="https://docs.google.com/document/d/1xl45doLPK-BEZ-yLpfr7KnODSTqEJWweH2MzCqTf1S0"
-          className="hover:underline"
-        >
-          Resume
-        </Link>
-        <Link
-          onClick={() => setOpen(!open)}
-          href="/contact"
-          className="hover:underline"
-        >
-          <p className="">Contact</p>
-        </Link>
-      </>
-    );
-  };
-
   return (
     <motion.header
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex w-screen  fixed rounded-sm z-40 backdrop mx-auto h-18 py-4 bg-transparent"
+      className="flex w-screen fixed rounded-sm z-40 backdrop mx-auto h-16 p-4  bg-white"
     >
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between ">
         <Link href="/">

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import Link from "next/link";
+
+import MessageForm from "../components/MessageForm";
 
 function ContactContent() {
   return (
@@ -17,17 +18,9 @@ function ContactContent() {
             <h1 className="text-5xl xl:text-7xl  font-bold leading-[1.2] max-w-xl w-fit ">
               I'm here to help bring your ideas to reality.
             </h1>
-
-            <Link
-              href="/contact"
-              className="bg-blue px-12 font-normal rounded-md py-3 text-2xl"
-            >
-              Let's chat!
-            </Link>
           </div>
         </div>
-        <></>
-        {/* <MessageForm /> */}
+        <MessageForm />
       </div>
     </motion.div>
   );

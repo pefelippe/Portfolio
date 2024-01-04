@@ -6,8 +6,8 @@ import HeroContent from "../src/content/HeroContent";
 
 export default function Home() {
   return (
-    <motion.div className="flex flex-col  relative w-full h-full min-h-fit">
-      <section className="bg-blue">
+    <motion.div className="flex flex-col  relative w-full h-full min-h-fit mt-16 ">
+      <section className="bg-[#505ded]">
         <AboutContent />
       </section>
 

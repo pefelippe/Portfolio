@@ -5,6 +5,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { SubmitHandler } from "react-hook-form/dist/types";
 
+import { useToast } from "./ui/useToast";
+
 type Inputs = {
   firstName: string;
   lastName: string;
@@ -12,10 +14,21 @@ type Inputs = {
   message: string;
 };
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./ui/dialog";
+import { Button } from "./ui/button";
+
 export default function MessageForm({}) {
   const { register, handleSubmit, reset } = useForm<Inputs>();
-
+  const [open, setOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     setIsLoading(true);
@@ -39,59 +52,88 @@ export default function MessageForm({}) {
           console.log("enviou", res.status, res.text);
           reset();
           setIsLoading(false);
+          setOpen(false);
+          toast({
+            title: "Message Sended!",
+          });
         },
         (err: any) => {
           console.log("Um erro aconteceu", err);
           setIsLoading(false);
+          setOpen(false);
+          toast({
+            variant: "destructive",
+            title: "Uh oh! Something went wrong.",
+            description: "There was a problem with your message.",
+          });
           reset();
         }
       );
   };
 
+
+
   return (
-    <div
-      className="flex flex-col items-center text-center  h-fit 
-      text-white rounded-md gap-2 w-full max-w-2xl"
-    >
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="gap-5 w-full flex flex-col   "
-      >
-        <div className="grid gap-5  grid-cols-1 lg:grid-cols-2">
-          <div className="space-y-4">
-            <input
-              {...register("firstName", { required: true, maxLength: 50 })}
-              id="first-name"
-              placeholder="Enter your name"
-              className="shadow border border-[#242424] px-6 py-4 w-full 
-              rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/70"
-            />
-          </div>
-          <input
-            {...register("email", { required: true, maxLength: 50 })}
-            id="email"
-            placeholder="Enter your email"
-            type="email"
-            className="shadow border border-[#242424] px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/70"
-          />
+    <Dialog open={open} onOpenChange={setOpen}>
+
+      <DialogTrigger>
+        <div className="bg-blue px-12 font-normal rounded-md py-3 text-2xl">
+          Let's chat!
         </div>
+      </DialogTrigger>
 
-        <textarea
-          {...register("message", { required: true, maxLength: 500 })}
-          id="message"
-          placeholder="Message"
-          className=" border border-[#242424] px-6 py-4  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[400px] shadow  bg-[#202020]/70"
-        />
-
-        <motion.button
-          type="submit"
-          className="bg-blue/95 hover:bg-blue/80 text-white py-4  px-12 rounded-md justify-start w-full  mx-auto
-          transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 "
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Contact-me</DialogTitle>
+          <DialogDescription>
+            Drop me a message and let's make things happen!
+          </DialogDescription>
+        </DialogHeader>
+        <div
+          className="flex flex-col items-center text-center  h-fit text-[#101010]
+         rounded-md gap-2 w-full max-w-2xl"
         >
-          {isLoading ? "Sending..." : "Start partnership!"}
-        </motion.button>
-      </form>
-    </div>
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="gap-5 w-full flex flex-col   "
+          >
+            <div className="grid gap-5  grid-cols-1 lg:grid-cols-2">
+              <div className="space-y-4">
+                <input
+                  {...register("firstName", { required: true, maxLength: 50 })}
+                  id="first-name"
+                  placeholder="Enter your name"
+                  className="shadow border border-[#242424] px-6 py-4 w-full 
+                  rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
+                />
+              </div>
+              <input
+                {...register("email", { required: true, maxLength: 50 })}
+                id="email"
+                placeholder="Enter your email"
+                type="email"
+                className="shadow border border-[#242424] px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
+              />
+            </div>
+
+            <textarea
+              {...register("message", { required: true, maxLength: 500 })}
+              id="message"
+              placeholder="Message"
+              className=" border border-[#242424] px-6 py-3  rounded-md 
+                focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[400px] shadow  bg-[#202020]/10"
+            />
+
+            <motion.button
+              type="submit"
+              className="bg-blue/95 hover:bg-blue/80 text-white py-3  px-12 rounded-md justify-start w-full  mx-auto
+              transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 "
+            >
+              {isLoading ? "Sending..." : "Start partnership!"}
+            </motion.button>
+          </form>
+        </div>
+      </DialogContent>
+    </Dialog>
   );
 }

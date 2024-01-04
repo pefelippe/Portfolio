@@ -6,7 +6,7 @@ import Links from "../components/Socials";
 function AboutContent() {
   return (
     <motion.div
-      className="flex justify-center w-full mx-auto min-h-fit py-10 xl:py-20 gap-10
+      className="flex justify-center w-full mx-auto min-h-fit py-10 xl:py-16 gap-10
        items-center relative  max-xl:flex-colm max-w-7xl text-white "
     >
       <motion.div

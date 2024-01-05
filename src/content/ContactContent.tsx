@@ -13,13 +13,13 @@ function ContactContent() {
       className="flex justify-start w-full  max-xl:max-w-3xl
      h-fit px-6 items-start relative  max-xl:flex-col "
     >
-      <div className="relative h-full w-full flex justify-center gap-5 flex-col items-center">
-        <h1 className="text-4xl xl:text-6xl  font-bold leading-[1.2] max-w-3xl w-fit text-center">
+      <div className="relative h-full w-full flex justify-center gap-8 flex-col items-start">
+        <h1 className="text-4xl xl:text-6xl  font-bold leading-[1.2] max-w-3xl w-fit text-start">
           I'm here to help bring your ideas to <span className="underline underline-offset-4 decoration-blue">reality</span>.
         </h1>
         <Button  className=" py-7 px-12 text-lg font-medium hover:underline w-fit">
           <Link href="/contact">
-            Contact-me!
+            Contact
           </Link>
         </Button>
       </div>

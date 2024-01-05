@@ -1,19 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import Links from "../components/Socials";
 
 function AboutContent() {
   return (
     <motion.div
-      className="flex justify-center w-full mx-auto min-h-fit py-10 xl:py-20 gap-10
-       items-center relative  max-xl:flex-col max-w-5xl text-white "
+      className="flex justify-start w-full mx-auto min-h-fit py-20 gap-10
+       items-start relative  max-xl:flex-col max-w-5xl text-white "
     >
       <motion.div
-        initial={{ opacity: 0, y: -75 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: -75 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.75 }}
         className="font-extralight text-xl  flex flex-col gap-4
-         h-full w-full justify-center text-center items-center xl:max-w-3xl"
+         h-full w-full justify-start text-start items-start xl:max-w-3xl"
       >
         <h1 className="text-[40px] xl:text-7xl max-w-3xl font-bold leading-relaxed tracking-tighter ">
           Hello, <br />
@@ -24,7 +23,7 @@ function AboutContent() {
           A Full-Stack Web Developer based in Brazil.
         </h3>
 
-        <Links />
+        {/* <Links /> */}
       </motion.div>
     </motion.div>
   );

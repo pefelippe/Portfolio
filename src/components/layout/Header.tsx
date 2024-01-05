@@ -12,7 +12,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
       className="flex w-screen fixed rounded-sm bg-white z-40  mx-auto h-16 py-4 border-b"
     >
-      <div className="flex w-full  mx-auto items-center justify-between px-10 max-w-5xl">
+      <div className="flex w-full  mx-auto items-center justify-between max-md:px-6 max-w-5xl">
         <Link href="/">
           <p className="text-xl font-medium tracking-tight">Pedro Felippe</p>
         </Link>

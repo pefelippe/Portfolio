@@ -22,7 +22,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./ui/dialog";
-import { Button } from "./ui/button";
 
 export default function MessageForm({}) {
   const { register, handleSubmit, reset } = useForm<Inputs>();
@@ -87,8 +86,7 @@ export default function MessageForm({}) {
           </DialogDescription>
         </DialogHeader>
         <div
-          className="flex flex-col items-center text-center  h-fit text-[#101010]
-         rounded-md gap-2 w-full max-w-2xl"
+          className="flex flex-col items-center text-center  h-fit text-[#101010] rounded-md gap-2 w-full max-w-2xl"
         >
           <form
             onSubmit={handleSubmit(onSubmit)}

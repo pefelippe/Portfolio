@@ -10,10 +10,10 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className=" flex flex-col w-full items-start  justify-center  max-w-5xl  text-[#101010] gap-10 mx-auto py-20 border-t"
+      className=" flex flex-col w-full items-start  justify-center    text-[#101010] gap-10 mx-auto py-16  xl:py-20 border-t"
     >
       <h1 className="text-5xl xl:text-6xl  font-bold leading-[1.2]  w-fit ">
-        Last Projects
+        Meet some of my projects.
       </h1>
       <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 justify-between w-full">
         {projects?.map((proj) => {

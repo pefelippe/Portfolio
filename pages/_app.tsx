@@ -6,8 +6,8 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Footer from "../src/components/layout/Footer";
-import { Toaster } from "../src/components/ui/toaster"
 import Header from "../src/components/layout/Header";
+import { Toaster } from "../src/components/ui/toaster";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
       <Analytics />
-      {/* <Header /> */}
+      <Header />
       <Component {...pageProps} />
       <Toaster />
       <Footer />

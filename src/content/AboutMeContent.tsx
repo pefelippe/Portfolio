@@ -7,7 +7,7 @@ import { Button } from "../components/ui/button";
 export default function About() {
   return (
     <motion.div
-      className="flex justify-start w-full mx-auto  py-16  xl:py-20  max-xl:flex-col h-fit  items-center gap-8 xl:gap-16">
+      className="flex items-center justify-center w-full  py-16 mx-auto h-fit items-start gap-20 text-start">
 
       <motion.img
         initial={{ opacity: 0, x: -75 }}
@@ -15,15 +15,15 @@ export default function About() {
         transition={{ duration: 0.75}}
         src="/assets/pedrof.jpg"
         alt="me"
-        className="object-cover rounded-md w-full  max-w-[400px]  border max-md:max-h-32 max-md:rounded-full max-md:hidden"
+        className=" max-md:h-28 max-md:w-28 max-md:ounded-full object-cover rounded-md w-full  max-w-[400px]  border max-md:max-h-32 max-md:rounded-full "
       />
         <motion.div 
           initial={{ opacity: 0, y: 75 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration:0.75}} 
-          className="flex flex-col w-full gap-6 max-w-5xl">
+          className="flex flex-col w-full gap-4 max-w-xl">
 
-          <motion.h1 className="text-6xl  font-bold leading-[1.2]  tracking-tight">
+          <motion.h1 className="text-7xl  font-bold leading-[1.2]  tracking-tight">
             Hi. I am Pedro Felippe.
           </motion.h1>
 
@@ -32,7 +32,7 @@ export default function About() {
             className="text-xl font-regular w-full text-gray-700 max-w-2xl tracking-tight"
           >
             I've been coding simple, fast and easy to use web interfaces since 2018.
-            I deal with cloud services, keeping everything connected, and making sure the databases work smoothly. <br/><br/><p>For more details, check my resume or contact-me.</p> 
+            I deal with cloud services, keeping everything connected, and making sure the databases work smoothly. 
           </motion.span>
 
           <motion.div className="flex gap-3 max-w-xl">

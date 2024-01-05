@@ -9,7 +9,7 @@ function ContactContent() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex justify-center w-full mx-auto  max-w-7xl py-10 xl:py-32 max-xl:max-w-3xl
+      className="flex justify-center w-full mx-auto  max-w-2xl py-10 xl:py-32 max-xl:max-w-3xl
      h-fit px-6 items-center relative  max-xl:flex-col "
     >
       <div className="relative h-full w-full flex justify-between gap-8 flex-col  items-center">

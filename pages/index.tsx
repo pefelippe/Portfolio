@@ -6,11 +6,8 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className="flex flex-col  relative w-full h-full min-h-fit mt-16 ">
-      {/* <section className="bg-[#121212]">
-        <HeroContent />
-      </section> */}
-
+    <motion.div className="flex flex-col  relative w-full h-full min-h-fit mt-16 gap-20">
+ 
       <section className="flex flex-col w-full bg-[#fff] text-[#121212] mx-auto  max-w-5xl max-md:px-6">
         <AboutContent />
         {/* <SkillsContent /> */}

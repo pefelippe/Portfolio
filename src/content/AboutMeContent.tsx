@@ -27,7 +27,7 @@ export default function About() {
           I deal with cloud services, keeping everything connected, and making sure the databases work smoothly. 
         </motion.span>
 
-        <motion.div className="flex gap-2 max-w-xl">
+        <motion.div className="flex gap-2 max-w-xl max-md:mx-auto">
         <Button variant='outline' className="py-7 text-lg font-medium hover:underline">
             <Link target="_blank" href="https://www.linkedin.com/in/pedro-felippe/">
               <FaLinkedin className="h-6 w-6"/>
@@ -43,7 +43,6 @@ export default function About() {
               Resume
             </Link>
           </Button>
-
         </motion.div>
         </motion.div>
     </motion.div>

@@ -22,7 +22,7 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <div className="w-full  mx-auto">
+    <div className="w-full  mx-auto ">
       <motion.div
         className="flex flex-col mx-auto w-full  justify-start  
         min-h-fit items-center text-start border rounded-md overflow-hidden"
@@ -40,9 +40,9 @@ function ProjectCard({
           </Link>
       </motion.div>
 
-      <div className="flex flex-col  text-start p-6 gap-6 px-0 rounded-sm">
+      <div className="flex flex-col  text-start p-6 gap-4 px-0 rounded-sm max-md:justify-center max-md:mx-auto max-md:text-center">
         <p className="text-3xl">{title}</p>
-        <div className="flex gap-2 ">
+        <div className="flex gap-2 max-md:justify-center max-md:mx-auto max-md:text-center">
           {stack.map(tool => {
             return <div key={tool} className="bg-black text-white px-2">{tool}</div>
           })}
@@ -50,7 +50,7 @@ function ProjectCard({
         <Link
           href={link}
           target="_blank"
-          className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-500 transition-all"
+          className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-500 transition-all max-md:justify-center max-md:mx-auto max-md:text-center"
         >
           Visit the site <FaLink/>
         </Link>

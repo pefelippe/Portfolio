@@ -10,14 +10,13 @@ function ContactContent() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex justify-start w-full  max-xl:max-w-3xl
-     h-fit px-6 items-start relative  max-xl:flex-col "
+      className="flex justify-start w-full  max-xl:max-w-3xl h-fit  items-start relative  max-xl:flex-col "
     >
-      <div className="relative h-full w-full flex justify-center gap-8 flex-col items-start">
-        <h1 className="text-4xl xl:text-6xl  font-bold leading-[1.2] max-w-3xl w-fit text-start">
-          I'm here to help bring your ideas to <span className="underline underline-offset-4 decoration-blue">reality</span>.
+      <div className="relative h-full w-full flex justify-center gap-5 flex-col items-start">
+        <h1 className="text-5xl xl:text-6xl  font-bold leading-[1.2] max-w-3xl w-fit text-start max-md:text-center">
+        <span className="underline underline-offset-4 decoration-blue">Contact</span> me to bring your ideas to reality.
         </h1>
-        <Button  className=" py-7 px-12 text-lg font-medium hover:underline w-fit">
+        <Button  className=" py-7 px-16 text-lg font-medium hover:underline w-fit max-md:mx-auto">
           <Link href="/contact">
             Contact
           </Link>

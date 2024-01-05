@@ -50,12 +50,12 @@ function ProjectCard({
           })}
         </div>
 
-        <h3>{description}</h3>
+        <h3 className="max-w-xl text-lg pb-2">{description}</h3>
 
         <Link
           href={link}
           target="_blank"
-          className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-500 transition-all "
+          className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-300 transition-all "
         >
           Visit the site <FaLink/>
         </Link>

@@ -24,6 +24,7 @@ function Contact() {
                 make things happen!
               </span>
             </h3>
+          
           </div>
         </div>
 

@@ -28,7 +28,7 @@ export default function About() {
         </motion.span>
 
         <motion.div className="flex gap-2 max-w-xl ">
-        <Button variant='outline' className="py-7 text-lg font-medium hover:underline">
+          <Button variant='outline' className="py-7 text-lg font-medium hover:underline">
             <Link target="_blank" href="https://www.linkedin.com/in/pedro-felippe/">
               <FaLinkedin className="h-6 w-6"/>
             </Link>

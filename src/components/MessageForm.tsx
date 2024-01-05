@@ -64,43 +64,40 @@ export default function MessageForm({}) {
 
   return (
     <div
-      className="flex flex-col items-center text-center  h-fit text-[#101010] rounded-md gap-2 w-full max-w-xxl"
+      className="flex flex-col items-center text-center  h-fit text-[#121212] rounded-md gap-2 w-full max-w-xl"
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-5 w-full flex flex-col   "
+        className="gap-3 w-full flex flex-col   "
       >
-        <div className="grid gap-5  grid-cols-1 lg:grid-cols-2">
-          <div className="space-y-4">
-            <input
-              {...register("firstName", { required: true, maxLength: 50 })}
-              id="first-name"
-              placeholder="Enter your name"
-              className="shadow border border-[#242424] px-6 py-4 w-full 
-              rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
-            />
-          </div>
-          <input
-            {...register("email", { required: true, maxLength: 50 })}
-            id="email"
-            placeholder="Enter your email"
-            type="email"
-            className="shadow border border-[#242424] px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
+        <input
+            {...register("firstName", { required: true, maxLength: 50 })}
+            id="first-name"
+            placeholder="Enter your name"
+            className="shadow border border-[#242424] px-6 py-3 w-full 
+            rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
           />
-        </div>
+      
+        <input
+          {...register("email", { required: true, maxLength: 50 })}
+          id="email"
+          placeholder="Enter your email"
+          type="email"
+          className="shadow border border-[#242424] px-6 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
+        />
 
         <textarea
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
           className=" border border-[#242424] px-6 py-3  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[400px] shadow  bg-[#202020]/10"
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[300px] shadow  bg-[#202020]/10"
         />
 
         <Button
           type="submit"
           className=" text-center  py-7  text-white  px-12 rounded-md justify-start  mx-auto
-          transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 "
+          transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Start partnership!"}
         </Button>

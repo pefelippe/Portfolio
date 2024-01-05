@@ -14,8 +14,8 @@ function Contact() {
       <div className="relative h-full w-full flex justify-start gap-6 lg:gap-16 max-lg:flex-col items-center text-center ">
         <div className=" flex flex-col gap-4 max-w-3xl w-full h-full items-center justify-center  text-start ">
           <div className="w-full text-xl gap-6 flex flex-col mb-4">
-            <h1 className="text-5xl  font-bold leading-tight  ">
-              I'm here to help bring your online ideas to reality.
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight  ">
+              Get in touch 
             </h1>
 
             <h3 className="w-full text-[16px] lg:text-[20px] lg:max-w-lg ">

@@ -40,13 +40,18 @@ function ProjectCard({
           </Link>
       </motion.div>
 
-      <div className="flex flex-col  text-start p-6 gap-4 px-0 rounded-sm ">
+      <div className="flex flex-col  text-start p-6 gap-2 px-0 rounded-sm ">
         <p className="text-3xl">{title}</p>
-        <div className="flex gap-2 ">
+        
+
+        <div className="flex gap-2 flex-wrap">
           {stack.map(tool => {
-            return <div key={tool} className="bg-black text-white px-2">{tool}</div>
+            return <div key={tool} className="bg-black w-fit text-white px-2">{tool}</div>
           })}
         </div>
+
+        <h3>{description}</h3>
+
         <Link
           href={link}
           target="_blank"

@@ -40,9 +40,9 @@ function ProjectCard({
           </Link>
       </motion.div>
 
-      <div className="flex flex-col  text-start p-6 gap-4 px-0 rounded-sm max-md:justify-center max-md:mx-auto max-md:text-center">
+      <div className="flex flex-col  text-start p-6 gap-4 px-0 rounded-sm ">
         <p className="text-3xl">{title}</p>
-        <div className="flex gap-2 max-md:justify-center max-md:mx-auto max-md:text-center">
+        <div className="flex gap-2 ">
           {stack.map(tool => {
             return <div key={tool} className="bg-black text-white px-2">{tool}</div>
           })}
@@ -50,7 +50,7 @@ function ProjectCard({
         <Link
           href={link}
           target="_blank"
-          className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-500 transition-all max-md:justify-center max-md:mx-auto max-md:text-center"
+          className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-500 transition-all "
         >
           Visit the site <FaLink/>
         </Link>

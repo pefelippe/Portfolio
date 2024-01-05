@@ -12,7 +12,7 @@ function Projects() {
       id="work"
       className=" flex flex-col w-full items-start  justify-start text-[#101010] gap-10 mx-auto "
     >
-      <h1 className="text-5xl xl:text-6xl  font-bold leading-[1.2] max-w-4xl w-fit text-start max-md:text-center">
+      <h1 className="text-5xl xl:text-6xl  font-bold leading-[1.2] max-w-4xl w-fit text-start">
         Meet some of my <span className="underline underline-offset-4 decoration-blue">projects</span>.
       </h1>
 

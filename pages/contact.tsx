@@ -9,13 +9,12 @@ function Contact() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex justify-center w-full mx-auto  max-w-7xl  h-fit px-6 min-h-screen 
-      items-center relative  max-xl:flex-col "
+      className="flex flex-col max-w-5xl mx-auto  relative w-full h-full min-h-fit  max-xl:px-6 gap-20 xl:gap-32 py-10 xl:py-20 xl:pt-32 mt-24 "
     >
       <div className="relative h-full w-full flex justify-start gap-6 lg:gap-16 max-lg:flex-col items-center text-center ">
         <div className=" flex flex-col gap-4 max-w-3xl w-full h-full items-center justify-center  text-start ">
-          <div className="w-full text-xl gap-8 flex flex-col mb-4">
-            <h1 className="text-4xl lg:text-6xl  font-bold leading-[1.2]  ">
+          <div className="w-full text-xl gap-6 flex flex-col mb-4">
+            <h1 className="text-5xl  font-bold leading-tight  ">
               I'm here to help bring your online ideas to reality.
             </h1>
 

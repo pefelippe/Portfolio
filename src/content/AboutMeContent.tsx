@@ -8,14 +8,14 @@ import { Button } from "../components/ui/button";
 export default function About() {
   return (
     <motion.div
-      className="flex md:items-center justify-start w-full  h-fit mx  text-start max-md:flex-col max-md:text-center">
+      className="flexjustify-start w-full  h-fit mx  text-start max-md:flex-col ">
       <motion.div 
         initial={{ opacity: 0, y: 75 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration:0.75}} 
         className="flex flex-col w-full gap-5 xl:gap-8 max-w-4xl">
 
-        <motion.h1 className="text-5xl md:text-6xl xl:text-8xl  font-bold leading-[1.2]  tracking-tight">
+        <motion.h1 className="text-6xl xl:text-8xl  font-bold leading-[1.2]  tracking-tight">
           Hi. I'm Pedro Felippe 👋
         </motion.h1>
 
@@ -27,7 +27,7 @@ export default function About() {
           I deal with cloud services, keeping everything connected, and making sure the databases work smoothly. 
         </motion.span>
 
-        <motion.div className="flex gap-2 max-w-xl max-md:mx-auto">
+        <motion.div className="flex gap-2 max-w-xl ">
         <Button variant='outline' className="py-7 text-lg font-medium hover:underline">
             <Link target="_blank" href="https://www.linkedin.com/in/pedro-felippe/">
               <FaLinkedin className="h-6 w-6"/>

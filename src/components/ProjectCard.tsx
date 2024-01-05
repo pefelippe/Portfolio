@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { FaLink } from "react-icons/fa";
 
 type IProjectCard = {
   description: string;
@@ -21,18 +22,19 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <div className="w-full bg-white border border-gray-200  shadow rounded-md mx-auto">
+    <div className="w-full  mx-auto">
       <Link
-        className="flex flex-col mx-auto  w-full  justify-start  min-h-fit items-center text-start "
+        className="flex flex-col mx-auto  w-full  justify-start  min-h-fit items-center text-start border rounded-md "
         href={link}
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="flex-shrink-0 object-cover transition-all flex h-full w-full   "
+          className="flex-shrink-1 object-fit transition-all flex h-full w-full max-h-[600px]   "
         />
       </Link>
-      <div className="flex flex-col  text-start p-5 rounded-sm">
+      
+      <div className="flex flex-col  text-start p-6 gap-3 px-0 rounded-sm">
         <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-whit">
           {title}
         </h5>
@@ -40,14 +42,12 @@ function ProjectCard({
           {description}
         </p>
 
+
         <Link
           href={link}
-          className="inline-flex items-center px-6 bg-blue hover:bg-blue/90 transition-all  gap-2 py-2 text-lg w-fit
-          font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 
-          focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 
-          dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-500 transition-all"
         >
-          Live Demo
+          Visit the site <FaLink/>
         </Link>
       </div>
     </div>

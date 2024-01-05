@@ -10,12 +10,13 @@ function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="work"
-      className=" flex flex-col w-full items-start  justify-center  text-center  text-[#101010] gap-10 mx-auto "
+      className=" flex flex-col w-full items-start  justify-start text-[#101010] gap-10 mx-auto "
     >
-      <h1 className="text-5xl xl:text-6xl text-center font-bold leading-[1.2]  mx-auto max-w-xl underline decoration-blue ">
-        Meet some of my projects.
+      <h1 className="text-4xl xl:text-6xl  font-bold leading-[1.2] max-w-3xl w-fit text-start">
+        Meet some of my <span className="underline underline-offset-4 decoration-blue">projects</span>.
       </h1>
-      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 justify-center w-full items-center mx-auto">
+
+      <div className="grid md:grid-cols-1 gap-10 justify-center w-full items-center mx-auto">
         {projects?.map((proj) => {
           return (
             <ProjectCard

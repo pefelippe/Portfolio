@@ -1,35 +1,25 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
-
 import { technologies } from "../constants";
 
+
 function Skills() {
+
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 75 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.75 }}
-      className=" text-xl  font-thin flex flex-col w-full  items-start max-xl:items-center  "
-    >
-      <div className="grid grid-cols-4  gap-5 xl:grid-cols-8 w-full ">
+    <div className="w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+      <ul className="flex items-center gap-10 justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
         {technologies.map((tech) => {
-          return (
-            <motion.div
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.1 },
-              }}
-              key={tech.name}
-              className="flex flex-col items-center w-full "
-            >
-              <Image width={50} height={50} src={tech.imgUrl} alt={tech.name} />
-              <p className="text-md font-medium">{tech.name}</p>
-            </motion.div>
-          );
-        })}
-      </div>
-    </motion.div>
-  );
+            return (
+              <div
+                key={tech.name}
+                className="flex flex-col items-center w-full "
+              >
+                <Image width={50} height={50} src={tech.imgUrl} alt={tech.name} />
+              </div>
+            );
+          })}
+      </ul>
+    </div>
+  )
 }
 
 export default Skills;

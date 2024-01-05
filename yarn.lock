@@ -1409,6 +1409,29 @@ emailjs@^4.0.1:
   resolved "https://registry.npmjs.org/emailjs/-/emailjs-4.0.3.tgz"
   integrity sha512-1CDXoE3FxkSg7QRTlLsDCYG9elFNu/JQsYWu3Xfrk77ubbg5zYgFGg+JRUKQJ56mceM8o3rHHX0VB4wo9XsyLQ==
 
+embla-carousel-autoplay@^8.0.0-rc18:
+  version "8.0.0-rc18"
+  resolved "https://registry.yarnpkg.com/embla-carousel-autoplay/-/embla-carousel-autoplay-8.0.0-rc18.tgz#bdb5baeca4fd3f590c6f951b79352172ef25645b"
+  integrity sha512-4TgnvSRlAz6YxyUIOU7w9wkUbqq/iVoJdRIRZ0+QQSWl+giout8HB0/HDqDPKJy23zjtpDNnYdNn3dxdKfGFfQ==
+
+embla-carousel-react@^8.0.0-rc18:
+  version "8.0.0-rc18"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-8.0.0-rc18.tgz#feb36c3798aec936df7b83abaf30029ed0cef2a0"
+  integrity sha512-sif+zkOnQIJzZJJQdtE/kDBrlxNt7Vm6zI8i17qT6QYv3dnazPVf4EEfXQ2CZdh7J3UPwnIMS3Q55E1a8uxJ/g==
+  dependencies:
+    embla-carousel "8.0.0-rc18"
+    embla-carousel-reactive-utils "8.0.0-rc18"
+
+embla-carousel-reactive-utils@8.0.0-rc18:
+  version "8.0.0-rc18"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.0.0-rc18.tgz#d99726d0a532f834e3ae41a9a1d976917ecfcaed"
+  integrity sha512-VOFfvhkICz4GKXb/huMTspYVR8mx8C4uDf0Kp+jA9iZNUA4lmlfxxYUr++SwIy1xABycpqML/9hP2tV6Nn0AEQ==
+
+embla-carousel@8.0.0-rc18:
+  version "8.0.0-rc18"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.0.0-rc18.tgz#2b4babb3097aebbe2123d3158a029d474a442b01"
+  integrity sha512-MtiatQCt+R/lEKl2D4TyAx2Ba4/gfosQIY+Y/ooZu1yahxTbFLyhGW8aodn0GW2WZ6jO3Qpfx7VuqCPdRV5moQ==
+
 emoji-regex@^9.2.2:
   version "9.2.2"
   resolved "https://registry.npmjs.org/emoji-regex/-/emoji-regex-9.2.2.tgz"

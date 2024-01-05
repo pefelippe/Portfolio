@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
       className={`
         overflow-x-hidden overflow-y-scroll min-h-screen min-w-[400px] mx-auto 
         scroll-smooth w-full font-antialiased flex flex-col
-        scrollbar  scrollbar-thumb-blue 
+        scrollbar  scrollbar-thumb-blue font-mono
         scrollbar-track-[#929af6] overflow-hidden
         text-[#101010] bg-[#FBFFFE]`}
     >

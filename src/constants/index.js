@@ -3,38 +3,12 @@ export const projects = [
     id: 1,
     link: "https://portfolio-pefelippe.vercel.app/",
     repo: "https://github.com/pefelippe/Portfolio",
-    title: "Under Construction",
-    imgUrl: "assets/portfolio.png",
-    stack: ["react", "tailwind", "next", "typescript"],
-    description: "Something good will be here.",
+    title: "Personal Website",
+    imgUrl: "assets/projects/portfolio.png",
+    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
+    description: "My personal site. Where i can share my projects and talk a little about me.",
   },
-  {
-    id: 2,
-    link: "",
-    repo: "https://github.com/pefelippe/PomodoroTunes",
-    title: "Under Construction",
-    imgUrl: "assets/portfolio.png",
-    stack: ["react", "tailwind", "next", "typescript"],
-    description: "Something good will be here.",
-  },
-  {
-    id: 3,
-    link: "",
-    repo: "https://github.com/pefelippe/PomodoroTunes",
-    title: "Under Construction",
-    imgUrl: "assets/portfolio.png",
-    stack: ["react", "tailwind", "next", "typescript"],
-    description: "Something good will be here.",
-  },
-  {
-    id: 4,
-    link: "",
-    repo: "",
-    title: "Under Construction",
-    imgUrl: "assets/portfolio.png",
-    stack: ["react", "tailwind", "next", "typescript"],
-    description: "Something good will be here.",
-  },
+ 
 ];
 
 export const technologies = [

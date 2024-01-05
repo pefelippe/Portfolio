@@ -4,7 +4,7 @@ export const projects = [
     link: "https://portfolio-pefelippe.vercel.app/",
     repo: "https://github.com/pefelippe/Portfolio",
     title: "Personal Website",
-    imgUrl: "/assets/projects/portfolio.png",
+    imgUrl: "/assets/portfolio.png",
     stack: ["react", "tailwind", "shadcn", "next", "typescript"],
     description: "My personal site. Where i can share my projects and talk a little about me.",
   },

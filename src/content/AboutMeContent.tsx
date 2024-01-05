@@ -7,7 +7,7 @@ import { Button } from "../components/ui/button";
 export default function About() {
   return (
     <motion.div
-      className="flex items-center justify-center w-full  py-16 mx-auto h-fit items-start gap-20 text-start">
+      className="flex md:items-center justify-center w-full  py-16 mx-auto h-fit  md:gap-20 text-start max-md:flex-col max-md:text-center">
 
       <motion.img
         initial={{ opacity: 0, x: -75 }}
@@ -15,15 +15,15 @@ export default function About() {
         transition={{ duration: 0.75}}
         src="/assets/pedrof.jpg"
         alt="me"
-        className=" max-md:h-28 max-md:w-28 max-md:ounded-full object-cover rounded-md w-full  max-w-[400px]  border max-md:max-h-32 max-md:rounded-full "
+        className=" max-md:h-28 max-md:w-28 object-cover rounded-md w-full  max-w-[400px]  border max-md:max-h-32 max-md:rounded-full max-md:hidden "
       />
         <motion.div 
           initial={{ opacity: 0, y: 75 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration:0.75}} 
-          className="flex flex-col w-full gap-4 max-w-xl">
+          className="flex flex-col w-full gap-5 max-w-xl">
 
-          <motion.h1 className="text-7xl  font-bold leading-[1.2]  tracking-tight">
+          <motion.h1 className="text-6xl md:text-7xl  font-bold leading-[1.2]  tracking-tight">
             Hi. I am Pedro Felippe.
           </motion.h1>
 

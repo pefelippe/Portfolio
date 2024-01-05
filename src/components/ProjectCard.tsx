@@ -21,7 +21,7 @@ function ProjectCard({
   id,
 }: IProjectCard) {
   return (
-    <div className=" bg-white border border-gray-200  shadow rounded-md ">
+    <div className="w-full bg-white border border-gray-200  shadow rounded-md mx-auto">
       <Link
         className="flex flex-col mx-auto  w-full  justify-start  min-h-fit items-center text-start "
         href={link}

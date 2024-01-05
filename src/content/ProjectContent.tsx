@@ -15,7 +15,7 @@ function Projects() {
       <h1 className="text-5xl xl:text-6xl text-center font-bold leading-[1.2]  mx-auto max-w-xl underline decoration-blue ">
         Meet some of my projects.
       </h1>
-      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 justify-between w-full">
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-10 justify-center w-full items-center mx-auto">
         {projects?.map((proj) => {
           return (
             <ProjectCard

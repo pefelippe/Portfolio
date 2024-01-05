@@ -11,7 +11,6 @@ export default function Home() {
  
       <section className="flex flex-col w-full bg-[#fff] text-[#121212] mx-auto  max-w-5xl max-md:px-6">
         <AboutContent />
-        {/* <ExperienceContent /> */}
         <ProjectContent />
         <SkillsContent />
       </section>

@@ -27,21 +27,21 @@ function ProjectCard({
         className="flex flex-col mx-auto w-full  justify-start  
         min-h-fit items-center text-start border rounded-md overflow-hidden"
       >
-        <div className="absolute w-full h-full bg-black">
-
-        </div>
-        <motion.img
-           whileHover={{
-            scale: 1.05,
-            transition: { duration: 0.1 },
-          }}
-          src={imgUrl}
-          alt="card image"
-          className="flex-shrink-1 object-fit transition-all flex h-full w-full max-h-[600px]   "
-        />
+        <Link href={link}>
+          <motion.img
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.1 },
+            }}
+            src={imgUrl}
+            alt="card image"
+            className="flex-shrink-1 object-fit transition-all flex h-full w-full max-h-[600px]   "
+            />
+          </Link>
       </motion.div>
 
       <div className="flex flex-col  text-start p-6 gap-6 px-0 rounded-sm">
+        <p className="text-3xl">{title}</p>
         <div className="flex gap-2 ">
           {stack.map(tool => {
             return <div key={tool} className="bg-black text-white px-2">{tool}</div>

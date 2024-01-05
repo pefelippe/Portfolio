@@ -23,28 +23,33 @@ function ProjectCard({
 }: IProjectCard) {
   return (
     <div className="w-full  mx-auto">
-      <Link
-        className="flex flex-col mx-auto  w-full  justify-start  min-h-fit items-center text-start border rounded-md "
-        href={link}
+      <motion.div
+        className="flex flex-col mx-auto w-full  justify-start  
+        min-h-fit items-center text-start border rounded-md overflow-hidden"
       >
+        <div className="absolute w-full h-full bg-black">
+
+        </div>
         <motion.img
+           whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.1 },
+          }}
           src={imgUrl}
           alt="card image"
           className="flex-shrink-1 object-fit transition-all flex h-full w-full max-h-[600px]   "
         />
-      </Link>
-      
-      <div className="flex flex-col  text-start p-6 gap-3 px-0 rounded-sm">
-        <h5 className=" text-2xl font-bold tracking-tight text-gray-900 dark:text-whit">
-          {title}
-        </h5>
-        <p className="mb-2 font-normal text-xl text-gray-700 dark:text-gray-400">
-          {description}
-        </p>
+      </motion.div>
 
-
+      <div className="flex flex-col  text-start p-6 gap-6 px-0 rounded-sm">
+        <div className="flex gap-2 ">
+          {stack.map(tool => {
+            return <div key={tool} className="bg-black text-white px-2">{tool}</div>
+          })}
+        </div>
         <Link
           href={link}
+          target="_blank"
           className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-500 transition-all"
         >
           Visit the site <FaLink/>

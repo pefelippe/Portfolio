@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
-import { Button } from "../ui/button";
-
 const Header = () => {
   const [open, setOpen] = useState(false);
 
@@ -18,12 +16,6 @@ const Header = () => {
         <Link href="/">
           <p className="text-3xl font-bold tracking-tighter">pedro.felippe</p>
         </Link>
-
-          <Button className="w-fit py-6 px-9 text-lg font-semibold hover:underline max-md:hidden font-mono ">
-            <Link href="/contact">
-              Contact-me
-            </Link>
-          </Button>
         </div>
    
     </motion.header>

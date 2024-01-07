@@ -91,12 +91,12 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className=" border border-[#242424] px-6 py-3  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[300px] shadow  bg-[#202020]/10"
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[350px] shadow  bg-[#202020]/10"
         />
 
         <Button
           type="submit"
-          className=" text-center  py-7  text-white  px-12 rounded-md justify-start  mx-auto
+          className=" text-center  py-7  text-white  px-16 rounded-md justify-start  mx-auto
           transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Start partnership!"}

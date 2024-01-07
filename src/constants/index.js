@@ -8,16 +8,7 @@ export const projects = [
     stack: ["react", "tailwind", "shadcn", "next", "typescript"],
     description: "My personal site. Where i can share my projects and talk a little about me.",
   },
-  {
-    id: 2,
-    link: "https://portfolio-pefelippe.vercel.app/",
-    repo: "https://github.com/pefelippe/Portfolio",
-    title: "Personal Website",
-    imgUrl: "/projects/portfolio.png",
-    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
-    description: "My personal site. Where i can share my projects and talk a little about me.",
-  },
- 
+
 ];
 
 export const technologies = [

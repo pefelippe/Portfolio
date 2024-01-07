@@ -35,27 +35,26 @@ function ProjectCard({
             }}
             src={imgUrl}
             alt="card image"
-            className="flex-shrink-1 object-fit transition-all flex h-full w-full max-h-[400px]  "
+            className="flex-shrink-1 object-fit transition-all flex w-full h-[300px]  "
             />
           </Link>
       </motion.div>
 
       <div className="flex flex-col  text-start p-4 gap-2 px-0 rounded-sm ">
         <p className="text-3xl">{title}</p>
-        
-
         <div className="flex gap-2 flex-wrap">
           {stack.map(tool => {
             return <div key={tool} className="bg-black w-fit text-white px-2">{tool}</div>
           })}
         </div>
 
-        <h3 className="max-w-xl text-lg pb-2">{description}</h3>
+        <h3 className="max-w-xl text-xl pb-2">{description}</h3>
 
         <Link
           href={link}
           target="_blank"
-          className="text-xl text-gray-700 font-medium flex gap-2 items-center underline hover:text-gray-300 transition-all "
+          className="text-xl text-gray-700 font-semibold flex gap-2
+           items-center underline hover:text-gray-300 transition-all "
         >
           Visit the site <FaLink/>
         </Link>

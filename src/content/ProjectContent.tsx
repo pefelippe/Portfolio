@@ -7,16 +7,16 @@ function Projects() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1.5 }}
       id="work"
       className=" flex flex-col w-full items-start  justify-start text-[#101010] gap-6 mx-auto "
     >
-      <h1 className="text-5xl font-bold leading-[1.2] max-w-4xl w-fit text-start">
+      <h1 className="text-[40px] xl:text-5xl max-w-3xl font-bold tracking-tighter font-mono">
         Meet my <span className="underline underline-offset-4 decoration-blue">works</span>.
       </h1>
 
-      <div className="grid md:grid-cols-1 gap-10 justify-center w-full items-center mx-auto">
+      <div className="grid md:grid-cols-2 gap-10 justify-center w-full items-center mx-auto">
         {projects?.map((proj) => {
           return (
             <ProjectCard

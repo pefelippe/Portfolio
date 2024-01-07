@@ -35,7 +35,7 @@ function ProjectCard({
             }}
             src={imgUrl}
             alt="card image"
-            className=" object-cover  transition-all flex w-full h-[350px] md:h-[400px] "
+            className="  transition-all flex w-full h-[350px] md:h-[400px] "
             />
           </Link>
       </div>

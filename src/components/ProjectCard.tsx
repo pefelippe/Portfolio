@@ -24,9 +24,9 @@ function ProjectCard({
   const isEvenId = id % 2 === 0; // Verifica se o ID é par
 
   return (
-    <div className={`w-full flex max-md:flex-col md:gap-12 items-center justify-start ${isEvenId ? 'md:flex-row-reverse' : ''}`}>
-      <div
-        className="min-h-fit w-full  border-2 rounded-lg overflow-hidden max-w-2xl">
+    <div className={`w-full flex max-md:flex-col md:gap-14 items-center justify-start ${isEvenId ? 'md:flex-row-reverse' : ''}`}>
+      
+      <div className="min-h-fit w-full border-2 rounded-lg overflow-hidden max-w-2xl">
         <Link href={link} target="_blank">
           <motion.img
             whileHover={{
@@ -35,27 +35,29 @@ function ProjectCard({
             }}
             src={imgUrl}
             alt="card image"
-            className="  transition-all flex w-full h-[350px] md:h-[400px] "
+            className="object-cover  transition-all flex w-full h-[350px] md:h-[400px] "
             />
           </Link>
       </div>
 
-      <div className="flex flex-col  text-start p-6 gap-3 px-0 rounded-sm max-w-xl w-full">
-        <p className="text-3xl tracking-tighter underline">{title}</p>
+      <div className="flex flex-col text-start p-6 gap-3 px-0 rounded-sm max-w-lg w-full items-start justify-center">
+        <Link
+          href={link}
+          target="_blank"
+          className="text-xl text-gray-700 font-semibold flex gap-2 w-fit
+           items-center underline hover:text-gray-300 transition-all "
+        >
+          <FaLink/><p className="text-3xl tracking-tighter underline">{title}</p> 
+        </Link>
+
         <h3 className="max-w-xl text-xl  ">{description}</h3>
+
         <div className="flex gap-2 flex-wrap pb-8">
           {stack.map(tool => {
             return <div key={tool} className="bg-black w-fit text-white px-2">{tool}</div>
           })}
         </div>
-        <Link
-          href={link}
-          target="_blank"
-          className="text-xl text-gray-700 font-semibold flex gap-2 
-           items-start underline hover:text-gray-300 transition-all "
-        >
-          Visit the site <FaLink/>
-        </Link>
+   
       </div>
     </div>
   );

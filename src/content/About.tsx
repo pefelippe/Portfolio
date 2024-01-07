@@ -29,8 +29,6 @@ function AboutContent() {
         >
           I'm a Full Stack Software Engineer based in Brazil.
         </motion.h3>
-
-        {/* <Links /> */}
       </motion.div>
     </motion.div>
   );

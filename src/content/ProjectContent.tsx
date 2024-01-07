@@ -8,12 +8,12 @@ function Projects() {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.75, delay: 1.5 }}
       id="work"
-      className=" flex flex-col w-full items-start  justify-start text-[#101010] gap-10 mx-auto "
+      className=" flex flex-col w-full items-start  justify-start text-[#101010] gap-6 mx-auto "
     >
-      <h1 className="text-5xl xl:text-6xl  font-bold leading-[1.2] max-w-4xl w-fit text-start">
-        Meet some of my <span className="underline underline-offset-4 decoration-blue">projects</span>.
+      <h1 className="text-5xl font-bold leading-[1.2] max-w-4xl w-fit text-start">
+        Meet my <span className="underline underline-offset-4 decoration-blue">works</span>.
       </h1>
 
       <div className="grid md:grid-cols-1 gap-10 justify-center w-full items-center mx-auto">

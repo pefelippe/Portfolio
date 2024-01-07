@@ -17,21 +17,24 @@ const Header = () => {
     >
       <div className="flex w-full  mx-auto items-center justify-between max-xl:px-6 max-w-7xl">
         <Link href="/">
-          <p className="text-2xl font-bold tracking-tighter">pedro.felippe</p>
+          <p className="text-2xl font-bold tracking-tighter hover:text-gray-500 transition-all">
+            λ pedro.felippe
+          </p>
         </Link>
 
-        <motion.div
-          className="flex gap-6 items-center">
-            <AnimatedBtn target="_blank" href="https://www.linkedin.com/in/pedro-felippe/">
-              <FaLinkedin className="h-9 w-9 hover:text-blue"/>
-            </AnimatedBtn>
+        <motion.div className="flex gap-6 items-center">
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <FaLinkedin className="h-9 w-9 hover:text-blue" />
+          </AnimatedBtn>
 
-            <AnimatedBtn  href="https://github.com/pefelippe">
-              <FaGithub className="h-9 w-9 hover:text-blue"/>
-            </AnimatedBtn>
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <FaGithub className="h-9 w-9 hover:text-blue" />
+          </AnimatedBtn>
         </motion.div>
       </div>
-   
     </motion.header>
   );
 };

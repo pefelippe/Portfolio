@@ -12,8 +12,12 @@ function Projects() {
       id="work"
       className=" flex flex-col w-full items-start  justify-center text-[#101010] gap-12 mx-auto "
     >
-      <h1 className="text-[40px] md:text-5xl  font-bold tracking-tighter font-mono">
-        Meet some of my <span className="underline underline-offset-4 decoration-blue">works</span>.
+      <h1 className="text-[40px] xl:text-6xl  font-bold tracking-tighter font-mono">
+        Meet some of my{" "}
+        <span className="underline underline-offset-4 decoration-blue">
+          works
+        </span>
+        .
       </h1>
 
       <div className="flex flex-col gap-10 md:gap-20 justify-center w-full items-center ">

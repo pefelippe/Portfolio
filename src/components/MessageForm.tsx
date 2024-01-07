@@ -14,7 +14,6 @@ type Inputs = {
   message: string;
 };
 
-
 export default function MessageForm({}) {
   const { register, handleSubmit, reset } = useForm<Inputs>();
 
@@ -43,7 +42,7 @@ export default function MessageForm({}) {
           console.log("enviou", res.status, res.text);
           reset();
           setIsLoading(false);
-     
+
           toast({
             title: "Message Sended!",
           });
@@ -51,7 +50,7 @@ export default function MessageForm({}) {
         (err: any) => {
           console.log("Um erro aconteceu", err);
           setIsLoading(false);
-      
+
           toast({
             variant: "destructive",
             title: "Uh oh! Something went wrong.",
@@ -63,27 +62,25 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div
-      className="flex flex-col items-center text-center  h-fit text-[#121212] rounded-md gap-3 w-full "
-    >
+    <div className="flex flex-col items-center text-center  h-fit text-[#121212] rounded-md gap-3 w-full ">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="gap-3 w-full flex flex-col   "
       >
         <input
-            {...register("firstName", { required: true, maxLength: 50 })}
-            id="first-name"
-            placeholder="Enter your name"
-            className="shadow border border-[#242424] px-6 py-3 w-full 
+          {...register("firstName", { required: true, maxLength: 50 })}
+          id="first-name"
+          placeholder="Enter your name"
+          className="shadow border border-[#242424] px-6 py-4 w-full 
             rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
-          />
-      
+        />
+
         <input
           {...register("email", { required: true, maxLength: 50 })}
           id="email"
           placeholder="Enter your email"
           type="email"
-          className="shadow border border-[#242424] px-6 py-3 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
+          className="shadow border border-[#242424] px-6 py-4 w-full rounded-md focus:outline-none focus:ring focus:ring-blue-500 bg-[#202020]/10"
         />
 
         <textarea
@@ -91,7 +88,7 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className=" border border-[#242424] px-6 py-3  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[350px] shadow  bg-[#202020]/10"
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[400px] shadow  bg-[#202020]/10"
         />
 
         <Button

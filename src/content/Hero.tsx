@@ -3,24 +3,28 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <motion.div
-      className="flex justify-center w-full  h-fit  max-md:flex-col gap-4 md:gap-10 py-10 ">
-      {/* <motion.img src="/assets/avatar-pdr.png" alt="pedro felippe"   className="border rounded-xl max-md:rounded-full max-md:h-28 max-md:w-28 md:w-[300px]"/> */}
-
-      <motion.div className="flex flex-col w-full gap-6 max-w-3xl justify-center text-center">
-        <motion.h1         
+    <motion.div className="flex justify-start w-full  h-fit  max-md:flex-col gap-4 md:gap-10 py-10 ">
+      <motion.div className="flex flex-col w-full gap-6 justify-start text-start max-w-3xl">
+        {/* <motion.img
+          src="/assets/avatar-pdr.png"
+          alt="pedro felippe"
+          className="border rounded-full h-32 w-32 "
+        /> */}
+        <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5}} 
-          className="text-6xl xl:text-8xl font-bold leading-[1.2] tracking-tight">
+          transition={{ duration: 0.5 }}
+          className="text-6xl xl:text-8xl font-bold leading-[1.2] tracking-tight"
+        >
           Hey. I'm Pedro Felippe.👋
         </motion.h1>
 
         <motion.h3
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay:0.5}}  
-          className="text-xl text-gray-500 max-w-xl mx-auto ">
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="text-2xl text-gray-500 max-w-xl "
+        >
           Creating simple, fast and easy to use web interfaces since 2018.
         </motion.h3>
 
@@ -38,7 +42,6 @@ export default function Hero() {
             </AnimatedBtn>
         </motion.div> */}
       </motion.div>
-
     </motion.div>
   );
 }

@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <motion.div
       className="flex flex-col  relative w-full h-full 
-    max-xl:px-6 gap-16 md:gap-24 py-16 xl:py-24 mt-24
+    max-xl:px-6 gap-16 md:gap-40 py-16 xl:py-24 mt-24
     bg-[#fff] text-[#121212] max-w-7xl mx-auto"
     >
       <Hero />

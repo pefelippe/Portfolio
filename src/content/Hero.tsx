@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <motion.div className="flex justify-start w-full  h-fit  max-md:flex-col gap-4 md:gap-10 py-10 ">
+    <motion.div className="flex justify-start w-full  h-fit  max-md:flex-col gap-4 md:gap-10 ">
       <motion.div className="flex flex-col w-full gap-6 justify-start text-start max-w-3xl">
         {/* <motion.img
           src="/assets/avatar-pdr.png"

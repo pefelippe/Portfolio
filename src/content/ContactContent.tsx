@@ -9,17 +9,17 @@ function ContactContent() {
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
-    className="flex flex-col mx-auto justify-center items-center  relative w-full h-full min-h-fit  max-xl:px-6 gap-2 "
+    className="flex flex-col mx-auto justify-center items-center  relative w-full h-full min-h-fit  gap-8 max-w-xl"
   >
-      <h1 className="text-5xl font-bold leading-tight  ">
-        Get in touch 
+      <h1 className="text-[40px] xl:text-5xl  font-bold tracking-tighter ">
+        Contact-me.
       </h1>
-      <h3 className="w-fit text-[20px] pb-2 ">
+      {/* <h3 className="w-fit text-[20px] pb-2 ">
         Drop me a message and let's{" "}
         <span className="underline underline-offset-4 decoration-blue">
           make things happen!
         </span>
-      </h3>
+      </h3> */}
       <MessageForm />
  
   </motion.div>

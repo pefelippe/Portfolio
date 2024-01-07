@@ -17,7 +17,7 @@ type Inputs = {
 
 export default function MessageForm({}) {
   const { register, handleSubmit, reset } = useForm<Inputs>();
-  const [open, setOpen] = useState(false);
+
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
@@ -43,7 +43,7 @@ export default function MessageForm({}) {
           console.log("enviou", res.status, res.text);
           reset();
           setIsLoading(false);
-          setOpen(false);
+     
           toast({
             title: "Message Sended!",
           });
@@ -51,7 +51,7 @@ export default function MessageForm({}) {
         (err: any) => {
           console.log("Um erro aconteceu", err);
           setIsLoading(false);
-          setOpen(false);
+      
           toast({
             variant: "destructive",
             title: "Uh oh! Something went wrong.",
@@ -64,7 +64,7 @@ export default function MessageForm({}) {
 
   return (
     <div
-      className="flex flex-col items-center text-center  h-fit text-[#121212] rounded-md gap-2 w-full max-w-xl"
+      className="flex flex-col items-center text-center  h-fit text-[#121212] rounded-md gap-3 w-full "
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -91,12 +91,12 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className=" border border-[#242424] px-6 py-3  rounded-md 
-            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] lg:min-h-[350px] shadow  bg-[#202020]/10"
+            focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[350px] shadow  bg-[#202020]/10"
         />
 
         <Button
           type="submit"
-          className=" text-center  py-7  text-white  px-16 rounded-md justify-start  mx-auto
+          className=" text-center  py-8  text-white  px-20 rounded-md justify-center w-full
           transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Start partnership!"}

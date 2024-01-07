@@ -9,6 +9,27 @@ export const projects = [
     description: "My personal site. Where i can share my projects and talk a little about me.",
   },
 
+  {
+    id: 2,
+    link: "",
+    repo: "",
+    title: "Under Construction",
+    imgUrl: "/assets/banner.png",
+    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
+    description: "Under Construction.",
+  },
+
+  {
+    id: 3,
+    link: "",
+    repo: "",
+    title: "Under Construction",
+    imgUrl: "/assets/banner.png",
+    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
+    description: "Under Construction.",
+  },
+
+  
 ];
 
 export const technologies = [

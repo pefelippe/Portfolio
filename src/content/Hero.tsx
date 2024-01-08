@@ -40,7 +40,10 @@ export default function Hero() {
               target="_blank"
               href="https://www.linkedin.com/in/pedro-felippe/"
             >
-              <Button className="flex items-center w-[150px] py-6 gap-2">
+              <Button
+                variant="outline"
+                className="flex items-center w-[150px] py-6 gap-2"
+              >
                 <FaLinkedin className="h-6 w-6" />
                 <span className="text-lg">Linkedin</span>
               </Button>

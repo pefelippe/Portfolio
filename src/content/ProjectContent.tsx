@@ -10,7 +10,7 @@ function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1.5 }}
       id="work"
-      className=" flex flex-col w-full items-start  justify-center gap-20 mx-auto  "
+      className=" flex flex-col w-full items-start  justify-center gap-10 mx-auto  "
     >
       <h1 className="text-5xl  font-bold tracking-tighter">Selected works</h1>
 

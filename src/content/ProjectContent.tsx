@@ -10,17 +10,11 @@ function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1.5 }}
       id="work"
-      className=" flex flex-col w-full items-start  justify-center text-[#101010] gap-12 mx-auto "
+      className=" flex flex-col w-full items-start  justify-center gap-20 mx-auto  "
     >
-      <h1 className="text-[40px] xl:text-6xl  font-bold tracking-tighter font-mono">
-        Meet some of my{" "}
-        <span className="underline underline-offset-4 decoration-blue">
-          works
-        </span>
-        .
-      </h1>
+      <h1 className="text-5xl  font-bold tracking-tighter">Selected works</h1>
 
-      <div className="flex flex-col gap-10 md:gap-20 justify-center w-full items-center ">
+      <div className="grid grid-cols-1 gap-20 justify-start w-full items-start ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

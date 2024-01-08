@@ -1,39 +1,49 @@
 import { motion } from "framer-motion";
+
+import { Link as ScrollLink } from "react-scroll";
+
 import Link from "next/link";
-import { useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Button } from "../ui/button";
 
-import AnimatedBtn from "../animated/AnimatedBtn";
-
+const HeaderButtons = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
+      className="flex space-x-4 items-center "
+    >
+      <ScrollLink
+        activeClass="active"
+        to="contact-content"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        <Button className="px-10 py-6 text-lg rounded hover:underline transition-all">
+          Contact
+        </Button>
+      </ScrollLink>
+    </motion.div>
+  );
+};
 const Header = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     <motion.header
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 2 }}
-      className="flex w-full fixed rounded-sm bg-white z-40 h-18 py-4 left-0 right-0 border-b "
+      className="flex fixed  z-40 h-20 py-4 left-0 right-0 backdrop-blur-3xl  bg-white"
     >
-      <div className="flex w-full  mx-auto items-center justify-between max-xl:px-6 max-w-7xl">
+      <div className="flex w-full  mx-auto items-center justify-between max-xl:px-6 max-w-6xl">
         <Link href="/">
-          <p className="text-2xl font-bold tracking-tighter hover:text-gray-500 transition-all">
-            λ pedro.felippe
+          <p className="text-xl font-bold hover:text-gray-500 transition-all ">
+            Pedro Felippe
           </p>
         </Link>
 
-        <motion.div className="flex gap-6 items-center">
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <FaLinkedin className="h-9 w-9 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <FaGithub className="h-9 w-9 hover:text-blue" />
-          </AnimatedBtn>
-        </motion.div>
+        <HeaderButtons />
       </div>
     </motion.header>
   );

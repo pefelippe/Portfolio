@@ -96,7 +96,7 @@ export default function MessageForm({}) {
 
         <Button
           type="submit"
-          className=" text-center  py-8  text-white  px-16 rounded-md justify-center w-fit
+          className=" text-center  py-7  text-white  px-10  justify-center w-fit
           transition-all font-medium text-lg focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Start partnership!"}

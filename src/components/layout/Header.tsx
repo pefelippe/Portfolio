@@ -23,7 +23,7 @@ const HeaderButtons = () => {
       >
         <Button
           variant="outline"
-          className="px-10 py-5 text-lg rounded hover:underline transition-all"
+          className="px-10 py-5 text-lg  hover:underline transition-all"
         >
           Contact
         </Button>

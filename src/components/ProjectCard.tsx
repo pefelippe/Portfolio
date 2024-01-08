@@ -24,20 +24,25 @@ function ProjectCard({
 
   return (
     <div
-      className={`w-full flex flex-col gap-4  items-start text-center h-full overflow-hidden
+      className={`w-full flex flex-col gap-4  items-start text-center h-full overflow-hidden 
     justify-start ${isEvenId ? "" : ""}`}
     >
-      <div className="min-h-fit w-full  overflow-hidden border-2  hover:border-blue rounded-3xl transition-all">
+      <div className="relative overflow-hidden border-2 rounded-3xl transition-all group">
         <Link href={link} target="_blank">
           <motion.img
             src={imgUrl}
             alt="card image"
-            className="object-cover flex-shrink-1 transition-all flex w-full max-h-[350px] md:max-h-[600px] shadow-2xl h-screen"
+            className="object-cover flex-shrink-1 transition-all flex w-full max-h-[250px] md:max-h-[600px] shadow-2xl h-screen"
           />
+          <div className="absolute h-full w-full inset-0 bg-stone-900 opacity-0 transition-opacity group-hover:opacity-90">
+            <div className="flex h-full w-full items-center justify-center text-white text-3xl">
+              Check live demo
+            </div>
+          </div>
         </Link>
       </div>
 
-      {/* <div className="flex flex-col  gap-4  rounded-sm max-w-3xl w-full items-start text-start justify-start">
+      <div className="flex flex-col  px-4 gap-4  rounded-sm max-w-3xl w-full items-start text-start justify-start">
         <Link
           href={link}
           target="_blank"
@@ -57,7 +62,7 @@ function ProjectCard({
           })}
         </div>
         <h3 className="max-w-3xl text-xl  ">{description}</h3>
-      </div> */}
+      </div>
     </div>
   );
 }

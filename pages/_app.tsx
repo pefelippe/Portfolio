@@ -6,9 +6,9 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Footer from "../src/components/layout/Footer";
-import Header from "../src/components/layout/Header";
 import { ThemeProvider } from "../src/components/theme-provider";
 import { Toaster } from "../src/components/ui/toaster";
+import Header from "../src/components/layout/Header";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

@@ -11,8 +11,33 @@ const HeaderButtons = () => {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 1 }}
-      className="flex space-x-4 items-center "
+      className="flex space-x-6 items-center font-medium "
     >
+      <ScrollLink
+        activeClass="active"
+        to="hero-container"
+        spy={true}
+        smooth={true}
+        offset={-250}
+        duration={500}
+      >
+        <button className="text-lg  hover:underline transition-all">
+          Home
+        </button>
+      </ScrollLink>
+
+      <ScrollLink
+        activeClass="active"
+        to="projects-container"
+        spy={true}
+        smooth={true}
+        offset={-150}
+        duration={500}
+      >
+        <button className=" py-6 text-lg  hover:underline transition-all">
+          Projects
+        </button>
+      </ScrollLink>
       <ScrollLink
         activeClass="active"
         to="contact-content"
@@ -22,12 +47,14 @@ const HeaderButtons = () => {
         duration={500}
       >
         <Button
-          variant="outline"
-          className="px-10 py-5 text-lg  hover:underline transition-all"
+          variant="secondary"
+          className="px-6  text-lg  hover:underline transition-all"
         >
-          Contact
+          Lets talk
         </Button>
       </ScrollLink>
+
+      {/* <ModeToggle /> */}
     </motion.div>
   );
 };
@@ -37,12 +64,12 @@ const Header = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 2 }}
-      className="flex fixed  z-40 py-4 left-0 right-0 backdrop-blur-3xl  bg-white border-b"
+      className="flex fixed h-16 z-40 py-8 left-0 right-0 backdrop-blur-3xl  text-white  bg-blue transition-all"
     >
       <div className="flex w-full  mx-auto items-center justify-between max-xl:px-6 max-w-6xl">
         <Link href="/">
-          <p className="text-xl font-bold hover:text-gray-500 transition-all ">
-            pedro.felippe
+          <p className="text-2xl font-semibold hover:text-gray-900 transition-all tracking-tight ">
+            Felippe λ‍
           </p>
         </Link>
 

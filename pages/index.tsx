@@ -6,7 +6,10 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className="flex flex-col gap-20 relative w-full h-full max-xl:px-6 pt-20 my-16   max-w-6xl mx-auto">
+    <motion.div
+      id="hero-container"
+      className="flex flex-col gap-32 relative w-full h-full max-xl:px-6 py-20 md:py-32 mt-12  max-w-6xl mx-auto"
+    >
       <Hero />
       <ProjectContent />
       <ContactContent />

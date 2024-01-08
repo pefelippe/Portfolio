@@ -32,7 +32,7 @@ function ProjectCard({
           <motion.img
             src={imgUrl}
             alt="card image"
-            className="object-cover flex-shrink-1 transition-all flex w-full max-h-[250px] md:max-h-[600px] shadow-2xl h-screen"
+            className="object-cover flex-shrink-1 transition-all flex w-full max-h-[250px] md:max-h-[350px] shadow-2xl h-screen"
           />
           <div className="absolute h-full w-full inset-0 bg-stone-900 opacity-0 transition-opacity group-hover:opacity-90">
             <div className="flex h-full w-full items-center justify-center text-white text-3xl">

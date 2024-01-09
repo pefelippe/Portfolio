@@ -7,10 +7,10 @@ import { Button } from "../components/ui/button";
 export default function Hero() {
   return (
     <motion.div
-      className="flex flex-col w-full  justify-center  text-start min-h-screen
-      text-white max-xl:px-6"
+      className="flex  w-full  justify-between items-center  text-start min-h-screen max-w-7xl mx-auto
+      text-white max-xl:px-6 gap-10"
     >
-      <motion.div className="flex justify-start flex-col mx-auto items-end gap-10 max-w-7xl w-full z-30">
+      <motion.div className="flex justify-start flex-col  items-start gap-10 max-w-7xl w-fit z-30">
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,39 +35,45 @@ export default function Hero() {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.25 }}
-          className="flex max-md:flex-col max-md:space-y-4 md:space-x-4 w-full items-start max-w-3xl text-[#121221] "
+          className="flex max-md:flex-col max-md:space-y-4 md:space-x-4 w-full items-start max-w-xl text-[#121221] "
         >
-          <Button
-            variant="destructive"
-            className="flex items-center w-full md:w-[200px] py-7 gap-2"
+          <Link
+            style={{
+              width: "100%",
+            }}
+            activeClass="active"
+            to="projects-container"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={500}
           >
-            <Link
-              activeClass="active"
-              to="projects-container"
-              spy={true}
-              smooth={true}
-              offset={-150}
-              duration={500}
+            <Button
+              variant="secondary"
+              className="flex items-center w-full  py-7 gap-2 bg-black text-white hover:bg-black/70"
             >
               <span className="text-xl">Projects</span>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
 
-          <Button
-            variant="secondary"
-            className="flex items-center w-full md:w-[200px] py-7  gap-2"
+          <Link
+            style={{
+              width: "100%",
+            }}
+            activeClass="active"
+            to="contact-content"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={500}
           >
-            <Link
-              activeClass="active"
-              to="contact-content"
-              spy={true}
-              smooth={true}
-              offset={-150}
-              duration={500}
+            <Button
+              variant="secondary"
+              className="flex items-center w-full  py-7  gap-2"
             >
               <span className="text-xl">Contact</span>
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </motion.div>
       </motion.div>
     </motion.div>

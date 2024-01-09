@@ -1,6 +1,7 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
+import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
@@ -16,8 +17,10 @@ const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className="flex text-2xl font-semibold hover:text-gray-300 transition-all tracking-tight w-fit max-md:hidden">
-        <span> Felippeλ‍ </span>
+      <button className="flex text-xl font-bold hover:text-[#f0e140]/80 transition-all tracking-tight w-fit max-md:hidden ">
+        <span>
+          <span>Felippeλ‍</span>
+        </span>
       </button>
     </ScrollLink>
   );
@@ -96,18 +99,30 @@ const HeaderButtons = () => {
   );
 };
 const Header = () => {
+  const { scrollY } = useScroll();
+  const [hidden, setHidden] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (latest > previous && latest > 150) setHidden(true);
+    else setHidden(false);
+  });
+
   return (
     <motion.header
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.75, delay: 1 }}
-      className="flex fixed h-16 z-40 py-10 left-0 right-0 backdrop-blur-3xl w-full text-white  bg-blue transition-all"
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="flex fixed h-16 z-40  left-0 right-0 backdrop-blur-3xl w-full text-white  bg-blue transition-all"
     >
-      <div className="flex w-full mx-auto items-center justify-between max-xl:px-6 max-w-7xl">
+      <motion.nav className="flex w-full mx-auto items-center justify-between max-xl:px-6 max-w-7xl">
         <Logo />
         <HeaderButtons />
         <SocialButtons />
-      </div>
+      </motion.nav>
     </motion.header>
   );
 };

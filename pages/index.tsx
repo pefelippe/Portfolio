@@ -6,7 +6,7 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div id="hero-container" className=" ">
+    <motion.div id="hero-container ">
       <section className="bg-blue relative ">
         <Hero />
 
@@ -17,12 +17,12 @@ export default function Home() {
             transition={{ duration: 0.75, delay: 1 }}
             src="/assets/avatar.png"
             alt="pedro felippe"
-            className="absolute bottom-0 left-20 xl:left-32 h-full max-h-[75vh] max-xl:hidden"
+            className="absolute bottom-0 right-20 xl:right-56 h-full max-h-[55vh] max-xl:hidden"
           />
         </div>
       </section>
 
-      <section className="flex flex-col  relative w-full h-full max-xl:px-6 z-20 bg-white max-w-7xl mx-auto pt-16 gap-32 md:gap-40">
+      <section className="flex flex-col  relative w-full h-full max-xl:px-6 z-20 bg-white  mx-auto pt-16 gap-32 md:gap-40">
         <ProjectContent />
         <ContactContent />
       </section>

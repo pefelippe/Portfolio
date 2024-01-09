@@ -7,8 +7,8 @@ import { Button } from "../components/ui/button";
 export default function Hero() {
   return (
     <motion.div
-      className="flex flex-col w-full  justify-center  text-start
-     min-h-screen text-white max-xl:px-6"
+      className="flex flex-col w-full  justify-center  text-start min-h-screen
+      text-white max-xl:px-6"
     >
       <motion.div className="flex justify-start flex-col mx-auto items-end gap-10 max-w-7xl w-full z-30">
         <motion.h1

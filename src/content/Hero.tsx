@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <motion.div
-      className="flex  w-full  justify-between items-center  text-start  max-w-7xl mx-auto min-h-[70vh] mt-16
+      className="flex  w-full  justify-between items-center  text-start  max-w-7xl mx-auto min-h-[60vh] mt-16
       text-white max-xl:px-6 gap-10"
     >
       <motion.div className="flex justify-start flex-col  items-start gap-10 max-w-7xl w-fit z-30">
@@ -22,10 +22,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className=" text-lg md:text-2xl font-thin leading-normal gap-4 flex flex-col max-w-3xl w-full  "
+          className=" text-lg md:text-xl font-thin leading-normal gap-4 flex flex-col max-w-3xl w-full  "
         >
-          With a strong background in the JavaScript ecosystem, I use my
-          technical expertise to create powerful, yet user-friendly web apps.
+          I use my technical skills in JavaScript to build user-friendly web
+          apps and create RESTful APIs with Node and sometimes GraphQL. <br />
+          <br />
+          I'm enthusiastic about leveraging cloud providers to enhance web
+          applications.
         </motion.h3>
 
         {/* <motion.div
@@ -73,7 +76,7 @@ export default function Hero() {
           </Link>
         </motion.div> */}
       </motion.div>
-
+      {/* 
       <motion.img
         initial={{ opacity: 0, x: -25 }}
         animate={{ opacity: 1, x: 0 }}
@@ -81,7 +84,7 @@ export default function Hero() {
         src="/assets/avatar.png"
         alt="pedro felippe"
         className="absolute bottom-0 right-1/4  h-full max-h-[55vh] max-xl:hidden"
-      />
+      /> */}
     </motion.div>
   );
 }

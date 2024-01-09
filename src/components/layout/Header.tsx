@@ -5,7 +5,6 @@ import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
-import { Button } from "../ui/button";
 
 const Logo = () => {
   return (
@@ -17,7 +16,7 @@ const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className="flex text-xl font-bold hover:text-[#f0e140]/80 transition-all tracking-tight w-fit max-md:hidden ">
+      <button className="flex text-2xl font-bold hover:text-[#f0e140]/80 transition-all tracking-tight w-fit max-md:hidden ">
         <span>
           <span>Felippeλ‍</span>
         </span>
@@ -28,20 +27,16 @@ const Logo = () => {
 
 const SocialButtons = () => {
   return (
-    <div className="flex items-center w-fit space-x-2">
+    <div className="flex items-center w-fit space-x-4">
       <AnimatedBtn
         target="_blank"
         href="https://www.linkedin.com/in/pedro-felippe/"
       >
-        <Button variant={"ghost"} size="icon">
-          <LinkedinIcon />
-        </Button>
+        <LinkedinIcon />
       </AnimatedBtn>
 
       <AnimatedBtn href="https://github.com/pefelippe">
-        <Button variant={"ghost"} size="icon">
-          <GitHubLogoIcon className="h-7 w-6" />
-        </Button>
+        <GitHubLogoIcon className="h-7 w-6" />
       </AnimatedBtn>
     </div>
   );

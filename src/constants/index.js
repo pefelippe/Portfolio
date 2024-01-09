@@ -1,13 +1,13 @@
 export const projects = [
   {
     id: 1,
-    link: "https://portfolio-pefelippe.vercel.app/",
+    link: "https://zappi-sigma.vercel.app/",
     repo: "https://github.com/pefelippe/Portfolio",
-    title: "Personal Website",
-    imgUrl: "/projects/portfolio.png",
-    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
+    title: "Zappi",
+    imgUrl: "/projects/zappi.png",
+    stack: ["react", "tailwind", "shadcn", "vite", "typescript"],
     description:
-      "My personal site. Where i can share my projects and talk a little about me.",
+      "Allow restaurants to create their own delivery platform, sell their products and manage orders without abusive taxes. Still in development.",
   },
 ];
 

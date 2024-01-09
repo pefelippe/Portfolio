@@ -4,7 +4,7 @@ export const projects = [
     link: "https://zappi-sigma.vercel.app/",
     repo: "https://github.com/pefelippe/Portfolio",
     title: "Zappi",
-    imgUrl: "/projects/zappi.png",
+    imgUrl: "/projects/Zappi.png",
     stack: ["react", "tailwind", "shadcn", "vite", "typescript"],
     description:
       "Allow restaurants to create their own delivery platform, sell their products and manage orders without abusive taxes. Still in development.",

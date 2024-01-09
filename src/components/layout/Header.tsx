@@ -1,9 +1,48 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-
+import { LinkedinIcon } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 
-import Link from "next/link";
+import AnimatedBtn from "../animated/AnimatedBtn";
 import { Button } from "../ui/button";
+
+const Logo = () => {
+  return (
+    <ScrollLink
+      activeClass="active"
+      to="hero-container"
+      spy={true}
+      smooth={true}
+      offset={-250}
+      duration={500}
+    >
+      <button className="flex text-2xl font-semibold hover:text-gray-300 transition-all tracking-tight w-fit max-md:hidden">
+        <span> Felippeλ‍ </span>
+      </button>
+    </ScrollLink>
+  );
+};
+
+const SocialButtons = () => {
+  return (
+    <div className="flex items-center w-fit space-x-2">
+      <AnimatedBtn
+        target="_blank"
+        href="https://www.linkedin.com/in/pedro-felippe/"
+      >
+        <Button variant={"ghost"} size="icon">
+          <LinkedinIcon />
+        </Button>
+      </AnimatedBtn>
+
+      <AnimatedBtn href="https://github.com/pefelippe">
+        <Button variant={"ghost"} size="icon">
+          <GitHubLogoIcon className="h-7 w-6" />
+        </Button>
+      </AnimatedBtn>
+    </div>
+  );
+};
 
 const HeaderButtons = () => {
   return (
@@ -11,7 +50,7 @@ const HeaderButtons = () => {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 1 }}
-      className="flex space-x-6 items-center font-medium "
+      className="flex space-x-4 md:space-x-8 justify-center  items-center max-md:justify-start font-medium w-full"
     >
       <ScrollLink
         activeClass="active"
@@ -21,7 +60,7 @@ const HeaderButtons = () => {
         offset={-250}
         duration={500}
       >
-        <button className="text-lg  hover:underline transition-all">
+        <button className="text-lg  hover:underline transition-all hover:text-gray-300 ">
           Home
         </button>
       </ScrollLink>
@@ -34,24 +73,22 @@ const HeaderButtons = () => {
         offset={-150}
         duration={500}
       >
-        <button className=" py-6 text-lg  hover:underline transition-all">
+        <button className=" py-6 text-lg  hover:underline transition-all hover:text-gray-300 ">
           Projects
         </button>
       </ScrollLink>
+
       <ScrollLink
         activeClass="active"
         to="contact-content"
         spy={true}
         smooth={true}
-        offset={50}
+        offset={-50}
         duration={500}
       >
-        <Button
-          variant="secondary"
-          className="px-6  text-lg  hover:underline transition-all"
-        >
-          Lets talk
-        </Button>
+        <button className="py-6 border-0 text-lg  hover:underline transition-all hover:text-gray-300 ">
+          Contact
+        </button>
       </ScrollLink>
 
       {/* <ModeToggle /> */}
@@ -63,17 +100,13 @@ const Header = () => {
     <motion.header
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 2 }}
-      className="flex fixed h-16 z-40 py-8 left-0 right-0 backdrop-blur-3xl  text-white  bg-blue transition-all"
+      transition={{ duration: 0.75, delay: 1 }}
+      className="flex fixed h-16 z-40 py-10 left-0 right-0 backdrop-blur-3xl w-full text-white  bg-blue transition-all"
     >
-      <div className="flex w-full  mx-auto items-center justify-between max-xl:px-6 max-w-6xl">
-        <Link href="/">
-          <p className="text-2xl font-semibold hover:text-gray-900 transition-all tracking-tight ">
-            Felippe λ‍
-          </p>
-        </Link>
-
+      <div className="flex w-full mx-auto items-center justify-between max-xl:px-6 max-w-7xl">
+        <Logo />
         <HeaderButtons />
+        <SocialButtons />
       </div>
     </motion.header>
   );

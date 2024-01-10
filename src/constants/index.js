@@ -9,6 +9,16 @@ export const projects = [
     description:
       "Allow restaurants to create their own delivery platform, sell their products and manage orders without abusive taxes. Still in development.",
   },
+  {
+    id: 2,
+    link: "https://portfolio-pefelippe.vercel.app/",
+    repo: "https://github.com/pefelippe/Portfolio",
+    title: "Portfolio",
+    imgUrl: "/projects/portfolio.png",
+    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
+    description:
+      "Not much to say here! This one just gave me a good excuse to spend a weekend practicing with TypeScript and Tailwind.",
+  },
 ];
 
 export const technologies = [

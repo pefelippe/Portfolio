@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <motion.div
         className={`
         overflow-x-hidden overflow-y-scroll  min-w-[400px] mx-auto min-h-fit
-        scroll-smooth w-full font-antialiased flex flex-col 
+        scroll-smooth w-full font-antialiased flex flex-col font-poppins color-[#212127]
         scrollbar  scrollbar-thumb-blue  scrollbar-track-[#929af6]
          overflow-hidden`}
       >

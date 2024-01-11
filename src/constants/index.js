@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     link: "https://zappi-sigma.vercel.app/",
-    repo: "https://github.com/pefelippe/Portfolio",
+    repo: "https://github.com/pefelippe/Zappi",
     title: "Zappi",
     imgUrl: "/projects/Zappi.png",
     stack: ["react", "tailwind", "shadcn", "vite", "typescript"],
@@ -18,6 +18,15 @@ export const projects = [
     stack: ["react", "tailwind", "shadcn", "next", "typescript"],
     description:
       "Not much to say here! This one just gave me a good excuse to spend a weekend practicing with TypeScript and Tailwind.",
+  },
+  {
+    id: 3,
+    link: "manda-pix-five.vercel.app",
+    repo: "https://github.com/pefelippe/MandaPix",
+    title: "MandaPix",
+    imgUrl: "/projects/MandaPix.png",
+    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
+    description: "Create your own personal card to share your Pix QR Code.",
   },
 ];
 

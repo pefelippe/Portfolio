@@ -1,53 +1,78 @@
 /* eslint-disable react/no-unescaped-entities */
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
-import { Button } from "../components/ui/button";
+import { LinkedinIcon } from "lucide-react";
+
+import AnimatedBtn from "../components/animated/AnimatedBtn";
 
 export default function Hero() {
   return (
     <motion.div
-      className="flex relative  w-full  justify-start items-center  text-start  max-w-7xl mx-auto  lg:gap-20 lg:min-h-screen 
-       gap-10"
+      className="flex text-[#fdfdff] relative 
+     w-full max-md:flex-col  justify-startitems-center 
+      text-start  max-w-3xl max-xl:px-6  mx-auto py-20  gap-10"
     >
-      <motion.div className="flex justify-center flex-col h-full  items-start gap-8 max-w-7xl w-full z-30 max-lg:max-w-lg ">
+      <motion.img
+        initial={{ opacity: 0, x: -25 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.75, delay: 1 }}
+        src="/assets/avatar-pdr.png"
+        alt="pedro felippe"
+        className="max-md:hidden h-full md:max-w-[200px] md:max-h-[200px] rounded-md "
+      />
+      <motion.div className="flex justify-center flex-col h-full  items-start gap-5  z-30  w-full ">
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl lg:text-6xl font-bold tracking-normal  max-w-3xl"
+          className="text-5xl lg:text-6xl font-bold tracking-normal max-w-md"
         >
-          Hey there. I'm <span className="text-blue">Pedro Felippe</span>, a Web
-          Developer based in Brazil.
+          <span className="">Pedro Felippe</span>
         </motion.h1>
 
         <motion.h3
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className=" text-lg lg:text-xl font-thin leading-normal gap-4 flex flex-col max-w-2xl w-full  "
+          className=" text-xl font-thin flex flex-col max-w-sm w-full  pb-1 text-gray-300"
         >
-          I use my technical skills in JavaScript to build user-friendly web
-          apps and create RESTful APIs with Node and sometimes GraphQL.
+          A Full-Stack Web Developer based in Brazil. I create amazing products
+          and solve problems.
         </motion.h3>
-        {/* 
-        <motion.h3
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className=" text-lg lg:text-xl font-thin leading-normal gap-4 flex flex-col max-w-3xl w-full  "
-        >
-          I use my technical skills in JavaScript to build user-friendly web
-          apps and create RESTful APIs with Node and sometimes GraphQL. <br />
-          <br />
-          I'm enthusiastic about leveraging cloud providers to enhance web
-          applications.
-        </motion.h3> */}
-
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1 }}
+          className="flex items-center w-fit space-x-4 max-w-sm"
+        >
+          {/* <ScrollLink
+            activeClass="active"
+            to="contact-content"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <Button className="px-8 py-6 text-xl border-0 text-md hover:underline transition-all hover:text-gray-300 ">
+              Contact
+            </Button>
+          </ScrollLink> */}
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-8 w-8 hover:text-blue" />
+          </AnimatedBtn>
+
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
+          </AnimatedBtn>
+        </motion.div>
+        {/* <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1.25 }}
-          className="flex max-lg:flex-col max-lg:space-y-4 lg:space-x-4 w-full items-center max-w-lg text-[#121221] "
+          className="flex max-lg:flex-col max-lg:space-y-4 lg:space-x-4 w-full items-center max-w-sm text-[#fdfdff] "
         >
           <Link
             style={{
@@ -86,17 +111,8 @@ export default function Hero() {
               <span className="text-xl">Contact</span>
             </Button>
           </Link>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
-
-      <motion.img
-        initial={{ opacity: 0, x: -25 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.75, delay: 1 }}
-        src="/assets/pedrof.jpg"
-        alt="pedro felippe"
-        className="h-full max-h-[500px] rounded-md max-lg:hidden shadow "
-      />
     </motion.div>
   );
 }

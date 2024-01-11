@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <motion.footer
-      className="z-40 h-24 w-screen font-extralight items-center mx-auto text-[#101010] bg-white flex flex-col 
+      className="z-40 h-24 w-screen font-extralight items-center mx-auto text-[#101010] bg-white flex flex-col max-w-4xl border-t
      text-lg  justify-center max-xl:px-6 lg:grid-cols-4 gap-4 "
     >
       <p className="text-md font-light tracking-tighter">

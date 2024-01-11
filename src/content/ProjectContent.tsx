@@ -10,13 +10,13 @@ function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.5 }}
       id="projects-container"
-      className=" flex flex-col w-full items-start  justify-start gap-2  mx-auto   max-w-7xl"
+      className=" flex flex-col w-full items-center  justify-center gap-2  mx-auto   max-w-7xl"
     >
       <h1 className="text-4xl lg:text-5xl font-bold tracking-tighter">
         Selected works
       </h1>
 
-      <h3 className=" text-xl font-thin flex flex-col  w-full  pb-1 ">
+      <h3 className=" text-xl font-thin flex flex-col   pb-1 ">
         Hover the project to see details.
       </h3>
 

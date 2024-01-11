@@ -1,8 +1,5 @@
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { LinkedinIcon } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
-import AnimatedBtn from "../animated/AnimatedBtn";
 
 const Logo = () => {
   return (
@@ -14,7 +11,7 @@ const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className="flex text-2xl font-bold hover:text-[#f0e140]/80 transition-all tracking-tight w-fit  ">
+      <button className="flex text-2xl font-bold hover:text-[#101010]/80 transition-all tracking-tight w-fit  ">
         <span>Felippe</span>
       </button>
     </ScrollLink>
@@ -76,18 +73,6 @@ const Header = () => {
       >
         <Logo />
         <HeaderButtons />
-        <motion.div className="flex items-center w-fit space-x-5 max-w-sm">
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-7 w-7 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-7 w-7 hover:text-blue" />
-          </AnimatedBtn>
-        </motion.div>
       </motion.nav>
     </motion.header>
   );

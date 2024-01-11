@@ -11,12 +11,12 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="hero-container"
-      className="flex relative w-full py-20 max-md:flex-col tracking-normal 
+      className="flex relative w-full max-md:flex-col tracking-normal   py-20
       justify-center items-center text-center mx-auto  md:gap-10 max-w-7xl"
     >
       <motion.div className="flex flex-col gap-4 items-center">
         <motion.h3 className="text-xl md:text-2xl font-bold  max-w-xl">
-          <span className="uppercase tracking-[2px] text-gray-700">
+          <span className="uppercase tracking-[2px] text-gray-300">
             Front-end Developer
           </span>
         </motion.h3>
@@ -38,7 +38,7 @@ export default function Hero() {
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"
           >
-            <LinkedinIcon className="h-9 w-9 " />
+            <LinkedinIcon className="h-9 w-9" />
           </AnimatedBtn>
 
           <AnimatedBtn href="https://github.com/pefelippe">

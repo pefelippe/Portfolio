@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 
-const Logo = () => {
+export const Logo = () => {
   return (
     <ScrollLink
       activeClass="active"
@@ -11,7 +11,7 @@ const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className=" flex text-xl font-bold hover:text-gray-300  transition-all tracking-tighter  w-fit  ">
+      <button className=" flex text-xl  hover:text-gray-300  transition-all w-fit uppercase tracking-tighter font-bold">
         <span>Pedro Felippe</span>
       </button>
     </ScrollLink>
@@ -23,14 +23,14 @@ const HeaderButtons = () => {
     <motion.div className="flex space-x-3 md:space-x-6 justify-center  items-center  ">
       <ScrollLink
         activeClass="active"
-        to="hero-container"
+        to="about-content"
         spy={true}
         smooth={true}
         offset={-250}
         duration={500}
       >
         <button className="text-[16px] font-semibold tracking-wider  hover:underline transition-all hover:text-gray-300 ">
-          Home
+          About
         </button>
       </ScrollLink>
 
@@ -52,7 +52,7 @@ const HeaderButtons = () => {
         to="contact-content"
         spy={true}
         smooth={true}
-        offset={-50}
+        offset={-150}
         duration={500}
       >
         <button className="py-6 text-[16px] font-semibold  border-0 text-lg hover:underline transition-all hover:text-gray-300 ">
@@ -65,7 +65,7 @@ const HeaderButtons = () => {
 const Header = () => {
   return (
     <motion.header
-      className=" text-[#101010] flex fixed h-16 z-50 bg-white border-b
+      className=" text-white flex fixed h-20 z-50 bg-[#101010]
       left-0 right-0 backdrop-blur-3xl w-full   transition-all "
     >
       <motion.nav

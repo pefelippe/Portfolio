@@ -30,7 +30,7 @@ function ProjectCard({
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
       className={`w-full flex  max-xl:flex-col  items-center text-start  overflow-hidden justify-start  gap-2 xl:gap-12 ${
-        isEvenId ? "xl:flex-row-reverse" : ""
+        isEvenId ? "lg:flex-row-reverse" : ""
       }`}
     >
       <Link
@@ -46,9 +46,9 @@ function ProjectCard({
         />
       </Link>
 
-      <div className="flex flex-col gap-2 h-full justify-start  text-md mx-auto w-full xl:max-w-lg ">
+      <div className="flex flex-col gap-4 h-full justify-start  text-md mx-auto w-full xl:max-w-lg ">
         <p className="text-4xl font-bold  ">{title}</p>
-        <div className="flex gap-2 flex-wrap ">
+        {/* <div className="flex gap-2 flex-wrap ">
           {stack.map((tool) => {
             return (
               <div
@@ -59,8 +59,11 @@ function ProjectCard({
               </div>
             );
           })}
-        </div>
-        <p className="text-md font-normal">{description}</p>
+        </div> */}
+        <p className="text-lg font-normal">{description}</p>
+        {/* <Button className=" w-fit p-7 font-semibold text-lg rounded-md shadow  tracking-tight">
+          Case Study
+        </Button> */}
       </div>
     </motion.div>
   );

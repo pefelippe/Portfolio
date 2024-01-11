@@ -7,17 +7,14 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className=" flex flex-col  relative w-full h-full  mt-16 text-[#101010] ">
-      <section
-        className=" flex flex-col
-       relative w-full h-full max-xl:px-6 mx-auto border-b bg-gray-100/20 "
-      >
+    <motion.div className=" flex flex-col  relative w-full h-full text-[#101010] mt-20">
+      <section className="flex flex-col relative w-full h-full max-xl:px-6 mx-auto bg-[#101010] text-white ">
         <Hero />
       </section>
       <section className=" flex flex-col  relative w-full h-full max-xl:px-6 py-10 xl:py-20  mx-auto  ">
         <About />
       </section>
-      <section className="  w-full h-full max-xl:px-6 bg-gray-100/20 py-10 xl:py-20 border-y">
+      <section className="  w-full h-full max-xl:px-6  py-10 xl:py-20 border-y bg-gray-100/20">
         <ProjectContent />
       </section>
       <section className="  w-full h-full max-xl:px-6 py-10 xl:py-20">

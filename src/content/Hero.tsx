@@ -11,7 +11,7 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="hero-container"
-      className="flex relative w-full min-h-[60vh] max-md:flex-col tracking-normal 
+      className="flex relative w-full py-20 max-md:flex-col tracking-normal 
       justify-center items-center text-center mx-auto  md:gap-10 max-w-7xl"
     >
       <motion.div className="flex flex-col gap-4 items-center">

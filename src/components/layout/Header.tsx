@@ -65,7 +65,7 @@ const HeaderButtons = () => {
 const Header = () => {
   return (
     <motion.header
-      className=" text-white flex fixed h-20 z-50 bg-[#101010]
+      className=" flex fixed h-20 z-50 text-[#101010] border-b bg-white
       left-0 right-0 backdrop-blur-3xl w-full   transition-all "
     >
       <motion.nav

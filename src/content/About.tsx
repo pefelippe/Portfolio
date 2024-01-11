@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+
 import Skills from "../components/Skills";
 
 export default function About() {
@@ -18,7 +19,7 @@ export default function About() {
           className=" object-cover max-h-[450px]  border-2 rounded-md"
         />
         <div className="w-full max-w-4xl text-xl font-normal  gap-4 flex flex-col">
-          <h1 className="text-4xl lg:text-5xl  font-bold tracking-tighter">
+          <h1 className="text-4xl lg:text-5xl  font-bold tracking-tighter ">
             About me
           </h1>
           <p>

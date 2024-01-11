@@ -2,6 +2,7 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
+
 import AnimatedBtn from "../components/animated/AnimatedBtn";
 
 export default function Hero() {
@@ -16,7 +17,7 @@ export default function Hero() {
     >
       <motion.div className="flex flex-col gap-4 items-center">
         <motion.h3 className="text-xl md:text-2xl font-bold  max-w-xl">
-          <span className="uppercase tracking-[2px] text-gray-300">
+          <span className="uppercase tracking-[2px] text-gray-700">
             Front-end Developer
           </span>
         </motion.h3>

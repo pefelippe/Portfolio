@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     id: 3,
-    link: "manda-pix-five.vercel.app",
+    link: "https://manda-pix-five.vercel.app/",
     repo: "https://github.com/pefelippe/MandaPix",
     title: "MandaPix",
     imgUrl: "/projects/MandaPix.png",

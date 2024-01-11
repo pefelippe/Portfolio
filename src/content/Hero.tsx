@@ -3,14 +3,16 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
 
+import { Link as ScrollLink } from "react-scroll";
 import AnimatedBtn from "../components/animated/AnimatedBtn";
+import { Button } from "../components/ui/button";
 
 export default function Hero() {
   return (
     <motion.div
       className="flex text-[#fdfdff] relative 
-     w-full max-md:flex-col  justify-startitems-center 
-      text-start  max-w-3xl max-xl:px-6  mx-auto py-20  gap-10"
+     w-full max-md:flex-col  justify-start items-center 
+      text-start  max-w-3xl max-xl:px-6  mx-auto py-10  gap-10"
     >
       <motion.img
         initial={{ opacity: 0, x: -25 }}
@@ -18,14 +20,14 @@ export default function Hero() {
         transition={{ duration: 0.75, delay: 1 }}
         src="/assets/avatar-pdr.png"
         alt="pedro felippe"
-        className="max-md:hidden h-full md:max-w-[200px] md:max-h-[200px] rounded-md "
+        className="max-md:hidden h-full md:max-w-[250px] md:max-h-[250px] rounded-md "
       />
-      <motion.div className="flex justify-center flex-col h-full  items-start gap-5  z-30  w-full ">
+      <motion.div className="flex justify-center flex-col h-full  items-start gap-4  z-30  w-full ">
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl lg:text-6xl font-bold tracking-normal max-w-md"
+          className="text-5xl lg:text-6xl font-bold tracking-normal max-w-lg"
         >
           <span className="">Pedro Felippe</span>
         </motion.h1>
@@ -45,7 +47,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 1 }}
           className="flex items-center w-fit space-x-4 max-w-sm"
         >
-          {/* <ScrollLink
+          <ScrollLink
             activeClass="active"
             to="contact-content"
             spy={true}
@@ -53,10 +55,10 @@ export default function Hero() {
             offset={-50}
             duration={500}
           >
-            <Button className="px-8 py-6 text-xl border-0 text-md hover:underline transition-all hover:text-gray-300 ">
-              Contact
+            <Button className="px-8 py-6 text-2xl border-0 text-md hover:underline transition-all hover:text-gray-300 ">
+              <p className="text-lg">Contact</p>
             </Button>
-          </ScrollLink> */}
+          </ScrollLink>
           <AnimatedBtn
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"

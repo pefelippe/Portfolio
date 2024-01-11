@@ -16,8 +16,8 @@ function Projects() {
         Selected works
       </h1>
 
-      <h3 className="w-fit text-[17px] font-thin">
-        Always working in something. Hover the project to see details.
+      <h3 className=" text-xl font-thin flex flex-col  w-full  pb-1 ">
+         Hover the project to see details.
       </h3>
 
       <div className="grid grid-cols-1 gap-6 justify-center w-full items-center pt-3">

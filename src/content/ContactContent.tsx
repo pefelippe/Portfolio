@@ -15,11 +15,8 @@ function ContactContent() {
       <h1 className="text-4xl lg:text-5xl  font-bold tracking-tighter">
         Get in touch.
       </h1>
-      <h3 className="w-fit text-[20px]  ">
-        Drop me a message and let's{" "}
-        <span className="underline underline-offset-4 decoration-blue">
-          make things happen!
-        </span>
+      <h3 className="text-xl font-thin flex flex-col max-w-md w-full  pb-1  ">
+        Drop me a message and let's make things happen!
       </h3>
       <div className="w-full flex  items-center justify-center pt-5">
         <MessageForm />

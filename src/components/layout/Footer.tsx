@@ -5,10 +5,10 @@ function Footer() {
 
   return (
     <motion.footer
-      className="z-40 h-24 w-screen font-extralight items-center mx-auto text-[#101010] bg-white flex flex-col max-w-4xl border-t
-     text-lg  justify-center max-xl:px-6 lg:grid-cols-4 gap-4 "
+      className="z-40 h-24 w-screen font-light items-center mx-auto bg-[#101010]
+       text-white flex flex-col  border-t text-md  justify-center max-xl:px-6 lg:grid-cols-4 gap-4 "
     >
-      <p className="text-md font-light tracking-tighter">
+      <p className="text-md lg:text-xl font-normal tracking-tighter">
         Pedro Felippe © {year}. All rights reserved.
       </p>
       {/* <Links /> */}

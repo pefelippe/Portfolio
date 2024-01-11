@@ -24,36 +24,38 @@ function ProjectCard({
 
   return (
     <div
-      className={`w-full flex flex-col gap-3 items-start text-center h-full overflow-hidden justify-start ${
-        isEvenId ? "" : ""
+      className={`w-full flex  max-xl:flex-col  items-center text-start  overflow-hidden justify-start  gap-2 xl:gap-12 ${
+        isEvenId ? "xl:flex-row-reverse" : ""
       }`}
     >
-      <div className="relative border-2 overflow-hidden transition-all group rounded-sm w-full min-h-[300px] xl:h-[500px] ">
-        <Link href={link} target="_blank">
-          <motion.img
-            src={imgUrl}
-            alt="card image"
-            className="object-cover flex-shrink-0 transition-all w-full h-full flex shadow-2xl overflow-hidden"
-          />
-          <div className="flex flex-col absolute inset-0 bg-stone-900 opacity-0 transition-opacity group-hover:opacity-95  px-8">
-            <div className="flex flex-col gap-4 h-full items-start text-start justify-center text-white text-sm">
-              <p className="text-lg font-semibold  ">{title}</p>
-              <div className="flex gap-2 flex-wrap ">
-                {stack.map((tool) => {
-                  return (
-                    <div
-                      key={tool}
-                      className="bg-black w-fit text-white px-2 border border-white rounded"
-                    >
-                      {tool}
-                    </div>
-                  );
-                })}
+      <Link
+        href={link}
+        target="_blank"
+        className="rounded overflow-hidden w-full max-w-3xl
+         transition-all  border-4 hover:border-blue"
+      >
+        <motion.img
+          src={imgUrl}
+          alt="card image"
+          className="object-cover flex-shrink-1 transition-all w-full h-full  min-h-[300px] xl:h-[500px] "
+        />
+      </Link>
+
+      <div className="flex flex-col gap-2 h-full justify-start  text-md mx-auto w-full xl:max-w-lg ">
+        <p className="text-4xl font-bold  ">{title}</p>
+        <div className="flex gap-2 flex-wrap ">
+          {stack.map((tool) => {
+            return (
+              <div
+                key={tool}
+                className="bg-black w-fit text-white px-2 border border-white rounded"
+              >
+                {tool}
               </div>
-              <h3 className="max-w-3xl text-sm font-thin  ">{description}</h3>
-            </div>
-          </div>
-        </Link>
+            );
+          })}
+        </div>
+        <p className="text-xl font-normal">{description}</p>
       </div>
     </div>
   );

@@ -11,17 +11,22 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="hero-container"
-      className="flex  relative 
-      w-full max-md:flex-col  justify-start items-center text-center mx-auto  md:gap-10"
+      className="flex relative w-full max-md:flex-col tracking-normal  justify-center items-center text-center mx-auto  md:gap-10 max-w-7xl"
     >
-      <motion.div className="flex justify-center flex-col h-full  items-center  md:gap-2 z-30  w-full ">
-        <motion.h1 className="text-5xl lg:text-7xl font-bold tracking-normal max-w-lg">
-          <span className="">Pedro Felippe</span>
+      <motion.div className="flex flex-col gap-3 items-center">
+        <motion.h3 className="text-lg md:text-2xl font-bold  max-w-xl">
+          <span className="uppercase tracking-[2px] text-gray-900">
+            Front-end Developer
+          </span>
+        </motion.h3>
+        <motion.h1 className="text-7xl font-bold  uppercase">
+          <span className=" tracking-[1px]">
+            <span className="">Pedro Felippe</span>
+          </span>
         </motion.h1>
 
-        <motion.h3 className="text-lg md:text-xl font-thin flex flex-col max-w-xl w-full text-gray-700 py-2">
-          Front-end Developer based in Brazil. I create amazing products and
-          solve problems.
+        <motion.h3 className="text-xl md:text-2xl font-thin flex flex-col max-w-sm xl:max-w-lg w-full text-gray-700 pb-2">
+          Passion in create simple but powerful products.
         </motion.h3>
         {/* <motion.div className="flex max-md:flex-col items-center justify-center w-full max-md:space-y-4 md:space-x-4 max-w-sm">
           <ScrollLink
@@ -61,11 +66,11 @@ export default function Hero() {
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"
           >
-            <LinkedinIcon className="h-8 w-8 hover:text-blue" />
+            <LinkedinIcon className="h-9 w-9  hover:text-blue" />
           </AnimatedBtn>
 
           <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
+            <GitHubLogoIcon className="h-9 w-9 hover:text-blue" />
           </AnimatedBtn>
         </motion.div>
       </motion.div>

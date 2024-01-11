@@ -11,8 +11,8 @@ const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className="flex text-2xl font-bold hover:text-[#101010]/80 transition-all tracking-tight w-fit  ">
-        <span>Felippe</span>
+      <button className="uppercase t flex text-2xl font-bold hover:text-[#101010]/80 transition-all tracking-tighter  w-fit  ">
+        <span>PedroFelippe</span>
       </button>
     </ScrollLink>
   );
@@ -64,12 +64,12 @@ const HeaderButtons = () => {
 };
 const Header = () => {
   return (
-    <motion.header className="flex fixed h-20 z-50  left-0 right-0 backdrop-blur-3xl w-full  bg-white transition-all border-b">
+    <motion.header className="bg-[#101010] text-white flex fixed h-20 z-50  left-0 right-0 backdrop-blur-3xl w-full uppercase  transition-all ">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex w-full mx-auto items-center justify-between  max-xl:px-6 max-w-4xl"
+        className="flex w-full mx-auto items-center justify-between  max-xl:px-6 max-w-7xl"
       >
         <Logo />
         <HeaderButtons />

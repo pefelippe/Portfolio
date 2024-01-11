@@ -10,7 +10,7 @@ export const projects = [
       "Allow restaurants to create their own delivery platform, sell their products and manage orders without abusive taxes. Still in development.",
   },
   {
-    id: 3,
+    id: 2,
     link: "https://manda-pix-five.vercel.app/",
     repo: "https://github.com/pefelippe/MandaPix",
     title: "MandaPix",

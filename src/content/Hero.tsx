@@ -10,10 +10,9 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="flex ] relative 
-      w-full max-md:flex-col  justify-start items-center text-center
-        mx-auto  md:gap-10"
+      w-full max-md:flex-col  justify-start items-center text-center mx-auto  md:gap-10"
     >
-      <motion.div className="flex justify-center flex-col h-full  items-center gap-4 md:gap-2 z-30  w-full max-md:p-6">
+      <motion.div className="flex justify-center flex-col h-full  items-center gap-4 md:gap-2 z-30  w-full ">
         <motion.h1 className="text-5xl lg:text-7xl font-bold tracking-normal max-w-lg">
           <span className="">Pedro Felippe</span>
         </motion.h1>

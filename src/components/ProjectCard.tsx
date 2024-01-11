@@ -28,7 +28,7 @@ function ProjectCard({
         isEvenId ? "" : ""
       }`}
     >
-      <div className="relative border-2 overflow-hidden transition-all group rounded-sm w-full h-[300px]  ">
+      <div className="relative border-2 overflow-hidden transition-all group rounded-sm w-full h-[300px] xl:h-[500px] ">
         <Link href={link} target="_blank">
           <motion.img
             src={imgUrl}

@@ -20,7 +20,7 @@ function Projects() {
         Hover the project to see details.
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 justify-center w-full items-center pt-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-6 justify-center w-full items-center pt-3">
         {projects?.map((proj) => {
           return (
             <ProjectCard

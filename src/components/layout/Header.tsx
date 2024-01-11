@@ -1,7 +1,6 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
-import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import AnimatedBtn from "../animated/AnimatedBtn";
 
@@ -24,12 +23,7 @@ const Logo = () => {
 
 const HeaderButtons = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 1 }}
-      className="flex space-x-4 md:space-x-6 justify-center  items-center  font-medium "
-    >
+    <motion.div className="flex space-x-4 md:space-x-6 justify-center  items-center  font-medium ">
       <ScrollLink
         activeClass="active"
         to="hero-container"
@@ -38,7 +32,7 @@ const HeaderButtons = () => {
         offset={-250}
         duration={500}
       >
-        <button className="text-md  hover:underline transition-all hover:text-gray-300 ">
+        <button className="text-lg  hover:underline transition-all hover:text-gray-300 ">
           Home
         </button>
       </ScrollLink>
@@ -51,7 +45,7 @@ const HeaderButtons = () => {
         offset={-150}
         duration={500}
       >
-        <button className=" py-6 text-md  hover:underline transition-all hover:text-gray-300 ">
+        <button className=" py-6 text-lg  hover:underline transition-all hover:text-gray-300 ">
           Works
         </button>
       </ScrollLink>
@@ -64,7 +58,7 @@ const HeaderButtons = () => {
         offset={-50}
         duration={500}
       >
-        <button className="py-6 border-0 text-md hover:underline transition-all hover:text-gray-300 ">
+        <button className="py-6 border-0 text-lg hover:underline transition-all hover:text-gray-300 ">
           Contact
         </button>
       </ScrollLink>
@@ -72,25 +66,8 @@ const HeaderButtons = () => {
   );
 };
 const Header = () => {
-  const { scrollY } = useScroll();
-  const [hidden, setHidden] = useState(false);
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    const previous = scrollY.getPrevious();
-    if (latest > previous && latest > 150) setHidden(true);
-    else setHidden(false);
-  });
-
   return (
-    <motion.header
-      variants={{
-        visible: { y: 0 },
-        hidden: { y: "-100%" },
-      }}
-      animate={hidden ? "hidden" : "visible"}
-      transition={{ duration: 0.25, ease: "easeInOut" }}
-      className="flex fixed h-20 z-50  left-0 right-0 backdrop-blur-3xl w-full  bg-white transition-all"
-    >
+    <motion.header className="flex fixed h-20 z-50  left-0 right-0 backdrop-blur-3xl w-full  bg-white transition-all border-b">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}

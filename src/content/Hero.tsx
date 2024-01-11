@@ -15,12 +15,12 @@ export default function Hero() {
       justify-center items-center text-center mx-auto  md:gap-10 max-w-7xl"
     >
       <motion.div className="flex flex-col gap-4 items-center">
-        <motion.h3 className="text-lg md:text-2xl font-bold  max-w-xl">
+        <motion.h3 className="text-xl md:text-2xl font-bold  max-w-xl">
           <span className="uppercase tracking-[2px] text-gray-700">
             Front-end Developer
           </span>
         </motion.h3>
-        <motion.h1 className="text-5xl lg:text-8xl font-bold  ">
+        <motion.h1 className="text-6xl lg:text-8xl font-bold  ">
           <span className=" tracking-[1px]">
             <span className="">Pedro Felippe</span>
           </span>

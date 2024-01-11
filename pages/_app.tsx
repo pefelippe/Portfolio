@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
          overflow-hidden`}
       >
         <Head>
-          <title>Pedro Felippe | Web Developer </title>
+          <title>Pedro Felippe | Front-End Developer </title>
           <meta name="description" content="Portfolio" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />

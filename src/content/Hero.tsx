@@ -10,7 +10,8 @@ export default function Hero() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex ] relative 
+      id="hero-container"
+      className="flex  relative 
       w-full max-md:flex-col  justify-start items-center text-center mx-auto  md:gap-10"
     >
       <motion.div className="flex justify-center flex-col h-full  items-center  md:gap-2 z-30  w-full ">
@@ -18,7 +19,7 @@ export default function Hero() {
           <span className="">Pedro Felippe</span>
         </motion.h1>
 
-        <motion.h3 className="text-lg md:text-2xl font-thin flex flex-col max-w-xl w-full text-gray-700 py-2">
+        <motion.h3 className="text-lg md:text-xl font-thin flex flex-col max-w-xl w-full text-gray-700 py-2">
           Front-end Developer based in Brazil. I create amazing products and
           solve problems.
         </motion.h3>

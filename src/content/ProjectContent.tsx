@@ -12,11 +12,11 @@ function Projects() {
       id="projects-container"
       className=" flex flex-col w-full items-center  justify-center gap-2  mx-auto   max-w-7xl"
     >
-      <h1 className="text-4xl lg:text-5xl font-bold tracking-tighter">
+      <h1 className="text-4xl lg:text-5xl font-bold tracking-tighter ">
         Selected works
       </h1>
 
-      <h3 className=" text-xl font-thin flex flex-col   pb-1 ">
+      <h3 className=" text-lg font-thin flex flex-col   pb-1 ">
         Hover the project to see details.
       </h3>
 

@@ -12,7 +12,7 @@ export default function Hero() {
     <motion.div
       className="flex text-[#fdfdff] relative 
      w-full max-md:flex-col  justify-start items-center 
-      text-start  max-w-3xl max-xl:px-6  mx-auto py-10  gap-10"
+      text-start   mx-auto  md:gap-10"
     >
       <motion.img
         initial={{ opacity: 0, x: -25 }}
@@ -20,14 +20,14 @@ export default function Hero() {
         transition={{ duration: 0.75, delay: 1 }}
         src="/assets/avatar-pdr.png"
         alt="pedro felippe"
-        className="max-md:hidden h-full md:max-w-[250px] md:max-h-[250px] rounded-md "
+        className="max-h-[280px] object-cover w-full h-full md:max-w-[350px] md:max-h-[350px]  "
       />
-      <motion.div className="flex justify-center flex-col h-full  items-start gap-4  z-30  w-full ">
+      <motion.div className="flex justify-center flex-col h-full  items-start gap-6  z-30  w-full max-md:p-6  ">
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl lg:text-6xl font-bold tracking-normal max-w-lg"
+          className="text-4xl lg:text-6xl font-bold tracking-normal max-w-lg"
         >
           <span className="">Pedro Felippe</span>
         </motion.h1>
@@ -36,7 +36,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className=" text-xl font-thin flex flex-col max-w-sm w-full  pb-1 text-gray-300"
+          className="text-lg md:text-xl font-thin flex flex-col max-w-sm w-full  pb-1 text-gray-300"
         >
           A Full-Stack Web Developer based in Brazil. I create amazing products
           and solve problems.
@@ -47,6 +47,16 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 1 }}
           className="flex items-center w-fit space-x-4 max-w-sm"
         >
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-9 w-9 hover:text-blue" />
+          </AnimatedBtn>
+
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <GitHubLogoIcon className="h-9 w-9 hover:text-blue" />
+          </AnimatedBtn>
           <ScrollLink
             activeClass="active"
             to="contact-content"
@@ -59,16 +69,6 @@ export default function Hero() {
               <p className="text-lg">Contact</p>
             </Button>
           </ScrollLink>
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-8 w-8 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
-          </AnimatedBtn>
         </motion.div>
         {/* <motion.div
           initial={{ opacity: 0, y: 25 }}

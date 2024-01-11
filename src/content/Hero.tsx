@@ -1,85 +1,30 @@
 /* eslint-disable react/no-unescaped-entities */
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { LinkedinIcon } from "lucide-react";
-
 import { Link as ScrollLink } from "react-scroll";
-import AnimatedBtn from "../components/animated/AnimatedBtn";
 import { Button } from "../components/ui/button";
 
 export default function Hero() {
   return (
     <motion.div
-      className="flex text-[#fdfdff] relative 
-     w-full max-md:flex-col  justify-start items-center 
-      text-start   mx-auto  md:gap-10"
+      initial={{ opacity: 0, y: 25 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex ] relative 
+      w-full max-md:flex-col  justify-start items-center text-center
+        mx-auto  md:gap-10"
     >
-      <motion.img
-        initial={{ opacity: 0, x: -25 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.75, delay: 1 }}
-        src="/assets/avatar-pdr.png"
-        alt="pedro felippe"
-        className="max-h-[280px] object-cover w-full h-full md:max-w-[350px] md:max-h-[350px]  "
-      />
-      <motion.div className="flex justify-center flex-col h-full  items-start gap-6  z-30  w-full max-md:p-6  ">
-        <motion.h1
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-4xl lg:text-6xl font-bold tracking-normal max-w-lg"
-        >
+      <motion.div className="flex justify-center flex-col h-full  items-center gap-4 md:gap-2 z-30  w-full max-md:p-6">
+        <motion.h1 className="text-5xl lg:text-7xl font-bold tracking-normal max-w-lg">
           <span className="">Pedro Felippe</span>
         </motion.h1>
 
-        <motion.h3
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="text-lg md:text-xl font-thin flex flex-col max-w-sm w-full  pb-1 text-gray-300"
-        >
+        <motion.h3 className="text-xl md:text-2xl font-thin flex flex-col max-w-xl w-full text-gray-700 py-2">
           A Full-Stack Web Developer based in Brazil. I create amazing products
           and solve problems.
         </motion.h3>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1 }}
-          className="flex items-center w-fit space-x-4 max-w-sm"
-        >
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-9 w-9 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-9 w-9 hover:text-blue" />
-          </AnimatedBtn>
+        <motion.div className="flex max-md:flex-col items-center justify-center w-full max-md:space-y-4 md:space-x-4 max-w-sm">
           <ScrollLink
-            activeClass="active"
-            to="contact-content"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            <Button className="px-8 py-6 text-2xl border-0 text-md hover:underline transition-all hover:text-gray-300 ">
-              <p className="text-lg">Contact</p>
-            </Button>
-          </ScrollLink>
-        </motion.div>
-        {/* <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1.25 }}
-          className="flex max-lg:flex-col max-lg:space-y-4 lg:space-x-4 w-full items-center max-w-sm text-[#fdfdff] "
-        >
-          <Link
-            style={{
-              width: "100%",
-            }}
+            className="w-full"
             activeClass="active"
             to="projects-container"
             spy={true}
@@ -88,32 +33,27 @@ export default function Hero() {
             duration={500}
           >
             <Button
-              variant="secondary"
-              className="flex items-center w-full  py-7 gap-2 bg-black text-white hover:bg-black/70"
+              variant="outline"
+              className=" py-6 text-md rounded-full w-full hover:underline transition-all hover:text-gray-300 "
             >
-              <span className="text-xl">Projects</span>
+              Works
             </Button>
-          </Link>
+          </ScrollLink>
 
-          <Link
-            style={{
-              width: "100%",
-            }}
+          <ScrollLink
+            className="w-full"
             activeClass="active"
             to="contact-content"
             spy={true}
             smooth={true}
-            offset={-150}
+            offset={-50}
             duration={500}
           >
-            <Button
-              variant="secondary"
-              className="flex items-center w-full  py-7  gap-2"
-            >
-              <span className="text-xl">Contact</span>
+            <Button className="py-6 rounded-full border-0 text-md w-full  hover:underline transition-all hover:text-gray-300 ">
+              Contact
             </Button>
-          </Link>
-        </motion.div> */}
+          </ScrollLink>
+        </motion.div>
       </motion.div>
     </motion.div>
   );

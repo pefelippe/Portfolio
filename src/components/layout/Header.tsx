@@ -11,8 +11,8 @@ const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className="uppercase t flex text-2xl font-bold hover:text-[#101010]/80 transition-all tracking-tighter  w-fit  ">
-        <span>PedroFelippe</span>
+      <button className=" flex text-xl font-bold hover:text-gray-300  transition-all tracking-tighter  w-fit  ">
+        <span>Pedro Felippe</span>
       </button>
     </ScrollLink>
   );
@@ -20,7 +20,7 @@ const Logo = () => {
 
 const HeaderButtons = () => {
   return (
-    <motion.div className="flex space-x-4 md:space-x-6 justify-center  items-center  font-medium ">
+    <motion.div className="flex space-x-3 md:space-x-6 justify-center  items-center  ">
       <ScrollLink
         activeClass="active"
         to="hero-container"
@@ -29,7 +29,7 @@ const HeaderButtons = () => {
         offset={-250}
         duration={500}
       >
-        <button className="text-lg  hover:underline transition-all hover:text-gray-300 ">
+        <button className="text-[16px] font-semibold tracking-wider  hover:underline transition-all hover:text-gray-300 ">
           Home
         </button>
       </ScrollLink>
@@ -42,7 +42,7 @@ const HeaderButtons = () => {
         offset={-150}
         duration={500}
       >
-        <button className=" py-6 text-lg  hover:underline transition-all hover:text-gray-300 ">
+        <button className=" py-6 text-[16px] font-semibold  hover:underline transition-all hover:text-gray-300 ">
           Works
         </button>
       </ScrollLink>
@@ -55,7 +55,7 @@ const HeaderButtons = () => {
         offset={-50}
         duration={500}
       >
-        <button className="py-6 border-0 text-lg hover:underline transition-all hover:text-gray-300 ">
+        <button className="py-6 text-[16px] font-semibold  border-0 text-lg hover:underline transition-all hover:text-gray-300 ">
           Contact
         </button>
       </ScrollLink>
@@ -64,7 +64,10 @@ const HeaderButtons = () => {
 };
 const Header = () => {
   return (
-    <motion.header className="bg-[#101010] text-white flex fixed h-20 z-50  left-0 right-0 backdrop-blur-3xl w-full uppercase  transition-all ">
+    <motion.header
+      className=" text-[#101010] flex fixed h-16 z-50 bg-white border-b
+      left-0 right-0 backdrop-blur-3xl w-full   transition-all "
+    >
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}

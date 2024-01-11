@@ -22,8 +22,13 @@ function ProjectCard({
 }: IProjectCard) {
   const isEvenId = id % 2 === 0;
 
+  const initialX = isEvenId ? 50 : -50;
+
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: initialX }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
       className={`w-full flex  max-xl:flex-col  items-center text-start  overflow-hidden justify-start  gap-2 xl:gap-12 ${
         isEvenId ? "xl:flex-row-reverse" : ""
       }`}
@@ -37,7 +42,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="object-cover flex-shrink-1 transition-all w-full h-full  min-h-[300px] xl:h-[500px] "
+          className="object-cover flex-shrink-1 transition-all w-full h-full  min-h-[300px] xl:h-[450px] "
         />
       </Link>
 
@@ -55,9 +60,9 @@ function ProjectCard({
             );
           })}
         </div>
-        <p className="text-xl font-normal">{description}</p>
+        <p className="text-md font-normal">{description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

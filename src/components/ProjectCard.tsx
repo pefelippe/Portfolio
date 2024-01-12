@@ -31,7 +31,7 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className={`w-full flex  max-lg:flex-col max-xl:flex-col  items-center text-start  overflow-hidden justify-start  ${
+      className={`w-full flex  max-lg:flex-col max-xl:flex-col  items-start lg:items-center text-start  overflow-hidden justify-start  ${
         isEvenId ? "" : ""
       }`}
     >
@@ -48,7 +48,7 @@ function ProjectCard({
         />
       </Link>
 
-      <div className="flex flex-col p-6 gap-3 lg:gap-4 h-full justify-start items-start  text-md  w-full  max-w-md">
+      <div className="flex flex-col py-4 lg:p-10 gap-3 lg:gap-4 h-full justify-start items-start  text-md  w-full  max-w-md">
         <p className="text-4xl lg:text-5xl font-medium  ">{title}</p>
 
         <p className="text-lg  font-normal">{description}</p>

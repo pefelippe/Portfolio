@@ -75,7 +75,7 @@ export default function MessageForm({}) {
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"
             placeholder="Enter your name"
-            className=" border  p-4 py-6 w-full focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/40"
+            className=" border border-[#101010] rounded p-4 py-6 w-full focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/40"
           />
 
           <Input
@@ -83,7 +83,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className=" border p-4 py-6 w-full focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/40"
+            className=" border border-[#101010] rounded p-4 py-6 w-full focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/40"
           />
         </div>
 
@@ -91,12 +91,12 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className="border p-4   w-full focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[450px] bg-gray-300/40"
+          className="border p-4 border-[#101010] rounded w-full focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[450px] bg-gray-300/40"
         />
 
         <Button
           type="submit"
-          className=" text-center  py-7  text-white  px-16 rounded-md  justify-center w-fit max-md:w-full mx-auto
+          className=" text-center  py-7  text-white  px-16 rounded  justify-center w-fit max-md:w-full mx-auto
           transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Start partnership!"}

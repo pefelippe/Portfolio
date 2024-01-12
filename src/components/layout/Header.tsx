@@ -33,7 +33,7 @@ export const HeaderButtons = () => {
         offset={-250}
         duration={500}
       >
-        <button className="text-lg  font-semibold tracking-wider  hover:underline transition-all hover:text-blue   ">
+        <button className="text-lg  font-semibold tracking-wider transition-all hover:text-blue   ">
           About
         </button>
       </ScrollLink>

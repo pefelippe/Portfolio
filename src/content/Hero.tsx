@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { LinkedinIcon } from "lucide-react";
+import { File, LinkedinIcon } from "lucide-react";
 
 import AnimatedBtn from "../components/animated/AnimatedBtn";
 
@@ -13,10 +13,10 @@ export default function Hero() {
       transition={{ duration: 0.5 }}
       id="hero-container"
       className="flex relative w-full max-md:flex-col tracking-normal   mx-auto
-      justify-center items-center text-start  md:gap-10 max-w-7xl"
+      justify-center items-center text-center  md:gap-10 max-w-7xl"
     >
-      <motion.div className="flex flex-col  items-start w-full">
-        <motion.h1 className="text-6xl lg:text-8xl font-bold max-w-2xl ">
+      <motion.div className="flex flex-col  items-center w-full">
+        <motion.h1 className="text-6xl lg:text-8xl font-bold ">
           Hey, I’m Pedro Felippe.
         </motion.h1>
 
@@ -38,6 +38,9 @@ export default function Hero() {
           <AnimatedBtn href="https://github.com/pefelippe">
             <GitHubLogoIcon className="h-8 w-8" />
           </AnimatedBtn>
+
+          
+   
         </motion.div>
       </motion.div>
 

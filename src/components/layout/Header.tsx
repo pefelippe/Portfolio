@@ -69,7 +69,7 @@ export const HeaderButtons = () => {
 const Header = () => {
   return (
     <motion.header
-      className=" flex fixed h-20 z-50 text-[#ffff] bg-gray-900  w-full
+      className=" flex fixed h-20 z-50 text-[#ffff] bg-[#101010]  w-full
       left-0 right-0 transition-all "
     >
       <motion.nav
@@ -80,7 +80,6 @@ const Header = () => {
       >
         <Logo />
         <HeaderButtons />
-  
       </motion.nav>
     </motion.header>
   );

@@ -12,18 +12,19 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="hero-container"
-      className="flex relative w-full max-md:flex-col tracking-normal   mx-auto 
-      justify-start items-center text-start  md:gap-12 max-w-5xl"
+      className="content-intern flex-row items-center"
     >
-
-      <motion.div className="flex flex-col  items-start w-full max-w-2xl gap-4">
-        <h3 className=" text-3xl">Hi, I'm <b className="  text-blue">Pedro Felippe</b>👋</h3>
-        <motion.h1 className="text-7xl font-extrabold ">
+      <motion.div className="flex flex-col  items-start w-full  gap-4">
+        <h3 className=" text-3xl">
+          Hi, I'm <b className="  text-blue">Pedro Felippe</b>👋
+        </h3>
+        <motion.h1 className="text-7xl lg:text-8xl font-extrabold ">
           Front-End React Developer
         </motion.h1>
 
         <motion.h3 className="text-xl font-light  max-w-lg text-[#999]  py-2">
-          Since 2020, solving complex industry problems and creating simple yet powerful solutions.
+          Since 2020, solving complex industry problems and creating simple yet
+          powerful solutions.
         </motion.h3>
 
         <motion.div
@@ -40,17 +41,14 @@ export default function Hero() {
           <AnimatedBtn href="https://github.com/pefelippe">
             <GitHubLogoIcon className="h-8 w-8" />
           </AnimatedBtn>
-
-          
-   
         </motion.div>
       </motion.div>
 
       <motion.img
-          src="assets/avatar-pdr.png"
-          alt="pedrofelippe"
-          className=" object-cover max-lg:hidden lg:max-w-[300px] w-full border-2 rounded-full border-[#101010]"
-        />
+        src="assets/avatar-pdr.png"
+        alt="pedrofelippe"
+        className=" object-cover max-lg:hidden lg:max-w-[350px] w-full border-2 rounded-full border-[#101010]"
+      />
     </motion.div>
   );
 }

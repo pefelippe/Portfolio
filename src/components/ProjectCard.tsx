@@ -31,15 +31,14 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className={`w-full flex  max-lg:flex-col max-xl:flex-col h-fit border-2 overflow-hidden 
-        rounded-3xl items-start lg:items-center text-start   justify-start bg-white  ${
-          isEvenId ? "" : ""}`}
+      className="w-full flex  flex-col xl h-fit border-2 overflow-hidden 
+        rounded-3xl items-center lg:items-center text-start bg-white  justify-start"
     >
       <Link
         href={link}
         target="_blank"
         className=" overflow-hidden 
-         transition-all   w-full h-[400px] border-r"
+         transition-all w-full h-[500px] border-b"
       >
         <motion.img
           src={imgUrl}
@@ -48,10 +47,12 @@ function ProjectCard({
         />
       </Link>
 
-      <div className="flex flex-col   gap-3 lg:gap-4 h-full justify-start items-start  text-md  w-full  max-w-xs px-10">
-        <p className="text-2xl font-bold  ">{title}</p>
+      <div className="flex flex-col gap-5 h-full justify-start items-start  text-md  w-full   p-8">
+        <div>
+          <p className="text-3xl font-bold pb-1 ">{title}</p>
 
-        <p className="text-md font-normal">{description}</p>
+          <p className="text-lg font-normal">{description}</p>
+        </div>
         <Button className="rounded w-fit p-6 font-semibold text-xl shadow tracking-tight">
           View project
         </Button>

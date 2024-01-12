@@ -5,7 +5,7 @@ import AnimatedBtn from "./animated/AnimatedBtn";
 
 function Skills() {
   return (
-    <div className="w-fit overflow-hidden flex items-start justify-start">
+    <div className="w-fit overflow-hidden flex ">
       <ul className="flex  flex-wrap  gap-2">
         {technologies.map((tech) => {
           return (

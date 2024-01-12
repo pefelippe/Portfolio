@@ -10,7 +10,7 @@ function Footer() {
 
   return (
     <motion.footer
-      className=" w-screen font-light items-start mx-auto bg-gray-900
+      className=" w-screen font-light items-start mx-auto bg-[#101010]
        text-white  flex-col h-fit  text-md  justify-start max-xl:px-6  flex "
     >
       <div className="max-w-5xl mx-auto flex  w-full flex-col py-8 gap-8">

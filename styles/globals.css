@@ -39,6 +39,22 @@
     --radius: 0.75rem;
   }
 
+  .section-title {
+    @apply text-lg lg:text-xl font-semibold tracking-widest  text-blue uppercase pb-4;
+  }
+
+  .section-subtitle {
+    @apply font-extrabold text-5xl lg:text-7xl leading-tight;
+  }
+
+  .section {
+    @apply max-xl:px-6 py-20 lg:py-24;
+  }
+
+  .content-intern {
+    @apply flex w-full items-start text-start  justify-start  rounded-md flex-col max-w-5xl mx-auto gap-8 lg:gap-16;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;

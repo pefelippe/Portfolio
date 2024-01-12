@@ -1,8 +1,9 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
+
 import AnimatedBtn from "../animated/AnimatedBtn";
-import { Logo } from "./Header";
+import { HeaderButtons, Logo } from "./Header";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -12,17 +13,14 @@ function Footer() {
       className=" w-screen font-light items-start mx-auto bg-[#101010]
        text-white  flex-col h-fit  text-md  justify-start max-xl:px-6  flex "
     >
-      <div className="max-w-7xl mx-auto flex w-full flex-col py-8 gap-8">
-        <div className="flex flex-col gap-5">
+      <div className="max-w-7xl mx-auto flex  w-full flex-col py-8 gap-8">
+        <div className="flex items-center max-md:flex-col justify-between ">
           <Logo />
-          <span className="flex max-w-md font-thin text-lg">
-            Web Developer who loves to create amazing products and solve
-            problems.
-          </span>
 
+          <HeaderButtons />
           <motion.div
             className="flex  top-0 bottom-0 h-full justify-center 
-         items-center w-fit space-x-6 max-w-sm"
+            items-center w-fit space-x-6 max-w-sm"
           >
             <AnimatedBtn
               target="_blank"
@@ -37,11 +35,10 @@ function Footer() {
           </motion.div>
         </div>
 
-        <p className="text-sm mx-auto font-thinw w-full border-t pt-8">
-          © Copyright {year}. Made by Pedro Felippe.
-        </p>
+        <div className="text-sm mx-auto font-thin justify-center items-center max-lg:text-center w-full border-t pt-8">
+          <span>© Copyright {year}. Made by Pedro Felippe.</span>
+        </div>
       </div>
-      {/* <Links /> */}
     </motion.footer>
   );
 }

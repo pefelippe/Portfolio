@@ -12,29 +12,23 @@ import { Toaster } from "../src/components/ui/toaster";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="light"
-      enableSystem
-      disableTransitionOnChange
+    <motion.div
+      className={`
+        min-w-[400px] mx-auto min-h-screen font-sans  h-fit overflow-hidden
+      scroll-smooth font-antialiased  color-[#212127]`}
     >
-      <motion.div
-        className={`
-         min-w-[400px] mx-auto min-h-screen font-poppins  h-fit overflow-hidden
-        scroll-smooth font-antialiased  color-[#212127]`}
-      >
-        <Head>
-          <title>Pedro Felippe | Front-End Developer </title>
-          <meta name="description" content="Portfolio" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-        </Head>
-        <Analytics />
-        <Header />
-        <Component {...pageProps} />
-        <Toaster />
-        <Footer />
-      </motion.div>
-    </ThemeProvider>
+      <Head>
+        <title>Pedro Felippe | Web Developer </title>
+        <meta name="description" content="Portfolio" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+      </Head>
+      <Analytics />
+      <Header />
+      <Component {...pageProps} />
+      <Toaster />
+      {/* <Footer /> */}
+    </motion.div>
+
   );
 }

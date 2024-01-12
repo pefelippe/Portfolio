@@ -10,9 +10,9 @@ function ContactContent() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col mx-auto justify-center items-center text-center relative w-full h-full gap-3 max-w-4xl "
+      className="flex flex-col mx-auto justify-center items-center text-center relative w-full h-full gap-3 max-w-2xl "
     >
-      <h1 className="text-4xl lg:text-5xl  font-bold tracking-tighter">
+      <h1 className="text-4xl lg:text-5xl font-semibold tracking-tighter underline underline-offset-4 decoration-blue ">
         Get in touch.
       </h1>
       <h3 className="text-xl font-normal flex flex-col max-w-xl">

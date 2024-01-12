@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+import { Button } from "./ui/button";
+
 type IProjectCard = {
   description: string;
   imgUrl: string;
@@ -29,41 +31,30 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className={`w-full flex  max-xl:flex-col  items-center text-start  overflow-hidden justify-start  gap-2 xl:gap-12 ${
-        isEvenId ? "lg:flex-row-reverse" : ""
+      className={`w-full flex  max-lg:flex-col max-xl:flex-col  items-center text-start  overflow-hidden justify-start  ${
+        isEvenId ? "" : ""
       }`}
     >
       <Link
         href={link}
         target="_blank"
-        className="rounded overflow-hidden w-full max-w-3xl
-         transition-all  border-4 hover:border-blue"
+        className=" overflow-hidden rounded-xl
+         transition-all  border-4 hover:border-blue h-[300px] lg:h-[450px] "
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="object-cover flex-shrink-1 transition-all w-full h-full  min-h-[300px] xl:h-[450px] "
+          className="object-cover flex-shrink-1 transition-all w-full h-full   "
         />
       </Link>
 
-      <div className="flex flex-col gap-4 h-full justify-start  text-md mx-auto w-full xl:max-w-lg ">
-        <p className="text-4xl font-bold  ">{title}</p>
-        {/* <div className="flex gap-2 flex-wrap ">
-          {stack.map((tool) => {
-            return (
-              <div
-                key={tool}
-                className="bg-black w-fit text-white px-2 border border-white rounded"
-              >
-                {tool}
-              </div>
-            );
-          })}
-        </div> */}
-        <p className="text-lg font-normal">{description}</p>
-        {/* <Button className=" w-fit p-7 font-semibold text-lg rounded-md shadow  tracking-tight">
-          Case Study
-        </Button> */}
+      <div className="flex flex-col p-6 gap-3 lg:gap-4 h-full justify-start items-start  text-md  w-full  max-w-md">
+        <p className="text-4xl lg:text-5xl font-medium  ">{title}</p>
+
+        <p className="text-lg  font-normal">{description}</p>
+        <Button className="rounded w-fit p-6 font-semibold text-xl shadow tracking-tight">
+          View project
+        </Button>
       </div>
     </motion.div>
   );

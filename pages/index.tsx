@@ -7,17 +7,17 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className=" flex flex-col   w-full h-full text-[#101010] mt-20">
-      <section className="flex flex-col relative w-full h-full max-xl:px-6 mx-auto ">
+    <motion.div className="flex flex-col  my-20 gap-20 ">
+      <section className="  pt-20">
         <Hero />
       </section>
-      <section className=" flex flex-col  relative w-full h-full max-xl:px-6 py-10 xl:py-20  mx-auto  border-t">
+      <section className="  border-t pt-20 ">
         <About />
       </section>
-      <section className="  w-full h-full max-xl:px-6  py-10 xl:py-20 border-y bg-gray-100/20">
+      <section className="py-20 border-y bg-gray-100/30 ">
         <ProjectContent />
       </section>
-      <section className="  w-full h-full max-xl:px-6 py-10 xl:py-20">
+      <section className=" ">
         <ContactContent />
       </section>
     </motion.div>

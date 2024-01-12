@@ -38,7 +38,7 @@ function ProjectCard({
         href={link}
         target="_blank"
         className=" overflow-hidden 
-         transition-all w-full h-[500px] border-b"
+         transition-all w-full h-[300px] lg:h-[500px] border-b"
       >
         <motion.img
           src={imgUrl}

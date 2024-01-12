@@ -11,7 +11,7 @@ function Skills() {
           return (
             <AnimatedBtn
               key={tech.name}
-              className="flex items-start relative text-sm font-medium transition-transform transform hover:scale-110 p-1 px-3 bg-[#101010] text-white"
+              className="flex uppercase items-start relative text-xs font-semibold transition-transform transform hover:scale-110 p-1 px-3 bg-[#101010] text-white"
             >
               <p>{tech.name}</p>
             </AnimatedBtn>

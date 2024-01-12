@@ -22,19 +22,21 @@ export default function About() {
         <motion.img
           src="assets/pedrof.jpg"
           alt="pedrofelippe"
-          className="flex-shrink-1 object-cover relative max-lg:hidden max-w-md rounded-md w-full shadow-2xl "
+          className="flex-shrink-1 object-cover relative max-lg:hidden max-w-md rounded-md w-full border-4 "
         />
         <div className="flex gap-4 flex-col w-full">
-          <Skills />
-          <p className=" text-xl leading-relaxed ">
-            With a proven track record of contributing to the development of
-            digital products for renowned companies like HP Inc and Furukawa
-            Electric. <br /> <br /> I leverage my technical expertise to design
-            and build user-friendly web applications using React, Next.js, and
-            TypeScript. <br /> <br /> My proficiency extends to creating robust
-            RESTful APIs with Node.js, managing databases, and ensuring a
-            seamless integration with CI/CD pipelines.
+          <p className=" text-xl font-extralight leading-relaxed ">
+            I am a technology enthusiast who even started creating my first
+            (terrible) websites in HTML and CSS as a child. My motivation has
+            always been to understand how computers works. <br />
+            <br />
+            In the last years i have been dedicated to solving complex problems
+            for companies using simple and well-executed solutions. <br />
+            <br />I excel in developing user-friendly web applications, creating
+            robust RESTful APIs, managing databases, and ensuring seamless
+            integration with CI/CD pipelines.
           </p>
+          <Skills />
         </div>
       </div>
     </motion.div>

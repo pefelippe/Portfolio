@@ -30,7 +30,7 @@ export const HeaderButtons = () => {
         to="about-content"
         spy={true}
         smooth={true}
-        offset={-250}
+        offset={-100}
         duration={500}
       >
         <button className="text-lg  font-semibold tracking-wider transition-all hover:text-blue   ">
@@ -43,7 +43,7 @@ export const HeaderButtons = () => {
         to="projects-container"
         spy={true}
         smooth={true}
-        offset={-150}
+        offset={-100}
         duration={500}
       >
         <button className=" py-6 text-lg font-semibold  transition-all  hover:text-blue ">

@@ -10,10 +10,10 @@ function Footer() {
 
   return (
     <motion.footer
-      className=" w-screen font-light items-start mx-auto bg-[#101010]
+      className=" w-screen font-light items-start mx-auto bg-gray-900
        text-white  flex-col h-fit  text-md  justify-start max-xl:px-6  flex "
     >
-      <div className="max-w-7xl mx-auto flex  w-full flex-col py-8 gap-8">
+      <div className="max-w-5xl mx-auto flex  w-full flex-col py-8 gap-8">
         <div className="flex items-center max-md:flex-col justify-between ">
           <Logo />
 
@@ -35,7 +35,7 @@ function Footer() {
           </motion.div>
         </div>
 
-        <div className="text-sm mx-auto font-thin justify-center items-center max-lg:text-center w-full border-t pt-8">
+        <div className="text-sm mx-auto font-thin justify-center items-center text-center w-full border-t pt-8">
           <span>© Copyright {year}. Made by Pedro Felippe.</span>
         </div>
       </div>

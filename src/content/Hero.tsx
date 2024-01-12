@@ -12,16 +12,18 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="hero-container"
-      className="flex relative w-full max-md:flex-col tracking-normal   mx-auto
-      justify-center items-center text-center  md:gap-10 max-w-7xl"
+      className="flex relative w-full max-md:flex-col tracking-normal   mx-auto 
+      justify-start items-center text-start  md:gap-12 max-w-5xl"
     >
-      <motion.div className="flex flex-col  items-center w-full">
-        <motion.h1 className="text-6xl lg:text-8xl font-bold ">
-          Hey, I’m Pedro Felippe.
+
+      <motion.div className="flex flex-col  items-start w-full max-w-2xl gap-4">
+        <h3 className=" text-3xl">Hi, I'm <b className="  text-blue">Pedro Felippe</b>👋</h3>
+        <motion.h1 className="text-7xl font-extrabold ">
+          Front-End React Developer
         </motion.h1>
 
-        <motion.h3 className="text-xl md:text-3xl font-thin font-sans  max-w-xl text-[#999]  py-8">
-          Web Developer who loves to create amazing products and solve problems.
+        <motion.h3 className="text-xl font-light  max-w-lg text-[#999]  py-2">
+          Since 2020, solving complex industry problems and creating simple yet powerful solutions.
         </motion.h3>
 
         <motion.div
@@ -44,7 +46,11 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      <div></div>
+      <motion.img
+          src="assets/avatar-pdr.png"
+          alt="pedrofelippe"
+          className=" object-cover max-lg:hidden lg:max-w-[300px] w-full border-2 rounded-full border-[#101010]"
+        />
     </motion.div>
   );
 }

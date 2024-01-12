@@ -15,7 +15,7 @@ export const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className=" flex text-2xl text-blue  transition-all w-fit  tracking-tighter font-bold">
+      <button className=" flex text-xl  transition-all w-fit  tracking-tight font-extrabold">
         <span>Pedro Felippe</span>
       </button>
     </ScrollLink>
@@ -69,14 +69,14 @@ export const HeaderButtons = () => {
 const Header = () => {
   return (
     <motion.header
-      className=" flex fixed h-20 z-50 text-[#101010] bg-white border-b w-full
-      left-0 right-0   transition-all "
+      className=" flex fixed h-20 z-50 text-[#ffff] bg-gray-900  w-full
+      left-0 right-0 transition-all "
     >
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex w-full mx-auto items-center justify-between  max-xl:px-6 max-w-7xl"
+        className="flex w-full mx-auto items-center justify-between  max-xl:px-6 max-w-5xl"
       >
         <Logo />
         <HeaderButtons />

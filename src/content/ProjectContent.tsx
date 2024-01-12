@@ -10,14 +10,14 @@ function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.5 }}
       id="projects-container"
-      className=" flex flex-col w-full items-start text-start  justify-center gap-4  max-w-7xl mx-auto"
+      className=" flex flex-col w-full items-start text-start  justify-center gap-4  max-w-5xl mx-auto"
     >
-      <h1 className="text-4xl lg:text-5xl font-semibold tracking-tighter underline underline-offset-4 decoration-blue ">
+      <h1 className="text-lg lg:text-2xl font-extrabold  text-blue uppercase tracking-wider ">
         Works
       </h1>
 
       <div
-        className="grid grid-cols-1  gap-24 py-6
+        className="grid grid-cols-1  gap-12 pt-12  rounded-md
         justify-start w-full items-start min-h-fit"
       >
         {projects?.map((proj) => {

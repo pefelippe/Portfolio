@@ -14,11 +14,11 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
       className={`
-        min-w-[400px] mx-auto min-h-screen font-sans  h-fit overflow-hidden
+        min-w-[400px] mx-auto min-h-screen   h-fit overflow-hidden font-poppins
       scroll-smooth font-antialiased  color-[#212127]`}
     >
       <Head>
-        <title>Pedro Felippe | Web Developer </title>
+        <title>Pedro Felippe | Front-End Developer </title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Header />
       <Component {...pageProps} />
       <Toaster />
-      {/* <Footer /> */}
+      <Footer />
     </motion.div>
 
   );

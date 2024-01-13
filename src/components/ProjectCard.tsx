@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { Button } from "./ui/button";
+import { Arrow } from "@radix-ui/react-dropdown-menu";
+import { ArrowBottomLeftIcon } from "@radix-ui/react-icons";
+import { ArrowRight } from "lucide-react";
+import { Skills } from "./Skills";
 
 type IProjectCard = {
   description: string;
@@ -31,31 +35,35 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full flex  flex-col xl h-fit border-2 overflow-hidden 
-        rounded-3xl items-center lg:items-center text-start bg-white  justify-start"
+      className="w-full flex  max-lg:flex-col xl h-full overflow-hidden gap-4
+        items-center lg:items-center text-start  justify-start "
     >
       <Link
         href={link}
         target="_blank"
         className=" overflow-hidden 
-         transition-all w-full h-[300px] lg:h-[500px] border-b"
+        x w-full h-[350px] sm:h-[500px] lg:h-[400px]  border rounded-md"
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="object-cover flex-shrink-1 transition-all w-full h-full   "
+          className="object-cover flex-shrink-1x w-full h-full   "
         />
       </Link>
 
-      <div className="flex flex-col gap-5 h-full justify-start items-start  text-md  w-full   p-8">
-        <div>
-          <p className="text-3xl font-bold pb-1 ">{title}</p>
-
-          <p className="text-lg font-normal">{description}</p>
+      <div className="flex flex-col gap-6 justify-start items-start h-full max-h-[250px] text-md  w-full  lg:px-6">
+        <div className="flex flex-col gap-3">
+          <p className="text-3xl font-bold">{title}</p>
+          <Skills technologies={stack} />
+          <p className="text-lg font-normal ">{description}</p>
         </div>
-        <Button className="rounded w-fit p-6 font-semibold text-xl shadow tracking-tight">
-          View project
-        </Button>
+
+        <div
+          className="rounded flex gap-2 justify-center items-center w-fit
+         hover:text-blue font-semibold text-xl tracking-tight"
+        >
+          <button>View project</button> <ArrowRight className="h-4 w-4" />
+        </div>
       </div>
     </motion.div>
   );

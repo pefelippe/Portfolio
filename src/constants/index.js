@@ -41,12 +41,7 @@ export const technologies = [
       "Biblioteca JavaScript para construção de interfaces de usuário declarativas e reutilizáveis",
     imgUrl: "/assets/tech/reactjs.png",
   },
-  // {
-  //   name: "RTK",
-  //   description:
-  //     "Ferramenta oficial do Redux para gerenciamento de estado em aplicações React",
-  //   imgUrl: "/assets/tech/redux.png",
-  // },
+
   {
     name: "Tailwind",
     description: "Framework CSS utilitário para estilização de interfaces",
@@ -68,12 +63,7 @@ export const technologies = [
     description: "Sistema de controle de versão",
     imgUrl: "/assets/tech/git.png",
   },
-  // {
-  //   name: "Figma",
-  //   description:
-  //     "Ferramenta de design colaborativa para criação de interfaces gráficas",
-  //   imgUrl: "/assets/tech/figma.png",
-  // },
+
   {
     name: "Docker",
     description:

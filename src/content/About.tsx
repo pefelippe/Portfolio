@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-
-import Skills from "../components/Skills";
+import { Skills } from "../components/Skills";
 
 export default function About() {
+  const skillList = ["react", "tailwind", "shadcn", "next", "typescript"];
   return (
     <motion.div
       id="about-content"
@@ -12,7 +12,7 @@ export default function About() {
       transition={{ duration: 0.5, delay: 0.5 }}
       className="content-intern"
     >
-      <div className="w-full font-normal flex flex-col justify-center text-lg  h-fit ">
+      <div className="w-full font-normal flex flex-col justify-start text-start text-lg  h-fit ">
         <h1 className="section-title">About</h1>
         <h3 className="section-subtitle">
           A dedicated developer based in Brazil.
@@ -22,10 +22,10 @@ export default function About() {
         <motion.img
           src="assets/pedrof.jpg"
           alt="pedrofelippe"
-          className="flex-shrink-1 object-cover relative max-lg:hidden max-w-md rounded-md w-full border-4 "
+          className="flex-shrink-1 object-cover relative max-lg:hidden max-w-sm rounded-md w-full border-4 "
         />
         <div className="flex gap-4 flex-col w-full">
-          <p className=" text-xl font-extralight leading-relaxed ">
+          <p className=" text-xl font-normal leading-relaxed ">
             I am a technology enthusiast who even started creating my first
             (terrible) websites in HTML and CSS as a child. My motivation has
             always been to understand how computers works. <br />
@@ -36,7 +36,7 @@ export default function About() {
             robust RESTful APIs, managing databases, and ensuring seamless
             integration with CI/CD pipelines.
           </p>
-          <Skills />
+          {/* <Skills technologies={skillList} /> */}
         </div>
       </div>
     </motion.div>

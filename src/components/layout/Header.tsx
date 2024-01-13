@@ -15,8 +15,8 @@ export const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className=" flex text-xl  transition-all w-fit  tracking-tight font-extrabold">
-        <span>Pedro Felippe</span>
+      <button className=" flex text-xl  transition-all w-fit  tracking-tight font-bold">
+        <span>pedrofelippe.</span>
       </button>
     </ScrollLink>
   );
@@ -33,7 +33,7 @@ export const HeaderButtons = () => {
         offset={-100}
         duration={500}
       >
-        <button className="text-lg  font-semibold tracking-wider transition-all hover:text-blue   ">
+        <button className="text-md  font-semibold tracking-wider transition-all hover:text-blue   ">
           About
         </button>
       </ScrollLink>
@@ -46,7 +46,7 @@ export const HeaderButtons = () => {
         offset={-100}
         duration={500}
       >
-        <button className=" py-6 text-lg font-semibold  transition-all  hover:text-blue ">
+        <button className=" py-6 text-md font-semibold  transition-all  hover:text-blue ">
           Works
         </button>
       </ScrollLink>
@@ -59,7 +59,7 @@ export const HeaderButtons = () => {
         offset={-160}
         duration={500}
       >
-        <button className="py-6 text-md font-semibold text-lg transition-all  hover:text-blue ">
+        <button className="py-6 text-md font-semibold text-md transition-all  hover:text-blue ">
           Contact
         </button>
       </ScrollLink>
@@ -69,14 +69,14 @@ export const HeaderButtons = () => {
 const Header = () => {
   return (
     <motion.header
-      className=" flex fixed h-20 z-50 text-[#ffff] bg-[#101010]  w-full
-      left-0 right-0 transition-all "
+      className=" flex fixed h-24 z-50 bg-white  w-full border-b
+      left-0 right-0 transition-all"
     >
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex w-full mx-auto items-center justify-between  max-xl:px-6 max-w-5xl"
+        className="flex w-full mx-auto items-center justify-between max-lg:px-6 max-w-6xl"
       >
         <Logo />
         <HeaderButtons />

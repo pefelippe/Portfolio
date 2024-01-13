@@ -65,7 +65,7 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex flex-col items-center text-center  h-fit text-[#121212] rounded-md gap-3 w-full  ">
+    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-3 w-full  text-[#101010]  ">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="gap-3 w-full flex flex-col   "
@@ -75,7 +75,8 @@ export default function MessageForm({}) {
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"
             placeholder="Enter your name"
-            className=" border border-[#101010] rounded p-4 py-6 w-full focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/40"
+            className=" border border-[#101010] rounded p-4 py-7 w-full focus:outline-none
+             focus:ring focus:ring-blue-500 bg-[#f5f5f5]"
           />
 
           <Input
@@ -83,7 +84,8 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className=" border border-[#101010] rounded p-4 py-6 w-full focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/40"
+            className=" border border-[#101010] rounded p-4 py-7 w-full 
+            focus:outline-none focus:ring focus:ring-blue-500 bg-[#f5f5f5]"
           />
         </div>
 
@@ -91,7 +93,8 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className="border p-4 border-[#101010] rounded w-full focus:outline-none focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[350px] bg-gray-300/40"
+          className="border p-4 border-[#101010] rounded w-full focus:outline-none 
+          focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[400px] bg-[#f5f5f5]"
         />
 
         <Button

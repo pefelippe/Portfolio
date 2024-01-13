@@ -12,12 +12,12 @@ function Projects() {
       id="projects-container"
       className="content-intern"
     >
-      <div className="w-full font-normal flex flex-col justify-center text-lg  h-fit ">
+      <div className="w-full font-normal flex flex-col justify-start text-lg  h-fit text-start">
         <h1 className="section-title">Works</h1>
         <h3 className="section-subtitle">Always working in something.</h3>
       </div>
       <div
-        className="grid grid-cols-1  gap-24  rounded-md
+        className="grid grid-cols-1  rounded-md gap-16 
         justify-start w-full items-start min-h-fit"
       >
         {projects?.map((proj) => {

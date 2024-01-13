@@ -40,19 +40,19 @@
   }
 
   .section-title {
-    @apply text-lg lg:text-xl font-semibold tracking-widest  text-blue uppercase pb-4;
+    @apply text-lg lg:text-2xl font-bold tracking-tighter text-blue uppercase;
   }
 
   .section-subtitle {
-    @apply font-extrabold text-5xl lg:text-7xl leading-tight;
+    @apply font-extrabold text-5xl lg:text-6xl max-w-3xl leading-tight text-start;
   }
 
   .section {
-    @apply max-xl:px-6 py-20 lg:py-24;
+    @apply max-xl:px-6  py-20;
   }
 
   .content-intern {
-    @apply flex w-full items-start text-start  justify-start  rounded-md flex-col max-w-5xl mx-auto gap-8 lg:gap-16;
+    @apply flex flex-col w-full items-start text-start  justify-start h-full  max-w-6xl mx-auto gap-8 lg:gap-16;
   }
 
   .dark {

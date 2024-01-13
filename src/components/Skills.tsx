@@ -1,25 +1,24 @@
-import Image from "next/image";
-
-import { technologies } from "../constants";
+import React from "react";
 import AnimatedBtn from "./animated/AnimatedBtn";
 
-function Skills() {
+interface SkillsProps {
+  technologies: string[];
+}
+
+export const Skills: React.FC<SkillsProps> = ({ technologies }) => {
   return (
     <div className="w-fit overflow-hidden flex ">
       <ul className="flex  flex-wrap  gap-2">
-        {technologies.map((tech) => {
-          return (
-            <AnimatedBtn
-              key={tech.name}
-              className="flex uppercase items-start relative text-xs font-semibold transition-transform transform hover:scale-110 p-1 px-3 bg-[#101010] text-white"
-            >
-              <p>{tech.name}</p>
-            </AnimatedBtn>
-          );
-        })}
+        {technologies.map((tech) => (
+          <span
+            key={tech}
+            className="flex uppercase tracking-tighter items-start relative text-sm font-semibold rounded-sm
+             p-1 px-3 bg-blue text-white"
+          >
+            <p>{tech}</p>
+          </span>
+        ))}
       </ul>
     </div>
   );
-}
-
-export default Skills;
+};

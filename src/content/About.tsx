@@ -4,38 +4,47 @@ import { motion } from "framer-motion";
 import { Skills } from "../components/Skills";
 
 export default function About() {
-  const skillList = ["react", "tailwind", "shadcn", "next", "typescript"];
+  const skillList = [
+    "react",
+    "tailwind",
+    "next",
+    "typescript",
+    "node",
+    "angular",
+    "AWS",
+    "AZURE",
+    "golang",
+    "docker",
+    "python",
+    "shadcn",
+    "selenium",
+  ];
   return (
     <motion.div
       id="about-content"
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.5 }}
-      className="content-intern flex-row gap-16 items-center "
+      className="content-intern flex-row max-md:flex-col gap-8 md:gap-12 md:items-center "
     >
       <motion.img
-        src="assets/pedrof.jpg"
+        src="assets/avatar-pdr.png"
         alt="pedrofelippe"
-        className="flex-shrink-1 object-cover relative max-lg:hidden w-full max-w-[450px] h-[600px] rounded-md"
+        className="flex-shrink-1 object-cover relative  w-full  max-md:max-h-[250px] lg:max-w-sm rounded-md "
       />
-      <div className="flex max-lg:flex-col gap-8 lg:gap-16 items-start ">
-        <div className="flex gap-4 flex-col w-full max-w-2xl ">
-          <h1 className="section-title">About me</h1>
+      <div className="flex max-lg:flex-col lg:gap-16 items-start ">
+        <div className="flex gap-8 flex-col w-full  ">
           <h3 className="section-subtitle">
-            A dedicated developer based in Brazil.
+            A frontend developer based in Brazil.
           </h3>
-          <p className="text-xl md:text-2xl font-light leading-tight ">
-            I am a technology enthusiast who even started creating my first
-            (terrible) websites in HTML and CSS as a child. My motivation has
-            always been to understand how computers works. <br />
-            <br />
+          <p className="text-xl max-w-xl lg:text-xl font-normal leading-tight ">
             In the last years i have been dedicated to solving complex problems
-            for companies using simple and well-executed solutions. <br />
-            <br />I excel in developing user-friendly web applications, creating
-            robust RESTful APIs, managing databases, and ensuring seamless
-            integration with CI/CD pipelines.
+            for companies using simple and well-executed solutions, developing
+            user-friendly web applications, creating robust RESTful APIs,
+            managing databases, and ensuring seamless integration with CI/CD
+            pipelines.
           </p>
-          {/* <Skills technologies={skillList} /> */}
+          <Skills technologies={skillList} />
         </div>
       </div>
     </motion.div>

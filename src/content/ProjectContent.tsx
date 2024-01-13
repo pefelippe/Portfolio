@@ -13,11 +13,13 @@ function Projects() {
       className="content-intern"
     >
       <div className="w-full font-normal flex flex-col justify-start text-lg  h-fit text-start">
-        <h1 className="section-title">Works</h1>
-        <h3 className="section-subtitle">Always working in something.</h3>
+        {/* <h1 className="section-title">Works</h1> */}
+        <h3 className="section-subtitle  max-w-6xl">
+          Always working in something.
+        </h3>
       </div>
       <div
-        className="grid grid-cols-1  rounded-md gap-16 
+        className="grid grid-cols-1  rounded-md gap-16 py-8
         justify-start w-full items-start min-h-fit"
       >
         {projects?.map((proj) => {

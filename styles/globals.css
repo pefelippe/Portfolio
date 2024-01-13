@@ -44,7 +44,7 @@
   }
 
   .section-subtitle {
-    @apply font-extrabold text-4xl lg:text-6xl max-w-3xl leading-tight text-start;
+    @apply font-extrabold text-5xl lg:text-6xl max-w-3xl leading-tight;
   }
 
   .section {
@@ -52,7 +52,7 @@
   }
 
   .content-intern {
-    @apply flex flex-col w-full items-start text-start  justify-start h-full  max-w-6xl mx-auto gap-8  py-16 md:py-20;
+    @apply flex flex-col w-full items-start text-start  justify-start h-full  max-w-6xl mx-auto gap-8 py-10 lg:py-20;
   }
 
   .dark {

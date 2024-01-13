@@ -38,8 +38,7 @@ const Header = () => {
         className="flex w-full mx-auto items-center justify-between max-xl:px-6 max-w-6xl"
       >
         <Logo />
-
-        <motion.div className="flex space-x-4 justify-end  items-center  w-full max-sm:hidden">
+        <motion.div className="flex w-full space-x-4 justify-end  items-center  max-sm:hidden">
           <ScrollLink
             activeClass="active"
             to="about-content"
@@ -76,16 +75,6 @@ const Header = () => {
               Contact
             </button>
           </ScrollLink>
-
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-5 w-5 hover:text-blue" />
-          </AnimatedBtn>
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-5 w-5 hover:text-blue" />
-          </AnimatedBtn>
         </motion.div>
       </motion.nav>
     </motion.header>

@@ -27,6 +27,7 @@ export const Logo = () => {
 const Header = () => {
   return (
     <motion.header
+      suppressHydrationWarning
       className=" flex fixed h-16 z-50 bg-white  w-full border-b dark:border-none dark:bg-[#101010]
       left-0 right-0 transition-"
     >
@@ -77,8 +78,6 @@ const Header = () => {
               Contact
             </button>
           </ScrollLink>
-
-          <ModeToggle />
         </motion.div>
       </motion.nav>
     </motion.header>

@@ -18,15 +18,6 @@ export const projects = [
     stack: ["react", "tailwind", "shadcn", "next", "typescript"],
     description: "Create your own personal card to share your Pix QR Code.",
   },
-  {
-    id: 3,
-    link: "https://www.pedrofelippe.site/",
-    repo: "",
-    title: "Personal Website",
-    imgUrl: "/projects/portfolio.png",
-    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
-    description: "Not much to say. My website.",
-  },
 ];
 
 export const technologies = [

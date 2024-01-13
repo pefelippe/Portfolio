@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <motion.header
       className=" flex fixed h-16 z-50 bg-white  w-full border-b dark:border-none dark:bg-[#101010]
-      left-0 right-0 transition-all"
+      left-0 right-0 transition-"
     >
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
@@ -38,7 +38,7 @@ const Header = () => {
       >
         <Logo />
 
-        <motion.div className="flex space-x-3 md:space-x-6 justify-end  items-center  w-full">
+        <motion.div className="flex space-x-3 md:space-x-4 justify-end  items-center  w-full max-sm:hidden">
           <ScrollLink
             activeClass="active"
             to="about-content"
@@ -47,7 +47,7 @@ const Header = () => {
             offset={-100}
             duration={500}
           >
-            <button className="text-lg  font-normal tracking-wider transition-all hover:text-blue   ">
+            <button className="text-md  font-medium tracking-wider transition-all hover:text-blue   ">
               About
             </button>
           </ScrollLink>
@@ -60,7 +60,7 @@ const Header = () => {
             offset={-100}
             duration={500}
           >
-            <button className=" text-lg font-normal  transition-all  hover:text-blue ">
+            <button className=" text-md font-medium  transition-all  hover:text-blue ">
               Works
             </button>
           </ScrollLink>
@@ -73,13 +73,13 @@ const Header = () => {
             offset={-160}
             duration={500}
           >
-            <button className="py-6  font-normal text-lg transition-all  hover:text-blue ">
+            <button className="py-6 font-medium text-md transition-all  hover:text-blue ">
               Contact
             </button>
           </ScrollLink>
+
+          <ModeToggle />
         </motion.div>
-        <Separator orientation="vertical" className="mx-6" />
-        <ModeToggle />
       </motion.nav>
     </motion.header>
   );

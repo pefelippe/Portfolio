@@ -52,7 +52,7 @@
   }
 
   .content-intern {
-    @apply flex flex-col w-full items-start text-start  justify-start h-full  max-w-5xl mx-auto gap-8 lg:gap-10;
+    @apply flex flex-col w-full items-start text-start  justify-start h-full  max-w-6xl mx-auto gap-8 lg:gap-16;
   }
 
   .dark {

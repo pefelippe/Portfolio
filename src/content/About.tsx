@@ -18,14 +18,14 @@ export default function About() {
           A dedicated developer based in Brazil.
         </h3>
       </div>
-      <div className="flex max-lg:flex-col gap-6 md:gap-12 max-lg:items-start items-center">
+      <div className="flex max-lg:flex-col gap-8 lg:gap-16 max-lg:items-start items-center">
         <motion.img
           src="assets/pedrof.jpg"
           alt="pedrofelippe"
-          className="flex-shrink-1 object-cover relative max-h-[350px]  max-md:w-full lg:max-w-sm rounded-md border-4 "
+          className="flex-shrink-1 object-cover relative max-lg:max-h-[300px]  w-full md:max-w-[400px] rounded-md border-4 "
         />
         <div className="flex gap-4 flex-col w-full">
-          <p className="text-lg md:text-xl font-normal leading-relaxed ">
+          <p className="text-lg md:text-2xl font-light leading-tight ">
             I am a technology enthusiast who even started creating my first
             (terrible) websites in HTML and CSS as a child. My motivation has
             always been to understand how computers works. <br />

@@ -8,13 +8,13 @@ import ProjectContent from "../src/content/ProjectContent";
 export default function Home() {
   return (
     <motion.div className="mt-16">
-      <section className="section bg-gray-100/30 dark:bg-[#101010]">
+      <section className="section border-b bg-gray-100/30 dark:bg-[#101010]">
         <Hero />
       </section>
       <section className="section ">
         <About />
       </section>
-      <section className="section  bg-gray-100/30 dark:bg-[#101010]">
+      <section className="section border-y  bg-gray-100/30 dark:bg-[#101010]">
         <ProjectContent />
       </section>
       <section className="section ">

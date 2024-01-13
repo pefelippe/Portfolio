@@ -15,31 +15,31 @@ export default function Hero() {
       className="content-intern items-start md:items-center w-full text-start md:text-center"
     >
       <motion.div className="flex flex-col items-start md:items-center gap-4 w-full">
-        <h3 className="text-xl sm:text-2xl  font-semibold">
+        <h3 className="text-xl sm:text-3xl  font-thin">
           Hi, I'm Pedro Felippe 👋
         </h3>
-        <motion.h1 className="text-6xl lg:text-7xl  font-extrabold text-blue dark:text-[#fffdd0]">
+        <motion.h1 className="text-5xl sm:text-6xl lg:text-7xl  font-extrabold text-blue dark:text-[#fffdd0]">
           I project, code and grow internet software.
         </motion.h1>
 
-        <motion.h3 className="text-lg sm:text-2xl font-normal max-w-2xl text-gray-700   dark:text-[#efefef]">
+        <motion.h3 className="text-lg sm:text-2xl font-thin max-w-2xl text-gray-700   dark:text-[#efefef]">
           Solving complex industry problems and creating simple yet powerful
           solutions.
         </motion.h3>
 
         <motion.div
           className="flex  top-0 bottom-0 h-full justify-center 
-            items-center w-fit space-x-6 max-w-sm"
+            items-center w-fit space-x-8 max-w-sm"
         >
           <AnimatedBtn
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"
           >
-            <LinkedinIcon className="h-7 w-7 hover:text-blue" />
+            <LinkedinIcon className="h-8 w-8 hover:text-blue" />
           </AnimatedBtn>
 
           <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-7 w-7 hover:text-blue" />
+            <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
           </AnimatedBtn>
         </motion.div>
       </motion.div>

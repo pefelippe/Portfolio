@@ -17,7 +17,7 @@ export const Logo = () => {
       offset={-250}
       duration={500}
     >
-      <button className=" flex text-xl  transition-all w-fit  tracking-tight font-extrabold">
+      <button className=" flex text-xl  transition-all w-fit  tracking-tight font-bold">
         pedrofelippe.
       </button>
     </ScrollLink>
@@ -35,7 +35,7 @@ const Header = () => {
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex w-full mx-auto items-center justify-between max-lg:px-6 max-w-6xl"
+        className="flex w-full mx-auto items-center justify-between max-xl:px-6 max-w-6xl"
       >
         <Logo />
 

@@ -10,15 +10,14 @@ function ContactContent() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="content-intern  "
+      className="content-intern flex-row "
     >
       <div className="w-full font-normal flex flex-col justify-center text-lg  h-fit ">
         <h1 className="section-title">Get in touch.</h1>
         <h3 className="section-subtitle">Let's make things happen!</h3>
       </div>
-      <div className="flex w-full">
-        <MessageForm />
-      </div>
+
+      <MessageForm />
     </motion.div>
   );
 }

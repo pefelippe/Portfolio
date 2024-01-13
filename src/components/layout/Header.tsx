@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <motion.header
       suppressHydrationWarning
-      className=" flex fixed h-16 z-50 bg-white  w-full border-b dark:border-none dark:bg-[#101010]
+      className=" flex fixed h-16 z-50 bg-white  w-full dark:border-none border-b
       left-0 right-0 transition-"
     >
       <motion.nav
@@ -39,7 +39,7 @@ const Header = () => {
       >
         <Logo />
 
-        <motion.div className="flex space-x-3 md:space-x-4 justify-end  items-center  w-full max-sm:hidden">
+        <motion.div className="flex space-x-4 justify-end  items-center  w-full max-sm:hidden">
           <ScrollLink
             activeClass="active"
             to="about-content"
@@ -52,7 +52,6 @@ const Header = () => {
               About
             </button>
           </ScrollLink>
-
           <ScrollLink
             activeClass="active"
             to="projects-container"
@@ -65,7 +64,6 @@ const Header = () => {
               Works
             </button>
           </ScrollLink>
-
           <ScrollLink
             activeClass="active"
             to="contact-content"
@@ -78,6 +76,16 @@ const Header = () => {
               Contact
             </button>
           </ScrollLink>
+
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-5 w-5 hover:text-blue" />
+          </AnimatedBtn>
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <GitHubLogoIcon className="h-5 w-5 hover:text-blue" />
+          </AnimatedBtn>
         </motion.div>
       </motion.nav>
     </motion.header>

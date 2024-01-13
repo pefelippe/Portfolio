@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+
 import { Skills } from "../components/Skills";
 
 export default function About() {
@@ -10,21 +11,19 @@ export default function About() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.5 }}
-      className="content-intern"
+      className="content-intern flex-row gap-16 items-center "
     >
-      <div className="w-full font-normal flex flex-col justify-start text-start text-lg  h-fit ">
-        <h1 className="section-title">About me</h1>
-        <h3 className="section-subtitle">
-          A dedicated developer based in Brazil.
-        </h3>
-      </div>
-      <div className="flex max-lg:flex-col gap-8 lg:gap-16 max-lg:items-start items-center">
-        <motion.img
-          src="assets/pedrof.jpg"
-          alt="pedrofelippe"
-          className="flex-shrink-1 object-cover relative max-lg:hidden w-full max-w-[450px] rounded-md border-4 "
-        />
-        <div className="flex gap-4 flex-col w-full ">
+      <motion.img
+        src="assets/pedrof.jpg"
+        alt="pedrofelippe"
+        className="flex-shrink-1 object-cover relative max-lg:hidden w-full max-w-[450px] h-[600px] rounded-md"
+      />
+      <div className="flex max-lg:flex-col gap-8 lg:gap-16 items-start ">
+        <div className="flex gap-4 flex-col w-full max-w-2xl ">
+          <h1 className="section-title">About me</h1>
+          <h3 className="section-subtitle">
+            A dedicated developer based in Brazil.
+          </h3>
           <p className="text-xl md:text-2xl font-light leading-tight ">
             I am a technology enthusiast who even started creating my first
             (terrible) websites in HTML and CSS as a child. My motivation has

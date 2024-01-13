@@ -18,7 +18,7 @@ export default function About() {
           A dedicated developer based in Brazil.
         </h3>
       </div>
-      <div className="flex gap-16 items-center">
+      <div className="flex gap-12 items-center">
         <motion.img
           src="assets/pedrof.jpg"
           alt="pedrofelippe"

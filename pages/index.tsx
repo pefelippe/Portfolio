@@ -7,14 +7,14 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className="mt-24">
-      <section className="section  ">
+    <motion.div className="mt-16">
+      <section className="section bg-gray-100/30 dark:bg-[#101010]">
         <Hero />
       </section>
-      <section className="section border-t">
+      <section className="section ">
         <About />
       </section>
-      <section className="section border-y ">
+      <section className="section  bg-gray-100/30 dark:bg-[#101010]">
         <ProjectContent />
       </section>
       <section className="section ">

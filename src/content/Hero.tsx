@@ -12,17 +12,17 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="hero-container"
-      className="content-intern items-start w-full"
+      className="content-intern items-center w-full text-center"
     >
-      <motion.div className="flex flex-col items-start  max-w-3xl  w-full">
-        <h3 className="text-xl lg:text-3xl  font-semibold pb-2">
+      <motion.div className="flex flex-col items-center   w-full">
+        <h3 className="text-xl lg:text-2xl  font-semibold pb-2">
           Hi, I'm Pedro Felippe 👋
         </h3>
-        <motion.h1 className="text-5xl lg:text-7xl  font-extrabold ">
+        <motion.h1 className="text-5xl lg:text-7xl  font-extrabold text-blue dark:text-[#fffdd0]">
           I project, code and grow internet software.
         </motion.h1>
 
-        <motion.h3 className="text-lg lg:text-2xl font-normal max-w-2xl text-gray-700 py-4 pb-6 ">
+        <motion.h3 className="text-lg lg:text-2xl font-normal max-w-2xl text-gray-700 py-4 pb-6 dark:text-[#efefef]">
           Solving complex industry problems and creating simple yet powerful
           solutions.
         </motion.h3>

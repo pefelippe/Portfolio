@@ -3,21 +3,20 @@ import { motion } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
-import { HeaderButtons, Logo } from "./Header";
+import { Logo } from "./Header";
 
 function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <motion.footer
-      className=" w-screen font-light items-start mx-auto bg-[#101010] border-t
+      className=" w-screen font-light items-start mx-auto bg-[#101010] border-t dark:bg-white dark:text-[#101010]
        text-white  flex-col h-fit  text-md  justify-start max-xl:px-6  flex "
     >
       <div className="max-w-6xl mx-auto flex  w-full flex-col py-8 gap-8">
         <div className="flex items-center max-md:flex-col justify-between ">
           <Logo />
 
-          <HeaderButtons />
           <motion.div
             className="flex  top-0 bottom-0 h-full justify-center 
             items-center w-fit space-x-6 max-w-sm"
@@ -26,11 +25,11 @@ function Footer() {
               target="_blank"
               href="https://www.linkedin.com/in/pedro-felippe/"
             >
-              <LinkedinIcon className="h-8 w-8" />
+              <LinkedinIcon className="h-6 w-6" />
             </AnimatedBtn>
 
             <AnimatedBtn href="https://github.com/pefelippe">
-              <GitHubLogoIcon className="h-8 w-8" />
+              <GitHubLogoIcon className="h-6 w-6" />
             </AnimatedBtn>
           </motion.div>
         </div>

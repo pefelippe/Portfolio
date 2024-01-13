@@ -35,7 +35,7 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full flex  max-lg:flex-col xl h-full overflow-hidden gap-4
+      className="w-full flex  max-lg:flex-col xl h-full overflow-hidden gap-6
         items-center lg:items-center text-start  justify-start "
     >
       <Link

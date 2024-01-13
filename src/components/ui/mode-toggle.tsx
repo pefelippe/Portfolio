@@ -2,29 +2,32 @@
 
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { Button } from "./button";
 
 export function ModeToggle() {
   const { setTheme, theme } = useTheme();
 
   if (theme === "light") {
     return (
-      <button
-        className="bg-gray-700 border-none pb-4"
+      <Button
+        className="px-2 rounded-full text-[#101010]"
+        variant={"outline"}
         onClick={() => setTheme("dark")}
       >
-        <Moon className=" absolute h-[1.2rem] w-[1.2rem] " />
+        <Moon className="h-6 w-6" />
         <span className="sr-only">Toggle theme</span>
-      </button>
+      </Button>
     );
   }
 
   return (
-    <button
-      className="bg-gray-700 border-none"
+    <Button
+      className="px-2 rounded-full text-white"
+      variant={"outline"}
       onClick={() => setTheme("light")}
     >
-      <Sun className="absolute h-[1.2rem] w-[1.2rem]  " />
+      <Sun className="h-6 w-6" />
       <span className="sr-only">Toggle theme</span>
-    </button>
+    </Button>
   );
 }

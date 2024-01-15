@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
-import Link from "next/link";
-
-import { Button } from "./ui/button";
 import { Arrow } from "@radix-ui/react-dropdown-menu";
 import { ArrowBottomLeftIcon } from "@radix-ui/react-icons";
+import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+
 import { Skills } from "./Skills";
+import { Button } from "./ui/button";
 
 type IProjectCard = {
   description: string;
@@ -35,8 +35,8 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full flex  max-lg:flex-col xl h-full overflow-hidden 
-        items-start lg:items-center text-start  justify-start gap-6 lg:gap-8"
+      className="w-full flex flex-col h-full overflow-hidden 
+        items-start text-start  justify-start gap-4 "
     >
       <Link
         href={link}
@@ -51,7 +51,7 @@ function ProjectCard({
         />
       </Link>
 
-      <div className="flex flex-col gap-6 justify-between items-start md:max-h-[250px] text-md  w-full  max-w-md ">
+      <div className="flex flex-col gap-3 justify-start items-start md:max-h-[250px] text-md  w-full h-full">
         <div className="flex flex-col gap-3">
           <p className="text-3xl font-bold">{title}</p>
           <Skills technologies={stack} />

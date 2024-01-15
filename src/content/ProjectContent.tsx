@@ -19,7 +19,7 @@ function Projects() {
         </h3>
       </div>
       <div
-        className="grid grid-cols-1  rounded-md gap-16 py-8
+        className="grid grid-cols-1 md:grid-cols-2 rounded-md gap-6 py-8
         justify-start w-full items-start min-h-fit"
       >
         {projects?.map((proj) => {

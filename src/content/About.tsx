@@ -27,11 +27,6 @@ export default function About() {
       transition={{ duration: 0.5, delay: 0.5 }}
       className="content-intern flex-row max-md:flex-col gap-8 md:gap-12 md:items-center "
     >
-      <motion.img
-        src="assets/avatar-pdr.png"
-        alt="pedrofelippe"
-        className="flex-shrink-1 object-cover relative  w-full  max-md:max-h-[250px] lg:max-w-sm rounded-md "
-      />
       <div className="flex max-lg:flex-col lg:gap-16 items-start ">
         <div className="flex gap-8 flex-col w-full  ">
           <h3 className="section-subtitle">
@@ -47,6 +42,12 @@ export default function About() {
           <Skills technologies={skillList} />
         </div>
       </div>
+
+      <motion.img
+        src="assets/avatar-pdr.png"
+        alt="pedrofelippe"
+        className="flex-shrink-1 object-cover relative  w-full  max-md:max-h-[300px] lg:max-w-sm rounded-md lg:rounded-full "
+      />
     </motion.div>
   );
 }

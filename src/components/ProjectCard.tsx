@@ -41,29 +41,29 @@ function ProjectCard({
       <Link
         href={link}
         target="_blank"
-        className=" overflow-hidden h-full
-        w-full min-h-[350px] sm:h-[500px] lg:h-[400px]  border rounded-md"
+        className=" overflow-hidden 
+        w-full h-full min-h-[350px] md:min-h-[450px] lg:min-h-[350px] border rounded-md hover:rounded-[50px]"
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="object-cover flex-shrink-1 w-full h-full   "
+          className="object-cover  w-full h-full   "
         />
       </Link>
 
-      <div className="flex flex-col gap-3 justify-start items-start md:max-h-[250px] text-md  w-full h-full">
+      <div className="flex flex-col gap-3 justify-start items-start  text-md ">
         <div className="flex flex-col gap-3">
-          <p className="text-3xl font-bold">{title}</p>
-          <Skills technologies={stack} />
-          <p className="text-lg font-normal ">{description}</p>
+          <p className="text-2xl font-medium">{title}</p>
+          {/* <Skills technologies={stack} /> */}
+          {/* <p className="text-lg font-normal ">{description}</p> */}
         </div>
 
-        <div
+        {/* <div
           className="rounded flex gap-2 justify-center items-center w-fit
          hover:text-blue font-semibold text-xl tracking-tight"
         >
           <button>View project</button> <ArrowRight className="h-4 w-4" />
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

@@ -1,6 +1,10 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+import { LinkedinIcon } from "lucide-react";
 
+import AnimatedBtn from "../components/animated/AnimatedBtn";
+import { Logo } from "../components/layout/Header";
 import { Skills } from "../components/Skills";
 
 export default function About() {
@@ -25,29 +29,40 @@ export default function About() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.5 }}
-      className="content-intern flex-row max-md:flex-col gap-8 md:gap-12 md:items-center "
+      className="flex flex-col gap-4 items-center px-10 justify-center h-full "
     >
-      <div className="flex max-lg:flex-col lg:gap-16 items-start ">
-        <div className="flex gap-8 flex-col w-full  ">
-          <h3 className="section-subtitle">
-            A frontend developer based in Brazil.
-          </h3>
-          <p className="text-xl max-w-xl lg:text-xl font-normal leading-tight ">
-            In the last years i have been dedicated to solving complex problems
-            for companies using simple and well-executed solutions, developing
-            user-friendly web applications, creating robust RESTful APIs,
-            managing databases, and ensuring seamless integration with CI/CD
-            pipelines.
-          </p>
-          <Skills technologies={skillList} />
-        </div>
+      <div className="w-full fixed left-0 top-0 right-0 p-6">
+        <Logo />
       </div>
-
       <motion.img
         src="assets/avatar-pdr.png"
         alt="pedrofelippe"
-        className="flex-shrink-1 object-cover relative  w-full  max-md:max-h-[300px] lg:max-w-sm rounded-md lg:rounded-full "
+        className="flex-shrink-1 object-cover relative h-full max-h-[180px] rounded-full "
       />
+      <div className="flex lex-col lg:gap-8 items-center text-center  justify-center">
+        <div className="flex gap-8 flex-col w-full  ">
+          <h3 className="section-subtitle text-[#f5efdf]  lg:text-6xl  mx-auto">
+            A frontend developer based in Brazil.
+          </h3>
+          <p className="text-lg max-w-md lg:text-xl font-normal leading-relaxed mx-auto">
+            Dedicated to solve complex problems for companies using simple and
+            well-executed solutions.
+          </p>
+          {/* <Skills technologies={skillList} /> */}
+          <div className="flex items-center gap-10 justify-center ">
+            <AnimatedBtn
+              target="_blank"
+              href="https://www.linkedin.com/in/pedro-felippe/"
+            >
+              <LinkedinIcon className="h-9 w-9 " />
+            </AnimatedBtn>
+
+            <AnimatedBtn href="https://github.com/pefelippe">
+              <GitHubLogoIcon className="h-9 w-9 " />
+            </AnimatedBtn>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 }

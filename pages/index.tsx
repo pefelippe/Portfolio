@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
 
 import AnimatedBtn from "../src/components/animated/AnimatedBtn";
+import Header from "../src/components/layout/Header";
 import About from "../src/content/About";
 import ContactContent from "../src/content/ContactContent";
 import Hero from "../src/content/Hero";
@@ -10,31 +11,22 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className="mt-16 flex flex-col relative">
-      <motion.div
-        className="fixed flex flex-col left-0 top-[40vh] justify-start bg-blue h-fit p-3 py-6 rounded-r-md
-            items-start w-fit space-y-8 max-w-sm text-white z-40 max-xl:hidden"
-      >
-        <AnimatedBtn
-          target="_blank"
-          href="https://www.linkedin.com/in/pedro-felippe/"
-        >
-          <LinkedinIcon className="h-9 w-9 " />
-        </AnimatedBtn>
-
-        <AnimatedBtn href="https://github.com/pefelippe">
-          <GitHubLogoIcon className="h-9 w-9 " />
-        </AnimatedBtn>
+    <motion.div className="w-full flex max-lg:flex-col">
+      <motion.div className="lg:max-w-xl w-full ">
+        <section className="bg-[#101010] h-full min-h-screen  text-[#fff] lg:fixed lg:max-w-xl flex items-center">
+          <About />
+        </section>
       </motion.div>
-      <section className="section">
-        <About />
-      </section>
-      <section className="section bg-gray-300/10 border-y ">
-        <ProjectContent />
-      </section>
-      <section className="section ">
-        <ContactContent />
-      </section>
+      <motion.div className="w-full ">
+        <div className="w-full flex flex-col py-20 lg:py-32 gap-20 lg:gap-32 relative ">
+          <section className="section  ">
+            <ProjectContent />
+          </section>
+          <section className=" section">
+            <ContactContent />
+          </section>
+        </div>
+      </motion.div>
     </motion.div>
   );
 }

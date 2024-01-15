@@ -26,16 +26,12 @@ export const Logo = () => {
 
 const Header = () => {
   return (
-    <motion.header
-      suppressHydrationWarning
-      className=" flex fixed h-16 z-50 bg-white  w-full dark:border-none border-b
-      left-0 right-0 transition-"
-    >
+    <motion.header className="fixed bg-[#101010]  text-white flex  h-16  w-full  z-50 max-xl:px-10 ">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex w-full mx-auto items-center justify-between max-xl:px-6 max-w-6xl"
+        className="flex w-full mx-auto items-center justify-between px-10 "
       >
         <Logo />
         <motion.div className="flex w-full space-x-4 justify-end  items-center  max-sm:hidden">

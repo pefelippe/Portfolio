@@ -10,16 +10,12 @@ function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.5 }}
       id="projects-container"
-      className="content-intern"
+      className="content-intern gap-20 lg:gap-8"
     >
-      <div className="w-full font-normal flex flex-col justify-start text-lg  h-fit text-start">
-        {/* <h1 className="section-title">Works</h1> */}
-        <h3 className="section-subtitle  max-w-6xl">
-          Always working in something.
-        </h3>
-      </div>
+      <h3 className="section-subtitle  max-w-6xl">Selected works</h3>
+
       <div
-        className="grid grid-cols-1 md:grid-cols-2 rounded-md gap-6 py-8
+        className="grid grid-cols-1 lg:grid-cols-2 rounded-md gap-20 lg:gap-8
         justify-start w-full items-start min-h-fit"
       >
         {projects?.map((proj) => {

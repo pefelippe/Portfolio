@@ -17,7 +17,7 @@ function Projects() {
       </h3>
 
       <div
-        className="grid grid-cols-1 lg:grid-cols-2 rounded-md gap-8
+        className="flex flex-col lg:grid lg:grid-cols-2 rounded-md gap-8
         lg:justify-start w-full items-start min-h-fit"
       >
         {projects?.map((proj) => {

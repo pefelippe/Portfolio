@@ -13,7 +13,9 @@ function ContactContent() {
       className="content-intern  max-lg:max-w-2xl items-start  justify-center gap-6"
     >
       <div className="flex flex-col gap-4">
-        <h3 className="section-subtitle">Get in touch</h3>
+        <h3 className="section-subtitle">
+          Get in <span className="text-blue">Contact</span>
+        </h3>
 
         <p className="text-xl">
           Have something in mind? Questions, ideas, or just want to say hi? I'm

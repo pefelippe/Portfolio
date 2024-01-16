@@ -36,13 +36,13 @@ function ProjectCard({
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
       className="w-full flex flex-col h-full overflow-hidden 
-        items-start text-start  justify-start gap-4 "
+        items-start text-start  justify-start gap-3"
     >
       <Link
         href={link}
         target="_blank"
-        className=" overflow-hidden 
-        w-full h-full min-h-[350px] md:min-h-[450px] lg:min-h-[350px] border rounded-md hover:rounded-[50px]"
+        className=" overflow-hidden border-2 border-[#101010] hover:border-blue
+        w-full h-full min-h-[350px] md:min-h-[450px] lg:min-h-[350px]  rounded-3xl "
       >
         <motion.img
           src={imgUrl}
@@ -53,7 +53,7 @@ function ProjectCard({
 
       <div className="flex flex-col gap-3 justify-start items-start  text-md ">
         <div className="flex flex-col gap-3">
-          <p className="text-2xl font-medium">{title}</p>
+          <p className="text-3xl font-normal">{title}</p>
           {/* <Skills technologies={stack} /> */}
           {/* <p className="text-lg font-normal ">{description}</p> */}
         </div>

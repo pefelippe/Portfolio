@@ -12,7 +12,9 @@ function Projects() {
       id="projects-container"
       className="content-intern gap-20 lg:gap-8"
     >
-      <h3 className="section-subtitle  max-w-6xl">Selected works</h3>
+      <h3 className="section-subtitle  max-w-6xl">
+        Featured <span className="text-blue">Works</span>
+      </h3>
 
       <div
         className="grid grid-cols-1 lg:grid-cols-2 rounded-md gap-20 lg:gap-8

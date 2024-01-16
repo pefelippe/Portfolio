@@ -18,7 +18,7 @@ export default function Hero() {
        items-start text-start my-auto gap-6 max-w-6xl mx-auto "
     >
       <motion.div className="h-full flex flex-col items-start justify-start w-fit z-20 gap-4">
-        <motion.h1 className="text-6xl  lg:text-8xl uppercase font-extrabold text-blue  dark:text-[#fffdd0]">
+        <motion.h1 className="text-6xl  lg:text-8xl uppercase font-extrabold text-blue  ">
           Pedro Felippe
         </motion.h1>
         <motion.h3 className="text-2xl lg:text-3xl  font-thin  text-gray-700    dark:text-[#efefef]">

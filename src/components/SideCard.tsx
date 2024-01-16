@@ -11,7 +11,8 @@ export default function SideCard() {
   return (
     <motion.div
       id="about-content"
-      className="flex flex-col gap-4 items-center px-10 justify-center h-full bg-[#101010]  min-h-screen  text-[#fff] lg:fixed max-w-lg"
+      className="flex flex-col gap-4 items-center px-10 justify-center h-full bg-[#101010] 
+       min-h-screen  text-[#fff] lg:fixed max-w-xl"
     >
       <div className="w-full fixed left-0 top-0 right-0 p-6">
         <Logo />
@@ -23,10 +24,10 @@ export default function SideCard() {
       />
       <div className="flex lex-col lg:gap-5 items-center text-center  justify-center">
         <div className="flex gap-6 flex-col w-full  ">
-          <h3 className="section-subtitle text-white  lg:text-5xl  mx-auto">
+          <h3 className="section-subtitle text-white  lg:text-6xl  mx-auto">
             A <span className="">frontend developer</span> based in Brazil.
           </h3>
-          <p className="text-lg lg:text-xl font-normal leading-relaxed mx-auto text-gray-300">
+          <p className="text-lg lg:text-xl font-normal leading-relaxed mx-auto text-gray-300 max-w-md">
             Dedicated to solve complex problems for companies using simple and
             well-executed solutions.
           </p>

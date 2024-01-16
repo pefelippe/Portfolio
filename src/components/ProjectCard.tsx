@@ -53,7 +53,7 @@ function ProjectCard({
 
       <div className="flex flex-col gap-3 justify-start items-start  text-md ">
         <div className="flex flex-col gap-3">
-          <p className="text-3xl font-normal">{title}</p>
+          <p className="text-2xl font-medium">{title}</p>
           {/* <Skills technologies={stack} /> */}
           {/* <p className="text-lg font-normal ">{description}</p> */}
         </div>

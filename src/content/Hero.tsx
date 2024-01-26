@@ -15,16 +15,28 @@ export default function Hero() {
       transition={{ duration: 0.5 }}
       id="hero-container"
       className=" content-intern relative w-full flex flex-col justify-center 
-       items-start text-start my-auto gap-6 max-w-6xl mx-auto "
+       items-start text-start my-auto gap-6 max-w-6xl mx-auto py-20 "
     >
-      <motion.div className="h-full flex flex-col items-start justify-start w-fit z-20 gap-4">
-        <motion.h1 className="text-6xl  lg:text-8xl uppercase font-extrabold text-blue  ">
-          Pedro Felippe
-        </motion.h1>
-        <motion.h3 className="text-2xl lg:text-3xl  font-thin  text-gray-700    dark:text-[#efefef]">
-          Fixing complex problems with simple solutions.
-        </motion.h3>
-      </motion.div>
+      <motion.h1 className="text-6xl  lg:text-8xl uppercase font-extrabold text-blue  ">
+        Hey. I'm Pedro Felippe.
+      </motion.h1>
+
+      <motion.h3 className="text-2xl font-thin  text-gray-700  max-w-2xl  dark:text-[#efefef]">
+        A frontend developer based in Brazil dedicated to solve complex problems
+        for companies using simple and well-executed solutions.
+      </motion.h3>
+      <div className="flex items-center gap-6 justify-start ">
+        <AnimatedBtn
+          target="_blank"
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <LinkedinIcon className="h-9 w-9 hover:text-blue" />
+        </AnimatedBtn>
+
+        <AnimatedBtn href="https://github.com/pefelippe">
+          <GitHubLogoIcon className="h-9 w-9 hover:text-blue" />
+        </AnimatedBtn>
+      </div>
     </motion.div>
   );
 }

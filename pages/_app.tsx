@@ -26,10 +26,10 @@ export default function App({ Component, pageProps }: AppProps) {
         enableSystem
         disableTransitionOnChange
       >
-        {/* <Header /> */}
+        <Header />
         <Component {...pageProps} />
         <Toaster />
-        {/* <Footer /> */}
+        <Footer />
       </ThemeProvider>
     </motion.div>
   );

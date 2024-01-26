@@ -13,17 +13,20 @@ import ProjectContent from "../src/content/ProjectContent";
 export default function Home() {
   return (
     <motion.div className="w-full flex max-lg:flex-col">
-      <motion.div className="max-w-xl w-full max-lg:hidden ">
+      {/* <motion.div className="max-w-lg w-full max-lg:hidden ">
         <SideCard />
-      </motion.div>
-      <motion.div className="w-full flex flex-col py-20 lg:py-32 gap-20 lg:gap-32 relative">
-        <section className="section">
+      </motion.div> */}
+      <motion.div className="w-full flex flex-col  relative">
+        <section className="section ">
+          <Hero />
+        </section>
+        <section className="section bg-gray-100/30">
           <About />
         </section>
         <section className="section">
           <ProjectContent />
         </section>
-        <section className=" section">
+        <section className=" section bg-gray-100/30">
           <ContactContent />
         </section>
       </motion.div>

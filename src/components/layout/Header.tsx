@@ -31,7 +31,7 @@ const Header = () => {
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex w-full mx-auto items-center justify-betweenrrrrrr "
+        className="flex w-full mx-auto items-center justify-between max-w-6xl"
       >
         <Logo />
         <motion.div className="flex w-full space-x-4 justify-end  items-center  max-sm:hidden">

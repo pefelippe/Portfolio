@@ -13,16 +13,13 @@ import ProjectContent from "../src/content/ProjectContent";
 export default function Home() {
   return (
     <motion.div className="w-full flex max-lg:flex-col">
-      {/* <motion.div className="max-w-lg w-full max-lg:hidden ">
-        <SideCard />
-      </motion.div> */}
       <motion.div className="w-full flex flex-col  relative">
         <section className="section ">
           <Hero />
         </section>
-        <section className="section bg-gray-100/30">
+        {/* <section className="section bg-gray-100/30">
           <About />
-        </section>
+        </section> */}
         <section className="section">
           <ProjectContent />
         </section>

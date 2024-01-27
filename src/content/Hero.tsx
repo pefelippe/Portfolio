@@ -15,18 +15,18 @@ export default function Hero() {
       transition={{ duration: 0.5 }}
       id="hero-container"
       className="content-intern relative w-full md:flex-row justify-center 
-       items-start text-start my-auto md:gap-10 max-w-6xl mx-auto py-20 "
+       items-start text-start my-auto md:gap-10 max-w-6xl mx-auto md:py-20 "
     >
       <motion.img
         src="./assets/avatar-pdr.png"
         className="rounded-full border-8 shadow max-w-[150px] md:max-w-xs"
       />
       <div className="flex gap-6 flex-col w-full justify-center h-full">
-        <motion.h1 className="text-6xl  lg:text-7xl uppercase font-extrabold text-blue  ">
+        <motion.h1 className="text-5xl lg:text-7xl uppercase font-extrabold text-blue  ">
           Hey, I'm Pedro Felippe
         </motion.h1>
 
-        <motion.h3 className="text-2xl font-thin  text-gray-700  max-w-2xl  dark:text-[#efefef]">
+        <motion.h3 className="text-xl md:text-2xl font-thin  text-gray-700  max-w-2xl  dark:text-[#efefef]">
           A frontend developer based in Brazil dedicated to solve complex
           problems for companies using simple and well-executed solutions.
         </motion.h3>

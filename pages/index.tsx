@@ -17,13 +17,13 @@ export default function Home() {
         <section className="section ">
           <Hero />
         </section>
-        <section className="section bg-gray-300/10 border-y">
+        <section className="section bg-gray-100/30 border-y">
           <About />
         </section>
-        <section className="section">
+        <section className="section ">
           <ProjectContent />
         </section>
-        <section className=" section bg-gray-300/10 border-y">
+        <section className=" section bg-gray-100/30 border-y">
           <ContactContent />
         </section>
       </motion.div>

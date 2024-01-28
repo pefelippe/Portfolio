@@ -12,7 +12,7 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className="w-full flex max-lg:flex-col">
+    <motion.div className="w-full flex max-lg:flex-col mt-16">
       <motion.div className="w-full flex flex-col  relative">
         <section className="section ">
           <Hero />

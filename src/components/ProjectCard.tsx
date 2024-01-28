@@ -35,7 +35,7 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full flex flex-col h-full overflow-hidden items-start text-start justify-start gap-3 relative"
+      className="w-full flex flex-col h-full overflow-hidden items-start text-start justify-start gap-3 relative bg-gray-100/30  rounded "
     >
       <Link
         href={link}
@@ -50,14 +50,14 @@ function ProjectCard({
         />
       </Link>
 
-      <div className="flex flex-col gap-3 justify-start items-start  text-md ">
-        <div className="flex flex-col gap-3">
-          <p className="text-2xl font-medium">{title}</p>
+      <div className="flex flex-col gap-6 justify-start items-start p-8 text-md">
+        <div className="flex flex-col gap-4">
+          <p className="text-3xl font-medium">{title}</p>
           <Skills technologies={stack} />
           <p className="text-xl font-normal ">{description}</p>
         </div>
-
-        {/* <div
+        {/* 
+        <div
           className="rounded flex gap-2 justify-center items-center w-fit
          hover:text-blue font-semibold text-xl tracking-tight"
         >

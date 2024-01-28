@@ -13,7 +13,7 @@ export default function Hero() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      id="hero-container"
+      id="about-content"
       className="content-intern gap-8 "
     >
       <motion.div className="h-full flex flex-col items-start justify-start w-full z-20 gap-8">
@@ -48,7 +48,7 @@ export default function Hero() {
 
           <motion.img
             src="./assets/pedrof.jpg"
-            className="rounded-3xl shadow border-4 max-md:max-h-[300px] w-[500px] max-md:object-cover object-fit"
+            className="rounded-3xl shadow border-4 max-md:max-h-[300px] w-[450px] max-md:object-cover object-fit"
           />
         </div>
       </motion.div>

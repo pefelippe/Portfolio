@@ -18,6 +18,15 @@ export const projects = [
     stack: ["react", "tailwind", "shadcn", "next", "typescript"],
     description: "Create your own personal card to share your Pix QR Code.",
   },
+  {
+    id: 3,
+    link: "https://search-github-users-tau.vercel.app",
+    repo: "https://github.com/pefelippe/GitSearcher",
+    title: "GitSearcher",
+    imgUrl: "/projects/GitSearcher.png",
+    stack: ["react", "tailwind", "shadcn", "vite", "typescript"],
+    description: "Search and explore GitHub profiles.",
+  },
 ];
 
 export const technologies = [

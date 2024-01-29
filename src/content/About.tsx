@@ -19,14 +19,14 @@ export default function Hero() {
       <motion.div className="h-full flex flex-col items-center justify-center w-full z-20 gap-8">
         <div
           className="flex rounded-md max-md:flex-col
-         w-full items-start min-h-fit gap-8 md:gap-12 max-w-5xl"
+         w-full items-start min-h-fit gap-8 md:gap-16 max-w-5xl"
         >
           <motion.img
             src="./assets/pedrof.jpg"
-            className="rounded-3xl border max-md:max-h-[300px] w-[400px] max-md:object-cover object-fit max-md:hidden"
+            className="rounded-md border max-md:max-h-[250px] w-[450px] max-md:object-cover object-fit max-md:hidden min-h-full"
           />
-          <div className="flex flex-col w-full text-xl gap-8 leading-normal items-start justify-center h-full max-w-2xl">
-            <h3 className="section-subtitle   max-w-6xl ">
+          <div className="flex flex-col w-full text-xl gap-8 leading-normal items-start justify-center h-full ">
+            <h3 className="section-subtitle">
               About <span className="text-blue">Me</span>
             </h3>
             <span className="">

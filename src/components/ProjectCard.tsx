@@ -36,7 +36,7 @@ function ProjectCard({
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
       className="w-full flex flex-col h-full overflow-hidden items-start text-start justify-between 
-     relative bg-gray-100/30  rounded-3xl shadow "
+     relative bg-gray-100/30  rounded-md shadow "
     >
       {/* <div className="flex flex-col gap-2 justify-start items-start  text-md">
         <p className="text-4xl font-semibold">{title}</p>
@@ -46,7 +46,7 @@ function ProjectCard({
         href={link}
         target="_blank"
         className=" overflow-hidden border-2 border-[#101010] hover:border-blue
-        w-full rounded-3xl h-full "
+        w-full  h-full "
       >
         <motion.img
           src={imgUrl}

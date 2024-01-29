@@ -10,17 +10,17 @@ function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.5 }}
       id="projects-container"
-      className="content-intern gap-8 items-center justify-center"
+      className="content-intern gap-16 items-center justify-center"
     >
       <div className="flex flex-col gap-4 text-center">
-        <h3 className="section-subtitle max-w-6xl">
+        <h3 className="section-subtitle max-w-5xl">
           Featured <span className="text-blue">Works</span>
         </h3>
         {/* <p className="text-xl">Check my works.</p> */}
       </div>
 
       <div
-        className="grid md:grid-cols-2 rounded-md gap-8
+        className="grid rounded-md gap-16
         lg:justify-start w-full items-start h-full"
       >
         {projects?.map((proj) => {

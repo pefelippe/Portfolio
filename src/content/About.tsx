@@ -25,7 +25,7 @@ export default function Hero() {
             src="./assets/pedrof.jpg"
             className="rounded-md border max-md:max-h-[250px] w-[450px] max-md:object-cover object-fit max-md:hidden min-h-full"
           />
-          <div className="flex flex-col w-full text-xl gap-8 leading-normal items-start justify-center h-full ">
+          <div className="flex flex-col w-full text-lg gap-8 leading-normal items-start justify-center h-full ">
             <h3 className="section-subtitle">
               About <span className="text-blue">Me</span>
             </h3>

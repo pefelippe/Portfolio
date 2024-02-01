@@ -26,7 +26,7 @@ export const Logo = () => {
 
 const Header = () => {
   return (
-    <motion.header className="fixed text-[#101010]  bg-white flex  h-16  w-full  z-50 px-6 border-b ">
+    <motion.header className="fixed text-[#101010]  bg-white flex  h-16  w-full  z-50 px-6 border-b">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Header = () => {
         className="flex w-full mx-auto items-center justify-between max-w-6xl"
       >
         <Logo />
-        <motion.div className="flex w-full space-x-4 justify-end  items-center  max-sm:hidden">
+        <motion.div className="flex w-full space-x-5 justify-center  items-center  max-sm:hidden">
           <ScrollLink
             activeClass="active"
             to="about-content"
@@ -72,6 +72,19 @@ const Header = () => {
             </button>
           </ScrollLink>
         </motion.div>
+
+        <div className="flex w-fit items-center gap-4 justify-center ">
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-6 w-6 hover:text-blue" />
+          </AnimatedBtn>
+
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <GitHubLogoIcon className="h-6 w-6 hover:text-blue" />
+          </AnimatedBtn>
+        </div>
       </motion.nav>
     </motion.header>
   );

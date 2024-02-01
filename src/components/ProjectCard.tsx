@@ -51,7 +51,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="object-cover w-full h-full  min-h-[380px] "
+          className="object-cover w-full h-full  min-h-[300px] "
         />
       </Link>
     </motion.div>

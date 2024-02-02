@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import ContactContent from "./contact";
 import Hero from "../src/content/Hero";
+
 import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {

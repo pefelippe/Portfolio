@@ -12,13 +12,8 @@ function Projects() {
       id="projects-container"
       className="content-intern gap-5 items-start justify-center "
     >
-      <div className="flex flex-col gap-4 text-center">
-        <h3 className="section-subtitle ">
-          Featured <span className="text-blue">Works</span>
-        </h3>
-      </div>
       <div
-        className="grid  gap-10 lg:grid-cols-3 border-t pt-10
+        className="grid  gap-10 lg:grid-cols-3 
         lg:justify-start w-full items-start h-full"
       >
         {projects?.map((proj) => {

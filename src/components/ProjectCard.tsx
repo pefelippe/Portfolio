@@ -1,11 +1,6 @@
-import { Arrow } from "@radix-ui/react-dropdown-menu";
-import { ArrowBottomLeftIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import Link from "next/link";
 
-import { Skills } from "./Skills";
-import { Button } from "./ui/button";
+import Link from "next/link";
 
 type IProjectCard = {
   description: string;
@@ -39,10 +34,9 @@ function ProjectCard({
      relative rounded-xl overflow-hidden border-2 hover:border-blue"
     >
       <Link
-        href={link}
-        target="_blank"
+        href={`projects/${id}`}
         className=" overflow-hidden  border-[#101010] hover:border-blue  
-        w-full  min-h-[350px] "
+        w-full  min-h-[350px]"
       >
         <motion.img
           src={imgUrl}

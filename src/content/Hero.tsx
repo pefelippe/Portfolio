@@ -14,36 +14,21 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="hero-container"
-      className="content-intern relative w-full justify-between items-start text-center lg:text-start gap-4  mx-auto flex-row "
+      className="content-intern relative w-full items-center 
+    text-center gap-4  mx-auto"
     >
-      <motion.div className="flex flex-col font-sans font-bold max-w-2xl gap-3 lg:gap-5">
-        <p className="text-5xl lg:text-7xl tracking-tighter">
-          {" "}
-          Pedro Felippe <br />
-          Frontend Developer
-        </p>
-
-        <p className="text-xl lg:text-2xl font-light text-gray-700">
-          Solving complex problems with simple solutions.
-        </p>
-
-        <div className="flex w-fit items-center gap-6 justify-center max-lg:mx-auto">
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-9 w-9 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-9 w-9 hover:text-blue" />
-          </AnimatedBtn>
-        </div>
-      </motion.div>
       {/* <motion.img
         src="./assets/avatar-pdr.png"
-        className="rounded-md border-2 shadow w-[300px] "
+        className="rounded-full  shadow max-w-[120px] "
       /> */}
+      <motion.div className="flex flex-col  font-extrabold max-w-5xl">
+        <p className="text-4xl lg:text-6xl lg:tracking-tight leading-tight">
+          I am Pedro Felippe — Frontend Developer based in Brazil.
+        </p>
+        <p className="text-xl lg:text-2xl tracking-tight font-extralight py-4">
+          I create simple solutions for complex problems.
+        </p>
+      </motion.div>
     </motion.div>
   );
 }

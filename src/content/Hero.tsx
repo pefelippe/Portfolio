@@ -6,6 +6,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../components/animated/AnimatedBtn";
 import { Button } from "../components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -25,9 +26,25 @@ export default function Hero() {
         <p className="text-4xl lg:text-6xl lg:tracking-tight leading-tight">
           I am Pedro Felippe — Frontend Developer based in Brazil.
         </p>
-        <p className="text-xl lg:text-2xl tracking-tight font-extralight py-4">
+        <p className="text-xl lg:text-2xl tracking-tight font-extralight py-4 pb-2">
           I create simple solutions for complex problems.
         </p>
+        <div className="flex w-fit mx-auto items-center gap-3 justify-center  ">
+          <AnimatedBtn
+            target="_blank"
+            className="p-1 rounded-md bg-white"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-8 w-8 hover:text-blue" />
+          </AnimatedBtn>
+
+          <AnimatedBtn
+            href="https://github.com/pefelippe"
+            className="p-2 rounded-md bg-white"
+          >
+            <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
+          </AnimatedBtn>
+        </div>
       </motion.div>
     </motion.div>
   );

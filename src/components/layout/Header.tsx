@@ -8,6 +8,17 @@ import { ModeToggle } from "../ui/mode-toggle";
 import { Separator } from "../ui/separator";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../ui/dialog";
+import { useState } from "react";
+import { ContactDialog } from "../ContactDialog";
+import MessageForm from "../MessageForm";
 
 export const Logo = () => {
   return (
@@ -31,28 +42,7 @@ const Header = () => {
         </Link>
 
         <div className="flex w-fit items-center gap-2 justify-center  ">
-          <AnimatedBtn
-            target="_blank"
-            className="p-1 rounded-md bg-white"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-6 w-6 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn
-            href="https://github.com/pefelippe"
-            className="p-2 rounded-md bg-white"
-          >
-            <GitHubLogoIcon className="h-6 w-6 hover:text-blue" />
-          </AnimatedBtn>
-          <Link href="/contact">
-            <Button
-              variant={"default"}
-              className="p-5 px-8  text-md rounded-full bg-gray-900 text-white"
-            >
-              Contact
-            </Button>
-          </Link>
+          <ContactDialog />
         </div>
       </motion.nav>
     </motion.header>

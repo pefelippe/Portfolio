@@ -38,7 +38,7 @@ export default function MessageForm({}) {
         "service_fchfmmd",
         "template_zrowh3b",
         InputsTemplate,
-        "NPHwQIcNMSD-9jIPq"
+        "NPHwQIcNMSD-9jIPq",
       )
       .then(
         (res: any) => {
@@ -60,17 +60,17 @@ export default function MessageForm({}) {
             description: "There was a problem with your message.",
           });
           reset();
-        }
+        },
       );
   };
 
   return (
-    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-3 w-full  text-[#101010]  ">
+    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-4 w-full  text-[#101010]  ">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-3 w-full flex flex-col   "
+        className="gap-4 w-full flex flex-col   "
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Input
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"
@@ -94,12 +94,12 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="border p-4 border-[#101010] rounded w-full focus:outline-none 
-          focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[400px] bg-[#f5f5f5]"
+          focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[350px] bg-[#f5f5f5]"
         />
 
         <Button
           type="submit"
-          className=" text-center  py-7  text-white  px-16 rounded  justify-center w-fit max-md:w-full mx-auto
+          className=" text-center  py-7  text-white  px-16 rounded  justify-center w-full max-md:w-full mx-auto
           transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Start partnership!"}

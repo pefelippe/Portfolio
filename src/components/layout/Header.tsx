@@ -6,85 +6,38 @@ import { Link as ScrollLink } from "react-scroll";
 import AnimatedBtn from "../animated/AnimatedBtn";
 import { ModeToggle } from "../ui/mode-toggle";
 import { Separator } from "../ui/separator";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const Logo = () => {
   return (
-    <ScrollLink
-      activeClass="active"
-      to="hero-container"
-      spy={true}
-      smooth={true}
-      offset={-250}
-      duration={500}
-    >
-      <button className=" flex text-xl  transition-all w-fit  tracking-tight font-bold">
-        pedrofelippe.
-      </button>
-    </ScrollLink>
+    <button className=" flex text-xl  transition-all w-fit  tracking-tight font-bold hover:text-blue">
+      pedrofelippe.
+    </button>
   );
 };
 
 const Header = () => {
   return (
-    <motion.header className="fixed text-[#101010]  bg-white flex  h-16  w-full  z-50 px-6 border-b">
+    <motion.header className="fixed text-[#101010]  bg-white flex  h-20  w-full  z-50 px-6">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex w-full mx-auto items-center justify-between max-w-6xl"
+        className="flex w-full mx-auto items-center justify-between  max-w-screen-2xl"
       >
-        <Logo />
-        <motion.div className="flex w-full space-x-5 justify-center  items-center  max-sm:hidden">
-          <ScrollLink
-            activeClass="active"
-            to="about-content"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            <button className="text-md  font-medium tracking-wider transition-all hover:text-blue   ">
-              About
-            </button>
-          </ScrollLink>
-          <ScrollLink
-            activeClass="active"
-            to="projects-container"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            <button className=" text-md font-medium  transition-all  hover:text-blue ">
-              Works
-            </button>
-          </ScrollLink>
-          <ScrollLink
-            activeClass="active"
-            to="contact-content"
-            spy={true}
-            smooth={true}
-            offset={-160}
-            duration={500}
-          >
-            <button className="py-6 font-medium text-md transition-all  hover:text-blue ">
-              Contact
-            </button>
-          </ScrollLink>
-        </motion.div>
+        <Link href="/">
+          <Logo />
+        </Link>
 
-        <div className="flex w-fit items-center gap-4 justify-center ">
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
+        <Link href="/contact">
+          <Button
+            variant={"default"}
+            className="p-5  text-md rounded-full bg-gray-900 text-white"
           >
-            <LinkedinIcon className="h-6 w-6 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-6 w-6 hover:text-blue" />
-          </AnimatedBtn>
-        </div>
+            Contact-me
+          </Button>
+        </Link>
       </motion.nav>
     </motion.header>
   );

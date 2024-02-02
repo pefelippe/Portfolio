@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div className="min-w-[400px] mx-auto h-fit overflow-hidden font-sans scroll-smooth">
       <Head>
-        <title>Pedro Felippe - Frontend Developer </title>
+        <title>Pedro Felippe </title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Header />
         <Component {...pageProps} />
         <Toaster />
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </motion.div>
   );

@@ -14,22 +14,36 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="hero-container"
-      className="content-intern relative w-full justify-center 
-       items-center text-center my-auto gap-4 max-w-6xl mx-auto "
+      className="content-intern relative w-full justify-between items-start text-center lg:text-start gap-4  mx-auto flex-row "
     >
-      <motion.img
+      <motion.div className="flex flex-col font-sans font-bold max-w-2xl gap-3 lg:gap-5">
+        <p className="text-5xl lg:text-7xl tracking-tighter">
+          {" "}
+          Pedro Felippe <br />
+          Frontend Developer
+        </p>
+
+        <p className="text-xl lg:text-2xl font-light text-gray-700">
+          Solving complex problems with simple solutions.
+        </p>
+
+        <div className="flex w-fit items-center gap-6 justify-center max-lg:mx-auto">
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-9 w-9 hover:text-blue" />
+          </AnimatedBtn>
+
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <GitHubLogoIcon className="h-9 w-9 hover:text-blue" />
+          </AnimatedBtn>
+        </div>
+      </motion.div>
+      {/* <motion.img
         src="./assets/avatar-pdr.png"
-        className="rounded-full border shadow max-w-[220px] "
-      />
-
-      <motion.h1 className="text-6xl lg:text-[80px] uppercase font-extrabold text-blue  max-w-3xl ">
-        Pedro Felippe
-      </motion.h1>
-
-      <motion.h3 className="text-lg md:text-xl font-extrathin  text-gray-700  max-w-xl  dark:text-[#efefef]">
-        A frontend developer based in Brazil dedicated to solve complex problems
-        using simple solutions.
-      </motion.h3>
+        className="rounded-md border-2 shadow w-[300px] "
+      /> */}
     </motion.div>
   );
 }

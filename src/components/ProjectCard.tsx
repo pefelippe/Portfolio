@@ -35,25 +35,26 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full flex flex-col h-full overflow-hidden items-start text-start justify-between 
-     relative bg-gray-100/30  rounded-md shadow "
+      className="w-full flex flex-col h-full items-start text-start justify-start gap-4 
+     relative rounded-xl overflow-hidden border-2 hover:border-blue"
     >
-      {/* <div className="flex flex-col gap-2 justify-start items-start  text-md">
-        <p className="text-4xl font-semibold">{title}</p>
-        <p className="text-lg font-light ">{description}</p>
-      </div> */}
       <Link
         href={link}
         target="_blank"
-        className=" overflow-hidden border-2 border-[#101010] hover:border-blue
-        w-full  h-full "
+        className=" overflow-hidden  border-[#101010] hover:border-blue  
+        w-full  min-h-[350px] "
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="object-cover w-full h-full  min-h-[300px] "
+          className="object-cover  w-full h-full "
         />
       </Link>
+      {/* 
+      <div className="flex flex-col gap-2 justify-center items-center text-center  mx-auto text-md">
+        <p className="text-2xl font-semibold">{title}</p>
+        <p className="text-md font-light ">{description}</p>
+      </div> */}
     </motion.div>
   );
 }

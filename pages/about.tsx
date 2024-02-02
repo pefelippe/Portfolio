@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { File, LinkedinIcon } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 
-import AnimatedBtn from "../components/animated/AnimatedBtn";
-import { Button } from "../components/ui/button";
+import AnimatedBtn from "../src/components/animated/AnimatedBtn";
+import { Button } from "../src/components/ui/button";
 
 export default function Hero() {
   return (
@@ -19,13 +19,13 @@ export default function Hero() {
       <motion.div className="h-full flex flex-col items-center justify-center w-full z-20 gap-8">
         <div
           className="flex rounded-md max-md:flex-col
-         w-full items-start min-h-fit gap-8 md:gap-16 max-w-5xl"
+         w-full items-start min-h-fit gap-8 md:gap-12 max-w-5xl"
         >
           <motion.img
             src="./assets/pedrof.jpg"
-            className="rounded-md border max-md:max-h-[250px] w-[450px] max-md:object-cover object-fit max-md:hidden min-h-full"
+            className="rounded-xl border max-md:max-h-[250px] w-[350px] max-md:object-cover object-fit max-md:hidden min-h-full"
           />
-          <div className="flex flex-col w-full text-lg gap-8 leading-normal items-start justify-center h-full ">
+          <div className="flex flex-col w-full text-lg gap-8 leading-normal items-start justify-center h-full max-w-xl mx-auto">
             <h3 className="section-subtitle">
               About <span className="text-blue">Me</span>
             </h3>

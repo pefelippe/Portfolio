@@ -21,7 +21,7 @@ export const ContactDialog = () => {
       <DialogTrigger>
         <Button
           variant={"default"}
-          className="p-5 px-8  text-md rounded-full bg-gray-900 text-white"
+          className="p-6 px-8  text-md rounded-full bg-gray-900 text-white"
         >
           Contact
         </Button>

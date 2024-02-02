@@ -37,7 +37,7 @@ function ProjectDetails() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.5 }}
-      className="min-h-screen flex flex-col  justify-center gap-6 max-w-screen-2xl mx-auto items-start mt-16 py-20 "
+      className="min-h-screen flex flex-col  justify-center gap-6 max-w-5xl mx-auto items-start mt-16 py-20 "
     >
       <div className="w-full justify-between flex">
         <div className="flex gap-12 font-medium text-xl items-center justify-between w-full">

@@ -10,7 +10,7 @@ function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.5 }}
       id="projects-container"
-      className="content-intern gap-5 items-start justify-center max-w-5xl"
+      className="content-intern gap-10 items-start justify-center max-w-5xl"
     >
       <h3 className="section-subtitle ">
         Featured <span className="text-blue">Works</span>

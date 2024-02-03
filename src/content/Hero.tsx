@@ -16,20 +16,21 @@ export default function Hero() {
       transition={{ duration: 0.5 }}
       id="hero-container"
       className="content-intern relative w-full items-center 
-    text-center gap-4  mx-auto"
+    text-start gap-4  mx-auto"
     >
       {/* <motion.img
         src="./assets/avatar-pdr.png"
         className="rounded-full  shadow max-w-[120px] "
       /> */}
       <motion.div className="flex flex-col  font-extrabold max-w-5xl">
-        <p className="text-4xl lg:text-6xl lg:tracking-tight leading-tight">
-          I am Pedro Felippe — Frontend Developer based in Brazil.
+        <p className="text-4xl lg:text-6xl tracking-tight">
+          I am <span className="text-blue">Pedro Felippe</span> — Frontend
+          Developer based in Brazil.
         </p>
         <p className="text-xl lg:text-2xl tracking-tight font-extralight py-4 pb-2">
           I create simple solutions for complex problems.
         </p>
-        <div className="flex w-fit mx-auto items-center gap-3 justify-center  ">
+        <div className="flex w-fit  items-center gap-3 justify-start  ">
           <AnimatedBtn
             target="_blank"
             className="p-1 rounded-md bg-white"

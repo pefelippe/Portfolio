@@ -10,10 +10,10 @@ function Footer() {
 
   return (
     <motion.footer
-      className=" w-full font-light items-start mx-auto  text-[#101010] 
-       flex-col h-fit  text-md  justify-start px-6  flex "
+      className=" w-full font-light items-start mx-auto  text-[#101010]  bg-gray-100/30
+       flex-col h-fit  text-md  justify-start px-6  flex border-t"
     >
-      <div className="mx-auto flex  w-full flex-col py-8 gap-8 max-w-5xl">
+      <div className="mx-auto flex  w-full flex-col py-8 gap-8 max-w-5xl ">
         <div className="flex items-center justify-between ">
           <span>Pedro Felippe © {year}</span>
 

@@ -9,12 +9,12 @@ interface SkillsProps {
 export const Skills: React.FC<SkillsProps> = ({ technologies }) => {
   return (
     <div className="w-fit overflow-hidden flex ">
-      <ul className="flex  flex-wrap  gap-3">
+      <ul className="flex  flex-wrap  gap-1">
         {technologies.map((tech) => (
           <span
             key={tech}
-            className="flex uppercase tracking-wider items-start relative text-sm font-semibold rounded
-             p-2 px-3 bg-blue text-white"
+            className="flex uppercase tracking-wider items-start relative text-xs font-semibold rounded
+             p-1 px-2 bg-blue text-white"
           >
             <p>{tech}</p>
           </span>

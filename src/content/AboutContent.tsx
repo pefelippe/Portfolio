@@ -16,33 +16,27 @@ export default function Hero() {
       <motion.div className="h-full flex flex-col items-center justify-center w-full z-20 gap-4  mx-auto max-w-5xl">
         <div
           className="flex rounded-md max-md:flex-col justify-center
-         w-full items-center gap-20 min-h-fit  "
+         w-full items-center gap-10 min-h-fit  "
         >
-          <div className="flex flex-col w-full text-lg gap-8 leading-normal items-start justify-center h-full ">
-            <h3 className="section-subtitle">
-              About <span className="text-blue">Me</span>
-            </h3>
-            <span className="">
-              Working with Web development since 2017. Experience in creating
-              simple, functional and easy-to-use interfaces. Specialized React,
-              Next, Typescript and Node. Experience in agile methods, CI/CD
-              tools and Cloud Providers as Azure and AWS. Verbal/written
-              communication in advanced English.
-            </span>
-            <span>
-              My first contact with development was still a child, when I tried
-              to create my own version (a terrible one) of a famous browser game
-              called Neopets, which sparked my curiosity about how the Web
-              worked.
-            </span>
-            Today I'm here :)
-          </div>
-
           <motion.img
             src="./assets/pedrof.jpg"
-            className="rounded-xl border-2 max-md:max-h-[250px] w-[350px] 
-            max-md:object-cover object-fit max-md:hidden min-h-full"
+            className=" border-2 max-w-[250px] rounded-3xl
+            max-md:object-cover object-fit max-md:hidden "
           />
+          <div className="flex flex-col w-full text-lg gap-4 leading-normal items-start justify-center h-full ">
+            <p className="text-4xl lg:text-5xl tracking-tight font-extrabold ">
+              I am <span className="text-blue">Pedro Felippe</span> — Frontend
+              Developer based in Brazil.
+            </p>
+            <span className="text-base">
+              I have 3+ years of experience in real projects, focused on
+              Frontend development with a focus on React, Next and Typescript. I
+              accumulated practical experience with microfrontends, performance
+              monitoring, automated testing, server-side rendering (SSR), search
+              engine optimization (SEO) and integration with cloud services such
+              as Azure and AWS (Lambda, DynamoDB, S3).
+            </span>
+          </div>
         </div>
       </motion.div>
     </motion.div>

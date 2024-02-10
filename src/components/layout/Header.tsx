@@ -1,13 +1,14 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
-import { ModeToggle } from "../ui/mode-toggle";
-import { Separator } from "../ui/separator";
+import { ContactDialog } from "../ContactDialog";
+import MessageForm from "../MessageForm";
 import { Button } from "../ui/button";
-import Link from "next/link";
 import {
   Dialog,
   DialogContent,
@@ -16,9 +17,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../ui/dialog";
-import { useState } from "react";
-import { ContactDialog } from "../ContactDialog";
-import MessageForm from "../MessageForm";
+import { ModeToggle } from "../ui/mode-toggle";
+import { Separator } from "../ui/separator";
 
 export const Logo = () => {
   return (
@@ -30,7 +30,7 @@ export const Logo = () => {
 
 const Header = () => {
   return (
-    <motion.header className="fixed text-[#101010] backdrop-blur	  flex  h-20  w-full  z-50 px-6">
+    <motion.header className="fixed text-[#101010] bg-white	border-b  flex  h-20  w-full  z-50 px-6">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,9 +41,21 @@ const Header = () => {
           <Logo />
         </Link>
 
-        <div className="flex w-fit items-center gap-2 justify-center  ">
-          <ContactDialog />
-        </div>
+        <motion.div
+          className="flex  top-0 bottom-0 h-full justify-center 
+            items-center w-fit space-x-4 max-w-sm"
+        >
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-6 w-6" />
+          </AnimatedBtn>
+
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <GitHubLogoIcon className="h-6 w-6" />
+          </AnimatedBtn>
+        </motion.div>
       </motion.nav>
     </motion.header>
   );

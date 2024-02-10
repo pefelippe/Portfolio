@@ -17,7 +17,7 @@ function Projects() {
       </h3>
 
       <div
-        className="grid  gap-6 lg:grid-cols-2
+        className="grid  gap-5 lg:grid-cols-2
         lg:justify-start w-full items-start h-full"
       >
         {projects?.map((proj) => {

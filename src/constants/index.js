@@ -7,7 +7,7 @@ export const projects = [
     imgUrl: "/projects/Zappi.png",
     stack: ["react", "tailwind", "shadcn", "vite", "typescript"],
     description:
-      "Allow restaurants to create their own delivery platform, sell their products and manage orders without abusive taxes.",
+      "Allow restaurants to create their own delivery platform, sell their products and manage orders.",
   },
   {
     id: 2,

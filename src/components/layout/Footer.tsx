@@ -10,14 +10,14 @@ function Footer() {
 
   return (
     <motion.footer
-      className=" w-full font-light items-start mx-auto  text-[#101010]  bg-gray-100/30
-       flex-col h-fit  text-md  justify-start px-6  flex border-t"
+      className=" w-full font-light mx-auto  text-zinc-900 bg-zinc-100 
+   text-lg  justify-center items-center px-6  flex  h-32"
     >
-      <div className="mx-auto flex  w-full flex-col py-8 gap-8 max-w-screen-2xl ">
-        <div className="flex items-center justify-between ">
-          <span>Pedro Felippe © {year}</span>
+      <div className="mx-auto flex  w-full flex-col  gap-8 max-w-7xl">
+        <div className="flex items-start justify-start ">
+          <span>Pedro Felippe - © {year}</span>
 
-          <motion.div
+          {/* <motion.div
             className="flex  top-0 bottom-0 h-full justify-center 
             items-center w-fit space-x-4 max-w-sm"
           >
@@ -31,7 +31,7 @@ function Footer() {
             <AnimatedBtn href="https://github.com/pefelippe">
               <GitHubLogoIcon className="h-6 w-6" />
             </AnimatedBtn>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </motion.footer>

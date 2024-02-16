@@ -48,11 +48,11 @@
   }
 
   .section {
-    @apply max-xl:px-6 py-16;
+    @apply max-xl:px-6 py-20;
   }
 
   .content-intern {
-    @apply flex flex-col w-full items-start text-start  justify-start h-full  max-w-screen-2xl mx-auto gap-8;
+    @apply flex flex-col w-full items-start text-start  justify-start h-full  max-w-7xl mx-auto gap-8;
   }
 
   .dark {

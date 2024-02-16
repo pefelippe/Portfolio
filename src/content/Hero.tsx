@@ -3,6 +3,8 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { File, LinkedinIcon } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
+import AnimatedBtn from "../components/animated/AnimatedBtn";
+import { Button } from "../components/ui/button";
 
 export default function Hero() {
   return (
@@ -11,35 +13,48 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="about-content"
-      className="content-intern gap-8 "
+      className="content-intern text-white min-h-[40vh] flex justify-center max-lg:text-center max-lg:items-center gap-3"
     >
-      <motion.div className="h-full flex flex-col items-start justify-center w-full z-20 gap-4  mx-auto ">
-        <div
-          className="flex rounded-md max-md:flex-col justify-center max-w-3xl
-         w-full items-center gap-10 min-h-fit  "
-        >
-          <div className="flex flex-col w-full text-lg gap-4 leading-normal items-start justify-start h-full ">
-            <p className="text-6xl lg:text-7xl tracking-tight font-extrabold ">
-              Hi, I am <span className="text-blue">Pedro Felippe</span> —
-              Frontend Developer based in Brazil.
-            </p>
-            {/* <span className="text-base tracking-tight max-w-4xl leading-normal">
-              I have 3+ years of experience in real projects, focused on
-              Frontend development with a focus on React, Next and Typescript. I
-              accumulated practical experience with microfrontends, performance
-              monitoring, automated testing, server-side rendering (SSR), search
-              engine optimization (SEO) and integration with cloud services such
-              as Azure and AWS (Lambda, DynamoDB, S3).
-            </span> */}
-          </div>
+      <span className="text-3xl">Hello! 👋 My name is</span>
+      <p className="text-6xl lg:text-[96px] tracking-wide font-extrabold  text-yellow-400">
+        Pedro Felippe
+      </p>
+      <span className="text-2xl text-gray-50 pb-4">
+        I create simple and efficient solutions for web.
+      </span>
 
-          {/* <motion.img
-            src="./assets/pedrof.jpg"
-            className=" border-2 max-w-[300px] rounded-3xl
-            max-md:object-cover object-fit max-md:hidden "
-          /> */}
-        </div>
+      <motion.div
+        className="flex  top-0 bottom-0 h-full justify-center 
+            items-center w-fit space-x-6 max-w-sm"
+      >
+        {/* <ScrollLink to="/projects-container"> */}
+        {/* <AnimatedBtn
+          target="_blank"
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <Button className="py-7 px-8 text-xl " variant={"destructive"}>
+            See my Work
+          </Button>
+        </AnimatedBtn> */}
+        {/* </ScrollLink> */}
+        <AnimatedBtn
+          target="_blank"
+          href="https://www.linkedin.com/in/pedro-felippe/"
+        >
+          <LinkedinIcon className="h-9 w-9" />
+        </AnimatedBtn>
+
+        <AnimatedBtn href="https://github.com/pefelippe">
+          <GitHubLogoIcon className="h-9 w-9" />
+        </AnimatedBtn>
       </motion.div>
     </motion.div>
   );
+}
+
+{
+  /* <motion.img
+          src="./assets/avatar-pdr.png"
+          className="md:w-[300px] rounded-full max-md:object-cover object-fit  "
+        /> */
 }

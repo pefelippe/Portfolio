@@ -4,47 +4,40 @@ import { motion } from "framer-motion";
 import { File, LinkedinIcon } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 
-import AnimatedBtn from "../components/animated/AnimatedBtn";
-import { Button } from "../components/ui/button";
-import Link from "next/link";
-
 export default function Hero() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      id="hero-container"
-      className="content-intern relative w-full items-center 
-    text-start gap-4  mx-auto"
+      id="about-content"
+      className="content-intern gap-8 "
     >
-      {/* <motion.img
-        src="./assets/avatar-pdr.png"
-        className="rounded-full  shadow max-w-[120px] "
-      /> */}
-      <motion.div className="flex flex-col  font-extrabold max-w-5xl">
-        <p className="text-4xl lg:text-6xl tracking-tight">
-          I am <span className="text-blue">Pedro Felippe</span> — Frontend
-          Developer based in Brazil.
-        </p>
-        <p className="text-xl lg:text-2xl tracking-tight font-extralight py-4 pb-2">
-          I create simple solutions for complex problems.
-        </p>
-        <div className="flex w-fit  items-center gap-3 justify-start  ">
-          <AnimatedBtn
-            target="_blank"
-            className="p-1 rounded-md bg-white"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-8 w-8 hover:text-blue" />
-          </AnimatedBtn>
+      <motion.div className="h-full flex flex-col items-start justify-center w-full z-20 gap-4  mx-auto ">
+        <div
+          className="flex rounded-md max-md:flex-col justify-center max-w-3xl
+         w-full items-center gap-10 min-h-fit  "
+        >
+          <div className="flex flex-col w-full text-lg gap-4 leading-normal items-start justify-start h-full ">
+            <p className="text-6xl lg:text-7xl tracking-tight font-extrabold ">
+              Hi, I am <span className="text-blue">Pedro Felippe</span> —
+              Frontend Developer based in Brazil.
+            </p>
+            {/* <span className="text-base tracking-tight max-w-4xl leading-normal">
+              I have 3+ years of experience in real projects, focused on
+              Frontend development with a focus on React, Next and Typescript. I
+              accumulated practical experience with microfrontends, performance
+              monitoring, automated testing, server-side rendering (SSR), search
+              engine optimization (SEO) and integration with cloud services such
+              as Azure and AWS (Lambda, DynamoDB, S3).
+            </span> */}
+          </div>
 
-          <AnimatedBtn
-            href="https://github.com/pefelippe"
-            className="p-2 rounded-md bg-white"
-          >
-            <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
-          </AnimatedBtn>
+          {/* <motion.img
+            src="./assets/pedrof.jpg"
+            className=" border-2 max-w-[300px] rounded-3xl
+            max-md:object-cover object-fit max-md:hidden "
+          /> */}
         </div>
       </motion.div>
     </motion.div>

@@ -16,12 +16,7 @@ export default function Hero() {
       <h3 className="section-subtitle ">
         About <span className="text-blue">Me</span>
       </h3>
-      <div className="flex max-md:flex-col gap-16 max-w-7xl text-lg items-center tracking-normal text-gray-900">
-        <motion.img
-          src="./assets/pedrof.jpg"
-          className=" max-w-[350px] rounded-xl shadow border-2
-            max-md:object-cover object-fit  "
-        />
+      <div className="flex max-md:flex-col gap-16 max-w-7xl text-lg items-start tracking-normal text-gray-900">
         <p>
           Hello! I'm Pedro Felippe and I'm a frontend developer, designer and
           teacher from Brazil. <br />
@@ -32,6 +27,12 @@ export default function Hero() {
           engine optimization (SEO) and integration with cloud services such as
           Azure and AWS (Lambda, DynamoDB, S3).
         </p>
+
+        <motion.img
+          src="./assets/pedrof.jpg"
+          className=" max-w-[350px] rounded-xl shadow border-2
+            max-md:object-cover object-fit  "
+        />
       </div>
     </motion.div>
   );

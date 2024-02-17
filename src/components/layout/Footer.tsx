@@ -11,10 +11,10 @@ function Footer() {
   return (
     <motion.footer
       className=" w-full font-light mx-auto  text-zinc-900 bg-zinc-100 
-   text-lg  justify-center items-center px-6  flex  h-32"
+   text-lg  justify-center items-center px-6  flex  h-16"
     >
       <div className="mx-auto flex  w-full flex-col  gap-8 max-w-7xl">
-        <div className="flex items-start justify-start ">
+        <div className="flex items-start justify-start font-medium">
           <span>Pedro Felippe - © {year}</span>
 
           {/* <motion.div

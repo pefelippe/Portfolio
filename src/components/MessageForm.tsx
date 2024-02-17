@@ -94,7 +94,7 @@ export default function MessageForm({}) {
           id="message"
           placeholder="Message"
           className="border p-4 border-[#101010] rounded w-full focus:outline-none 
-          focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[350px] bg-gray-300/10"
+          focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[550px] bg-gray-300/10"
         />
 
         <Button

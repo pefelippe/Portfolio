@@ -14,7 +14,6 @@ export default function Home() {
       {/* <section className="section ">
         <AboutContent />
       </section> */}
-
       <section className="section  border-y">
         <ProjectContent />
       </section>

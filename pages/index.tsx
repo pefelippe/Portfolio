@@ -7,8 +7,8 @@ import ContactContent from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className="w-full flex flex-col  relative ">
-      <section className="section bg-blue">
+    <motion.div className="w-full flex flex-col  relative mt-16">
+      <section className="section bg-gray-900">
         <Hero />
       </section>
       {/* <section className="section ">
@@ -18,7 +18,7 @@ export default function Home() {
       <section className="section  border-y">
         <ProjectContent />
       </section>
-      <section className="section bg-gray-900 border-t text-white py-32">
+      <section className="section bg-gray-900 border-t text-white ">
         <ContactContent />
       </section>
     </motion.div>

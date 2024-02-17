@@ -33,13 +33,13 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative flex  h-full items-start text-start justify-start min-h-fit  p-4 bg-white w-full lg:gap-5 max-lg:flex-col
+      className="relative flex min-h-fit h-full items-start text-start justify-start p-4 bg-white w-full lg:gap-5 max-lg:flex-col
     rounded overflow-hidden border"
     >
       <motion.img
         src={imgUrl}
         alt="card image"
-        className="overflow-hidden object-cover rounded border w-full h-full min-h-[350px] lg:min-h-[430px] "
+        className="overflow-hidden object-cover rounded border w-full h-full min-h-[250px] lg:min-h-[430px] "
       />
 
       <div className="w-full flex flex-col gap-6 max-w-lg pt-8">

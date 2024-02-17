@@ -30,7 +30,7 @@ export const Logo = () => {
 
 const Header = () => {
   return (
-    <motion.header className="fixed text-zinc-50 bg-blue	 flex  h-16  w-full  z-50 px-6">
+    <motion.header className="fixed text-zinc-50 bg-gray-900	 flex  h-16  w-full  z-50 px-6">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ const Header = () => {
           <Logo />
         </Link>
 
-        {/* <motion.div
+        <motion.div
           className="flex  top-0 bottom-0 h-full justify-center 
             items-center w-fit space-x-4 max-w-sm"
         >
@@ -55,7 +55,7 @@ const Header = () => {
           <AnimatedBtn href="https://github.com/pefelippe">
             <GitHubLogoIcon className="h-6 w-6" />
           </AnimatedBtn>
-        </motion.div> */}
+        </motion.div>
       </motion.nav>
     </motion.header>
   );

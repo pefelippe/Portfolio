@@ -16,10 +16,7 @@ function Projects() {
         Featured <span className="text-blue">Solutions</span>
       </h3>
 
-      <div
-        className="grid  gap-10
-        w-full items-start h-full"
-      >
+      <div className="grid  gap-10 w-full items-start h-full min-h-fit">
         {projects?.map((proj) => {
           return (
             <ProjectCard

@@ -1,14 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import {
-  ArrowBigLeft,
-  ArrowBigRight,
-  ArrowLeft,
-  ArrowRight,
-  File,
-  LinkedinIcon,
-} from "lucide-react";
+import { ArrowBigLeft, ArrowBigRight, ArrowLeft, ArrowRight, File, LinkedinIcon } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../components/animated/AnimatedBtn";
@@ -40,7 +33,7 @@ export default function Hero() {
             items-start sm:space-x-8 "
         >
           <ScrollLink to="contact-content" offset={-50}>
-            <Button className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:px-52 max-sm:max-w-md">
+            <Button className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:px-24 max-sm:max-w-md">
               Get in contact
             </Button>
           </ScrollLink>
@@ -48,7 +41,7 @@ export default function Hero() {
           <ScrollLink to="projects-container" offset={-100}>
             <Button
               variant="outline"
-              className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:w-full text-[#101010] max-sm:px-52 max-sm:max-w-md"
+              className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:w-full text-[#101010] max-sm:px-24 max-sm:max-w-md"
             >
               See my work
             </Button>

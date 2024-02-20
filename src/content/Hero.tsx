@@ -25,16 +25,15 @@ export default function Hero() {
     >
       <motion.img
         src="./assets/avatar-pdr.png"
-        className="max-h-[350px] max-lg:w-full lg:max-h-[550px]  w-full rounded-md object-cover  max-lg:hidden "
+        className="max-h-[350px]  h-full lg:min-h-[500px] rounded-md object-cover  max-lg:hidden "
       />
       <div className="flex flex-col gap-8 justify-start h-full my-auto items-start max-w-4xl">
         <p className="text-5xl md:text-7xl font-bold text-blue tracking-tight">
           Experience developing robust and responsive web applications.
         </p>
-        {/* <span className="text-lg font-extrathin max-w-2xl">
-          Hey there. I am Pedro Felippe, a Web Developer since 2020. Based in
-          brazil.
-        </span> */}
+        <span className="text-2xl font-normal max-w-2xl">
+          Hey there. I am Pedro Felippe, a Web Developer based in brazil.
+        </span>
 
         <motion.div
           className="flex h-full justify-center

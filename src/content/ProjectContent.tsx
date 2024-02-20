@@ -16,7 +16,7 @@ function Projects() {
         Latest <span className="text-blue">Works</span>
       </h3>
 
-      <div className="flex flex-col gap-20 w-full items-start h-full min-h-fit ">
+      <div className="flex flex-col gap-20 w-full items-start h-full min-h-fit justify-center ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

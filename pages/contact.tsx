@@ -20,7 +20,7 @@ function ContactContent() {
           <h3 className="section-subtitle text-5xl lg:text-6xl">
             Get in <span className="text-blue">Contact</span>
           </h3>
-          <p className="text-2xl max-w-xl text-gray-400">
+          <p className=" text-lg lg:text-2xl max-w-xl text-gray-400">
             Have something in mind? Questions, ideas, or just want to say hi?
             I'm all ears.
           </p>

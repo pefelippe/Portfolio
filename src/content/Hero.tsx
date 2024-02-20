@@ -1,7 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { ArrowBigLeft, ArrowBigRight, ArrowLeft, ArrowRight, File, LinkedinIcon } from "lucide-react";
+import {
+  ArrowBigLeft,
+  ArrowBigRight,
+  ArrowLeft,
+  ArrowRight,
+  File,
+  LinkedinIcon,
+} from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../components/animated/AnimatedBtn";
@@ -16,38 +23,47 @@ export default function Hero() {
       id="about-content"
       className="content-intern gap-6 xl:gap-20 justify-start text-start items-center lg:flex-row min-h-screen"
     >
-      <motion.img
-        src="./assets/avatar-pdr.png"
-        className="max-h-[350px]  h-full lg:min-h-[400px] xl:min-h-[500px] rounded-md  object-cover  max-lg:hidden "
-      />
       <div className="flex flex-col gap-8 justify-start h-full my-auto items-start max-w-4xl max-sm:max-w-md">
-        <p className="max-sm:text-5xl text-6xl lg:text-7xl font-bold text-blue tracking-tight">
-          Experience developing robust and responsive web applications.
+        <p className="max-sm:text-4xl text-6xl lg:text-7xl font-bold text-blue tracking-tight">
+          Experience developing robust and responsive applications for web.
         </p>
-        <span className="text-2xl font-light max-w-2xl">
+        <span className="text-xl font-thin ">
           I am Pedro Felippe, a Web Developer based in Brazil.
         </span>
 
         <motion.div
           className="flex justify-start max-sm:flex-col max-sm:gap-8 relative w-full
-            items-start sm:space-x-8 "
+            items-start sm:space-x-8 max-sm:pt-4"
         >
-          <ScrollLink to="contact-content" offset={-50}>
-            <Button className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:px-24 max-sm:max-w-md">
+          <ScrollLink
+            to="contact-content"
+            offset={-50}
+            className="max-sm:w-full"
+          >
+            <Button className="text-xl py-7 px-10 rounded items-center gap-1  max-sm:w-full ">
               Get in contact
             </Button>
           </ScrollLink>
 
-          <ScrollLink to="projects-container" offset={-100}>
+          <ScrollLink
+            to="projects-container"
+            offset={-100}
+            className="max-sm:w-full"
+          >
             <Button
               variant="outline"
-              className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:w-full text-[#101010] max-sm:px-24 max-sm:max-w-md"
+              className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:w-full text-[#101010] "
             >
               See my work
             </Button>
           </ScrollLink>
         </motion.div>
       </div>
+
+      <motion.img
+        src="./assets/avatar-pdr.png"
+        className="max-h-[350px]  h-full lg:min-h-[400px] xl:min-h-[450px] rounded-md  object-cover  max-lg:hidden "
+      />
     </motion.div>
   );
 }

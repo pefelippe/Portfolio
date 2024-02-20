@@ -22,7 +22,7 @@ const Header = () => {
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex w-full mx-auto items-center justify-between  max-w-screen-2xl max-sm:max-w-md"
+        className="flex w-full mx-auto items-center justify-between  max-w-screen-2xl max-sm:max-w-lg"
       >
         <Link href="/">
           <Logo />

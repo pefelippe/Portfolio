@@ -13,26 +13,24 @@ export default function Hero() {
       id="about-content"
       className="content-intern  h-full flex max-md:flex-col flex-col items-start justify-center w-full z-20  gap-8 mx-auto "
     >
-      <h3 className="section-subtitle ">
+      <h3 className="section-subtitle mx-auto">
         About <span className="text-blue">Me</span>
       </h3>
-      <div className="flex max-md:flex-col gap-16 max-w-7xl text-lg items-start tracking-normal text-gray-900">
-        <p>
-          Hello! I'm Pedro Felippe and I'm a frontend developer, designer and
-          teacher from Brazil. <br />
-          <br />I have 3+ years of experience in real projects, focused on
-          Frontend development with a focus on React, Next and Typescript. I
-          accumulated practical experience with microfrontends, performance
-          monitoring, automated testing, server-side rendering (SSR), search
-          engine optimization (SEO) and integration with cloud services such as
-          Azure and AWS (Lambda, DynamoDB, S3).
-        </p>
-
+      <div className="flex flex-col mx-auto max-w-5xl gap-6 text-lg items-start tracking-normal  ">
         <motion.img
-          src="./assets/pedrof.jpg"
-          className=" max-w-[350px] rounded-xl shadow border-2
-            max-md:object-cover object-fit  "
+          src="./assets/avatar-pdr.png"
+          className="max-h-[220px] border-4 mx-auto rounded-full object-cover  "
         />
+        {/* 
+        <p className="text-xl leading-relaxed text-center max-w-xl">
+          Hello! I'm Pedro Felippe and I'm a frontend developer. <br /> <br />I
+          have 3+ years of experience in real projects, focused on Frontend
+          development with a focus on React, Next and Typescript. I accumulated
+          practical experience with microfrontends, performance monitoring,
+          automated testing, server-side rendering (SSR), search engine
+          optimization (SEO) and integration with cloud services such as Azure
+          and AWS (Lambda, DynamoDB, S3).
+        </p> */}
       </div>
     </motion.div>
   );

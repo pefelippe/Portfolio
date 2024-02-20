@@ -21,46 +21,39 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="about-content"
-      className="content-intern text-white min-h-[20vh] gap-6 xl:gap-20 justify-start text-start items-start lg:flex-row"
+      className="content-intern gap-6 xl:gap-20 justify-start text-start items-start lg:flex-row"
     >
       <motion.img
         src="./assets/avatar-pdr.png"
-        className="max-h-[250px]  w-full lg:max-w-[450px] lg:max-h-[400px] rounded-xl shadow 
-            max-md:object-cover object-cover  "
+        className="max-h-[350px] max-lg:w-full lg:max-h-[550px]  w-full rounded-md object-cover  max-lg:hidden "
       />
-
-      <div className="flex flex-col gap-5 justify-center h-full my-auto">
-        {/* <h3 className="text-xl lg:text-2xl font-normal">Hey there, i am</h3> */}
-        <p className="text-5xl lg:text-6xl  tracking-wide font-extrabold  text-blue">
-          Pedro Felippe
+      <div className="flex flex-col gap-8 justify-start h-full my-auto items-start max-w-4xl">
+        <p className="text-5xl md:text-7xl font-bold text-blue tracking-tight">
+          Experience developing robust and responsive web applications.
         </p>
-        <span className="text-base lg:text-lg max-w-3xl text-gray-300 font-extrathin">
-          I have 3+ years of experience in real projects, focused on Web
-          Development. I accumulated practical experience with microfrontends,
-          performance monitoring, automated testing, server-side rendering
-          (SSR), search engine optimization (SEO) and integration with cloud
-          services such as Azure and AWS (Lambda, DynamoDB, S3).
-        </span>
+        {/* <span className="text-lg font-extrathin max-w-2xl">
+          Hey there. I am Pedro Felippe, a Web Developer since 2020. Based in
+          brazil.
+        </span> */}
 
         <motion.div
-          className="flex  top-0 bottom-0 h-full justify-center 
-            items-center w-fit space-x-6 max-w-sm"
+          className="flex h-full justify-center
+            items-center w-fit space-x-5 "
         >
           <ScrollLink to="contact-content" offset={-150}>
-            <Button className="text-xl p-7 items-center gap-1">
-              <p>Get in touch</p> <ArrowRight />
+            <Button className="text-xl py-7 px-12 rounded items-center gap-1">
+              Get in contact
             </Button>
           </ScrollLink>
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-8 w-8" />
-          </AnimatedBtn>
 
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-8 w-8" />
-          </AnimatedBtn>
+          <ScrollLink to="projects-container" offset={-150}>
+            <Button
+              variant="outline"
+              className="text-xl py-7 px-12 rounded items-center gap-1"
+            >
+              Last Works
+            </Button>
+          </ScrollLink>
         </motion.div>
       </div>
     </motion.div>

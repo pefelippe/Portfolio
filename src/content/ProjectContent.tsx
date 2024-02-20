@@ -16,7 +16,7 @@ function Projects() {
         Last <span className="text-blue">Works</span>
       </h3>
 
-      <div className="grid  gap-10 w-full items-start h-full min-h-fit">
+      <div className="grid gap-20 w-full items-start h-full min-h-fit ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

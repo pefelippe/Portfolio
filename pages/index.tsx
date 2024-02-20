@@ -7,17 +7,14 @@ import ContactContent from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className="w-full flex flex-col  relative mt-16">
-      <section className="section bg-gray-900">
+    <motion.div className="w-full flex flex-col  relative mt-20 ">
+      <section className="section">
         <Hero />
       </section>
-      {/* <section className="section ">
-        <AboutContent />
-      </section> */}
-      <section className="section  border-y">
+      <section className="section ">
         <ProjectContent />
       </section>
-      <section className="section bg-gray-900 border-t text-white ">
+      <section className="section  ">
         <ContactContent />
       </section>
     </motion.div>

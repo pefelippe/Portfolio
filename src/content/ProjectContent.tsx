@@ -13,7 +13,7 @@ function Projects() {
       className="content-intern gap-10 items-start justify-center"
     >
       <h3 className="section-subtitle ">
-        Last <span className="text-blue">Works</span>
+        Latest <span className="text-blue">Works</span>
       </h3>
 
       <div className="grid gap-20 w-full items-start h-full min-h-fit ">

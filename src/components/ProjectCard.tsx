@@ -1,10 +1,10 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { LinkIcon } from "lucide-react";
 import Link from "next/link";
 
 import { Skills } from "./Skills";
 import { Button } from "./ui/button";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 type IProjectCard = {
   description: string;
@@ -39,13 +39,13 @@ function ProjectCard({
     >
       <Link
         href={link}
-        className="relative border rounded overflow-hidden"
+        className="relative border rounded overflow-hidden   w-full  h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[500px]"
         target="_blank"
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[250px] lg:min-h-[400px] xl:min-h-[500px] "
+          className="overflow-hidden object-cover h-full  w-full "
         />
       </Link>
 

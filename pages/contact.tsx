@@ -16,14 +16,15 @@ function ContactContent() {
         <h3 className="section-subtitle text-4xl lg:text-5xl">
           Get in <span className="text-blue">Contact</span>
         </h3>
-
-        {/* <p className="text-xl max-w-xl">
+      </div>
+      <div className="flex w-full justify-between">
+        <p className="text-xl max-w-xl">
           Have something in mind? Questions, ideas, or just want to say hi? I'm
           all ears.
-        </p> */}
-      </div>
+        </p>
 
-      <MessageForm />
+        <MessageForm />
+      </div>
     </motion.div>
   );
 }

@@ -35,9 +35,13 @@ function ProjectCard({
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
       className="relative flex min-h-fit h-full items-start text-start lg:flex-row
-       justify-center  flex-col w-full  bg-gray-100 rounded  border"
+       justify-center  flex-col w-full rounded  "
     >
-      <Link href={link} className="relative" target="_blank">
+      <Link
+        href={link}
+        className="relative border rounded overflow-hidden"
+        target="_blank"
+      >
         <motion.img
           src={imgUrl}
           alt="card image"
@@ -52,7 +56,7 @@ function ProjectCard({
           <p className="text-xl ">{description}</p>
         </div>
 
-        <div className="flex w-full gap-5 ">
+        <div className="flex w-full gap-4 ">
           <Link href={link} className="relative" target="_blank">
             <Button className="flex items-center gap-2 p-6 px-12 rounded text-lg">
               <p>Live Demo</p>

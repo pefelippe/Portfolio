@@ -65,7 +65,7 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-4 w-full  text-[#101010]  ">
+    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-4 w-full  text-[#101010] max-w-3xl ">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="gap-4 w-full flex flex-col   "
@@ -99,7 +99,7 @@ export default function MessageForm({}) {
 
         <Button
           type="submit"
-          className=" text-center  py-7  text-white  px-16 rounded  justify-start w-fit 
+          className=" text-center  py-7  text-white  px-16 rounded  justify-start w-full justify-center
           transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Start partnership!"}

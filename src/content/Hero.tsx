@@ -21,7 +21,7 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="about-content"
-      className="content-intern gap-6 xl:gap-20 justify-start text-start items-start lg:flex-row"
+      className="content-intern gap-6 xl:gap-20 justify-start text-start items-start lg:flex-row "
     >
       <motion.img
         src="./assets/avatar-pdr.png"

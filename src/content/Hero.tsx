@@ -31,7 +31,7 @@ export default function Hero() {
         <p className="max-sm:text-5xl text-6xl lg:text-7xl font-bold text-blue tracking-tight">
           Experience developing robust and responsive web applications.
         </p>
-        <span className="text-2xl font-normal max-w-2xl">
+        <span className="text-2xl font-light max-w-2xl">
           I am Pedro Felippe, a Web Developer based in Brazil.
         </span>
 
@@ -40,7 +40,7 @@ export default function Hero() {
             items-start sm:space-x-8 "
         >
           <ScrollLink to="contact-content" offset={-50}>
-            <Button className="text-xl py-7 px-12 rounded items-center gap-1 max-sm:px-52 max-sm:max-w-md">
+            <Button className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:px-52 max-sm:max-w-md">
               Get in contact
             </Button>
           </ScrollLink>
@@ -48,7 +48,7 @@ export default function Hero() {
           <ScrollLink to="projects-container" offset={-100}>
             <Button
               variant="outline"
-              className="text-xl py-7 px-12 rounded items-center gap-1 max-sm:w-full text-[#101010] max-sm:px-52 max-sm:max-w-md"
+              className="text-xl py-7 px-10 rounded items-center gap-1 max-sm:w-full text-[#101010] max-sm:px-52 max-sm:max-w-md"
             >
               See my work
             </Button>

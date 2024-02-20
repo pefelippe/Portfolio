@@ -39,7 +39,7 @@ function ProjectCard({
     >
       <Link
         href={link}
-        className="relative border rounded overflow-hidden   w-full  h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[500px]"
+        className="relative border rounded overflow-hidden  w-full  h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[600px]"
         target="_blank"
       >
         <motion.img
@@ -49,7 +49,7 @@ function ProjectCard({
         />
       </Link>
 
-      <div className="w-full flex flex-col gap-4 items-start justify-center h-full lg:px-10 p-8 ">
+      <div className="w-full max-w-xl flex flex-col gap-4 items-start justify-center h-full lg:px-10 p-8 ">
         <Skills technologies={stack} />
         <div className="w-full flex flex-col gap-4 items-start justify-center py-4">
           <p className="text-3xl lg:text-4xl font-extrabold">{title}</p>

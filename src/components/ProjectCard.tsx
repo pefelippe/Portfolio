@@ -39,7 +39,7 @@ function ProjectCard({
     >
       <Link
         href={link}
-        className="relative border rounded overflow-hidden w-full h-full min-h-[250px] lg:min-h-[400px] xl:min-h-[600px]"
+        className="relative shadow rounded overflow-hidden w-full h-full min-h-[250px] lg:min-h-[400px] xl:min-h-[600px]"
         target="_blank"
       >
         <motion.img
@@ -49,14 +49,14 @@ function ProjectCard({
         />
       </Link>
 
-      <div className="w-full max-w-xl flex flex-col gap-4 items-start justify-center h-full lg:px-10  my-auto">
+      <div className="w-full max-w-xl flex flex-col gap-6 items-start justify-center h-full lg:px-10  my-auto">
         <div className="w-full flex flex-col gap-4 items-start justify-center py-4 h-full">
           <p className="text-3xl lg:text-4xl font-extrabold">{title}</p>
           <Skills technologies={stack} />
-          <p className="text-xl ">{description}</p>
+          <p className="text-xl  ">{description}</p>
         </div>
 
-        <div className="flex max-md:flex-col w-full gap-4 ">
+        <div className="flex max-md:flex-col w-full gap-6 ">
           <Link href={link} className="relative" target="_blank">
             <Button className="flex items-center gap-2 p-7 px-12 rounded text-lg  max-sm:w-full ">
               <p>Live Demo</p>
@@ -66,7 +66,7 @@ function ProjectCard({
           <Link href={repo} className="relative" target="_blank">
             <Button
               variant={"outline"}
-              className="flex items-center gap-2 p-7 px-12 rounded text-lg font-medium  max-sm:w-full border "
+              className="flex items-center gap-2 p-7 px-12 rounded text-lg font-medium  max-sm:w-full border text-[#101010]"
             >
               <GitHubLogoIcon className="h-6 w-6" /> <p>Github</p>
             </Button>

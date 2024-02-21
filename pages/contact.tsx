@@ -13,9 +13,9 @@ function ContactContent() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="content-intern my-auto items-start text-start justify-center gap-6 min-h-screen  "
+      className="content-intern my-auto items-start text-start justify-center  min-h-screen  "
     >
-      <div className="flex w-full justify-between items-center text-start max-lg:flex-col max-lg:gap-5">
+      <div className="flex w-full justify-between items-center text-center flex-col gap-10">
         <div className="flex flex-col gap-4 h-full justify-center ">
           <h3 className="section-subtitle text-5xl lg:text-6xl">
             Get in <span className="text-blue">Contact</span>

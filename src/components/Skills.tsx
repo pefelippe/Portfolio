@@ -14,7 +14,7 @@ export const Skills: React.FC<SkillsProps> = ({ technologies }) => {
           <span
             key={tech}
             className="flex uppercase tracking-wider items-start relative text-xs font-semibold rounded
-             p-1 px-3 bg-gray-900 text-white"
+             p-1 px-3  text-white bg-blue"
           >
             <p>{tech}</p>
           </span>

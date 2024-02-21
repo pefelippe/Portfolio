@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
+import { Button } from "../ui/button";
 
 export const Logo = () => {
   return (
@@ -27,6 +28,32 @@ const Header = () => {
         <Link href="/">
           <Logo />
         </Link>
+
+        <motion.div
+          className="flex  top-0 bottom-0 h-full justify-center 
+            items-center w-fit space-x-6 "
+        >
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-7 w-7 hover:text-blue" />
+          </AnimatedBtn>
+
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <GitHubLogoIcon className="h-7 w-7 hover:text-blue" />
+          </AnimatedBtn>
+
+          <ScrollLink
+            to="contact-content"
+            offset={-50}
+            className="max-sm:w-full "
+          >
+            <Button className="text-xl py-6 rounded items-center gap-1  max-sm:w-full  tracking-normal font-semibold bg-blue">
+              Contact-me
+            </Button>
+          </ScrollLink>
+        </motion.div>
       </motion.nav>
     </motion.header>
   );

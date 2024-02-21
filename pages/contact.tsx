@@ -15,7 +15,7 @@ function ContactContent() {
       transition={{ duration: 0.5 }}
       className="content-intern my-auto items-start text-start justify-center gap-6 min-h-screen  "
     >
-      <div className="flex w-full justify-between items-center text-center max-lg:flex-col max-lg:gap-5">
+      <div className="flex w-full justify-between items-center text-start max-lg:flex-col max-lg:gap-5">
         <div className="flex flex-col gap-4 h-full justify-center ">
           <h3 className="section-subtitle text-5xl lg:text-6xl">
             Get in <span className="text-blue">Contact</span>
@@ -24,22 +24,6 @@ function ContactContent() {
             Have something in mind? Questions, ideas, or just want to say hi?
             I'm all ears.
           </p>
-
-          <motion.div
-            className="flex  top-0 bottom-0 h-full justify-center 
-            items-center w-full space-x-8 "
-          >
-            <AnimatedBtn
-              target="_blank"
-              href="https://www.linkedin.com/in/pedro-felippe/"
-            >
-              <LinkedinIcon className="h-9 w-9 hover:text-blue" />
-            </AnimatedBtn>
-
-            <AnimatedBtn href="https://github.com/pefelippe">
-              <GitHubLogoIcon className="h-9 w-9 hover:text-blue" />
-            </AnimatedBtn>
-          </motion.div>
         </div>
         <MessageForm />
       </div>

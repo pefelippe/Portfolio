@@ -21,28 +21,12 @@ const Header = () => {
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.25 }}
         className="flex w-full mx-auto items-center justify-between  max-w-screen-2xl max-sm:max-w-lg"
       >
         <Link href="/">
           <Logo />
         </Link>
-
-        <motion.div
-          className="flex  top-0 bottom-0 h-full justify-center 
-            items-center w-fit space-x-6 max-w-sm"
-        >
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-7 w-7 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-7 w-7 hover:text-blue" />
-          </AnimatedBtn>
-        </motion.div>
       </motion.nav>
     </motion.header>
   );

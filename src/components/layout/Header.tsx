@@ -46,7 +46,7 @@ const Header = () => {
 
           <ScrollLink
             to="contact-content"
-            offset={-50}
+            offset={-100}
             className="max-sm:w-full "
           >
             <Button className="text-xl py-6 rounded items-center gap-1  max-sm:w-full  tracking-normal font-semibold bg-blue">

@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Header />
         <Component {...pageProps} />
         <Toaster />
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </motion.div>
   );

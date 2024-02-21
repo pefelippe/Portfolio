@@ -10,13 +10,13 @@ function Projects() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.5 }}
       id="projects-container"
-      className="content-intern gap-10 items-start justify-center"
+      className="content-intern gap-10 items-center justify-center"
     >
-      <h3 className="section-subtitle ">
+      {/* <h3 className="section-subtitle ">
         Latest <span className="text-blue">Works</span>
-      </h3>
+      </h3> */}
 
-      <div className="flex flex-col gap-20 w-full items-start h-full min-h-fit justify-center ">
+      <div className="flex flex-col md:grid md:grid-cols-2  gap-10 w-full items-start h-full min-h-fit justify-center ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

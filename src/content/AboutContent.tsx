@@ -11,26 +11,24 @@ export default function Hero() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       id="about-content"
-      className="content-intern  h-full flex max-md:flex-col flex-col items-start justify-center w-full z-20  gap-8 mx-auto "
+      className="content-intern h-full flex max-md:flex-col flex-col items-start justify-center w-full z-20 gap-10 mx-auto "
     >
       <h3 className="section-subtitle mx-auto">
         About <span className="text-blue">Me</span>
       </h3>
-      <div className="flex flex-col mx-auto max-w-5xl gap-6 text-lg items-start tracking-normal  ">
+      <div className="flex max-md:flex-col mx-auto max-w-7xl gap-20 text-lg items-start tracking-normal  ">
         <motion.img
           src="./assets/avatar-pdr.png"
-          className="max-h-[220px] border-4 mx-auto rounded-full object-cover  "
+          className="h-[500px] w-[450px] shadow mx-auto rounded-md object-cover  "
         />
-        {/* 
-        <p className="text-xl leading-relaxed text-center max-w-xl">
-          Hello! I'm Pedro Felippe and I'm a frontend developer. <br /> <br />I
-          have 3+ years of experience in real projects, focused on Frontend
+        <p className="text-xl leading-normal max-w-3xl my-auto">
+          I have 3+ years of experience in real projects, focused on Frontend
           development with a focus on React, Next and Typescript. I accumulated
           practical experience with microfrontends, performance monitoring,
           automated testing, server-side rendering (SSR), search engine
           optimization (SEO) and integration with cloud services such as Azure
           and AWS (Lambda, DynamoDB, S3).
-        </p> */}
+        </p>
       </div>
     </motion.div>
   );

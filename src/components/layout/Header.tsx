@@ -33,17 +33,6 @@ const Header = () => {
           className="flex  top-0 bottom-0 h-full justify-center 
             items-center w-fit space-x-6 "
         >
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-7 w-7 hover:text-blue" />
-          </AnimatedBtn>
-
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-7 w-7 hover:text-blue" />
-          </AnimatedBtn>
-
           <Link
             href="/contact"
             className="text-xl py-6 rounded items-center gap-1  max-sm:w-full  tracking-normal font-semibold hover:text-blue"

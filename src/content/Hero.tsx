@@ -13,7 +13,7 @@ export default function Hero() {
         transition={{ duration: 0.75 }}
         className="flex flex-col gap-4 justify-start h-full my-auto items-center  max-sm:max-w-md uppercase text-white font-extrabold"
       >
-        <span className=" text-3xl lg:text-4xl  flex gap-2 ">
+        <span className=" text-3xl lg:text-4xl  flex gap-3 ">
           <motion.img
             src="https://github.com/tairosonloa/tairosonloa/raw/main/assets/wave.gif?raw=true"
             width="35px"
@@ -24,7 +24,7 @@ export default function Hero() {
           Software Engineer
         </p>
 
-        <span className="text-lg text-gray-300 tracking-[2px]">
+        <span className="text-xl text-gray-300 tracking-[2px]">
           I build things for the web.
         </span>
       </motion.div>

@@ -15,9 +15,9 @@ export default function Home() {
       <section className="section ">
         <ProjectContent />
       </section>
-      <section className="section ">
+      {/* <section className="section ">
         <ContactContent />
-      </section>
+      </section> */}
     </motion.div>
   );
 }

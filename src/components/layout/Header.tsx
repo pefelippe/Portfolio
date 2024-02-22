@@ -18,7 +18,7 @@ export const Logo = () => {
 
 const Header = () => {
   return (
-    <motion.header className="fixed  flex  h-20  w-full  z-50 px-6 text-white ">
+    <motion.header className="fixed  flex  h-20  w-full  z-50 px-6 text-white bg-gray-900 ">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -44,15 +44,12 @@ const Header = () => {
             <GitHubLogoIcon className="h-7 w-7 hover:text-blue" />
           </AnimatedBtn>
 
-          <ScrollLink
-            to="contact-content"
-            offset={-100}
-            className="max-sm:w-full "
+          <Link
+            href="/contact"
+            className="text-xl py-6 rounded items-center gap-1  max-sm:w-full  tracking-normal font-semibold hover:text-blue"
           >
-            <Button className="text-xl py-6 rounded items-center gap-1  max-sm:w-full  tracking-normal font-semibold bg-blue">
-              Contact-me
-            </Button>
-          </ScrollLink>
+            Contact
+          </Link>
         </motion.div>
       </motion.nav>
     </motion.header>

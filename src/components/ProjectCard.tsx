@@ -45,7 +45,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full  h-full"
+          className="overflow-hidden object-cover w-full h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[450px] "
         />
 
         <div

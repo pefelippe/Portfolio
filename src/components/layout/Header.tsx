@@ -35,7 +35,7 @@ const Header = () => {
         >
           <Link
             href="/contact"
-            className="text-xl py-6 rounded items-center gap-1  max-sm:w-full  tracking-normal font-semibold hover:text-blue"
+            className="text-base  rounded items-center gap-1  max-sm:w-full  tracking-wide font-semibold hover:text-blue uppercase "
           >
             Contact
           </Link>

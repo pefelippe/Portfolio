@@ -39,23 +39,23 @@ function ProjectCard({
     >
       <Link
         href={link}
-        className="relative shadow  overflow-hidden w-full h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[450px] rounded"
+        className="relative shadow  overflow-hidden w-full h-full min-h-[280px] lg:min-h-[400px] xl:min-h-[450px] "
         target="_blank"
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[450px] "
+          className="overflow-hidden object-cover w-full h-full min-h-[280px] lg:min-h-[400px] xl:min-h-[450px] "
         />
 
         <div
-          className="absolute inset-0 flex flex-col gap-1 justify-center items-start w-full text-md p-6 py-3
-         bg-black bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity"
+          className="absolute inset-0 flex flex-col gap-1 justify-center items-center text-center w-full text-md p-6 py-3
+         bg-black bg-opacity-85 opacity-0 hover:opacity-100 transition-opacity"
         >
-          <p className="text-xl md:text-3xl font-semibold tracking-tight text-white">
+          <p className="text-xl md:text-5xl font-extralight tracking-tight text-white">
             {title}
           </p>
-          <p className="text-sm md:text-xl font-normal text-white">
+          <p className="text-sm md:text-xl  text-white max-w-md font-normal">
             {description}
           </p>
         </div>

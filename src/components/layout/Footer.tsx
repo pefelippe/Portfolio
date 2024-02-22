@@ -9,26 +9,24 @@ function Footer() {
 
   return (
     <motion.footer
-      className="fixed bottom-0  w-full font-light mx-auto  text-white 
-   text-base  justify-center items-center px-6  flex"
+      className="fixed bottom-0 font-light mx-auto  text-white 
+   text-base justify-center items-center flex"
     >
-      <div className="mx-auto flex w-full flex-col gap-10 max-w-7xl  items-center justify-center ">
-        <motion.div
-          className="flex  h-full justify-center p-6 rounded-t-xl
-            items-center w-fit lg:w-screen space-x-6 lg:justify-between "
+      <motion.div
+        className="flex flex-col h-full justify-center p-6 rounded-t-xl
+            items-center w-fit  space-y-5 lg:justify-between "
+      >
+        <AnimatedBtn
+          target="_blank"
+          href="https://www.linkedin.com/in/pedro-felippe/"
         >
-          <AnimatedBtn
-            target="_blank"
-            href="https://www.linkedin.com/in/pedro-felippe/"
-          >
-            <LinkedinIcon className="h-8 w-8 hover:text-blue" />
-          </AnimatedBtn>
+          <LinkedinIcon className="h-8 w-8 hover:text-blue" />
+        </AnimatedBtn>
 
-          <AnimatedBtn href="https://github.com/pefelippe">
-            <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
-          </AnimatedBtn>
-        </motion.div>
-      </div>
+        <AnimatedBtn href="https://github.com/pefelippe">
+          <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
+        </AnimatedBtn>
+      </motion.div>
     </motion.footer>
   );
 }

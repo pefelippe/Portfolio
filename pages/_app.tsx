@@ -12,9 +12,9 @@ import { Toaster } from "../src/components/ui/toaster";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <motion.div className="min-w-[400px] mx-auto h-fit overflow-hidden font-sans scroll-smooth  text-[#101010]">
+    <motion.div className="min-w-[400px] mx-auto h-fit overflow-hidden font-sans scroll-smooth text-[#101010]">
       <Head>
-        <title>Pedro Felippe - Software Engineer | Front-End Developer</title>
+        <title>Pedro Felippe</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

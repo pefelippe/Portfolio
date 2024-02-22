@@ -7,6 +7,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
 import { Button } from "../ui/button";
+import { Separator } from "../ui/separator";
 
 export const Logo = () => {
   return (
@@ -18,7 +19,7 @@ export const Logo = () => {
 
 const Header = () => {
   return (
-    <motion.header className="fixed  flex  h-20  w-full  z-50 px-6 text-white bg-gray-900 ">
+    <motion.header className="fixed  flex  h-16  w-full  z-50 px-6 text-white bg-gray-900 ">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,15 +31,33 @@ const Header = () => {
         </Link>
 
         <motion.div
-          className="flex  top-0 bottom-0 h-full justify-center 
-            items-center w-fit space-x-6 "
+          className="flex  top-0 bottom-0 h-full justify-center tracking-wide font-medium
+            items-center w-fit space-x-4 "
         >
           <Link
+            href="/about"
+            className="text-base tracking-wide  hover:text-blue  "
+          >
+            About
+          </Link>
+          <Link
             href="/contact"
-            className="text-base  rounded items-center gap-1  max-sm:w-full  tracking-wide font-semibold hover:text-blue uppercase "
+            className="text-base tracking-wide  hover:text-blue  "
           >
             Contact
           </Link>
+          {/* <motion.div className="flex h-full justify-center items-center w-fit space-x-4">
+            <AnimatedBtn
+              target="_blank"
+              href="https://www.linkedin.com/in/pedro-felippe/"
+            >
+              <LinkedinIcon className="h-6 w-6 hover:text-blue" />
+            </AnimatedBtn>
+
+            <AnimatedBtn href="https://github.com/pefelippe">
+              <GitHubLogoIcon className="h-6 w-6 hover:text-blue" />
+            </AnimatedBtn>
+          </motion.div> */}
         </motion.div>
       </motion.nav>
     </motion.header>

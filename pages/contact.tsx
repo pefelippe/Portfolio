@@ -14,7 +14,7 @@ function ContactContent() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex w-full justify-between items-center text-center max-md:flex-col gap-5 max-w-screen-2xl mx-auto my-auto h-full  "
+        className="flex w-full justify-between items-center text-center max-md:flex-col gap-5 max-w-screen-2xl mx-auto my-auto h-full px-6  "
       >
         <div className="flex flex-col gap-4 h-full justify-center text-start ">
           <h3 className="section-subtitle text-5xl lg:text-6xl">

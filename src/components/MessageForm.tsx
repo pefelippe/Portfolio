@@ -65,12 +65,12 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-4 w-full  text-[#101010] max-w-3xl ">
+    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-3 w-full  text-[#101010] max-w-4xl ">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-4 w-full flex flex-col   "
+        className="gap-3 w-full flex flex-col   "
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <Input
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"

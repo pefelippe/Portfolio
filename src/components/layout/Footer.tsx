@@ -9,13 +9,13 @@ function Footer() {
 
   return (
     <motion.footer
-      className=" bottom-0  w-full font-light mx-auto  text-white bg-gray-900 
+      className="fixed bottom-0  w-full font-light mx-auto  text-white 
    text-base  justify-center items-center px-6  flex"
     >
       <div className="mx-auto flex w-full flex-col gap-10 max-w-7xl  items-center justify-center ">
         <motion.div
-          className="flex  h-full justify-center bg-gray-900 p-3 rounded-t-xl
-            items-center w-fit space-x-6"
+          className="flex  h-full justify-center p-6 rounded-t-xl
+            items-center w-fit lg:w-screen space-x-6 lg:justify-between "
         >
           <AnimatedBtn
             target="_blank"

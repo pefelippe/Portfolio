@@ -11,14 +11,14 @@ import { Button } from "../ui/button";
 export const Logo = () => {
   return (
     <button className=" flex text-lg  transition-all w-fit  tracking-tigher font-bold hover:text-blue uppercase">
-      PedroFelippe
+      Pedro Felippe
     </button>
   );
 };
 
 const Header = () => {
   return (
-    <motion.header className="fixed  flex  h-20  w-full  z-50 px-6 bg-gray-900 text-white ">
+    <motion.header className="fixed  flex  h-20  w-full  z-50 px-6 text-white ">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}

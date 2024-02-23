@@ -39,7 +39,7 @@ function ProjectCard({
     >
       <Link
         href={link}
-        className="relative shadow  overflow-hidden w-full h-full min-h-[280px] lg:min-h-[400px] xl:min-h-[450px] "
+        className="relative shadow  overflow-hidden w-full h-full min-h-[280px] lg:min-h-[400px] xl:min-h-[550px] "
         target="_blank"
       >
         <motion.img

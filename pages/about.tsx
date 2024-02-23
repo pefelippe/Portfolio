@@ -1,3 +1,4 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
@@ -11,10 +12,10 @@ function ContactContent() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="content-intern w-full justify-between items-center text-center max-md:flex-col gap-5 mx-auto my-auto h-full  "
+        className="content-intern md:flex-row w-full justify-between items-center text-center max-md:flex-col gap-5 mx-auto my-auto h-full  "
       >
-        <div className="flex flex-col h-full justify-center text-center mx-auto">
-          <h3 className="section-subtitle">
+        <div className="flex flex-col gap-4 h-full justify-center text-center mx-auto">
+          <h3 className="section-subtitle text-5xl lg:text-6xl">
             Get in <span className="text-blue">Contact</span>
           </h3>
           <p className=" text-lg lg:text-2xl max-w-3xl text-gray-400">

@@ -1,33 +1,36 @@
-"use client";
-
+import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "./button";
 
 export function ModeToggle() {
   const { setTheme, theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-  if (theme === "light") {
-    return (
-      <Button
-        className="px-2 rounded-full text-[#101010] flex"
-        variant={"outline"}
-        onClick={() => setTheme("dark")}
-      >
-        <Moon className="h-6 w-6" />
-        <span className="sr-only">Toggle theme</span>
-      </Button>
-    );
-  }
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const handleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  // Renderiza o componente no servidor
+  if (!mounted) return null;
 
   return (
-    <Button
-      className="px-2 rounded-full text-white flex"
-      variant={"outline"}
-      onClick={() => setTheme("light")}
+    <button
+      className={` rounded flex ${
+        theme === "light" ? "text-[#101010]" : "text-white"
+      }`}
+      onClick={handleTheme}
     >
-      <Sun className="h-6 w-6" />
+      {theme === "light" ? (
+        <Moon className="h-5 w-5" />
+      ) : (
+        <Sun className="h-5 w-5" />
+      )}
       <span className="sr-only">Toggle theme</span>
-    </Button>
+    </button>
   );
 }

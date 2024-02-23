@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 
-import AboutContent from "../src/content/AboutContent";
 import Hero from "../src/content/Hero";
 import ProjectContent from "../src/content/ProjectContent";
-import ContactContent from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className="w-full flex flex-col  relative dark:bg-gray-900 dark:text-white pt-16">
-      <section className="section  ">
+    <motion.div className="w-full flex flex-col relative dark:bg-gray-900 dark:text-white py-32">
+      <section className="section py-24">
         <Hero />
       </section>
       <section className="section ">

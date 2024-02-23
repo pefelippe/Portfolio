@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Analytics />
       <ThemeProvider
         attribute="class"
-        defaultTheme="light"
+        defaultTheme="system"
         enableSystem
         disableTransitionOnChange
       >

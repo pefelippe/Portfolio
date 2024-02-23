@@ -6,26 +6,28 @@ import AnimatedBtn from "../animated/AnimatedBtn";
 
 function Footer() {
   const year = new Date().getFullYear();
-
   return (
     <motion.footer
-      className="fixed bottom-0 font-light mx-auto  text-white 
-   text-base justify-center items-center flex"
+      className=" font-light mx-auto  text-white  bg-[#121212]
+   text-base justify-center items-center flex h-56 p-10 text-center"
     >
-      <motion.div
-        className="flex flex-col h-full justify-center p-6 rounded-t-xl
-            items-center w-fit  space-y-5 lg:justify-between "
-      >
-        <AnimatedBtn
-          target="_blank"
-          href="https://www.linkedin.com/in/pedro-felippe/"
+      <motion.div className="flex flex-col gap-3 text-gray-200 font-light">
+        <span className="text-xl"> Pedro Felippe © {year}</span>
+        <motion.div
+          className="flex  h-full justify-center pt-2
+            items-center w-fit  space-x-5 mx-auto "
         >
-          <LinkedinIcon className="h-8 w-8 hover:text-blue" />
-        </AnimatedBtn>
+          <AnimatedBtn
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+          >
+            <LinkedinIcon className="h-7 w-7 hover:text-blue" />
+          </AnimatedBtn>
 
-        <AnimatedBtn href="https://github.com/pefelippe">
-          <GitHubLogoIcon className="h-8 w-8 hover:text-blue" />
-        </AnimatedBtn>
+          <AnimatedBtn href="https://github.com/pefelippe">
+            <GitHubLogoIcon className="h-7 w-7 hover:text-blue" />
+          </AnimatedBtn>
+        </motion.div>
       </motion.div>
     </motion.footer>
   );

@@ -48,11 +48,11 @@
   }
 
   .section {
-    @apply px-6 py-8 md:py-16;
+    @apply max-sm:px-6 lg:px-20 py-8 md:py-16;
   }
 
   .content-intern {
-    @apply flex flex-col w-full items-start text-start max-sm:max-w-lg justify-start h-full px-6 mx-auto gap-8;
+    @apply flex flex-col w-full items-start text-start max-sm:max-w-lg justify-start h-full  mx-auto gap-8;
   }
 
   .dark {

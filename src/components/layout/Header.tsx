@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ModeToggle } from "../ui/mode-toggle";
 import { useRouter } from "next/router";
+import AnimatedBtn from "../animated/AnimatedBtn";
+import { LinkedinIcon } from "lucide-react";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const Logo = () => {
   return (
@@ -19,12 +22,12 @@ const Header = () => {
     path === router.pathname ? "text-blue font-medium" : "";
 
   return (
-    <motion.header className="fixed flex h-32 w-full  z-50 px-6 bg-white dark:bg-gray-900 dark:text-white">
+    <motion.header className="fixed flex py-10 w-full bg-white  z-50 px-6 lg:px-20 dark:bg-zinc-900 dark:text-white">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className="flex w-full mx-auto items-center justify-between px-6 max-sm:max-w-lg "
+        className="flex w-full mx-auto items-center justify-between  max-sm:max-w-lg "
       >
         <Link href="/">
           <Logo />
@@ -34,7 +37,7 @@ const Header = () => {
           className=" flex top-0 bottom-0 h-full justify-center tracking-wide  text-[#333] dark:text-[#aaa]	 font-light
             items-center w-fit space-x-6 text-base"
         >
-          <Link
+          {/* <Link
             href="/"
             className={`tracking-wide hover:text-blue ${isActive("/")}`}
           >
@@ -51,8 +54,15 @@ const Header = () => {
             className={`tracking-wide hover:text-blue ${isActive("/contact")}`}
           >
             <p>Contact</p>
-          </Link>
-          <ModeToggle />
+          </Link> */}
+          <motion.div
+            className="flex  h-full justify-center  rounded-t-xl 
+            items-center w-fit  space-x-4 lg:justify-between "
+          >
+            <AnimatedBtn>
+              <ModeToggle />
+            </AnimatedBtn>
+          </motion.div>
         </motion.div>
       </motion.nav>
     </motion.header>

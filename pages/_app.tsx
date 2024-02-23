@@ -12,7 +12,7 @@ import { Toaster } from "../src/components/ui/toaster";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <motion.div className="min-w-[400px] mx-auto h-fit overflow-hidden font-sans scroll-smooth text-[#101010]">
+    <motion.div className="min-w-[400px] mx-auto h-fit overflow-hidden font-sans scroll-smooth bg-white text-[#101010] dark:bg-zinc-900 dark:text-white">
       <Head>
         <title>Pedro Felippe</title>
         <meta name="description" content="Portfolio" />

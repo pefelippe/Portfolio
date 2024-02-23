@@ -5,11 +5,11 @@ import ProjectContent from "../src/content/ProjectContent";
 
 export default function Home() {
   return (
-    <motion.div className="w-full flex flex-col relative dark:bg-gray-900 dark:text-white pt-32">
-      <section className="section">
+    <motion.div className="w-full flex flex-col relative pt-24  mx-auto">
+      <section className="section py-32">
         <Hero />
       </section>
-      <section className="section">
+      <section className="section pt-10">
         <ProjectContent />
       </section>
     </motion.div>

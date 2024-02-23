@@ -48,7 +48,7 @@
   }
 
   .section {
-    @apply px-6 pt-16 pb-16;
+    @apply px-6 py-8 md:py-16;
   }
 
   .content-intern {

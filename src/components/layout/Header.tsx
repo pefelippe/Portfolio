@@ -7,6 +7,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
 import { Button } from "../ui/button";
+import { ModeToggle } from "../ui/mode-toggle";
 import { Separator } from "../ui/separator";
 
 export const Logo = () => {
@@ -19,7 +20,7 @@ export const Logo = () => {
 
 const Header = () => {
   return (
-    <motion.header className="fixed  flex  h-16  w-full  z-50 px-6 text-white bg-gray-900 ">
+    <motion.header className="fixed  flex  h-16  w-full  z-50 px-6 bg-white dark:bg-gray-900 dark:text-white ">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -46,6 +47,7 @@ const Header = () => {
           >
             Contact
           </Link>
+          <ModeToggle />
           {/* <motion.div className="flex h-full justify-center items-center w-fit space-x-4">
             <AnimatedBtn
               target="_blank"

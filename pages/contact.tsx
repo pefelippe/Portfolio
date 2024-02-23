@@ -1,14 +1,12 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import { LinkedinIcon } from "lucide-react";
 
-import AnimatedBtn from "../src/components/animated/AnimatedBtn";
 import MessageForm from "../src/components/MessageForm";
 
 function ContactContent() {
   return (
-    <motion.div className="h-full flex  items-center text-start justify-center min-h-screen bg-gray-900 text-white  ">
+    <motion.div className="h-full flex  items-center text-start justify-center min-h-screen dark:bg-gray-900 dark:text-white  ">
       <motion.div
         id="contact-content"
         initial={{ opacity: 0, y: 50 }}

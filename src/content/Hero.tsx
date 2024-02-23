@@ -15,7 +15,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
-        className="flex flex-col gap-4 justify-start h-full my-auto items-center  max-sm:max-w-md uppercase text-white font-extrabold"
+        className="flex flex-col gap-4 justify-start h-full my-auto items-center  max-sm:max-w-md uppercase text-[#333] dark:text-white font-extrabold"
       >
         <span className=" text-2xl lg:text-4xl  flex gap-3 ">
           <motion.img
@@ -28,7 +28,7 @@ export default function Hero() {
           A Software Engineer
         </p>
 
-        <span className="text-2xl text-gray-300 tracking-[2px]">
+        <span className="text-2xl  dark:text-gray-300 tracking-[2px]">
           I build things for the web.
         </span>
       </motion.div>

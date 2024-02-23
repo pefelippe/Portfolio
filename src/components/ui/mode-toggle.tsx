@@ -10,7 +10,7 @@ export function ModeToggle() {
   if (theme === "light") {
     return (
       <Button
-        className="px-2 rounded-full text-[#101010]"
+        className="px-2 rounded-full text-[#101010] flex"
         variant={"outline"}
         onClick={() => setTheme("dark")}
       >
@@ -22,7 +22,7 @@ export function ModeToggle() {
 
   return (
     <Button
-      className="px-2 rounded-full text-white"
+      className="px-2 rounded-full text-white flex"
       variant={"outline"}
       onClick={() => setTheme("light")}
     >

@@ -7,7 +7,7 @@ import ContactContent from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className="w-full flex flex-col  relative bg-gray-900 text-white pt-16">
+    <motion.div className="w-full flex flex-col  relative dark:bg-gray-900 dark:text-white pt-16">
       <section className="section  ">
         <Hero />
       </section>

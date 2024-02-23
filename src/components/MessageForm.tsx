@@ -65,7 +65,7 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-3 w-full  text-[#101010] max-w-3xl ">
+    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-3 w-full  text-[#101010]  ">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="gap-3 w-full flex flex-col   "

@@ -13,7 +13,7 @@ function Projects() {
       className="content-intern items-start justify-center w-full"
     >
       {/* <p className="text-2xl font-medium">Selected work</p> */}
-      <div className="flex flex-col lg:grid md:grid-cols-2  gap-6 w-full items-start h-full min-h-fit justify-center ">
+      <div className="flex flex-col lg:grid grid-cols-2  gap-6 w-full items-start h-full min-h-fit ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

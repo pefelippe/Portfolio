@@ -10,14 +10,17 @@ function AboutContent() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75 }}
-      className="h-full grid grid-cols-2 gap-20 items-center text-start justify-center  max-w-7xl mx-auto min-h-screen"
+      className="h-full flex max-lg:flex-col gap-6 lg:gap-20 lg:items-center text-start justify-start  "
     >
-      <motion.img src="./assets/avatar-pdr.png" className="w-full rounded" />
-      <div className="flex flex-col gap-12">
-        <h1 className="text-6xl font-medium">
+      <motion.img
+        src="./assets/avatar-pdr.png"
+        className="w-full rounded-full max-w-[120px] lg:max-w-md"
+      />
+      <div className="flex flex-col gap-5 lg:gap-8 max-w-3xl">
+        <h1 className="text-4xl lg:text-6xl font-medium">
           Hello there, I’m Pedro Felippe!
         </h1>
-        <span className="text-lg font-normal text-gray-700 dark:text-gray-300 ">
+        <span className="text-base lg:text-lg font-normal text-gray-700 dark:text-gray-300 ">
           I am based in Brazil, working as a Frontend Developer at{" "}
           <a
             href="https://www.atlantico.com.br/"
@@ -29,10 +32,10 @@ function AboutContent() {
           </a>
           .
           <br />
-          <br /> I accumulated practical experience with microfrontends,
-          performance monitoring, automated testing, server-side rendering
-          (SSR), search engine optimization (SEO) and integration with cloud
-          services such as Azure and AWS (Lambda, DynamoDB, S3).
+          <br /> Practical experience with microfrontends, performance
+          monitoring, automated testing, server-side rendering (SSR), search
+          engine optimization (SEO) and integration with cloud services such as
+          Azure and AWS (Lambda, DynamoDB, S3).
           <br />
           <br /> If you would like to contact me, email me at{" "}
           <a
@@ -50,7 +53,8 @@ function AboutContent() {
             className="font-medium underline decoration-blue text-blue"
           >
             linkedin
-          </a>.
+          </a>
+          .
         </span>
       </div>
     </motion.div>

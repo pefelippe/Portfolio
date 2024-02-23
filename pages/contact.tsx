@@ -5,7 +5,10 @@ import MessageForm from "../src/components/MessageForm";
 
 function ContactContent() {
   return (
-    <motion.div className="h-full flex  items-center text-start justify-center  dark:bg-gray-900 dark:text-white  min-h-screen">
+    <motion.div
+      className="h-full grid grid-cols-2 gap-20 items-center text-start justify-center w-full min-h-screen
+      max-w-7xl mx-auto"
+    >
       <motion.div
         id="contact-content"
         initial={{ opacity: 0, y: 50 }}
@@ -21,8 +24,9 @@ function ContactContent() {
             Have something in mind? I'm all ears.
           </p>
         </div>
-        <MessageForm />
       </motion.div>
+
+      <MessageForm />
     </motion.div>
   );
 }

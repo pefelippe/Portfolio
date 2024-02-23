@@ -4,33 +4,57 @@ import { motion } from "framer-motion";
 
 import MessageForm from "../src/components/MessageForm";
 
-function ContactContent() {
+function AboutContent() {
   return (
-    <motion.div className="h-full grid grid-cols-2 gap-20 items-center text-start justify-center  dark:bg-gray-900 dark:text-white pt-32 max-w-7xl mx-auto">
-      <motion.img src="./assets/avatar-pdr.png" className="w-full" />
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.75 }}
+      className="h-full grid grid-cols-2 gap-20 items-center text-start justify-center  max-w-7xl mx-auto min-h-screen"
+    >
+      <motion.img src="./assets/avatar-pdr.png" className="w-full rounded" />
       <div className="flex flex-col gap-12">
         <h1 className="text-6xl font-medium">
           Hello there, I’m Pedro Felippe!
         </h1>
-        <span className="text-lg font-normal">
-          Currently I am based in Seattle working as a Product Designer at
-          Microsoft, previously at Airbnb. I graduated from the University of
-          Washington with a Bachelors in Interaction Design in 2020.
+        <span className="text-lg font-normal text-gray-700 dark:text-gray-300 ">
+          I am based in Brazil, working as a Frontend Developer at{" "}
+          <a
+            href="https://www.atlantico.com.br/"
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium underline decoration-blue text-blue"
+          >
+            Atlântico
+          </a>
+          .
           <br />
-          <br /> My focus is predominantly product design, but I also dabble in
-          visual design, illustration, and I love making icons and pixel art!
-          New technology, such as blockchain, big data, and augmented reality
-          excites me!
+          <br /> I accumulated practical experience with microfrontends,
+          performance monitoring, automated testing, server-side rendering
+          (SSR), search engine optimization (SEO) and integration with cloud
+          services such as Azure and AWS (Lambda, DynamoDB, S3).
           <br />
-          <br /> I hope to apply design thinking to harness the power of
-          innovations like these to help create a better future for everyone.{" "}
-          <br />
-          <br /> If you would like to reach me, or maybe even meet for some
-          coffee (or boba!), email me at clairedycat.kantner@gmail.com
+          <br /> If you would like to contact me, email me at{" "}
+          <a
+            href="mailto:pedfelippe@gmail.com"
+            rel="noreferrer"
+            className="font-medium underline decoration-blue text-blue"
+          >
+            pedfelippe@gmail.com
+          </a>{" "}
+          or connect via{" "}
+          <a
+            href="https://www.linkedin.com/in/pedro-felippe"
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium underline decoration-blue text-blue"
+          >
+            linkedin
+          </a>.
         </span>
       </div>
     </motion.div>
   );
 }
 
-export default ContactContent;
+export default AboutContent;

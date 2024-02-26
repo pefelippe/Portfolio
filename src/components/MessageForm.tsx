@@ -75,8 +75,8 @@ export default function MessageForm({}) {
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"
             placeholder="Enter your name"
-            className=" border border-[#101010] rounded p-4 py-7 w-full focus:outline-none
-             focus:ring focus:ring-blue-500 bg-gray-300/10"
+            className=" border  rounded p-4 py-7 w-full focus:outline-none
+             focus:ring focus:ring-blue-500 bg-gray-300/30"
           />
 
           <Input
@@ -84,8 +84,8 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className=" border border-[#101010] rounded p-4 py-7 w-full 
-            focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/10"
+            className=" border rounded p-4 py-7 w-full 
+            focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/30"
           />
         </div>
 
@@ -93,8 +93,8 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className="border p-4 border-[#101010] rounded w-full focus:outline-none 
-          focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[400px] bg-gray-300/10"
+          className="border p-4  rounded w-full focus:outline-none 
+          focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[400px] bg-gray-300/30"
         />
 
         <Button

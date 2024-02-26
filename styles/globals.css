@@ -44,11 +44,11 @@
   }
 
   .section-subtitle {
-    @apply font-extrabold text-5xl leading-tight;
+    @apply font-extrabold text-4xl lg:text-5xl leading-tight;
   }
 
   .section {
-    @apply px-6 lg:px-20 py-8 md:py-16;
+    @apply px-6 lg:px-20;
   }
 
   .content-intern {

@@ -10,15 +10,11 @@ function AboutContent() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75 }}
-      className="h-full flex max-lg:flex-col gap-6 lg:gap-20 lg:items-center text-start justify-start  "
+      className="h-full flex max-lg:flex-col-reverse gap-6 lg:gap-20 lg:items-center text-start justify-start  "
     >
-      <motion.img
-        src="./assets/avatar-pdr.png"
-        className="w-full rounded-full max-w-[120px] lg:max-w-md"
-      />
       <div className="flex flex-col gap-5 lg:gap-8 max-w-3xl">
-        <h1 className="text-4xl lg:text-6xl font-medium">
-          Hello there, I’m Pedro Felippe!
+        <h1 className="section-subtitle">
+          Hello there, I’m <span className="text-blue">Pedro Felippe</span>!
         </h1>
         <span className="text-base lg:text-lg font-normal text-gray-700 dark:text-gray-300 ">
           I am based in Brazil, working as a Frontend Developer at{" "}
@@ -57,6 +53,11 @@ function AboutContent() {
           .
         </span>
       </div>
+
+      <motion.img
+        src="./assets/avatar-pdr.png"
+        className="w-full rounded-full max-w-[120px] lg:max-w-xs lg:mx-auto"
+      />
     </motion.div>
   );
 }

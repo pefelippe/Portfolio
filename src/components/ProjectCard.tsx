@@ -34,11 +34,11 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative flex min-h-fit h-full items-start text-start  hover:opacity-80 justify-center flex-col w-full border rounded"
+      className="relative flex min-h-fit h-full items-start text-start hover:opacity-80 justify-center flex-col w-full border rounded"
     >
       <Link
         href={link}
-        className="relative shadow  overflow-hidden w-full h-full min-h-[280px] lg:min-h-[400px]  rounded"
+        className="relative shadow  overflow-hidden w-full h-full min-h-[280px] lg:min-h-[400px] xl:min-h-[500px]  rounded"
         target="_blank"
       >
         <motion.img

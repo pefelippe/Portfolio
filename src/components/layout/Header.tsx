@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
-
-import Link from "next/link";
-import { ModeToggle } from "../ui/mode-toggle";
-import { useRouter } from "next/router";
-import AnimatedBtn from "../animated/AnimatedBtn";
-import { LinkedinIcon } from "lucide-react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { motion } from "framer-motion";
+import { LinkedinIcon } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
+import AnimatedBtn from "../animated/AnimatedBtn";
+import { ModeToggle } from "../ui/mode-toggle";
 
 export const Logo = () => {
   return (
@@ -22,12 +22,12 @@ const Header = () => {
     path === router.pathname ? "text-blue font-medium" : "";
 
   return (
-    <motion.header className="fixed flex h-24 w-full bg-white  z-50 px-6 lg:px-20 dark:bg-[#121212] dark:text-white">
+    <motion.header className="fixed flex h-24 w-full bg-white  z-50  dark:bg-[#121212] dark:text-white">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className="flex w-full mx-auto items-center justify-between  max-sm:max-w-lg "
+        className="flex w-full mx-auto items-center justify-between  max-sm:max-w-lg  px-6 lg:px-20 max-w-screen-2xl"
       >
         <Link href="/">
           <Logo />

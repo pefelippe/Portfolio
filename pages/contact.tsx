@@ -6,8 +6,8 @@ import MessageForm from "../src/components/MessageForm";
 function ContactContent() {
   return (
     <motion.div
-      className="h-full grid grid-cols-2 gap-20 items-center text-start justify-center w-full min-h-screen
-      max-w-7xl mx-auto"
+      className="h-full grid grid-cols-2 gap-20 items-center text-start justify-center w-full 
+      max-w-screen-2xl mx-auto"
     >
       <motion.div
         id="contact-content"

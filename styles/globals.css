@@ -44,7 +44,7 @@
   }
 
   .section-subtitle {
-    @apply font-extrabold text-4xl lg:text-5xl leading-tight;
+    @apply font-extrabold text-3xl lg:text-4xl leading-tight;
   }
 
   .section {

@@ -9,8 +9,8 @@ import { ModeToggle } from "../ui/mode-toggle";
 
 export const Logo = () => {
   return (
-    <button className=" flex text-xl  transition-all w-fit  tracking-tighter font-semibold hover:text-blue ">
-      Pedro Felippe
+    <button className=" flex text-xl  transition-all w-fit  tracking-tighter font-extrabold hover:text-blue ">
+      PP
     </button>
   );
 };
@@ -22,39 +22,41 @@ const Header = () => {
     path === router.pathname ? "text-blue font-medium" : "";
 
   return (
-    <motion.header className="fixed flex h-24 w-full bg-white  z-50  dark:bg-[#121212] dark:text-white">
+    <motion.header className=" flex h-[10vh] w-full z-40">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className="flex w-full mx-auto items-center justify-between  max-sm:max-w-lg  px-6 lg:px-20 max-w-screen-2xl"
+        className=" flex w-full mx-auto items-center justify-between  max-sm:max-w-lg  px-6 lg:px-10 "
       >
         <Link href="/">
           <Logo />
         </Link>
 
         <motion.div
-          className=" flex top-0 bottom-0 h-full justify-center tracking-wide  text-[#333] dark:text-[#aaa]	 font-light
-            items-center w-fit space-x-6 text-base"
+          className=" flex top-0 bottom-0 h-full justify-center   text-[#333] dark:text-[#aaa]	 font-light
+            items-center w-fit space-x-6 text-sm lowercase tracking-widest"
         >
-          {/* <Link
-            href="/"
-            className={`tracking-wide hover:text-blue ${isActive("/")}`}
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+            className={`tracking-wide  hover:text-blue}`}
           >
-            <p>Work</p>
+            <p>Linkedin</p>
           </Link>
           <Link
-            href="/about"
-            className={`tracking-wide hover:text-blue ${isActive("/about")}`}
+            target="_blank"
+            href="https://github.com/pefelippe"
+            className={`tracking-wide  hover:text-blue`}
           >
-            <p>About</p>
+            <p>Github</p>
           </Link>
           <Link
-            href="/contact"
-            className={`tracking-wide hover:text-blue ${isActive("/contact")}`}
+            href="mailto:pedfelippe@gmail.com"
+            className={`tracking-wide hover:text-blue`}
           >
-            <p>Contact</p>
-          </Link> */}
+            <p>Email</p>
+          </Link>
           <motion.div
             className="flex  h-full justify-center  rounded-t-xl 
             items-center w-fit  space-x-4 lg:justify-between "

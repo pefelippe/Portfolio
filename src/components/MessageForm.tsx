@@ -65,7 +65,7 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-3 w-full  text-[#101010]  ">
+    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-3 w-full  text-white  ">
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="gap-3 w-full flex flex-col   "
@@ -75,8 +75,7 @@ export default function MessageForm({}) {
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"
             placeholder="Enter your name"
-            className=" border  rounded p-4 py-7 w-full focus:outline-none
-             focus:ring focus:ring-blue-500 bg-gray-300/30"
+            className=" p-3 w-full  border-none bg-gray-300/10"
           />
 
           <Input
@@ -84,8 +83,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className=" border rounded p-4 py-7 w-full 
-            focus:outline-none focus:ring focus:ring-blue-500 bg-gray-300/30"
+            className=" p-3 w-full  border-none bg-gray-300/10"
           />
         </div>
 
@@ -93,16 +91,15 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className="border p-4  rounded w-full focus:outline-none 
-          focus:ring focus:ring-blue-500 min-h-[250px] md:min-h-[400px] bg-gray-300/30"
+          className=" p-3  w-full  border-none bg-gray-300/10 min-h-[180px]"
         />
 
         <Button
           type="submit"
-          className=" text-center  py-7  text-white  px-16 rounded   w-full 
-          transition-all font-medium text-xl focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
+          className=" text-center  py-7  text-white  px-20 rounded-full   w-fit 
+          transition-all font-medium text-base focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
-          {isLoading ? "Sending..." : "Start partnership!"}
+          {isLoading ? "Sending..." : "Send"}
         </Button>
       </form>
     </div>

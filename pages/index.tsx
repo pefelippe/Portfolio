@@ -1,22 +1,21 @@
 import { motion } from "framer-motion";
 
-import Hero from "../src/content/Hero";
 import ProjectContent from "../src/content/ProjectContent";
-import AboutContent from "./about";
-import ContactContent from "./contact";
+import About from "./about";
+import Contact from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className="w-full flex flex-col relative mt-24 py-8 md:py-16 max-w-screen-2xl mx-auto  gap-8 md:gap-16">
+    <motion.div className="flex flex-col h-full w-full relative pb-20 gap-10">
       <section className="section ">
-        <AboutContent />
+        <About />
       </section>
-      <section className="section">
+      <section className="section ">
         <ProjectContent />
       </section>
-      <section className="section">
-        <ContactContent />
-      </section>
+      {/* <section className="section py-32">
+        <Contact />
+      </section> */}
     </motion.div>
   );
 }

@@ -31,9 +31,9 @@ function ProjectCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: initialX }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
+      // initial={{ opacity: 0, x: initialX }}
+      // whileInView={{ opacity: 1, x: 0 }}
+      // transition={{ duration: 0.5 }}
       className="relative flex-row min-h-fit h-full items-start text-start  justify-center  w-full "
     >
       <Link
@@ -44,7 +44,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[350px] rounded-2xl border-2"
+          className="overflow-hidden object-cover w-full h-full min-h-[250px] xl:min-h-[550px] rounded-2xl border-2 dark:border-[#222]"
         />
       </Link>
 

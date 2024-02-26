@@ -14,12 +14,13 @@ function About() {
         <span className="text-gray-500 dark:text-gray-300 text-base md:text-lg tracking-widest ">
           Ready to be shot into space. 🚀
         </span>
-        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1] tracking-tighter dark:text-yellow-300">
-          Frontend Developer, UI/UX Designer & Coffe Lover.
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1] tracking-tighter dark:text-yellow-300">
+          Frontend Developer, UI/UX Designer & Coffee Lover.
         </h2>
-        <h2 className="text-base md:text-xl max-w-2xl mx-auto text-gray-600 dark:text-gray-300 ">
-          I am <b className="text-blue font-medium">Pedro Felippe</b>. I create
-          simple and high-quality web products.
+        <h2 className="text-base md:text-xl max-w-md lg:max-w-2xl mx-auto text-gray-600 dark:text-gray-300 ">
+          I'm <b className="text-blue font-medium">Pedro Felippe</b>, dedicated
+          to crafting top-tier web solutions with a focus on simplicity and
+          excellence.
         </h2>
       </div>
     </motion.div>

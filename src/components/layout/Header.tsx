@@ -27,7 +27,7 @@ const Header = () => {
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className=" flex w-full mx-auto items-center justify-between  max-sm:max-w-lg  px-6 lg:px-10 "
+        className=" flex w-full mx-auto items-center justify-between  max-sm:max-w-lg  section "
       >
         <Link href="/">
           <Logo />
@@ -40,7 +40,7 @@ const Header = () => {
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"
-            className={`tracking-wide  hover:text-blue}`}
+            className={`tracking-wide  hover:text-blue`}
           >
             <p>Linkedin</p>
           </Link>
@@ -51,12 +51,12 @@ const Header = () => {
           >
             <p>Github</p>
           </Link>
-          <Link
+          {/* <Link
             href="mailto:pedfelippe@gmail.com"
             className={`tracking-wide hover:text-blue`}
           >
             <p>Email</p>
-          </Link>
+          </Link> */}
           <motion.div
             className="flex  h-full justify-center  rounded-t-xl 
             items-center w-fit  space-x-4 lg:justify-between "

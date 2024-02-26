@@ -12,10 +12,10 @@ function Projects() {
       id="projects-container"
       className="content-intern items-start justify-center w-full min-h-fit flex "
     >
-      <h3 className="section-subtitle">
+      {/* <h3 className="section-subtitle">
         Selected <span className="text-blue">Work</span>
-      </h3>
-      <div className="flex max-xl:flex-col gap-4 w-full items-start h-full min-h-fit ">
+      </h3> */}
+      <div className="flex flex-col xl:grid md:grid-cols-2 gap-4 w-full items-start h-full min-h-fit ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

@@ -1,6 +1,7 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function About() {
   return (
@@ -8,19 +9,35 @@ function About() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75 }}
-      className="min-h-[30vh] md:min-h-[50vh] flex flex-col items-center text-center justify-center h-full  max-w-4xl mx-auto tracking-wide"
+      className="flex max-md:flex-col items-center text-center justify-start h-full  tracking-wide gap-16"
     >
-      <div className="flex font-light flex-col gap-5 md:gap-8 text-base tracking-wide  text-center">
-        <span className="text-gray-500 dark:text-gray-300 text-base md:text-lg tracking-widest ">
-          Ready to be shot into space. 🚀
-        </span>
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1] tracking-tighter dark:text-yellow-300">
+      <div className="flex font-normal flex-col text-base tracking-wide text-start ">
+        <h2
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-extrabold  leading-none
+          tracking-tighter text-blue dark:text-yellow-300"
+        >
           Frontend Developer, UI/UX Designer & Coffee Lover.
         </h2>
-        <h2 className="text-base md:text-xl max-w-md lg:max-w-2xl mx-auto text-gray-600 dark:text-gray-300 ">
-          I'm <b className="text-blue font-medium">Pedro Felippe</b>, dedicated
-          to crafting top-tier web solutions with a focus on simplicity and
-          excellence.
+
+        <h2
+          className="text-lg md:text-xl  font-light
+          text-[#000] dark:text-gray-200 pt-7 pb-4"
+        >
+          Developer dedicated to craft top-tier web solutions with a focus on
+          simplicity and excellence.
+        </h2>
+
+        <h2
+          className="text-lg md:text-xl  font-light
+          text-[#000] dark:text-gray-200 "
+        >
+          Reach me at{" "}
+          <Link
+            href={"mailto:pedfelippe@gmail.com"}
+            className="font-bold hover:text-blue transition-all"
+          >
+            pedfelippe@gmail.com
+          </Link>
         </h2>
       </div>
     </motion.div>

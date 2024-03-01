@@ -65,17 +65,17 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-3 w-full  text-white  ">
+    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-6 w-full  text-white  ">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-3 w-full flex flex-col   "
+        className="gap-4 w-full flex flex-col   "
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Input
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"
             placeholder="Enter your name"
-            className=" p-3 w-full  border-none bg-gray-300/10"
+            className=" p-3 w-full  border-none bg-gray-300/30 py-7 rounded"
           />
 
           <Input
@@ -83,7 +83,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className=" p-3 w-full  border-none bg-gray-300/10"
+            className=" p-3 w-full  border-none bg-gray-300/30 py-7 rounded"
           />
         </div>
 
@@ -91,15 +91,15 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className=" p-3  w-full  border-none bg-gray-300/10 min-h-[180px]"
+          className=" p-3  w-full  border-none bg-gray-300/30 min-h-[200px] lg:min-h-[350px] rounded"
         />
 
         <Button
           type="submit"
-          className=" text-center  py-7  text-white  px-20 rounded-full   w-fit 
-          transition-all font-medium text-base focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
+          className=" text-center  p-7 px-14 dark:text-white    w-fit rounded  dark:bg-gray-900
+          transition-all font-medium text-base uppercase tracking-[1px] focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
-          {isLoading ? "Sending..." : "Send"}
+          {isLoading ? "Sending..." : "Send message"}
         </Button>
       </form>
     </div>

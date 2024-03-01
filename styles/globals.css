@@ -44,11 +44,11 @@
   }
 
   .section-subtitle {
-    @apply font-extrabold text-3xl lg:text-4xl leading-tight;
+    @apply font-extrabold text-2xl lg:text-3xl leading-tight tracking-tighter;
   }
 
   .section {
-    @apply px-6 lg:px-10;
+    @apply max-lg:px-6 max-w-5xl mx-auto flex;
   }
 
   .content-intern {

@@ -6,16 +6,16 @@ import Contact from "./contact";
 
 export default function Home() {
   return (
-    <motion.div className="flex flex-col h-full w-full relative pb-20 gap-10">
-      <section className="section ">
+    <motion.div className="flex flex-col h-full w-full relative  lg:gap-12 ">
+      <section className="section max-w-5xl mx-auto py-12">
         <About />
       </section>
-      <section className="section ">
+      <section className="section">
         <ProjectContent />
       </section>
-      {/* <section className="section py-32">
+      <section className="section py-12 w-full">
         <Contact />
-      </section> */}
+      </section>
     </motion.div>
   );
 }

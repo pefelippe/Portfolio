@@ -1,6 +1,6 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { LinkIcon } from "lucide-react";
+import { GithubIcon, LinkIcon } from "lucide-react";
 import Link from "next/link";
 
 import { Skills } from "./Skills";
@@ -31,33 +31,44 @@ function ProjectCard({
 
   return (
     <motion.div
-      // initial={{ opacity: 0, x: initialX }}
-      // whileInView={{ opacity: 1, x: 0 }}
-      // transition={{ duration: 0.5 }}
-      className="relative flex-row min-h-fit h-full items-start text-start  justify-center  w-full "
+      initial={{ opacity: 0, x: initialX }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+      className=" flex max-lg:flex-col gap-2 lg:gap-8 min-h-fit h-full items-start text-start  justify-center  w-full "
     >
       <Link
         href={link}
-        className="relative shadow  overflow-hidden w-full h-full  rounded-2xl hover:opacity-80 "
+        className="relative shadow  overflow-hidden w-full h-full  rounded hover:opacity-80 "
         target="_blank"
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[250px] xl:min-h-[550px] rounded-2xl border-2 dark:border-[#222]"
+          className="overflow-hidden object-cover w-full h-full min-h-[250px] lg:min-h-[380px] border-2 dark:border-[#222]"
         />
       </Link>
 
       <div
-        className="flex flex-col gap-2 justify-center items-start text-start w-full text-md py-2
+        className="flex flex-col gap-2 justify-center items-start text-start text-md py-2 lg:max-w-xs  w-full h-full lg:my-auto
        hover:opacity-100 transition-opacity"
       >
-        {/* <p className="text-xl md:text-2xl font-medium tracking-tight ">
-          {title}
-        </p> */}
-        {/* <p className="text-sm dark:text-gray-300 max-w-md font-normal">
+        <p className="text-xl md:text-3xl font-bold tracking-tight ">{title}</p>
+
+        <p className="text-base  dark:text-gray-300 max-w-md font-normal">
           {description}
-        </p> */}
+        </p>
+
+        <div className="flex flex-col w-full gap-4 pt-3">
+          <Link href={repo} target="_blank">
+            <Button
+              variant={"outline"}
+              className="w-full  text-lg py-6 flex gap-2"
+            >
+              <GitHubLogoIcon className="h-6 w-6" /> Github
+            </Button>
+          </Link>
+          <Button className="w-full text-lg py-6 text-white">Deploy</Button>
+        </div>
       </div>
     </motion.div>
   );

@@ -9,8 +9,8 @@ import { ModeToggle } from "../ui/mode-toggle";
 
 export const Logo = () => {
   return (
-    <button className=" flex text-xl  transition-all w-fit  tracking-tighter font-extrabold hover:text-blue ">
-      PP
+    <button className=" flex text-xl transition-all w-fit  tracking-tighter font-medium hover:text-blue ">
+      Pedro Felippe
     </button>
   );
 };
@@ -22,7 +22,7 @@ const Header = () => {
     path === router.pathname ? "text-blue font-medium" : "";
 
   return (
-    <motion.header className=" flex h-[10vh] w-full z-40">
+    <motion.header className=" flex h-[10vh] w-full z-40 max-w-5xl mx-auto">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Header = () => {
         </Link>
 
         <motion.div
-          className=" flex top-0 bottom-0 h-full justify-center   text-[#333] dark:text-[#aaa]	 font-light
+          className=" flex top-0 bottom-0 h-full justify-center   text-[#030303] dark:text-[#aaa]	 font-normal
             items-center w-fit space-x-6 text-sm lowercase tracking-widest"
         >
           <Link
@@ -51,12 +51,7 @@ const Header = () => {
           >
             <p>Github</p>
           </Link>
-          {/* <Link
-            href="mailto:pedfelippe@gmail.com"
-            className={`tracking-wide hover:text-blue`}
-          >
-            <p>Email</p>
-          </Link> */}
+
           <motion.div
             className="flex  h-full justify-center  rounded-t-xl 
             items-center w-fit  space-x-4 lg:justify-between "

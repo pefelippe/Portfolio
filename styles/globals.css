@@ -48,7 +48,7 @@
   }
 
   .section {
-    @apply max-lg:px-6 flex;
+    @apply max-lg:px-6 flex px-20;
   }
 
   .content-intern {

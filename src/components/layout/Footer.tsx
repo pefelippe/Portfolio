@@ -8,8 +8,8 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <motion.footer
-      className=" mx-auto h-[10vh]
-   text-base font-semibold justify-center items-center flex   text-center"
+      className=" mx-auto py-10 pt-20
+   text-base font-medium justify-center items-center flex   text-center"
     >
       <p>© {year} - Pedro Felippe </p>
     </motion.footer>

@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 
-import MessageForm from "../components/MessageForm";
+import MessageForm from "../src/components/MessageForm";
 
 function ContactContent() {
   return (
@@ -10,7 +10,7 @@ function ContactContent() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className=" h-full flex flex-col gap-4 items-center text-start justify-center w-full 
+      className=" h-full flex flex-col gap-4 items-center text-start justify-center w-full max-w-3xl mx-auto py-20
        text-white  rounded-3xl "
     >
       <motion.div className="flex w-full items-start text-start flex-col gap-4 h-full  ">

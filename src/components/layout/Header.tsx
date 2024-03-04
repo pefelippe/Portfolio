@@ -9,7 +9,7 @@ import { ModeToggle } from "../ui/mode-toggle";
 
 export const Logo = () => {
   return (
-    <button className=" flex text-xl transition-all w-fit  tracking-tighter font-medium hover:text-blue ">
+    <button className=" flex text-2xl transition-all w-fit  tracking-tighter font-semibold hover:text-blue ">
       Pedro Felippe
     </button>
   );
@@ -22,11 +22,11 @@ const Header = () => {
     path === router.pathname ? "text-blue font-medium" : "";
 
   return (
-    <motion.header className=" flex h-[10vh] w-full z-40 max-w-7xl mx-auto">
+    <motion.header className=" flex pt-16 w-full z-40 mx-auto">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
         className=" flex w-full mx-auto items-center justify-between  max-sm:max-w-lg  section "
       >
         <Link href="/">
@@ -37,6 +37,15 @@ const Header = () => {
           className=" flex top-0 bottom-0 h-full justify-center   text-[#030303] dark:text-[#aaa]	 font-normal
             items-center w-fit space-x-6 text-sm lowercase tracking-widest"
         >
+          <Link href="/" className={`tracking-wide  hover:text-blue`}>
+            <p>Work</p>
+          </Link>
+          <Link href="/about" className={`tracking-wide  hover:text-blue`}>
+            <p>About</p>
+          </Link>
+          <Link href="/contact" className={`tracking-wide  hover:text-blue`}>
+            <p>Contact</p>
+          </Link>
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"

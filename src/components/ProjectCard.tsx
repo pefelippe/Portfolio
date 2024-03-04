@@ -31,14 +31,13 @@ function ProjectCard({
   return (
     <motion.div
       initial={{ opacity: 0, x: initialX }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
       className=" flex max-lg:flex-col gap-2 lg:gap-8 min-h-fit h-full items-start text-start  justify-center  w-full "
     >
       <Link
-        href={link}
+        href={`/projects/${id}`}
         className="relative shadow  overflow-hidden w-full h-full  rounded hover:opacity-80 "
-        target="_blank"
       >
         <motion.img
           src={imgUrl}
@@ -47,7 +46,7 @@ function ProjectCard({
         />
       </Link>
 
-      <div
+      {/* <div
         className="flex flex-col gap-2 justify-center items-start text-start text-md py-2 lg:max-w-sm  w-full h-full lg:my-auto
        hover:opacity-100 transition-opacity"
       >
@@ -76,7 +75,7 @@ function ProjectCard({
           </Link>
           <Button className="w-full text-lg py-6 text-white">Deploy</Button>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

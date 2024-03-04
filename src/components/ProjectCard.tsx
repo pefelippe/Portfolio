@@ -1,10 +1,5 @@
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { LinkIcon } from "lucide-react";
 import Link from "next/link";
-
-import { Skills } from "./Skills";
-import { Button } from "./ui/button";
 
 type IProjectCard = {
   description: string;
@@ -33,7 +28,7 @@ function ProjectCard({
     <motion.div
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, delay: id == 1 || id == 2 ? 1 : 0 }}
       className="relative flex min-h-fit h-full items-start text-start  hover:opacity-80
        justify-center flex-col w-full "
     >

@@ -2,28 +2,43 @@
 import { motion } from "framer-motion";
 
 import MessageForm from "../src/components/MessageForm";
+import Link from "next/link";
 
 function ContactContent() {
   return (
-    <motion.div
-      id="contact-content"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className=" h-full flex flex-col gap-4 items-center text-start justify-center w-full max-w-3xl mx-auto py-20
-       text-white  rounded-3xl "
+    <div
+      className="section flex flex-col gap-6 items-center text-center justify-center min-h-[90vh] w-full
+     max-w-5xl  mx-auto py-20 dark:text-white"
     >
-      <motion.div className="flex w-full items-start text-start flex-col gap-4 h-full  ">
-        <h3 className="section-subtitle dark:text-white text-[#040404]">
-          Get in <span className="text-blue dark:text-yellow-300">Contact</span>
-        </h3>
-        {/* <p className="flex font-extralight text-lg  text-gray-300">
-          Have something in mind? <br /> I'm all ears.
-        </p> */}
+      <motion.div>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.75 }}
+          className="text-5xl sm:text-7xl font-bold"
+        >
+          Contact
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.75, delay: 0.5 }}
+          className="text-xl mt-3 max-w-2xl"
+        >
+          Hey there! I'm here to chat. Got something on your mind? Feel free to
+          shoot me an email at{" "}
+          <Link
+            href="mailto:pedfelippe@gmail.com"
+            className="underline hover:text-blue"
+          >
+            pedfelippe@gmail.com
+          </Link>
+          . or direct contact me above.
+        </motion.p>
       </motion.div>
 
       <MessageForm />
-    </motion.div>
+    </div>
   );
 }
 

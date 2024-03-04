@@ -46,7 +46,7 @@ function ProjectDetails() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 0.5 }}
-        className="text-2xl font-normal "
+        className="text-2xl font-normal max-w-xl "
       >
         {projectInfo.description}
       </motion.p>

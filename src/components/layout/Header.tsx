@@ -1,6 +1,6 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { LinkedinIcon } from "lucide-react";
+import { GithubIcon, Linkedin, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -32,10 +32,9 @@ const Header = () => {
         <Link href="/">
           <Logo />
         </Link>
-
         <motion.div
           className="flex top-0 bottom-0 h-full justify-center text-gray-400 dark:text-[#aaa] font-medium
-         max-md:hidden items-center w-fit space-x-5 text-base tracking-widest"
+         max-md:hidden items-center w-fit space-x-6 text-base tracking-widest"
         >
           <Link
             href="/"
@@ -61,25 +60,26 @@ const Header = () => {
           >
             <p>Contact</p>
           </Link>
+        </motion.div>
+
+        <motion.div
+          className="flex top-0 bottom-0 h-full justify-center font-medium
+         max-md:hidden items-center w-fit space-x-5 text-base tracking-widest"
+        >
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"
-            className={`tracking-wide hover:text-blue ${
-              router.pathname === "/linkedin" ? "font-bold text-blue" : ""
-            }`}
+            className={`tracking-wide hover:text-blue`}
           >
-            <p>Linkedin</p>
+            <Linkedin />
           </Link>
           <Link
             target="_blank"
             href="https://github.com/pefelippe"
-            className={`tracking-wide hover:text-blue ${
-              router.pathname === "/github" ? "font-bold text-blue" : ""
-            }`}
+            className={`tracking-wide hover:text-blue`}
           >
-            <p>Github</p>
+            <GithubIcon />
           </Link>
-
           <motion.div
             className="flex  h-full justify-center  rounded-t-xl 
             items-center w-fit  space-x-4 lg:justify-between "

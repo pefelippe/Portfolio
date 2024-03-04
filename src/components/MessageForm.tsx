@@ -9,6 +9,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "./ui/useToast";
+import { motion } from "framer-motion";
 
 type Inputs = {
   firstName: string;
@@ -65,7 +66,12 @@ export default function MessageForm({}) {
   };
 
   return (
-    <div className="flex flex-col items-start text-center  h-fit  rounded-md gap-6 w-full  text-white  ">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.75, delay: 0.75 }}
+      className="flex flex-col items-start text-center  h-fit  rounded-md gap-6 w-full  dark:text-white   "
+    >
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="gap-4 w-full flex flex-col   "
@@ -91,7 +97,7 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className=" p-3  w-full  border-none bg-gray-300/30 min-h-[200px] lg:min-h-[450px] rounded"
+          className=" p-3  w-full  border-none bg-gray-300/30 min-h-[250px] md:min-h-[400px] rounded"
         />
 
         <Button
@@ -102,6 +108,6 @@ export default function MessageForm({}) {
           {isLoading ? "Sending..." : "Send message"}
         </Button>
       </form>
-    </div>
+    </motion.div>
   );
 }

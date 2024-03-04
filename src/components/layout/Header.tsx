@@ -32,41 +32,41 @@ const Header = () => {
         <Link href="/">
           <Logo />
         </Link>
-        <motion.div
-          className="flex top-0 bottom-0 h-full justify-center text-gray-400 dark:text-[#aaa] font-medium
-         max-md:hidden items-center w-fit space-x-6 text-base tracking-widest"
-        >
-          <Link
-            href="/"
-            className={`tracking-wide hover:text-blue ${
-              router.pathname === "/" ? "font-bold text-blue" : ""
-            }`}
-          >
-            <p>Work</p>
-          </Link>
-          <Link
-            href="/about"
-            className={`tracking-wide hover:text-blue ${
-              router.pathname === "/about" ? "font-bold text-blue" : ""
-            }`}
-          >
-            <p>About</p>
-          </Link>
-          <Link
-            href="/contact"
-            className={`tracking-wide hover:text-blue ${
-              router.pathname === "/contact" ? "font-bold text-blue" : ""
-            }`}
-          >
-            <p>Contact</p>
-          </Link>
-        </motion.div>
 
         <motion.div
           className="flex top-0 bottom-0 h-full justify-center font-medium
-         max-md:hidden items-center w-fit space-x-5 text-base tracking-widest"
+         max-xs:hidden items-center w-fit space-x-5 text-base tracking-widest"
         >
-          <Link
+          <motion.div
+            className="flex top-0 bottom-0 h-full justify-center text-gray-400 dark:text-[#aaa] font-medium
+         max-md:hidden items-center w-fit space-x-6 text-base tracking-widest"
+          >
+            <Link
+              href="/"
+              className={`tracking-wide hover:text-blue ${
+                router.pathname === "/" ? "font-bold text-blue" : ""
+              }`}
+            >
+              <p>Work</p>
+            </Link>
+            <Link
+              href="/about"
+              className={`tracking-wide hover:text-blue ${
+                router.pathname === "/about" ? "font-bold text-blue" : ""
+              }`}
+            >
+              <p>About</p>
+            </Link>
+            <Link
+              href="/contact"
+              className={`tracking-wide hover:text-blue ${
+                router.pathname === "/contact" ? "font-bold text-blue" : ""
+              }`}
+            >
+              <p>Contact</p>
+            </Link>
+          </motion.div>
+          {/* <Link
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"
             className={`tracking-wide hover:text-blue`}
@@ -79,7 +79,7 @@ const Header = () => {
             className={`tracking-wide hover:text-blue`}
           >
             <GithubIcon />
-          </Link>
+          </Link> */}
           <motion.div
             className="flex  h-full justify-center  rounded-t-xl 
             items-center w-fit  space-x-4 lg:justify-between "

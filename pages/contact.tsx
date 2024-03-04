@@ -8,7 +8,7 @@ function ContactContent() {
   return (
     <div
       className="section flex flex-col gap-6 items-center text-center justify-center min-h-[90vh] w-full
-     max-w-5xl  mx-auto py-20 dark:text-white"
+     max-w-4xl  mx-auto py-20 dark:text-white"
     >
       <motion.div>
         <motion.p

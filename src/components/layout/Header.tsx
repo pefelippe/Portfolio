@@ -22,7 +22,7 @@ const Header = () => {
     path === router.pathname ? "text-blue font-medium" : "";
 
   return (
-    <motion.header className=" flex h-[10vh] w-full z-40 max-w-5xl mx-auto">
+    <motion.header className=" flex h-[10vh] w-full z-40 max-w-7xl mx-auto">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}

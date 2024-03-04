@@ -15,7 +15,7 @@ function Projects() {
       <h3 className="section-subtitle">
         Selected <span className="text-blue dark:text-yellow-300">Works</span>
       </h3>
-      <div className="flex flex-col gap-12 w-full items-start h-full min-h-fit ">
+      <div className="flex flex-col gap-8 w-full items-start h-full min-h-fit ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

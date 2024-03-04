@@ -1,9 +1,9 @@
+import { Skills } from "./Skills";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { GithubIcon, LinkIcon } from "lucide-react";
 import Link from "next/link";
 
-import { Skills } from "./Skills";
 import { Button } from "./ui/button";
 
 type IProjectCard = {
@@ -44,12 +44,12 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[250px] lg:min-h-[380px] border-2 dark:border-[#222]"
+          className="overflow-hidden object-cover w-full h-full min-h-[250px] lg:min-h-[550px] border-2 dark:border-[#222]"
         />
       </Link>
 
       <div
-        className="flex flex-col gap-2 justify-center items-start text-start text-md py-2 lg:max-w-xs  w-full h-full lg:my-auto
+        className="flex flex-col gap-2 justify-center items-start text-start text-md py-2 lg:max-w-sm  w-full h-full lg:my-auto
        hover:opacity-100 transition-opacity"
       >
         <p className="text-xl md:text-3xl font-bold tracking-tight ">{title}</p>
@@ -57,6 +57,14 @@ function ProjectCard({
         <p className="text-base  dark:text-gray-300 max-w-md font-normal">
           {description}
         </p>
+
+        <div className="flex gap-2 w-full text-sm font-medium">
+          {stack.map((tech) => (
+            <p key={tech} className="bg-blue w-fit px-2 py-1 text-white">
+              {tech}
+            </p>
+          ))}{" "}
+        </div>
 
         <div className="flex flex-col w-full gap-4 pt-3">
           <Link href={repo} target="_blank">

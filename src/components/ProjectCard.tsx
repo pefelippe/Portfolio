@@ -1,4 +1,3 @@
-import { Skills } from "./Skills";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { GithubIcon, LinkIcon } from "lucide-react";

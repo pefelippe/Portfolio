@@ -42,7 +42,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[250px] lg:min-h-[550px] border-2 dark:border-[#222]"
+          className="overflow-hidden object-cover w-full h-full min-h-[350px] md:min-h-[400px] lg:min-h-[550px] border-2 dark:border-[#222]"
         />
       </Link>
 

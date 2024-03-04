@@ -22,7 +22,7 @@ const Header = () => {
     path === router.pathname ? "text-blue font-medium" : "";
 
   return (
-    <motion.header className=" flex pt-16 w-full z-40 mx-auto">
+    <motion.header className=" flex pt-12 w-full z-40 mx-auto">
       <motion.nav
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -34,29 +34,48 @@ const Header = () => {
         </Link>
 
         <motion.div
-          className=" flex top-0 bottom-0 h-full justify-center   text-[#030303] dark:text-[#aaa]	 font-normal
-            items-center w-fit space-x-6 text-sm lowercase tracking-widest"
+          className="flex top-0 bottom-0 h-full justify-center text-gray-400 dark:text-[#aaa] font-medium
+         max-md:hidden items-center w-fit space-x-5 text-base tracking-widest"
         >
-          <Link href="/" className={`tracking-wide  hover:text-blue`}>
+          <Link
+            href="/"
+            className={`tracking-wide hover:text-blue ${
+              router.pathname === "/" ? "font-bold text-blue" : ""
+            }`}
+          >
             <p>Work</p>
           </Link>
-          <Link href="/about" className={`tracking-wide  hover:text-blue`}>
+          <Link
+            href="/about"
+            className={`tracking-wide hover:text-blue ${
+              router.pathname === "/about" ? "font-bold text-blue" : ""
+            }`}
+          >
             <p>About</p>
           </Link>
-          <Link href="/contact" className={`tracking-wide  hover:text-blue`}>
+          <Link
+            href="/contact"
+            className={`tracking-wide hover:text-blue ${
+              router.pathname === "/contact" ? "font-bold text-blue" : ""
+            }`}
+          >
             <p>Contact</p>
           </Link>
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/pedro-felippe/"
-            className={`tracking-wide  hover:text-blue`}
+            className={`tracking-wide hover:text-blue ${
+              router.pathname === "/linkedin" ? "font-bold text-blue" : ""
+            }`}
           >
             <p>Linkedin</p>
           </Link>
           <Link
             target="_blank"
             href="https://github.com/pefelippe"
-            className={`tracking-wide  hover:text-blue`}
+            className={`tracking-wide hover:text-blue ${
+              router.pathname === "/github" ? "font-bold text-blue" : ""
+            }`}
           >
             <p>Github</p>
           </Link>

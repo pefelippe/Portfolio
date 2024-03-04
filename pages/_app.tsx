@@ -17,9 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
      dark:bg-[#040404] dark:text-[#f2f2f2]"
     >
       <Head>
-        <title>
-          Pedro Felippe: Software Engineer, UI/UX Designer & Coffee Lover
-        </title>
+        <title>Pedro Felippe</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

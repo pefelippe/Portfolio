@@ -1,62 +1,58 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
+
 function about() {
   return (
-    <div className="section w-full min-h-screen max-w-5xl mx-auto flex flex-col justify-start items-center  py-20 gap-10">
+    <div className="section w-full min-h-screen max-w-5xl mx-auto flex flex-col justify-start items-center  py-20 ">
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
-        className="text-7xl font-bold "
+        className="firstTitle"
       >
         About
       </motion.p>
 
-      <motion.img
+      <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 0.25 }}
-        className="max-h-[600px] object-cover w-full rounded"
-        src="/assets/pedrof.jpg"
-      />
+        transition={{ duration: 0.75, delay: 0.5 }}
+        className="firstDesc"
+      >
+        Hey there! Discover more about me.
+      </motion.p>
 
-      <div className="w-full flex flex-col gap-6 max-w-xl mx-auto">
-        <motion.p
+      <div className="flex max-md:flex-col  items-center gap-10  pt-20">
+        <motion.img
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.75, delay: 0.25 }}
+          className="rounded-md w-full max-md:max-h-[300px] md:w-[350px] object-cover"
+          src="/assets/pedrof.jpg"
+        />
+
+        {/* <motion.h1
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.5 }}
           className=" font-bold text-4xl"
         >
           Pedro Felippe
-        </motion.p>
+        </motion.h1> */}
 
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.75 }}
-          className="max-w-xl leading-relaxed"
+          className="max-w-md text-lg mx-auto text-left leading-relaxed pt-2 dark:text-gray-100"
         >
-          I’m a senior studying Interaction Design at the University of
-          Washington, Seattle. Most recently, I was a Product Design Intern at
-          Facebook where I was focused on designing for real-time video
-          conversations on Messenger. <br />
-          <br />I have been to has left me inspired and curious to learn more
-          about design. The thrill of working on an idea and seeing it turn into
-          something real is one of the most incredible experiences I have ever
-          had. The feeling of seeing something I envisioned appear on screen
-          still seems magical, just as it did during the years I drew houses and
-          flowers with MS-Paint. And the will to keep experiencing that magic is
-          why I continue to practice design every day. <br />
-          <br />I believe that the projects I have worked on have been the
-          highlight of my design journey. I have been influenced to constantly
-          look for problems around me and solutions to them; for challenges like
-          these are what drive me to work relentlessly through sleepless nights
-          for hours on end. And I love every moment of them.
-          <br />
-          <br /> The dedication, eye for detail, and perseverance that designing
-          has taught me, are accelerators in enabling me to achieve my goal of
-          giving back to society and leaving my design footprint behind in this
-          world.
+          I am Pedro. Web Developer with 3+ years of experience in real
+          projects, focused on Frontend development with a focus on React, Node,
+          Next and Typescript. <br />
+          <br /> I accumulated practical experience with microfrontends,
+          performance monitoring, automated testing, server-side rendering
+          (SSR), search engine optimization (SEO) and integration with cloud
+          services such as Azure and AWS (Lambda, DynamoDB, S3). <br />
           <br />
         </motion.p>
       </div>

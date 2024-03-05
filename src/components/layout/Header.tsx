@@ -9,7 +9,7 @@ import { ModeToggle } from "../ui/mode-toggle";
 
 export const Logo = () => {
   return (
-    <button className=" flex text-2xl transition-all w-fit  tracking-tighter font-semibold hover:text-blue ">
+    <button className=" flex text-2xl transition-all w-fit  tracking-tighter font-semibold hover:text-gray-600 dark:hover:text-gray-300 ">
       Pedro Felippe
     </button>
   );
@@ -43,24 +43,30 @@ const Header = () => {
           >
             <Link
               href="/"
-              className={`tracking-wide hover:text-blue ${
-                router.pathname === "/" ? "font-bold text-blue" : ""
+              className={`tracking-wide hover:text-blue dark:hover:text-yellow-400  ${
+                router.pathname === "/"
+                  ? "font-bold text-blue dark:text-yellow-400"
+                  : ""
               }`}
             >
               <p>Work</p>
             </Link>
             <Link
               href="/about"
-              className={`tracking-wide hover:text-blue ${
-                router.pathname === "/about" ? "font-bold text-blue" : ""
+              className={`tracking-wide hover:text-blue  dark:hover:text-yellow-400  ${
+                router.pathname === "/about"
+                  ? "font-bold text-blue dark:text-yellow-400"
+                  : ""
               }`}
             >
               <p>About</p>
             </Link>
             <Link
               href="/contact"
-              className={`tracking-wide hover:text-blue ${
-                router.pathname === "/contact" ? "font-bold text-blue" : ""
+              className={`tracking-wide hover:text-blue dark:hover:text-yellow-400 ${
+                router.pathname === "/contact"
+                  ? "font-bold text-blue dark:text-yellow-400"
+                  : ""
               }`}
             >
               <p>Contact</p>

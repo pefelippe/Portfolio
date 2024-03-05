@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { Button } from "../../src/components/ui/button";
 import Link from "next/link";
+import { GithubIcon, Rocket } from "lucide-react";
 
 type IProjectCard = {
   description: string;
@@ -38,7 +39,7 @@ function ProjectDetails() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
-        className="text-7xl font-bold "
+        className="firstTitle "
       >
         {projectInfo.title}
       </motion.p>
@@ -46,7 +47,7 @@ function ProjectDetails() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 0.5 }}
-        className="text-2xl font-normal max-w-xl "
+        className="firstDesc"
       >
         {projectInfo.description}
       </motion.p>
@@ -57,11 +58,16 @@ function ProjectDetails() {
         className="flex gap-4 font-medium text-2xl pb-10"
       >
         <Link href={projectInfo.repo} target="_blank">
-          <Button className="text-lg py-6 px-10 rounded">Github</Button>
+          <Button
+            variant={"outline"}
+            className="text-lg py-6 px-10 rounded flex items-center gap-1"
+          >
+            <GithubIcon /> Github
+          </Button>
         </Link>
         <Link href={projectInfo.link} target="_blank">
-          <Button variant={"secondary"} className="text-lg py-6 px-10 rounded">
-            Deploy
+          <Button className="text-lg py-6 px-10 rounded items-center gap-1 flex text-white">
+            <Rocket /> Deploy
           </Button>
         </Link>
       </motion.div>
@@ -72,7 +78,7 @@ function ProjectDetails() {
         src={projectInfo.imgUrl}
         alt={projectInfo.title}
         width={2000}
-        className="border-2 rounded-xl h-[65vh]"
+        className="border-2 rounded-xl h-[65vh] object-cover"
       />
     </motion.div>
   );

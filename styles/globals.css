@@ -51,6 +51,14 @@
     @apply max-lg:px-6 flex px-20;
   }
 
+  .firstTitle {
+    @apply text-5xl sm:text-7xl text-blue font-bold dark:text-yellow-400;
+  }
+
+  .firstDesc {
+    @apply text-xl mt-3 max-w-2xl  dark:text-gray-100;
+  }
+
   .content-intern {
     @apply flex flex-col w-full items-start text-start max-sm:max-w-lg justify-start h-full  mx-auto gap-8;
   }

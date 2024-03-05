@@ -1,6 +1,7 @@
 // import { Label } from "./ui/label"
 /* eslint-disable react/no-unescaped-entities */
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { SubmitHandler } from "react-hook-form/dist/types";
@@ -9,7 +10,6 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "./ui/useToast";
-import { motion } from "framer-motion";
 
 type Inputs = {
   firstName: string;
@@ -70,7 +70,7 @@ export default function MessageForm({}) {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.75 }}
-      className="flex flex-col items-start text-center  h-fit  rounded-md gap-6 w-full  dark:text-white   "
+      className="flex flex-col items-start text-center  h-fit  rounded-md gap-6 w-full  dark:text-white  "
     >
       <form
         onSubmit={handleSubmit(onSubmit)}

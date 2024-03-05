@@ -9,7 +9,7 @@ import { ModeToggle } from "../ui/mode-toggle";
 
 export const Logo = () => {
   return (
-    <button className=" flex text-2xl transition-all w-fit  tracking-tighter font-semibold hover:text-gray-600 dark:hover:text-gray-300 ">
+    <button className=" flex text-2xl transition-all w-fit uppercase tracking-tighter font-semibold hover:text-gray-600 dark:hover:text-gray-300 ">
       Pedro Felippe
     </button>
   );

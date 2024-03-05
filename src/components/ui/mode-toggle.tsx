@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+
 import { Button } from "./button";
 
 export function ModeToggle() {
@@ -20,9 +21,7 @@ export function ModeToggle() {
 
   return (
     <button
-      className={` rounded flex ${
-        theme === "light" ? "text-[#101010]" : "text-white"
-      }`}
+      className={` flex p-4 rounded-full bg-gray-800 text-white`}
       onClick={handleTheme}
     >
       {theme === "light" ? (

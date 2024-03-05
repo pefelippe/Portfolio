@@ -48,11 +48,11 @@
   }
 
   .section {
-    @apply max-lg:px-6 flex px-20;
+    @apply px-6 flex  max-w-7xl mx-auto;
   }
 
   .firstTitle {
-    @apply text-5xl sm:text-7xl text-blue font-bold dark:text-yellow-400;
+    @apply text-4xl lg:text-7xl xl:text-[80px]   text-blue font-bold dark:text-yellow-400 uppercase tracking-normal;
   }
 
   .firstDesc {

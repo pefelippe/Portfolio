@@ -9,8 +9,8 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <motion.footer
-      className=" mx-auto py-10 gap-4 flex-col 
-   text-base font-medium justify-center items-center flex   text-center"
+      className=" mx-auto py-10 gap-4 flex-col border-t border-gray-800
+   text-base font-normal justify-center items-center flex   text-center"
     >
       <p>© {year} - Pedro Felippe </p>
       {/* <div className="flex gap-5">

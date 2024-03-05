@@ -97,7 +97,7 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className=" p-3  w-full  border-none bg-gray-300/30 min-h-[250px] md:min-h-[400px] rounded"
+          className=" p-3  w-full  border-none bg-gray-300/30 min-h-[250px] md:min-h-[350px] rounded"
         />
 
         <Button

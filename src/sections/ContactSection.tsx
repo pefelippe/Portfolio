@@ -7,7 +7,8 @@ import MessageForm from "../components/MessageForm";
 function ContactSection() {
   return (
     <div
-      className="section flex flex-col gap-8  text-start justify-center  w-full py-20
+      id="contact-container"
+      className="section flex flex-col gap-8  text-start justify-center  w-full pb-20
     dark:text-white"
     >
       <motion.p

@@ -33,28 +33,34 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative flex min-h-fit h-full items-center text-start  hover:opacity-80 rounded-3xl overflow-hidden 
-       justify-center max-md:flex-col-reverse w-full bg-[#212531]"
+      className=" flex   rounded-md overflow-hidden w-full min-w-fit h-full
+       justify-center flex-col  bg-[#212531]"
     >
-      <div className="w-full md:w-fit flex flex-col gap-4 items-start text-start text-md p-6 md:p-16 h-full">
-        <div className="flex flex-col gap-3">
-          <p className="text-3xl md:text-5xl font-semibold tracking-tight text-white">
+      <Link href={`projects/${id}`} className=" w-full h-full rounded">
+        <motion.img
+          src={imgUrl}
+          alt="card image"
+          className="overflow-hidden object-cover w-full h-full min-h-[250px] md:min-h-[380px]   "
+        />
+      </Link>
+
+      <div className="relative w-full  flex flex-col gap-4 items-start text-start text-md p-6 md:p-8 h-full">
+        <div className="flex flex-col gap-4 w-full">
+          <p className="text-3xl md:text-4xl font-semibold tracking-tight text-white">
             {title}
           </p>
-          <p className="text-base md:text-lg  text-[#95979D] max-w-md font-normal">
+          <p className="text-base md:text-xl  text-[#95979D]  font-normal">
             {description}
           </p>
-          <div className="flex gap-3 text-gray-100">
+          <div className="flex gap-4 text-gray-100">
             {stack.map((tech) => (
-              <span
-                key={tech}
-                className="text-base md:text-lg max-w-md font-medium"
-              >
+              <span key={tech} className="text-base md:text-lg font-medium">
                 #{tech}
               </span>
             ))}
           </div>
-          <motion.div className="flex  flex-col gap-4 font-medium text-2xl w-full pt-3">
+
+          <motion.div className="flex  flex-col gap-4 font-medium text-2xl  relative w-auto">
             <Link href={repo} target="_blank" className="w-full">
               <Button
                 variant={"outline"}
@@ -71,13 +77,6 @@ function ProjectCard({
           </motion.div>
         </div>
       </div>
-      <Link href={`projects/${id}`} className=" w-full h-full rounded">
-        <motion.img
-          src={imgUrl}
-          alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[280px] lg:min-h-[500px]  "
-        />
-      </Link>
     </motion.div>
   );
 }

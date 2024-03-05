@@ -81,7 +81,7 @@ export default function MessageForm({}) {
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"
             placeholder="Enter your name"
-            className=" p-3 w-full  border-none bg-gray-300/30 py-7 rounded"
+            className=" p-3 w-full  border-none bg-[#212531] py-7 rounded"
           />
 
           <Input
@@ -89,7 +89,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className=" p-3 w-full  border-none bg-gray-300/30 py-7 rounded"
+            className=" p-3 w-full  border-none bg-[#212531] py-7 rounded"
           />
         </div>
 
@@ -97,12 +97,12 @@ export default function MessageForm({}) {
           {...register("message", { required: true, maxLength: 500 })}
           id="message"
           placeholder="Message"
-          className=" p-3  w-full  border-none bg-gray-300/30 min-h-[250px] md:min-h-[350px] rounded"
+          className=" p-3  w-full  border-none bg-[#212531] min-h-[250px] md:min-h-[350px] rounded"
         />
 
         <Button
           type="submit"
-          className=" text-center  p-7 px-14 dark:text-white    w-fit rounded  dark:bg-gray-900
+          className=" text-center  p-7 px-14 dark:text-white    w-fit rounded  
           transition-all font-medium text-base uppercase tracking-[1px] focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Send message"}

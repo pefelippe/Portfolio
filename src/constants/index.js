@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     link: "https://zappi-sigma.vercel.app/",
     repo: "https://github.com/pefelippe/Zappi",
-    title: "Zappi",
+    title: "MeuRango",
     imgUrl: "/projects/Zappi.png",
     stack: ["react", "tailwind", "shadcn", "vite", "typescript"],
     description:
@@ -13,19 +13,21 @@ export const projects = [
     id: 2,
     link: "https://manda-pix-five.vercel.app/",
     repo: "https://github.com/pefelippe/MandaPix",
-    title: "MandaPix",
+    title: "MeuPixCard",
     imgUrl: "/projects/MandaPix.png",
     stack: ["react", "tailwind", "shadcn", "next", "typescript"],
-    description: "Create your own personal card to share your Pix QR Code.",
+    description:
+      "Create a customizable web card to share your pix qr code easily.",
   },
   {
     id: 3,
     link: "https://search-github-users-tau.vercel.app",
     repo: "https://github.com/pefelippe/GitSearcher",
-    title: "GitSearcher",
+    title: "DevFinder",
     imgUrl: "/projects/GitSearcher.png",
     stack: ["react", "tailwind", "shadcn", "vite", "typescript"],
-    description: "Search and explore GitHub profiles.",
+    description:
+      "Web page that allows you to query Github users based on the user name. Popularity ranking.",
   },
 ];
 

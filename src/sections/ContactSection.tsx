@@ -8,7 +8,7 @@ function ContactSection() {
   return (
     <div
       id="contact-container"
-      className="section flex flex-col gap-8  text-start justify-center  w-full pb-20
+      className=" flex flex-col gap-8  text-start justify-center  w-full 
     dark:text-white"
     >
       <motion.p

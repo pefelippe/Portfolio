@@ -15,7 +15,7 @@ function ContactSection() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
-        className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-yellow-300"
+        className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500"
       >
         Get in contact
       </motion.p>

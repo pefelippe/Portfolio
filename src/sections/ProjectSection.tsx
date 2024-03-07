@@ -12,10 +12,10 @@ function Projects() {
       id="projects-container"
       className="content-intern items-start justify-center w-full min-h-fit flex  "
     >
-      <h1 className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-yellow-300">
+      <h1 className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500">
         Projects
       </h1>
-      <div className="flex flex-col lg:grid md:grid-cols-2  gap-10  w-full items-start  max-w-7xl mx-auto">
+      <div className="flex flex-col  gap-10  w-full items-start  max-w-7xl mx-auto">
         {projects?.map((proj) => {
           return (
             <ProjectCard

@@ -8,7 +8,7 @@ function ContactSection() {
   return (
     <div
       id="contact-container"
-      className=" flex flex-col gap-8  text-start justify-center  w-full 
+      className=" flex flex-col  text-start justify-center  w-full 
     dark:text-white"
     >
       <motion.p
@@ -20,22 +20,22 @@ function ContactSection() {
         Get in contact
       </motion.p>
 
-      {/* <motion.p
+      <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 0.5 }}
-        className="max-w-4xl text-2xl text-left leading-relaxed dark:text-gray-300 mb-6"
+        className="max-w-4xl text-lg font-normal text-left leading-relaxed dark:text-gray-300 my-6"
       >
         Hey there! I'm here to chat. Got something on your mind? <br />
         Feel free to shoot me an email at{" "}
         <Link
           href="mailto:pedfelippe@gmail.com"
-          className="underline dark:text-white font-medium hover:text-blue dark:hover:text-yellow-300"
+          className="underline text-white font-medium hover:text-blue transition-all"
         >
           pedfelippe@gmail.com
         </Link>{" "}
         or contact me above.
-      </motion.p> */}
+      </motion.p>
       <MessageForm />
     </div>
   );

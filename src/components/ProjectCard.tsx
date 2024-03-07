@@ -33,7 +33,7 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className=" flex   rounded-md overflow-hidden w-full min-w-fit h-full
+      className=" flex   rounded-md overflow-hidden w-full min-w-fit h-full  
        justify-center max-lg:flex-col  bg-[#212531]"
     >
       <Link href={`projects/${id}`} className=" w-full h-full rounded">
@@ -44,7 +44,7 @@ function ProjectCard({
         />
       </Link>
 
-      <div className="relative w-full lg:max-w-lg  flex flex-col gap-4 items-start text-start text-md p-6 md:p-8 h-full my-auto">
+      <div className="relative w-full lg:max-w-lg  flex flex-col gap-4 items-start text-start text-md p-4 md:p-8 h-full my-auto">
         <div className="flex flex-col gap-4 w-full">
           <p className="text-2xl md:text-3xl font-semibold tracking-tight text-white">
             {title}

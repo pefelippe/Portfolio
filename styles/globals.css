@@ -52,7 +52,7 @@
   }
 
   .firstTitle {
-    @apply text-4xl lg:text-5xl    text-blue font-bold dark:text-yellow-400 uppercase;
+    @apply text-4xl lg:text-5xl    text-blue font-bold uppercase;
   }
 
   .firstDesc {

@@ -6,30 +6,30 @@ import { Link as ScrollLink } from "react-scroll";
 function AboutSection() {
   return (
     <div className=" w-full flex flex-col justify-start gap-10 lg:gap-20 ">
-      <div className="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-14 ">
+      <div className="flex flex-col lg:flex-row gap-6 lg:gap-14  lg:items-center">
         <motion.img
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.75, delay: 0.75 }}
+          transition={{ duration: 0.75, delay: 1 }}
           src="/assets/avatar-pdr.png"
-          className="rounded-md w-full h-full max-h-[250px] lg:max-h-[450px] object-cover"
+          className="rounded-full lg:rounded-md w-fit lg:w-full h-full max-h-[120px] lg:max-h-[450px] object-cover"
         />
 
-        <motion.div className="text-sm lg:text-[24px] text-left leading-normal dark:text-gray-100 items-start gap-6 flex flex-col">
+        <motion.div className="text-sm lg:text-[24px] text-left leading-normal dark:text-gray-100 items-start gap-6 flex flex-col max-w-3xl ">
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75 }}
-            className="firstTitle"
+            className="firstTitle text-blue"
           >
             Software Engineer, Web Developer & Coffee Lover.
           </motion.p>
 
           <motion.p
-            className="text-gray-200 text-base lg:text-xl"
+            className="text-gray-200 text-base lg:text-xl "
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.75, delay: 0.75 }}
           >
             My passion lies in creating software that solves real-world problems
             and positively impacts people’s lives. <br /> <br /> I accumulated
@@ -55,11 +55,11 @@ function AboutSection() {
           </motion.p>
         </motion.div>
       </div>
-      <motion.div className="w-full flex flex-col md:grid md:grid-cols-3 gap-8 ">
+      {/* <motion.div className="w-full flex flex-col md:grid md:grid-cols-3 gap-8 ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 1 }}
+          transition={{ duration: 0.75, delay: 1.25 }}
           className=" flex flex-col gap-2 w-full lg:max-w-sm  p-5 rounded bg-yellow-100/5"
         >
           <h3 className="text-xl lg:text-2xl font-medium text-yellow-200">
@@ -74,7 +74,7 @@ function AboutSection() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 1.25 }}
+          transition={{ duration: 0.75, delay: 1.55 }}
           className="w-full flex flex-col gap-2 lg:max-w-sm   p-5 rounded bg-yellow-100/5"
         >
           <h3 className="text-xl lg:text-2xl font-medium text-yellow-200">
@@ -89,7 +89,7 @@ function AboutSection() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 1.5 }}
+          transition={{ duration: 0.75, delay: 1.75 }}
           className="w-full flex flex-col gap-2 lg:max-w-sm   p-5 rounded bg-yellow-100/5"
         >
           <h3 className="text-xl lg:text-2xl font-medium text-yellow-200">
@@ -100,7 +100,7 @@ function AboutSection() {
             Github Actions, Docker
           </p>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

@@ -30,7 +30,7 @@ const Header = () => {
 
         <motion.div
           className="flex top-0 bottom-0 h-full justify-center font-medium
-         max-xs:hidden items-center w-fit space-x-8 text-base tracking-widest"
+         max-xs:hidden items-center w-fit space-x-6 text-base tracking-widest"
         >
           <Link
             target="_blank"
@@ -49,7 +49,7 @@ const Header = () => {
           </Link>
 
           {/* <motion.div
-            className="flex  h-full justify-center  rounded-t-xl 
+            className="flex  h-full justify-center  rounded 
             items-center w-fit  space-x-4 lg:justify-between "
           >
             <AnimatedBtn>

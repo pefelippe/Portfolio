@@ -5,8 +5,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import AnimatedBtn from "../animated/AnimatedBtn";
-import { ModeToggle } from "../ui/mode-toggle";
 import { Button } from "../ui/button";
+import { ModeToggle } from "../ui/mode-toggle";
 
 export const Logo = () => {
   return (
@@ -23,6 +23,9 @@ const Header = () => {
     dark:bg-[#0b0b0e] dark:text-[#f2f2f2] px-6 max-w-4xl justify-between "
     >
       <motion.div
+        initial={{ opacity: 0, y: -25 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.75, delay: 1 }}
         className="flex  justify-start font-medium
          items-center w-fits space-x-8 text-base tracking-widest  "
       >
@@ -50,9 +53,9 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 25 }}
+        initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 1 }}
+        transition={{ duration: 0.75, delay: 1.25 }}
         className="flex justify-center
         items-center w-fit space-x-6 text-base tracking-widest"
       >

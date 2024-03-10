@@ -1,8 +1,8 @@
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { GithubIcon, Rocket } from "lucide-react";
+import { LinkIcon } from "lucide-react";
 import Link from "next/link";
 
-import { technologies } from "../constants";
 import { Button } from "./ui/button";
 
 type IProjectCard = {
@@ -30,56 +30,34 @@ function ProjectCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.75 }}
-      className=" flex flex-col rounded-md overflow-hidden w-full min-w-fit h-full  p-1
-       justify-center max-lg:flex-col  bg-[#17191c]"
+      initial={{ opacity: 0, x: initialX }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+      className="relative flex  h-full items-start text-start  hover:opacity-80
+       justify-center flex-col w-full rounded min-h-[350px] lg:min-h-[400px] xl:min-h-[450px]"
     >
-      <Link href={`projects/${id}`} className=" w-full h-full rounded">
+      <Link
+        href={"/projects/" + id}
+        className="relative shadow  overflow-hidden w-full h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[450px]"
+      >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[250px] xl:min-h-[420px]  rounded  "
+          className="overflow-hidden object-cover w-full  h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[450px]"
         />
-      </Link>
 
-      {/* <div className=" absolute top-0 w-full lg:max-w-xl  flex flex-col gap-10 items-start text-start text-md p-4 md:py-8 h-full my-auto">
-        <div className="flex flex-col gap-4 w-full">
-          <p className="text-2xl md:text-4xl font-bold tracking-tighter text-white">
+        <div
+          className="absolute inset-0 flex flex-col gap-1 justify-center items-center text-center w-full text-md p-6 py-3
+         bg-black bg-opacity-90 opacity-0 hover:opacity-100 transition-opacity"
+        >
+          <p className="text-xl md:text-3xl font-semibold tracking-tight text-white">
             {title}
           </p>
-          <p className="text-base md:text-xl  text-[#95979D]  font-normal">
+          <p className="text-sm md:text-xl font-normal text-white">
             {description}
           </p>
-          <div className="flex gap-4 text-gray-100">
-            {stack.map((tech) => (
-              <span key={tech} className="text-base md:text-lg font-medium">
-                #{tech}
-              </span>
-            ))}
-          </div>
-
-          <motion.div className="flex w-fit  gap-3 font-medium text-lg  relative pt-4">
-            <Link href={repo} target="_blank" className="w-full">
-              <Button
-                variant={"outline"}
-                className="p-6 w-fit text-base flex items-center gap-2  text-white rounded-sm bg-[#212123] border-none"
-              >
-                <GithubIcon className="h-5 w-5" /> Source
-              </Button>
-            </Link>
-            <Link href={link} target="_blank" className="w-full">
-              <Button
-                variant={"outline"}
-                className="p-6 w-fit text-base flex items-center gap-2  text-white rounded-sm bg-[#212123] border-none"
-              >
-                <Rocket className="h-5 w-5" /> Live
-              </Button>
-            </Link>
-          </motion.div>
         </div>
-      </div> */}
+      </Link>
     </motion.div>
   );
 }

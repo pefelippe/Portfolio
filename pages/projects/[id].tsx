@@ -1,10 +1,11 @@
-import Image from "next/image";
-import { projects } from "../../src/constants";
-import { useRouter } from "next/router";
 import { motion } from "framer-motion";
-import { Button } from "../../src/components/ui/button";
-import Link from "next/link";
 import { GithubIcon, Rocket } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
+import { Button } from "../../src/components/ui/button";
+import { projects } from "../../src/constants";
 
 type IProjectCard = {
   description: string;
@@ -34,19 +35,28 @@ function ProjectDetails() {
     );
   }
   return (
-    <motion.div className="min-h-[60vh] flex flex-col  justify-center text-center  max-w-6xl mx-auto items-center mt-20 pt-10 gap-6">
+    <motion.div className="min-h-screen flex flex-col  justify-center text-center   mx-auto items-center mt-10 gap-6 max-w-4xl">
+      <motion.img
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.75 }}
+        src={projectInfo.imgUrl}
+        alt={projectInfo.title}
+        width={2000}
+        className="border-2 rounded-xl h-[50vh] object-cover"
+      />
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75 }}
-        className="firstTitle "
+        transition={{ duration: 0.75, delay: 1 }}
+        className="firstTitle pt-10 "
       >
         {projectInfo.title}
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 0.5 }}
+        transition={{ duration: 0.75, delay: 1.5 }}
         className="firstDesc"
       >
         {projectInfo.description}
@@ -54,7 +64,7 @@ function ProjectDetails() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 0.75 }}
+        transition={{ duration: 0.75, delay: 2 }}
         className="flex gap-4 font-medium text-2xl pb-10"
       >
         <Link href={projectInfo.repo} target="_blank">
@@ -71,15 +81,6 @@ function ProjectDetails() {
           </Button>
         </Link>
       </motion.div>
-      <motion.img
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 1 }}
-        src={projectInfo.imgUrl}
-        alt={projectInfo.title}
-        width={2000}
-        className="border-2 rounded-xl h-[65vh] object-cover"
-      />
     </motion.div>
   );
 }

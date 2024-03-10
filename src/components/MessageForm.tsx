@@ -70,7 +70,7 @@ export default function MessageForm({}) {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.75 }}
-      className="flex flex-col items-start text-center  h-fit  rounded-md gap-6 w-full  dark:text-white  "
+      className="flex flex-col items-start text-center  h-fit  rounded-md gap-6 w-full  dark:text-white "
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -81,7 +81,7 @@ export default function MessageForm({}) {
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"
             placeholder="Enter your name"
-            className=" p-3 w-full  border-none bg-[#212531] py-7 rounded"
+            className=" p-3 w-full  border-none bg-[#212531] py-6 rounded"
           />
 
           <Input
@@ -89,7 +89,7 @@ export default function MessageForm({}) {
             id="email"
             placeholder="Enter your email"
             type="email"
-            className=" p-3 w-full  border-none bg-[#212531] py-7 rounded"
+            className=" p-3 w-full  border-none bg-[#212531] py-6 rounded"
           />
         </div>
 
@@ -102,7 +102,7 @@ export default function MessageForm({}) {
 
         <Button
           type="submit"
-          className=" text-center  p-7 px-14 dark:text-white    w-fit rounded  
+          className=" text-center  p-7 px-14 dark:text-white    w-full rounded  
           transition-all font-medium text-base uppercase tracking-[1px] focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Send message"}

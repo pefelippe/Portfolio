@@ -8,15 +8,15 @@ function Projects() {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 2 }}
+      transition={{ duration: 1, delay: 1.5 }}
       id="projects-container"
       className="content-intern items-start justify-center w-full min-h-fit flex gap-10 "
     >
-      <h1 className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500">
+      {/* <h1 className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500">
         Projects
-      </h1>
+      </h1> */}
 
-      <div className="flex flex-col  gap-10 lg:gap-20 w-full items-start  max-w-7xl mx-auto ">
+      <div className="flex flex-col  gap-8  w-full items-start  mx-auto ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

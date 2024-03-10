@@ -13,8 +13,8 @@ import { Toaster } from "../src/components/ui/toaster";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
-      className="min-w-[400px] mx-auto h-fit overflow-hidden scroll-smooth bg-white text-[#101010] 
-     dark:bg-[#0E1016] dark:text-[#f2f2f2]"
+      className="min-w-[400px] mx-auto h-fit overflow-hidden scroll-smooth bg-white text-[#101010]
+     dark:bg-[#0b0b0e] dark:text-[#f2f2f2]"
     >
       <Head>
         <title>Pedro Felippe</title>

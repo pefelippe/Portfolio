@@ -8,14 +8,14 @@ function ContactSection() {
   return (
     <div
       id="contact-container"
-      className=" flex flex-col  text-start justify-center  w-full gap-10
+      className=" flex flex-col  text-start justify-center  w-full gap-6 min-h-screen items-center
     dark:text-white"
     >
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
-        className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500"
+        className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500 items-center"
       >
         Get in contact
       </motion.p>
@@ -24,7 +24,7 @@ function ContactSection() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 0.5 }}
-        className="max-w-4xl text-lg font-normal text-left leading-relaxed dark:text-gray-300 my-6"
+        className=" text-lg font-normal text-left leading-relaxed dark:text-gray-300 "
       >
         Hey there! I'm here to chat. Got something on your mind? <br />
         Feel free to shoot me an email at{" "}

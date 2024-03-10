@@ -30,23 +30,23 @@ function ProjectCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: initialX }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
-      className=" flex   rounded-md overflow-hidden w-full min-w-fit h-full  
-       justify-center max-lg:flex-col  bg-[#212531]"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.75 }}
+      className=" flex flex-col rounded-md overflow-hidden w-full min-w-fit h-full  p-1
+       justify-center max-lg:flex-col  bg-[#17191c]"
     >
       <Link href={`projects/${id}`} className=" w-full h-full rounded">
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-full min-h-[300px] md:min-h-[450px]   "
+          className="overflow-hidden object-cover w-full h-full min-h-[250px] xl:min-h-[420px]  rounded  "
         />
       </Link>
 
-      <div className="relative w-full lg:max-w-lg  flex flex-col gap-4 items-start text-start text-md p-4 md:p-8 h-full my-auto">
+      {/* <div className=" absolute top-0 w-full lg:max-w-xl  flex flex-col gap-10 items-start text-start text-md p-4 md:py-8 h-full my-auto">
         <div className="flex flex-col gap-4 w-full">
-          <p className="text-2xl md:text-3xl font-semibold tracking-tight text-white">
+          <p className="text-2xl md:text-4xl font-bold tracking-tighter text-white">
             {title}
           </p>
           <p className="text-base md:text-xl  text-[#95979D]  font-normal">
@@ -60,23 +60,26 @@ function ProjectCard({
             ))}
           </div>
 
-          <motion.div className="flex  flex-col gap-4 font-medium text-2xl  relative w-auto pt-4">
+          <motion.div className="flex w-fit  gap-3 font-medium text-lg  relative pt-4">
             <Link href={repo} target="_blank" className="w-full">
               <Button
                 variant={"outline"}
-                className="p-7 w-full text-xl flex items-center gap-2  text-white"
+                className="p-6 w-fit text-base flex items-center gap-2  text-white rounded-sm bg-[#212123] border-none"
               >
-                <GithubIcon className="h-7 w-7" /> Github
+                <GithubIcon className="h-5 w-5" /> Source
               </Button>
             </Link>
             <Link href={link} target="_blank" className="w-full">
-              <Button className="p-7 w-full text-xl flex items-center gap-2  text-white">
-                <Rocket className="h-7 w-7" /> Deploy
+              <Button
+                variant={"outline"}
+                className="p-6 w-fit text-base flex items-center gap-2  text-white rounded-sm bg-[#212123] border-none"
+              >
+                <Rocket className="h-5 w-5" /> Live
               </Button>
             </Link>
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 }

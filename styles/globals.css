@@ -48,11 +48,19 @@
   }
 
   .section {
-    @apply px-6 flex  max-w-7xl mx-auto;
+    @apply px-6 flex max-w-7xl mx-auto  w-full;
   }
 
   .firstTitle {
-    @apply text-4xl lg:text-5xl    text-blue font-bold uppercase;
+    @apply text-5xl lg:text-7xl xl:text-[80px]  tracking-wide   font-bold;
+  }
+
+  .secondTitle {
+    @apply text-4xl tracking-tighter font-bold text-[#827f8b];
+  }
+
+  .description {
+    @apply font-light text-2xl;
   }
 
   .firstDesc {

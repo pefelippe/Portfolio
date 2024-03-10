@@ -1,16 +1,13 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
 import { LinkedinIcon } from "lucide-react";
-import Link from "next/link";
-
-import AnimatedBtn from "../animated/AnimatedBtn";
 
 function Footer() {
   const year = new Date().getFullYear();
   return (
     <motion.footer
-      className=" mx-auto py-10 gap-4 flex-col border-t border-gray-800
-   text-base font-normal justify-center items-center flex   text-center"
+      className=" mx-auto py-10 gap-4 flex-col border-t border-gray-800 max-w-4xl px-6
+   text-base font-normal justify-center items-start flex   text-center"
     >
       <p>© {year} - Pedro Felippe </p>
       {/* <div className="flex gap-5">

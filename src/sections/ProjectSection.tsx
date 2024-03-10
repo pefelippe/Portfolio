@@ -6,9 +6,9 @@ import { projects } from "../constants";
 function Projects() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 1.5 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1, delay: 1.25 }}
       id="projects-container"
       className="content-intern items-start justify-center w-full min-h-fit flex gap-10 "
     >

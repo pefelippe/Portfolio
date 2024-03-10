@@ -35,7 +35,7 @@ function ProjectDetails() {
     );
   }
   return (
-    <motion.div className="min-h-screen flex flex-col  justify-center text-center   mx-auto items-center mt-10 gap-6 max-w-4xl">
+    <motion.div className="min-h-screen flex flex-col  justify-center text-center   mx-auto items-center mt-10 gap-6 max-w-4xl px-6">
       <motion.img
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ function ProjectDetails() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 1 }}
-        className="firstTitle pt-10 "
+        className="firstTitle pt-4"
       >
         {projectInfo.title}
       </motion.p>

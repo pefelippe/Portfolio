@@ -35,16 +35,7 @@ function ProjectDetails() {
     );
   }
   return (
-    <motion.div className="min-h-screen flex flex-col  justify-center text-center   mx-auto items-center mt-10 gap-6 max-w-4xl px-6">
-      <motion.img
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75 }}
-        src={projectInfo.imgUrl}
-        alt={projectInfo.title}
-        width={2000}
-        className="border-2 rounded-xl h-[50vh] object-cover"
-      />
+    <motion.div className="min-h-screen flex flex-col  justify-center text-center   mx-auto items-center gap-6  px-6 mt-20">
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -53,6 +44,7 @@ function ProjectDetails() {
       >
         {projectInfo.title}
       </motion.p>
+
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -61,6 +53,7 @@ function ProjectDetails() {
       >
         {projectInfo.description}
       </motion.p>
+
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -81,6 +74,15 @@ function ProjectDetails() {
           </Button>
         </Link>
       </motion.div>
+      <motion.img
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.75 }}
+        src={projectInfo.imgUrl}
+        alt={projectInfo.title}
+        width={2000}
+        className="border-2 rounded-xl  object-cover"
+      />
     </motion.div>
   );
 }

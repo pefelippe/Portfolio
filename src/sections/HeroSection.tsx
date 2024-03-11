@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
 import { GithubIcon, Linkedin } from "lucide-react";
-
+import Link from "next/link";
+import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
-import React from "react";
 import { Button } from "../components/ui/button";
-import Link from "next/link";
 
 function HeroSection() {
   return (
-    <motion.div className="  items-start justify-center gap-5 flex flex-col w-full">
+    <motion.div className="justify-center gap-5 flex flex-col w-full min-h-[60vh] text-center items-center">
       {/* <motion.img
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

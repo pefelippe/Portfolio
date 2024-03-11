@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <motion.header
       className="fixed flex  w-full z-40 mx-auto  h-20 bg-white text-[#101010] left-0 right-0
-    dark:bg-[#0b0b0e] dark:text-[#f2f2f2] px-6 max-w-4xl justify-between "
+    dark:bg-[#0b0b0e] dark:text-[#f2f2f2] px-6 justify-between "
     >
       <motion.div
         initial={{ opacity: 0, y: -25 }}

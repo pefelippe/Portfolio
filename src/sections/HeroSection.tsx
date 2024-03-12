@@ -8,14 +8,15 @@ import { Button } from "../components/ui/button";
 
 function HeroSection() {
   return (
-    <motion.div className="justify-center gap-5 flex flex-col w-full min-h-[60vh] text-center items-center">
-      {/* <motion.img
+    <motion.div className="justify-center gap-5 flex flex-col w-full text-center items-center min-h-screen">
+      <motion.img
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
-        src="/assets/avatar.png"
-        className=" max-h-[220px] max-w-xl "
-      /> */}
+        src="/assets/avatar-pdr.png"
+        className=" max-h-[180px] max-w-xl rounded-full border-4"
+      />
+
       <motion.p
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
@@ -32,7 +33,7 @@ function HeroSection() {
         className="secondTitle"
       >
         <Typewriter
-          words={["Developer", "Coffe Lover", "Tech Enthusiast"]}
+          words={["Web Developer", "Coffe Lover", "Tech Enthusiast"]}
           loop={0}
           cursor
           cursorStyle="_"

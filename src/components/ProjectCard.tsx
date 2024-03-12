@@ -33,17 +33,17 @@ function ProjectCard({
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative flex  h-full items-start text-start  hover:opacity-80 rounded border-gray-600 border-2
-       justify-center flex-col w-full  min-h-[350px] lg:min-h-[400px] xl:min-h-[450px]"
+      className="relative flex  h-full items-start text-start  hover:opacity-80 rounded-md 
+       justify-center flex-col w-full   bg-[#212531]"
     >
       <Link
         href={"/projects/" + id}
-        className="relative shadow  overflow-hidden w-full h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[550px] "
+        className="relative shadow  overflow-hidden w-full h-full  "
       >
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full  h-full min-h-[350px] lg:min-h-[400px] xl:min-h-[550px] "
+          className="overflow-hidden object-cover w-full h-[500px] "
         />
 
         <div
@@ -58,6 +58,13 @@ function ProjectCard({
           </p>
         </div>
       </Link>
+
+      {/* <div className=" flex flex-col gap-3 justify-start items-start text-start w-full text-md p-8 dark:text-[#fffff9]">
+        <p className="text-xl md:text-3xl font-semibold tracking-tight">
+          {title}
+        </p>
+        <p className="text-sm md:text-lg font-normal ">{description}</p>
+      </div> */}
     </motion.div>
   );
 }

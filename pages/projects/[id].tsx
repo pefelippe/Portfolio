@@ -35,12 +35,21 @@ function ProjectDetails() {
     );
   }
   return (
-    <motion.div className="min-h-screen flex flex-col  justify-center text-center   mx-auto items-center gap-6  px-6 mt-20">
+    <motion.div className="min-h-screen flex flex-col  justify-center text-center   mx-auto items-center gap-6 max-w-5xl px-6 mt-10">
+      <motion.img
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.75 }}
+        src={projectInfo.imgUrl}
+        alt={projectInfo.title}
+        width={2000}
+        className="rounded-xl  object-cover border border-gray-500"
+      />
       <motion.p
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 1 }}
-        className="firstTitle pt-4"
+        className="firstTitle pt-2"
       >
         {projectInfo.title}
       </motion.p>
@@ -74,15 +83,6 @@ function ProjectDetails() {
           </Button>
         </Link>
       </motion.div>
-      <motion.img
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75 }}
-        src={projectInfo.imgUrl}
-        alt={projectInfo.title}
-        width={2000}
-        className="border-2 rounded-xl  object-cover"
-      />
     </motion.div>
   );
 }

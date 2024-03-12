@@ -11,79 +11,79 @@ import { ModeToggle } from "../ui/mode-toggle";
 export const Logo = () => {
   return (
     <button className=" flex text-xl tracking-tighter font-bold ">
-      Pedro Felippe
+      <Link href="/" className={`tracking-wide hover:text-blue`}>
+        Pedro Felippe
+      </Link>
     </button>
   );
 };
 
 const Header = () => {
   return (
-    <motion.header
-      className="fixed flex  w-full z-40 mx-auto  h-20 bg-white text-[#101010] left-0 right-0
-    dark:bg-[#0b0b0e] dark:text-[#f2f2f2] px-6 justify-between "
-    >
-      <motion.div
-        initial={{ opacity: 0, y: -25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 1 }}
-        className="flex  justify-start font-medium
-         items-center w-fits space-x-8 text-base tracking-widest  "
-      >
-        <Link href="/" className={`tracking-wide hover:text-blue`}>
-          Home
-        </Link>
+    <motion.header className=" fixed  w-full z-40   border-b border-gray-800  bg-[#0c0c15]   text-[#101010] left-0 right-0 dark:text-[#f2f2f2]   ">
+      <div className="w-full  mx-auto flex justify-between py-7 items-center section">
+        <Logo />
+        {/* <motion.div
+          initial={{ opacity: 0, y: -25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.75, delay: 1 }}
+          className="flex  justify-start font-medium
+        items-center w-fits space-x-8 text-base tracking-widest  "
+        >
+          <Link href="/" className={`tracking-wide hover:text-blue`}>
+            Home
+          </Link>
 
-        <Link href="/about" className={`tracking-wide hover:text-blue`}>
-          About
-        </Link>
+          <Link href="/about" className={`tracking-wide hover:text-blue`}>
+            About
+          </Link>
 
-        <Link href="/contact" className={`tracking-wide hover:text-blue`}>
-          {/* <Button className="p-6 text-white rounded text-lg"></Button> */}
-          Contact
-        </Link>
-
+          <Link href="/contact" className={`tracking-wide hover:text-blue`}>
+            Contact
+          </Link>
+        </motion.div> */}
         {/* <motion.div
             className="flex  h-full justify-center  rounded 
             items-center w-fit  space-x-4 lg:justify-between "
-          >
+            >
             <AnimatedBtn>
-              <ModeToggle />
+            <ModeToggle />
             </AnimatedBtn>
           </motion.div> */}
-      </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: -25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 1.25 }}
-        className="flex justify-center
+        <motion.div
+          initial={{ opacity: 0, y: -25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.75, delay: 1.25 }}
+          className="flex justify-center
         items-center w-fit space-x-6 text-base tracking-widest"
-      >
-        <Link
-          target="_blank"
-          href="https://www.linkedin.com/in/pedro-felippe/"
-          className={`tracking-wide hover:text-blue`}
         >
-          <Linkedin className="h-6 w-6" />
-        </Link>
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+            className={`tracking-wide hover:text-blue`}
+          >
+            <Linkedin className="h-6 w-6" />
+          </Link>
 
-        <Link
-          target="_blank"
-          href="https://github.com/pefelippe"
-          className={`tracking-wide hover:text-blue`}
-        >
-          <GithubIcon className="h-6 w-6" />
-        </Link>
+          <Link
+            target="_blank"
+            href="https://github.com/pefelippe"
+            className={`tracking-wide hover:text-blue`}
+          >
+            <GithubIcon className="h-6 w-6" />
+          </Link>
 
-        {/* <motion.div
+          {/* <motion.div
             className="flex  h-full justify-center  rounded 
             items-center w-fit  space-x-4 lg:justify-between "
-          >
+            >
             <AnimatedBtn>
-              <ModeToggle />
+            <ModeToggle />
             </AnimatedBtn>
           </motion.div> */}
-      </motion.div>
+        </motion.div>
+      </div>
     </motion.header>
   );
 };

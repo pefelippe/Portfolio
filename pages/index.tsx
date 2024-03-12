@@ -7,8 +7,8 @@ import ProjectSection from "../src/sections/ProjectSection";
 
 export default function Home() {
   return (
-    <motion.div className="flex flex-col h-full w-full relative mx-auto   ">
-      <section className="section max-w-5xl">
+    <motion.div className="flex flex-col h-full w-full relative mx-auto  max-w-5xl my-20 ">
+      <section className="section ">
         <HeroSection />
       </section>
 
@@ -20,9 +20,9 @@ export default function Home() {
         <ProjectSection />
       </section>
 
-      <section className="section ">
+      {/* <section className="section ">
         <ContactSection />
-      </section>
+      </section> */}
     </motion.div>
   );
 }

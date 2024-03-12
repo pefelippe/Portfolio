@@ -10,7 +10,7 @@ import { ModeToggle } from "../ui/mode-toggle";
 
 export const Logo = () => {
   return (
-    <button className=" flex text-xl tracking-tighter font-bold ">
+    <button className=" flex text-lg tracking-tighter font-bold uppercase">
       <Link href="/" className={`tracking-wide hover:text-blue`}>
         Pedro Felippe
       </Link>
@@ -20,8 +20,13 @@ export const Logo = () => {
 
 const Header = () => {
   return (
-    <motion.header className=" fixed  w-full z-40   border-b border-gray-800  bg-[#0c0c15]   text-[#101010] left-0 right-0 dark:text-[#f2f2f2]   ">
-      <div className="w-full  mx-auto flex justify-between py-7 items-center section">
+    <motion.header
+      initial={{ opacity: 0, y: -25 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.75, delay: 1 }}
+      className=" fixed  w-full z-40  text-[#101010] left-0 right-0    "
+    >
+      <div className="w-full  mx-auto flex justify-between py-5 items-center section  max-w-5xl  px-6  bg-[#fff] rounded-b-md shadow">
         <Logo />
         {/* <motion.div
           initial={{ opacity: 0, y: -25 }}

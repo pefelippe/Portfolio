@@ -16,7 +16,7 @@ function Projects() {
         Projects
       </h1>
 
-      <div className="flex flex-col lg:grid lg:grid-cols-2  gap-8 w-full items-start  mx-auto ">
+      <div className="flex flex-col   gap-16 w-full items-start  mx-auto ">
         {projects?.map((proj) => {
           return (
             <ProjectCard

@@ -31,7 +31,7 @@ function AboutSection() {
             proficiently navigating the intricacies of developing robust and
             dynamic digital solutions. Specializing in a diverse array of
             projects including SaaS platforms, e-commerce websites, and
-            captivating landing pages, I've honed my skills through
+            captivating landing pages, I have honed my skills through
             collaborative efforts with multidisciplinary teams spanning the
             globe. <br />
             <br />

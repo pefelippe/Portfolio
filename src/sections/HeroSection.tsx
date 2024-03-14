@@ -1,15 +1,22 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import { GithubIcon, Linkedin } from "lucide-react";
+import {
+  ArrowDown,
+  GithubIcon,
+  Linkedin,
+  MoveDown,
+  MoveDownIcon,
+} from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 import { Button } from "../components/ui/button";
+import { Link as ScrollLink } from "react-scroll";
 
 function HeroSection() {
   return (
-    <motion.div className="justify-center gap-5 flex flex-col w-full text-center items-center min-h-screen">
+    <motion.div className="relative justify-center gap-5 flex flex-col w-full text-center items-center min-h-screen">
       {/* <motion.img
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -19,8 +26,8 @@ function HeroSection() {
       /> */}
 
       <motion.p
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.75 }}
         className="secondTitle text-7xl"
       >
@@ -57,6 +64,20 @@ function HeroSection() {
           Projects
         </ScrollLink>
       </Button> */}
+
+      <Button
+        variant="ghost"
+        className=" absolute bottom-10 flex gap-1 text-[#101010] hover:text-white "
+      >
+        <ScrollLink
+          smooth={true}
+          to="aboutSection"
+          className="flex font-bold items-center gap-1 tracking-wide 
+          "
+        >
+          Who am i? <ArrowDown className="h-6 w-6" />
+        </ScrollLink>
+      </Button>
     </motion.div>
   );
 }

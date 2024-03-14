@@ -6,26 +6,10 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <motion.footer
-      className=" py-10 gap-4 flex-col border-t border-gray-300 px-6  mx-auto text-gray-800
-   text-base font-normal justify-center items-center flex   text-center section max-w-5xl"
+      className=" py-10 gap-4 flex-col border-t border-gray-700  mx-auto text-gray-300
+   text-sm font-normal justify-center items-start flex   text-center section max-w-screen-xl"
     >
-      <p>© {year} - Pedro Felippe </p>
-      {/* <div className="flex gap-5">
-        <Link
-          target="_blank"
-          href="https://www.linkedin.com/in/pedro-felippe/"
-          className={`tracking-wide hover:text-blue`}
-        >
-          <p>Linkedin</p>
-        </Link>
-        <Link
-          target="_blank"
-          href="https://github.com/pefelippe"
-          className={`tracking-wide hover:text-blue`}
-        >
-          <p>Github</p>
-        </Link>
-      </div>{" "} */}
+      <p>Designed & developed by Pedro Felippe - {year}</p>
     </motion.footer>
   );
 }

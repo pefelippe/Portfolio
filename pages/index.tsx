@@ -7,22 +7,18 @@ import ProjectSection from "../src/sections/ProjectSection";
 
 export default function Home() {
   return (
-    <motion.div className="flex flex-col h-full w-full relative mx-auto  ">
-      <section className="section">
+    <motion.div className="flex flex-col h-full w-full relative mx-auto ">
+      <section className="bg-white ">
         <HeroSection />
       </section>
 
-      {/* <section className="section  ">
+      <section id="aboutSection" className="section   ">
         <AboutSection />
-      </section> */}
+      </section>
 
-      {/* <section className="section">
+      <section id="projectsSection" className=" bg-white">
         <ProjectSection />
-      </section> */}
-
-      {/* <section className="section ">
-        <ContactSection />
-      </section> */}
+      </section>
     </motion.div>
   );
 }

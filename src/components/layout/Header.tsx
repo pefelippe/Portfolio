@@ -51,14 +51,7 @@ const Header = () => {
             <GithubIcon className="h-7 w-7" />
           </Link>
         </motion.div>
-        {/* <motion.div
-            className="flex  h-full justify-center  rounded 
-            items-center w-fit  space-x-4 lg:justify-between "
-            >
-            <AnimatedBtn>
-            <ModeToggle />
-            </AnimatedBtn>
-          </motion.div> */}
+
         <motion.div
           initial={{ opacity: 0, y: -25 }}
           animate={{ opacity: 1, y: 0 }}
@@ -74,14 +67,6 @@ const Header = () => {
             Contact
           </Link> */}
         </motion.div>
-        {/* <motion.div
-            className="flex  h-full justify-center  rounded 
-            items-center w-fit  space-x-4 lg:justify-between "
-            >
-            <AnimatedBtn>
-            <ModeToggle />
-            </AnimatedBtn>
-          </motion.div> */}
       </div>
     </motion.header>
   );

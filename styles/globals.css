@@ -48,7 +48,7 @@
   }
 
   .section {
-    @apply max-md:px-6 flex mx-auto max-w-screen-2xl w-full;
+    @apply flex mx-auto max-w-7xl w-full px-6;
   }
 
   .firstTitle {

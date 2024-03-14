@@ -1,6 +1,6 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import { LinkIcon } from "lucide-react";
+import { LinkIcon, MoveRight } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "./ui/button";
@@ -30,36 +30,31 @@ function ProjectCard({
 
   return (
     <div
-      className="relative flex  h-full items-start text-start  hover:opacity-80 gap-10 min-h-screen py-20
-       justify-center max-md:flex-col w-full hover:text-blue transition-all"
+      className="relative flex  h-full items-start text-start  gap-5 md:gap-10 
+       justify-center max-md:flex-col-reverse w-full text-[#101010] transition-all"
     >
       <div className="max-w-xs flex flex-col gap-3 justify-start items-start text-start w-full text-md  text-[#212531">
         <p className="text-xl md:text-3xl font-semibold tracking-tight">
           {title}
         </p>
         <p className="text-sm md:text-base font-normal ">{description}</p>
+        <Link
+          href={"/projects/" + id}
+          className="pt-1 text-base md:text-xl font-semibold flex items-center gap-2 hover:text-[#101010]/70"
+        >
+          <MoveRight /> View Project
+        </Link>
       </div>
       <Link
         href={"/projects/" + id}
         className="relative shadow  overflow-hidden w-full h-full  "
       >
         <motion.img
+          whileHover={{ scale: 1.05 }}
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full min-h-[70vh] rounded-md border"
+          className="overflow-hidden object-cover w-full h-[300px] md:min-h-[60vh]  rounded-md border"
         />
-
-        {/* <div
-          className="absolute inset-0 flex flex-col gap-1 justify-center items-center text-center w-full text-md p-6 py-3
-         bg-black bg-opacity-90 opacity-0 hover:opacity-100 transition-opacity"
-        >
-          <p className="text-xl md:text-3xl font-semibold tracking-tight text-white">
-            {title}
-          </p>
-          <p className="text-sm md:text-xl font-normal text-white">
-            {description}
-          </p>
-        </div> */}
       </Link>
     </div>
   );

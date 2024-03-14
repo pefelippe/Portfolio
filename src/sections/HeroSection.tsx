@@ -9,32 +9,32 @@ import { Button } from "../components/ui/button";
 
 function HeroSection() {
   return (
-    <motion.div className="justify-center gap-5 flex flex-col w-full text-start items-start py-40">
+    <motion.div className="justify-center gap-5 flex flex-col w-full text-center items-center min-h-screen">
       {/* <motion.img
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
         src="/assets/avatar-pdr.png"
-        className=" max-h-[180px] max-w-xl rounded-full border-4"
+        className=" max-h-[220px] max-w-xl rounded-full border-4 border-gray-300"
       /> */}
 
       <motion.p
-        initial={{ opacity: 0, y: -25 }}
+        initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 0.75 }}
-        className="secondTitle"
+        transition={{ duration: 0.75 }}
+        className="secondTitle text-7xl"
       >
         <Typewriter
-          words={["Web Developer", "Coffe Lover", "Tech Enthusiast"]}
+          words={["Pedro Felippe.", "Web Developer.", "Be simple."]}
           loop={0}
           cursor
-          cursorStyle="_"
-          typeSpeed={70}
+          cursorStyle=""
+          typeSpeed={50}
           deleteSpeed={50}
           delaySpeed={1000}
         />
       </motion.p>
-      <motion.p
+      {/* <motion.p
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 0.5 }}
@@ -50,7 +50,7 @@ function HeroSection() {
         className="secondTitle max-w-2xl"
       >
         An experienced leader andversatile product designer living in Brazil.
-      </motion.p>
+      </motion.p> */}
 
       {/* <Button className="w-fit py-7 px-12 text-lg rounded-md mt-12 text-white">
         <ScrollLink to="projects-container" offset={-150}>

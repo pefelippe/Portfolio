@@ -12,9 +12,9 @@ function Projects() {
       id="projects-container"
       className="content-intern items-start justify-center w-full min-h-fit flex gap-10 "
     >
-      <h1 className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500">
+      {/* <h1 className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500">
         Projects
-      </h1>
+      </h1> */}
 
       <div className="flex flex-col   gap-16 w-full items-start  mx-auto ">
         {projects?.map((proj) => {

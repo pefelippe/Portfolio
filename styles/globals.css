@@ -56,7 +56,7 @@
   }
 
   .secondTitle {
-    @apply text-3xl tracking-tighter font-bold text-[#827f8b];
+    @apply text-4xl tracking-tighter font-semibold text-[#827f8b];
   }
 
   .description {

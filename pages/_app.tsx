@@ -13,7 +13,7 @@ import { Toaster } from "../src/components/ui/toaster";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
-      className="min-w-[400px] mx-auto h-fit overflow-hidden scroll-smooth text-[#101010] font-mono
+      className="min-w-[400px] mx-auto h-fit overflow-hidden scroll-smooth text-[#101010] font-poppins
       bg-[#ffffff] "
     >
       <Head>
@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Header />
         <Component {...pageProps} />
         <Toaster />
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </motion.div>
   );

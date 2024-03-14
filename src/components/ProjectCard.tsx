@@ -29,8 +29,8 @@ function ProjectCard({
   const initialX = isEvenId ? 50 : -50;
 
   return (
-    <motion.div
-      className="relative flex  h-full items-start text-start  hover:opacity-80 gap-10
+    <div
+      className="relative flex  h-full items-start text-start  hover:opacity-80 gap-10 min-h-screen py-20
        justify-center max-md:flex-col w-full hover:text-blue transition-all"
     >
       <div className="max-w-xs flex flex-col gap-3 justify-start items-start text-start w-full text-md  text-[#212531">
@@ -46,7 +46,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-[400px] rounded-md border"
+          className="overflow-hidden object-cover w-full min-h-[70vh] rounded-md border"
         />
 
         {/* <div
@@ -61,7 +61,7 @@ function ProjectCard({
           </p>
         </div> */}
       </Link>
-    </motion.div>
+    </div>
   );
 }
 

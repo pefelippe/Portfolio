@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import Link from "next/link";
+
 import MessageForm from "../src/components/MessageForm";
 
 function ContactSection() {
@@ -10,8 +11,7 @@ function ContactSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75 }}
       id="contact-container"
-      className=" flex flex-col text-start justify-center  w-full min-h-screen items-center max-w-4xl mx-auto gap-10
-    dark:text-white px-6"
+      className=" flex flex-col text-start justify-center  w-full min-h-screen items-center max-w-4xl mx-auto gap-10 dark:text-white px-6"
     >
       <div className=" flex flex-col gap-10 w-full">
         <h1 className="text-3xl md:text-5xl tracking-tighter font-semibold underline decoration-indigo-500">

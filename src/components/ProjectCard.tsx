@@ -30,17 +30,15 @@ function ProjectCard({
 
   return (
     <div
-      className="relative flex  h-full items-start text-start  gap-5 md:gap-10 
-       justify-center max-md:flex-col-reverse w-full text-[#101010] transition-all"
+      className="relative flex  h-full items-center text-start  gap-5 lg:gap-10 
+       justify-center max-lg:flex-col-reverse w-full text-[#fff] transition-all"
     >
-      <div className="max-w-xs flex flex-col gap-3 justify-start items-start text-start w-full text-md  text-[#212531">
-        <p className="text-xl md:text-3xl font-semibold tracking-tight">
-          {title}
-        </p>
-        <p className="text-sm md:text-base font-normal ">{description}</p>
+      <div className="lg:max-w-sm flex flex-col gap-3 justify-start items-start text-start w-full text-md tracking-tighter text-[#212531">
+        <p className="text-2xl lg:text-4xl  font-semibold">{title}</p>
+        <p className="secondTitle text-[#bcb7c8] text-xl">{description}</p>
         <Link
           href={"/projects/" + id}
-          className="pt-1 text-base md:text-xl font-semibold flex items-center gap-2 hover:text-[#101010]/70"
+          className="pt-1 text-base lg:text-2xl font-semibold flex items-center gap-2 hover:text-[#fff]/70"
         >
           <MoveRight /> View Project
         </Link>
@@ -53,7 +51,7 @@ function ProjectCard({
           whileHover={{ scale: 1.05 }}
           src={imgUrl}
           alt="card image"
-          className="overflow-hidden object-cover w-full h-[300px] md:min-h-[60vh]  rounded-md border"
+          className="overflow-hidden object-cover w-full h-[320px] lg:min-h-[75vh]  "
         />
       </Link>
     </div>

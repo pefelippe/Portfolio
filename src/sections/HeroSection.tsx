@@ -9,30 +9,22 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
 
 import { Button } from "../components/ui/button";
-import { Link as ScrollLink } from "react-scroll";
 
 function HeroSection() {
   return (
     <motion.div className="relative justify-center gap-5 flex flex-col w-full text-center items-center min-h-screen">
-      {/* <motion.img
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75 }}
-        src="/assets/avatar-pdr.png"
-        className=" max-h-[220px] max-w-xl rounded-full border-4 border-gray-300"
-      /> */}
-
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75 }}
-        className="secondTitle text-7xl"
+        className="firstTitle text-[#302f33] max-w-lg"
       >
         <Typewriter
-          words={["Pedro Felippe.", "Web Developer.", "Be simple."]}
+          words={["Pedro Felippe.", "Web Developer.", "Don't Overthink it."]}
           loop={0}
           cursor
           cursorStyle=""
@@ -41,41 +33,18 @@ function HeroSection() {
           delaySpeed={1000}
         />
       </motion.p>
-      {/* <motion.p
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 0.5 }}
-        className="firstTitle"
-      >
-        Hi! I'm Pedro Felippe.
-      </motion.p>
-
-      <motion.p
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75, delay: 0.75 }}
-        className="secondTitle max-w-2xl"
-      >
-        An experienced leader andversatile product designer living in Brazil.
-      </motion.p> */}
-
-      {/* <Button className="w-fit py-7 px-12 text-lg rounded-md mt-12 text-white">
-        <ScrollLink to="projects-container" offset={-150}>
-          Projects
-        </ScrollLink>
-      </Button> */}
 
       <Button
         variant="ghost"
-        className=" absolute bottom-10 flex gap-1 text-[#101010] hover:text-white "
+        className=" absolute bottom-6 flex gap-1  bg-[#101010] text-white rounded"
       >
         <ScrollLink
           smooth={true}
-          to="aboutSection"
+          to="projectsSection"
           className="flex font-bold items-center gap-1 tracking-wide 
           "
         >
-          Who am i? <ArrowDown className="h-6 w-6" />
+          Selected Works <ArrowDown className="h-6 w-6" />
         </ScrollLink>
       </Button>
     </motion.div>

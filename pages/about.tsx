@@ -10,11 +10,9 @@ function AboutSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, delay: 0.5 }}
-      className=" w-full flex flex-col justify-center items-center gap-8  mx-auto  min-h-screen  py-20"
+      className=" w-full flex flex-col justify-center items-center gap-8  mx-auto  min-h-screen  py-20 px-6"
     >
-      {/* <motion.h1 className="text-3xl uppercase tracking-[1px] font-semibold mx-autos text-indigo-500">
-        About me
-      </motion.h1> */}
+      {/* <motion.h1 className="firstTitle">About me</motion.h1> */}
       <div className="flex flex-col-reverse lg:flex-row gap-6 lg:gap-32 items-center text-start ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

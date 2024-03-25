@@ -103,7 +103,7 @@ export default function MessageForm({}) {
         <Button
           type="submit"
           className=" text-center  p-7 px-14 dark:text-white    w-fit mx-auto rounded  
-          transition-all font-medium text-base uppercase tracking-[1px] focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
+          transition-all font-semibold text-base uppercase tracking-[1px] focus:outline-none focus:ring focus:ring-blue-500 hover:underline"
         >
           {isLoading ? "Sending..." : "Send message"}
         </Button>

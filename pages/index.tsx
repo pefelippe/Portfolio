@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-import AboutSection from "../src/sections/AboutSection";
-import ContactSection from "../src/sections/ContactSection";
 import HeroSection from "../src/sections/HeroSection";
 import ProjectSection from "../src/sections/ProjectSection";
 

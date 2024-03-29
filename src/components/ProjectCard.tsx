@@ -30,7 +30,7 @@ function ProjectCard({
 
   return (
     <div
-      className="relative flex  h-full items-center text-start  gap-8 xl:gap-16
+      className="relative flex  h-full items-center text-start  gap-6 xl:gap-12
        justify-center max-xl:flex-col w-full  transition-all"
     >
       <Link
@@ -44,17 +44,11 @@ function ProjectCard({
           className="overflow-hidden object-cover w-full h-[280px] md:h-[500px] xl:min-h-[65vh]  "
         />
       </Link>
-      <div className="xl:max-w-sm flex flex-col gap-4 justify-start items-start text-start w-full text-md tracking-tighter text-[#212531">
-        <p className="text-2xl xl:text-4xl  font-semibold">{title}</p>
-        <p className="secondTitle text-[#585858] text-lg font-normal">
+      <div className="xl:max-w-sm flex flex-col gap-3 justify-start items-start text-start w-full text-md tracking-tighter text-[#212531">
+        <p className="text-3xl xl:text-4xl  font-semibold">{title}</p>
+        <p className="secondTitle text-[#585858] text-lg md:text-xl font-light">
           {description}
         </p>
-        {/* <Link
-          href={"/projects/" + id}
-          className="pt-1 text-base xl:text-2xl font-semibold flex items-center gap-2 hover:text-[#fff]/70"
-        >
-          <MoveRight /> Check details
-        </Link> */}
 
         <motion.div className="flex flex-col gap-4 font-medium text-2xl w-full">
           <Link href={repo} target="_blank">

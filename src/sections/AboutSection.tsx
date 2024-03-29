@@ -10,7 +10,7 @@ function AboutSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, delay: 1.5 }}
-      className=" w-full flex flex-col justify-center items-center gap-8  mx-auto  py-10  section  min-h-screen"
+      className=" w-full flex flex-col justify-center items-start gap-8  mx-auto  py-10  section  min-h-screen"
     >
       <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center text-start ">
         <motion.img
@@ -18,13 +18,13 @@ function AboutSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.75, delay: 1 }}
           src="/assets/pedrof.jpg"
-          className="rounded-md h-[250px] w-[500px] lg:h-[600px] object-cover shadow"
+          className="rounded-md h-[280px] w-full lg:h-[650px] object-cover shadow"
         />
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 1.6 }}
-          className="text-sm lg:text-[32px] text-left leading-normal  items-start gap-5
+          className="text-sm lg:text-[32px] text-left leading-normal  items-start gap-8
          justify-center flex flex-col w-full "
         >
           <motion.h1 className="firstTitle">About me</motion.h1>

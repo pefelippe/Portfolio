@@ -21,7 +21,7 @@ function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.75 }}
-        className="firstTitle text-[#302f33] max-w-lg"
+        className="firstTitle text-[#302f33] "
       >
         <Typewriter
           words={["Pedro Felippe.", "Web Developer.", "Don't Overthink it."]}
@@ -34,7 +34,7 @@ function HeroSection() {
         />
       </motion.p>
 
-      <Button
+      {/* <Button
         variant="ghost"
         className=" absolute bottom-6 flex gap-1  bg-[#101010] text-white rounded"
       >
@@ -46,7 +46,7 @@ function HeroSection() {
         >
           Selected Works <ArrowDown className="h-6 w-6" />
         </ScrollLink>
-      </Button>
+      </Button> */}
     </motion.div>
   );
 }

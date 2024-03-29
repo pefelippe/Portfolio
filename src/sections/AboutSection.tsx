@@ -10,12 +10,16 @@ function AboutSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, delay: 1.5 }}
-      className=" w-full flex flex-col justify-center items-center gap-8  mx-auto  min-h-screen  py-20"
+      className=" w-full flex flex-col justify-center items-center gap-8  mx-auto  py-10  section  min-h-screen"
     >
-      {/* <motion.h1 className="text-3xl uppercase tracking-[1px] font-semibold mx-autos text-indigo-500">
-        About me
-      </motion.h1> */}
-      <div className="flex flex-col-reverse lg:flex-row gap-6 lg:gap-32 items-center text-start ">
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center text-start ">
+        <motion.img
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.75, delay: 1 }}
+          src="/assets/pedrof.jpg"
+          className="rounded-md h-[250px] w-[500px] lg:h-[600px] object-cover shadow"
+        />
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,37 +27,29 @@ function AboutSection() {
           className="text-sm lg:text-[32px] text-left leading-normal  items-start gap-5
          justify-center flex flex-col w-full "
         >
-          <motion.h1 className="text-4xl tracking-tighter">
-            Pedro Felippe
-          </motion.h1>
-          <motion.p className="text-gray-300 text-base lg:text-lg max-w-xl">
-            Experienced web developer with a proven track record since 2020,
-            proficiently navigating the intricacies of developing robust and
-            dynamic digital solutions. Specializing in a diverse array of
-            projects including SaaS platforms, e-commerce websites, and
-            captivating landing pages, I have honed my skills through
-            collaborative efforts with multidisciplinary teams spanning the
-            globe. <br />
+          <motion.h1 className="firstTitle">About me</motion.h1>
+          <motion.p className="text-[#666] text-base md:text-lg font-normal max-w-2xl">
+            A web developer working professionally since 2020 developing
+            responsive and dynamic interfaces. Experience in a different range
+            of projects, including SaaS platforms, e-commerce, and landing
+            pages. Collaboration with international multidisciplinary teams.
             <br />
-            My professional journey is marked by a commitment to excellence,
-            consistently delivering high-quality, user-centric products that
-            meet and exceed client expectations. Leveraging a blend of technical
-            expertise and creative vision, I thrive in environments that demand
-            innovative problem-solving and seamless integration of cutting-edge
-            technologies.
-            <br />
-            <br />
-            I am dedicated to driving tangible results and elevating brands to
-            new heights in the digital landscape.
-            <br />
+            <br /> I have technical knowledge with Javascript development
+            (React, Angular, Vue, Node, Typescript). Integration with Rest and
+            GraphQL APIs (Apollo). Connection to SQL and NO SQL databases;
+            Containerization with Docker and Kubernetes. Unit and integration
+            tests with Jest, React-Testing-Library and Cypress. Experience in
+            Microfrontends. <br />
+            <br />I am currently specializing in creating serverless
+            applications with Node, AWS (Lambda, DynamoDB, CloudFront, SNS, SQS,
+            S3, API Gateway) and microservices.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: -25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 1.25 }}
-            className="flex justify-center
-        items-center w-fit space-x-6 text-base tracking-widest"
+            className="flex justify-center items-center w-fit space-x-6 text-base tracking-widest"
           >
             <Link
               target="_blank"
@@ -72,14 +68,6 @@ function AboutSection() {
             </Link>
           </motion.div>
         </motion.div>
-
-        <motion.img
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.75, delay: 1 }}
-          src="/assets/pedrof.jpg"
-          className="rounded-md h-[250px] w-[600px] lg:h-[600px] object-cover shadow"
-        />
       </div>
     </motion.div>
   );

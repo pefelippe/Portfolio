@@ -24,7 +24,7 @@ function AboutSection() {
           <motion.h1 className="text-4xl tracking-tighter">
             Pedro Felippe
           </motion.h1>
-          <motion.p className="text-gray-300 text-base lg:text-lg max-w-xl">
+          <motion.p className="text-gray-300 text-sm  max-w-xl">
             Experienced web developer with a proven track record since 2020,
             proficiently navigating the intricacies of developing robust and
             dynamic digital solutions. <br />

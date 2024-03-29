@@ -31,11 +31,24 @@ function ProjectCard({
   return (
     <div
       className="relative flex  h-full items-center text-start  gap-8 xl:gap-16
-       justify-center max-xl:flex-col-reverse w-full text-[#fff] transition-all"
+       justify-center max-xl:flex-col w-full  transition-all"
     >
+      <Link
+        href={"/projects/" + id}
+        className="relative shadow  overflow-hidden w-full h-full rounded border"
+      >
+        <motion.img
+          whileHover={{ scale: 1.05 }}
+          src={imgUrl}
+          alt="card image"
+          className="overflow-hidden object-cover w-full h-[280px] md:h-[500px] xl:min-h-[65vh]  "
+        />
+      </Link>
       <div className="xl:max-w-sm flex flex-col gap-4 justify-start items-start text-start w-full text-md tracking-tighter text-[#212531">
         <p className="text-2xl xl:text-4xl  font-semibold">{title}</p>
-        <p className="secondTitle text-[#bcb7c8] text-xl">{description}</p>
+        <p className="secondTitle text-[#585858] text-lg font-normal">
+          {description}
+        </p>
         {/* <Link
           href={"/projects/" + id}
           className="pt-1 text-base xl:text-2xl font-semibold flex items-center gap-2 hover:text-[#fff]/70"
@@ -47,7 +60,7 @@ function ProjectCard({
           <Link href={repo} target="_blank">
             <Button
               variant={"outline"}
-              className="text-lg py-6 px-10 rounded flex items-center gap-1 w-full"
+              className="text-lg py-6 px-10 rounded flex items-center gap-1 w-full text-[#fff]"
             >
               <GithubIcon /> Github
             </Button>
@@ -59,17 +72,6 @@ function ProjectCard({
           </Link>
         </motion.div>
       </div>
-      <Link
-        href={"/projects/" + id}
-        className="relative shadow  overflow-hidden w-full h-full  "
-      >
-        <motion.img
-          whileHover={{ scale: 1.05 }}
-          src={imgUrl}
-          alt="card image"
-          className="overflow-hidden object-cover w-full h-[280px] md:h-[500px] xl:min-h-[75vh]  "
-        />
-      </Link>
     </div>
   );
 }

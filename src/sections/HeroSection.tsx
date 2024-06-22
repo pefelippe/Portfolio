@@ -1,52 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import {
-  ArrowDown,
-  GithubIcon,
-  Linkedin,
-  MoveDown,
-  MoveDownIcon,
-} from "lucide-react";
-import Link from "next/link";
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { Typewriter } from "react-simple-typewriter";
-
-import { Button } from "../components/ui/button";
 
 function HeroSection() {
   return (
-    <motion.div className="relative justify-center gap-5 flex flex-col w-full text-center items-center min-h-screen">
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.75 }}
-        className="firstTitle text-[#302f33] "
+    <motion.div
+      className="relative flex flex-col items-center justify-center w-full h-full min-h-screen gap-6 px-6 py-24 text-center text-white lg:gap-10 "
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <motion.h1
+        className="text-5xl font-black text-yellow-200 pointer-events-auto sm:text-7xl lg:text-9xl"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
       >
-        <Typewriter
-          words={["Pedro Felippe.", "Web Developer.", "Don't Overthink it."]}
-          loop={0}
-          cursor
-          cursorStyle=""
-          typeSpeed={50}
-          deleteSpeed={50}
-          delaySpeed={1000}
-        />
-      </motion.p>
+        Pedro Felippe
+      </motion.h1>
 
-      {/* <Button
-        variant="ghost"
-        className=" absolute bottom-6 flex gap-1  bg-[#101010] text-white rounded"
+      <motion.span
+        className="max-w-lg text-sm leading-relaxed pointer-events-auto md:leading-relaxed text-zinc-300 md:text-xl"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1 }}
       >
-        <ScrollLink
-          smooth={true}
-          to="projectsSection"
-          className="flex font-bold items-center gap-1 tracking-wide 
-          "
-        >
-          Selected Works <ArrowDown className="h-6 w-6" />
-        </ScrollLink>
-      </Button> */}
+        I've spent the last 4 years building and scaling software for some
+        pretty cool companies. Take a look!
+      </motion.span>
     </motion.div>
   );
 }

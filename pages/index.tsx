@@ -7,22 +7,8 @@ import ProjectSection from "../src/sections/ProjectSection";
 
 export default function Home() {
   return (
-    <motion.div className="flex flex-col h-full w-full relative mx-auto ">
-      <section className="bg-white border ">
-        <HeroSection />
-      </section>
-
-      <section id="aboutSection" className=" bg-[#101010] text-white ">
-        <AboutSection />
-      </section>
-      
-      <section id="projectsSection" className=" text-[#101010]">
-        <ProjectSection />
-      </section>
-
-      <section id="aboutSection" className=" bg-[#101010] text-white ">
-        <ContactSection />
-      </section>
+    <motion.div className="flex w-full h-full max-w-4xl m-auto ">
+      <HeroSection />
     </motion.div>
   );
 }

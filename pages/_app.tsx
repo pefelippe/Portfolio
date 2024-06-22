@@ -8,11 +8,10 @@ import Head from "next/head";
 import Footer from "../src/components/layout/Footer";
 import Header from "../src/components/layout/Header";
 import { ThemeProvider } from "../src/components/theme-provider";
-import { Toaster } from "../src/components/ui/toaster";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <motion.div className="min-w-[400px] mx-auto h-fit overflow-hidden scroll-smooth text-[#101010] font-poppins bg-[#fff]  ">
+    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  bg-[#141414] text-[#fefefe]">
       <Head>
         <title>Pedro Felippe</title>
         <meta name="description" content="Portfolio" />
@@ -26,10 +25,11 @@ export default function App({ Component, pageProps }: AppProps) {
         enableSystem
         disableTransitionOnChange
       >
-        {/* <Header /> */}
-        <Component {...pageProps} />
-        <Toaster />
-        {/* <Footer /> */}
+        <div className="flex flex-col w-full h-full mx-auto">
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </div>
       </ThemeProvider>
     </motion.div>
   );

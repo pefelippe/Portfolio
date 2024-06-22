@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { GithubIcon, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
 
 function AboutSection() {
   return (
@@ -10,10 +9,9 @@ function AboutSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, delay: 0.5 }}
-      className=" w-full flex flex-col justify-center items-center gap-8  mx-auto  min-h-screen  py-20 px-6"
+      className="flex flex-col items-center justify-center w-full min-h-screen gap-8 px-6 py-20 mx-auto "
     >
-      {/* <motion.h1 className="firstTitle">About me</motion.h1> */}
-      <div className="flex flex-col-reverse lg:flex-row gap-6 lg:gap-32 items-center text-start ">
+      <div className="flex flex-col-reverse items-center gap-6 lg:flex-row lg:gap-32 text-start ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,7 +22,7 @@ function AboutSection() {
           <motion.h1 className="text-4xl tracking-tighter">
             Pedro Felippe
           </motion.h1>
-          <motion.p className="text-gray-300 text-sm  max-w-xl">
+          <motion.p className="max-w-xl text-sm text-gray-300">
             Experienced web developer with a proven track record since 2020,
             proficiently navigating the intricacies of developing robust and
             dynamic digital solutions. <br />
@@ -40,19 +38,18 @@ function AboutSection() {
             expertise and creative vision.
           </motion.p>
 
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, y: -25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 1.25 }}
-            className="flex justify-center
-        items-center w-fit space-x-6 text-base tracking-widest"
+            className="flex items-center justify-center space-x-6 text-base tracking-widest w-fit"
           >
             <Link
               target="_blank"
               href="https://www.linkedin.com/in/pedro-felippe/"
               className={`tracking-wide hover:text-blue`}
             >
-              <Linkedin className="h-8 w-8" />
+              <Linkedin className="w-8 h-8" />
             </Link>
 
             <Link
@@ -60,9 +57,9 @@ function AboutSection() {
               href="https://github.com/pefelippe"
               className={`tracking-wide hover:text-blue`}
             >
-              <GithubIcon className="h-8 w-8" />
+              <GithubIcon className="w-8 h-8" />
             </Link>
-          </motion.div> */}
+          </motion.div>
         </motion.div>
 
         <motion.img

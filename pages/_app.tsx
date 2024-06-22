@@ -11,9 +11,9 @@ import { ThemeProvider } from "../src/components/theme-provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  bg-[#141414] text-[#fefefe]">
+    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  bg-[#101010] text-[#fefefe]">
       <Head>
-        <title>Pedro Felippe</title>
+        <title>Pedro Felippe | Web Developer</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

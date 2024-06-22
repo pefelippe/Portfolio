@@ -70,13 +70,13 @@ export default function MessageForm({}) {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 0.75 }}
-      className="flex flex-col items-start text-center  h-fit  rounded-md gap-6 w-full  dark:text-white max-w-2xl"
+      className="flex flex-col items-start w-full max-w-xl gap-6 text-center rounded-md h-fit dark:text-white"
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="gap-4 w-full flex flex-col   "
+        className="flex flex-col w-full gap-4 "
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <Input
             {...register("firstName", { required: true, maxLength: 50 })}
             id="first-name"

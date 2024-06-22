@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 
 type Pages = {
@@ -17,9 +18,9 @@ const Header = () => {
       initial={{ opacity: 0, y: -25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1 }}
-      className="fixed mx-auto flex  z-40 bg-[#131313] text-[#535256] left-0 right-0  backdrop-blur w-full border-b-[1px] border-neutral-800 px-6 "
+      className="fixed mx-auto flex  z-40  text-[#535256] left-0 right-0  backdrop-blur w-full border-b-[1px] border-neutral-800 px-6 "
     >
-      <div className="flex items-center justify-between w-full h-full py-6 mx-auto ">
+      <div className="flex items-center justify-between w-full h-full py-3 mx-auto ">
         <button className="flex items-center text-lg font-bold tracking-tighter uppercase text-zinc-300 ">
           <Link
             href="/"
@@ -30,21 +31,35 @@ const Header = () => {
         </button>
 
         <motion.div
-          initial={{ opacity: 0, y: -25 }}
+          initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 1 }}
-          className="flex items-center justify-center h-full space-x-8 text-base font-semibold tracking-widest w-fit "
+          transition={{ duration: 1, delay: 1 }}
+          className="flex items-center justify-between p-2 space-x-6 text-base tracking-widest text-white"
         >
-          {Object.keys(pages).map((page) => (
-            <Link
-              key={page}
-              href={pages[page]}
-              className={`tracking-wide hover:text-blue`}
-            >
-              {page}
-            </Link>
-          ))}
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/pedro-felippe/"
+            className={`tracking-wide hover:text-blue`}
+          >
+            <LinkedinIcon className="w-8 h-8" />
+          </Link>
+
+          <Link
+            target="_blank"
+            href="https://github.com/pefelippe"
+            className={`tracking-wide hover:text-blue`}
+          >
+            <GithubIcon className="w-8 h-8" />
+          </Link>
+
+          <Link
+            href="/contact"
+            className="relative p-2 px-4 font-medium transition-all border rounded-md text-zinc-300 text-md"
+          >
+            Get in contact
+          </Link>
         </motion.div>
+
       </div>
     </motion.header>
   );

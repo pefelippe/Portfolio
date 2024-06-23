@@ -3,7 +3,6 @@ import { GithubIcon, Linkedin, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
 
 import AboutSection from "../../sections/AboutSection";
-import LinksToPages from "../LinksToPages";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -15,8 +14,7 @@ function Footer() {
       {/* <LinksToPages /> */}
 
       {/* <motion.div
-          className="flex justify-center
-        items-center w-fit space-x-8 text-base tracking-widest"
+          className="flex items-center justify-center space-x-8 text-base tracking-widest w-fit"
         >
           <Link
             target="_blank"

@@ -11,7 +11,7 @@ import { ThemeProvider } from "../src/components/theme-provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  bg-[#101010] text-[#fefefe]">
+    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  text-[#101010] bg-[#fefefe]">
       <Head>
         <title>Pedro Felippe | Web Developer</title>
         <meta name="description" content="Portfolio" />
@@ -26,9 +26,9 @@ export default function App({ Component, pageProps }: AppProps) {
         disableTransitionOnChange
       >
         <div className="flex flex-col w-full h-full mx-auto">
-          <Header />
+          {/* <Header /> */}
           <Component {...pageProps} />
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </ThemeProvider>
     </motion.div>

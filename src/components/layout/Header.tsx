@@ -1,16 +1,6 @@
 import { motion } from "framer-motion";
-import { GithubIcon, LinkedinIcon } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
-
-type Pages = {
-  [key: string]: string;
-};
-
-const pages: Pages = {
-  Home: "/",
-  Blog: "/blog",
-  Contact: "/contact",
-};
 
 const Header = () => {
   return (
@@ -18,32 +8,37 @@ const Header = () => {
       initial={{ opacity: 0, y: -25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1 }}
-      className="fixed mx-auto flex  z-40   left-0 right-0  backdrop-blur w-full px-6 "
+      className="absolute top-0 flex items-center justify-between w-full px-8 pt-6 mx-auto backdrop-blur"
     >
-      <div className="flex items-center justify-between w-full h-full py-3 mx-auto ">
-        <button className="flex items-center text-lg font-bold tracking-tighter uppercase  ">
-          <Link
-            href="/"
-            className={`tracking-wide hover:text-zinc-300/90 transition-all`}
-          >
-            Pedro Felippe
-          </Link>
-        </button>
+      <button className="flex items-center py-2 text-2xl font-bold transition-all rounded-full md:px-8 hover:text-[#101010]/80">
+        <Link href="/">Pedro Felippe</Link>
+      </button>
 
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 }}
-          className="flex items-center justify-between p-2 space-x-6 text-base tracking-widest "
-        >
-          <Link
-            href="/"
-            className="relative p-2 px-4 font-medium transition-all border-2 rounded-md text-md"
+      <motion.ul className="flex gap-2">
+        <Link href="https://github.com/pefelippe">
+          <motion.li
+            className="p-4 transition-all rounded-full cursor-pointer hover:bg-gray-900/10"
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.1 },
+            }}
           >
-            My Blog
-          </Link>
-        </motion.div>
-      </div>
+            <Github />
+          </motion.li>
+        </Link>
+
+        <Link href="https://www.linkedin.com/in/pedro-felippe/">
+          <motion.li
+            className="p-4 transition-all rounded-full cursor-pointer hover:bg-gray-900/10"
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.1 },
+            }}
+          >
+            <Linkedin />
+          </motion.li>
+        </Link>
+      </motion.ul>
     </motion.header>
   );
 };

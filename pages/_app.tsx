@@ -11,9 +11,9 @@ import { ThemeProvider } from "../src/components/theme-provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  text-[#101010] bg-[#fefefe]">
+    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  text-[#101010] flex flex-col">
       <Head>
-        <title>Pedro Felippe | Web Developer</title>
+        <title>Pedro Felippe | Full Stack Development</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -25,11 +25,9 @@ export default function App({ Component, pageProps }: AppProps) {
         enableSystem
         disableTransitionOnChange
       >
-        <div className="flex flex-col w-full h-full mx-auto">
-          {/* <Header /> */}
-          <Component {...pageProps} />
-          {/* <Footer /> */}
-        </div>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </motion.div>
   );

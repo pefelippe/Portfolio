@@ -10,35 +10,18 @@ const Header = () => {
       transition={{ duration: 0.75, delay: 1 }}
       className="absolute top-0 flex items-center justify-between w-full px-8 pt-6 mx-auto backdrop-blur"
     >
-      <button className="flex items-center py-2 text-2xl font-bold transition-all rounded-full md:px-8 hover:text-[#101010]/80">
-        <Link href="/">Pedro Felippe</Link>
+      <button className="flex items-center py-2 text-2xl font-bold transition-all rounded-full md:px-8 hover:text-gray-300">
+        <Link href="/" className="text-2xl tracking-tighter text-bold">
+          pedrofelippe.
+        </Link>
       </button>
 
-      <motion.ul className="flex gap-2">
-        <Link href="https://github.com/pefelippe">
-          <motion.li
-            className="p-4 transition-all rounded-full cursor-pointer hover:bg-gray-900/10"
-            whileHover={{
-              scale: 1.05,
-              transition: { duration: 0.1 },
-            }}
-          >
-            <Github />
-          </motion.li>
-        </Link>
-
-        <Link href="https://www.linkedin.com/in/pedro-felippe/">
-          <motion.li
-            className="p-4 transition-all rounded-full cursor-pointer hover:bg-gray-900/10"
-            whileHover={{
-              scale: 1.05,
-              transition: { duration: 0.1 },
-            }}
-          >
-            <Linkedin />
-          </motion.li>
-        </Link>
-      </motion.ul>
+      <Link
+        href="/blog"
+        className="text-lg font-medium transition-all hover:text-gray-300"
+      >
+        Blog
+      </Link>
     </motion.header>
   );
 };

@@ -6,15 +6,15 @@ import AboutSection from "./about";
 
 export default function Home() {
   return (
-    <motion.div className="flex flex-col w-full h-full ">
-      <section className="flex min-h-screen bg-[#fefefe]">
+    <motion.div className="flex flex-col w-full h-full my-20 divider-x">
+      <section className="flex py-20 md:py-32">
         <HeroSection />
       </section>
-      {/* <section className="flex min-h-screen bg-lime-300 ">
-        <BlogSection />
-      </section>
-      <section className="flex min-h-screen bg-[#fefefe]">
+      <section className="flex ">
         <AboutSection />
+      </section>
+      {/* <section className="flex min-h-screen bg-[#62cf87] ">
+        <BlogSection />
       </section> */}
     </motion.div>
   );

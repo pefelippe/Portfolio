@@ -11,7 +11,7 @@ import { ThemeProvider } from "../src/components/theme-provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  text-[#101010] flex flex-col">
+    <motion.div className="min-w-[400px] h-full overflow-hidden scroll-smooth font-poppins min-h-screen  text-[#101010] bg-gray-50  flex flex-col">
       <Head>
         <title>Pedro Felippe | Full Stack Development</title>
         <meta name="description" content="Portfolio" />
@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <Header />
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </motion.div>
   );

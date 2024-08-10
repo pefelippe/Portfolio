@@ -10,7 +10,7 @@ function AboutSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.25 }}
-      className="flex items-center justify-center w-full h-full mx-auto max-xl:flex-col mt-[10vh] divide-x"
+      className="flex items-center justify-center w-full h-full mx-auto max-lg:flex-col mt-[10vh] divide-x"
     >
       <motion.div className="w-full h-full min-h-[60vh] bg-zinc-900 items-center justify-center text-zinc-50 flex flex-col gap-3">
         <h1 className="tracking-tighter text-7xl text-bold u">blog.</h1>

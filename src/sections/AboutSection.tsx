@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { Github, GithubIcon, Linkedin } from "lucide-react";
-import Link from "next/link";
 import React from "react";
+import { FaLinkedin, FaGithub, FaBlog } from "react-icons/fa"; // Importando ícones
 
 function AboutSection() {
   return (
@@ -9,63 +8,43 @@ function AboutSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, delay: 0.5 }}
-      className="flex items-center justify-center w-full h-full gap-8 px-6 mx-auto max-w-7xl xl:gap-16 max-xl:flex-col"
+      className="flex items-start justify-start gap-2  mx-auto flex-col w-full h-full text-left"
     >
       <motion.img
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.75, delay: 1 }}
         src="/assets/avatar-pdr.png"
-        className="object-cover w-full max-w-[10rem] rounded-full xl:rounded-md shadow xl:h-full xl:max-w-none"
+        className="w-40 h-40 rounded-full bg-accent overflow-hidden shadow-lg"
       />
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.75, delay: 1 }}
-        className="flex flex-col max-w-sm xl:max-w-xl gap-8 text-lg xl:text-2xl leading-[1.2] tracking-normal text-center xl:text-left"
-      >
-        <span>
-          Since 2020, I have been coding digital solutions. Impacted millions of
-          users with Web Applications, Websites, E-commerce Platforms, PWAs, and
-          Mobile Apps.{" "}
-        </span>
-        <span>
-          Playing a pivotal role in the efficiency of many companies, I helped
-          increase their revenue. I specialize in Frontend development, focusing
-          on web standards, UX, performance, accessibility, security, and
-          analytics.
-        </span>
-        <span>
-          I also work on the Backend with APIs, cloud services, and CI/CD
-          pipelines. I currently exploring AI, creating content and open source,
-          and mentoring developers.
-        </span>
-        <motion.ul className="flex gap-2">
-          <Link href="https://github.com/pefelippe">
-            <motion.li
-              className="p-4 text-white transition-all bg-gray-900 rounded-sm cursor-pointer hover:bg-gray-900/90"
-              whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.1 },
-              }}
-            >
-              <Github />
-            </motion.li>
-          </Link>
+      <h2 className="text-3xl font-bold  mt-4">Pedro Felippe</h2>
+      <p className="text-lg text-gray-600">
+        Full Stack Developer from Brazil.
+      </p>{" "}
+      <div className="flex gap-6 mt-2">
+        <a
+          href="https://www.linkedin.com/in/pedro-felippe/"
+          className="flex items-center text-gray-800 hover:text-blue-600 transition-colors"
+        >
+          <FaLinkedin className="text-2xl" />
+        </a>
 
-          <Link href="https://www.linkedin.com/in/pedro-felippe/">
-            <motion.li
-              className="p-4 text-white transition-all bg-gray-900 rounded-sm cursor-pointer hover:bg-gray-900/90"
-              whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.1 },
-              }}
-            >
-              <Linkedin />
-            </motion.li>
-          </Link>
-        </motion.ul>
-      </motion.div>
+        <a
+          href="https://github.com/pefelippe"
+          className="flex items-center text-gray-800 hover:text-black transition-colors"
+        >
+          <FaGithub className="text-2xl" />
+        </a>
+        {/* <a
+          href="#"
+          className="flex items-center text-gray-800 hover:text-green-600 transition-colors"
+        >
+          <FaBlog className="text-2xl" />
+        </a> */}
+      </div>
+      <motion.span className="mt-auto text-gray-500">
+        ©2024 Pedro Felippe
+      </motion.span>
     </motion.div>
   );
 }

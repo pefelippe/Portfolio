@@ -23,7 +23,7 @@ const Header = () => {
           target="_blank"
           className="flex items-center text-gray-800 hover:text-blue-600 transition-colors"
         >
-          <FaLinkedin className="text-2xl" />
+          <FaLinkedin className="text-2xl" /> 
         </Link>
         <Link
           href="https://github.com/pefelippe"

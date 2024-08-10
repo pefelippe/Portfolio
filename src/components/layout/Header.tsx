@@ -23,7 +23,7 @@ const Header = () => {
           target="_blank"
           className="flex items-center text-gray-800 hover:text-blue-600 transition-colors"
         >
-          <FaLinkedin className="text-2xl" /> 
+          <FaLinkedin className="text-2xl" />
         </Link>
         <Link
           href="https://github.com/pefelippe"
@@ -32,8 +32,7 @@ const Header = () => {
           <FaGithub className="text-2xl" />
         </Link>
         <Link
-          href="#"
-          target="_blank"
+          href="/blog"
           className="flex items-center text-gray-800 hover:text-green-600 transition-colors"
         >
           <FaBlog className="text-2xl" />

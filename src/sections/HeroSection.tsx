@@ -22,7 +22,12 @@ function HeroSection() {
           <span className="text-indigo-500">.</span>
         </motion.span>
 
-        <motion.span className="text-lg md:text-xl font-medium mb-0 text-[#8c929a]">
+        <motion.span
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="text-lg md:text-xl font-medium mb-0 text-[#8c929a] lg:max-w-lg lg:text-center"
+        >
           Check out my personal work below, and get in touch if you'd like to
           work together. 👇
         </motion.span>

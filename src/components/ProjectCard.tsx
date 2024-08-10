@@ -34,7 +34,7 @@ function ProjectCard({
       onMouseLeave={() => setIsHovered(false)}
     >
       <Link
-      
+        target="_blank"
         href={link}
         className="relative shadow overflow-hidden w-full h-full rounded-2xl border-2 hover:border-blue/90"
       >

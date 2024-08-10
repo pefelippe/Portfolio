@@ -26,7 +26,7 @@ const Header = () => {
           <FaLinkedin className="text-2xl" />
         </Link>
         <Link
-          href="https://github.com/seu-perfil"
+          href="https://github.com/pefelippe"
           className="flex items-center text-gray-800 hover:text-black transition-colors"
         >
           <FaGithub className="text-2xl" />

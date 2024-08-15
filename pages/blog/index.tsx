@@ -26,7 +26,6 @@ export default function Blog() {
     <motion.div
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.75 }}
       className="flex w-full mt-20 min-h-screen flex-col max-w-3xl mx-auto"
     >
       <FeaturedPost post={featuredPost} />

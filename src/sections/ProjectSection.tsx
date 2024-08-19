@@ -6,9 +6,10 @@ function Projects() {
   return (
     <motion.div
       id="projects-container"
-      className="flex flex-col items-center justify-center w-full gap-8 min-h-fit"
+      className="flex flex-col items-start justify-center w-full gap-8 min-h-fit"
     >
-      <div className="grid items-start w-full max-w-5xl gap-2 xl:grid-cols-2">
+      <h2 className="text-2xl font-bold tracking-tighter">Projects</h2>
+      <div className="grid items-start w-full gap-2 xl:grid-cols-2">
         {projects?.map((proj, index) => (
           <motion.div
             key={proj.id}

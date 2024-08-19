@@ -37,7 +37,7 @@ function ProjectCard({
       <Link
         target="_blank"
         href={link}
-        className="relative w-full h-full overflow-hidden border-2 shadow rounded-xl"
+        className="relative w-full h-full overflow-hidden border-2 shadow rounded-xl border-gray-100/10"
       >
         <motion.img
           whileHover={{ scale: 1.05 }}

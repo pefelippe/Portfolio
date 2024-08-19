@@ -8,7 +8,7 @@ function Projects() {
       id="projects-container"
       className="flex flex-col items-start justify-center w-full gap-8 min-h-fit"
     >
-      <div className="grid items-start w-full gap-2 xl:grid-cols-2">
+      <div className="grid items-start w-full gap-2 xl:grid-cols-3">
         {projects?.map((proj, index) => (
           <motion.div
             key={proj.id}

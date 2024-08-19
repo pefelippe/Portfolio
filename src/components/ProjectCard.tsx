@@ -43,14 +43,14 @@ function ProjectCard({
           whileHover={{ scale: 1.05 }}
           src={imgUrl}
           alt="card image"
-          className={`overflow-hidden object-cover w-full h-full min-h-[350px] ${
+          className={`overflow-hidden object-cover w-full h-full min-h-[250px] ${
             isHovered ? "blur-sm" : ""
           }`}
         />
         {isHovered && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-10 text-white bg-black bg-opacity-70">
-            <p className="text-2xl font-bold underline">{title}</p>
-            <p className="text-md font-medium text-[#fff]  max-w-sm text-center">
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 px-10 text-white bg-black bg-opacity-70">
+            <p className="text-lg font-bold underline">{title}</p>
+            <p className="text-sm font-medium text-[#fff]  max-w-md text-center">
               {description}
             </p>
           </div>

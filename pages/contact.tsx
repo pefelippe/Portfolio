@@ -10,7 +10,7 @@ export default function Contact() {
       className="mt-20 px-4 py-8 max-w-6xl mx-auto w-full"
     >
       <h1 className="text-4xl font-bold mb-4">Get in touch</h1>
-      <p className="text-md mb-6 text-[#888]">I don't bite. Let's chat.</p>
+      <p className="text-md mb-6 text-[#888]">I dont bite. Lets chat.</p>
       <MessageForm />
     </motion.div>
   );

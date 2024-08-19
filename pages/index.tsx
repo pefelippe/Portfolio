@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <motion.div
       className="flex flex-col  w-full  mx-auto max-w-6xl 
-     px-6 py-24 mt-24 gap-y-12 lg:gap-y-16"
+     px-6 gap-y-12 lg:gap-y-16"
     >
       <HeroSection />
     </motion.div>

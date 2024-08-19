@@ -18,35 +18,18 @@ const Header = () => {
     >
       <div className="flex mx-auto items-center justify-between w-full px-6 pt-5 pb-5 max-w-6xl">
         <button className="flex items-center text-2xl font-bold transition-all rounded-full hover:text-gray-300">
-          <Link href="/" className="text-xl tracking-tighter text-bold">
+          <Link href="/" className="text-2xl tracking-tighter text-bold">
             pedrofelippe.
           </Link>
         </button>
 
         <div className="flex gap-6 items-center">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          <Link
+            href="/contact"
+            className="font-semibold tracking-tighter hover:text-gray-300 transition-all"
           >
-            <Link
-              href="https://www.linkedin.com/in/pedro-felippe/"
-              target="_blank"
-              className="flex items-center text-gray-800 dark:text-gray-200"
-            >
-              <FaLinkedin className="text-2xl" />
-            </Link>
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          >
-            <Link
-              href="https://github.com/pefelippe"
-              className="flex items-center transition-colors text-gray-800 dark:text-gray-200"
-            >
-              <FaGithub className="text-2xl" />
-            </Link>
-          </motion.div>
+            Contact
+          </Link>
           <motion.button
             onClick={toggleColor}
             className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"

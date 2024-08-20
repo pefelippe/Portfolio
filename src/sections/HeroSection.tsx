@@ -7,14 +7,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function HeroSection() {
   return (
     <motion.div
-      className="flex items-center justify-center w-full mx-auto min-h-screen px-4 sm:px-6 lg:px-8"
+      className="flex items-center justify-center w-full mx-auto "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl gap-8 lg:gap-16 w-full">
+      <div className="flex flex-col lg:flex-row items-center justify-start  gap-8 lg:gap-16 w-full">
         <motion.div
-          className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80"
+          className="relative w-48 h-48 sm:w-64 sm:h-64 "
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -34,7 +34,7 @@ function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <motion.p
-            className="text-xl sm:text-2xl font-normal text-gray-600 dark:text-[#a8a8a8] transition-colors duration-300"
+            className="text-xl sm:text-xl font-normal text-gray-600 dark:text-[#a8a8a8] transition-colors duration-300"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -63,18 +63,18 @@ function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            <Link href="/projects">
+            <Link href="/about">
               <motion.button
-                className="px-6 py-3 bg-indigo-600 font-semibold text-white rounded-3xl shadow-md hover:bg-indigo-700 transition-colors duration-300 w-full  "
+                className="px-6 py-3 bg-indigo-600 font-semibold text-white rounded-3xl shadow-md hover:bg-indigo-700 transition-colors duration-300 w-full  px-9"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                View My Projects
+                About Me
               </motion.button>
             </Link>
             <Link href="/contact">
               <motion.button
-                className="px-6 py-3 bg-gray-200 font-semibold text-gray-800 dark:bg-gray-700 rounded-3xl dark:text-white shadow-md hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300 w-full sm:w-auto"
+                className=" py-3 font-semibold text-gray-800  rounded-3xl dark:text-white shadow-md  transition-colors duration-300 w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

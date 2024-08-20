@@ -4,13 +4,22 @@ import MessageForm from "../src/components/MessageForm";
 export default function Contact() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.75 }}
-      className="mt-20 px-4 py-8 max-w-6xl mx-auto w-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-16"
     >
-      <h1 className="text-4xl font-bold mb-4">Get in touch</h1>
-      <p className="text-md mb-6 text-[#888]">I dont bite. Lets chat.</p>
+      <motion.div
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.8 }}
+        className="text-center mb-6"
+      >
+        <h1 className="text-5xl font-bold mb-4 text-white  ">Get in touch</h1>
+        <p className="text-xl text-gray-400">
+          I don't bite. Let's chat about your next big idea.
+        </p>
+      </motion.div>
       <MessageForm />
     </motion.div>
   );

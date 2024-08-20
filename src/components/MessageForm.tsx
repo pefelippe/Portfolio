@@ -57,43 +57,44 @@ export default function MessageForm() {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.75, delay: 0.25 }}
-      className="flex flex-col items-start w-full  gap-6 text-center rounded-md h-fit dark:text-white"
+      transition={{ duration: 0.6 }}
+      className="w-full max-w-md mx-auto bg-[#141418] p-6 rounded-3xl shadow-xl"
     >
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col w-full gap-4"
-      >
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          <Input
-            {...register("firstName", { required: true, maxLength: 50 })}
-            id="first-name"
-            placeholder="Enter your name"
-            className="p-3 w-full border-none dark:bg-[#202020] py-6 rounded"
-          />
-          <Input
-            {...register("email", { required: true, maxLength: 50 })}
-            id="email"
-            placeholder="Enter your email"
-            type="email"
-            className="p-3 w-full border-none dark:bg-[#202020] py-6 rounded"
-          />
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <div className="grid grid-cols-1 gap-4">
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+            <Input
+              {...register("firstName", { required: true, maxLength: 50 })}
+              placeholder="Your name"
+              className="w-full bg-[#1c1c20] border-[#2a2a2e] text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+            />
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+            <Input
+              {...register("email", { required: true, maxLength: 50 })}
+              type="email"
+              placeholder="Your email"
+              className="w-full bg-[#1c1c20] border-[#2a2a2e] text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+            />
+          </motion.div>
         </div>
-        <Textarea
-          {...register("message", { required: true, maxLength: 500 })}
-          id="message"
-          placeholder="Message"
-          className="p-3 w-full border-none dark:bg-[#202020] min-h-[250px] rounded"
-        />
-        <Button
-          type="submit"
-          className="text-center p-6 px-14 bg-white w-full mx-auto rounded transition-all 
-          font-semibold text-base  tracking-[1px] focus:outline-none "
-        >
-          {isLoading ? "Sending..." : "send message"}
-        </Button>
+        <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
+          <Textarea
+            {...register("message", { required: true, maxLength: 500 })}
+            placeholder="Your message"
+            className="w-full bg-[#1c1c20] border-[#2a2a2e] text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 min-h-[150px]"
+          />
+        </motion.div>
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+          <Button
+            type="submit"
+            className="w-full bg-blue-600 mt-5 hover:bg-blue-700 bg-white font-semibold py-3 px-6 rounded-3xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-lg"
+          >
+            {isLoading ? "Sending..." : "Send Message"}
+          </Button>
+        </motion.div>
       </form>
     </motion.div>
   );

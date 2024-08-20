@@ -11,19 +11,19 @@ function FeaturedProjectsSection() {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.8, delay: 1.5 }}
       className=" "
     >
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-4xl font-bold mb-2">Featured Projects</h2>
+        <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
         <Link
           href="/projects"
-          className="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 hover:text-gray-300 underline"
+          className="inline-block  text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 hover:text-gray-100 underline"
         >
           View All Projects
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
         {featuredProjects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

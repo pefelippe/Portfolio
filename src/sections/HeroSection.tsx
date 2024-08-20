@@ -13,7 +13,7 @@ function HeroSection() {
       transition={{ duration: 1 }}
     >
       <div className="flex flex-col lg:flex-row items-center justify-start  gap-8 lg:gap-16 w-full">
-        {/* <motion.div
+        <motion.div
           className="relative w-48 h-48 sm:w-64 sm:h-64 "
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -25,7 +25,7 @@ function HeroSection() {
             fill
             className="rounded-full z-10 shadow-2xl object-cover"
           />
-        </motion.div> */}
+        </motion.div>
 
         <motion.div
           className="flex flex-col items-center lg:items-start text-center lg:text-start gap-4 lg:gap-6 max-w-3xl"
@@ -82,8 +82,6 @@ function HeroSection() {
               </motion.button>
             </Link>
           </motion.div>
-
-          {/* Social media links can be uncommented and added here if needed */}
         </motion.div>
       </div>
     </motion.div>

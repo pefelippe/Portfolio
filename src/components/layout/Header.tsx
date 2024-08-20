@@ -20,10 +20,14 @@ const Header = () => {
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 1 }}
-        className="fixed flex w-full bg-[#fefefe] dark:bg-[#09090b] transition-colors duration-300 border-b border-gray-200 dark:border-gray-100/30 z-50 p-6 md:px-12"
+        className="fixed flex w-full bg-[#fefefe] dark:bg-[#09090b] transition-colors duration-300 py-8
+         border-gray-200 dark:border-gray-100/30 z-30 p-6 md:px-12"
       >
-        <div className="flex mx-auto items-center justify-between w-full  max-w-6xl ">
-          <Link href="/" className="text-2xl tracking-tighter font-bold">
+        <div className="flex mx-auto items-center justify-between w-full ">
+          <Link
+            href="/"
+            className="text-2xl tracking-tighter font-bold p-3 hover:bg-slate-100/10 rounded-3xl"
+          >
             pedrofelippe.
           </Link>
 

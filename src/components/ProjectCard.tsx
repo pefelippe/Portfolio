@@ -30,17 +30,17 @@ function ProjectCard({
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      className="flex flex-col bg-[#141418] rounded-xl shadow-lg overflow-hidden h-full"
+      className="flex flex-col bg-[#141418] rounded-xl shadow-lg overflow-hidden h-full "
     >
       <div
-        className="relative w-full h-48 overflow-hidden"
+        className="relative w-full overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <motion.img
           src={imgUrl}
           alt={title}
-          className={`w-full h-full object-cover transition-all duration-300 ${
+          className={`w-full h-full object-cover transition-all duration-300 m${
             isHovered ? "scale-110 blur-sm" : ""
           }`}
         />

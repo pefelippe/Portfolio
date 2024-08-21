@@ -12,8 +12,8 @@ function HeroSection() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col lg:flex-row items-center justify-start  gap-8 lg:gap-16 w-full">
-        <motion.div
+      <div className="flex flex-col lg:flex-row items-center justify-start  gap-8 lg:gap-24 w-full">
+        {/* <motion.div
           className="relative w-48 h-48 sm:w-64 sm:h-64 "
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -25,7 +25,7 @@ function HeroSection() {
             fill
             className="rounded-full z-10 shadow-2xl object-cover"
           />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="flex flex-col items-center lg:items-start text-center lg:text-start gap-4 lg:gap-6 max-w-3xl"
@@ -65,7 +65,8 @@ function HeroSection() {
           >
             <Link href="/about">
               <motion.button
-                className="px-6 py-3 bg-indigo-600 font-semibold text-white rounded-3xl shadow-md hover:bg-indigo-700 transition-colors duration-300 w-full  px-9"
+                className="py-3 bg-indigo-600 font-semibold text-white rounded-3xl shadow-md
+                 hover:bg-indigo-700 transition-colors duration-300 w-full  px-9"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -74,7 +75,8 @@ function HeroSection() {
             </Link>
             <Link href="/contact">
               <motion.button
-                className=" py-3 font-semibold text-gray-800  rounded-3xl dark:text-white shadow-md  transition-colors duration-300 w-full sm:w-auto"
+                className=" py-3 font-semibold  bg-indigo-100 text-indigo-600 rounded-3xl px-9
+                 shadow-md  transition-colors duration-300 w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

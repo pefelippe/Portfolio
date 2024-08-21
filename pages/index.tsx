@@ -5,10 +5,7 @@ import FeaturedProjectsSection from "../src/sections/FeaturedProjectsSection";
 
 export default function Home() {
   return (
-    <motion.div
-      className="flex flex-col  w-full  mx-auto p-6 md:px-12 max-w-7xl  mt-32 gap-32
-    "
-    >
+    <motion.div className="flex flex-col  w-full  mx-auto max-sm:p-6 max-w-6xl  mt-32 gap-32 pt-16">
       <HeroSection />
       <FeaturedProjectsSection />
     </motion.div>

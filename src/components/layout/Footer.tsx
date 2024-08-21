@@ -8,9 +8,13 @@ function Footer() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1 }}
-      className="dark:bg-[#121212] w-full border my-10 max-w-6xl mx-auto rounded-3xl  items-center flex flex-col p-4 gap-4 border-t border-gray-100/10"
+      className="border-t w-full flex mt-16  text-center justify-center max-md:p-6  max-w-6xl mx-auto items-center py-6 sm:py-10 gap-4 border-gray-100/10"
     >
-      <div className=" flex gap-6 items-center">
+      <p className=" gap-2 text-sm sm:text-md text-gray-600 dark:text-gray-400">
+        Pedro Felippe &copy; {new Date().getFullYear()}
+      </p>
+
+      {/* <div className="flex gap-4 sm:gap-6 items-center">
         <motion.div
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -35,7 +39,7 @@ function Footer() {
             <FaGithub className="text-2xl" />
           </Link>
         </motion.div>
-      </div>
+      </div> */}
     </motion.footer>
   );
 }

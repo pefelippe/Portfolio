@@ -18,7 +18,8 @@ function FeaturedProjectsSection() {
         <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
         <Link
           href="/projects"
-          className="inline-block  text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 hover:text-gray-100 underline"
+          className="inline-block hover:text-gray-300  text-sm text-gray-400
+           font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300  underline"
         >
           View All Projects
         </Link>

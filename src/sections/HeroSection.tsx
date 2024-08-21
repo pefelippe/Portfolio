@@ -13,7 +13,7 @@ function HeroSection() {
     >
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full max-w-7xl">
         <motion.div
-          className="flex flex-col items-start text-start gap-6 max-w-xl"
+          className="flex flex-col items-center text-center gap-6 max-w-xl mx-auto"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}

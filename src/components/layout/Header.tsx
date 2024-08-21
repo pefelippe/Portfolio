@@ -4,7 +4,14 @@ import { useTheme } from "next-themes";
 import { useState } from "react";
 import { ModeToggle } from "../ui/mode-toggle";
 import { Menu } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaHome,
+  FaUser,
+  FaEnvelope,
+  FaCode,
+} from "react-icons/fa";
 
 const Header = () => {
   const { theme } = useTheme();
@@ -20,8 +27,8 @@ const Header = () => {
         initial={{ opacity: 0, y: -25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75, delay: 1 }}
-        className="fixed flex w-full bg-[#fefefe] dark:bg-[#09090b] transition-colors duration-300 py-5  left-0 right-0 mx-auto
-         border-gray-200 dark:border-gray-100/30 z-30 max-md:p-6  "
+        className="fixed flex w-full bg-[#fefefe] dark:bg-[#09090b] transition-colors duration-300 py-5 left-0 right-0 mx-auto
+         border-gray-200 dark:border-gray-100/30 z-40 max-md:p-6"
       >
         <div className="flex mx-auto items-center justify-between w-full max-w-screen-md">
           <Link
@@ -48,7 +55,7 @@ const Header = () => {
       {/* Overlay */}
       {isDrawerOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-20"
+          className="fixed inset-0 bg-black bg-opacity-50 z-30"
           onClick={toggleDrawer}
         />
       )}
@@ -58,54 +65,60 @@ const Header = () => {
         initial={{ x: "100%" }}
         animate={{ x: isDrawerOpen ? 0 : "100%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="fixed top-0 right-0 h-full w-full max-w-[500px] bg-white dark:bg-[#141418] shadow-lg z-30 transition-colors duration-300"
+        className="fixed top-0 right-0 h-full w-full max-w-[500px] bg-white dark:bg-[#141418] shadow-lg z-40 transition-colors duration-300 flex flex-col"
       >
-        <div className="flex justify-end m-6">
-          <button onClick={toggleDrawer} className="text-2xl font-bold">
+        <div className="flex justify-end p-6">
+          <motion.button
+            onClick={toggleDrawer}
+            className="text-2xl font-bold hover:text-gray-600 dark:hover:text-gray-300"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
             ✕
-          </button>
+          </motion.button>
         </div>
-        <nav className="flex flex-col items-center justify-start h-full pt-[45%]">
+        <nav className="flex flex-col items-center justify-center flex-grow px-6 py-8 space-y-8">
           {[
-            { href: "/about", label: "About" },
-            { href: "/contact", label: "Contact" },
+            { href: "/", label: "Home", icon: FaHome },
+            { href: "/about", label: "About", icon: FaUser },
+            { href: "/projects", label: "Projects", icon: FaCode },
+            { href: "/contact", label: "Contact", icon: FaEnvelope },
           ].map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="w-full py-5 flex items-center justify-center font-medium text-3xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300"
+              className="w-full py-3 flex items-center justify-center space-x-4 text-xl font-medium hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
               onClick={toggleDrawer}
             >
-              {item.label}
+              <item.icon className="w-6 h-6" />
+              <span>{item.label}</span>
             </Link>
           ))}
-          <div className="absolute bottom-4 flex gap-6 items-center">
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              <Link
-                href="https://www.linkedin.com/in/pedro-felippe/"
-                target="_blank"
-                className="flex items-center justify-center w-14 h-14 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
-              >
-                <FaLinkedin className="text-3xl" />
-              </Link>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
-              <Link
-                href="https://github.com/pefelippe"
-                target="_blank"
-                className="flex items-center justify-center w-14 h-14 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-300"
-              >
-                <FaGithub className="text-3xl" />
-              </Link>
-            </motion.div>
-          </div>
         </nav>
+        <div className="p-6 border-t border-gray-200 dark:border-gray-700">
+          <div className="flex justify-center space-x-6">
+            <motion.a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white"
+            >
+              <FaGithub className="w-8 h-8" />
+            </motion.a>
+            <motion.a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white"
+            >
+              <FaLinkedin className="w-8 h-8" />
+            </motion.a>
+          </div>
+        </div>
       </motion.div>
     </>
   );

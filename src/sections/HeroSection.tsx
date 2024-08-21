@@ -13,13 +13,13 @@ function HeroSection() {
     >
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full max-w-7xl">
         <motion.div
-          className="flex flex-col items-start text-start gap-6 max-w-2xl"
+          className="flex flex-col items-start text-start gap-6 max-w-xl"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <motion.div
-            className="flex items-center gap-4 mb-4"
+            className="flex items-center gap-4 mb-3"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
@@ -27,8 +27,8 @@ function HeroSection() {
             <Image
               src="/assets/avatar-pdr.png"
               alt="Pedro's profile icon"
-              width={128}
-              height={128}
+              width={110}
+              height={110}
               className="rounded-full border-2 border-blue-500 shadow-md"
             />
           </motion.div>
@@ -39,17 +39,16 @@ function HeroSection() {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             Building <span className="text-blue-600">Cool Web Apps</span> from
-            Brazil 🇧🇷
+            Brazil.
           </motion.h1>
 
           <motion.p
-            className="text-lg sm:text-xl text-gray-600 dark:text-gray-400"
+            className="text-lg  text-gray-600 dark:text-gray-400 max-w-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            Web & Mobile Developer from Fortaleza, Ceará. Creating impactful
-            solutions since 2020.
+            Web & Mobile Developer creating impactful solutions since 2020.
           </motion.p>
 
           <motion.div

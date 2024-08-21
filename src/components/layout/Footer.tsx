@@ -14,19 +14,30 @@ function Footer() {
         Pedro Felippe &copy; {new Date().getFullYear()}
       </p>
 
-      <motion.div
-        className="flex gap-4 "
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 1.2 }}
-      >
-        <Link href="https://github.com/pefelippe" target="_blank">
-          <FaGithub className="text-2xl text-gray-600 dark:text-gray-400 hover:text-gray-800" />
-        </Link>
-        <Link href="https://www.linkedin.com/in/pedro-felippe/" target="_blank">
-          <FaLinkedin className="text-2xl text-gray-600 dark:text-gray-400 hover:text-blue-600" />
-        </Link>
-      </motion.div>
+      <div className=" border-gray-200 dark:border-gray-700">
+        <div className="flex justify-center space-x-4">
+          <motion.a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white"
+          >
+            <FaGithub className="w-6 h-6" />
+          </motion.a>
+          <motion.a
+            href="https://linkedin.com/in/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white"
+          >
+            <FaLinkedin className="w-6 h-6" />
+          </motion.a>
+        </div>
+      </div>
     </motion.footer>
   );
 }

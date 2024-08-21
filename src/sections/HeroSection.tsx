@@ -2,85 +2,82 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function HeroSection() {
   return (
     <motion.div
-      className="flex items-center justify-center w-full mx-auto "
+      className="flex items-center justify-center w-full mx-auto  py-16"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col lg:flex-row items-center justify-start  gap-8 lg:gap-24 w-full">
-        {/* <motion.div
-          className="relative w-48 h-48 sm:w-64 sm:h-64 "
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <Image
-            src="/assets/pedrof.jpg"
-            alt="Pedro's profile picture"
-            fill
-            className="rounded-full z-10 shadow-2xl object-cover"
-          />
-        </motion.div> */}
-
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full max-w-7xl">
         <motion.div
-          className="flex flex-col items-center lg:items-start text-center lg:text-start gap-4 lg:gap-6 max-w-3xl"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          className="flex flex-col items-start text-start gap-6 max-w-2xl"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <motion.p
-            className="text-xl sm:text-xl font-normal text-gray-600 dark:text-[#a8a8a8] transition-colors duration-300"
-            initial={{ opacity: 0, y: 10 }}
+          <motion.div
+            className="flex items-center gap-4 mb-4"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            👋 Hey, I'm Pedro Felippe.
-          </motion.p>
+            <Image
+              src="/assets/avatar-pdr.png"
+              alt="Pedro's profile icon"
+              width={128}
+              height={128}
+              className="rounded-full border-2 border-blue-500 shadow-md"
+            />
+          </motion.div>
           <motion.h1
-            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight lg:leading-[1.2] text-gray-800 dark:text-white transition-colors duration-300"
-            initial={{ opacity: 0, y: 10 }}
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-800 dark:text-white"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            Web Developer from Brazil building{" "}
-            <span className="text-indigo-600 dark:text-indigo-600 transition-colors duration-300">
-              pretty cool
-            </span>{" "}
-            web applications
-            <span className="text-indigo-600 dark:text-indigo-600 transition-colors duration-300">
-              .
-            </span>
+            Building <span className="text-blue-600">Cool Web Apps</span> from
+            Brazil 🇧🇷
           </motion.h1>
 
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 mt-6 w-full"
-            initial={{ opacity: 0, y: 10 }}
+          <motion.p
+            className="text-lg sm:text-xl text-gray-600 dark:text-gray-400"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1 }}
           >
-            <Link href="/about">
+            Web & Mobile Developer from Fortaleza, Ceará. Creating impactful
+            solutions since 2020.
+          </motion.p>
+
+          <motion.div
+            className="flex flex-col md:flex-row gap-4 mt-1 w-full md:w-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1.2 }}
+          >
+            <Link href="/about" passHref className="w-full md:w-auto">
               <motion.button
-                className="py-3 bg-indigo-600 font-semibold text-white rounded-3xl shadow-md
-                 hover:bg-indigo-700 transition-colors duration-300 w-full  px-9"
+                className="w-full md:w-auto bg-blue px-6 py-3 md:px-9 bg-blue-600
+                 text-white rounded-full font-semibold text-lg 
+                 shadow-lg hover:bg-blue-700 transition duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 About Me
               </motion.button>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" passHref className="w-full md:w-auto">
               <motion.button
-                className=" py-3 font-semibold  bg-indigo-100 text-indigo-600 rounded-3xl px-9
-                 shadow-md  transition-colors duration-300 w-full sm:w-auto"
+                className="w-full md:w-auto px-6 py-3 md:px-9  bg-gray-200 text-gray-800 
+                rounded-full font-semibold text-lg shadow-lg hover:bg-gray-300 
+                transition duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Contact Me
+                Contact
               </motion.button>
             </Link>
           </motion.div>

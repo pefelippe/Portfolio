@@ -30,7 +30,7 @@ const Header = () => {
         className="fixed flex w-full bg-[#fefefe] dark:bg-[#09090b] transition-colors duration-300 py-5 left-0 right-0 mx-auto
          border-gray-200 dark:border-gray-100/30 z-40 max-md:p-6"
       >
-        <div className="flex mx-auto items-center justify-between w-full max-w-screen-md">
+        <div className="flex mx-auto items-center justify-between w-full max-w-screen-lg">
           <Link
             href="/"
             className="text-2xl tracking-tighter font-bold hover:bg-slate-100/10 rounded-3xl"
@@ -65,7 +65,8 @@ const Header = () => {
         initial={{ x: "100%" }}
         animate={{ x: isDrawerOpen ? 0 : "100%" }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="fixed top-0 right-0 h-full w-full max-w-[500px] bg-white dark:bg-[#141418] shadow-lg z-40 transition-colors duration-300 flex flex-col"
+        className="fixed top-0 right-0 h-full w-full max-w-[500px] bg-white dark:bg-[#141418] shadow-lg
+         z-40 transition-colors duration-300 flex flex-col"
       >
         <div className="flex justify-end p-6">
           <motion.button

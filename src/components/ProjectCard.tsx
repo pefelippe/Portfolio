@@ -27,10 +27,15 @@ function ProjectCard({
 }: IProjectCard) {
   const [isHovered, setIsHovered] = useState(false);
 
+  const handleCardClick = () => {
+    window.open(link || repo, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      className="flex flex-col bg-[#141418] rounded-xl shadow-lg overflow-hidden h-full "
+      className="flex flex-col bg-[#141418] rounded-xl shadow-lg overflow-hidden h-full cursor-pointer"
+      onClick={handleCardClick}
     >
       <div
         className="relative w-full overflow-hidden"
@@ -40,7 +45,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt={title}
-          className={`w-full h-full object-cover transition-all duration-300 m${
+          className={`w-full h-72 object-cover transition-all duration-300 ${
             isHovered ? "scale-110 blur-sm" : ""
           }`}
         />
@@ -51,12 +56,10 @@ function ProjectCard({
         )}
       </div>
       <div className="p-4 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold mb-2 truncate text-white">
-          {title}
-        </h3>
+        <h3 className="text-xl font-semibold mb-2 text-white">{title}</h3>
         {stack.length > 0 && (
           <div className="flex flex-wrap gap-2 mb-4">
-            {stack.slice(0, 3).map((tech) => (
+            {stack.map((tech) => (
               <span
                 key={tech}
                 className="px-2 py-1 bg-gray-700 rounded-full text-xs text-white"
@@ -68,27 +71,37 @@ function ProjectCard({
         )}
         <div className="flex justify-between mt-auto">
           <Button
-            asChild
             variant="outline"
             size="sm"
             className="bg-gray-700 text-white hover:bg-gray-600"
+            onClick={(e) => {
+              e.stopPropagation();
+              window.open(link || repo, "_blank", "noopener,noreferrer");
+            }}
           >
-            <Link href={link || repo} target="_blank" rel="noopener noreferrer">
-              <Rocket className="mr-2 h-4 w-4" />
-              {link ? "Demo" : "Repo"}
-            </Link>
+            {link ? (
+              <>
+                <Rocket className="mr-2 h-4 w-4" /> Demo
+              </>
+            ) : (
+              <>
+                <GitHubLogoIcon className="mr-2 h-4 w-4" /> Repo
+              </>
+            )}
           </Button>
-          <Button
-            asChild
-            variant="outline"
-            size="sm"
-            className="bg-gray-700 text-white hover:bg-gray-600"
-          >
-            <Link href={repo} target="_blank" rel="noopener noreferrer">
-              <GitHubLogoIcon className="mr-2 h-4 w-4" />
-              Repo
-            </Link>
-          </Button>
+          {link && (
+            <Button
+              variant="outline"
+              size="sm"
+              className="bg-gray-700 text-white hover:bg-gray-600"
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(repo, "_blank", "noopener,noreferrer");
+              }}
+            >
+              <GitHubLogoIcon className="mr-2 h-4 w-4" /> Repo
+            </Button>
+          )}
         </div>
       </div>
     </motion.div>

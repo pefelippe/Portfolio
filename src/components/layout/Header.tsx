@@ -29,7 +29,7 @@ const Header = () => {
         transition={{ duration: 0.75, delay: 1 }}
         className="fixed flex w-full bg-[#09090b] 
         duration-300 py-5 left-0 right-0 mx-auto
-         border-gray-200 dark:border-gray-100/30 z-40 max-md:p-6 max-w-screen-2xl  px-4 sm:px-6 lg:px-8"
+         border-gray-200 dark:border-gray-100/30 z-40 max-md:p-6  px-4 sm:px-6 lg:px-8"
       >
         <div className="flex mx-auto items-center justify-between w-full ">
           <Link

@@ -18,7 +18,7 @@ export default function Projects() {
   const [projects, setProjects] = useState<GitHubRepo[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [sortBy, setSortBy] = useState<"stars" | "recent">("stars");
-  const projectsPerPage = 4;
+  const projectsPerPage = 6;
 
   useEffect(() => {
     async function fetchProjects() {
@@ -54,7 +54,7 @@ export default function Projects() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="container mx-auto max-md:px-4 md:p-0 py-8 mt-24 max-w-screen-2xl min-h-screen"
+      className="container mx-auto max-md:px-4 md:p-0 py-8 px-4 sm:px-6 lg:px-8 mt-24 max-w-screen-2xl min-h-screen"
     >
       <h1 className="text-4xl font-bold mb-2">Projects</h1>
       <h2 className="text-xl text-gray-600 mb-4">
@@ -71,7 +71,7 @@ export default function Projects() {
           <option value="recent">Sort by Most Recent</option>
         </select>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-8">
         {currentProjects.map((project) => (
           <ProjectCard
             key={project.id}

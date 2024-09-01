@@ -38,14 +38,14 @@ function ProjectCard({
       onClick={handleCardClick}
     >
       <div
-        className="relative w-full overflow-hidden"
+        className="relative w-full overflow-hidden  "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <motion.img
           src={imgUrl}
           alt={title}
-          className={`w-full h-72 object-cover transition-all duration-300 ${
+          className={`w-full h-72 object-cover transition-all duration-300  ${
             isHovered ? "scale-110 blur-sm" : ""
           }`}
         />

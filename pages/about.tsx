@@ -10,7 +10,7 @@ export default function About() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75 }}
-      className="max-w-screen-lg mx-auto py-16 px-4 mt-20"
+      className="max-w-screen-2xl mx-auto py-16 px-4 mt-20"
     >
       <div className="flex flex-col md:flex-row items-start justify-between gap-8">
         <motion.div

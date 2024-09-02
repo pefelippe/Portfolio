@@ -7,9 +7,9 @@ const buttonData = [
   {
     text: "About me",
     href: "/about",
-    bgColor: "bg-gray-500",
+    bgColor: "bg-blue",
     textColor: "text-gray-100",
-    hoverBgColor: "hover:bg-gray-400",
+    hoverBgColor: "hover:bg-indigo-700",
     svgPath:
       "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
     delay: 1.5,
@@ -30,24 +30,29 @@ const buttonData = [
 function HeroSection() {
   return (
     <motion.div
-      className="flex flex-col items-start justify-center w-full mx-auto px-4 md:px-0 gap-8 "
+      className="flex flex-col items-center justify-center w-full mx-auto px-4 md:px-0 gap-4"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="max-w-full md:max-w-3xl text-left">
+      <div className="max-w-full md:max-w-3xl text-center">
         <motion.h1
-          className="text-4xl sm:text-6xl lg:text-7xl font-bold leading-tight text-gray-100 mb-6 md:mb-8"
-          initial={{ opacity: 0, y: 50 }}
+          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-100 mb-2"
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           Crafting{" "}
           <motion.span
             className="text-gray-300"
-            initial={{ opacity: 0, scale: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
+            transition={{
+              duration: 0.6,
+              delay: 0.4,
+              type: "spring",
+              stiffness: 200,
+            }}
           >
             Innovative Solutions
           </motion.span>{" "}
@@ -55,46 +60,52 @@ function HeroSection() {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-300 mb-8 md:mb-10 max-w-2xl"
-          initial={{ opacity: 0, y: 30 }}
+          className="text-md md:text-lg xl:text-xl text-gray-300 mb-5"
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Web & Mobile Developer transforming ideas into seamless digital
-          experiences since 2020.
+          Web & Mobile Developer transforming ideas into digital experiences
+          since 2020.
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-6 items-center justify-start w-full"
+          className="flex flex-col sm:flex-row gap-6 items-center justify-center w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 1.1 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
         >
           {buttonData.map(
             (
-              { text, href, bgColor, textColor, hoverBgColor, svgPath, delay },
+              { text, href, bgColor, textColor, hoverBgColor, svgPath },
               index,
             ) => (
-              <Link key={text} href={href} passHref>
-                <motion.button
-                  className={`w-[90vw] sm:w-auto px-8 py-3 md:py-4 rounded-lg font-semibold text-lg 
-                 shadow-lg transition duration-300 flex items-center justify-center
-                 ${bgColor} ${textColor} ${hoverBgColor}`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ duration: 0.5, delay: 1.3 + index * 0.2 }}
-                >
-                  {text}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-2"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
+              <motion.div
+                key={text}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 1 + index * 0.2 }}
+              >
+                <Link href={href} passHref>
+                  <motion.button
+                    className={`w-[90vw] sm:w-auto px-6 py-3 rounded-lg font-semibold text-lg 
+                  shadow-lg transition duration-300 flex items-center justify-center
+                  ${bgColor} ${textColor} ${hoverBgColor}`}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    <path fillRule="evenodd" d={svgPath} clipRule="evenodd" />
-                  </svg>
-                </motion.button>
-              </Link>
+                    {text}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 ml-2"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path fillRule="evenodd" d={svgPath} clipRule="evenodd" />
+                    </svg>
+                  </motion.button>
+                </Link>
+              </motion.div>
             ),
           )}
         </motion.div>

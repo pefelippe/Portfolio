@@ -45,7 +45,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt={title}
-          className={`w-full h-56 object-cover transition-all duration-300  ${
+          className={`w-full h-60 object-cover transition-all duration-300  ${
             isHovered ? "scale-110 blur-sm" : ""
           }`}
         />

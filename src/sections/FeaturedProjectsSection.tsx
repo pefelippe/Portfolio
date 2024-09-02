@@ -14,17 +14,19 @@ function FeaturedProjectsSection() {
       transition={{ duration: 0.8, delay: 1.5 }}
       className=" "
     >
-      {/* <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold mb-2">Featured Projects</h2>
+      <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold underline decoration-blue">
+          Featured Projects
+        </h2>
         <Link
           href="/projects"
           className="inline-block hover:text-gray-300  text-sm text-gray-400
-           font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300  underline"
+           font-semibold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300  "
         >
           View All Projects
         </Link>
-      </div> */}
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3  gap-6">
         {featuredProjects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

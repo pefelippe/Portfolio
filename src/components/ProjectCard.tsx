@@ -45,7 +45,7 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt={title}
-          className={`w-full h-72 object-cover transition-all duration-300  ${
+          className={`w-full h-56 object-cover transition-all duration-300  ${
             isHovered ? "scale-110 blur-sm" : ""
           }`}
         />
@@ -56,20 +56,20 @@ function ProjectCard({
         )}
       </div>
       <div className="p-4 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold mb-2 text-white">{title}</h3>
+        <h3 className="text-lg font-semibold mb-2 text-white">{title}</h3>
         {stack.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap gap-2 ">
             {stack.map((tech) => (
               <span
                 key={tech}
-                className="px-2 py-1 bg-gray-700 rounded-full text-xs text-white"
+                className="px-3 py-1 bg-gray-700 rounded-full text-xs text-white"
               >
                 {tech}
               </span>
             ))}
           </div>
         )}
-        <div className="flex justify-between mt-auto">
+        {/* <div className="flex justify-between mt-auto">
           <Button
             variant="outline"
             size="sm"
@@ -102,7 +102,7 @@ function ProjectCard({
               <GitHubLogoIcon className="mr-2 h-4 w-4" /> Repo
             </Button>
           )}
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

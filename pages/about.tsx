@@ -10,21 +10,21 @@ export default function About() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75 }}
-      className="max-w-screen-2xl mx-auto py-16 px-4 mt-20"
+      className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mt-[10vh]"
     >
-      <div className="flex flex-col md:flex-row items-start justify-between gap-8">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-24">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.75, delay: 0.5 }}
-          className="w-full md:w-1/3"
+          className=""
         >
           <Image
             src="/assets/pedrof.jpg"
             alt="Pedro Felippe"
-            width={300}
-            height={300}
-            className="rounded-lg shadow-lg"
+            width={400}
+            height={400}
+            className="rounded-3xl shadow-lg"
           />
         </motion.div>
 
@@ -32,7 +32,7 @@ export default function About() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.75 }}
-          className="w-full md:w-2/3"
+          className="w-full max-w-2xl"
         >
           <h1 className="text-4xl font-bold mb-4 text-white">About Me</h1>
           <p className="text-lg mb-4 text-gray-300">

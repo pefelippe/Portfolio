@@ -54,7 +54,7 @@ export default function Projects() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="container mx-auto max-md:px-4 md:p-0 py-8 px-4 sm:px-6 lg:px-8 mt-24 max-w-screen-2xl min-h-screen"
+      className="container mx-auto max-md:px-4 md:p-0 py-8 px-4 sm:px-6 lg:px-8 mt-24 max-w-7xl min-h-screen"
     >
       <h1 className="text-4xl font-bold mb-2">Projects</h1>
       <h2 className="text-xl text-gray-600 mb-4">

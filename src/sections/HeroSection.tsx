@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import Link from "next/link";
 import React from "react";
@@ -36,8 +37,13 @@ function HeroSection() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="max-w-full md:max-w-3xl text-center">
+        <motion.img
+          src="/assets/avatar-pdr.png"
+          alt="Pedro Felippe"
+          className="w-52 border-8 rounded-full mx-auto mb-4"
+        />
         <motion.h1
-          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-100 mb-2"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-100 mb-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -60,7 +66,7 @@ function HeroSection() {
         </motion.h1>
 
         <motion.p
-          className="text-md md:text-lg xl:text-xl text-gray-300 mb-5"
+          className="text-md md:text-lg xl:text-xl text-gray-300 mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}

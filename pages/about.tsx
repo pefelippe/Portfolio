@@ -10,21 +10,19 @@ export default function About() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75 }}
-      className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 mt-[10vh]"
+      className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 my-[20vh]"
     >
-      <div className="flex flex-col md:flex-row items-start justify-between gap-24">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-12 md:gap-24">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.75, delay: 0.5 }}
-          className=""
+          className="flex justify-center md:justify-start"
         >
-          <Image
+          <motion.img
             src="/assets/pedrof.jpg"
             alt="Pedro Felippe"
-            width={400}
-            height={400}
-            className="rounded-3xl shadow-lg"
+            className="rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
           />
         </motion.div>
 
@@ -75,21 +73,22 @@ export default function About() {
             </li>
           </ul>
 
-          {/* <h2 className="text-2xl font-bold mb-4">Skills</h2>
+          {/* Uncommented and Enhanced Skills Section */}
+          <h2 className="text-2xl font-bold mb-4 text-white">Skills</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
             {technologies.map((tech) => (
               <div key={tech.name} className="flex items-center">
                 <Image
                   src={tech.imgUrl}
                   alt={tech.name}
-                  width={24}
-                  height={24}
+                  width={32}
+                  height={32}
                   className="mr-2"
                 />
-                <span>{tech.name}</span>
+                <span className="text-white">{tech.name}</span>
               </div>
             ))}
-          </div> */}
+          </div>
 
           <h2 className="text-2xl font-bold mb-4 text-white">Education</h2>
           <p className="mb-6 text-gray-300">
@@ -105,7 +104,7 @@ export default function About() {
           </ul>
 
           <h2 className="text-2xl font-bold mb-4 text-white">Patents</h2>
-          <ul className="list-disc list-inside mb-6 text-gray-300">
+          <ul className="list-disc list-inside  text-gray-300">
             <li>Agent-based certificate management</li>
             <li>Blockchain-based certificate lifecycle management</li>
           </ul>

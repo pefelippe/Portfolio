@@ -15,7 +15,7 @@ function FeaturedProjectsSection() {
       className=" "
     >
       <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold underline decoration-blue">
+        <h2 className="text-3xl font-bold underline decoration-blue">
           Featured Projects
         </h2>
         <Link

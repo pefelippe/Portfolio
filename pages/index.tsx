@@ -6,11 +6,13 @@ import FeaturedProjectsSection from "../src/sections/FeaturedProjectsSection";
 export default function Home() {
   return (
     <motion.div
-      className="flex flex-col items-center min-h-[80vh] justify-center w-full mx-auto  mt-[20vh] gap-24 pb-24
-    px-4 sm:px-6 lg:px-8 max-w-7xl"
+      className="flex flex-col items-center min-h-screen justify-center w-full mx-auto
+       px-4 sm:px-6 lg:px-8"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75 }}
     >
       <HeroSection />
-      <FeaturedProjectsSection />
     </motion.div>
   );
 }

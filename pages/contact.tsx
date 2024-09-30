@@ -15,7 +15,9 @@ export default function Contact() {
         transition={{ delay: 0.2, duration: 0.8 }}
         className="text-center mb-6"
       >
-        <h1 className="text-5xl font-bold mb-4 text-white ">Get in touch</h1>
+        <h1 className="text-5xl font-bold mb-2 text-indigo-600 ">
+          Get in touch
+        </h1>
         <p className="text-xl text-gray-400">
           Let's chat about your next big idea.
         </p>

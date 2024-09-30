@@ -1,27 +1,24 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
-
 import Link from "next/link";
-import React from "react";
+import React from "react"; // Removed Typical import
 
 const buttonData = [
   {
-    text: "About me",
+    text: "About Me",
     href: "/about",
-    bgColor: "bg-blue",
-    textColor: "text-gray-100",
-    hoverBgColor: "hover:bg-indigo-700",
+    bgColor: "bg-blue-600",
+    textColor: "text-gray-600",
+    hoverBgColor: "hover:bg-blue-700",
     svgPath:
       "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
     delay: 1.5,
   },
-
   {
-    text: "Contact me",
+    text: "Contact",
     href: "/contact",
-    bgColor: "bg-gray-900",
+    bgColor: "bg-gray-800",
     textColor: "text-white",
-    hoverBgColor: "hover:bg-gray-800",
+    hoverBgColor: "hover:bg-gray-900",
     svgPath:
       "M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z",
     delay: 1.9,
@@ -31,48 +28,23 @@ const buttonData = [
 function HeroSection() {
   return (
     <motion.div
-      className="flex flex-col items-center justify-center w-full mx-auto px-4 md:px-0 gap-4"
+      className="flex flex-col items-center justify-center w-full mx-auto px gap-4 max-w-7xl"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="max-w-full md:max-w-3xl text-center">
-        <motion.img
-          src="/assets/avatar-pdr.png"
-          alt="Pedro Felippe"
-          className="w-52 border-8 rounded-full mx-auto mb-4"
-        />
-        <motion.h1
-          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-100 mb-6"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          Crafting{" "}
-          <motion.span
-            className="text-gray-300"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.6,
-              delay: 0.4,
-              type: "spring",
-              stiffness: 200,
-            }}
-          >
-            Innovative Solutions
-          </motion.span>{" "}
-          from Brazil.
-        </motion.h1>
+      <div className="max-w-full md:max-w-screen-2xl text-center">
+        <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 text-indigo-500 flex-wrap">
+          Crafting Innovative Solutions from Brazil.
+        </h1>
 
         <motion.p
-          className="text-md md:text-lg xl:text-xl text-gray-300 mb-8"
+          className="text-xl lg:text-2xl  mb-8 max-w-5xl mx-auto text-gray-600"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          Web & Mobile Developer transforming ideas into digital experiences
-          since 2020.
+          Helping to transform ideas into digital solutions since 2020.
         </motion.p>
 
         <motion.div

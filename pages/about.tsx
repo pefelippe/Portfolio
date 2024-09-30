@@ -1,81 +1,91 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { technologies } from "../src/constants";
 
-export default function About() {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.75 }}
-      className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 my-[20vh]"
-    >
-      <div className="flex flex-col md:flex-row items-start justify-between gap-12 md:gap-24">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.75, delay: 0.5 }}
-          className="flex justify-center md:justify-start"
-        >
-          <motion.img
-            src="/assets/pedrof.jpg"
-            alt="Pedro Felippe"
-            className="rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300"
-          />
-        </motion.div>
+const ProfileImage = () => (
+  <motion.div
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.75, delay: 0.5 }}
+    className=" justify-center md:justify-start hidden lg:flex"
+  >
+    <motion.img
+      src="/assets/pedrof.jpg"
+      alt="Pedro Felippe"
+      className="rounded-full md:rounded-3xl shadow-lg transition-transform duration-300 
+      w-32 h-32 md:w-auto md:h-auto"
+    />
+  </motion.div>
+);
 
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 0.75 }}
-          className="w-full max-w-2xl"
-        >
-          <h1 className="text-4xl font-bold mb-4 text-white">About Me</h1>
-          <p className="text-lg mb-4 text-gray-300">
-            I'm Pedro Felippe, a Web & Mobile Developer from Fortaleza, Ceará,
-            Brazil. Since 2020, I've been developing real solutions that impact
-            thousands of people.
-          </p>
-          <p className="text-lg mb-4 text-gray-300">
-            I have experience working within international teams in startups and
-            consultancies. My expertise lies in full-stack development in the
-            Javascript ecosystem (React, Node, React Native), Ruby on Rails, and
-            automation with Java (Selenium) and Python.
-          </p>
-          <p className="text-lg mb-6 text-gray-300">
-            I enjoy working on challenging projects that push the boundaries of
-            web technologies.
-          </p>
+const Section = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => (
+  <div className="mb-6">
+    <h2 className="text-xl sm:text-3xl font-bold mb-6 text-indigo-600">
+      {title}
+    </h2>
+    {children}
+  </div>
+);
 
-          <h2 className="text-2xl font-bold mb-4 text-white">Experience</h2>
-          <ul className="list-disc list-inside mb-6 text-gray-300">
-            <li className="mb-2">
+const About = () => (
+  <motion.div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 my-[15vh] w-full">
+    <div className="flex flex-col md:flex-row items-start justify-between gap-12 xl:gap-32">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.75 }}
+        className="w-full lg:max-w-3xl mb-6 md:mb-10 text-xs md:text-lg"
+      >
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 md:mb-10 text-indigo-600">
+          About Me
+        </h1>
+        <p className="mb-4 text-sm sm:text-md md:text-lg">
+          I'm Pedro Felippe, a Web & Mobile Developer from Fortaleza, Ceará,
+          Brazil. Since 2020, I've been developing real solutions that impact
+          thousands of people.
+        </p>
+        <p className="mb-4 text-sm sm:text-md md:text-lg">
+          I have experience working within international teams in startups and
+          consultancies. My expertise lies in full-stack development in the
+          Javascript ecosystem (React, Node, React Native), Ruby on Rails, and
+          automation with Java (Selenium) and Python.
+        </p>
+        <p className="mb-6 md:mb-10 text-sm sm:text-md md:text-lg">
+          I enjoy working on challenging projects that push the boundaries of
+          web technologies.
+        </p>
+
+        <Section title="Experience">
+          <ul className="list-disc list-inside mb-6 md:mb-10 text-sm sm:text-md md:text-lg">
+            <li className="mb-1">
               <strong>Full Stack Developer</strong> - Savant Labs • California,
               United States (Aug 2024 - Present)
             </li>
-            <li className="mb-2">
+            <li className="mb-1">
               <strong>Full Stack Developer</strong> - Fetchly Labs • Texas,
               United States (Feb 2024 - Present)
             </li>
-            <li className="mb-2">
+            <li className="mb-1">
               <strong>Full Stack Developer</strong> - Sankhya Gestão de Negócios
               • Uberlândia, MG, Brazil (Feb 2024 - Jul 2024)
             </li>
-            <li className="mb-2">
+            <li className="mb-1">
               <strong>Frontend Developer</strong> - Atlântico • Fortaleza, CE,
               Brazil (Dec 2020 - Feb 2024)
             </li>
-            <li className="mb-2">
+            <li className="mb-1">
               <strong>QA Analyst</strong> - GREat • Fortaleza, CE, Brazil (Jan
               2020 - Dec 2020)
             </li>
           </ul>
+        </Section>
 
-          {/* Uncommented and Enhanced Skills Section */}
-          <h2 className="text-2xl font-bold mb-4 text-white">Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6">
+        {/* <Section title="Skills">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {technologies.map((tech) => (
               <div key={tech.name} className="flex items-center">
                 <Image
@@ -85,31 +95,37 @@ export default function About() {
                   height={32}
                   className="mr-2"
                 />
-                <span className="text-white">{tech.name}</span>
+                <span className="text-black font-medium">{tech.name}</span>
               </div>
             ))}
           </div>
+        </Section> */}
 
-          <h2 className="text-2xl font-bold mb-4 text-white">Education</h2>
-          <p className="mb-6 text-gray-300">
+        <Section title="Education">
+          <p className="mb-6 md:mb-10 text-xs md:text-lg">
             <strong>Bachelor's Degree in Computer Science</strong>
             <br />
             Federal University of Ceará (Dec 2018 - Dec 2021)
           </p>
+        </Section>
 
-          <h2 className="text-2xl font-bold mb-4 text-white">Certifications</h2>
-          <ul className="list-disc list-inside mb-6 text-gray-300">
+        <Section title="Certifications">
+          <ul className="list-disc list-inside mb-6 md:mb-10 text-xs md:text-lg">
             <li>EFSET English Certificate (C2 Proficient)</li>
             <li>Scrum Foundation Professional Certificate - SFPC™</li>
           </ul>
+        </Section>
 
-          <h2 className="text-2xl font-bold mb-4 text-white">Patents</h2>
-          <ul className="list-disc list-inside  text-gray-300">
+        <Section title="Patents">
+          <ul className="list-disc list-inside mb-6 md:mb-10 text-xs md:text-lg">
             <li>Agent-based certificate management</li>
             <li>Blockchain-based certificate lifecycle management</li>
           </ul>
-        </motion.div>
-      </div>
-    </motion.div>
-  );
-}
+        </Section>
+      </motion.div>
+      <ProfileImage />
+    </div>
+  </motion.div>
+);
+
+export default About;

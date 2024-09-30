@@ -13,10 +13,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
       className="min-w-[400px] h-full overflow-hidden scroll-smooth 
-    font-poppins min-h-screen bg-[#070708]  flex flex-col "
+      font-poppins min-h-screen bg-gradient-to-r from-white to-gray-200 text-gray-800 flex flex-col "
     >
       <Head>
-        <title>Pedro Felippe | Developer </title>
+        <title>Pedro Felippe</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <Header />
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </motion.div>
   );

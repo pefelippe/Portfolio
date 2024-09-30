@@ -54,17 +54,17 @@ export default function Projects() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
-      opacity: 1
-    }
+      opacity: 1,
+    },
   };
 
   return (
@@ -72,7 +72,7 @@ export default function Projects() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="container mx-auto max-md:px-4 md:p-0  px-4 sm:px-6 lg:px-8 mt-32 mb-8 max-w-7xl min-h-screen"
+      className="container mx-auto max-md:px-4 md:p-0  px-4 sm:px-6 lg:px-8 mt-32 mb-8 max-w-screen-2xl min-h-screen"
     >
       <h1 className="text-4xl font-bold mb-2">Projects</h1>
       <h2 className="text-xl text-gray-400 mb-4">
@@ -89,7 +89,7 @@ export default function Projects() {
           <option value="recent">Sort by Most Recent</option>
         </select>
       </div>
-      <motion.div 
+      <motion.div
         className="grid grid-cols-1 md:grid-cols-3 gap-8"
         variants={containerVariants}
         initial="hidden"

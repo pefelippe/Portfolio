@@ -33,18 +33,18 @@ const Header = () => {
       initial={{ opacity: 0, y: -25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1 }}
-      className="fixed w-full duration-300 py-5 left-0 right-0 mx-auto h-auto max-w-7xl bg-[#070708] 
-       border-gray-200 dark:border-gray-100/30 z-40 px-4 sm:px-6 lg:px-8"
+      className="fixed w-full duration-300 py-5 left-0 right-0 mx-auto h-auto max-w-screen-2xl text-gray-600
+       border-gray-200 dark:border-gray-100/30 z-40 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-white to-gray-200"
     >
       <div className="flex mx-auto items-center justify-between w-full">
         <Link
           href="/"
-          className="text-2xl tracking-tighter font-bold hover:bg-slate-100/10 rounded-3xl"
+          className="text-2xl tracking-tighter font-bold text-gray-600 hover:text-gray-800 "
         >
           pedrofelippe.
         </Link>
 
-        <div className="md:hidden">
+        <div className="hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-300"
@@ -54,11 +54,10 @@ const Header = () => {
         </div>
 
         <div
-          className={`md:flex md:items-center hidden 
-           flex-col md:flex-row font-semibold gap-6 mt-4 md:mt-0`}
+          className={` md:items-center hidden 
+           flex-col md:flex-row font-semibold gap-8 mt-4 md:mt-0`}
         >
           {[
-            { href: "/", label: "Home" },
             { href: "/about", label: "About" },
             { href: "/projects", label: "Projects" },
             { href: "/contact", label: "Contact" },
@@ -67,7 +66,7 @@ const Header = () => {
               key={link.href}
               href={link.href}
               className={`hover:text-gray-400 ${
-                isActive(link.href) ? "text-blue" : "text-gray-300"
+                isActive(link.href) ? "text-blue" : "text-gray-600"
               }`}
             >
               {link.label}
@@ -76,14 +75,14 @@ const Header = () => {
         </div>
 
         <div className="hidden md:block border-gray-200 dark:border-gray-700">
-          <div className="flex justify-center space-x-5">
+          <div className="flex justify-center space-x-6">
             <motion.a
               href="https://github.com/pefelippe"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white"
+              className="text-gray-600 hover:text-gray-800 dark:text-gray-600 "
             >
               <FaGithub className="w-7 h-7" />
             </motion.a>
@@ -93,7 +92,7 @@ const Header = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white"
+              className="text-gray-600 hover:text-gray-800 dark:text-gray-600 e"
             >
               <FaLinkedin className="w-7 h-7" />
             </motion.a>
@@ -168,7 +167,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="text-gray-400 hover:text-black transition-colors duration-200"
               >
                 <FaGithub className="w-8 h-8" />
               </motion.a>
@@ -178,7 +177,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="text-gray-400 hover:text-white transition-colors duration-200"
+                className="text-gray-400 hover:text-black transition-colors duration-200"
               >
                 <FaLinkedin className="w-8 h-8" />
               </motion.a>

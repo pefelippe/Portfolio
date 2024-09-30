@@ -64,14 +64,14 @@ const Header = () => {
           pedrofelippe.
         </Link>
 
-        <div className="md:hidden">
+        {/* <div className="md:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-gray-300"
           >
             {isMenuOpen ? "" : <FaBars className="w-8 h-8 text-white" />}
           </button>
-        </div>
+        </div> */}
 
         <div
           className={`md:flex md:items-center hidden 
@@ -95,7 +95,7 @@ const Header = () => {
       </div>
 
       {/* Mobile drawer */}
-      <motion.div
+      {/* <motion.div
         initial={{ x: "100%" }}
         animate={{ x: isMenuOpen ? 0 : "100%" }}
         transition={{ duration: 0.3 }}
@@ -173,7 +173,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </motion.header>
   );
 };

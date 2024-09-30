@@ -5,13 +5,12 @@ const ProfileImage = () => (
     initial={{ opacity: 0, x: -50 }}
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.75, delay: 0.5 }}
-    className=" justify-center md:justify-start hidden lg:flex"
+    className="flex justify-center lg:justify-start mb-6 lg:mb-0"
   >
     <motion.img
       src="/assets/pedrof.jpg"
       alt="Pedro Felippe"
-      className="rounded-full md:rounded-3xl shadow-lg transition-transform duration-300 
-      w-32 h-32 md:w-auto md:h-auto"
+      className="rounded-full md:rounded-3xl shadow-lg transition-transform duration-300 w-32 h-32 md:w-auto md:h-auto"
     />
   </motion.div>
 );
@@ -33,7 +32,8 @@ const Section = ({
 
 const About = () => (
   <motion.div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 my-[15vh] w-full">
-    <div className="flex flex-col md:flex-row items-start justify-between gap-12 xl:gap-32">
+    <div className="flex flex-col items-center lg:items-start lg:flex-row lg:justify-between gap-12 xl:gap-32">
+      <ProfileImage />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -84,23 +84,6 @@ const About = () => (
           </ul>
         </Section>
 
-        {/* <Section title="Skills">
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {technologies.map((tech) => (
-              <div key={tech.name} className="flex items-center">
-                <Image
-                  src={tech.imgUrl}
-                  alt={tech.name}
-                  width={32}
-                  height={32}
-                  className="mr-2"
-                />
-                <span className="text-black font-medium">{tech.name}</span>
-              </div>
-            ))}
-          </div>
-        </Section> */}
-
         <Section title="Education">
           <p className="mb-6 md:mb-10 text-xs md:text-lg">
             <strong>Bachelor's Degree in Computer Science</strong>
@@ -123,7 +106,6 @@ const About = () => (
           </ul>
         </Section>
       </motion.div>
-      <ProfileImage />
     </div>
   </motion.div>
 );

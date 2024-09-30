@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Rocket } from "lucide-react";
@@ -33,32 +32,33 @@ function ProjectCard({
 
   return (
     <motion.div
-      whileHover={{ scale: 1.03 }}
-      className="flex flex-col bg-[#141418] rounded-xl shadow-lg overflow-hidden h-full cursor-pointer"
+      whileHover={{ scale: 1.05 }}
+      className="flex flex-col bg-gray-800 rounded-md shadow-2xl overflow-hidden h-full cursor-pointer transition-transform duration-300"
       onClick={handleCardClick}
     >
       <div
-        className="relative w-full overflow-hidden  "
+        className="relative w-full overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <motion.img
           src={imgUrl}
           alt={title}
-          className={`w-full h-60 object-cover transition-all duration-300  ${
+          className={`w-full h-80 object-cover transition-transform duration-300 ${
             isHovered ? "scale-110 blur-sm" : ""
           }`}
         />
         {isHovered && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 p-4">
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 p-4 transition-opacity duration-300">
+            <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
             <p className="text-white text-center text-sm">{description}</p>
           </div>
         )}
       </div>
-      <div className="p-4 flex flex-col flex-grow">
-        <h3 className="text-lg font-semibold mb-2 text-white">{title}</h3>
+      {/* <div className="p-6 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
         {stack.length > 0 && (
-          <div className="flex flex-wrap gap-2 ">
+          <div className="flex flex-wrap gap-2 mt-2">
             {stack.map((tech) => (
               <span
                 key={tech}
@@ -69,41 +69,7 @@ function ProjectCard({
             ))}
           </div>
         )}
-        {/* <div className="flex justify-between mt-auto">
-          <Button
-            variant="outline"
-            size="sm"
-            className="bg-gray-700 text-white hover:bg-gray-600"
-            onClick={(e) => {
-              e.stopPropagation();
-              window.open(link || repo, "_blank", "noopener,noreferrer");
-            }}
-          >
-            {link ? (
-              <>
-                <Rocket className="mr-2 h-4 w-4" /> Demo
-              </>
-            ) : (
-              <>
-                <GitHubLogoIcon className="mr-2 h-4 w-4" /> Repo
-              </>
-            )}
-          </Button>
-          {link && (
-            <Button
-              variant="outline"
-              size="sm"
-              className="bg-gray-700 text-white hover:bg-gray-600"
-              onClick={(e) => {
-                e.stopPropagation();
-                window.open(repo, "_blank", "noopener,noreferrer");
-              }}
-            >
-              <GitHubLogoIcon className="mr-2 h-4 w-4" /> Repo
-            </Button>
-          )}
-        </div> */}
-      </div>
+      </div> */}
     </motion.div>
   );
 }

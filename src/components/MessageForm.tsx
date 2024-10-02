@@ -64,23 +64,25 @@ export default function MessageForm() {
     >
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="grid grid-cols-1 gap-4">
-          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+          <motion.div>
             <Input
               {...register("firstName", { required: true, maxLength: 50 })}
               placeholder="Your name"
-              className="w-full bg-gray-200 border-gray-300 text-black placeholder-gray-500 py-6 transition duration-200"
+              className="w-full bg-gray-200 border-gray-300 text-black placeholder-gray-500 
+              py-6 transition duration-200"
             />
           </motion.div>
-          <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+          <motion.div>
             <Input
               {...register("email", { required: true, maxLength: 50 })}
               type="email"
               placeholder="Your email"
-              className="w-full bg-gray-200 border-gray-300 text-black placeholder-gray-500 py-6 transition duration-200"
+              className="w-full bg-gray-200 border-gray-300 text-black placeholder-gray-500 
+              py-6 transition duration-200"
             />
           </motion.div>
         </div>
-        <motion.div whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}>
+        <motion.div>
           <Textarea
             {...register("message", { required: true, maxLength: 500 })}
             placeholder="Your message"
@@ -91,8 +93,8 @@ export default function MessageForm() {
 
         <Button
           type="submit"
-          className="w-full bg-blue text-white mt-4 hover:bg-blue-700 py-6 font-semibold px-6 text-md 
-             rounded-md transition duration-300 ease-in-out transform hover:-translate-y-1"
+          className="w-full bg-blue text-white mt-4 hover:bg-blue-700 py-6 font-semibold px-6 
+          text-md rounded-md transition duration-300 ease-in-out transform"
         >
           {isLoading ? "Sending..." : "Send Message"}
         </Button>

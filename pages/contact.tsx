@@ -18,9 +18,7 @@ export default function Contact() {
         <h1 className="text-5xl font-bold mb-2 text-indigo-600 ">
           Get in touch
         </h1>
-        <p className="text-xl text-gray-400">
-          Let's chat about your next big idea.
-        </p>
+        <p className="text-xl">Let's chat about your next big idea.</p>
       </motion.div>
       <MessageForm />
     </motion.div>

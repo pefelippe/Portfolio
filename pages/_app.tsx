@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
       className="min-w-[400px] h-full overflow-hidden scroll-smooth 
-      font-poppins min-h-screen bg-gradient-to-r from-white to-gray-200 text-gray-800 flex flex-col "
+      font-poppins min-h-screen bg-gradient-to-r from-white to-gray-100 text-gray-800 flex flex-col "
     >
       <Head>
         <title>Pedro Felippe</title>

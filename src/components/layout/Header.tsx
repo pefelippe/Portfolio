@@ -55,9 +55,9 @@ const Header = () => {
       initial={{ opacity: 0, y: -25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1 }}
-      className="fixed w-full duration-300 py-5 left-0 right-0 mx-auto max-w-screen-2xl h-[10vh]
-       bg-gradient-to-r from-white to-gray-200 text-gray-800
-       border-gray-200 dark:border-gray-100/30 z-40 px-4 sm:px-6 lg:px-8"
+      className="fixed w-full duration-300 py-5 left-0 right-0 mx-auto max-w-screen-2xl 
+       bg-gradient-to-r from-white to-gray-100 text-gray-800
+       border-gray-200 dark:border-gray-100/30 z-40  max-md:px-4 "
     >
       <div className="flex mx-auto items-center justify-between w-full">
         <Link href="/" className="text-2xl tracking-tighter font-bold">

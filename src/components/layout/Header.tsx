@@ -55,29 +55,21 @@ const Header = () => {
       initial={{ opacity: 0, y: -25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1 }}
-      className="fixed w-full duration-300 py-5 left-0 right-0 mx-auto max-w-screen-2xl 
+      className="fixed w-full duration-300 py-5 left-0 right-0 mx-auto max-w-screen-2xl
        bg-gradient-to-r from-white to-gray-100 text-gray-800
-       border-gray-200 dark:border-gray-100/30 z-40  max-md:px-4 "
+       dark:border-gray-100/30 z-40  max-md:px-4 "
     >
-      <div className="flex mx-auto items-center justify-between w-full">
+      <div className="flex mx-auto items-center justify-between w-full ">
         <Link href="/" className="text-2xl tracking-tighter font-bold">
           pedrofelippe.
         </Link>
-
-        {/* <div className="md:hidden">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-gray-300"
-          >
-            {isMenuOpen ? "" : <FaBars className="w-8 h-8 text-white" />}
-          </button>
-        </div> */}
 
         <div
           className={`md:flex md:items-center hidden 
            flex-col md:flex-row font-semibold gap-8 mt-4 md:mt-0`}
         >
           {[
+            { href: "/", label: "Home" },
             { href: "/about", label: "About me" },
             { href: "/contact", label: "Contact" },
           ].map((link) => (
@@ -92,6 +84,35 @@ const Header = () => {
             </Link>
           ))}
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1 }}
+          className=" border-gray-200 "
+        >
+          <div className="flex justify-center space-x-6 ">
+            <motion.a
+              href="https://github.com/pefelippe"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-gray-600 hover:text-gray-800 dark:text-gray-600"
+            >
+              <FaGithub className="w-7 h-7" />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/pedro-felippe/"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-gray-600 hover:text-gray-800 dark:text-gray-600 "
+            >
+              <FaLinkedin className="w-7 h-7" />
+            </motion.a>
+          </div>
+        </motion.div>
       </div>
 
       {/* Mobile drawer */}

@@ -9,26 +9,6 @@ export const projects = [
     description:
       "Allow restaurants to create their own delivery platform, sell their products and manage orders.",
   },
-  {
-    id: 2,
-    link: "https://manda-pix-five.vercel.app/",
-    repo: "https://github.com/pefelippe/MandaPix",
-    title: "MeuPixCard",
-    imgUrl: "/projects/MandaPix.png",
-    stack: ["react", "tailwind", "shadcn", "next", "typescript"],
-    description:
-      "Create a customizable web card to share your pix qr code easily.",
-  },
-  {
-    id: 3,
-    link: "https://search-github-users-tau.vercel.app",
-    repo: "https://github.com/pefelippe/GitSearcher",
-    title: "DevFinder",
-    imgUrl: "/projects/GitSearcher.png",
-    stack: ["react", "tailwind", "shadcn", "vite", "typescript"],
-    description:
-      "Web page that allows you to query Github users based on the user name. Popularity ranking.",
-  },
 ];
 
 export const technologies = [

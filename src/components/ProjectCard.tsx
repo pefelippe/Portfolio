@@ -32,8 +32,8 @@ function ProjectCard({
 
   return (
     <motion.div
-      whileHover={{ scale: 1.05 }}
-      className="flex flex-col bg-gray-800 rounded-md shadow-2xl overflow-hidden h-full cursor-pointer transition-transform duration-300"
+      whileHover={{ scale: 1.01 }}
+      className="flex flex-col bg-gray-800 border border-gray-500 rounded-md  overflow-hidden h-full cursor-pointer transition-transform duration-300"
       onClick={handleCardClick}
     >
       <div
@@ -44,32 +44,21 @@ function ProjectCard({
         <motion.img
           src={imgUrl}
           alt={title}
-          className={`w-full h-80 object-cover transition-transform duration-300 ${
+          className={`w-full object-cover transition-transform duration-300 ${
             isHovered ? "scale-110 blur-sm" : ""
           }`}
         />
         {isHovered && (
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 p-4 transition-opacity duration-300">
-            <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
-            <p className="text-white text-center text-sm">{description}</p>
+            <h3 className="text-xl md:text-4xl font-bold mb-2 text-white">
+              {title}
+            </h3>
+            <p className="text-white text-center text-sm md:text-xl">
+              {description}
+            </p>
           </div>
         )}
       </div>
-      {/* <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
-        {stack.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-2">
-            {stack.map((tech) => (
-              <span
-                key={tech}
-                className="px-3 py-1 bg-gray-700 rounded-full text-xs text-white"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        )}
-      </div> */}
     </motion.div>
   );
 }

@@ -14,13 +14,13 @@ function FeaturedProjectsSection() {
           Featured Projects
         </h2>
       </div> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3  gap-4">
+      <div className="grid grid-cols-1   gap-4">
         {featuredProjects.map((project, index) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1.5 + index * 0.3 }}
+            transition={{ duration: 0.5, delay: 1 + index * 0.3 }}
           >
             <ProjectCard {...project} />
           </motion.div>

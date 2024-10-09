@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function HeroSection() {
   return (
     <motion.div
-      className="flex flex-col items-start justify-start w-full mx-auto pb-5 gap-5"
+      className="flex flex-col items-center justify-start w-full mx-auto pb-5 gap-5 max-w-3xl text-center"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -18,7 +18,7 @@ function HeroSection() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         Brazil-based software developer with a proven track record of helping
-        Brazilian companies and U.S. tech startups thrive.{" "}
+        Brazilian companies and U.S. tech startups.{" "}
         {/* <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

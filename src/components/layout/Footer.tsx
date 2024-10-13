@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -8,10 +6,10 @@ function Footer() {
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.75, delay: 1 }}
-      className="border-t w-full flex py-8 text-center justify-center items-center  
-      px-4 sm:px-6 lg:px-8 max-w-screen-2xl  mx-auto gap-4 border-gray-100/10"
+      className="w-full flex py-6 text-center justify-center items-center  max-w-3xl mt-6
+      px-4 sm:px-6 lg:px-8 mx-auto gap-4 border-gray-600/20"
     >
-      <p className="gap-2 text-sm sm:text-md text-gray-600 dark:text-gray-400">
+      <p className="gap-2 text-sm sm:text-md text-gray-600/80">
         Pedro Felippe &copy; {new Date().getFullYear()}
       </p>
     </motion.footer>

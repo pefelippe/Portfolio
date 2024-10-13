@@ -10,6 +10,9 @@ function FeaturedProjectsSection() {
     <motion.div className=" ">
       {featuredProjects.map((project, index) => (
         <>
+          <h1 className="text-3xl font-bold leading-tight tracking-tight mb-4">
+            Personal Projects
+          </h1>
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 20 }}

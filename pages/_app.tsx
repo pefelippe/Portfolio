@@ -12,11 +12,11 @@ import { ThemeProvider } from "../src/components/theme-provider";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <motion.div
-      className="min-w-[400px] h-full overflow-hidden scroll-smooth font-mono
+      className="min-w-[400px] h-full overflow-hidden scroll-smooth font-serif
    min-h-screen bg-gradient-to-r from-white to-gray-100 text-gray-800 flex flex-col "
     >
       <Head>
-        <title>Pedro Felippe</title>
+        <title>Pedro Felippe - Senior Software Engineer</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
       >
         <Header />
         <Component {...pageProps} />
-        <Footer />
+        {/* <Footer /> */}
       </ThemeProvider>
     </motion.div>
   );

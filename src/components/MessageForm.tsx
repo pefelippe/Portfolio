@@ -60,7 +60,7 @@ export default function MessageForm() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="w-full max-w-xl mx-auto bg-white py-4 rounded-md shadow-xl"
+      className="w-full max-w-md mx-auto py-4 rounded-md "
     >
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="grid grid-cols-1 gap-4">
@@ -93,7 +93,7 @@ export default function MessageForm() {
 
         <Button
           type="submit"
-          className="w-full bg-blue text-white mt-4 hover:bg-blue-700 py-6 font-semibold px-6 
+          className="w-full bg-blue text-white mt-4 hover:bg-opacity-80 py-6 font-semibold px-6 
           text-md rounded-md transition duration-300 ease-in-out transform"
         >
           {isLoading ? "Sending..." : "Send Message"}

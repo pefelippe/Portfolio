@@ -12,8 +12,22 @@ const About = () => (
         },
       },
     }}
-    className="min-h-screen mx-auto  gap-8 md:gap-32 justify-center md:justify-between w-full text-gray-600 flex flex-col-reverse md:flex-row items-center"
+    className="min-h-screen mx-auto  gap-8 md:gap-32 justify-center  w-full
+     text-gray-600 flex flex-col md:flex-row items-center"
   >
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8, delay: 0.4 }}
+      className="w-full max-w-lg"
+    >
+      <motion.img
+        src="/assets/pedrof.jpg"
+        alt="Pedro Felippe"
+        className="rounded md:rounded-[10vh] md:hover:rounded-[2vh] transition-all shadow-lg duration-300 
+        w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover"
+      />
+    </motion.div>
     <motion.div
       className="flex flex-col gap-6 max-w-lg text-start"
       initial={{ opacity: 0, y: 20 }}
@@ -21,12 +35,12 @@ const About = () => (
       transition={{ duration: 0.6 }}
     >
       <motion.p
-        className="text-5xl md:text-7xl mx-auto tracking-tight text-gray-900 font-extrabold"
+        className="text-5xl md:text-7xl  tracking-tight text-gray-900 font-extrabold"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Bridging gap between people and design.
+        Pedro Felippe.
       </motion.p>
       <motion.p
         className="text-xl md:text-2xl mx-auto text-gray-600"
@@ -65,19 +79,6 @@ const About = () => (
           <FaLinkedin className="w-8 h-8 sm:w-9 sm:h-9" />
         </motion.a>
       </motion.div>
-    </motion.div>
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, delay: 0.4 }}
-      className="w-full max-w-lg"
-    >
-      <motion.img
-        src="/assets/pedrof.jpg"
-        alt="Pedro Felippe"
-        className="rounded-md md:rounded-[10vh] md:hover:rounded-[2vh] transition-all shadow-lg duration-300 
-        w-full h-[300px] sm:h-[450px] md:h-[550px] object-cover"
-      />
     </motion.div>
   </motion.div>
 );

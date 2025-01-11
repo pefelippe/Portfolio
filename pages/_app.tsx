@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
    min-h-screen bg-gradient-to-r from-white to-gray-100 text-gray-800 flex flex-col "
     >
       <Head>
-        <title>Pedro Felippe - Senior Software Engineer</title>
+        <title>Pedro Felippe - Software Engineer</title>
         <meta name="description" content="Portfolio" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 
 import About from "./about";
+import Projects from "./projects";
+import Contact from "./contact";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       transition={{ duration: 0.75 }}
     >
       <About />
+      {/* <Projects /> */}
+      {/* <Contact /> */}
     </motion.div>
   );
 }

@@ -7,7 +7,7 @@ export default function Contact() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="flex w-full my-[10vh] flex-col items-center justify-center mx-auto  max-md:px-4 "
+      className="flex w-full min-h-screen flex-col items-center justify-center mx-auto bg-indigo-700 max-md:px-6"
     >
       <motion.div
         initial={{ y: -20, opacity: 0 }}
@@ -15,9 +15,7 @@ export default function Contact() {
         transition={{ delay: 0.2, duration: 0.8 }}
         className="text-center"
       >
-        <h1 className="text-4xl font-bold mb-2 text-indigo-600 ">
-          Get in touch
-        </h1>
+        <h1 className="text-6xl font-bold mb-2 text-white ">Get in touch</h1>
       </motion.div>
       <MessageForm />
     </motion.div>

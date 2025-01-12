@@ -93,7 +93,7 @@ export default function MessageForm() {
 
         <Button
           type="submit"
-          className="w-full bg-blue text-white mt-4 hover:bg-opacity-80 py-6 font-semibold px-6 
+          className="w-full bg-indigo-500 text-white mt-4 bg-opacity-80 py-6 font-semibold px-6 
           text-md rounded-md transition duration-300 ease-in-out transform"
         >
           {isLoading ? "Sending..." : "Send Message"}

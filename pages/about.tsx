@@ -41,7 +41,7 @@ const About = () => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        Pedro Felippe<span className="text-indigo-500 animate-pulse">.</span>
+        Pedro Felippe<span className="text-indigo-600 animate-bounce">.</span>
       </motion.p>
       <motion.p
         className="text-xl md:text-2xl mx-auto text-gray-600"
@@ -57,15 +57,15 @@ const About = () => (
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="flex items-center gap-4 sm:gap-6"
+        className="flex items-center gap-4 sm:gap-6 font-medium"
       >
         <motion.a
           href="#portfolio"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="flex-1 py-3 px-6 rounded-lg bg-indigo-500 text-white font-medium
-          text-center transition-all duration-300 hover:bg-indigo-600 shadow-md
-          hover:shadow-lg text-sm sm:text-base"
+          className="flex-1 py-4 px-6 rounded-lg bg-indigo-600 text-white font-semibold
+          text-center transition-all duration-300 hover:bg-indigo-500 shadow-md
+          hover:shadow-lg text-sm sm:text-lg"
         >
           View Portfolio
         </motion.a>
@@ -73,9 +73,9 @@ const About = () => (
           href="#contact"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="flex-1 py-3 px-6 rounded-lg border-2 border-indigo-500 text-indigo-500
-          font-medium text-center transition-all duration-300 hover:bg-indigo-50
-          text-sm sm:text-base"
+          className="flex-1 py-4 px-6 rounded-lg border-2 border-indigo-600 text-indigo-600
+          font-semibold text-center transition-all duration-300 hover:bg-indigo-50
+          text-sm sm:text-lg"
         >
           Contact Me
         </motion.a>

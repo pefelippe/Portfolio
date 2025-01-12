@@ -60,7 +60,7 @@ export default function MessageForm() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="w-full max-w-md mx-auto py-4 rounded-md "
+      className="w-full max-w-lg mx-auto py-4 rounded-md "
     >
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="grid grid-cols-1 gap-4">
@@ -69,7 +69,7 @@ export default function MessageForm() {
               {...register("firstName", { required: true, maxLength: 50 })}
               placeholder="Your name"
               className="w-full bg-gray-200 border-gray-300 text-black placeholder-gray-500 
-              py-6 transition duration-200"
+              py-7 transition duration-200"
             />
           </motion.div>
           <motion.div>
@@ -78,7 +78,7 @@ export default function MessageForm() {
               type="email"
               placeholder="Your email"
               className="w-full bg-gray-200 border-gray-300 text-black placeholder-gray-500 
-              py-6 transition duration-200"
+              py-7 transition duration-200"
             />
           </motion.div>
         </div>
@@ -93,8 +93,8 @@ export default function MessageForm() {
 
         <Button
           type="submit"
-          className="w-full bg-indigo-500 text-white mt-4 bg-opacity-80 py-6 font-semibold px-6 
-          text-md rounded-md transition duration-300 ease-in-out transform"
+          className="w-full bg-indigo-700 text-white mt-4 bg-opacity-80 py-7 font-semibold px-6 border-2 border-indigo-600
+          text-sm sm:text-lg rounded-md transition duration-300 ease-in-out transform"
         >
           {isLoading ? "Sending..." : "Send Message"}
         </Button>
